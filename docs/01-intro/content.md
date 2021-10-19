@@ -100,21 +100,21 @@ Regimento Interno/UFRN, Seção III:
 ### Cronograma
 #### Unidade 1
 
-<img src="unidade1.png" width=400/>
+<img src="unidade1.png" width=800/>
 
 ---
 
 ### Cronograma
 #### Unidade 2
 
-<img src="unidade2.png" width=400/>
+<img src="unidade2.png" width=800/>
 
 ---
 
 ### Cronograma
 #### Unidade 3
 
-<img src="unidade3.png" width=400/>
+<img src="unidade3.png" width=800/>
 
 ---
 
