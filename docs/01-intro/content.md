@@ -16,8 +16,7 @@ Perguntas pertinentes sobre Linguagem de Programação (LiP) na ECT:
 
 - Para responder esta pergunta, é interessante enumerar as competências
   e habilidades previstas para os bachareis em CeT
-- Mais informações [no plano de curso]
-  (https://sigaa.ufrn.br/sigaa/public/curso/ppp.jsf?lc=pt_BR&id=10320810)
+- Mais informações [Projeto Pedagógico do Curso](https://sigaa.ufrn.br/sigaa/public/curso/ppp.jsf?lc=pt_BR&id=10320810)
 ---
 
 ### Linguagem de Programação
@@ -27,10 +26,23 @@ a novas demandas da sociedade contemporânea**
 2. **capacidade de comunicação e argumentação em suas múltiplas formas**
 3. **capacidade de atuar em áreas de fronteira e interfaces de diferentes disciplinas e campos de saber**
 4. **atitude investigativa, de prospecção, de permanente busca e produção do conhecimento**
+---
+
+### Linguagem de Programação
+#### Competências e Habilidades
 5. capacidade de reconhecer especificidades regionais ou locais, contextualizando-as e relacionando-as com a situação global
 6. **atitude ética nas esferas profissional, acadêmica e das relações interpessoais**
 7. comprometimento com a sustentabilidade nas relações entre ciência, tecnologia, economia, sociedade e ambiente
 8. **capacidade de tomar decisões em cenários de imprecisões e incertezas**
+---
+
+### Linguagem de Programação
+#### Competências e Habilidades
+
+Como é possível ver, o curso de Linguagem de Programação (LiP)
+é bem completo quanto ao seu envolvimento com as competências
+e habilidades desejadas de um bacharel em CeT.
+
 ---
 
 ### Apresentação
@@ -76,7 +88,7 @@ a novas demandas da sociedade contemporânea**
       em todas as aulas
 ---
 
-### Sobre a Disciplina -- Observação Importante
+### Sobre a Disciplina: Observação Importante
 Regimento Interno/UFRN, Seção III:
 
 - Prevê punições para casos de:
@@ -85,24 +97,26 @@ Regimento Interno/UFRN, Seção III:
     - Ofensas a servidores da universidade
 ---
 
-<!--
 ### Cronograma
 #### Unidade 1
-\begin{center}
-\includegraphics[width=0.98\textwidth]{img/unidade1.png}
-\end{center}
+
+<img src="unidade1.png" width=400/>
+
+---
 
 ### Cronograma
 #### Unidade 2
-\begin{center}
-\includegraphics[width=0.98\textwidth]{img/unidade2.png}
-\end{center}
+
+<img src="unidade2.png" width=400/>
+
+---
 
 ### Cronograma
 #### Unidade 3
-\begin{center}
-\includegraphics[width=0.98\textwidth]{img/unidade3.png}
-\end{center}
+
+<img src="unidade3.png" width=400/>
+
+---
 
 
 ### Ferramentas
