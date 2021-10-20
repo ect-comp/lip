@@ -118,37 +118,65 @@ Regimento Interno/UFRN, Seção III:
 
 ---
 
+### Livros Utilizados
 
-### Ferramentas
-
-- [Python 3.X](https://python.org/) (várias mudanças em relação à Python 2.X)
-- IDES:  
-    - [Sublime](https://www.sublimetext.com/)
-    - [Atom](https://atom.io/) 
-    - [Visual Code](https://code.visualstudio.com/)
-    - [PyCharm](https://www.jetbrains.com/pt-br/pycharm)
-    - [vim](https://www.vim.org/)
-    - [Emacs](https://www.gnu.org/software/emacs/)
-- [Jupyter Notebooks](https://jupyter.org/)
+<img src="livro_lip_ect.png" width=100/>
+<img src="livro1.png" width=100/>
+<img src="livro2.png" width=100/>
 
 ---
 
+### Perguntas Frequentes
 
+- _Posso assistir aula em uma subturma de laboratório que não seja a minha_?
+Entre em contato com o professor responsável pela sua subturma
+para se informar sobre esta questão.
 
-### Material bibliográfico
+- _Esta semana tem aula de laboratório?_
+Na disciplina de LiP, os laboratórios são semanais.
+Caso não haja nenhum aviso (no SIGAA), a resposta
+provavelmente é sim.
+Na dúvida, confira o plano de aulas no SIGAA.
+---
 
-- Livros online
-    - [How to Think Like a Computer Scientist](http://openbookproject.net/thinkcs/python/english3e/)
-    - [Object-Oriented Programming in Python](https://python-textbok.readthedocs.io/en/1.0/)
-    - [A Byte of Python](https://python.swaroopch.com/)
+### Perguntas Frequentes
 
-- Tutoriais
-    - [Documentação de Python](https://www.python.org/doc/)
-    - [Real Python](https://realpython.com/)
+- _Meu programa enviado no Multiprova/Sistema LoP deu 100% correto.
+Por que a minha nota não foi 10_?
+O seu programa ter 100% de acerto não implica no fato de que
+você implementou a questão como solicitada.
 
-- Livros
-    - [Learning Python de Mark Lutz](https://www.amazon.com.br/dp/B00DDZPC9S/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
-    - [Python 3 Object Oriented Programming](https://www.amazon.com.br/dp/B005O9OFWQ/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+- _Acho curto o tempo para entrega das questões de lab.
+Por que não estender este prazo_?
+As questões são elaboradas para serem entregues em um determinado
+prazo. O fato de você não conseguir entregá-las significa
+que o seu nível de desenvoltura com a disciplina está abaixo
+do esperado.
+---
 
---- 
--->
+### Perguntas Frequentes
+
+- _Posso utilizar o recurso XYZ (p. ex. vetores) em uma ativiadade, mesmo que ele ainda não tenha sido apresentado em sala de aula? E quanto a recursos não passados pelo professor_?
+Não. Todas as atividades avaliativas são elaboradas de forma que o aluno seja avaliado considerando o conteúdo que a ele foi passado até o momento da atividade.
+---
+
+### Experiências Passadas em LiP
+
+A partir de experiências em turmas passadas no ensino remoto,
+algumas fontes de problema na disciplina:
+
+- Aluno que não **ouve** o professor
+    - Paradoxo: se o aluno não ouve o professor, ele também não irá
+      ouvir esta afirmação e portanto, o problema não tem solução
+    - Por exemplo: quantos daqui ouviram os argumentos da importância de LiP?
+- Aluno que não está com o preparo necessário para uma atividade
+- Aluno que acha que está aprendendo, mas não está
+    - Por exemplo, aluno que costuma fazer trabalhos em grupo ou acha
+      que programação se aprende vendo alguém praticar
+- Aluno que quer burlar o sistema de avaliação
+---
+
+### Demais Perguntas
+
+Sintam-se à vontade para fazer qualquer pergunta sobre a disciplina ou sobre o professor
+---
