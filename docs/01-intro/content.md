@@ -120,15 +120,15 @@ Regimento Interno/UFRN, Seção III:
 
 ### Livros Utilizados
 
-<img src="livro_lip_ect.png" width=100/>
-<img src="livro1.png" width=100/>
-<img src="livro2.png" width=100/>
+<img src="livro_lip_ect.png" width=200/>
+<img src="livro1.png" width=180/>
+<img src="livro2.png" width=180/>
 
 ---
 
 ### Perguntas Frequentes
 
-- _Posso assistir aula em uma subturma de laboratório que não seja a minha_?
+- _Posso assistir aula em uma subturma de laboratório que não seja a minha?_
 Entre em contato com o professor responsável pela sua subturma
 para se informar sobre esta questão.
 
@@ -142,12 +142,12 @@ Na dúvida, confira o plano de aulas no SIGAA.
 ### Perguntas Frequentes
 
 - _Meu programa enviado no Multiprova/Sistema LoP deu 100% correto.
-Por que a minha nota não foi 10_?
+Por que a minha nota não foi 10?_
 O seu programa ter 100% de acerto não implica no fato de que
 você implementou a questão como solicitada.
 
 - _Acho curto o tempo para entrega das questões de lab.
-Por que não estender este prazo_?
+Por que não estender este prazo?_
 As questões são elaboradas para serem entregues em um determinado
 prazo. O fato de você não conseguir entregá-las significa
 que o seu nível de desenvoltura com a disciplina está abaixo
@@ -156,7 +156,7 @@ do esperado.
 
 ### Perguntas Frequentes
 
-- _Posso utilizar o recurso XYZ (p. ex. vetores) em uma ativiadade, mesmo que ele ainda não tenha sido apresentado em sala de aula? E quanto a recursos não passados pelo professor_?
+- _Posso utilizar o recurso XYZ (p. ex. vetores) em uma ativiadade, mesmo que ele ainda não tenha sido apresentado em sala de aula? E quanto a recursos não passados pelo professor?_
 Não. Todas as atividades avaliativas são elaboradas de forma que o aluno seja avaliado considerando o conteúdo que a ele foi passado até o momento da atividade.
 ---
 
@@ -170,6 +170,13 @@ algumas fontes de problema na disciplina:
       ouvir esta afirmação e portanto, o problema não tem solução
     - Por exemplo: quantos daqui ouviram os argumentos da importância de LiP?
 - Aluno que não está com o preparo necessário para uma atividade
+---
+
+### Experiências Passadas em LiP
+
+A partir de experiências em turmas passadas no ensino remoto,
+algumas fontes de problema na disciplina:
+
 - Aluno que acha que está aprendendo, mas não está
     - Por exemplo, aluno que costuma fazer trabalhos em grupo ou acha
       que programação se aprende vendo alguém praticar
