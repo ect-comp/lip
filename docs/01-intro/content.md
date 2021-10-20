@@ -21,17 +21,24 @@ Perguntas pertinentes sobre Linguagem de Programação (LiP) na ECT:
 
 ### Linguagem de Programação
 #### Competências e Habilidades
+
 1. **capacidade de identificar, avaliar e resolver problemas, enfrentar desafios e responder
 a novas demandas da sociedade contemporânea**
 2. **capacidade de comunicação e argumentação em suas múltiplas formas**
 3. **capacidade de atuar em áreas de fronteira e interfaces de diferentes disciplinas e campos de saber**
-4. **atitude investigativa, de prospecção, de permanente busca e produção do conhecimento**
 ---
 
 ### Linguagem de Programação
 #### Competências e Habilidades
+
+4. **atitude investigativa, de prospecção, de permanente busca e produção do conhecimento**
 5. capacidade de reconhecer especificidades regionais ou locais, contextualizando-as e relacionando-as com a situação global
 6. **atitude ética nas esferas profissional, acadêmica e das relações interpessoais**
+---
+
+### Linguagem de Programação
+#### Competências e Habilidades
+
 7. comprometimento com a sustentabilidade nas relações entre ciência, tecnologia, economia, sociedade e ambiente
 8. **capacidade de tomar decisões em cenários de imprecisões e incertezas**
 ---
