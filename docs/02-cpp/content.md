@@ -48,7 +48,7 @@ Programando na linguagem C++
 ---
 
 ### TESTE
-<pre><code data-trim><script type="text/template">
+<pre><code><script type="text/template">
 <foo ... />;
 </script></code></pre>
 ---
