@@ -221,10 +221,8 @@ int main(){
 ---
 
 ### C++: Entrada de Dados
-- Comando de entrada `cin`: atribui valor lido do teclado
-  às variáveis após o `>>`
-- Também requer a biblioteca `iostream`
-- Exemplo:
+Comando de entrada `cin`: atribui valor lido do teclado
+às variáveis após o `>>`:
 
 ```C++
 #include &lt;iostream&gt;
@@ -242,9 +240,9 @@ int main(){
 ### Exercício
 Implemente um programa que lê um número inteiro e um
 caractere e imprime o texto
-`O inteiro eh X e o caractere eh Y`
-seguido por uma quebra de linha, sendo X e Y
-o inteiro e o caractere.
+`"O inteiro eh X e o caractere eh Y"`
+seguido por uma quebra de linha, sendo `X` e `Y`
+o inteiro e o caractere respectivamente.
 ---
 
 ### Exercício: Solução
@@ -266,10 +264,46 @@ int main(){
 ```
 ---
 
+### C++: Operadores
+
+- Operador de atribuição: `=`
+- Operadores aritméticos: `+`, `-`, `*`, `/`
+- Operadores relacionais: `>`, `>=`, `<`, `<=`, `==`, `!=`
+- Operadores lógicos: `!` (negação), `||` (ou), `&&` (e)
+
+Você verá mais sobre operadores na aula que vem
+---
+
+### Exercício
+Implemente um programa que lê dois números inteiros.
+O programa deve armazenar em uma variável booleana
+o resultado da comparação `X == Y`,
+sendo `X` e `Y` os dois inteiros lidos.
+Em seguida, o programa deve imprimir a variável
+booleana.
+---
+
+### Exercício: Solução
+```
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int x, y;
+    bool iguais;
+    cout << "insira dois num. inteiros:\n";
+    cin >> x >> y;
+    iguais = x == y;
+    cout << "Iguais: " << iguais << endl;
+    return 0;
+}
+```
+---
+
 ### Sumário
 - Na aula de hoje, você viu
     - Estrutura de um programa em C++
     - Declaração e inicialização de variáveis
     - Tipos básicos
     - Comandos de entrada e saída
+    - Operadores
 ---
