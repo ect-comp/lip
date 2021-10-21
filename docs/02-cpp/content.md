@@ -42,7 +42,9 @@ comandos/instruções
 ---
 
 ### Programação
-#### Programando na linguagem C++
+
+Programando na linguagem C++
+
 ---
 
 ## C++: Primeiro Programa
