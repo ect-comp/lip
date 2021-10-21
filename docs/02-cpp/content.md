@@ -48,14 +48,13 @@ comandos/instruções
 ## C++: Primeiro Programa
 
 ```C++
-#include <iostream>
-
 int main(){
     return 0;
 }
 ```
 ---
 
+<section data-markdown><textarea data-template>
 ### C++: Primeiro Programa **Útil** 
 
 ```C++
@@ -69,6 +68,7 @@ int main(){
 }
 ```
 ---
+</textarea></section>
 
 ### C++: Comando de Saída
 - Comando de saída `cout`: imprime na tela o que vem após
@@ -81,7 +81,7 @@ int main(){
 
 Espaços em branco não alteram o programa:
 
-```C++
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -92,8 +92,8 @@ return 0;
 }
 ```
 
-Entretanto, mantenham sempre o seu código indentado
-para que eles sejam lidos mais facilmente
+Entretanto, mantenha sempre o seu código indentado
+(facilita a leitura)
 ---
 
 ### C++: Comentários de Código
@@ -121,7 +121,7 @@ int main(){
 - Nomes dados a endereços de memória do computador
 - Utilizadas para armazenar valores de diferentes tipos
 
-<img src="variaveis.png" width=600/>
+<img src="variaveis.png" width=250/>
 
 - Variáveis precisam ser declaradas antes de serem utilizadas
 ---
