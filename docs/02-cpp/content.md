@@ -49,7 +49,7 @@ Programando na linguagem C++
 
 ### TESTE
 ```
-<foo ... />
+$lt;foo ... /$gt;
 ```
 ---
 
