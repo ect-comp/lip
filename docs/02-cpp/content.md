@@ -57,7 +57,7 @@ int main(){
 <section data-markdown><textarea data-template>
 ### C++: Primeiro Programa **Útil** 
 
-```C++
+```
 #include <iostream>
 
 using namespace std;
@@ -128,20 +128,18 @@ int main(){
 
 ### C++: Declaração de Variáveis
 #### Sintaxe
-```
+```c++
 tipo_da_variavel nome_da_variavel;
 ```
-- `tipo\_da\_variavel` pode ser:
+- `tipo_da_variavel` pode ser:
     - `bool`: declara um booleano (assume verdadeiro ou falso)
     - `int`: declara um número inteiro
     - `float`: declara um número real
     - `char`: declara **um único** caractere
-- `nome\_da\_variavel` deve obedecer às regras:
+- `nome_da_variavel` deve obedecer às regras:
     1. deve começar com uma letra ou `_` (underline ou underscore)
     2. deve ser composto por letras, dígitos ou `_`
     3. não pode ser uma palavra reservada (p. ex. `if`)
-- Note que `x` e `X` são duas variáveis diferentes
-- Boa prática: utilizar nomes significativos
 ---
 
 ### Linguagem de Programação
