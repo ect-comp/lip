@@ -48,9 +48,9 @@ Programando na linguagem C++
 ---
 
 ### TESTE
-<pre><code data-trim data-noescape>
+<pre><code data-trim><script type="text/template">
 <foo ... />;
-</code></pre>
+</script></code></pre>
 ---
 
 ### C++: Primeiro Programa
