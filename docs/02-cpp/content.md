@@ -48,10 +48,13 @@ Programando na linguagem C++
 ---
 
 ### TESTE
+
+<script type="text/template">
 ```
-$lt;foo ... /$gt;
+<foo ... />;
 ```
 ---
+</script>
 
 ### C++: Primeiro Programa
 
