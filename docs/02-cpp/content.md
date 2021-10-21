@@ -49,7 +49,6 @@ Programando na linguagem C++
 
 ### TESTE
 ```
-<!-- code -->
 <foo ... />
 ```
 ---
