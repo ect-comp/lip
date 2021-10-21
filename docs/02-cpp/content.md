@@ -48,7 +48,8 @@ Programando na linguagem C++
 ---
 
 ### TESTE
-<pre><code>
+```c++
+//nv versao
 #include &lt;iostream&gt;
 
 using namespace std;
@@ -57,7 +58,7 @@ int main(){
     cout << "LiP: programando em C++\n";
     return 0;
 }
-</code></pre>
+```
 ---
 
 ### C++: Primeiro Programa
