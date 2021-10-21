@@ -9,14 +9,12 @@ Este diretório contém os slides das aulas do semestre 2021.2
  - Metodologia
  - Bibliografia
 
-<!--
-## [02 - 20/10 - Python Básico](./02-python-basico)
+## [22/10 - Introdução ao C++](./02-cpp)
  - Variáveis e tipos
  - Operadores e expressões
  - Entrada e saída
- - Estruturas de Controle
 
-Anotações e exercícios da aula (Jupyter notebook) [02-Python-Basico.ipynb](./02-python-basico/02-Python-Basico.ipynb)
+<!--
 
 ## [03 - 14/06 - Classes, objetos e abstração](./03-classes-objetos/)
  - Classes, atributos e métodos
