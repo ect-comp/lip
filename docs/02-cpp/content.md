@@ -30,7 +30,7 @@ Esta capacidade será aplicada na resolução de problemas como:
 - **Compilação**: transformação de código fonte em um programa
 - **Código fonte**: formato legível por humanos, formado por
 comandos/instruções
-- **Programa**: formato legível por máquinas (arquivo binário, ou seja, formado por 0s e 1s)
+- **Programa**: formato legível por máquinas (arquivo binário)
 ---
 
 ### Programação: Representação de um Raciocínio
@@ -48,6 +48,8 @@ comandos/instruções
 ## C++: Primeiro Programa
 
 ```C++
+#include <iostream>
+
 int main(){
     return 0;
 }
