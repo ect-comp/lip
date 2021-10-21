@@ -49,7 +49,7 @@ Programando na linguagem C++
 
 ### TESTE
 <pre><code>
-#include $lt;iostream$gt;
+#include &lt;iostream&gt;
 
 using namespace std;
 
