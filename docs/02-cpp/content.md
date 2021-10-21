@@ -56,7 +56,6 @@ int main(){
 ```
 ---
 
-<section data-markdown><textarea data-template>
 ### C++: Primeiro Programa **Útil** 
 
 ```
@@ -70,7 +69,6 @@ int main(){
 }
 ```
 ---
-</textarea></section>
 
 ### C++: Comando de Saída
 - Comando de saída `cout`: imprime na tela o que vem após
