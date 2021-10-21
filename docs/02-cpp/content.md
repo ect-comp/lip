@@ -120,10 +120,9 @@ int main(){
 ### C++: Variáveis
 - Nomes dados a endereços de memória do computador
 - Utilizadas para armazenar valores de diferentes tipos
+- Variáveis precisam ser declaradas antes de serem utilizadas
 
 <img src="variaveis.png" width=250/>
-
-- Variáveis precisam ser declaradas antes de serem utilizadas
 ---
 
 ### C++: Sintaxe de Declaração de Variáveis
@@ -131,7 +130,7 @@ int main(){
 tipo_da_variavel nome_da_variavel;
 ```
 - `tipo_da_variavel` pode ser:
-    - `bool`: declara um booleano (assume verdadeiro ou falso)
+    - `bool`: declara um booleano (verdadeiro ou falso)
     - `int`: declara um número inteiro
     - `float`: declara um número real
     - `char`: declara **um único** caractere
