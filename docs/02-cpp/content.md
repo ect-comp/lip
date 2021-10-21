@@ -47,7 +47,14 @@ Programando na linguagem C++
 
 ---
 
-## C++: Primeiro Programa
+### TESTE
+```
+<!-- code -->
+<foo ... />
+```
+---
+
+### C++: Primeiro Programa
 
 ```C++
 int main(){
@@ -126,8 +133,7 @@ int main(){
 - Variáveis precisam ser declaradas antes de serem utilizadas
 ---
 
-### C++: Declaração de Variáveis
-#### Sintaxe
+### C++: Sintaxe de Declaração de Variáveis
 ```c++
 tipo_da_variavel nome_da_variavel;
 ```
@@ -136,101 +142,49 @@ tipo_da_variavel nome_da_variavel;
     - `int`: declara um número inteiro
     - `float`: declara um número real
     - `char`: declara **um único** caractere
+---
+
+### C++: Sintaxe de Declaração de Variáveis
 - `nome_da_variavel` deve obedecer às regras:
     1. deve começar com uma letra ou `_` (underline ou underscore)
     2. deve ser composto por letras, dígitos ou `_`
     3. não pode ser uma palavra reservada (p. ex. `if`)
 ---
 
-### Linguagem de Programação
-#### Relação da Disciplina com o Curso
+### C++: Declaração de Variáveis
+#### Exercício
 
-- Para responder esta pergunta, é interessante enumerar as competências
-  e habilidades previstas para os bachareis em CeT
-- Mais informações [Projeto Pedagógico do Curso](https://sigaa.ufrn.br/sigaa/public/curso/ppp.jsf?lc=pt_BR&id=10320810)
+Em um editor de texto, declare variável:
+1. Chamada de `x` para armazenar um inteiro
+2. Chamada de `temp` para armazenar uma temperatura
+3. Para armazenar o resultado de uma média aritmética
+4. Para armazenar o sexo de uma pessoa
+5. Para armazenar se um motor está ligado ou desligado
 ---
 
-### Linguagem de Programação
-#### Competências e Habilidades
+### C++: Valor Inicial de Variáveis
+O que é impresso no seguinte programa?
 
-1. **capacidade de identificar, avaliar e resolver problemas, enfrentar desafios e responder
-a novas demandas da sociedade contemporânea**
-2. **capacidade de comunicação e argumentação em suas múltiplas formas**
-3. **capacidade de atuar em áreas de fronteira e interfaces de diferentes disciplinas e campos de saber**
+```
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int x;
+    cout << "o valor de x e: " << x << endl;
+    return 0;
+}
+```
 ---
 
-### Linguagem de Programação
-#### Competências e Habilidades
+### C++: Inicialização de Variáveis
+- Ao serem declaradas em C++, as variáveis são inicializadas com valores aleatórios (lixo em memória)
+- C++ oferece o recurso de inicializar uma variável ao mesmo tempo em que ela é declarada
+- Sintaxe:
 
-4. **atitude investigativa, de prospecção, de permanente busca e produção do conhecimento**
-5. capacidade de reconhecer especificidades regionais ou locais, contextualizando-as e relacionando-as com a situação global
-6. **atitude ética nas esferas profissional, acadêmica e das relações interpessoais**
----
-
-### Linguagem de Programação
-#### Competências e Habilidades
-
-7. comprometimento com a sustentabilidade nas relações entre ciência, tecnologia, economia, sociedade e ambiente
-8. **capacidade de tomar decisões em cenários de imprecisões e incertezas**
----
-
-### Linguagem de Programação
-#### Competências e Habilidades
-
-Como é possível ver, o curso de Linguagem de Programação (LiP)
-é bem completo quanto ao seu envolvimento com as competências
-e habilidades desejadas de um bacharel em CeT.
-
----
-
-### Apresentação
-- Prof. Dr. Bruno Silva
-- Atendimento:
-    - Via email: bruno.silva@ect.ufrn.br
-    - Via Discord
-    - Horário para a turma: terças e quintas, das 15h às 16h
-- Áreas de interesse:
-    - Processamento de imagens e visão computacional
-    - Inteligência artificial e robótica
----
-
-### Sobre a Disciplina
-- Aulas teóricas: quartas e sextas, de 16:50 às 18:30,
-  via Google Meet
-- Carga horária total: 90 horas
-    - Teoria: 60 horas
-    - Laboratório: 30 horas
-- Metodologia
-    - Aulas expositivas com slides digitais
-    - Apresentação de um tópico de aula seguido por exercícios relacionados
-    - Atividades práticas em laboratório
----
-
-### Laboratórios
-- Professor responsável:
-    - Prof. Dr. Francisco Vidal
-- Horários:
-    - Subturma 2A: Terça, 7:00 às 8:40 
-    - Subturma 2B: Terça, 8:55 às 10:35
-    - Subturma 2C: Quinta, 7:00 às 8:40
-    - Subturma 2D: Quinta, 8:55 às 10:35
----
-
-### Avaliações
-- Avaliação semanal:
-    - Avaliação continuada
-    - Práticas de laboratório envolvendo o conteúdo
-      dado na semana anterior
-- Assiduidade
-    - Presenças serão registradas por chamada oral
-      em todas as aulas
----
-
-### Sobre a Disciplina: Observação Importante
-Regimento Interno/UFRN, Seção III:
-
-- Prevê punições para casos de:
-    - Fraudes (colas)
-    - Perturbação ao andamento normal das atividades
-    - Ofensas a servidores da universidade
+```c++
+tipo_da_variavel nome_da_variavel = valor_inicial;
+```
+- `= é o operador de atribuição
 ---
