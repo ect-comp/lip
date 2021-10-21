@@ -48,13 +48,10 @@ Programando na linguagem C++
 ---
 
 ### TESTE
-
-<script type="text/template">
-```
+<pre><code data-trim data-noescape>
 <foo ... />;
-```
+</code></pre>
 ---
-</script>
 
 ### C++: Primeiro Programa
 
