@@ -159,11 +159,11 @@ Em um editor de texto, declare variável:
 #### Solução
 
 ```
-int x;
-float temp;
-float media;
-char sexo;
-bool ligado;
+1. int x;
+2. float temp;
+3. float media;
+4. char sexo;
+5. bool ligado;
 ```
 ---
 
@@ -186,14 +186,9 @@ int main(){
 ### C++: Inicialização de Variáveis
 - Ao serem declaradas em C++, as variáveis são inicializadas com valores aleatórios (lixo em memória)
 - C++ oferece o recurso de inicializar uma variável ao mesmo tempo em que ela é declarada
-- Sintaxe:
-
-```c++
-tipo_da_variavel nome_da_variavel = valor_inicial;
-```
-- Exemplos:
-    - `float media = 0;` inicializa a `media` com `0`
-    - `char sexo = 'M';` inicializa a `sexo` com `M`
+- Por exemplo:
+    - `float media = 0;` declara e inicializa a `media` com `0`
+    - `char sexo = 'M';` declara e inicializa a `sexo` com `M`
 ---
 
 ## C++: Tipo `char`
@@ -212,13 +207,69 @@ tipo_da_variavel nome_da_variavel = valor_inicial;
 - Todo caractere está presente na tabela ASCII (lê-se "ásqui"):
     - Associa um número inteiro diferente para cada caractere
     - [Imagem com a tabela](http://www.jimprice.com/ascii-0-127.gif)
-- Não é necessário decorar a tabela ASCII, mas algumas informações são importantes:
+---
+
+### C++: Tipo `char`
+- Não se decora a tabela ASCII, mas é importante saber que:
     - O alfabeto maiúsculo está em sequência na tabela, ou seja, se o inteiro
-      correspondente ao caractere `'A'` é igual a `$$x$$`, o correspondente
-      a `'B'` é igual a `$$x+1$$`, `'C'` é `$$x+2$$`, etc.
-    - O mesmo acontece para o alfabeto minúsculo: `'a'` é `$$y$$`, `'b'` é `$$y+1$$`...
-    - O mesmo para os números: `'1'` é `$$z$$`, `'2'` é `$$z+1$$`...
+      correspondente ao caractere `'A'` é igual a `x`, o correspondente
+      a `'B'` é igual a `x+1`, `'C'` é `x+2`, etc.
+    - O mesmo acontece para o alfabeto minúsculo: `'a'` é `y`, `'b'` é `y+1`...
+    - O mesmo para os números: `'1'` é `z`, `'2'` é `z+1`...
     - O alfabeto maiúsculo tem valores menores que os do alfabeto
       minúsculo
 ---
 
+### C++: Entrada de Dados
+- Comando de entrada `cin`: atribui valor lido do teclado
+  às variáveis após o `>>`
+- Também requer a biblioteca `iostream`
+- Exemplo:
+
+```C++
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int x = 0;
+    cout << "digite um valor: ";
+    cin >> x;
+    cout << "o valor digitado foi " << x << endl;
+    return 0;
+}
+```
+---
+
+### Exercício
+Implemente um programa que lê um número inteiro e um
+caractere e imprime o texto
+`O inteiro eh X e o caractere eh Y`
+seguido por uma quebra de linha, sendo X e Y
+o inteiro e o caractere.
+---
+
+### Exercício: Solução
+```
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int num;
+    char carac;
+    cout << "insira um num. inteiro:\n";
+    cin >> num;
+    cout << "insira um caractere:\n";
+    cin >> carac;
+    cout << "O inteiro eh " << num
+         << " e o caractere eh "
+         << carac << endl;
+    return 0;
+}
+```
+---
+
+### Sumário
+- Na aula de hoje, você viu
+    - Estrutura de um programa em C++
+    - Declaração e inicialização de variáveis
+    - Tipos básicos
+    - Comandos de entrada e saída
+---
