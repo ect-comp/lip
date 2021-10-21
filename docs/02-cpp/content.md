@@ -57,7 +57,7 @@ int main(){
     cout << "LiP: programando em C++\n";
     return 0;
 }
-</script></code>
+</code></pre>
 ---
 
 ### C++: Primeiro Programa
