@@ -25,7 +25,7 @@ Esta capacidade será aplicada na resolução de problemas como:
 
 ### Programação: Processo de Compilação
 
-<img src="compilador.png" width=800/>
+<img src="compilador.png" width=600/>
 
 - **Compilação**: transformação de código fonte em um programa
 - **Código fonte**: formato legível por humanos, formado por
@@ -119,7 +119,7 @@ int main(){
 - Nomes dados a endereços de memória do computador
 - Utilizadas para armazenar valores de diferentes tipos
 
-<img src="variaveisr.png" width=800/>
+<img src="variaveis.png" width=600/>
 
 - Variáveis precisam ser declaradas antes de serem utilizadas
 ---
