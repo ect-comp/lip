@@ -47,20 +47,6 @@ Programando na linguagem C++
 
 ---
 
-### TESTE
-```c++
-//nv versao
-#include &lt;iostream&gt;
-
-using namespace std;
-
-int main(){
-    cout << "LiP: programando em C++\n";
-    return 0;
-}
-```
----
-
 ### C++: Primeiro Programa
 
 ```C++
@@ -72,8 +58,8 @@ int main(){
 
 ### C++: Primeiro Programa **Útil** 
 
-```
-#include <iostream>
+```C++
+#include &lt;iostream&gt;
 
 using namespace std;
 
@@ -95,8 +81,8 @@ int main(){
 
 Espaços em branco não alteram o programa:
 
-```cpp
-#include <iostream>
+```C++
+#include &lt;iostream&gt;
 
 using namespace std;
 
@@ -113,7 +99,7 @@ Entretanto, mantenha sempre o seu código indentado
 ### C++: Comentários de Código
 
 ```C++
-#include <iostream>
+#include &lt;iostream&gt;
 
 using namespace std;
 
@@ -169,11 +155,23 @@ Em um editor de texto, declare variável:
 5. Para armazenar se um motor está ligado ou desligado
 ---
 
+### C++: Declaração de Variáveis
+#### Solução
+
+```
+int x;
+float temp;
+float media;
+char sexo;
+bool ligado;
+```
+---
+
 ### C++: Valor Inicial de Variáveis
 O que é impresso no seguinte programa?
 
-```
-#include <iostream>
+```C++
+#include &lt;iostream&gt;
 
 using namespace std;
 
@@ -193,5 +191,34 @@ int main(){
 ```c++
 tipo_da_variavel nome_da_variavel = valor_inicial;
 ```
-- `= é o operador de atribuição
+- Exemplos:
+    - `float media = 0;` inicializa a `media` com `0`
+    - `char sexo = 'M';` inicializa a `sexo` com `M`
 ---
+
+## C++: Tipo `char`
+- Valores devem ser atribuídos com aspas simples: `'`
+- Variáveis `char` armazenam **um único** caractere
+    - Letra: `'a'`, `'e'`, `'Z'`, etc.
+    - Dígito: `'5'`, `'2'`, etc.
+    - Símbolo: `']'`, `'/'`, `';'`, etc.
+- Caracteres especiais:
+    - `'\n'`: quebra de linha
+    - `'\t'`: tabulação horizontal
+    - `'\0'`: delimitador de final de cadeia de caracteres
+---
+
+### C++: Tipo `char`
+- Todo caractere está presente na tabela ASCII (lê-se "ásqui"):
+    - Associa um número inteiro diferente para cada caractere
+    - [Imagem com a tabela](http://www.jimprice.com/ascii-0-127.gif)
+- Não é necessário decorar a tabela ASCII, mas algumas informações são importantes:
+    - O alfabeto maiúsculo está em sequência na tabela, ou seja, se o inteiro
+      correspondente ao caractere `'A'` é igual a `$$x$$`, o correspondente
+      a `'B'` é igual a `$$x+1$$`, `'C'` é `$$x+2$$`, etc.
+    - O mesmo acontece para o alfabeto minúsculo: `'a'` é `$$y$$`, `'b'` é `$$y+1$$`...
+    - O mesmo para os números: `'1'` é `$$z$$`, `'2'` é `$$z+1$$`...
+    - O alfabeto maiúsculo tem valores menores que os do alfabeto
+      minúsculo
+---
+
