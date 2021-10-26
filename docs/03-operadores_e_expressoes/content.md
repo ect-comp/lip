@@ -3,28 +3,29 @@
 --- 
 
 ### Linguagem de Programação
-Aula anterior: variáveis e tipos básicos
-Aula de hoje: operadores e expressões
+- Aula anterior: variáveis e tipos básicos
+- Aula de hoje: operadores e expressões
 ---
 
 ### Operadores
 - Realizam uma determinada __operação__ sobre
   __operandos__
+- Exemplo:
 
 ```C++
 x + y
 ```
-Operador: `+`
-Operandos: `x` e `y`
+- Operador: `+`
+- Operandos: `x` e `y`
 ---
  
 ### Operadores
-- Divididos em grupos:
-    - Operador de atribuição
-    - Operadores aritméticos
-    - Operadores relacionais
-    - Operadores lógicos
-- Cada operador possui uma precedência (quem será computado primeiro)
+Divididos em grupos:
+- Operador de atribuição
+- Operadores aritméticos
+- Operadores relacionais
+- Operadores lógicos
+Cada operador possui uma precedência (quem será computado primeiro)
 ---
 
 ### Expressões
@@ -36,10 +37,10 @@ Operandos: `x` e `y`
 ---
 
 ### Operador de Atribuição
-- Operador `=`
+Operador `=`
 - Atribui um determinado valor a uma variável
 - `x = 0;` lê-se "x recebe zero"
-- Sempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita
+Sempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita
 ---
 
 ### Operador de Atribuição
@@ -62,6 +63,7 @@ int main(){
 - Formam expressões aritméticas
     - Valor resultante é um número
 - Operadores de mesma precedência são avaliados da esquerda para a direita
+
 | Operador | Funcionalidade     | Precedência no Grupo |
 |----------|--------------------|----------------------|
 | ()       | Associar operandos | Primeiro             |
