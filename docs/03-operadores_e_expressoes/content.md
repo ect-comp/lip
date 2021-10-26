@@ -59,6 +59,18 @@ int main(){
 ```
 ---
 
+### Tabela
+
+| Operador | Funcionalidade     | Precedência no Grupo |
+|----------|--------------------|----------------------|
+| ()       | Associar operandos | Primeiro             |
+| +        | Adição             | Último               |
+| -        | Subtração          | Último               |
+| *        | Multiplicação      | Segundo              |
+| /        | Divisão            | Segundo              |
+| %        | Resto              | Segundo              |
+---
+
 ### Operadores Aritméticos
 - Formam expressões aritméticas
     - Valor resultante é um número
