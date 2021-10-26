@@ -61,6 +61,8 @@ int main(){
 
 ### Tabela
 
+<!-- .slide: style="font-size:10px" -->  
+
 | Operador | Funcionalidade     | Precedência no Grupo |
 |----------|--------------------|----------------------|
 | ()       | Associar operandos | Primeiro             |
