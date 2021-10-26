@@ -1,16 +1,14 @@
 ### Linguagem de Programação
 #### Operadores e Expressões
-
---- 
+---
 
 ### Linguagem de Programação
 - Aula anterior: variáveis e tipos básicos
 - Aula de hoje: operadores e expressões
 ---
 
-### Operadores
-- Realizam uma determinada __operação__ sobre
-  __operandos__
+### Operadores e Operandos
+- Compõem uma _expressão_
 - Exemplo:
 
 ```C++
@@ -21,13 +19,12 @@ x + y
 ---
  
 ### Operadores
-Divididos em grupos:
+Os operadores possuem uma precedência (quem será computado primeiro)
+e estão divididos em grupos:
 - Operador de atribuição
 - Operadores aritméticos
 - Operadores relacionais
 - Operadores lógicos
-<br>
-Cada operador possui uma precedência (quem será computado primeiro)
 ---
 
 ### Expressões
@@ -42,7 +39,7 @@ Cada operador possui uma precedência (quem será computado primeiro)
 Operador `=` ("recebe")
 - Atribui um determinado valor a uma variável
 - `x = 0;` lê-se "x recebe zero"
-Sempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita
+- Sempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita
 ---
 
 ### Operador de Atribuição
@@ -64,8 +61,7 @@ int main(){
 ### Operadores Aritméticos
 <!-- .slide: class="small_table" -->
 
-- Formam expressões aritméticas
-    - Valor resultante é um número
+- Formam expressões aritméticas: valor resultante é um número
 - Operadores de mesma precedência são avaliados da esquerda para a direita
 
 | Operador | Funcionalidade     | Precedência no Grupo |
@@ -105,6 +101,7 @@ O programa compila? Qual o valor impresso?
 <!-- .slide: class="small_table" -->
 
 Computam a expressão, aplicam o operador aritmético e atribuem o seu valor à variável à esquerda do op. de atribuição
+
 | Operador | Expressão | Expressão Equivalente |
 |----------|-----------|-----------------------|
 | +=       | x += y  | x = x + y         |
@@ -124,8 +121,8 @@ Qual o valor final das variáveis a seguir, para `x = 1, y = 2, z = 3`?
 ### Operações de Potência e Raíz Quadrada
 - Em C++, não existem operadores para potência e raíz quadrada
 - Estas operações são realizadas por chamadas a funções
-    - `pow(b,e)` para potência $$b^e$$
-    - `sqrt(x)` para $$\sqrt{x}$$
+    - `pow(B,E)` para potência (`B` elevado a `E`)
+    - `sqrt(x)` para raíz quadrada de `x`
 - Ambas as funções estão na biblioteca `cmath`
 ```C++
 #include &lt;cmath&gt;
@@ -143,7 +140,9 @@ Operadores unários (só precisam de um operando)
 | ++ pos-fixado | x++       | x = x + 1             |
 | -- pre-fixado | --x       | x = x - 1             |
 | -- pos-fixado | x--       | x = x - 1             |
+---
 
+### Operador de Incremento/Decremento
 - Precedência: mais alta do que a multiplicação/divisão/resto
 - Diferença entre `++x` e `x++` (o mesmo para `--`):
     - O op. pré-fixado altera o valor primeiro e usa o novo valor na expressão
@@ -152,7 +151,7 @@ Operadores unários (só precisam de um operando)
     1. `x = ++y;`, `x` recebe 3 e `y` fica igual a 3
     2. `x = y++;`, `x` recebe 2 e `y` fica igual a 3
     3. `x = y++*4;`
----                                                                      
+---
 
 ### Expressões Lógicas
 - Expressões que possuem como resultado os valores 0 (falso) ou 1 (verdadeiro)
@@ -211,23 +210,23 @@ Possuem precedência mais baixa do que os operadores relacionais (exceto a nega�
 
 Negação: inverte o valor lógico do operando (op. unário)
 
-| x   | !x |
-|-----|----|
-| 0   | 1  |
-| 1   | 0  |
+| x | !x |
+|---|----|
+| 0 | 1  |
+| 1 | 0  |
 ---
 
-### Operador Lógico de Disjunção (Ou Lógico)
+### Operador Lógico de Disjunção (OU Lógico)
 #### Tabela Verdade
 <!-- .slide: class="small_table" -->
 
 Disjunção: falso quando os dois operandos são falsos
 
-| x | y | x || y |
+| x | y | x && y |
 |---|---|--------|
 | 0 | 0 | 0      |
-| 0 | 1 | 1      |
-| 1 | 0 | 1      |
+| 0 | 1 | 0      |
+| 1 | 0 | 0      |
 | 1 | 1 | 1      |
 ---
 
@@ -261,20 +260,19 @@ Exemplos (para `x = 1, y = 2, z = 3`):
 4. Operadores relacionais
 5. Operadores lógicos
 6. Atribuição
+
 Exemplo:
 ```C++
 int i = 1, j = 2, k = 3;
 i < j && 2 >= k
 ```
-Sempre que houver dúvida: utilizar parênteses
 ---
 
 ### Verificando o Valor de Expressões Lógicas
 
-- É possível verificar o valor de expressões lógicas
-  maiores em programas
-- Para isto, utilize o ```cout``` com a expressão
-  lógica inteira entre parênteses
+- Utilize o ```cout``` com a expressão
+  lógica inteira entre parênteses para
+  verificar o seu valor em programas
 - Exemplo:
 
 ```C++
@@ -299,14 +297,12 @@ char ch;
 int i;
 float f;
 
-...
-
 result = (ch/i) + (f*i); 
 ```
 - `ch/i` é uma expressão com tipo `int`
 - `f*i` é uma expressão com tipo `float`
 - `(ch/i) + (f*i)` é uma expressão com tipo `float`
-- `result` tem portanto tipo `double`
+- `result` tem portanto tipo `float`
 ---
 
 ### Conversão de Tipos II
