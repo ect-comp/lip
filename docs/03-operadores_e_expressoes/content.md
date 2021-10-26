@@ -1,5 +1,6 @@
 ### Linguagem de Programação
 #### Operadores e Expressões
+
 --- 
 
 ### Linguagem de Programação
@@ -25,6 +26,7 @@ Divididos em grupos:
 - Operadores aritméticos
 - Operadores relacionais
 - Operadores lógicos
+<br>
 Cada operador possui uma precedência (quem será computado primeiro)
 ---
 
@@ -37,7 +39,7 @@ Cada operador possui uma precedência (quem será computado primeiro)
 ---
 
 ### Operador de Atribuição
-Operador `=`
+Operador `=` ("recebe")
 - Atribui um determinado valor a uma variável
 - `x = 0;` lê-se "x recebe zero"
 Sempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita
@@ -59,21 +61,9 @@ int main(){
 ```
 ---
 
-### Tabela
-
+### Operadores Aritméticos
 <!-- .slide: class="small_table" -->
 
-| Operador | Funcionalidade     | Precedência no Grupo |
-|----------|--------------------|----------------------|
-| ()       | Associar operandos | Primeiro             |
-| +        | Adição             | Último               |
-| -        | Subtração          | Último               |
-| *        | Multiplicação      | Segundo              |
-| /        | Divisão            | Segundo              |
-| %        | Resto              | Segundo              |
----
-
-### Operadores Aritméticos
 - Formam expressões aritméticas
     - Valor resultante é um número
 - Operadores de mesma precedência são avaliados da esquerda para a direita
@@ -86,6 +76,7 @@ int main(){
 | *        | Multiplicação      | Segundo              |
 | /        | Divisão            | Segundo              |
 | %        | Resto              | Segundo              |
+---
 
 ### Expressões Aritméticas
 Exemplos:
@@ -111,6 +102,8 @@ O programa compila? Qual o valor impresso?
 ---
 
 ### Operadores Aritméticos de Atribuição
+<!-- .slide: class="small_table" -->
+
 Computam a expressão, aplicam o operador aritmético e atribuem o seu valor à variável à esquerda do op. de atribuição
 | Operador | Expressão | Expressão Equivalente |
 |----------|-----------|-----------------------|
@@ -140,6 +133,8 @@ Qual o valor final das variáveis a seguir, para `x = 1, y = 2, z = 3`?
 ---
 
 ### Operador de Incremento/Decremento
+<!-- .slide: class="small_table" -->
+
 Operadores unários (só precisam de um operando)
 
 | Operador      | Expressao | Expressao Equivalente |
@@ -174,6 +169,8 @@ Operadores unários (só precisam de um operando)
 ---
 
 ### Operadores Relacionais
+<!-- .slide: class="small_table" -->
+
 Possuem precedência mais alta do que o operador de atribuição e mais baixa do que os operadores aritméticos
 
 | Operador | Funcionalidade | Precedência no grupo |
@@ -197,6 +194,8 @@ Exemplos:
 ---
 
 ### Operadores Lógicos
+<!-- .slide: class="small_table" -->
+
 Possuem precedência mais baixa do que os operadores relacionais (exceto a negação, que tem precedência igual ao op. de incremento)
 
 | Operador | Funcionalidade        | Precedencia no grupo |
@@ -208,6 +207,7 @@ Possuem precedência mais baixa do que os operadores relacionais (exceto a nega�
 
 ### Operador Lógico de Negação (Não Lógico)
 #### Tabela Verdade
+<!-- .slide: class="small_table" -->
 
 Negação: inverte o valor lógico do operando (op. unário)
 
@@ -219,6 +219,7 @@ Negação: inverte o valor lógico do operando (op. unário)
 
 ### Operador Lógico de Disjunção (Ou Lógico)
 #### Tabela Verdade
+<!-- .slide: class="small_table" -->
 
 Disjunção: falso quando os dois operandos são falsos
 
@@ -232,6 +233,7 @@ Disjunção: falso quando os dois operandos são falsos
 
 ### Operador Lógico de Conjunção (E Lógico)
 #### Tabela Verdade
+<!-- .slide: class="small_table" -->
 
 Conjunção: verdadeiro quando os dois operandos são verdadeiros
 
@@ -262,7 +264,6 @@ Exemplos (para `x = 1, y = 2, z = 3`):
 Exemplo:
 ```C++
 int i = 1, j = 2, k = 3;
-
 i < j && 2 >= k
 ```
 Sempre que houver dúvida: utilizar parênteses
@@ -289,7 +290,9 @@ int main(){
 
 ### Conversão de Tipos I
 Em C++, o tipo do resultado de uma expressão aritmética é sempre convertido no tipo do operando com maior precisão (com maior capacidade de armazenamento)
-<br>
+---
+
+### Conversão de Tipos I
 Exemplo:
 ```C++
 char ch;
@@ -308,7 +311,9 @@ result = (ch/i) + (f*i);
 
 ### Conversão de Tipos II
 Em C++, o tipo da expressão do lado direito de uma atribuição é convertido no tipo do lado esquerdo apenas quando este tem menor precisão
-<br>
+---
+
+### Conversão de Tipos II
 Exemplos:
 ```C++
 float g = 9.8;
@@ -324,8 +329,10 @@ float media = (x + y + z)/3;
 
 ### Conversão de Tipos III
 Em C++, é possível forçar uma expressão a ser interpretada como um tipo informado
-<br>
-Operador de molde ou *typecast*. Sintaxe: 
+---
+
+### Conversão de Tipos III
+Sintaxe do *typecast*: 
 ```C++
 novo_tipo(expressao);
 ```
@@ -357,7 +364,7 @@ int main(){
     char car;
     cout << "insira um caractere:\n";
     cin >> car;
-    cout << "Numero: " << int(car) << endl;
+    cout << "Num. ASCII: " << int(car) << endl;
     return 0;
 }
 ```
@@ -393,11 +400,9 @@ deve ser impresso.
 Checklist da aula:
 - Operador de atribuição
 - Operadores aritméticos
-- Operadores aritméticos de atribuição
-- Operadores de incremento
 - Operadores lógicos
 - Operadores relacionais
-- Operador de molde (\textit{typecast})
+- Operador de *typecast*
 - Expressões aritméticas e lógicas
 - Ordem de precedência e avaliação de expressões
 ---
