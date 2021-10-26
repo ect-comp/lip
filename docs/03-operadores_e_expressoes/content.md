@@ -72,7 +72,6 @@ int main(){
 | *        | Multiplicação      | Segundo              |
 | /        | Divisão            | Segundo              |
 | %        | Resto              | Segundo              |
----
 
 ### Expressões Aritméticas
 Exemplos:
