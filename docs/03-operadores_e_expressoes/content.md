@@ -222,12 +222,12 @@ Negação: inverte o valor lógico do operando (op. unário)
 
 Disjunção: falso quando os dois operandos são falsos
 
-| x | y | x && y |
-|---|---|--------|
-| 0 | 0 | 0      |
-| 0 | 1 | 0      |
-| 1 | 0 | 0      |
-| 1 | 1 | 1      |
+| x | y | x \|\| y |
+|---|---|----------|
+| 0 | 0 | 0        |
+| 0 | 1 | 0        |
+| 1 | 0 | 0        |
+| 1 | 1 | 1        |
 ---
 
 ### Operador Lógico de Conjunção (E Lógico)
@@ -270,10 +270,9 @@ i < j && 2 >= k
 
 ### Verificando o Valor de Expressões Lógicas
 
-- Utilize o ```cout``` com a expressão
-  lógica inteira entre parênteses para
-  verificar o seu valor em programas
-- Exemplo:
+Utilize o ```cout``` com a expressão
+lógica inteira entre parênteses para
+verificar o seu valor em programas:
 
 ```C++
 int main(){
