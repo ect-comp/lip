@@ -61,7 +61,7 @@ int main(){
 
 ### Tabela
 
-<!-- .table: style="font-size:10px" -->  
+<!-- .slide: class="small_table" -->
 
 | Operador | Funcionalidade     | Precedência no Grupo |
 |----------|--------------------|----------------------|
