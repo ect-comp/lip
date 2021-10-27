@@ -186,10 +186,9 @@ Possuem precedência mais alta do que o operador de atribuição e mais baixa do
 #### Com Operadores Relacionais
 Exemplos:
 1. `1 > 2` 
-2. `2 != 2`
+2. `'a' < 'b'`
 3. `x == x`
-4. `x = 5 > 4 == 2 > 1`
-5. `x = 4*3 > 5+1`
+4. `x = 5*2 > 4 == 2+3 > 1`
 ---
 
 ### Operadores Lógicos
@@ -250,6 +249,35 @@ Exemplos (para `x = 1, y = 2, z = 3`):
 1. `y-x == false`
 2. `x > 0 && x < z+10`
 3. `z >= y || true`
+4. `5 > 4 > 3`
+---
+
+### Expressões Lógicas
+#### Exemplo de Expressão Mal Construída
+A expressão abaixo é sintaticamente correta
+mas está incorreta. O que há de errado com ela?
+Como consertar?
+
+```C++
+int i = 3, j = 2, k = 1;
+bool expr;
+
+expr = (i > j > k);
+```
+
+---
+
+### Expressões Lógicas
+#### Exemplo de Expressão Mal Construída
+Forma correta da expressão anterior:
+
+```C++
+int i = 3, j = 2, k = 1;
+bool expr;
+
+expr = (i > j  && j > k);
+```
+
 ---
 
 ### Precedência
@@ -260,12 +288,6 @@ Exemplos (para `x = 1, y = 2, z = 3`):
 4. Operadores relacionais
 5. Operadores lógicos
 6. Atribuição
-
-Exemplo:
-```C++
-int i = 1, j = 2, k = 3;
-i < j && 2 >= k
-```
 ---
 
 ### Verificando o Valor de Expressões Lógicas
