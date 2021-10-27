@@ -249,14 +249,14 @@ Exemplos (para `x = 1, y = 2, z = 3`):
 1. `y-x == false`
 2. `x > 0 && x < z+10`
 3. `z >= y || true`
-4. `5 > 4 > 3`
+4. `x != 1 || x != 2`
 ---
 
 ### Expressões Lógicas
 #### Exemplo de Expressão Mal Construída
 A expressão abaixo é sintaticamente correta
-mas está incorreta. O que há de errado com ela?
-Como consertar?
+mas é logicamente incorreta.
+O que há de errado com ela? Como consertar?
 
 ```C++
 int i = 3, j = 2, k = 1;
