@@ -79,7 +79,8 @@ if(x = 0){ //ha um problema aqui
 ### Comando `if`
 
 Exercício: faça um programa que lê uma letra digitada pelo usuário
-e imprime a frase `"Vogal digitada"`  caso o usuário digite uma vogal
+e imprime a frase `"Vogal minuscula digitada"`  caso o usuário digite uma vogal
+minúscula
 ---
 
 ### Comando `if`
@@ -88,9 +89,9 @@ e imprime a frase `"Vogal digitada"`  caso o usuário digite uma vogal
 int main(){
     char c;
     cin >> c;
-    if(c == `a' || c == `e' || c == `i' ||
-       c == `o' || c == `u'){
-        cout << "Vogal digitada" << endl;
+    if(c == 'a' || c == 'e' || c == 'i' ||
+       c == 'o' || c == 'u'){
+        cout << "Vogal minuscula digitada" << endl;
     }
     return 0;
 }
@@ -144,8 +145,8 @@ int main(){
 ### Comando `if-else`
 
 Exercício: faça um programa que lê uma letra digitada pelo usuário
-e imprime a frase `"Vogal minúscula digitada"`  caso o usuário digite uma vogal
-minúscula ou a frase `"Consoante minúscula digitada"` caso o usuário digite uma consoante minúscula
+e imprime a frase `"Vogal minuscula digitada"`  caso o usuário digite uma vogal
+minúscula ou a frase `"Consoante minuscula digitada"` caso o usuário digite uma consoante minúscula
 ---
 
 ### Comando `if-else`
@@ -156,17 +157,17 @@ int main(){
     cin >> c;
     if(c == 'a' || c == 'e' || c == 'i' ||
        c == 'o' || c == 'u'){
-        cout << "Vogal digitada" << endl;
+        cout << "Vogal minuscula digitada" << endl;
     }
     else{
-        cout << "Consoante digitada" << endl;
+        cout << "Consoante minuscula digitada" << endl;
     }
     return 0;
 }
 ```
 ---
 
-### Encadeamento de \texttt{if-else}
+### Encadeamento de `if-else`
 Sintaxe:
 
 ```C++
@@ -196,13 +197,14 @@ else{
 ---
 
 ### Encadeamento de `if-else`
-Exercício: faça um programa que lê a nota de um aluno e imprime a frase
-`"Aprovado"`,  caso a nota seja maior ou igual a `5.0`,
-`"Em recuperacao"`,  caso a nota seja maior ou igual a `3.0` e
-menor do que `5.0` e `"Reprovado"`,  caso a nota seja menor do que `3.0`
+Exercício: faça um programa que lê a nota de um aluno e imprime:
+- `"Aprovado"`, caso a nota seja maior ou igual a `5.0`
+- `"Em recuperacao"`, caso a nota seja maior ou igual a `3.0` e
+menor do que `5.0`
+- `"Reprovado"`, caso a nota seja menor do que `3.0`
 ---
 
-### Encadeamento de \texttt{if-else}
+### Encadeamento de `if-else`
 #### Exercício: Solução
 ```C++
 int main(){
@@ -250,9 +252,7 @@ switch(expressao){
 - Comando de seleção de múltipla escolha: alternativa ao uso de vários `if-else`
 - Usado somente em situações específicas
     - A expressão é qualquer expressão em C++ que resulte em um inteiro ou caractere
-    - Caso a expressão seja igual ao da `constante1`, o primeiro bloco é executado e assim sucessivamente
-- Comando `break` (opcional): usado para evitar que os blocos
-  subsequentes sejam também executados (força que as condições sejam mutuamente exclusivas)
+- Comando `break` (opcional): evita que blocos subsequentes sejam também executados (força que as condições sejam mutuamente exclusivas)
 - Cláusula `default` (opcional): executada quando a expressão não é igual a nenhuma das constantes
 ---
 
@@ -280,7 +280,7 @@ int main(){
 ---
 
 ### Comando `switch-case`
-- Exercício: utilizando o `switch-case`, faça um programa que lê uma letra
+Exercício: utilizando o `switch-case`, faça um programa que lê uma letra
 digitada pelo usuário e imprime a frase `"Vogal digitada"`  caso o usuário
 digite uma vogal ou a `"Consoante digitada"` caso o usuário digite uma
 consoante
@@ -294,11 +294,11 @@ int main(){
     char c;
     cin >> c;
     switch(c){
-        case `a':
-        case `e':
-        case `i':
-        case `o':
-        case `u':
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case u':
             cout << "Vogal digitada" << endl;
             break;
         default:
@@ -309,7 +309,7 @@ int main(){
 ```
 ---
 
-### Operador Ternário: `? :`
+### Operador Ternário `? :`
 Sintaxe:
 ```C++
 expr1 ? expr2 : expr3;  
@@ -317,11 +317,12 @@ expr1 ? expr2 : expr3;
 
 - Como o nome sugere, necessita de três operandos `expr1`, `expr2` e `expr3`
     - `expr1` é avaliada
-    - se `expr1` for verdadeira, `expr2` é avaliada e o seu resultado é o resultado do operador ternário
-    - se `expr1` for falsa, `expr3` é avaliada e o seu resultado é o resultado do operador ternário
+    - se `expr1` for verdadeira, `expr2` é calculada 
+    - se `expr1` for falsa, `expr3` é calculada
+- O resultado calculado é o resultado do operador ternário
 ---
 
-### Operador Ternário: `? :`
+### Operador Ternário `? :`
 Exemplo: programa que atribui à `y`:
 - O valor 1  se `x` for maior ou igual a zero
 - O valor -1  se `x` for menor que zero
@@ -337,7 +338,7 @@ int main(){
 ```
 ---
 
-### Operador Ternário: `? :`
+### Operador Ternário `? :`
 Exercício: utilizando o `? :`, faça um programa que lê dois números
 e imprime qual é o maior dos dois
 ---
@@ -358,12 +359,17 @@ int main(){
 ### Comandos de Seleção
 `Dicas Gerais`
 - Todo `switch-case` pode ser feito com `if-else`, mas não o contrário
--  `switch-case` só pode ser utilizado quando:
-    - A expressão retorna um inteiro ou caractere
-    - Todos os valores possíveis que a expressão pode assumir são conhecidos
-- Caso esteja lidando com intervalos, o `switch-case` não funciona
 - Operador ternário: utilizado em casos simples de  `if-else`
 - No final das contas:  `if-else` é mais genérico e portanto, mais indicado
+para uso
+---
+
+### Exercício: Pré-Laboratório
+
+Exercício de pré-laboratório:
+- Disponível no Sistema LoP
+- Conta como parte da nota do lab. 2
+- Prazo: 23:59 da próxima segunda (01/11)
 ---
 
 ### Sumário

@@ -28,4 +28,4 @@ Este diretório contém os slides das aulas do semestre 2021.2
 ## [29/10 - Comandos de Seleção](./04-comandos_selecao/)
 - Comando `if` e `if-else`
 - Comando `switch`
-- Operador ternário ` ? :`
+- Operador ternário
