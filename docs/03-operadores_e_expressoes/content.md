@@ -79,7 +79,7 @@ Exemplos:
 1. `1+2*3`
 2. `1*2+3`
 3. `(1+2)*3`
-4. `1*2\%3`
+4. `1*2%3`
 5. `((1*2)+3)*2`
 ---
 
@@ -115,7 +115,7 @@ Computam a expressão, aplicam o operador aritmético e atribuem o seu valor à 
 Qual o valor final das variáveis a seguir, para `x = 1, y = 2, z = 3`?
 1. `x += 2*2;`
 2. `x += y -= z;`
-3. `z \%= y \%= x;`
+3. `z %= y %= x;`
 ---
 
 ### Operações de Potência e Raíz Quadrada
@@ -224,8 +224,8 @@ Disjunção: falso quando os dois operandos são falsos
 | x | y | x \|\| y |
 |---|---|----------|
 | 0 | 0 | 0        |
-| 0 | 1 | 0        |
-| 1 | 0 | 0        |
+| 0 | 1 | 1        |
+| 1 | 0 | 1        |
 | 1 | 1 | 1        |
 ---
 
