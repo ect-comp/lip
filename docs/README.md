@@ -29,3 +29,7 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Comando `if` e `if-else`
 - Comando `switch`
 - Operador ternário
+
+## [03/11 - Comandos de Repetição I](./05-comando_repeticao_for/)
+- Comando de repetição `for`
+- Exercícios
