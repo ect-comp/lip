@@ -62,8 +62,7 @@ Ordem de execução:
 2. A expressão de condição é avaliada:
     - Caso seja verdadeira: o bloco de comandos é executado
     - Caso seja falsa: o laço é encerrado
-3. A expressão de incremento é executada
-4. O passo 2 é executado
+3. A expressão de incremento é executada e volta para o passo 2
 ---
 
 ### Comando  `for`
@@ -99,7 +98,7 @@ int main(){
 
 ### Programação e Automatização de Tarefas
 
-<img src="quadrinho_nerd.png" width=600/>
+<img src="quadrinho_nerd.jpg" width=600/>
 
 Aprender programação é aprender a automatizar tarefas
 ---
@@ -190,6 +189,8 @@ Obviamente, há outras formas de se implementar este programa
 ---
 
 ### Comando `for`
+<!-- .slide: class="small_table" -->
+
 - Exercício 3: implemente um programa que imprime na tela em forma de tabela
 as seguintes contagens
     - De 1 a 100
