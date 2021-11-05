@@ -17,9 +17,9 @@
 - Também chamados de laços ou *loops*
 - Dois tipos:
     - Comando de repetição contado: o `for` repete instruções
-      por um determinado número de vezes
+      por um determinado número de vezes (aula anterior)
     - Comando de repetição condicional: o `while` repete instruções
-      enquanto uma condição é verdadeira (próxima aula)
+      enquanto uma condição é verdadeira
 ---
 
 ### Comandos de Repetição
@@ -95,7 +95,7 @@ int main(){
 #### Diferenças entre `while` e `for`
 - O comando `while` é apropriado para repetição condicional
     - É possível utilizá-lo para repetição contada, embora
-      seja mais propício a erros
+      isto seja mais propenso a erros
     - Diversas expressões lógicas podem ser usadas para o mesmo efeito
 - O comando `for` é apropriado para repetição contada
     - É possível utilizá-lo para repetição condicional, embora
@@ -191,10 +191,8 @@ int main(){
 ### Comandos `break` e `continue`
 - Existem dois comandos que podem ser utilizados
   dentro do escopo de laços `for`, `while` e `do-while`
-    - Comando `break`: utilizado para encerrar o laço em que o comando
-                       `break` se encontra
-    - Comando `continue`: utilizado para ignorar a iteração atual
-                          do laço e forçar a próxima iteração
+    - Comando `break`: utilizado para encerrar o laço em que o comando `break` se encontra
+    - Comando `continue`: utilizado para ignorar a iteração atual do laço e forçar a próxima iteração
 - No geral, há alternativas que tornam ambos os comandos opcionais
 ---
 
@@ -325,8 +323,8 @@ int main(){
         anos++;
     }
     cout << "A populacao do pais B ultrapassa
-             a do pais A em " << anos
-                              << " anos.\n";
+             a do pais A em "
+         << anos << " anos.\n";
     
     return 0;
 }
