@@ -33,3 +33,9 @@ Este diretório contém os slides das aulas do semestre 2021.2
 ## [03/11 - Comandos de Repetição I](./05-comando_repeticao_for/)
 - Comando de repetição `for`
 - Exercícios
+
+## [05/11 - Comandos de Repetição II](./06-comando_repeticao_while/)
+- Comando de repetição `while`
+- Comando de repetição `do.. while`
+- Comandos `break` e `continue`
+- Exercícios
