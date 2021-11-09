@@ -82,11 +82,11 @@ cos(x) = \sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n)!}x^{2n}
 ---
 
 ### Implementação de Funções
-> Linguagens de programação estruturadas oferecem
-> uma sintaxe para implementação de funções
+Linguagens de programação estruturadas oferecem
+uma sintaxe para implementação de funções
 
 Além da sintaxe, é preciso saber:
-1. As entradas necessárias do subprograma (_parâmetros_ ou argumentos da função)
+1. As entradas do subprograma (_parâmetros_ da função)
 2. Como o subprograma deve operar (código da função)
 3. O que o subprograma deve computar (saída da função)
 ---
@@ -127,10 +127,10 @@ Sintaxe:
 ```
 tipo_da_funcao nome_da_funcao(lista de parametros);
 ```
-- `lista de parametros` são variáveis das quais a função **depende** para 
-  computar o seu retorno
-    - Contém pares tipo/nome para cada parâmetro, sendo cada
-      par separado por vírgula
+- _Parâmetros_ (ou argumentos) são variáveis das quais a
+  função **depende** para computar o seu retorno
+- A `lista de parametros` contém pares tipo/nome para cada
+  parâmetro, sendo cada par separado por vírgula
 ---
 
 ### Assinaturas de Funções
@@ -139,7 +139,7 @@ Escrever assinaturas para as funções abaixo:
 1. `sqrt`: raíz quadrada de um número real
 2. `pow`: eleva uma base a uma potência
 3. `rand`: gera um número aleatório
-4. Função que converte um número no caractere da tabela ASCII correspondente
+4. Função que converte um número ASCII num caractere
 5. Função que retorna verdadeiro caso o número seja primo e falso caso contrário
 ---
 
@@ -149,14 +149,15 @@ Escrever assinaturas para as funções abaixo:
 1. float sqrt(float x);
 2. float pow(float b, float e);
 3. int rand();
-char converte_caractere(int cod);
-bool eh_primo(int num);
+4. char converte_caractere(int cod);
+5. bool eh_primo(int num);
 ```
 ---
 
 ### Assinaturas de Funções
-> A assinatura de uma função define uma relação entre
-> suas entradas e sua saída
+A assinatura de uma função define uma relação entre
+suas entradas e sua saída
+
 - Nos parâmetros da função podemos perceber _as suas entradas_
 - No tipo de retorno da função podemos perceber _a sua saída_
 - Observe que:
@@ -251,13 +252,14 @@ float converte_temp(float c){
 ---
 
 ### Função `main`
-Neste ponto da disciplina, você deve ser capaz de
-entender o porquê de todo programa
+Motivo pelo qual todo programa deve conter
 ter `int main()` e `return 0`:
 
 > Todo programa em C++ deve obrigatoriamente
 > conter uma função chamada `main` que retorna
-> um número inteiro
+> um número inteiro.
+> Assim, o sistema operacional (Windows, Linux, etc.)
+> sabe a função a ser chamada para ele executar o programa.
 ---
 
 ### Programa com Função
