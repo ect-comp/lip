@@ -64,6 +64,7 @@ int main(){
     - Você enquanto programador foi _usuário de funções_
       implementadas por outro programador
     - O seu programa continha _chamadas_ de funções
+      (_programa usuário_)
 - A chamada de uma função funciona exatamente como uma variável
     - Contém um valor que pode ser usado em expressões
 ---
@@ -81,8 +82,10 @@ cos(x) = \sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n)!}x^{2n}
 ---
 
 ### Implementação de Funções
-- Linguagens de programação estruturadas oferecem uma sintaxe para implementação de funções
-- Entretanto, além da sintaxe, é preciso saber:
+> Linguagens de programação estruturadas oferecem
+> uma sintaxe para implementação de funções
+
+Além da sintaxe, é preciso saber:
 1. As entradas necessárias do subprograma (_parâmetros_ ou argumentos da função)
 2. Como o subprograma deve operar (código da função)
 3. O que o subprograma deve computar (saída da função)
@@ -100,49 +103,65 @@ tipo_da_funcao nome_da_funcao(lista de parametros);
 ```
 - Também chamadas de cabeçalhos ou protótipos da função
 - Devem estar antes da função `main`
+---
+
+### Assinaturas de Funções
+Sintaxe:
+```
+tipo_da_funcao nome_da_funcao(lista de parametros);
+```
 - `tipo_da_funcao` é o tipo do valor computado pela função:
   `int, char, float, bool` ou o novo tipo `void`
+---
+
+### Assinaturas de Funções
+Sintaxe:
+```
+tipo_da_funcao nome_da_funcao(lista de parametros);
+```
 - `nome_da_funcao` segue as mesmas regras que usamos para nomear variáveis
-- `lista de parametros` são variáveis das quais a função **depende** para computar o seu retorno
-    - Devem ser declaradas com o tipo e nome de cada parâmetro, sendo cada
-      parâmetro separado por vírgula
+---
+
+### Assinaturas de Funções
+Sintaxe:
+```
+tipo_da_funcao nome_da_funcao(lista de parametros);
+```
+- `lista de parametros` são variáveis das quais a função **depende** para 
+  computar o seu retorno
+    - Contém pares tipo/nome para cada parâmetro, sendo cada
+      par separado por vírgula
 ---
 
 ### Assinaturas de Funções
 #### Exercício
 Escrever assinaturas para as funções abaixo:
-1. `sqrt`
-2. `sin`
-3. `pow`
-4. `rand`
-5. Função que converte temperatura em graus Celsius para Fahrenheit
-6. Função que converte um número no caractere da tabela ASCII correspondente
-7. Função que retorna o menor dentre três números reais
-8. Função que retorna verdadeiro caso o número seja primo e falso caso contrário
+1. `sqrt`: raíz quadrada de um número real
+2. `pow`: eleva uma base a uma potência
+3. `rand`: gera um número aleatório
+4. Função que converte um número no caractere da tabela ASCII correspondente
+5. Função que retorna verdadeiro caso o número seja primo e falso caso contrário
 ---
 
 ### Assinaturas de Funções
 #### Exercício: Solução
 ```
-float sqrt(float x);
-float sin(float x);
-float pow(float b, float e);
-int rand();
-float converte_temp(float c);
+1. float sqrt(float x);
+2. float pow(float b, float e);
+3. int rand();
 char converte_caractere(int cod);
-float menor(float a, float b, float c);
 bool eh_primo(int num);
 ```
 ---
 
 ### Assinaturas de Funções
-- A assinatura de uma função define uma relação entre suas entradas e sua saída
-- Entrada:
-    - Parâmetros da função
-- Saída:
-    - Tipo da função
-- Observações:
+> A assinatura de uma função define uma relação entre
+> suas entradas e sua saída
+- Nos parâmetros da função podemos perceber _as suas entradas_
+- No tipo de retorno da função podemos perceber _a sua saída_
+- Observe que:
     - Algumas funções não necessitam de entrada
+    - Algumas funções não retornam nada (próxima aula)
     - É possível utilizar parâmetros da função para armazenar saída (próximas aulas)
 ---
 
@@ -153,7 +172,7 @@ tipo_da_funcao nome_da_funcao(lista de parametros){
     corpo da funcao
 }
 ```
-- Uma função é definida quando programamos o seu comportamento com instruções válidas (`corpo da funcao`)
+- Uma função é definida quando programamos o seu comportamento com instruções válidas
 - A definição de uma função deve vir após a função `main`
 ---
 
@@ -180,7 +199,27 @@ float converte_temp(float c){
 ---
 
 ### Definição de Funções
-- A lista de parâmetros define variáveis locais (visíveis somente dentro da função)
+Exemplo:
+Programa completo com função que converte temperatura em Celsius para Fahrenheit:
+```C++
+float converte_temp(float c);
+int main(){
+    float tc;
+
+    cout << "Insira a temperatura em Celsius:\n";
+    cin >> tc;
+    cout << "Temperatura em Fahrenheit: " << converte_temp(tc) << endl;
+    return 0;
+}
+float converte_temp(float c){
+    return 1.8*c + 32;
+}
+```
+---
+
+### Definição de Funções
+- A lista de parâmetros define variáveis locais (existentes
+  somente dentro da função)
 - Qualquer instrução é permitida no corpo da função, inclusive
   chamadas a outras funções (ou a ela mesma)
 - Comando `return`:
@@ -214,48 +253,12 @@ float converte_temp(float c){
 ### Função `main`
 Neste ponto da disciplina, você deve ser capaz de
 entender o porquê de todo programa
-ter `int main()` e `return 0` :)
----
+ter `int main()` e `return 0`:
 
-<!--
-### Execução de Funções
-#### Exercício
-Depure o código a seguir para vários valores de `x`:
-```C++
-int funcao(int x, int y);
-int main(){
-    int n1, n2;
-    cin >> n1 >> n2;
-
-    cout << funcao(n1, n2) << endl;
-    return 0;
-}
-int funcao(int x, int y){
-    if(x < y){
-        return x;
-    }
-    else{
-        return y;
-    }
-}
-```
+> Todo programa em C++ deve obrigatoriamente
+> conter uma função chamada `main` que retorna
+> um número inteiro
 ---
-
-### Programas com Funções
-#### Exercício
-Escrever programas completos para:
-1. Ler um caractere digitado pelo usuário e convertê-lo no número de
-   acordo com a tabela ASCII, utilizando função.
-   Após chamar a função, o número resultante deve ser exibido.
-2. Ler três números reais digitados pelo usuário e computar a média entre eles,
-   utilizando função.
-   Após chamar a função, a média deve ser exibida.
-3. Ler um número inteiro digitado pelo usuário e imprimir uma mensagem informando
-   se ele é primo, utilizando função.
-   Após chamar a função, a mensagem correspondente ("é primo" ou "não é primo")
-   deve ser exibida.
----
--->
 
 ### Programa com Função
 #### Exercício
