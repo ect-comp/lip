@@ -39,3 +39,8 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Comando de repetição `do.. while`
 - Comandos `break` e `continue`
 - Exercícios
+
+## [10/11 - Funções I](./07-funcoes1/)
+- Chamada de funções
+- Assinatura de funções
+- Definição de funções
