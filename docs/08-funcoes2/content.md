@@ -40,10 +40,10 @@ tipo_da_funcao nome_da_funcao(lista de parametros);
 
 ### Funções sem Retorno
 Funções sem retorno:
-    - Também conhecidas como *procedimentos*
-    - Útil para funções que devem escrever na tela
-    - _Escrever na tela com comando `cout` não é retorno_
-    - Tipo da função deve ser `void`
+- Também conhecidas como *procedimentos*
+- Útil para funções que devem escrever na tela
+- _Escrever na tela com comando `cout` não é retorno_
+- Tipo da função deve ser `void`
 ---
 
 ### Funções sem Retorno
@@ -83,7 +83,7 @@ int main(){
     int x;
     cout << "Insira um num. inteiro entre 0 e 255:\n";
     cin >> x;
-    imprime_caractere(x);
+    imprime_caractere(x); //observe a chamada à função
     return 0;
 }
 
@@ -91,19 +91,19 @@ void imprime_caractere(int n){
     cout << "Caractere: " << char(n) << endl;
 }
 ```
-Atenção à chamada da função, uma vez que a função não retorna nenhum valor
 ---
 
 ### Funções sem Retorno
 É preciso estar claro a diferença entre:
-- Uma função que retorna um valor
-  (ex.: `char converte_numero(int cod);`)
-- Uma outra função que imprime o mesmo valor
-  (ex.: `void imprime_caractere(int cod);`)
+- Uma função que retorna um valor, ex:
+```char converte_numero(int cod);```
+- Uma outra função que imprime o mesmo valor, ex:
+```void imprime_caractere(int cod);```
 ---
 
 ### Passagem de Parâmetros
-Dentro do corpo de funções, os parâmetros são variáveis locais
+Dentro do corpo de funções, os parâmetros são variáveis locais.
+Observe então se o código a seguir está correto:
 
 ```C++
 void troca(int a, int b);
@@ -123,7 +123,6 @@ void troca(int a, int b){
     b = aux;
 }
 ```
-O que imprime o código acima?
 ---
 
 ### Passagem de Parâmetros
@@ -208,6 +207,14 @@ void ordena_crescente(int& a, int& b, int& c){
     }
 }
 ```
+---
+
+### Exercício: Pré-Laboratório
+
+Exercício de pré-laboratório:
+- Disponível no Sistema LoP
+- Conta como parte da nota do lab. 4
+- Prazo: 23:59 da próxima segunda (15/11)
 ---
 
 ### Sumário
