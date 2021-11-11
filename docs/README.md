@@ -44,3 +44,7 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
+
+## [12/11 - Funções II](./08-funcoes2/)
+- Função sem retorno (funções tipo `void`)
+- Passagem de parâmetro por valor por referência
