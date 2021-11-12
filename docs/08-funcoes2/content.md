@@ -168,10 +168,6 @@ Escreva a função `main`, para ler os três números do usuário, chamar a fun�
 
 ### Exercício: Solução
 ```C++
-#include <iostream>
-
-using namespace std;
-
 void troca(int& x, int& y);
 void ordena_crescente(int& a, int& b, int& c);
 
