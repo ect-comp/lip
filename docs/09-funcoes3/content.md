@@ -187,37 +187,46 @@ void maior_total_collatz(int t_ini, int& maior,
 ---
 
 ### Exercício 3
-Implemente uma função chamada `imprime_info`,
-que imprime na tela se uma letra
-passada como parâmetro de entrada é uma vogal ou consoante e também
-se ela é maiúscula ou minúscula.
 
-Implemente funções utilitárias `eh_vogal`
-e `eh_minuscula` e as use 
-para construir a lógica da função `imprime_info`.
+Implemente uma função chamada `conta_digitos`,
+que recebe como parâmetro de entrada um número inteiro
+e armazena em um primeiro parâmetro de saída a quantidade
+de dígitos pares e em um segundo a quantidade de dígitos
+ímpares.
 
-Implemente a função `main` para testar o seu programa,
-assumindo que o usuário irá sempre digitar uma letra.
+Implemente a função `main` para testar o seu programa.
 ---
 
-### Exercício 3: Solução Parcial
+### Exercício 3: Solução
 ```C++
-void imprime_info(char c){
-    if(eh_vogal(c) && eh_minuscula(c)){
-        cout << "Vogal minuscula\n";
-    }
-    if(!eh_vogal(c) && eh_minuscula(c)){
-        cout << "Consoante minuscula\n";
-    }
-    if(eh_vogal(c) && !eh_minuscula(c)){
-        cout << "Vogal maiuscula\n";
-    }
-    if(!eh_vogal(c) && !eh_minuscula(c)){
-        cout << "Consoante maiuscula\n";
+void conta_digitos(int x, int &dig_p, int &dig_i);
+
+int main(){
+    int num, r1, r2;
+
+    cout << "Informe um numero inteiro:\n";
+    cin >> num;
+
+    conta_digitos(num, r1, r2);
+
+    cout << r1 << " digitos pares\n";
+    cout << r2 << " digitos impares\n";
+}
+
+void conta_digitos(int x, int &dig_p, int &dig_i){
+    dig_p = 0; //observe que os parâmetros devem ser inicializados
+    dig_i = 0; //na função pedida e não na main
+    while(x > 0){
+        if(x % 2 == 0){
+            dig_p++;
+        }
+        else{
+            dig_i++;
+        }
+        x = x / 10;
     }
 }
 ```
-Implemente as funções auxiliares e teste o seu programa.
 ---
 
 ### Sumário
