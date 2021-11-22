@@ -4,7 +4,8 @@
 
 ### Funções
 #### Funções e Abstração
-<img src="img/atribuicao.jpg" width=600/>
+<img src="img/atribuicao.jpg" width=550/>
+
 ---
 
 ### Funções
@@ -18,6 +19,7 @@ Nas aulas anteriores:
 
 ### Objetivo da Aula
 Introduzir o conceito e uso de funções recursivas
+
 ---
 
 ### Funções Recursivas
@@ -38,10 +40,6 @@ Exemplos de estruturas recursivas:
 <tr>
 <td><img src="img/matrioska.jpg" width=200/></td>
 <td><img src="img/rec_triangle.png" width=400/><td>
-</tr>
-<tr>
-<td> Matrioska </td>
-<td> Fractal </td>
 </tr>
 </table>
 
@@ -172,7 +170,7 @@ int funcao(int x){
                                            \times (n-1)}_\text{f(n-1)}
                                            \times n
 \end{equation*}
-``
+`
 - Finalmente, `$f(1)$` é um valor conhecido: `$f(1) = 1$`
 - Isto torna possível calcular `$f(2)$` (que depende de `$f(1)$`),
   `$f(3)$` (que depende de `$f(2)$`) e assim sucessivamente até
@@ -245,6 +243,11 @@ Chamada à função para calcular o fatorial de 6:
 
 6a. chamada: 6 `$*$` 5 `$*$` 4 `$*$` 3 `$*$` 2 `$*$` `fat(1)`
 
+---
+
+### Funções Recursivas 
+#### Fatorial - Execução do Programa
+
 1o. retorno: 6 `$*$` 5 `$*$` 4 `$*$` 3 `$*$` 2 `$*$` 1, `fat(1)` se tornou 1
 
 2o. retorno: 6 `$*$` 5 `$*$` 4 `$*$` 3 `$*$` 2, `fat(2)` se tornou 2 `$*$` 1
@@ -281,7 +284,7 @@ Como este mecanismo funciona?
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func1.png" width=600/>
+<img src="img/rec_func1.png" width=600/>
 
 Empilhamento da chamada `fat(6)`
 ---
@@ -289,7 +292,7 @@ Empilhamento da chamada `fat(6)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func2.png" width=600/>
+<img src="img/rec_func2.png" width=600/>
 
 Empilhamento da chamada `fat(5)`
 ---
@@ -297,7 +300,7 @@ Empilhamento da chamada `fat(5)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func3.png" width=600/>
+<img src="img/rec_func3.png" width=600/>
 
 Empilhamento da chamada `fat(4)`
 ---
@@ -305,7 +308,7 @@ Empilhamento da chamada `fat(4)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func4.png" width=600/>
+<img src="img/rec_func4.png" width=600/>
 
 Empilhamento da chamada `fat(3)`
 ---
@@ -313,7 +316,7 @@ Empilhamento da chamada `fat(3)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func5.png" width=600/>
+<img src="img/rec_func5.png" width=600/>
 
 Empilhamento da chamada `fat(2)`
 ---
@@ -321,7 +324,7 @@ Empilhamento da chamada `fat(2)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func6.png" width=600/>
+<img src="img/rec_func6.png" width=600/>
 
 Empilhamento da chamada `fat(1)`
 ---
@@ -329,7 +332,7 @@ Empilhamento da chamada `fat(1)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func7.png" width=600/>
+<img src="img/rec_func7.png" width=600/>
 
 Desempilhamento de `fat(1)`: passo base
 ---
@@ -337,7 +340,7 @@ Desempilhamento de `fat(1)`: passo base
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func8.png" width=600/>
+<img src="img/rec_func8.png" width=600/>
 
 Desempilhamento de `fat(2)`
 ---
@@ -345,7 +348,7 @@ Desempilhamento de `fat(2)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func9.png" width=600/>
+<img src="img/rec_func9.png" width=600/>
 
 Desempilhamento de `fat(3)`
 ---
@@ -353,7 +356,7 @@ Desempilhamento de `fat(3)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func10.png" width=600/>
+<img src="img/rec_func10.png" width=600/>
 
 Desempilhamento de `fat(4)`
 ---
@@ -361,7 +364,7 @@ Desempilhamento de `fat(4)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func11.png" width=600/>
+<img src="img/rec_func11.png" width=600/>
 
 Desempilhamento de `fat(5)`
 ---
@@ -369,7 +372,7 @@ Desempilhamento de `fat(5)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/img/rec_func12.png" width=600/>
+<img src="img/rec_func12.png" width=600/>
 
 Desempilhamento de `fat(6)`
 ---
@@ -527,7 +530,7 @@ Funções recursivas:
 ---
 
 ### Recursividade
-<img src="img/recursividade.png" width=600/>
+<img src="img/recursividade.png" width=400/>
 
 ---
 
