@@ -349,7 +349,7 @@ Desempilhamento de `fat(2)`
 ### Funções Recursivas
 #### Pilha de Chamadas a Funções
 
-<img src="img/rec_func9.png" width=60/>
+<img src="img/rec_func9.png" width=120/>
 
 Desempilhamento de `fat(3)`
 ---
