@@ -53,3 +53,7 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Parâmetros de entrada
 - Parâmetros de saída
 - Parâmetros de entrada e saída
+
+## [24/11 - Funções Recursivas](./10-funcoes_rec_/)
+- Funções recursivas
+- Passo base e passo recursivo
