@@ -8,11 +8,11 @@
 
 ---
 
-### Funções
+### Linguagem de Programação
 Nas aulas anteriores (funções em C++):
 - Chamada, assinatura e definição
 - Passagem de parâmetro por valor e por referência
-- Parâmetros de entrada, saída e entrada/
+- Parâmetros de entrada, saída e entrada/saída
 ---    
 
 ### Objetivo da Aula
@@ -59,6 +59,13 @@ int funcao(int x){
     }
 }
 ```
+---
+
+### Funções Recursivas
+> Para implementar uma função recursiva,
+> você deve programá-la para que ela realize
+> chamadas a ela mesma até que uma condição
+> seja alcançada
 ---
 
 ### Funções Recursivas
