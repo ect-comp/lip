@@ -1,0 +1,405 @@
+### Linguagem de Programação
+#### Vetores
+---
+
+### Nas Aulas Anteriores
+
+- Construções de funções em C++
+- Funções recursivas em C++
+---
+
+### Objetivo da Aula
+Introduzir o uso de vetores
+- Representação em memória
+- Declaração de vetores
+- Inicialização de vetores
+- Exercícios
+---
+
+### Motivação
+#### Exercício
+
+Implemente um programa que leia as notas
+de 3 alunos e mostre quantas notas são maiores do
+que a média entre elas.
+---
+
+### Motivação
+
+```C++
+int main(){
+    float n1, n2, n3, media = 0.0;
+    int cont = 0;
+
+    cin >> n1 >> n2 >> n3;
+    media = (n1 + n2 + n3)/3;
+    
+    if(n1 > media){
+        cont++;
+    }
+    if(n2 > media){
+        cont++;
+    }
+    if(n3 > media){
+        cont++;
+    }
+
+    cout << "acima da media: " << cont << endl;
+    return 0;
+}
+```
+---
+
+### Motivação
+
+E se desejarmos mudar para 6 notas?
+```C++
+int main(){
+    float n1, n2, n3, n4, n5, n6, media = 0.0;
+    int cont = 0;
+
+    cin >> n1 >> n2 >> n3 >> n4 >> n5 >> n6;
+    media = (n1 + n2 + n3 + n4 + n5 + n6)/6;
+    
+    if(n1 > media){
+        cont++;
+    }
+    if(n2 > media){
+        cont++;
+    }
+    if(n3 > media){
+        cont++;
+    }
+    if(n4 > media){
+        cont++;
+    }
+    if(n5 > media){
+        cont++;
+    }
+    if(n6 > media){
+        cont++;
+    }
+
+    cout << "acima da media: " << cont << endl;
+    return 0;
+}
+```
+---
+
+### Motivação
+
+E se desejarmos mudar para 100 notas?
+- Uso de vetores
+- Também funciona para um tamanho `n` qualquer
+---
+
+### Vetor
+
+- Mecanismo disponibilizado por linguagens de programação
+- Armazena dados de um mesmo tipo em memória
+- Torna possível o uso de novos tipos de variáveis:
+    - Vetor de `char`
+    - Vetor de `int`
+    - Vetor de `float`
+    - Vetor de `bool`
+---
+
+### Vetor
+#### Representação em Memória
+<table>
+<tr>
+<td>
+
+<img src="img/var_vs_vetor.png" width=350/>
+
+</td>
+<td>
+- Variável: uma posição na memória para guardar um valor 
+- Vetor: várias posições na memória para guardar vários valores
+    - Quantidade de posições é o tamanho do vetor
+    - Tamanho do vetor é especificado pelo programador
+</td>
+</tr>
+</table>
+
+---
+
+### Declarando um Vetor
+#### Sintaxe
+```
+tipo_do_vetor nome_do_vetor[tamanho_do_vetor];
+```
+- `tipo_do_vetor` são os tipos de variáveis conhecidos:
+  `int, char, float, bool`
+- `nome_do_vetor` segue as mesmas regras que usamos para variáveis
+- O `tamanho_do_vetor` é uma expressão cujo tipo deve ser `int`
+---
+
+### Declarando um Vetor
+#### Exercício
+Escrever declaração de vetor:
+1. Do tipo inteiro, com 30 posições, chamado `idades`
+2. Do tipo caractere, com 5 posições, chamado `vogais`
+3. Para armazenar `n` valores do tipo `float`
+---
+
+### Declarando um Vetor
+#### Exercício: Solução
+```C++
+1. int idades[30];
+2. char vogais[5];
+3. float v[n];
+```
+---
+
+### Declarando um Vetor
+#### Expressão Utilizada como Tamanho do Vetor
+
+- Em C++, a expressão a ser utilizada como tamanho do vetor
+  deve ser constante
+- Para isto, uma das seguintes opções deve ser utilizada:
+---
+
+### Declarando um Vetor
+#### Expressão Utilizada como Tamanho do Vetor
+
+Opção 1:
+
+```C++
+const int MAXV = 100; //antes da função main
+...
+int v[MAXV]; //na declaração do vetor
+```
+---
+
+### Declarando um Vetor
+#### Expressão Utilizada como Tamanho do Vetor
+
+Opção 2:
+
+```C++
+#define MAXV 100 //antes da função main
+...
+int v[MAXV]; //na declaração do vetor
+```
+---
+
+### Declarando um Vetor
+#### Expressão Utilizada como Tamanho do Vetor
+Por causa de uma extensão da linguagem, também é possível utilizar
+`int v[n]`, com `n` sendo uma variável
+---
+
+### Posições de um Vetor
+<table>
+<tr>
+<td>
+
+<img src="img/vetor_posicoes.png" width=350/>
+
+</td>
+<td>
+
+- Um vetor com `n` posições tem posições válidas que vão de
+  `0` até `n-1`
+- Um vetor `v` não pode ser usado diretamente em expressões
+- Cada elemento `v[0]`, ..., `v[n-1]` é que deve ser usado
+
+</td>
+</tr>
+</table>
+
+---
+
+### Posições de um Vetor
+<table>
+<tr>
+<td>
+
+<img src="img/vetor_exemplo.png" width=350/>
+
+</td>
+<td>
+
+Qual o valor de cada expressão a seguir, sendo `x = 2`?
+- `v[6]`
+- `v[0] + v[7]`
+- `v[x]`
+- `v[2*x + 3]`
+- `v[v[x]]`
+- `v[10 - v[-v[4]]]`
+- `v[-1]`
+- `v[8]`
+- `v[1000]`
+
+</td>
+</tr>
+</table>
+
+---
+
+### Inicialização de Vetores
+#### Sintaxe
+- `int v[5];` $\rightarrow$ inicializa cada valor com lixo
+- `int v[5] = {10, 20, 30, 40, 50};` $\rightarrow$ inicializa com valores indicados
+- `int v[] = {10, 20, 30, 40, 50};` $\rightarrow$ inicializa com valores indicados (tamanho do vetor é deduzido a partir dos valores)
+- `int v[5] = {};` $\rightarrow$ inicializa todos os valores com 0
+- `int v[5] = {5, 10};` $\rightarrow$ inicializa posições 0 e 1 com os valores indicados, todos os outros com 0
+---
+
+### Motivação
+
+Voltando ao exercício inicial - e se desejarmos mudar para 100 notas?
+- Uso de vetores
+---
+
+### Exercício Inicial
+#### Exercício: Solução
+```C++
+int main(){
+    float notas[100], media = 0.0;
+    int i, cont = 0;
+    for(i = 0; i < 100; i++){
+        cin >> notas[i];
+        media += notas[i];
+    }
+    media /= 100;
+
+    for(i = 0; i < 100; i++){
+        if(notas[i] > media) cont++;
+    }
+    
+    cout << "acima da media: " << cont << endl;
+    return 0;
+}
+```
+---
+
+### Exercício Inicial
+E se fosse pedido um número `n` (informado pelo usuário)
+de notas?
+---
+
+### Exercício Inicial
+#### Exercício: Solução
+```C++
+int main(){
+    int n, i, cont = 0;
+    cout << "Insira a quantidade de notas:\n";
+    cin >> n;
+    float notas[n], media = 0;
+    for(i = 0; i < n; i++){
+        cin >> notas[i];
+        media += notas[i];
+    }
+    media /= n;
+
+    for(i = 0; i < n; i++){
+        if(notas[i] > media) cont++;
+    }
+
+    cout << "acima da media: " << cont << endl;
+    return 0;
+}
+```
+---
+
+### Exercício 1
+Ler um número `n` do usuário e em seguida, armazenar
+`n` notas em um vetor. O seu programa deve imprimir
+a maior das notas armazenadas.
+---
+
+### Exercício 1: Solução
+
+```C++
+int main(){
+    int n, i;
+    cout << "Insira a quantidade de notas:\n";
+    cin >> n;
+    float notas[n], maior;
+
+    //Leitura das notas
+    for(i = 0; i < n; i++){
+        cin >> notas[i];
+    }
+
+    //Processamento da maior nota
+    for(i = 0; i < n; i++){
+        if(i == 0){
+            maior = notas[i];
+        }
+        else{
+            if(notas[i] > maior){
+                maior = notas[i];
+            }
+        }
+    }
+    cout << "Maior nota: " << maior << endl;
+    return 0;
+}
+```
+---
+
+### Exercício 2
+Ler um número `n` do usuário e em seguida, armazenar
+`n` notas em um vetor. O seu programa deve imprimir
+a posição da maior nota armazenada.
+---
+
+### Exercício 2: Solução
+
+```C++
+int main(){
+    int n, i, maiorpos;
+    cout << "Insira a quantidade de notas:\n";
+    cin >> n;
+    float notas[n];
+
+    //Leitura das notas
+    for(i = 0; i < n; i++){
+        cin >> notas[i];
+    }
+    
+    //Processamento da posição da maior nota
+    for(i = 0; i < n; i++){
+        if(i == 0){
+            maiorpos = i;
+        }
+        else{
+            if(notas[i] > notas[maiorpos]){
+                maiorpos = i;
+            }
+        }
+    }
+    cout << "Pos. da maior nota: " << maiorpos << endl;
+    return 0;
+}
+```
+
+### Exercício 3
+Ler um número `n` do usuário e em seguida, ler os elementos
+de dois vetores de números reais de tamanho `n`.
+O seu programa deve calcular e exibir na tela o vetor correspondente à soma
+vetorial dos dois vetores.
+
+- Vetor `u` = `u[0],...,u[n-1]`
+- Vetor `v` = `v[0],...,v[n-1]`
+- Vetor soma: `u[0]+v[0],u[1]+v[1],...,u[n-1]+v[n-1]`
+---
+
+### Exercício 4
+Ler um número inteiro `n` do usuário.
+O seu programa deve armazenar em um vetor os dígitos que
+compõem o número `n` na ordem inversa.
+Por exemplo, para `n = 2134`, o
+vetor resultante `v` deve ser igual a `[4,3,1,2]`.
+---
+
+### Sumário
+Na aula de hoje: vetores
+- Sintaxe de declaração
+- Acesso às posições
+- Inicialização
+- Exercícios
+---

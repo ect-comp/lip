@@ -57,3 +57,9 @@ Este diretório contém os slides das aulas do semestre 2021.2
 ## [24/11 - Funções Recursivas](./10-funcoes_rec/)
 - Funções recursivas
 - Passo base e passo recursivo
+
+## [01/12 - Vetores](./11-vetores/)
+- Sintaxe de declaração
+- Acesso às posições
+- Inicialização
+- Exercícios
