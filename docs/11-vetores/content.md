@@ -110,14 +110,14 @@ E se desejarmos mudar para 100 notas?
 <tr>
 <td>
 
-<img src="img/var_vs_vetor.png" width=350/>
+<img src="img/var_vs_vetor.png" width=400/>
 
 </td>
 <td>
+
 - Variável: uma posição na memória para guardar um valor 
 - Vetor: várias posições na memória para guardar vários valores
-    - Quantidade de posições é o tamanho do vetor
-    - Tamanho do vetor é especificado pelo programador
+
 </td>
 </tr>
 </table>
@@ -195,7 +195,7 @@ Por causa de uma extensão da linguagem, também é possível utilizar
 <tr>
 <td>
 
-<img src="img/vetor_posicoes.png" width=350/>
+<img src="img/vetor_posicoes.png" width=400/>
 
 </td>
 <td>
@@ -221,7 +221,8 @@ Por causa de uma extensão da linguagem, também é possível utilizar
 </td>
 <td>
 
-Qual o valor de cada expressão a seguir, sendo `x = 2`?
+Para o vetor mostrado,
+qual o valor de cada expressão a seguir, sendo `x = 2`?
 - `v[6]`
 - `v[0] + v[7]`
 - `v[x]`
@@ -376,6 +377,7 @@ int main(){
     return 0;
 }
 ```
+---
 
 ### Exercício 3
 Ler um número `n` do usuário e em seguida, ler os elementos
