@@ -64,7 +64,7 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Inicialização
 - Exercícios
 
-## [03/12 - Vetores](./12-funcoes_e_vetores/)
+## [03/12 - Funções e vetores](./12-funcoes_e_vetores/)
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
 - Exercícios

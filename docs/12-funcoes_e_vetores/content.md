@@ -43,6 +43,21 @@ Caso haja mais de um vetor, é necessário informar o tamanho de cada um
 ---
 
 ### Declaração de Função com Vetores
+#### Sintaxe
+Exemplo com um vetor como parâmetro:
+```C++
+tipo_func nome_func(tipo_vetor nome_vetor[], int tam_vetor){
+    corpo da funcao
+}
+```
+- Caso haja mais de um vetor:
+    - Se tiverem tamanhos diferentes, é necessário
+      incluir um parâmetro para o tamanho de cada um
+    - Se tiverem um mesmo tamanho, basta utilizar
+      um único parâmetro para o tamanho
+---
+
+### Declaração de Função com Vetores
 #### Exercícios
 Escrever assinatura da função:
 1. Que imprime um vetor de inteiros na tela
