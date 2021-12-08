@@ -76,7 +76,7 @@ Escrever declaração de matriz:
 
 ### Matriz
 #### Representação em Memória
-<img src="img/matriz_posicoes2.png" width=400/>
+<img src="img/matriz_posicoes2.png" width=500/>
 
 ---
 
@@ -103,7 +103,7 @@ Para acessar cada elemento da matriz `m`:
 <tr>
 <td>
 
-<img src="img/matriz_exemplo.png" width=400/>
+<img src="img/matriz_exemplo.png" width=500/>
 
 </td>
 <td>
@@ -179,40 +179,43 @@ int main(){
 
 ### Inicialização de Matrizes
 Forma 1:
-{% raw %}
+<!-- {% raw %} -->
 ```C++
 int m[3][4] = {{1,2,3,4},
                {5,6,7,8},
                {9,10,11,12}};
 ```
-{% endraw %}
+<!--  {% endraw %} -->
 
 Forma 2:
-{% raw %}
+<!--  {% raw %} -->
 ```C++
 int m[][4] = {{1,2,3,4},
               {5,6,7,8},
               {9,10,11,12}};
 ```
-{% endraw %}
+<!-- {% endraw %} -->
 
+---
+
+### Inicialização de Matrizes
 Forma 3:
-{% raw %}
+<!-- {% raw %} -->
 ```C++
 int m[3][4] = {1,2,3,4,
                5,6,7,8,
                9,10,11,12};
 ```
-{% endraw %}
+<!-- {% endraw %} -->
 
 Forma 4:
-{% raw %}
+<!-- {% raw %} -->
 ```C++
 int m[][4] = {1,2,3,4,
               5,6,7,8,
               9,10,11,12};
 ```
-{% endraw %}
+<!-- {% endraw %} -->
 
 ---
 
