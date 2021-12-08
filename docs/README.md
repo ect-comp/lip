@@ -68,3 +68,9 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
 - Exercícios
+
+## [10/12 - Matrizes](./13-matrizes/)
+- Sintaxe de declaração
+- Acesso às posições
+- Inicialização
+- Exercícios
