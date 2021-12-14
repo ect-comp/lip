@@ -1,5 +1,5 @@
 ### Linguagem de Programação
-#### Números Aleatórios
+#### Geração de Números Aleatórios
 ---
 
 ### Nas Aulas Anteriores
@@ -65,8 +65,9 @@ Para se trabalhar com números aleatórios, são necessárias chamadas a duas fu
 #### Exemplo
 Programa gera `n` números inteiros aleatórios e os exibe na tela
 ```C++
-#include <cstdlib>
-#include <ctime>
+#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;ctime&gt;
 
 int main(){
     srand(time(0)); //inicializa semente
@@ -84,7 +85,7 @@ int main(){
 #### Função `rand`
 Problemas:
 - Gera sempre um número inteiro
-- Nrs. gerados estão em intervalo $[0, \text{RAND_MAX]$
+- Nrs. gerados estão em intervalo $[0, RAND_MAX]$
 - Como fazer para:
     1. Gerar números dentro de um intervalo específico
     2. Gerar números reais
@@ -96,18 +97,18 @@ Problemas:
 Para gerar números aleatórios em um intervalo de interesse:
 1. Utilizar a função `rand`
 2. Usar o operador `%` para limitar a quantidade de valores gerados
-3. Somar o resultado com um valor constante para "deslocar"''" o intervalo de valores gerados
+3. Somar o resultado com um valor constante para "deslocar" o intervalo de valores gerados
 ---
 
 ### Números Aleatórios
 #### Geração de Números Aleatórios dentro de um Intervalo Específico
 Exemplos de uso:
 
-1. Gera números inteiros aleatórios no intervalo $[0,\text{RAND\_MAX}]$:
+1. Gera números inteiros aleatórios no intervalo $[0,RAND_MAX]$:  
    `int x = rand();`
-2. Gera números inteiros aleatórios no intervalo $[0,q-1]$:
+2. Gera números inteiros aleatórios no intervalo $[0,q-1]$:  
    `int x = rand() \% q;`
-3. Gera números inteiros aleatórios no intervalo $[p,q]$
+3. Gera números inteiros aleatórios no intervalo $[p,q]$:  
    `int x = (rand() \% (q-p+1)) + p;`
 ---
 
@@ -143,11 +144,11 @@ Para gerar números reais aleatórios:
 #### Geração de Números Reais Aleatórios
 Exemplos de uso:
 
-1. Gera números reais aleatórios no intervalo $[0.0,1.0]$:
+1. Gera números reais aleatórios no intervalo $[0.0,1.0]$:  
    `float x = rand()/float(RAND_MAX);`
-2. Gera números reais aleatórios no intervalo $[0.0,q]$:
+2. Gera números reais aleatórios no intervalo $[0.0,q]$:  
    `float x = q*(rand()/float(RAND_MAX));`
-3. Gera números reais aleatórios no intervalo $[p,q]$:
+3. Gera números reais aleatórios no intervalo $[p,q]$:  
    `float x = (q-p)*(rand()/float(RAND_MAX)) + p;`
 ---
 
@@ -203,7 +204,7 @@ void insere_aleatorios_vetor(int v[], int n){
 ```
 ---
 
-### Exercícios
+### Exercício
 #### Uso em Vetores e Matrizes
 Utilizando as funções anteriores:
 
@@ -223,7 +224,7 @@ void insere_aleatorios_vetor(float v[], int n){
 ```
 ---
 
-### Exercícios
+### Exercício
 #### Uso em Vetores e Matrizes
 Implemente uma função que receba como parâmetro de entrada um número
 `n` e como parâmetro de saída dois vetores de números inteiros
