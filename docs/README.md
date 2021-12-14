@@ -81,4 +81,3 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Geração de números aleatórios reais
 - Geração de caracteres aleatórios
 - Exercícios
----
