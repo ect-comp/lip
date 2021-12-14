@@ -74,3 +74,11 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Acesso às posições
 - Inicialização
 - Exercícios
+
+## [15/12 - Geração de Números Aleatórios](./14-numeros_aleatorios/)
+- Geração de números aleatórios em C++
+- Geração de números aleatórios inteiros em intervalos de interesse
+- Geração de números aleatórios reais
+- Geração de caracteres aleatórios
+- Exercícios
+---
