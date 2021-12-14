@@ -85,7 +85,7 @@ int main(){
 #### Função `rand`
 Problemas:
 - Gera sempre um número inteiro
-- Nrs. gerados estão em intervalo $[0, RAND_MAX]$
+- Nrs. gerados estão em intervalo $[0, \text{RAND_MAX}]$
 - Como fazer para:
     1. Gerar números dentro de um intervalo específico
     2. Gerar números reais
@@ -104,7 +104,7 @@ Para gerar números aleatórios em um intervalo de interesse:
 #### Geração de Números Aleatórios dentro de um Intervalo Específico
 Exemplos de uso:
 
-1. Gera números inteiros aleatórios no intervalo $[0,RAND_MAX]$:  
+1. Gera números inteiros aleatórios no intervalo $[0,\text{RAND_MAX}]$:  
    `int x = rand();`
 2. Gera números inteiros aleatórios no intervalo $[0,q-1]$:  
    `int x = rand() \% q;`
