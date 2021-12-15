@@ -107,9 +107,9 @@ Exemplos de uso:
 1. Gera números inteiros aleatórios no intervalo $[0,\text{RAND_MAX}]$:  
    `int x = rand();`
 2. Gera números inteiros aleatórios no intervalo $[0,q-1]$:  
-   `int x = rand() \% q;`
+   `int x = rand() % q;`
 3. Gera números inteiros aleatórios no intervalo $[p,q]$:  
-   `int x = (rand() \% (q-p+1)) + p;`
+   `int x = (rand() % (q-p+1)) + p;`
 ---
 
 ### Exercício
