@@ -1,5 +1,5 @@
 ### Linguagem de Programação
-#### Funções e Vetores
+#### Funções e Matrizes
 ---
 
 ### Na Aula Anterior
@@ -20,17 +20,12 @@ Introduzir o uso de funções que operam sobre matrizes
 ### Funções e Matrizes
 >>> É possível passar matrizes como parâmetro de funções
 - Útil para realizar blocos de código repetitivos ou para a construção de programas maiores
----
-
-### Funções e Matrizes
-Além da matriz a ser passada como parâmetro, é necessário:
-- Passar outros dois parâmetros, relativos ao número de linhas e colunas da matriz
-- A sintaxe para matrizes tem uma diferença sutil em relação à sintaxe utilizada com vetores
+- É necessário passar também outros dois parâmetros, relativos ao número de linhas e colunas da matriz
 ---
 
 ### Função com Matrizes
 #### Matrizes para Uso em Funções
-Para passar matrizes como parâmetros de funções em C++, é necessário:
+Para passar matrizes como parâmetros de funções em C++, é preciso:
 1. A declaração de uma constante global com o número máximo de linhas/colunas de uma matriz (constante `MAX`, inicializada com um número grande)
 2. Que todas as matrizes do programa sejam declaradas com esta constante no número de linhas e colunas
 3. Informar no protótipo da função que cada matriz passada como parâmetro tem
@@ -63,8 +58,9 @@ int main(){
 }
 ```
 
-A linha `const int MAX = 100;` é equivalente a<br>
-`\#define MAX 100`
+### Função com Matrizes
+>>> A linha `const int MAX = 100;` é equivalente a<br>
+    `\#define MAX 100`
 ---
 
 ### Declaração de Função com Matrizes
@@ -80,8 +76,6 @@ tipo_func nome_func(tipo_matriz nome_matriz[][MAX],
 
 ### Declaração de Função com Matrizes
 #### Sintaxe
-Em relação às declarações de funções usadas anteriormente:
-
 - `tipo_matriz` é o tipo da matriz passada como parâmetro:<br>
   `int, char, float, bool`.
 - `nome_matriz` é o nome da matriz passada como parâmetro. Observe que o
@@ -168,6 +162,6 @@ Implemente as definições das funções:
 
 ### Sumário
 Na aula de hoje:
-- Sintaxe de implementação de funções com vetores e matrizes
+- Sintaxe de implementação de funções com matrizes
 - Exercícios
 ---
