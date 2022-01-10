@@ -81,3 +81,7 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Geração de números aleatórios reais
 - Geração de caracteres aleatórios
 - Exercícios
+
+## [12/12 - Funções e Matrizes](./15-funcoes_e_matrizes/)
+- Sintaxe de implementação de funções com matrizes
+- Exercícios
