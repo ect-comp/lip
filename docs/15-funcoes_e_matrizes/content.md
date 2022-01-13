@@ -57,6 +57,7 @@ int main(){
     return 0;
 }
 ```
+---
 
 ### Função com Matrizes
 >>> A linha `const int MAX = 100;` é equivalente a<br>
