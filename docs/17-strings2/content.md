@@ -19,7 +19,7 @@ Strings
 
 - Vetor de caracteres:<br>
   `char s[] = {'e', 'c', 't'};`
-- String $rightarrow$ vetor de caracteres terminados com `\0`:<br>
+- String $\rightarrow$ vetor de caracteres terminados com `\0`:<br>
   `char s[] = {'e', 'c', 't', '\0'};`<br>
   `char s[] = "ect";`
 ---
@@ -161,6 +161,7 @@ Implemente uma função que receba como parâmetro uma string e retorne verdadei
 ela seja um palíndromo ou falso caso contrário. Existem duas versões para o problema:
 1. Considerando espaços em branco como parte da string:<br>
  - `osso` é palíndromo
+ - `o␣s␣s␣o` é palíndromo
  - `subi␣no␣onibus` não é palíndromo
 2. Desconsiderando espaços em branco como parte da string:<br>
  - `subi␣no␣onibus` é palíndromo
