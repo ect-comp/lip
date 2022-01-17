@@ -95,3 +95,7 @@ Este diretório contém os slides das aulas do semestre 2021.2
     - `strcpy`
     - `strcat`
     - `strcmp`
+
+## [21/01 - Strings II](./17-strings2/)
+- Leitura de strings com espaços em branco
+- Exercícios
