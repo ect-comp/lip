@@ -1,5 +1,5 @@
 ### Linguagem de Programação
-#### Strings
+#### Strings I
 ---
 
 ### Nas Aulas Anteriores
@@ -29,6 +29,7 @@ Ao longo do curso, já utilizamos:
   `char carac;`
 - Strings constantes:<br>
   `cout << "Informe o nr. de linhas";`
+
 E quanto a variáveis para armazenar strings?
 ---
 
@@ -39,13 +40,14 @@ Em C++, strings são vetores de `char` com um último caractere especial
 - Toda string em C++ termina com o caractere `\0`:
     - Caractere especial delimitador de final de string
     - Usado pelos algoritmos/funções que processam strings
+    - Não é visível e tem código ASCII igual a 0
 ---
 
 ### Strings
 #### Representação em Memória
 <img src="img/string_example.png" width=550/>
 
-Então:
+Dada a string acima:
 - Qual o caractere na terceira posição?
 - Qual o caractere `s[5]`?
 - Como poderíamos mudar a string para `"ola mundo"`?
@@ -57,11 +59,11 @@ Então:
 #### Inicialização
 - Forma 1:
 ```C++
-char s[4] = {`e',`c',`t',`\0'};
+char s[4] = {'e','c','t','\0'};
 ```
 - Forma 2:
 ```C++
-char s[] = {`e',`c',`t',`\0'};
+char s[] = {'e','c','t','\0'};
 ```
 - Forma 3 (caractere especial é inserido automaticamente):
 ```C++
@@ -75,16 +77,15 @@ Uma string é um vetor de caracteres, mas não o contrário
 
 - String:
 ```C++
-char s[] = {`e',`c',`t', `\0'};
+char s[] = {'e','c','t', '\0'};
 ```
 - Vetor de caracteres (não delimitado com `\0`):
-
 ```C++
-char s[] = {`e',`c',`t'};
+char s[] = {'e','c','t'};
 ```
 
 - As regras que valem para vetores valem para strings
-- Entretanto, strings oferecem algumas vantagens, como visto a seguir
+- Entretanto, strings oferecem algumas vantagens, como mostradas a seguir
 ---
 
 ### Strings
@@ -93,7 +94,7 @@ Para imprimir uma string `s`, pode-se usar o comando `cout`, diretamente na vari
 
 ```C++
 int main(){
-    char str[4] = {`e',`c',`t',`\0'};
+    char str[4] = {'e','c','t','\0'};
     cout << str << endl;
     return 0;
 }
@@ -103,7 +104,7 @@ int main(){
 ### Strings
 #### Comando de Saída
 - Ou seja, não é necessário utilizar um laço como no caso de vetores
-- Isto só funciona para strings bem formadas (terminadas com o caractere delimitador)
+- Isto só funciona para strings bem formadas (terminadas com `\0`)
     - Caso contrário, serão impressos vários caracteres a mais (lixo de memória)
 ---
 
@@ -137,12 +138,12 @@ Sobre o tamanho da variável string na declaração:
     - Lembre-se que nem todos os espaços reservados para a string
       serão necessariamente usados
 - Portanto, o tamanho máximo do texto que cabe na string é 9
-    - Por causa do espaço destinado ao caractere especial `\0`
+    - Isto por causa do espaço destinado ao caractere especial `\0`
 ---
 
 ### Strings
 #### Funções da Biblioteca `cstring`
-- A biblioteca `cstring` possui algumas funções úteis:
+- Biblioteca `cstring` $\rightarrow$ possui algumas funções úteis:
     - `strlen`: computa o tamanho da string
     - `strcpy`: computa uma cópia da string
     - `strcat`: concatena duas strings
@@ -154,21 +155,20 @@ Sobre o tamanho da variável string na declaração:
 #### Funções da Biblioteca `cstring`
 Assinatura e descrição das funções:
 - `int strlen(char s[])`:<br>
-  retorna o tamanho da string `s`, usando o caractere delimitador
-  para identificar o final da cadeia
+  retorna o tamanho da string `s`
 - `void strcpy(char dest[], char orig[])`:<br>
   copia o conteúdo de `orig` para `dest`
 - `void strcat(char s1[], char s2[])`:<br>
-  concatena o conteúdo da cadeia `s2` na cadeia `s1`
+  concatena o conteúdo de `s2` na string `s1`
 ---
 
 ### Strings
 #### Funções da Biblioteca `cstring`
 Assinatura e descrição das funções:
-- `int strcmp(char s1[], char s2[])`: compara a cadeia `s1` com `s2` <br>
+- `int strcmp(char s1[], char s2[])`: compara a string `s1` com `s2` <br>
     - Retorna 0 se elas forem iguais
     - Retorna um número negativo se `s1` for "menor" do que `s2`
-    - Retorna um número positivo se `s1` for "maior" do que `s2`.
+    - Retorna um número positivo se `s1` for "maior" do que `s2`
 
 Observe que "menor"/"maior" depende dos caracteres e não necessariamente dos tamanhos das strings
 ---
