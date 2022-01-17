@@ -85,3 +85,13 @@ Este diretório contém os slides das aulas do semestre 2021.2
 ## [12/01 - Funções e Matrizes](./15-funcoes_e_matrizes/)
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
+
+## [19/01 - Strings I](./16-strings1/)
+- Caractere delimitador `\0`
+- Inicialização
+- Entrada/saída
+- Funções de manipulação de strings
+    - `strlen`
+    - `strcpy`
+    - `strcat`
+    - `strcmp`
