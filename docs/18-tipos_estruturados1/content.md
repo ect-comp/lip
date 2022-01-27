@@ -497,7 +497,7 @@ uma quantidade `n` e as coordenadas `(x,y)` de `n` `Pontos2D`.
 
 O programa deve imprimir o `Ponto2D` mais próximo da origem,
 sabendo-se que a distância de um ponto para a origem
-é calculada por `d(p)$\sqrt{p.x^2 + p.y^2}$`.
+é calculada por `$d(p) = \sqrt{p.x^2 + p.y^2}$`.
 
 ---
 
