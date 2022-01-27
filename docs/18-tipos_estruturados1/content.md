@@ -55,7 +55,7 @@ int main(){
 <table>
 <tr>
 <td>
-<img src="img/struct_array_pair.png" width=600/>
+<img src="img/struct_array_pair.png" width=1600/>
 <td>
 
 Na solução utilizada:
