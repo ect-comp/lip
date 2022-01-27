@@ -92,6 +92,10 @@ A questão a ser respondida é: existe alguma maneira de agrupar dados em C++?
 > que um programa possua variáveis que representam
 > "coisas" do mundo real
 
+---
+
+### Definindo um Tipo Estruturado
+
 Então, pense sempre no que você quer representar
 no programa (o tipo estruturado) e que características
 desta coisa você também quer no programa:
@@ -412,12 +416,13 @@ int main(){
 <table>
 <tr>
 <td>
-<img src="img/img/struct_example.png" width=2000/>
+<img src="img/struct_example.png" width=2000/>
 <td>
+
 Com tipos estruturados:
 - Um único índice é utilizado para acessar todos os dados
   de um aluno
-- Dados agrupados
+- Todos os dados de um aluno estão em uma mesma variável
 - Algoritmos menos sujeitos a falhas
 
 ---
