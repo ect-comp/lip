@@ -55,7 +55,7 @@ int main(){
 <table>
 <tr>
 <td>
-<img src="img/struct_array_pair.png" width=1600/>
+<img src="img/struct_array_pair.png" width=2000/>
 <td>
 
 Na solução utilizada:
@@ -412,7 +412,7 @@ int main(){
 <table>
 <tr>
 <td>
-<img src="img/img/struct_example.png" width=400/>
+<img src="img/img/struct_example.png" width=2000/>
 <td>
 Com tipos estruturados:
 - Um único índice é utilizado para acessar todos os dados
