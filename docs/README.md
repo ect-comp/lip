@@ -99,3 +99,9 @@ Este diretório contém os slides das aulas do semestre 2021.2
 ## [21/01 - Strings II](./17-strings2/)
 - Leitura de strings com espaços em branco
 - Exercícios
+
+## [28/01 - Tipos Estruturados I](./18-tipos_estruturados1/)
+- Definição de tipos estruturados
+- Operações com variáveis de tipos estruturados
+- Vetores de variáveis de tipos estruturados
+- Exercícios
