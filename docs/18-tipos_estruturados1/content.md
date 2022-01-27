@@ -79,11 +79,27 @@ A questão a ser respondida é: existe alguma maneira de agrupar dados em C++?
 
 ### Tipos Estruturados
 - Mecanismo disponibilizado pela linguagem C++
+  - Também conhecido como registros ou estruturas
 - Permite ao programador definir um novo tipo de variável
 - Agrupa dados de **diferentes tipos** em memória
   - Dados possuem __campos__ a serem manipulados pelos programas
-    - Também chamados de membros, atributos ou propriedades
-- Tipos estruturados são também conhecidos como registros ou estruturas
+  - Campos são também chamados de membros, atributos ou propriedades
+---
+
+### Definindo um Tipo Estruturado
+
+> Tipos estruturados são usados para permitir
+> que um programa possua variáveis que representam
+> "coisas" do mundo real
+
+Então, pense sempre no que você quer representar
+no programa (o tipo estruturado) e que características
+desta coisa você também quer no programa:
+- Aluno, com nome e nota
+- Conta bancária, com número, saldo e nome do titular
+- Cidade, com nome e população
+- etc.
+
 ---
 
 ### Definindo um Tipo Estruturado
@@ -331,9 +347,9 @@ Aluno mat_alunos[10][10]; //matriz com capacidade
 Para acessar um campo de uma variável presente em um
 vetor de um tipo estruturado:
 
-1. Utilize um número inteiro para acessar __uma posição__
+1. Utilize um __número inteiro__ para acessar uma __posição__
    do vetor
-2. Utilize o __operador `.`__ para acessar o campo da variável
+2. Utilize o operador __`.`__ para acessar o __campo__ da variável
    que está nesta posição
 
 ```C++
@@ -388,6 +404,7 @@ int main(){
   return 0;
 }
 ```
+---
 
 ### Solução
 #### Representação em Memória - Solução com Uso de Tipos Estruturados
@@ -475,7 +492,7 @@ uma quantidade `n` e as coordenadas `(x,y)` de `n` `Pontos2D`.
 
 O programa deve imprimir o `Ponto2D` mais próximo da origem,
 sabendo-se que a distância de um ponto para a origem
-é calculada por $$\sqrt{x^2 + y^2}$$.
+é calculada por `d(p)$\sqrt{p.x^2 + p.y^2}$`.
 
 ---
 
