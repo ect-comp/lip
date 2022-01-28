@@ -105,3 +105,7 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Operações com variáveis de tipos estruturados
 - Vetores de variáveis de tipos estruturados
 - Exercícios
+
+## [02/02 - Tipos Estruturados II](./19-tipos_estruturados2/)
+- Uso de tipos estruturados em funções
+- Exercícios
