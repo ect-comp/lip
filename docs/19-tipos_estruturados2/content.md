@@ -55,6 +55,8 @@ int main(){
 }
 ```
 
+---
+
 ### Motivação
 E se desejássemos implementar o mesmo programa com uma função,
 como poderíamos proceder?
@@ -174,6 +176,8 @@ int main(){
 }
 ```
 
+---
+
 ### Tipo Estruturado para uma Matriz
 
 - Uma grande vantagem do uso de tipos estruturados
@@ -287,6 +291,8 @@ int main(){
   return 0;
 }
 ```
+
+---
 
 ### Exercício 3
 
