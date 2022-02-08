@@ -109,3 +109,9 @@ Este diretório contém os slides das aulas do semestre 2021.2
 ## [02/02 - Tipos Estruturados II](./19-tipos_estruturados2/)
 - Uso de tipos estruturados em funções
 - Exercícios
+
+## [09/02 - Ordenação](./20-ordenacao/)
+- Ordenação
+- Ordenação com tipos estruturados
+  - Ordem crescente/decrescente de campos numéricos
+  - Ordem alfabética de campos string
