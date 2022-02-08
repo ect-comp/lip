@@ -25,7 +25,7 @@
 ### Ordenação
 #### Ideia do Algoritmo
 
-  <img src="img/array_sort.png" width=200/>
+  <img src="img/array_sort.png" width=300/>
 
 - Ordenar vetor de números inteiros acima em ordem crescente:
   - Percorra cada elemento do vetor
@@ -39,7 +39,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 1/11
 
-  <img src="img/array_sort01.png" width=200/>
+  <img src="img/array_sort01.png" width=300/>
 
 - Elemento __chave__: `v[0] = 5`
 - Elemento **comparado**: `v[1] = 3`
@@ -52,7 +52,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 2/11
 
-  <img src="img/array_sort02.png" width=200/>
+  <img src="img/array_sort02.png" width=300/>
 
 - Elemento __chave__: `v[0] = 3`
 - Elemento **comparado**: `v[2] = -1`
@@ -65,7 +65,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 3/11
 
-  <img src="img/array_sort3.png" width=200/>
+  <img src="img/array_sort03.png" width=300/>
 
 - Elemento __chave__: `v[0] = -1`
 - Elemento **comparado**: `v[3] = 8`
@@ -77,7 +77,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 4/11
 
-  <img src="img/array_sort04.png" width=200/>
+  <img src="img/array_sort04.png" width=300/>
 
 - Elemento __chave__: `v[0] = -1`
 - Elemento **comparado**: `v[4] = 4`
@@ -91,7 +91,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 5/11
 
-  <img src="img/array_sort05.png" width=200/>
+  <img src="img/array_sort05.png" width=300/>
 
 - Elemento __chave__: `v[1] = 5`
 - Elemento **comparado**: `v[2] = 3`
@@ -104,7 +104,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 6/11
 
-  <img src="img/array_sort06.png" width=200/>
+  <img src="img/array_sort06.png" width=300/>
 
 - Elemento __chave__: `v[1] = 3`
 - Elemento **comparado**: `v[3] = 8`
@@ -116,7 +116,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 7/11
 
-  <img src="img/array_sort07.png" width=200/>
+  <img src="img/array_sort07.png" width=300/>
 
 - Elemento __chave__: `v[1] = 3`
 - Elemento **comparado**: `v[4] = 4`
@@ -129,7 +129,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 8/11
 
-  <img src="img/array_sort08.png" width=200/>
+  <img src="img/array_sort08.png" width=300/>
 
 - Elemento __chave__: `v[2] = 5`
 - Elemento **comparado**: `v[3] = 8`
@@ -141,7 +141,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 9/11
 
-  <img src="img/array_sort09.png" width=200/>
+  <img src="img/array_sort09.png" width=300/>
 
 - Elemento __chave__: `v[2] = 5`
 - Elemento **comparado**: `v[4] = 4`
@@ -155,7 +155,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 10/11
 
-  <img src="img/array_sort10.png" width=200/>
+  <img src="img/array_sort10.png" width=300/>
 
 - Elemento __chave__: `v[3] = 8`
 - Elemento **comparado**: `v[4] = 5`
@@ -170,7 +170,7 @@
 ### Ordenação
 #### Exemplo - Vetor de Inteiros 11/11
 
-  <img src="img/array_sort11.png" width=200/>
+  <img src="img/array_sort11.png" width=300/>
 
 - Todas as comparações realizadas
 - O vetor está ordenado
