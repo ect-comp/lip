@@ -188,8 +188,8 @@
   - É necessário um laço que passe por cada elemento a ser comparado
     que está depois do elemento atual:<br>
     `for(j = i+1; j < n; j++)`
-        - Elementos na parte ordenada do vetor não devem ser comparados:
-          isto deixará o algoritmo incorreto
+  - Elementos na parte ordenada do vetor não devem ser comparados:
+    isto deixará o algoritmo incorreto
 - Fora isso, basta incluir as operações de comparação e troca entre elementos
 ---
 
