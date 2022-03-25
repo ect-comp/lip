@@ -56,7 +56,7 @@ e habilidades desejadas de um bacharel em CeT.
 - Prof. Dr. Bruno Silva
 - Atendimento:
     - Via email: bruno.silva@ect.ufrn.br
-    - Via Discord
+    - Via [Discord](https://discord.gg/Xfsk3CGT4y)
     - Horário para a turma: terças e quintas, das 15h às 16h
 - Áreas de interesse:
     - Processamento de imagens e visão computacional
@@ -64,8 +64,8 @@ e habilidades desejadas de um bacharel em CeT.
 ---
 
 ### Sobre a Disciplina
-- Aulas teóricas: quartas e sextas, de 16:50 às 18:30,
-  via Google Meet
+- Aulas teóricas: quartas e sextas, de 20:35 às 22:15,
+  Sala 5 da ECT
 - Carga horária total: 90 horas
     - Teoria: 60 horas
     - Laboratório: 30 horas
@@ -76,20 +76,18 @@ e habilidades desejadas de um bacharel em CeT.
 ---
 
 ### Laboratórios
-- Professor responsável:
-    - Prof. Dr. Francisco Vidal
-- Horários:
-    - Subturma 2A: Terça, 7:00 às 8:40 
-    - Subturma 2B: Terça, 8:55 às 10:35
-    - Subturma 2C: Quinta, 7:00 às 8:40
-    - Subturma 2D: Quinta, 8:55 às 10:35
+- Horários/professor:
+    - Subturma 4A: Quarta, 13:00 às 14:40 (Prof. Bruno)
+    - Subturma 4B: Segunda, 14:55 às 16:35 (Prof. Diego)
+    - Subturma 4C: Sábado, 8:55 às 10:35 (Prof. Éverton)
+    - Subturma 4D: Sábado, 10:50 às 12:30 (Prof. Éverton)
 ---
 
 ### Avaliações
 - Avaliação semanal:
-    - Avaliação continuada
     - Práticas de laboratório envolvendo o conteúdo
-      dado na semana anterior
+      dado na semana anterior (30%)
+    - Prova prática em cada unidade (70%)
 - Assiduidade
     - Presenças serão registradas por chamada oral
       em todas as aulas
@@ -169,7 +167,7 @@ Não. Todas as atividades avaliativas são elaboradas de forma que o aluno seja 
 
 ### Experiências Passadas em LiP
 
-A partir de experiências em turmas passadas no ensino remoto,
+A partir de experiências em turmas passadas,
 algumas fontes de problema na disciplina:
 
 - Aluno que não **ouve** o professor
@@ -181,7 +179,7 @@ algumas fontes de problema na disciplina:
 
 ### Experiências Passadas em LiP
 
-A partir de experiências em turmas passadas no ensino remoto,
+A partir de experiências em turmas passadas,
 algumas fontes de problema na disciplina:
 
 - Aluno que acha que está aprendendo, mas não está

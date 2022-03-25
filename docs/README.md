@@ -2,17 +2,19 @@
 
 ## Bruno Silva <bruno.silva@ect.ufrn.br>
 
-Este diretório contém os slides das aulas do semestre 2021.2
+Este diretório contém os slides das aulas do semestre 2022.1
 
-## [20/10 - Apresentação](./01-intro)
+## [30/03 - Apresentação](./01-intro)
  - Objetivos
  - Metodologia
  - Bibliografia
 
-## [22/10 - Introdução ao C++](./02-cpp)
+## [01/04 - Introdução ao C++](./02-cpp)
  - Variáveis e tipos
  - Operadores e expressões
  - Entrada e saída
+
+<!--
 
 ## [27/10 - Operadores e Expressões](./03-operadores_e_expressoes/)
  - Operadores em C++
@@ -115,3 +117,5 @@ Este diretório contém os slides das aulas do semestre 2021.2
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
+
+-->
