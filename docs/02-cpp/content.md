@@ -122,7 +122,7 @@ int main(){
 - Utilizadas para armazenar valores de diferentes tipos
 - Variáveis precisam ser declaradas antes de serem utilizadas
 
-<img src="variaveis.png" width=250/>
+<img src="variaveis.png" width=400/>
 ---
 
 ### C++: Sintaxe de Declaração de Variáveis
@@ -298,7 +298,7 @@ int main(){
 ```
 ---
 
-<!--
+<!---
 ### Exercício: Pré-Laboratório
 
 Exercício de pré-laboratório:
