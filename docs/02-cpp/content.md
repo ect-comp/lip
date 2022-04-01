@@ -298,16 +298,6 @@ int main(){
 ```
 ---
 
-<!---
-### Exercício: Pré-Laboratório
-
-Exercício de pré-laboratório:
-- Disponível no Sistema LoP
-- Conta como parte da nota do lab. 1
-- Prazo: 23:59 da próxima segunda (25/10)
----
--->
-
 ### Sumário
 - Na aula de hoje, você viu:
     - Estrutura de um programa em C++
