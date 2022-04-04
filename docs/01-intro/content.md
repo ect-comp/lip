@@ -77,10 +77,10 @@ e habilidades desejadas de um bacharel em CeT.
 
 ### Laboratórios
 - Horários/professor:
-    - Subturma 4A: Quarta, 13:00 às 14:40 (Prof. Bruno)
-    - Subturma 4B: Segunda, 14:55 às 16:35 (Prof. Diego)
-    - Subturma 4C: Sábado, 8:55 às 10:35 (Prof. Éverton)
-    - Subturma 4D: Sábado, 10:50 às 12:30 (Prof. Éverton)
+    - Subturma 4A: Quarta, 13:00 às 14:40, Lab. 1 (Prof. Bruno)
+    - Subturma 4B: Segunda, 14:55 às 16:35, Lab. 1  (Prof. Diego)
+    - Subturma 4C: Sábado, 8:55 às 10:35, Lab. 1  (Prof. Éverton)
+    - Subturma 4D: Sábado, 10:50 às 12:30, Lab. 1  (Prof. Éverton)
 ---
 
 ### Avaliações
