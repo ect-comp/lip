@@ -94,7 +94,8 @@ int main(){
     return 0;
 }
 ```
-O programa compila? Qual o valor impresso?
+O programa está sintaticamente correto?
+Qual o valor impresso?
 ---
 
 ### Operadores Aritméticos de Atribuição
@@ -121,7 +122,7 @@ Qual o valor final das variáveis a seguir, para `x = 1, y = 2, z = 3`?
 ### Operações de Potência e Raíz Quadrada
 - Em C++, não existem operadores para potência e raíz quadrada
 - Estas operações são realizadas por chamadas a funções
-    - `pow(B,E)` para potência (`B` elevado a `E`)
+    - `pow(b,e)` para potência (`b` elevado a `e`)
     - `sqrt(x)` para raíz quadrada de `x`
 - Ambas as funções estão na biblioteca `cmath`
 ```C++
@@ -407,7 +408,7 @@ char car;
 ### Desafio
 
 Implemente um programa que leia do usuário um número inteiro.
-O seu programa deve imprimir na tela o sucesso do número,
+O seu programa deve imprimir na tela o sucessor do número,
 exceto se ele for o número 11. Neste caso, o próprio número
 deve ser impresso.
 **Você não deve utilizar nenhum comando condicional.**

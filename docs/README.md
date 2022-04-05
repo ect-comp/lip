@@ -14,9 +14,7 @@ Este diretório contém os slides das aulas do semestre 2022.1
  - Operadores e expressões
  - Entrada e saída
 
-<!--
-
-## [27/10 - Operadores e Expressões](./03-operadores_e_expressoes/)
+## [06/04 - Operadores e Expressões](./03-operadores_e_expressoes/)
  - Operadores em C++
    - Atribuição
    - Operadores aritméticos
@@ -26,6 +24,8 @@ Este diretório contém os slides das aulas do semestre 2022.1
    - Expressões aritméticas
    - Expressões lógicas
 - Conversão entre tipos
+
+<!--
 
 ## [29/10 - Comandos de Seleção](./04-comandos_selecao/)
 - Comando `if` e `if-else`
