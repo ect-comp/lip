@@ -250,10 +250,16 @@ switch(expressao){
 
 ### Comando `switch-case`
 - Comando de seleção de múltipla escolha: alternativa ao uso de vários `if-else`
-- Usado somente em situações específicas
-    - A expressão é qualquer expressão em C++ que resulte em um inteiro ou caractere
-- Comando `break` (opcional): evita que blocos subsequentes sejam também executados (força que as condições sejam mutuamente exclusivas)
-- Cláusula `default` (opcional): executada quando a expressão não é igual a nenhuma das constantes
+- Possui sintaxe específica que compara o valor de uma variável ao de várias
+  constantes
+- Funcionamento:
+    - O bloco `case` que possuir valor igual ao da constante será executado
+    - Todos os blocos `case` abaixo do executado são também executados...
+---
+
+### Comando `switch-case`
+- ... exceto no caso em que cada `case` termina com um `break`
+- `default` (opcional): executado quando a expressão não é igual a nenhuma das constantes
 ---
 
 ### Comando `switch-case`
@@ -357,19 +363,11 @@ int main(){
 ---
 
 ### Comandos de Seleção
-`Dicas Gerais`
+#### Dicas Gerais
 - Todo `switch-case` pode ser feito com `if-else`, mas não o contrário
 - Operador ternário: utilizado em casos simples de  `if-else`
 - No final das contas:  `if-else` é mais genérico e portanto, mais indicado
 para uso
----
-
-### Exercício: Pré-Laboratório
-
-Exercício de pré-laboratório:
-- Disponível no Sistema LoP
-- Conta como parte da nota do lab. 2
-- Prazo: 23:59 da próxima segunda (01/11)
 ---
 
 ### Sumário
