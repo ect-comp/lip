@@ -33,7 +33,8 @@ if(condicao){
 
 ### Comando `if`
 - Comando de seleção simples: depende apenas de uma condição
-- A condição é qualquer expressão (inclusive constantes)
+- A condição é qualquer expressão (inclusive expressões
+  aritméticas ou constantes)
 - A condição é sempre avaliada como expressão lógica
     - Verdadeiro: qualquer valor diferente de zero
     - Falso: zero
