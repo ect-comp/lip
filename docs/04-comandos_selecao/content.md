@@ -2,7 +2,9 @@
 #### Comandos de Seleção
 ---
 
+<script>
 Reveal.slide( 15 );
+</script>
 
 ### Linguagem de Programação
 - Aulas anteriores:
