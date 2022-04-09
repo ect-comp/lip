@@ -1,10 +1,8 @@
-<section data-center=true>
-
 ### Linguagem de Programação
 #### Comandos de Seleção
 ---
 
-<section data-transition="zoom">
+<section data-transition="slide">
 
 ### Linguagem de Programação
 - Aulas anteriores:
