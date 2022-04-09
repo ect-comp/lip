@@ -2,8 +2,9 @@
 #### Comandos de Seleção
 ---
 
-### Linguagem de Programação
 <section data-background-transition="zoom">
+    
+### Linguagem de Programação
 - Aulas anteriores:
     - Variáveis e tipos básicos
     - Como modificar variáveis: operadores e expressões
