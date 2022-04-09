@@ -1,3 +1,5 @@
+<section data-center=true>
+
 ### Linguagem de Programação
 #### Comandos de Seleção
 ---
@@ -15,8 +17,6 @@
     - Operador ternário `? :`
 ---
 
-<section data-background=#ff0000>
-    
 ### Comandos de Seleção
 - Desviam o fluxo de execução de um programa
 - Permitem a execução de uma ou mais instruções (bloco de código)
