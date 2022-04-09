@@ -3,6 +3,7 @@
 ---
 
 ### Linguagem de Programação
+<script> Reveal.configure({ center: false }); </script>
 - Aulas anteriores:
     - Variáveis e tipos básicos
     - Como modificar variáveis: operadores e expressões
