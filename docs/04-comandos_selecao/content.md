@@ -2,8 +2,8 @@
 #### Comandos de Seleção
 ---
 
-<section data-background-transition="zoom">
-    
+Reveal.slide( 15 );
+
 ### Linguagem de Programação
 - Aulas anteriores:
     - Variáveis e tipos básicos
