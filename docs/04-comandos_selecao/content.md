@@ -2,9 +2,7 @@
 #### Comandos de Seleção
 ---
 
-<script>
-Reveal.slide( 15 );
-</script>
+<section data-transition="zoom">
 
 ### Linguagem de Programação
 - Aulas anteriores:
@@ -17,6 +15,8 @@ Reveal.slide( 15 );
     - Operador ternário `? :`
 ---
 
+<section data-background=#ff0000>
+    
 ### Comandos de Seleção
 - Desviam o fluxo de execução de um programa
 - Permitem a execução de uma ou mais instruções (bloco de código)
