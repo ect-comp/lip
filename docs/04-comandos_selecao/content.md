@@ -3,7 +3,7 @@
 ---
 
 ### Linguagem de Programação
-<script> Reveal.configure({ center: false }); </script>
+<section data-background-transition="zoom">
 - Aulas anteriores:
     - Variáveis e tipos básicos
     - Como modificar variáveis: operadores e expressões
