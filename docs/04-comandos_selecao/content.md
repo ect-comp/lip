@@ -192,6 +192,13 @@ else{
 ```
 ---
 
+### Lista de Presença
+
+<!-- ver.1.1f -->
+<div style="text-align:center;opacity:1;display:table;"><a href="https://qr-creator.com/" target="_blank" style="cursor:default;"><img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F361rEZw" alt="QR Code" border="0" /></a></div>
+
+---
+
 ### Encadeamento de `if-else`
 - Comando de seleção aninhado: associação de vários `if-else`
 - Cada `else` só é executado se o `if` anterior for falso
