@@ -192,14 +192,6 @@ else{
 ```
 ---
 
-### Lista de Presença
-
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F361rEZw" alt="QR Code" border="0" />
-
-<a href="https://bit.ly/361rEZw">https://bit.ly/361rEZw</a>
-
----
-
 ### Encadeamento de `if-else`
 - Comando de seleção aninhado: associação de vários `if-else`
 - Cada `else` só é executado se o `if` anterior for falso
