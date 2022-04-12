@@ -9,6 +9,7 @@ cada elemento dela com o comando `print`.
 
 - Exemplo de Entrada:
 8
+
 - Exemplo de Saída:
 2
 4

@@ -3,7 +3,7 @@ Lista Ordenada
 Escreva um programa que lê o nome de quatro pessoas,
 onde cada nome será fornecido em uma linha separada.
 
-O seu programa deve criar uma lista ordenada os nomes
+O seu programa deve criar uma lista ordenada com os nomes
 dessas pessoas e imprimir a lista resultante com o comando `print`.
 
 - Exemplo de Entrada:
