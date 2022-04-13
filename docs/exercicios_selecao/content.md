@@ -228,24 +228,17 @@ tempo de viagem e a diferença de fuso horário
 entre a cidade de saída e o destino, informe
 a hora de chegada no destino.
 
-A entrada é dada por 3 números inteiros $$s (0 \le s \le 23)$$,
-$$t (1 \le t \le 12)$$ e $$f (-5 \le f \le 5)$$ (estes intervalos
-são assumidos verdadeiros, o seu programa não precisa checá-los.)
-
 (Exercício retirado do
 [Beecrowd](https://www.beecrowd.com.br/judge/pt/problems/view/2057))
-
-Exemplos:
-```
-Entrada: 10 7  3         Saída: 20
-Entrada: 22 6 -2         Saída:  2
-Entrada:  0 3 -4         Saída: 23
-```
 
 ---
 
 ### Linguagem de Programação
 #### Exercício 4
+
+A entrada é dada por 3 números inteiros `$s (0 \le s \le 23)$`,
+`$t (1 \le t \le 12)$` e `$f (-5 \le f \le 5)$` (estes intervalos
+são assumidos verdadeiros, o seu programa não precisa checá-los.)
 
 Exemplos:
 ```
