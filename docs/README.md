@@ -30,6 +30,9 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Comando `switch`
 - Operador ternário
 
+## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
+- Exercícios com comandos `if-else`, `switch` e operador `? :`
+
 <!--
 
 ## [03/11 - Comandos de Repetição I](./05-comando_repeticao_for/)
