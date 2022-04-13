@@ -236,9 +236,10 @@ a hora de chegada no destino.
 ### Linguagem de Programação
 #### Exercício 4
 
-A entrada é dada por 3 números inteiros `$s (0 \le s \le 23)$`,
-`$t (1 \le t \le 12)$` e `$f (-5 \le f \le 5)$` (estes intervalos
-são assumidos verdadeiros, o seu programa não precisa checá-los.)
+A entrada é dada por 3 números inteiros
+`$s$`, `$(0 \le s \le 23)$`,
+`$t$`, `$(1 \le t \le 12)$` e
+`$f$`, `$(-5 \le f \le 5)$`.
 
 Exemplos:
 ```
