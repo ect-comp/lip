@@ -17,10 +17,6 @@ deve ser impresso.
 #### Exercício 0 (Desafio de 06/04) - Solução
 
 ```C++
-#include <iostream>
-
-using namespace std;
-
 int main(){
 
     int num;
@@ -48,8 +44,13 @@ do mês de abril de 2022 (um valor entre 1 e 30),
 imprime o dia da semana correspondente. Você
 pode utilizar **if-else** ou **switch** na solução.
 
+---
+
+### Linguagem de Programação
+#### Exercício 1
+
 Exemplo:
-```
+```cpp
 Entrada: 17
 Saída: Dia 17 - Domingo.
 ```
@@ -60,10 +61,6 @@ Saída: Dia 17 - Domingo.
 #### Exercício 1 - Solução
 
 ```C++
-#include <iostream>
-
-using namespace std;
-
 int main(){
 
     int dia;
@@ -114,8 +111,13 @@ a situação do aluno conforme as regras da UFRN:
   maior ou igual a 3
 - **Reprovado**: o aluno tem média menor do que 3
 
-Exemplo:
-```
+---
+
+### Linguagem de Programação
+#### Exercício 2
+
+Exemplos:
+```cpp
 Entrada: 5 2 10          Saída: Reposicao
 Entrada: 5 4  6          Saída: Aprovado
 Entrada: 4 4  0          Saída: Reprovado
@@ -127,10 +129,6 @@ Entrada: 4 4  0          Saída: Reprovado
 #### Exercício 2 - Solução
 
 ```C++
-#include <iostream>
-
-using namespace std;
-
 int main(){
 
     float n1, n2, n3, media;
@@ -173,8 +171,13 @@ deve imprimir uma mensagem informando
 se a letra é vogal/consoante e
 minúscula/maiúscula.
 
-Exemplo:
-```
+---
+
+### Linguagem de Programação
+#### Exercício 3
+
+Exemplos:
+```cpp
 Entrada: a          Saída: Vogal minuscula
 Entrada: C          Saída: Consoante maiuscula
 ```
@@ -185,10 +188,6 @@ Entrada: C          Saída: Consoante maiuscula
 #### Exercício 3 - Solução
 
 ```C++
-#include <iostream>
-
-using namespace std;
-
 int main(){
 
     char letra;
@@ -235,6 +234,18 @@ são assumidos verdadeiros, o seu programa não precisa checá-los.)
 
 (Exercício retirado do
 [Beecrowd](https://www.beecrowd.com.br/judge/pt/problems/view/2057))
+
+Exemplos:
+```
+Entrada: 10 7  3         Saída: 20
+Entrada: 22 6 -2         Saída:  2
+Entrada:  0 3 -4         Saída: 23
+```
+
+---
+
+### Linguagem de Programação
+#### Exercício 4
 
 Exemplos:
 ```
