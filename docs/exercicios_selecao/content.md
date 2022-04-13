@@ -253,7 +253,9 @@ Entrada:  0 3 -4         Saída: 23
 #### Exercício 4 - Desafio
 
 - Entre no site da questão e faça o seu cadastro
-- Prints de soluções submetidas até as 12:29 do dia 14/04
+- Submeta a questão e receba "Accepted" do Beecrowd
+- Soluções aceitas até as 12:29 do dia 14/04
   serão aceitas como 0,3 extra na 1a. unidade
+  - Envie o print por mensagem no Discord
 
 ---
