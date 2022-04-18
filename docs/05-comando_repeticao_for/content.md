@@ -13,24 +13,27 @@
 - Essenciais para a automatização de tarefas repetitivas
 - Repetem todos os comandos que estejam no seu corpo
 - Também chamados de laços ou *loops*
-- Dois tipos:
-    - Comando de repetição contado: o `for` repete instruções
-      por um determinado número de vezes
-    - Comando de repetição condicional: o `while` repete instruções
-      enquanto uma condição é verdadeira (próxima aula)
+---
+
+### Comandos de Repetição
+Dois tipos:
+- Comando de repetição contado `for`: repete instruções
+  por um determinado número de vezes
+- Comando de repetição condicional `while`: repete instruções
+  enquanto uma condição é verdadeira (próxima aula)
 ---
 
 ### Comandos de Repetição
 #### Exemplo de Motivação
 
 Implemente um programa que escreva `n` vezes na tela
-`"eu vou praticar programacao"`
+`"vou estudar lip"`
 ---
 
 ### Comando `for`
 Sintaxe:
 
-```
+```C++
 for(inicializacao; condicao; incremento){
     comando1;
     ...
@@ -41,16 +44,20 @@ for(inicializacao; condicao; incremento){
 
 ### Comando `for`
 - Itera sobre uma variável, chamada de contador, variável de iteração ou variável de controle
-- Dividido em três expressões
-    - Inicialização: executada somente na primeira vez (iteração)
-      em que o `for` é executado
-    - Condição: avaliada no início de cada iteração
-    - Incremento: executado no final de cada iteração
-- Todas as expressões são opcionais
+- Esta variável tem o seu valor alterado conforme o programador deseja
+- Isto faz o laço **executar várias iterações**
 ---
 
 ### Comando `for`
-```
+Dividido em três expressões
+- Inicialização: executada somente na primeira vez
+  em que o `for` é executado
+- Condição: avaliada no início de cada iteração
+- Incremento: executado no final de cada iteração
+---
+
+### Comando `for`
+```C++
 for(inicializacao; condicao; incremento){
     comando1;
     ...
@@ -77,7 +84,7 @@ int main(){
     return 0;
 }
 ```
-Qual a saída do programa?
+O que imprime este programa?
 ---
 
 ### Comandos de Repetição
@@ -89,7 +96,7 @@ int main(){
     int i, n;
     cin >> n;
     for(i = 0; i < n; i++){
-        cout << "eu vou praticar programacao\n";
+        cout << "vou estudar lip\n";
     }
     return 0;
 }
@@ -109,16 +116,22 @@ No mesmo exemplo, o que aconteceria se fosse usado:
 - `for(i = 0; i < 10*n; i += 10)...`
 - `for(i = n; i > 0; i--)...`
 - `for(i = 10*n; i > 0; i -= 10)...`
+
+?
 ---
 
 ### Comando `for`
 #### Usos Equivalentes do `for`
-- Diferentes combinações para a inicialização, condição e incremento
-  fazem o  `for` repetir pela mesma quantidade de vezes
-- Ou seja, diferentes `for` podem ser usados se estivermos preocupados
-  com a quantidade de execuções de um bloco de comandos
-  - O que não é o caso se desejarmos que a variável de iteração
-    assuma uma sequência de valores específicos
+Diferentes combinações para a inicialização, condição e incremento
+fazem o  `for` repetir pela mesma quantidade de vezes
+---
+
+### Comando `for`
+#### Usos Equivalentes do `for`
+- Diferentes `for` podem ser usados se estivermos preocupados
+com a quantidade de execuções de um bloco de comandos
+- O que não é o caso se desejarmos que a variável de iteração
+assuma uma sequência de valores específicos
 ---
 
 ### Comando `for`
@@ -143,7 +156,7 @@ int main(){
         media += nota;
     }
     media /= n;
-    cout << "media da turma: " << media << endl;
+    cout << "media dos alunos: " << media << endl;
     return 0;
 }
 ```
@@ -158,12 +171,20 @@ for(i = 0; i <= n; i++){
 }
 ```
 
-- Quantas vezes é executado o laço a seguir? Ele irá parar?
+- Quantas vezes é executado o laço a seguir?
 ```C++
 for(i = n; i > 0; i++){
     ...
 }
 ```
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3jNRvav" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3jNRvav"><p style="text-align:center;">https://bit.ly/3jNRvav</p></a>
+
 ---
 
 ### Comando `for`
@@ -189,16 +210,19 @@ Obviamente, há outras formas de se implementar este programa
 ---
 
 ### Comando `for`
-<!-- .slide: class="small_table" -->
-
 - Exercício 3: implemente um programa que imprime na tela em forma de tabela
 as seguintes contagens
     - De 1 a 100
     - De 10 a 1000 (incrementando o contador de 10 em 10)
     - De 100 a 1 (em ordem decrescente)
+---
+
+### Comando `for`
+<!-- .slide: class="small_table" -->
+
+Saída esperada para o exercício 3:
 
 | 1   | 10   | 100 |
-|:----|------|----:|
 | 2   | 20   | 99  |
 | 3   | 30   | 98  |
 | ... | ...  | ... |
@@ -223,7 +247,7 @@ variáveis adicionais
 ---
 
 ### Comando `for`
-- Exercício 4: faça um programa que lê um número `n` e em seguida,
+- Exercício 4: implemente um programa que lê um número `n` e em seguida,
 lê `n` caracteres.
 O programa deve exibir a quantidade de caracteres digitados
 que são letras minúsculas.

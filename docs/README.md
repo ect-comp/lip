@@ -33,17 +33,17 @@ Este diretório contém os slides das aulas do semestre 2022.1
 ## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
 - Exercícios com comandos `if-else`, `switch` e operador `? :`
 
-<!--
-
-## [03/11 - Comandos de Repetição I](./05-comando_repeticao_for/)
+## [20/04 - Comandos de Repetição I](./05-comando_repeticao_for/)
 - Comando de repetição `for`
 - Exercícios
 
-## [05/11 - Comandos de Repetição II](./06-comando_repeticao_while/)
+## [22/04 - Comandos de Repetição II](./06-comando_repeticao_while/)
 - Comando de repetição `while`
 - Comando de repetição `do.. while`
 - Comandos `break` e `continue`
 - Exercícios
+
+<!--
 
 ## [10/11 - Funções I](./07-funcoes1/)
 - Chamada de funções

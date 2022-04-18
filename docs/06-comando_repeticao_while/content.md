@@ -13,20 +13,23 @@
 
 ### Comandos de Repetição
 - Essenciais para a automatização de tarefas repetitivas
-- Repetem comandos que estejam no seu corpo
+- Repetem todos os comandos que estejam no seu corpo
 - Também chamados de laços ou *loops*
-- Dois tipos:
-    - Comando de repetição contado: o `for` repete instruções
-      por um determinado número de vezes (aula anterior)
-    - Comando de repetição condicional: o `while` repete instruções
-      enquanto uma condição é verdadeira
+---
+
+### Comandos de Repetição
+Dois tipos:
+- Comando de repetição contado: o `for` repete instruções
+  por um determinado número de vezes (aula anterior)
+- Comando de repetição condicional: o `while` repete instruções
+  enquanto uma condição é verdadeira
 ---
 
 ### Comandos de Repetição
 #### Exemplo de Motivação
 
 Implemente um programa que escreva na tela
-`"eu vou praticar programacao"`
+`"vou estudar lip"`
 enquanto um número lido não for 0
 ---
 
@@ -51,7 +54,7 @@ while(condicao){
 
 ### Comando `while`
 Devemos nos certificar de dois itens para garantir o seu funcionamento de forma correta:
-1. Que a condição pode ser verdadeira ao ser testada pela primeira vez
+1. Que a condição tem a possibilidade de ser verdadeira ao ser testada pela primeira vez
 2. Que a condição vai se tornar falsa, em algum momento
 ---
 
@@ -68,7 +71,7 @@ int main(){
     return 0;
 }
 ```
-- Qual a saída do programa?
+- Qual a saída deste programa?
 - Como foram garantidos os dois itens necessários?
 ---
 
@@ -82,7 +85,7 @@ int main(){
     cout << "Digite um numero\n";
     cin >> n;
     while(n != 0){
-        cout << "eu vou praticar programacao\n";
+        cout << "vou estudar lip\n";
         cout << "Digite um numero\n";
         cin >> n;
     }
@@ -106,11 +109,14 @@ int main(){
 - Exercício 1: faça um programa que lê **vários** números e
 informa se cada um deles é par ou ímpar. O programa deve se encerrar
 quando for digitado um número negativo.
-- Precisamos identificar:
-    1. Variáveis do programa
-    2. Entrada e saída do programa
-    3. O que deve ser repetido
-    4. Expressão lógica para repetição
+---
+
+### Comando `while`
+Precisamos identificar:
+1. Variáveis do programa
+2. Entrada e saída do programa
+3. O que deve ser repetido
+4. Expressão lógica para repetição
 ---
 
 ### Comando `while`
@@ -135,6 +141,14 @@ int main(){
 ```
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3JNbrFe" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3JNbrFe"><p style="text-align:center;">https://bit.ly/3JNbrFe</p></a>
+
+---
+
 ### Comando `do-while`
 - A linguagem C++ oferece também o comando
   `do-while` (faça-enquanto)
@@ -150,10 +164,10 @@ do{
 ---
 
 ### Comando `do-while`
-- Funciona como o `while`
-- **Diferença**: a condição é testada após a execução do corpo
-    - No comando `while`, o corpo pode não ser executado nenhuma vez
-    - No comando `do-while`, o corpo é executado pelo menos uma vez
+**Diferença para o `while`**: a condição é testada após a execução do corpo
+
+- No comando `while`, o corpo pode não ser executado nenhuma vez
+- No comando `do-while`, o corpo é executado pelo menos uma vez
 ---
 
 ### Comando `while` e `do-while`
@@ -190,7 +204,7 @@ int main(){
 
 ### Comandos `break` e `continue`
 - Existem dois comandos que podem ser utilizados
-  dentro do escopo de laços `for`, `while` e `do-while`
+  no corpo de laços `for`, `while` e `do-while`:
     - Comando `break`: utilizado para encerrar o laço em que o comando `break` se encontra
     - Comando `continue`: utilizado para ignorar a iteração atual do laço e forçar a próxima iteração
 - No geral, há alternativas que tornam ambos os comandos opcionais
@@ -280,7 +294,7 @@ int main(){
 O que faz este programa?
 ---
 
-## Comando `continue`
+### Comando `continue`
 #### Programa equivalente sem `continue`
 O mesmo programa pode ser implementado sem `continue`:
 
@@ -300,7 +314,7 @@ int main(){
 ```
 ---
 
-## Comando `while` e `do-while`
+### Comando `while` e `do-while`
 - Exercício 3: implemente um programa que lê a população no ano corrente
 de dois países, A e B. O país A tem taxa de crescimento de 2% ao ano, enquanto
 o país B cresce 4% ao ano. Supondo que a população do país A é maior do que a do
@@ -329,14 +343,6 @@ int main(){
     return 0;
 }
 ```
----
-
-### Exercício: Pré-Laboratório
-
-Exercício de pré-laboratório:
-- Disponível no Sistema LoP
-- Conta como parte da nota do lab. 3
-- Prazo: 23:59 da próxima segunda (08/11)
 ---
 
 ### Sumário
