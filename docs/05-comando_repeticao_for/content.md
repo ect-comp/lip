@@ -57,13 +57,6 @@ Dividido em três expressões
 ---
 
 ### Comando `for`
-```C++
-for(inicializacao; condicao; incremento){
-    comando1;
-    ...
-    comandoN;
-}
-```
 Ordem de execução:
 1. A expressão de inicialização é executada
 2. A expressão de condição é avaliada:
@@ -223,6 +216,7 @@ as seguintes contagens
 Saída esperada para o exercício 3:
 
 | 1   | 10   | 100 |
+|:----|------|----:|
 | 2   | 20   | 99  |
 | 3   | 30   | 98  |
 | ... | ...  | ... |

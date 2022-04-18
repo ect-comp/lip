@@ -141,14 +141,6 @@ int main(){
 ```
 ---
 
-### Lista de Presença
-
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3JNbrFe" alt="QR Code" border="0" />
-
-<a href="https://bit.ly/3JNbrFe"><p style="text-align:center;">https://bit.ly/3JNbrFe</p></a>
-
----
-
 ### Comando `do-while`
 - A linguagem C++ oferece também o comando
   `do-while` (faça-enquanto)
@@ -177,6 +169,14 @@ do{
 - Inverter condição: a expressão lógica deve ter valor verdadeiro para que o laço execute
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3JNbrFe" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3JNbrFe"><p style="text-align:center;">https://bit.ly/3JNbrFe</p></a>
+
+---
+
 ### Comandos `while` e `do-while`
 - Exercício 2: implemente um programa que lê um número inteiro positivo `n` e em seguida, imprime o quociente e o resto da divisão de `n` por 10. O seu programa deve checar se
 o usuário digitou um número inteiro positivo, solicitando ao mesmo para redigitá-lo se não
@@ -203,8 +203,8 @@ int main(){
 ---
 
 ### Comandos `break` e `continue`
-- Existem dois comandos que podem ser utilizados
-  no corpo de laços `for`, `while` e `do-while`:
+- Comandos que podem ser utilizados
+  dentro de `for`, `while` e `do-while`:
     - Comando `break`: utilizado para encerrar o laço em que o comando `break` se encontra
     - Comando `continue`: utilizado para ignorar a iteração atual do laço e forçar a próxima iteração
 - No geral, há alternativas que tornam ambos os comandos opcionais
@@ -322,7 +322,7 @@ país B, o seu programa deve informar em quantos anos a população do país B u
 ---
 
 ### Comando `while` e `do-while`
-`Exercício 3: Solução`
+#### Exercício 3: Solução
 ```C++
 int main(){
     int anos = 0;
