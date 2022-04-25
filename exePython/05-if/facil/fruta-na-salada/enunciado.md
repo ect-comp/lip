@@ -20,11 +20,11 @@ banana
 banana aparece em todas as saladas
 
 
-- Exemplo de Entrada 1:
+- Exemplo de Entrada 2:
 banana maçã laranja mamão
 goiaba uva banana manga
 kiwi laranja pêssego
 laranja
 
-- Exemplo de Saída 1:
+- Exemplo de Saída 2:
 laranja não aparece em todas as saladas
