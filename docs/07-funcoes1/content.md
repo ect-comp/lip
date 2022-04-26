@@ -17,9 +17,10 @@
 ---
 
 ### Função
-- Função: conjunto de comandos (trecho de código) que juntos, desempenham uma tarefa em particular
-- Uma função também pode ser chamada de subprograma
-- Cada função recebe um nome e através deste, pode ser executada (chamada)
+- Função: conjunto de comandos (trecho de código) que realizam
+  uma tarefa em particular
+- Também chamada de subprograma
+- Cada função recebe um nome e através deste, pode ser executada
 - Uso de funções organiza, simplifica e reduz programas
 ---
 
@@ -59,14 +60,16 @@ int main(){
 ---
 
 ### Programas que Chamam Funções
-- Vocês já utilizaram funções em vários programas
-- Em outras palavras:
-    - Você enquanto programador foi _usuário de funções_
-      implementadas por outro programador
-    - O seu programa continha _chamadas_ de funções
-      (_programa usuário_)
-- A chamada de uma função funciona exatamente como uma variável
-    - Contém um valor que pode ser usado em expressões
+- Vocês já utilizaram funções em vários programas:
+    - Você como programador foi _usuário de funções_
+    - O seu programa (_programa usuário_) continha _chamadas_ de funções
+    - As funções que você usou foram implementadas por
+      outro programador
+---
+
+### Programas que Chamam Funções
+A chamada de uma função funciona exatamente como uma variável:
+- Contém um valor que pode ser usado em expressões
 ---
 
 ### Programas que Chamam Funções
@@ -158,12 +161,23 @@ Escrever assinaturas para as funções abaixo:
 A assinatura de uma função define uma relação entre
 suas entradas e sua saída
 
-- Nos parâmetros da função podemos perceber _as suas entradas_
-- No tipo de retorno da função podemos perceber _a sua saída_
-- Observe que:
-    - Algumas funções não necessitam de entrada
-    - Algumas funções não retornam nada (próxima aula)
-    - É possível utilizar parâmetros da função para armazenar saída (próximas aulas)
+- Nos parâmetros da função estão _as suas entradas_
+- No tipo de retorno da função está _a sua saída_
+---
+
+### Assinaturas de Funções
+Observe que:
+- Algumas funções não têm entrada
+- Algumas funções não retornam nada (próxima aula)
+- Algumas funções possuem mais de uma saída (próximas aulas)
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3jRQleq" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3jRQleq"><p style="text-align:center;">https://bit.ly/3jRQleq</p></a>
+
 ---
 
 ### Definição de Funções
@@ -223,12 +237,15 @@ float converte_temp(float c){
   somente dentro da função)
 - Qualquer instrução é permitida no corpo da função, inclusive
   chamadas a outras funções (ou a ela mesma)
-- Comando `return`:
-    - Usado junto com qualquer expressão válida em C++
-    - Converte a expressão no tipo de retorno da função
-    - Termina execução da função e retorna a execução
-      do programa para a instrução seguinte
-      à chamada
+---
+
+### Definição de Funções
+Comando `return`:
+- Usado junto com qualquer expressão válida em C++
+- Converte a expressão no tipo de retorno da função
+- Encerra a função e retorna a execução
+  do programa para a instrução seguinte
+  à chamada a ela realizada 
 ---
 
 ### Definição de Funções

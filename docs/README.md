@@ -37,18 +37,18 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Comando de repetição `for`
 - Exercícios
 
-## [22/04 - Comandos de Repetição II](./06-comando_repeticao_while/)
+## [27/04 - Comandos de Repetição II](./06-comando_repeticao_while/)
 - Comando de repetição `while`
 - Comando de repetição `do.. while`
 - Comandos `break` e `continue`
 - Exercícios
 
-<!--
-
-## [10/11 - Funções I](./07-funcoes1/)
+## [29/04 - Funções I](./07-funcoes1/)
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
+
+<!--
 
 ## [12/11 - Funções II](./08-funcoes2/)
 - Função sem retorno (funções tipo `void`)
