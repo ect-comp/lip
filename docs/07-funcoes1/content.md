@@ -172,6 +172,14 @@ Observe que:
 - Algumas funções possuem mais de uma saída (próximas aulas)
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3jRQleq" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3jRQleq"><p style="text-align:center;">https://bit.ly/3jRQleq</p></a>
+
+---
+
 ### Definição de Funções
 Sintaxe:
 ```
