@@ -1,0 +1,5 @@
+[]
+[]
+['arroz', 'ovo']
+['presunto']
+['ovo', 'pão']

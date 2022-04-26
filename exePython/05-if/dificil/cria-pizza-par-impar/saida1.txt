@@ -1,0 +1,4 @@
+['queijo']
+[]
+['queijo', 'mel']
+['escarola', 'muzzarela']
