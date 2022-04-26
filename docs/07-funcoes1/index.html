@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="../dist/reveal.css">
         <link rel="stylesheet" href="../dist/theme/ect.css" id="theme">
-        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+        <link rel="stylesheet" href="../plugin/highlight/xcode.css">
     </head>
     <style>
     * {
@@ -69,11 +69,15 @@
         <script>
 
             Reveal.initialize({
+                            width: 800,
+                            height: 600,
                             controls: true,
                             progress: true,
                             history: true,
-                            center: true,
+                            center: false,
                             autoPlayMedia: true,
+                            transition: "fade",
+                            backgroundTransition: "none",
                             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
                         });
 
