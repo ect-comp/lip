@@ -1,0 +1,2 @@
+['queijo', 'cogumelo', 'pimenta', 'presunto']
+['cogumelo', 'presunto']
