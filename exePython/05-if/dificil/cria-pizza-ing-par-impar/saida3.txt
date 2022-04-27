@@ -1,0 +1,5 @@
+['queijo', 'frango']
+['frango', 'queijo']
+['arroz', 'feijão']
+['presunto', 'queijo']
+[]
