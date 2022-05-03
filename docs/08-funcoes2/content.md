@@ -66,7 +66,7 @@ Escrever assinaturas para as funções abaixo:
 
 ### Assinaturas de Funções
 #### Exercício: Solução
-```
+```C++
 1. void imprime_caractere(int cod);
 2. void imprime_menor(float x, float y, float z);
 3. void informacao_primo(int x);
@@ -96,9 +96,24 @@ void imprime_caractere(int n){
 ### Funções sem Retorno
 É preciso estar claro a diferença entre:
 - Uma função que retorna um valor, ex:
-```char converte_numero(int cod);```
+
+```
+char converte_numero(int cod);
+```
+
 - Uma outra função que imprime o mesmo valor, ex:
-```void imprime_caractere(int cod);```
+
+```
+void imprime_caractere(int cod);
+```
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3KUdVmF" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3KUdVmF"><p style="text-align:center;">https://bit.ly/3KUdVmF</p></a>
+
 ---
 
 ### Passagem de Parâmetros
@@ -131,10 +146,9 @@ void troca(int a, int b){
       função
 - Alternativa: **passagem de parâmetro por referência**
     - A variável em si é passada como parâmetro
-    - Variável em si: mesma posição (**referência**) na memória
+        - Mesma posição (**referência**) na memória
     - Uso do operador de referência: **`&`**
-    - Deve ser usado para cada parâmetro que deve ser modificado por
-      uma função
+        - Deve ser usado em cada parâmetro que deve ser modificado
 ---
 
 ### Passagem de Parâmetros
@@ -203,14 +217,6 @@ void ordena_crescente(int& a, int& b, int& c){
     }
 }
 ```
----
-
-### Exercício: Pré-Laboratório
-
-Exercício de pré-laboratório:
-- Disponível no Sistema LoP
-- Conta como parte da nota do lab. 4
-- Prazo: 23:59 da próxima segunda (15/11)
 ---
 
 ### Sumário

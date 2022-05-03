@@ -48,16 +48,16 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Assinatura de funções
 - Definição de funções
 
-<!--
-
-## [12/11 - Funções II](./08-funcoes2/)
+## [04/05 - Funções II](./08-funcoes2/)
 - Função sem retorno (funções tipo `void`)
 - Passagem de parâmetro por valor por referência
 
-## [17/11 - Funções III](./09-funcoes3/)
+## [06/05 - Funções III](./09-funcoes3/)
 - Parâmetros de entrada
 - Parâmetros de saída
 - Parâmetros de entrada e saída
+
+<!--
 
 ## [24/11 - Funções Recursivas](./10-funcoes_rec/)
 - Funções recursivas
