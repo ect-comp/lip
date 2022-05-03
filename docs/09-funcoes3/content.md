@@ -58,6 +58,15 @@ int main(){
 ### Parâmetros de Funções
 #### Exemplos
 1. Função que gera um número aleatório:
+    - `int rand();`
+2. Função que computa o produto entre dois números inteiros:
+    - `int produto(int x, int y);`
+    - `void produto(int x, int y, int& r);`
+---
+
+### Parâmetros de Funções
+#### Exemplos
+1. Função que gera um número aleatório:
     - `int rand();` `$\rightarrow$` nenhum parâmetro de entrada
 2. Função que computa o produto entre dois números inteiros:
     - `int produto(int x, int y);` `$\rightarrow$` 2 parâmetros de entrada
@@ -67,10 +76,27 @@ int main(){
 ### Parâmetros de Funções
 #### Exemplos
 3. Função que troca o valor de dois números inteiros:
+    - `void troca(int& x, int& y);` 
+4. Função que calcula o quociente e resto entre dois números inteiros:
+    - `void quoc_resto(int& x, int& y);` 
+    - `void quoc_resto(int x, int y, int& q, int& r);}` 
+---
+
+### Parâmetros de Funções
+#### Exemplos
+3. Função que troca o valor de dois números inteiros:
     - `void troca(int& x, int& y);` `$\rightarrow$` 2 parâmetros de entrada e saída, ao mesmo tempo
 4. Função que calcula o quociente e resto entre dois números inteiros:
     - `void quoc_resto(int& x, int& y);` `$\rightarrow$` 2 parâmetros de entrada e saída, ao mesmo tempo
     - `void quoc_resto(int x, int y, int& q, int& r);}` `$\rightarrow$` 2 parâmetros de entrada, 2 parâmetros de saída
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3vE91F1" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3vE91F1"><p style="text-align:center;">https://bit.ly/3vE91F1</p></a>
+
 ---
 
 ### Funções com Múltiplas Saídas
@@ -181,49 +207,6 @@ void maior_total_collatz(int t_ini, int& maior,
             maior = termo;
         }
         total++;
-    }
-}
-```
----
-
-### Exercício 3
-
-Implemente uma função chamada `conta_digitos`,
-que recebe como parâmetro de entrada um número inteiro
-e armazena em um primeiro parâmetro de saída a quantidade
-de dígitos pares e em um segundo a quantidade de dígitos
-ímpares.
-
-Implemente a função `main` para testar o seu programa.
----
-
-### Exercício 3: Solução
-```C++
-void conta_digitos(int x, int &dig_p, int &dig_i);
-
-int main(){
-    int num, r1, r2;
-
-    cout << "Informe um numero inteiro:\n";
-    cin >> num;
-
-    conta_digitos(num, r1, r2);
-
-    cout << r1 << " digitos pares\n";
-    cout << r2 << " digitos impares\n";
-}
-
-void conta_digitos(int x, int &dig_p, int &dig_i){
-    dig_p = 0; //observe que os parâmetros devem ser inicializados
-    dig_i = 0; //na função pedida e não na main
-    while(x > 0){
-        if(x % 2 == 0){
-            dig_p++;
-        }
-        else{
-            dig_i++;
-        }
-        x = x / 10;
     }
 }
 ```
