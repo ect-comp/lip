@@ -69,7 +69,7 @@ Escrever assinaturas para as funções abaixo:
 ```C++
 1. void imprime_caractere(int cod);
 2. void imprime_menor(float x, float y, float z);
-3. void informacao_primo(int x);
+3. void informa_primo(int x);
 ```
 ---
 
