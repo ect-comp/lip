@@ -219,6 +219,15 @@ void ordena_crescente(int& a, int& b, int& c){
 ```
 ---
 
+### Exercício: Solução
+
+Observe que:
+- A função `ordena_crescente` chama a função `troca` na sua solução
+- A ordem das trocas é importante (a 1a. comparação precisa ser
+  entre o 1o. e 3o. parâmetros)
+
+---
+
 ### Sumário
 Na aula de hoje:
 - Funções sem retorno
