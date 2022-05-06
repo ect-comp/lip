@@ -67,7 +67,7 @@ int main(){
 ### Parâmetros de Funções
 #### Exemplos
 1. Função que gera um número aleatório:
-    - `int rand();` `$\rightarrow$` nenhum parâmetro de entrada
+    - `int rand();` `$\rightarrow$` nenhum parâmetro
 2. Função que computa o produto entre dois números inteiros:
     - `int produto(int x, int y);` `$\rightarrow$` 2 parâmetros de entrada
     - `void produto(int x, int y, int& r);` `$\rightarrow$` 2 parâmetros de entrada e 1 de saída
@@ -108,6 +108,63 @@ int main(){
 ---
 
 ### Exercício 1
+A sequência de Collatz, é gerada pelas seguintes regras:
+- O termo inicial é um número dado
+- Se o termo atual for par, o próximo termo é igual ao atual dividido por dois
+- Se o termo atual for ímpar, o próximo termo é igual a três
+  vezes o atual mais um
+- A sequência é encerrada quando o termo atual é igual a 1
+
+Por exemplo, para um termo inicial igual a 10, a sequência gerada é
+`10, 5, 16, 8, 4, 2, 1`.
+---
+
+### Exercício 1
+
+Implemente uma função que receba como parâmetro de entrada um
+número inteiro positivo denotando o primeiro termo da sequência.
+A função a ser implementada deve armazenar em
+parâmetros de saída o maior número que faz parte da sequência e também o total
+de termos `n` que compõe a sequência.
+
+Implemente a função `main` para testar o seu programa.
+---
+
+## Exercício 1: Solução
+```C++
+void maior_total_collatz(int t_ini, int& maior,
+                         int& total);
+
+int main(){
+    int val_ini, val_maior, quant;
+    cout << "Insira o valor inicial da sequencia:\n";
+    cin >> val_ini;
+    maior_total_collatz(val_ini, val_maior, quant);
+    cout << "Maior valor: " << val_maior << endl;
+    cout << "Total de termos: " << quant << endl;
+    return 0;
+}
+void maior_total_collatz(int t_ini, int& maior,
+                         int& total){
+    int termo = maior = t_ini;
+    total = 1;
+    while(termo != 1){
+        if(termo % 2 == 0){
+            termo = termo/2;
+        }
+        else{
+            termo = 3*termo + 1;
+        }
+        if(termo > maior){
+            maior = termo;
+        }
+        total++;
+    }
+}
+```
+---
+
+### Exercício 2
 Implemente uma função que receba como parâmetros de entrada dois números inteiros `$x$` e `$y$`.
 A sua função deve armazenar em um primeiro parâmetro de saída o fatorial
 de `$x$`, o fatorial de `$y$` em um segundo parâmetro e `$x^y$` em um terceiro.
@@ -115,9 +172,12 @@ de `$x$`, o fatorial de `$y$` em um segundo parâmetro e `$x^y$` em um terceiro.
 A função `main` deve ler dois números inteiros entre 0 e 10 do usuário,
 passá-los como parâmetro para a função implementada e exibir as três saídas
 da função.
+
+Não utilize a função `pow`.
+
 ---
 
-### Exercício 1: Solução
+### Exercício 2: Solução
 ```C++
 int fatorial(int n);
 int potencia(int b, int e);
@@ -151,63 +211,6 @@ void fat_pot(int x, int y, int& f1, int& f2, int& p){
     f1 = fatorial(x);
     f2 = fatorial(y);
     p = potencia(x, y);
-}
-```
----
-
-### Exercício 2
-A sequência de Collatz, é gerada pelas seguintes regras:
-- O termo inicial é um número dado
-- Se o termo atual for par, o próximo termo é igual ao atual dividido por dois
-- Se o termo atual for ímpar, o próximo termo é igual a três
-  vezes o atual mais um
-- A sequência é encerrada quando o termo atual é igual a 1
-
-Por exemplo, para um termo inicial igual a 10, a sequência gerada é
-`10, 5, 16, 8, 4, 2, 1`.
----
-
-### Exercício 2
-
-Implemente uma função que receba como parâmetro de entrada um
-número inteiro positivo denotando o primeiro termo da sequência.
-A função a ser implementada deve armazenar em
-parâmetros de saída o maior número que faz parte da sequência e também o total
-de termos `n` que compõe a sequência.
-
-Implemente a função `main` para testar o seu programa.
----
-
-## Exercício 2: Solução
-```C++
-void maior_total_collatz(int t_ini, int& maior,
-                         int& total);
-
-int main(){
-    int val_ini, val_maior, quant;
-    cout << "Insira o valor inicial da sequencia:\n";
-    cin >> val_ini;
-    maior_total_collatz(val_ini, val_maior, quant);
-    cout << "Maior valor: " << val_maior << endl;
-    cout << "Total de termos: " << quant << endl;
-    return 0;
-}
-void maior_total_collatz(int t_ini, int& maior,
-                         int& total){
-    int termo = maior = t_ini;
-    total = 1;
-    while(termo != 1){
-        if(termo % 2 == 0){
-            termo = termo/2;
-        }
-        else{
-            termo = 3*termo + 1;
-        }
-        if(termo > maior){
-            maior = termo;
-        }
-        total++;
-    }
 }
 ```
 ---
