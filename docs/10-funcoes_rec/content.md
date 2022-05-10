@@ -9,14 +9,18 @@
 ---
 
 ### Linguagem de Programação
+
 Nas aulas anteriores (funções em C++):
 - Chamada, assinatura e definição
 - Passagem de parâmetro por valor e por referência
 - Parâmetros de entrada, saída e entrada/saída
+
 ---    
 
 ### Objetivo da Aula
+
 Introduzir o conceito e uso de funções recursivas
+
 ---
 
 ### Funções Recursivas
@@ -28,6 +32,7 @@ Recursividade em Programação:
 > Com o uso de recursividade (ou recursão), a solução de um
 > problema depende das soluções de partes menores do mesmo
 > problema.
+
 ---
 
 ### Funções Recursivas
@@ -287,6 +292,14 @@ Como este mecanismo funciona?
   é desempilhada
 - Isto provoca o desempilhamento das chamadas anteriores, até que a chamada
   original também seja desempilhada
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F39S1gTy" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/39S1gTy"><p style="text-align:center;">https://bit.ly/39S1gTy</p></a>
+
 ---
 
 ### Funções Recursivas
