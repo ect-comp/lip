@@ -57,9 +57,11 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
-## [13/05 - Funções Recursivas](./10-funcoes_rec/)
+## [11/05 - Funções Recursivas](./10-funcoes_rec/)
 - Estruturas recursivas
 - Passo base e passo recursivo
+
+## [13/05 - Funções Recursivas - Exercícios](./10a-funcoes_rec_exercicios)
 
 <!--
 
