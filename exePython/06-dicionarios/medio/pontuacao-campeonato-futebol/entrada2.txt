@@ -1,0 +1,7 @@
+5
+ABC 2 1 Globo
+Potiguar 3 1 America 1
+ABC 0 1 America
+Alecrim 3 3 Globo
+Assu 9 10 Potiguar
+Potiguar
