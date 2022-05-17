@@ -63,18 +63,18 @@ Este diretório contém os slides das aulas do semestre 2022.1
 
 ## [13/05 - Funções Recursivas - Exercícios](./10a-funcoes_rec_exercicios)
 
-<!--
-
-## [01/12 - Vetores](./11-vetores/)
+## [18/05 - Vetores](./11-vetores/)
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
 - Exercícios
 
-## [03/12 - Funções e vetores](./12-funcoes_e_vetores/)
+## [20/05 - Funções e vetores](./12-funcoes_e_vetores/)
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
 - Exercícios
+
+<!--
 
 ## [10/12 - Matrizes](./13-matrizes/)
 - Sintaxe de declaração

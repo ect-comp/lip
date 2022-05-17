@@ -239,11 +239,24 @@ qual o valor de cada expressão a seguir, sendo `x = 2`?
 
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3wlhT2D" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3wlhT2D"><p style="text-align:center;">https://bit.ly/3wlhT2D</p></a>
+
+---
+
 ### Inicialização de Vetores
 #### Sintaxe
 - `int v[5];` $\rightarrow$ inicializa cada valor com lixo
 - `int v[5] = {10, 20, 30, 40, 50};` $\rightarrow$ inicializa com valores indicados
 - `int v[] = {10, 20, 30, 40, 50};` $\rightarrow$ inicializa com valores indicados (tamanho do vetor é deduzido a partir dos valores)
+---
+
+### Inicialização de Vetores
+#### Sintaxe
+
 - `int v[5] = {};` $\rightarrow$ inicializa todos os valores com 0
 - `int v[5] = {5, 10};` $\rightarrow$ inicializa posições 0 e 1 com os valores indicados, todos os outros com 0
 ---
