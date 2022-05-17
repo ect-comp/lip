@@ -1,0 +1,4 @@
+Pizzas Pedidas:
+Queijo (R$ 20): ['queijo']
+Palmito (R$ 40): ['queijo', 'palmito', 'azeitona']
+Vegana (R$ 50): ['pão', 'brócolis', 'cogumelo', 'palmito']
