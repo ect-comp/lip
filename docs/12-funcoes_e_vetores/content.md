@@ -31,6 +31,10 @@ tipo_func nome_func(tipo_vetor nome_vetor[], int tam_vetor){
     corpo da funcao
 }
 ```
+---
+
+### Declaração de Função com Vetores
+#### Sintaxe
 Em relação às declarações de funções usadas anteriormente:
 
 - `tipo_vetor` é o tipo do vetor passado como parâmetro:
@@ -38,23 +42,26 @@ Em relação às declarações de funções usadas anteriormente:
 - `nome_vetor` é o nome do vetor passado como parâmetro. Observe que o
   `[]` é vazio
 - `tam_vetor` é o tamanho do vetor passado como parâmetro
-
-Caso haja mais de um vetor, é necessário informar o tamanho de cada um
 ---
 
 ### Declaração de Função com Vetores
 #### Sintaxe
-Exemplo com um vetor como parâmetro:
+Caso haja mais de um vetor:
+- Se tiverem tamanhos diferentes, é necessário
+  incluir um parâmetro para o tamanho de cada um
+- Se tiverem um mesmo tamanho, basta utilizar
+  um único parâmetro para o tamanho
+---
+
+### Declaração de Função com Vetores
+#### Sintaxe
+Exemplo com dois vetores como parâmetros:
 ```C++
-tipo_func nome_func(tipo_vetor nome_vetor[], int tam_vetor){
+tipo_func nome_func(tipo_vetor nome_vetor1[], int tam_vetor1,
+                    tipo_vetor nome_vetor2[], int tam_vetor2){
     corpo da funcao
 }
 ```
-- Caso haja mais de um vetor:
-    - Se tiverem tamanhos diferentes, é necessário
-      incluir um parâmetro para o tamanho de cada um
-    - Se tiverem um mesmo tamanho, basta utilizar
-      um único parâmetro para o tamanho
 ---
 
 ### Declaração de Função com Vetores
@@ -75,6 +82,14 @@ Escrever assinatura da função:
 3. int computa_maior(int v1[], int tam1,
                      int v2[], int tam2);
 ```
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3MlNKWw" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3MlNKWw"><p style="text-align:center;">https://bit.ly/3MlNKWw</p></a>
+
 ---
 
 ### Funções com Vetores
@@ -127,7 +142,7 @@ int main(){
 - Todo vetor passado para funções como parâmetro
   é passado por _referência_
 - Isto significa dizer que as alterações realizadas nos
-  vetores dentro da função permanecem após a função finalizar
+  vetores dentro da função permanecem após a função ser finalizada
 - Ou seja, todo vetor é um parâmetro de entrada e saída (ao mesmo tempo)
 ---
 
@@ -163,14 +178,12 @@ int[] soma_vetores(int v1[], int v2[], int n);
     - Terceira chamada considera as `n-2` primeiras posições
     - Passo base: alcançado quando não é possível dividir o vetor,
       ou seja, o seu tamanho é igual a 1
-- Veja a seguir uma possível resolução para a uma função recursiva
-  que soma todos os valores de um vetor
 ---
 
 ### Funções Recursivas
 #### Soma dos Valores em um Vetor
 
-Considere o vetor a seguir:
+Função recursiva para a soma de todos os valores de um vetor:
 
 <img src="img/array_rec1.png" width=500/>
 
