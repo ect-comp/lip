@@ -1,0 +1,298 @@
+### Linguagem de Programação
+#### Geração de Números Aleatórios
+---
+
+### Nas Aulas Anteriores
+
+Vetores em C++
+- Declaração
+- Acesso aos elementos
+- Inicialização
+- Uso de funções
+---
+
+### Objetivo da Aula
+- Apresentar os mecanismos oferecidos pela linguagem C++ para
+  geração de números aleatórios
+- Utilizar funções que geram números aleatórios com vetores
+---
+
+### Motivação
+Em diversas aplicações, é desejável que o computador gere um número aleatório.
+Exemplos:
+- Preencher um vetor/matriz com números aleatórios
+- Sortear um elemento de um vetor/matriz aleatoriamente
+---
+
+### Números Aleatórios
+#### Bibliotecas Necessárias
+- A linguagem C++ oferece funções para geração de números aleatórios
+  disponíveis na biblioteca `cstdlib`
+- Como a geração de números aleatórios depende de um número inicial
+  (**semente**), a biblioteca `ctime` também deve ser utilizada
+---
+
+### Números Aleatórios
+#### Funções
+Para se trabalhar com números aleatórios, são necessárias chamadas a duas funções:
+```C++
+1. void srand(int semente); //biblioteca cstdlib
+2. int rand(); //biblioteca cstdlib
+```
+---
+
+### Números Aleatórios
+#### Funções
+A função `srand` inicializa o gerador de números aleatórios com uma semente
+- Ex.: `srand(5);`
+- Basta ser chamada uma única vez no programa
+---
+
+### Números Aleatórios
+#### Funções
+A segunda função gera efetivamente um número aleatório
+- Ex.: `int n = rand();`
+- Deve ser chamada para cada número a ser gerado aleatoriamente
+---
+
+### Números Aleatórios
+#### Semente do Gerador de Números Aleatórios
+Observe que, em relação à semente do gerador de números aleatórios:
+1. A chamada à função `srand` não é obrigatória para o programa funcionar
+2. Entretanto, com ela, é possível impedir que o programa gere os mesmos números em diferentes execuções do programa
+
+### Números Aleatórios
+#### Semente do Gerador de Números Aleatórios
+Para isto, basta utilizar a hora atual do sistema como semente
+- Obter hora do sistema: utilizar função `time` da biblioteca `ctime`
+- Inicializar semente como a hora atual: `srand(time(0));`
+---
+
+### Números Aleatórios
+#### Exemplo
+Programa gera `n` números inteiros aleatórios e os exibe na tela
+```C++
+#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;ctime&gt;
+
+int main(){
+    srand(time(0)); //inicializa semente
+    int i, n;
+    cin >> n;
+    for(i = 0; i < n; i++){
+        cout << rand() << endl;
+    }
+    return 0;
+}
+```
+---
+
+### Números Aleatórios
+#### Função `rand`
+Problemas:
+- Gera sempre um número inteiro
+- Nrs. gerados estão em intervalo $[0, \text{RAND_MAX}]$
+- Como fazer para:
+    1. Gerar números dentro de um intervalo específico?
+    2. Gerar números reais?
+    3. Gerar caracteres?
+---
+
+### Números Aleatórios
+#### Geração de Números Aleatórios dentro de um Intervalo Específico
+Para gerar números aleatórios em um intervalo de interesse:
+1. Utilizar a função `rand`
+2. Usar o operador `%` para limitar a quantidade de valores gerados
+3. Somar o resultado com um valor constante para "deslocar" o intervalo de valores gerados
+---
+
+### Números Aleatórios
+#### Geração de Números Aleatórios dentro de um Intervalo Específico
+Exemplos de uso:
+
+1. Gera números inteiros aleatórios no intervalo $[0,\text{RAND_MAX}]$:  
+   `int x = rand();`
+---
+
+### Números Aleatórios
+#### Geração de Números Aleatórios dentro de um Intervalo Específico
+Exemplos de uso:
+
+2. Gera números inteiros aleatórios no intervalo $[0,q-1]$:  
+   `int x = rand() % q;`
+---
+
+### Números Aleatórios
+#### Geração de Números Aleatórios dentro de um Intervalo Específico
+Exemplos de uso:
+
+3. Gera números inteiros aleatórios no intervalo $[p,q]$:  
+   `int x = (rand() % (q-p+1)) + p;`
+---
+
+### Exercício
+Implemente uma função que gere números inteiros aleatórios
+em um intervalo qualquer delimitado por $[p,q]$
+---
+
+### Exercício
+#### Solução
+```C++
+int gera_valor_inteiro(int p, int q){
+    return (rand() % (q-p+1)) + p;
+}
+```
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3PAFdRJ" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3PAFdRJ"><p style="text-align:center;">https://bit.ly/3PAFdRJ</p></a>
+
+---
+
+### Números Aleatórios
+#### Geração de Números Reais Aleatórios
+E números reais? Como podemos gerá-los?
+- A função `rand` é a única disponível e retorna um inteiro
+---
+
+### Números Aleatórios
+#### Geração de Números Reais Aleatórios
+Para gerar números reais aleatórios:
+1. Utilizar a função `rand` dividida pelo valor `RAND_MAX`
+2. Multiplicar o resultado por um fator de escala
+3. Somar o resultado com um valor constante para "deslocar" o intervalo de valores gerados
+---
+
+### Números Aleatórios
+#### Geração de Números Reais Aleatórios
+Exemplos de uso:
+
+1. Gera números reais aleatórios no intervalo $[0.0,1.0]$:  
+   `float x = rand()/float(RAND_MAX);`
+---
+
+### Números Aleatórios
+#### Geração de Números Reais Aleatórios
+Exemplos de uso:
+
+2. Gera números reais aleatórios no intervalo $[0.0,q]$:  
+   `float x = q*(rand()/float(RAND_MAX));`
+---
+
+### Números Aleatórios
+#### Geração de Números Reais Aleatórios
+Exemplos de uso:
+
+3. Gera números reais aleatórios no intervalo $[p,q]$:  
+   `float x = (q-p)*(rand()/float(RAND_MAX)) + p;`
+---
+
+### Exercício
+Implemente uma função que gere números reais aleatórios em um
+intervalo qualquer delimitado por $[p,q]$
+---
+
+### Exercício
+#### Solução
+```C++
+float gera_valor_real(float p, float q){
+    return (q-p)*(rand()/float(RAND_MAX)) + p;
+}
+```
+---
+
+### Números Aleatórios
+#### Geração de Caracteres Aleatórios
+E caracteres? Como podemos gerá-los?
+- Lembre-se que um caractere possui um número inteiro associado,
+  de acordo com a tabela ASCII
+---
+
+### Números Aleatórios
+#### Geração de Caracteres Aleatórios
+Então, basta gerar um número no intervalo $[0,255]$ e convertê-lo
+para `char`
+---
+
+### Números Aleatórios
+#### Geração de Caracteres Aleatórios
+- Vários destes caracteres não são visíveis
+    - `\0`, que tem código igual a 0
+    - `\t`, que tem código igual a 9
+    - `\n`, que tem código igual a 10
+- Carateres visíveis: estão no intervalo $[33,126]$
+---
+
+### Exercícios
+#### Uso em Vetores
+Utilizando as funções anteriores:
+
+Implemente uma função que preencha um vetor de tamanho `n`
+com números inteiros aleatórios no intervalo $[-5,5]$
+
+---
+
+### Exercício
+#### Solução
+```C++
+void insere_aleatorios_vetor(int v[], int n){
+    int i;
+    for(i = 0; i < n; i++){
+        v[i] = gera_valor_inteiro(-5,5);
+    }
+}
+```
+---
+
+### Exercício
+#### Uso em Vetores
+Utilizando as funções anteriores:
+
+Implemente uma função que preencha um vetor de tamanho `n`
+com números reais aleatórios no intervalo $[1.0,10.0]$
+
+---
+
+### Exercício
+#### Solução
+```C++
+void insere_aleatorios_vetor(float v[], int n){
+    int i;
+    for(i = 0; i < n; i++){
+        v[i] = gera_valor_real(1,10);
+    }
+}
+```
+---
+
+### Exercício
+#### Uso em Vetores
+Implemente uma função que receba como parâmetro de entrada um número
+`n` e como parâmetro de saída dois vetores de números inteiros
+com tamanhos que devem ser calculados pela função.
+
+Inicialmente, a sua função deve zerar os vetores e após
+isto, gerar `n` números inteiros aleatórios no intervalo $[1,50]$.
+
+A função deve inserir os números gerados que forem primos no primeiro vetor
+e os números não primos no segundo.
+---
+
+### Exercício
+#### Uso em Vetores
+
+A função `main` do seu programa deve ler do usuário o valor de `n`
+e exibir na tela os dois vetores computados pela função solicitada.
+
+---
+
+### Sumário
+Na aula de hoje:
+- Mecanismos oferecidos pela linguagem C++ para geração de números aleatórios
+- Definição de funções para números aleatórios em intervalos de interesse
+- Uso em vetores
+---
