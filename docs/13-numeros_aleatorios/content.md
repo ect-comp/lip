@@ -60,6 +60,7 @@ A segunda função gera efetivamente um número aleatório
 Observe que, em relação à semente do gerador de números aleatórios:
 1. A chamada à função `srand` não é obrigatória para o programa funcionar
 2. Entretanto, com ela, é possível impedir que o programa gere os mesmos números em diferentes execuções do programa
+---
 
 ### Números Aleatórios
 #### Semente do Gerador de Números Aleatórios
