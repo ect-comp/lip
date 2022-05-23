@@ -1,0 +1,6 @@
+100
+Joana 15
+Marcos 1
+Amanda 50
+Joaquina 40
+Carlos 10

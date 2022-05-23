@@ -1,0 +1,4 @@
+Pizzas Pedidas:
+Marguerita (R$ 30): ['queijo', 'tomate', 'manjericão']
+Palmito (R$ 40): ['queijo', 'palmito', 'azeitona']
+Frango (R$ 35): ['queijo', 'frango', 'cebola', 'milho']

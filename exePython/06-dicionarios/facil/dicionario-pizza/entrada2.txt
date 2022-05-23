@@ -1,0 +1,10 @@
+Queijo
+20
+queijo
+Palmito
+40
+queijo palmito azeitona
+Vegana
+50
+pão brócolis cogumelo palmito
+sair

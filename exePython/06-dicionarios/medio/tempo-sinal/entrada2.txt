@@ -1,0 +1,8 @@
+6
+verde 0
+amarelo 1
+vermelho 2
+verde 1
+amarelo 2
+vermelho 3
+2 4 10
