@@ -19,7 +19,6 @@ Introduzir o uso de funções que operam sobre matrizes
 
 ### Funções e Matrizes
 >>> É possível passar matrizes como parâmetro de funções
-- Útil para realizar blocos de código repetitivos ou para a construção de programas maiores
 - É necessário passar também outros dois parâmetros, relativos ao número de linhas e colunas da matriz
 ---
 
@@ -54,14 +53,22 @@ int main(){
         }
     }
 
+    for(i = 0; i < nl; i++){
+        for(j = 0; j < nc; j++){
+            cout << mat[i][j] << " ";
+        }
+        cout << endl;
+    }
+
     return 0;
 }
 ```
 ---
 
 ### Função com Matrizes
->>> A linha `const int MAX = 100;` é equivalente a<br>
-    `\#define MAX 100`
+>>> A linha `const int MAX = 100;`<br>
+>>> é equivalente a<br>
+>>> `#define MAX 100`
 ---
 
 ### Declaração de Função com Matrizes
@@ -109,6 +116,14 @@ int computa_maior(int mat1[][MAX], int mat2[][MAX],
 ```
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3GEUj4E" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3GEUj4E"><p style="text-align:center;">https://bit.ly/3GEUj4E</p></a>
+
+---
+
 ### Funções com Matrizes
 #### Chamada de Funções
 Nas chamadas às funções, matrizes são passadas
@@ -134,7 +149,7 @@ int main(){
 #### Passagem de Parâmetros
 - Toda matriz passada para funções como parâmetro
   é passada por **referência**
-- Isto significa dizer que as alterações realizadas nas
+- Isto significa que as alterações realizadas nas
   matrizes se tornam visíveis fora do corpo da função
 ---
 
@@ -146,10 +161,12 @@ Exemplo:
 
 ```C++
 void imprime_vet(int v[], int n);
-int main(){
-    int nl, nc, i, j, mat[MAX][MAX];
-    ...
-    imprime_vet(mat[0], nc); //vetor linha 0 da matriz mat
+...
+void imprime_mat(int mat[][MAX], int nl, int nc){
+    int i = 0;
+    for(i = 0; i < nl; i++){
+        imprime_vet(mat[i], nc);
+    }
 }
 ```
 ---

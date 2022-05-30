@@ -45,7 +45,7 @@ Além das matrizes conhecidas da matemática, matrizes em C++ podem armazenar ou
 
 ### Declarando uma Matriz
 #### Sintaxe
-```
+```C++
 tipo_da_matriz nome_da_matriz[n_linhas][n_colunas];
 ```
 - `tipo_da_matriz` são os tipos de variáveis conhecidos:
@@ -137,6 +137,8 @@ iterar todas as colunas de todas as linhas da matriz. Ou seja:
 #### Exercício: Leitura de Dados
 Implemente um programa que leia do usuário as dimensões de uma matriz
 de inteiros e que leia também cada um de seus elementos.
+
+Imprima a matriz no formato adequado na tela.
 ---
 
 ### Posições de uma Matriz
@@ -151,8 +153,23 @@ int main(){
             cin >> m[i][j];
         }
     }
+
+    for(i = 0; i < nl; i++){
+        for(j = 0; j < nc; j++){
+            cout << m[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
 ```
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3z6K7A1" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3z6K7A1"><p style="text-align:center;">https://bit.ly/3z6K7A1</p></a>
+
 ---
 
 ### Posições de uma Matriz
@@ -286,6 +303,9 @@ int main(){
    armazenar em uma matriz de números inteiros a matriz
    identidade de tamanho `n` x `n`.
    Exiba também a matriz na tela.
+---
+
+### Exercícios
 3. Ler do usuário os elementos de uma matriz de números inteiros
    com tamanho `3` x `3` e em seguida, exibir na tela
    a soma dos elementos da diagonal principal

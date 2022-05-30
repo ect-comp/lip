@@ -83,17 +83,17 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Geração de caracteres aleatórios
 - Exercícios
 
-<!--
-
-## [10/12 - Matrizes](./13-matrizes/)
+## [01/06 - Matrizes](./14-matrizes/)
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
 - Exercícios
 
-## [12/01 - Funções e Matrizes](./15-funcoes_e_matrizes/)
+## [03/06 - Funções e Matrizes](./15-funcoes_e_matrizes/)
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
+
+<!--
 
 ## [19/01 - Strings I](./16-strings1/)
 - Caractere delimitador `\0`
