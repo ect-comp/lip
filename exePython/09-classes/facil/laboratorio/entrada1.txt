@@ -1,0 +1,8 @@
+Lab Info
+4
+5
+abrir
+entrar 3
+entrar 3
+fechar
+sair 1

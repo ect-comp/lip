@@ -1,0 +1,8 @@
+Biblioteca Câmara Cascudo
+6
+adicionar Sertões
+emprestar Sertões
+emprestar Sertões
+emprestar A_Rosa_do_Povo
+adicionar Pequeno_Príncipe
+imprimir
