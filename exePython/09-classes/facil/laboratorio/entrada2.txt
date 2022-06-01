@@ -1,0 +1,11 @@
+Lab Info
+10
+8
+entrar 3
+abrir
+sair 2
+entrar 4
+entrar 6
+sair 5
+sair 6
+fechar

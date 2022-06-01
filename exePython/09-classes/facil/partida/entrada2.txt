@@ -1,0 +1,10 @@
+Potiguar
+Baraúnas
+7
+V 1
+V 2
+M 0
+M 1
+V 0
+V 1
+M 3
