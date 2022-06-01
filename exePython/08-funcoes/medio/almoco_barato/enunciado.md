@@ -9,7 +9,7 @@ e devolve um dicionário com as chaves **nome** e **valor**.
 Em seguida, implemente uma função que recebe uma lista **pratos** com os pratos
 do cardárpio, onde cada prato é um dicionário como descrito acima, e o valor máximo que você
 deseja pagar. Essa função deve retornar uma lista com os índices dos elementos
-de **pratos** cujo valor estã dentro do seu orçamento.
+de **pratos** cujo valor está dentro do seu orçamento.
 
 A entrada de dados começa com um número inteiro **N**, indicando a
 quantidade de pratos. Depois, seguem a descrição de **N** pratos,
