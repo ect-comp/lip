@@ -69,12 +69,12 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Inicialização
 - Exercícios
 
-## [20/05 - Funções e vetores](./12-funcoes_e_vetores/)
+## [20/05 - Funções e Vetores](./12-funcoes_e_vetores/)
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
 - Exercícios
 
-## [25/05 - Funções e vetores - Exercícios](./12a-funcoes_e_vetores_exercicios)
+## [25/05 - Funções e Vetores - Exercícios](./12a-funcoes_e_vetores_exercicios)
 
 ## [27/05 - Geração de Números Aleatórios](./13-numeros_aleatorios/)
 - Geração de números aleatórios em C++
@@ -92,6 +92,8 @@ Este diretório contém os slides das aulas do semestre 2022.1
 ## [03/06 - Funções e Matrizes](./15-funcoes_e_matrizes/)
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
+
+## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
 
 <!--
 
