@@ -17,7 +17,8 @@ Introduzir o uso de strings
 ---
 
 ### Strings
->>> Strings: cadeias de caracteres delimitadas por `"`
+>>> Strings: cadeias de caracteres delimitadas
+>>> por aspas duplas $\rightarrow$ `"`
 
 Exemplos:
 - `"ect"`
@@ -47,7 +48,7 @@ Em C++, strings são vetores de `char` com um último caractere especial
 
 ### Strings
 
-Declaração de uma string em C++:
+Declaração de uma string em C++:<br>
 `char s[50];`
 
 ---
@@ -199,11 +200,10 @@ Sobre o tamanho da variável string na declaração:
 ### Strings
 #### Funções da Biblioteca `cstring`
 
-Na função anterior, "menor"/"maior" não depende dos tamanhos das strings:
-
-Na função `strcmp`, a string `"bala"` é "menor" do que
-`"bola"` porque o caractere `'a'` tem valor ASCII
-menor do que o caractere `'o'`
+Na função `strcmp`, "menor"/"maior" não depende dos tamanhos das strings:
+- A string `"bala"` é "menor" do que `"bola"`
+- Isto porque `'a'` tem valor ASCII menor do que `'o'`
+  (eles são o primeiro caractere que diferem)
 
 ---
 
