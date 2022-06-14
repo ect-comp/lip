@@ -95,17 +95,13 @@ Este diretório contém os slides das aulas do semestre 2022.1
 
 ## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
 
-<!--
-
-## [19/01 - Strings I](./16-strings1/)
+## [15/06 - Strings I](./16-strings1/)
 - Caractere delimitador `\0`
 - Inicialização
 - Entrada/saída
 - Funções de manipulação de strings
-    - `strlen`
-    - `strcpy`
-    - `strcat`
-    - `strcmp`
+
+<!--
 
 ## [21/01 - Strings II](./17-strings2/)
 - Leitura de strings com espaços em branco

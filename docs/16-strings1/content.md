@@ -17,10 +17,11 @@ Introduzir o uso de strings
 ---
 
 ### Strings
-- String: cadeias de caracteres (vários caracteres em sequência)
-- Exemplos:
-    - `"ect"`
-    - `"linguagem de programacao"`
+>>> Strings: cadeias de caracteres delimitadas por `"`
+
+Exemplos:
+- `"ect"`
+- `"linguagem de programacao"`
 ---
 
 ### Strings
@@ -31,16 +32,24 @@ Ao longo do curso, já utilizamos:
   `cout << "Informe o nr. de linhas";`
 
 E quanto a variáveis para armazenar strings?
+
 ---
 
 ### Strings
 Em C++, strings são vetores de `char` com um último caractere especial
-- Exemplo: `char s[50];`
+
 - Não iremos utilizar o tipo `string` (disponível em C++)
 - Toda string em C++ termina com o caractere `\0`:
     - Caractere especial delimitador de final de string
     - Usado pelos algoritmos/funções que processam strings
     - Não é visível e tem código ASCII igual a 0
+---
+
+### Strings
+
+Declaração de uma string em C++:
+`char s[50];`
+
 ---
 
 ### Strings
@@ -50,9 +59,15 @@ Em C++, strings são vetores de `char` com um último caractere especial
 Dada a string acima:
 - Qual o caractere na terceira posição?
 - Qual o caractere `s[5]`?
+---
+
+### Strings
+#### Representação em Memória
+<img src="img/string_example.png" width=550/>
+
+Dada a string acima:
 - Como poderíamos mudar a string para `"ola mundo"`?
-- Qual o tamanho da string? O tamanho é a quantidade de todos os caracteres
-(menos o caractere especial)
+- Qual o tamanho da string?
 ---
 
 ### Strings
@@ -65,7 +80,7 @@ char s[4] = {'e','c','t','\0'};
 ```C++
 char s[] = {'e','c','t','\0'};
 ```
-- Forma 3 (caractere especial é inserido automaticamente):
+- Forma 3 (`'\0'` é inserido automaticamente):
 ```C++
 char s[] = "ect";
 ```
@@ -86,6 +101,14 @@ char s[] = {'e','c','t'};
 
 - As regras que valem para vetores valem para strings
 - Entretanto, strings oferecem algumas vantagens, como mostradas a seguir
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3QnNYig" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3QnNYig"><p style="text-align:center;">https://bit.ly/3QnNYig</p></a>
+
 ---
 
 ### Strings
@@ -148,29 +171,40 @@ Sobre o tamanho da variável string na declaração:
     - `strcpy`: computa uma cópia da string
     - `strcat`: concatena duas strings
     - `strcmp`: compara duas strings
-- Ao longo da disciplina, estas funções podem ser usadas da biblioteca
+- Estas funções podem ser usadas na resolução de exercícios
 ---
 
 ### Strings
 #### Funções da Biblioteca `cstring`
-Assinatura e descrição das funções:
 - `int strlen(char s[])`:<br>
   retorna o tamanho da string `s`
 - `void strcpy(char dest[], char orig[])`:<br>
   copia o conteúdo de `orig` para `dest`
+---
+
+### Strings
+#### Funções da Biblioteca `cstring`
 - `void strcat(char s1[], char s2[])`:<br>
   concatena o conteúdo de `s2` na string `s1`
 ---
 
 ### Strings
 #### Funções da Biblioteca `cstring`
-Assinatura e descrição das funções:
 - `int strcmp(char s1[], char s2[])`: compara a string `s1` com `s2` <br>
     - Retorna 0 se elas forem iguais
     - Retorna um número negativo se `s1` for "menor" do que `s2`
     - Retorna um número positivo se `s1` for "maior" do que `s2`
+---
 
-Observe que "menor"/"maior" depende dos caracteres e não necessariamente dos tamanhos das strings
+### Strings
+#### Funções da Biblioteca `cstring`
+
+Na função anterior, "menor"/"maior" não depende dos tamanhos das strings:
+
+Na função `strcmp`, a string `"bala"` é "menor" do que
+`"bola"` porque o caractere `'a'` tem valor ASCII
+menor do que o caractere `'o'`
+
 ---
 
 ### Exercícios
@@ -217,8 +251,4 @@ Na aula de hoje:
     - Inicialização
     - Entrada/saída
 - Funções de manipulação de strings
-    - `strlen`
-    - `strcpy`
-    - `strcat`
-    - `strcmp`
 ---
