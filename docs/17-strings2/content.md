@@ -52,10 +52,14 @@ Entretanto, com o comando `cin`, não é possível ler strings com espaços:
 #### Leitura de Strings com Espaços em Branco
 - Para ler strings com espaços em branco, a função
   `cin.getline` deve ser utilizada
-- Parâmetros:
-    1. variável do tipo string onde o texto deve ser armazenado
-    2. número máximo de caracteres a serem lidos contando com o `\0`
 - A entrada do teclado é lida até que uma quebra de linha (tecla enter) seja digitada
+---
+
+### Strings
+#### Leitura de Strings com Espaços em Branco
+`cin.getline` - recebe dois parâmetros:
+1. variável do tipo string onde o texto deve ser armazenado
+2. número máximo de caracteres a serem lidos contando com o `\0`
 ---
 
 ### Strings
@@ -75,9 +79,8 @@ int main(){
 
 ### Strings
 #### Leitura de Strings com Espaços em Branco
-A leitura de dados não funcionará corretamente em programas
-onde o comando `cin.getline` é executado _após_ o comando `cin`.<br>
-Por exemplo, este programa:
+Problemas acontecem quando o `cin.getline`
+é executado _após_ o comando `cin`:
 
 ```C++
 const int STRMAX = 31;
@@ -97,7 +100,7 @@ int main(){
 
 ### Strings
 #### Leitura de Strings com Espaços em Branco
-... possui a seguinte execução $\rightarrow$ a entrada para a string é ignorada
+Ou seja, a entrada para a string é ignorada
 
 ```
 Informe um inteiro:
@@ -106,6 +109,11 @@ Inteiro informado: 5
 Informe uma string:
 String:
 ```
+---
+
+### Strings
+#### Leitura de Strings com Espaços em Branco
+
 Portanto, se for usar `cin.getline` após o `cin`:
 - Usar função `cin.ignore()` logo após o `cin`
 - Isto evita que o `\n` seja considerado como a string digitada
@@ -133,19 +141,19 @@ int main(){
 ---
 
 ### Exercícios
-Implemente uma função que receba uma string com
-espaços em branco como parâmetro de entrada e
-armazena a mesma string sem espaços em branco
-em um parâmetro de saída.
 
-Implemente também a função `main` para testar
-a função solicitada.
-
-Exemplo:
+Implemente uma função que remova os espaços
+em branco de uma string:
 - Entrada:<br>
   `Estudos␣de␣LIP`
 - Saída:<br>
   `EstudosdeLIP`
+
+Armazene o resultado em um parâmetro de saída.
+
+Implemente também a função `main` para testar
+a função solicitada.
+
 ---
 
 ### Exercícios
@@ -158,7 +166,11 @@ Um palíndromo é uma palavra/frase que pode ser lida tanto da esquerda para a d
 
 ### Exercícios
 Implemente uma função que receba como parâmetro uma string e retorne verdadeiro caso
-ela seja um palíndromo ou falso caso contrário. Existem duas versões para o problema:
+ela seja um palíndromo ou falso caso contrário.
+---
+
+### Exercícios
+Existem duas versões para o problema:
 1. Considerando espaços em branco como parte da string:<br>
  - `osso` é palíndromo
  - `o␣s␣s␣o` é palíndromo
@@ -170,7 +182,6 @@ ela seja um palíndromo ou falso caso contrário. Existem duas versões para o p
 
 ## Sumário
 Na aula de hoje:
-- Strings
-    - Leitura de strings com espaços
+- Strings: leitura de strings com espaços
 - Exercícios
 ---
