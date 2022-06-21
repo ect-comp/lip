@@ -77,6 +77,14 @@ int main(){
 ```
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3HCZDWJ" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3HCZDWJ"><p style="text-align:center;">https://bit.ly/3HCZDWJ</p></a>
+
+---
+
 ### Strings
 #### Leitura de Strings com Espaços em Branco
 Problemas acontecem quando o `cin.getline`
