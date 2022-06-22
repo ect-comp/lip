@@ -101,11 +101,11 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Entrada/saída
 - Funções de manipulação de strings
 
-<!--
-
-## [21/01 - Strings II](./17-strings2/)
+## [22/06 - Strings II](./17-strings2/)
 - Leitura de strings com espaços em branco
 - Exercícios
+
+<!--
 
 ## [28/01 - Tipos Estruturados I](./18-tipos_estruturados1/)
 - Definição de tipos estruturados
