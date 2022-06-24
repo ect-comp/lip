@@ -105,6 +105,8 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Leitura de strings com espaços em branco
 - Exercícios
 
+## [24/06 - Strings - Exercícios](./17a-strings_exercicios)
+
 <!--
 
 ## [28/01 - Tipos Estruturados I](./18-tipos_estruturados1/)
