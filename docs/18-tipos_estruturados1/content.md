@@ -59,12 +59,11 @@ int main(){
 <td>
 
 Na solução utilizada:
-- Dois vetores independentes, um para os
+- Dois vetores, um para os
   nomes e outro para as notas
-- O acesso ao nome/nota de um aluno
-  requer que uma mesma posição seja
-  utilizada nos dois vetores
-  - Isto implica em algoritmos sujeitos a falhas
+- Nome/nota de um aluno em
+  uma mesma posição
+- Programas sujeitos a falhas
 ---
 
 ### Motivação
@@ -74,16 +73,18 @@ E se fossem solicitados dados adicionais para um aluno?
 - Matrícula
 - CPF
 
-A questão a ser respondida é: existe alguma maneira de agrupar dados em C++?
+Existe alguma alternativa a utilizar vários vetores, sendo
+um para cada dado?
+
 ---
 
 ### Tipos Estruturados
 - Mecanismo disponibilizado pela linguagem C++
   - Também conhecido como registros ou estruturas
 - Permite ao programador definir um novo tipo de variável
-- Agrupa dados de **diferentes tipos** em memória
-  - Dados possuem __campos__ a serem manipulados pelos programas
-  - Campos são também chamados de membros, atributos ou propriedades
+- Agrupa dados de **diferentes tipos**
+- Dados possuem __campos__, também chamados de membros,
+  atributos ou propriedades
 ---
 
 ### Definindo um Tipo Estruturado
@@ -96,9 +97,9 @@ A questão a ser respondida é: existe alguma maneira de agrupar dados em C++?
 
 ### Definindo um Tipo Estruturado
 
-Então, pense sempre no que você quer representar
-no programa (o tipo estruturado) e que características
-desta coisa você também quer no programa:
+Então, pense no que você quer representar
+e que características dela devem estar
+no programa:
 - Aluno, com nome e nota
 - Conta bancária, com número, saldo e nome do titular
 - Cidade, com nome e população
@@ -237,6 +238,20 @@ struct Aluno{
 ```
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3OrFftZ" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3OrFftZ"><p style="text-align:center;">https://bit.ly/3OrFftZ</p></a>
+
+---
+
+### Utilizando Variáveis do Tipo Estruturado
+
+Atenção: **um tipo estruturado não é uma função**
+
+---
+
 ### Utilizando Variáveis do Tipo Estruturado
 #### Declaração de Variáveis
 
@@ -247,10 +262,8 @@ declarar variáveis do tipo estruturado:
 Aluno a1, a2; //declara duas variáveis do tipo Aluno
 ```
 
-Toda variável declarada
-do tipo `Aluno` possui campos `nome` e `nota`
-que devem ser acessados como se fossem
-variáveis quaisquer.
+Toda variável do tipo `Aluno` possui campos `nome` e `nota`
+que devem ser acessados nos programas
 
 ---
 
@@ -265,12 +278,20 @@ por meio do operador `.` (ponto):
 Aluno a;
 ...
 
-cin >> a.nome; //acessa o nome de um aluno para leitura
+cin.getline(a.nome,SMAX); //acessa o nome de um aluno para leitura
 cin >> a.nota; //acessa a nota de um aluno para leitura
 ```
 
-`a.nome` obedece a todas as regras que valem
-para strings e `a.nota` para números reais.
+---
+
+### Utilizando Variáveis do Tipo Estruturado
+#### Declaração de Variáveis
+
+Os campos do tipo `Aluno` funcionam como variáveis
+do tipo declarado no campo:
+
+- `nome` funciona como string
+- `nota` funciona como `float`
 
 ---
 
@@ -298,8 +319,8 @@ Para evitar isto:
 
 ```C++
 Aluno a; //declara variável do tipo Aluno
-a.nome = ""; //inicializa nome com string vazia
-a.nota = 0.0; //inicializa nota com zero
+strcpy(a.nome, ""); //atribui string vazia ao nome
+a.nota = 0.0; //atribui zero à nota
 ```
 ---
 
@@ -313,14 +334,14 @@ receber uma outra do mesmo tipo:
 Aluno a1, a2;
 a1 = a2; //atribuição funciona como esperado (atribui o valor de cada campo)
 
-//mesma coisa que fazer:
-//a1.nota = a2.nota;
-//strcpy(a1.nome, a2.nome);
-//a1.nome = a2.nome; -> erro: não é assim que se copia strings
+//Equivalente a :
+a1.nota = a2.nota;
+strcpy(a1.nome, a2.nome);
 ```
 
-Isto é um atalho equivalente a copiar cada campo
-de uma variável para a outra.
+Observe como seria trabalhoso copiar uma variável
+para outra desta última forma se ela contivesse
+muitos campos
 
 ---
 
@@ -420,10 +441,10 @@ int main(){
 <td>
 
 Com tipos estruturados:
-- Um único índice é utilizado para acessar todos os dados
+- Único índice utilizado para todos os dados
   de um aluno
-- Todos os dados de um aluno estão em uma mesma variável
-- Algoritmos menos sujeitos a falhas
+- Todos os campos de um aluno em uma mesma variável
+- Programas menos sujeitos a falhas
 
 ---
 

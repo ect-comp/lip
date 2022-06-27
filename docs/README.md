@@ -107,17 +107,17 @@ Este diretório contém os slides das aulas do semestre 2022.1
 
 ## [24/06 - Strings - Exercícios](./17a-strings_exercicios)
 
-<!--
-
-## [28/01 - Tipos Estruturados I](./18-tipos_estruturados1/)
+## [29/06 - Tipos Estruturados I](./18-tipos_estruturados1/)
 - Definição de tipos estruturados
 - Operações com variáveis de tipos estruturados
 - Vetores de variáveis de tipos estruturados
 - Exercícios
 
-## [02/02 - Tipos Estruturados II](./19-tipos_estruturados2/)
+## [01/07 - Tipos Estruturados II](./19-tipos_estruturados2/)
 - Uso de tipos estruturados em funções
 - Exercícios
+
+<!--
 
 ## [09/02 - Ordenação](./20-ordenacao/)
 - Ordenação

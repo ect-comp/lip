@@ -68,8 +68,7 @@ como poderíamos proceder?
 ### Tipos Estruturados e Funções
 #### Assinatura de Funções
 
-Variáveis de tipos estruturados podem ser utilizadas
-em funções com as mesmas regras de uma variável qualquer:
+Tipos estruturados em funções - mesmas regras de uma variável qualquer:
 
 - Função que retorna o aluno com maior nota
 em um vetor de alunos:
@@ -82,8 +81,7 @@ Aluno calcula_maior_nota(Aluno v[], int n);
 ### Tipos Estruturados e Funções
 #### Assinatura de Funções
 
-Variáveis de tipos estruturados podem ser utilizadas
-em funções com as mesmas regras de uma variável qualquer:
+Tipos estruturados em funções - mesmas regras de uma variável qualquer:
 
 - Função que armazena o aluno com a menor nota e
 o aluno com a maior nota em parâmetros de saída:
@@ -104,8 +102,8 @@ Assumindo variáveis declaradas como
 Aluno a_menor, a_maior, alunos[MAX];
 ```
 
-As funções mostradas anteriormente devem
-ser chamadas da seguinte forma:
+Passagem de parâmetros nas chamadas de funções
+também não se alteram:
 
 ```
 //var. recebe o retorno
@@ -117,10 +115,18 @@ calcula_menor_maior_nota(alunos, n, a_menor, a_maior);
 ```
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3OjdOCJ" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3OjdOCJ"><p style="text-align:center;">https://bit.ly/3OjdOCJ</p></a>
+
+---
+
 ### Exercício 1
 
 Reimplemente o exercício do início desta aula
-implementando uma função **que imprime** todos
+com uma função **que imprime** todos
 os alunos abaixo da média. Ou seja, a função
 deve receber como parâmetro de entrada um vetor
 do tipo `Aluno` (além do seu tamanho).
@@ -180,15 +186,15 @@ int main(){
 
 ### Tipo Estruturado para uma Matriz
 
-- Uma grande vantagem do uso de tipos estruturados
-  é que definir um tipo estruturado para representar
-  uma matriz reduz a quantidade de parâmetros das
-  funções
-- Para isto, o tipo estruturado deve ter como campos:
+- Grande vantagem de tipos estruturados:
+  tipo estruturado `Matriz` reduz a quantidade
+  de parâmetros das funções
+- Para isto, o tipo `Matriz` deve ter como campos:
   - O número de linhas da matriz
   - O número de colunas da matriz
   - Uma matriz de números inteiros, caracteres
-    ou números reais, conforme pede o problema
+    ou números reais, conforme pede o problema,
+    alocada com espaço suficiente
 
 ---
 
@@ -218,9 +224,7 @@ uma matriz de números inteiros, o seu número de linhas e
 o seu número de colunas.
 
 Em seguida, implemente uma função que receba como parâmetro 
-duas matrizes de tamanho qualquer e que calcule a soma matricial.
-Faça a função retornar a matriz em uma primeira versão
-e ela armazenar o resultado em um parâmetro de saída em uma segunda.
+duas matrizes e retorne a soma matricial.
 
 Implemente também a função `main`, de modo que o usuário
 possa inserir os dados das matrizes e testar o programa.
@@ -242,6 +246,8 @@ struct Matriz{
 void le_mat(Matriz& m){
   int i, j;
 
+  cin >> m.nl;
+  cin >> m.nc;
   for(i = 0; i < m.nl; i++){
     for(j = 0; j < m.nc; j++){
       cin >> m.numeros[i][j];
@@ -260,11 +266,12 @@ void imprime_mat(Matriz m){
   }
 }
 
-//Versão 1
 Matriz soma_matrizes(Matriz m1, Matriz m2){
   int i, j;
   Matriz r;
 
+  r.nl = m1.nl;
+  r.nc = m1.nc;
   for(i = 0; i < m1.nl; i++){
     for(j = 0; j < m1.nc; j++){
       r.numeros[i][j] = m1.numeros[i][j] + m2.numeros[i][j];
@@ -273,8 +280,6 @@ Matriz soma_matrizes(Matriz m1, Matriz m2){
 
   return r;
 }
-
-//Versão 2 a cargo do aluno :)
 
 int main(){
   Matriz mat1, mat2, mat_soma;
