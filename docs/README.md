@@ -117,12 +117,8 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Uso de tipos estruturados em funções
 - Exercícios
 
-<!--
-
-## [09/02 - Ordenação](./20-ordenacao/)
+## [06/07 - Ordenação](./20-ordenacao/)
 - Ordenação
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
-
--->

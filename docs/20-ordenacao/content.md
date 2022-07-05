@@ -16,8 +16,7 @@
 
 ### Ordenação
 
-- Tópico bastante estudado em algoritmos
-- Existem diversas soluções
+- O problema de ordenação possui diversas soluções
 - Ordenação pode fazer parte de soluções de programas maiores
 
 ---
@@ -43,7 +42,7 @@
 
 - Elemento __chave__: `v[0] = 5`
 - Elemento **comparado**: `v[1] = 3`
-- `v[0] > v[1]` $\rightarrow$ verdadeiro.
+- `v[0] > v[1]` $\rightarrow$ verdadeiro,
   trocar `v[0]` com `v[1]`
 - Ir para o próximo elemento a ser comparado
   
@@ -56,7 +55,7 @@
 
 - Elemento __chave__: `v[0] = 3`
 - Elemento **comparado**: `v[2] = -1`
-- `v[0] > v[2]` $\rightarrow$ verdadeiro.
+- `v[0] > v[2]` $\rightarrow$ verdadeiro,
   trocar `v[0]` com `v[2]`
 - Ir para o próximo elemento a ser comparado
   
@@ -69,7 +68,7 @@
 
 - Elemento __chave__: `v[0] = -1`
 - Elemento **comparado**: `v[3] = 8`
-- `v[0] > v[3]` $\rightarrow$ falso.
+- `v[0] > v[3]` $\rightarrow$ falso,
 - Ir para o próximo elemento a ser comparado
   
 ---
@@ -81,7 +80,7 @@
 
 - Elemento __chave__: `v[0] = -1`
 - Elemento **comparado**: `v[4] = 4`
-- `v[0] > v[4]` $\rightarrow$ falso.
+- `v[0] > v[4]` $\rightarrow$ falso,
 - Fim das comparações com o elemento chave atual:
   ir para o próximo elemento chave e recomeçar comparações
   com todos depois dele
@@ -95,7 +94,7 @@
 
 - Elemento __chave__: `v[1] = 5`
 - Elemento **comparado**: `v[2] = 3`
-- `v[1] > v[2]` $\rightarrow$ verdadeiro.
+- `v[1] > v[2]` $\rightarrow$ verdadeiro,
   trocar `v[1]` com `v[2]`
 - Ir para o próximo elemento a ser comparado
   
@@ -108,7 +107,7 @@
 
 - Elemento __chave__: `v[1] = 3`
 - Elemento **comparado**: `v[3] = 8`
-- `v[1] > v[3]` $\rightarrow$ falso.
+- `v[1] > v[3]` $\rightarrow$ falso,
 - Ir para o próximo elemento a ser comparado
   
 ---
@@ -120,7 +119,7 @@
 
 - Elemento __chave__: `v[1] = 3`
 - Elemento **comparado**: `v[4] = 4`
-- `v[1] > v[4]` $\rightarrow$ falso.
+- `v[1] > v[4]` $\rightarrow$ falso,
 - Fim das comparações com o elemento chave atual: ir para o próximo
   elemento chave e recomeçar comparações com todos depois dele
   
@@ -133,7 +132,7 @@
 
 - Elemento __chave__: `v[2] = 5`
 - Elemento **comparado**: `v[3] = 8`
-- `v[2] > v[3]` $\rightarrow$ falso.
+- `v[2] > v[3]` $\rightarrow$ falso,
 - Ir para o próximo elemento a ser comparado
   
 ---
@@ -145,7 +144,7 @@
 
 - Elemento __chave__: `v[2] = 5`
 - Elemento **comparado**: `v[4] = 4`
-- `v[2] > v[4]` $\rightarrow$ verdadeiro.
+- `v[2] > v[4]` $\rightarrow$ verdadeiro,
   trocar `v[2]` com `v[4]`
 - Fim das comparações com o elemento chave atual: ir para o próximo
   elemento chave e recomeçar comparações com todos depois dele
@@ -159,7 +158,7 @@
 
 - Elemento __chave__: `v[3] = 8`
 - Elemento **comparado**: `v[4] = 5`
-- `v[3] > v[4]` $\rightarrow$ verdadeiro.
+- `v[3] > v[4]` $\rightarrow$ verdadeiro,
   trocar `v[3]` com `v[4]`
 - Fim das comparações com o elemento chave atual. O último
   elemento chave não possui nenhum elemento após ele.
@@ -181,16 +180,31 @@
 #### Generalizando o Raciocínio
 - O elemento __chave__ é `v[i]`
 - O elemento **comparado** é `v[j]`
-- Observe que, para percorrer os elementos:
+- Observe que:
   - É necessário um laço que percorra os índices `0,1,...,n-2`,
     para cada elemento atual:<br>
     `for(i = 0; i < n-1; i++)`
+---
+
+### Ordenação
+#### Generalizando o Raciocínio
+- Observe que:
   - É necessário um laço que passe por cada elemento a ser comparado
     que está depois do elemento atual:<br>
     `for(j = i+1; j < n; j++)`
+---
+
+### Ordenação
+#### Generalizando o Raciocínio
+- Observe que:
   - Elementos na parte ordenada do vetor não devem ser comparados:
     isto deixará o algoritmo incorreto
-- Fora isso, basta incluir as operações de comparação e troca entre elementos
+---
+
+### Ordenação
+#### Generalizando o Raciocínio
+- Observe que:
+  - Fora isso, basta incluir as operações de comparação e troca entre elementos
 ---
 
 ### Ordenação
@@ -233,6 +247,14 @@ int main(){
     return 0;
 }
 ```
+
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3NKsoBW" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3NKsoBW"><p style="text-align:center;">https://bit.ly/3NKsoBW</p></a>
 
 ---
 
@@ -308,15 +330,19 @@ int main(){
 ### Ordenação
 #### Ordem Alfabética
 
-- Lembrando a função `strcmp`, que recebe duas strings como parâmetros:
-  - Retorna um número negativo se a string do primeiro parâmetros for menor
-  - Retorna um número positivo se a string do primeiro parâmetros for maior
-  - Retorna 0 se as strings são iguais
-- Então, para ordenar alfabeticamente:
-  - `strcmp(alunos[i].nome, alunos[j].nome)` retorna um número positivo
-    se o nome do aluno `i` for alfabeticamente maior do que o nome do aluno `j`
-  - Esta expressão pode ser utilizada para testar se os elementos no vetor
-    devem ser trocados
+Função `strcmp` - duas strings como parâmetros:
+- Retorna um número negativo se a string do primeiro parâmetros for menor
+- Retorna um número positivo se a string do primeiro parâmetros for maior
+- Retorna 0 se as strings são iguais
+
+---
+
+### Ordenação
+#### Ordem Alfabética
+
+Então, para ordenar alfabeticamente:
+- `strcmp(alunos[i].nome, alunos[j].nome)` retorna um número positivo
+  se o nome do aluno `i` for alfabeticamente maior do que o nome do aluno `j`
 
 ---
 
