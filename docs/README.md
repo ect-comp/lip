@@ -122,3 +122,6 @@ Este diretório contém os slides das aulas do semestre 2022.1
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
+
+## [08/07 - Tipos Estruturados - Exercícios](./20a-tipos_estruturados
+_exercicios)
