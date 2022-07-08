@@ -3,61 +3,121 @@
 ---
 
 ## Contexto: Treinos de Corrida
+
+Imagine um aplicativo que registra __treinos de corrida__,
+ou seja, o dia, distância, tempo e ritmo que uma pessoa
+correu.
+
+---
+
+## Contexto: Treinos de Corrida
 <video data-autoplay src="./videos/ordenacao_corridas.mp4"></video>
 ---
 
 ### Exercício 1
-#### Contagem de Letras
+#### Treinos de Corrida
 
-Implemente uma função que receba como parâmetro de entrada uma string
-e como parâmetro de saída um vetor de inteiros de 26 posições.
-A função a ser implementada deve armazenar no vetor a contagem de
-cada caractere minúsculo que aparece na string: na posição 0 deve ser
-armazenada a quantidade de 'a', na posição 1 a quantidade de 'b' e assim
-por diante até a posição 25, que deve armazenar a quantidade de 'z'.
+Considere um treino de corrida. Ele contém:
 
-A função main deve ler uma string e exibir na tela quantas vezes aparece cada caractere na frase utilizando
-a função implementada
+- Uma data
+- Uma duração (horas, minutos e segundos)
+- Uma distância dada em quilômetros
+- Uma *pace* (ritmo), dado em minutos e segundos
+
+Tendo em mente que você vai precisar ordenar por
+data, duração e pace...
 
 ---
 
 ### Exercício 1
-#### Contagem de Letras
+#### Treinos de Corrida
 
-A função main deve ler do usuário uma string e mostrar na tela a
-quantidade de ocorrências de cada letra:
-
-```
-programacao
-
-a: 3
-c: 1
-g: 1
-m: 1
-o: 2
-p: 1
-r: 2
-```
-
----
-
-### Lista de Presença
-
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3NnOMky" alt="QR Code" border="0" />
-
-<a href="https://bit.ly/3NnOMky"><p style="text-align:center;">https://bit.ly/3NnOMky</p></a>
+Implemente os tipos estruturados:
+- `Data`, com os campos `dia`, `mes` e `ano`
+- `Duracao`, com os campos `hor`, `min` e `seg`
+- `Pace`, com os campos `min` e `seg`
+- `Corrida`, com os campos `data`, `duracao`, `pace` e `distancia`
 
 ---
 
 ### Exercício 2
-#### Informar se é substring
+#### Ordenando Datas
 
-Diz-se que `s2` é substring de `s1` se `s2` fizer parte de `s1`.
-Por exemplo, `"bola"` é uma substring de `"carambola"`.
+Agora, divida o seu programa, se concentrando em implementar
+uma função para ordenar um vetor de `Data`, da mais antiga
+para a mais recente.
 
-Implemente uma função que receba `s1` e `s2` como parâmetros e informe
-se `s2` é uma substring de `s1`. 
+Como você pode implementar esta função?
 
-Implemente a função main para testar o seu programa.
+**Observe que é para ordenar um vetor de `Data` e não
+de `Corrida`**
+
+---
+
+### Exercício 3
+#### Ordenando Datas - Função Main
+
+Implemente a função `main` para testar a função
+do exercício anterior:
+- Deve ler uma quantidade `n` de datas
+- Deve ler o dia, mês e ano de `n` datas
+- Chamar a função de ordenar por datas
+- Exibir o resultado na tela
+
+---
+
+### Exercício 4
+#### Lendo Dados de Corrida
+
+Implemente um função que receba uma `Corrida`
+como parâmetro de entrada e saída.
+
+A função deve ler, na ordem:
+- A data da corrida (dia, mês e ano)
+- A duração da corrida (hora, min. e seg.)
+- A distância da corrida (em Km)
+
+Faça a função `main` exibir os dados
+lidos em um formato adequado.
+
+---
+
+### Exercício 5
+#### Calculando o Pace
+
+> O pace é dado na quantidade de minutos e segundos
+> que uma pessoa leva para percorrer 1 Km
+
+Ex:
+Se uma pessoa corre 10Km em 1h 03 min e 35 seg,
+o seu pace foi de 6'25"/Km.
+
+---
+
+### Exercício 5
+#### Calculando o Pace
+
+Implemente um programa que calcule
+o pace dada uma duração.
+
+O pace é calculado por:
+- Transformando a duração em segundos/Km
+- O quociente da divisão da transformação por 60 é
+  a quantidade de minutos do pace
+- O resto da divisão da transformação por 60 é
+  a quantidade de segundos do pace
+
+---
+
+### Exercício Completo
+
+Implemente as funções de:
+- Ordenar um vetor de `Corrida` por duração
+- Ordenar um vetor de `Corrida` por pace
+
+Na função main, implemente um menu, a partir do qual
+o usuário pode escolher como quer visualizar
+suas corridas (opção 0 ordena por data,
+1 por duração e 2 por pace).
 
 ---
