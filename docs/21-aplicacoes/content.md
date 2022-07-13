@@ -45,14 +45,14 @@ Considere o seguinte vetor de `Cidade`:
 A matriz armazena quantos voos diários
 diretos saem de uma cidade para outra:
 
-<img src="img/cidades_voos.png" width=600/>
+<img src="img/cidades_voos.png" width=300/>
 
 ---
 
 ### Matriz de Relações
 #### Exemplo: Voos entre Cidades
 
-<img src="img/cidades_voos.png" width=600/>
+<img src="img/cidades_voos.png" width=300/>
 
 Para a relação na linha `i` e coluna `j`:
 - Origem é a cidade no vetor na posição `i`
