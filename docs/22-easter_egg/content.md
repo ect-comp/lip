@@ -4,32 +4,32 @@
 
 ### 1o. Campeonato de Counter Strike do RN
 
-Bruno "Sk8-Core" Silva:
+<p style="text-align:center">Lá em 20/07/2022:</p>
 
-<img src="img/cs_premiacao.jpg" width=500/>
-
----
-
-### 1o. Campeonato de Counter Strike do RN
-
-Bruno "Sk8-Core" Silva:
-
-<img src="img/cs_bruno1.png" width=400/>
+<img src="img/cs_premiacao.jpg" width=960/>
 
 ---
 
 ### 1o. Campeonato de Counter Strike do RN
 
-Bruno "Sk8-Core" Silva:
+<p style="text-align:center">Bruno "Sk8-Core" Silva:</p>
 
-<img src="img/cs_bruno2.png" width=400/>
+<img src="img/cs_bruno1.jpg" width=400/>
 
 ---
 
 ### 1o. Campeonato de Counter Strike do RN
 
-Estatísticas da partida (round 2/2):
+<p style="text-align:center">Bruno "Sk8-Core" Silva:</p>
 
-<img src="img/cs_stats.jpg" width=500/>
+<img src="img/cs_bruno2.jpg" width=400/>
+
+---
+
+### 1o. Campeonato de Counter Strike do RN
+
+<p style="text-align:center">Estatísticas da partida (round 2/2):</p>
+
+<img src="img/cs_stats.jpg" width=640/>
 
 ---
