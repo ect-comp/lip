@@ -4,9 +4,9 @@
 
 ### 1o. Campeonato de Counter Strike do RN
 
-<p style="text-align:center">Lá em 20/07/2022:</p>
+<p style="text-align:center">Lá em 20/07/2002:</p>
 
-<img src="img/cs_premiacao.jpg" width=960/>
+<img src="img/cs_premiacao.jpg" width=800/>
 
 ---
 
