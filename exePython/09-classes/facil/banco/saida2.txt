@@ -1,0 +1,5 @@
+Saldo inicial 34
+- 5
+- 9
++ 2
+Saldo final 22
