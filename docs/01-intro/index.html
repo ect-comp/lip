@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="../dist/reveal.css">
         <link rel="stylesheet" href="../dist/theme/ect.css" id="theme">
-        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+        <link rel="stylesheet" href="../plugin/highlight/xcode.css">
     </head>
     <style>
     * {
@@ -24,6 +24,14 @@
       display: inline-block;
       width: 80%;
       padding: 40px;
+    }
+    .small_table tr
+    {
+        font-size: 26px;
+    }
+    .small_table td
+    {
+        font-size: 22px;
     }
     </style>
 
@@ -45,8 +53,7 @@
                 <section 
                          data-auto-animate
                          data-markdown="content.md"
-                         data-separator="---"
-                         data-separator-vertical="--"
+                         data-separator="^---$"
                          data-separator-notes="^Note:"
                          data-charset="utf8">
                 </section>
@@ -57,16 +64,21 @@
         <script src="../plugin/markdown/markdown.js"></script>
         <script src="../plugin/highlight/highlight.js"></script>
         <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/math/math.js"></script>
 
         <script>
 
             Reveal.initialize({
+                            width: 1024,
+                            height: 768,
                             controls: true,
                             progress: true,
                             history: true,
-                            center: true,
+                            center: false,
                             autoPlayMedia: true,
-                            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+                            transition: "fade",
+                            backgroundTransition: "none",
+                            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
                         });
 
         </script>

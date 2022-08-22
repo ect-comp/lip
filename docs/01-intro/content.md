@@ -56,15 +56,15 @@ e habilidades desejadas de um bacharel em CeT.
 - Prof. Dr. Bruno Silva
 - Atendimento:
     - Via email: bruno.silva@ect.ufrn.br
-    - Via [Discord](https://discord.gg/Xfsk3CGT4y)
-    - Horário para a turma: terças e quintas, das 15h às 16h
+    - Via [Discord](https://discord.gg/JyxEvwKMbE)
+    - Horário para a turma: terças e quintas, das 11h às 12h
 - Áreas de interesse:
     - Processamento de imagens e visão computacional
     - Inteligência artificial e robótica
 ---
 
 ### Sobre a Disciplina
-- Aulas teóricas: quartas e sextas, de 20:35 às 22:15,
+- Aulas teóricas: terças e quintas, de 20:35 às 22:15,
   Sala 5 da ECT
 - Carga horária total: 90 horas
     - Teoria: 60 horas
@@ -77,16 +77,15 @@ e habilidades desejadas de um bacharel em CeT.
 
 ### Laboratórios
 - Horários/professor:
-    - Subturma 4A: Quarta, 13:00 às 14:40, Lab. 1 (Prof. Bruno)
-    - Subturma 4B: Segunda, 14:55 às 16:35, Lab. 1  (Prof. Diego)
-    - Subturma 4C: Sábado, 8:55 às 10:35, Lab. 1  (Prof. Éverton)
-    - Subturma 4D: Sábado, 10:50 às 12:30, Lab. 1  (Prof. Éverton)
+    - Subturma 4A: Sexta, 14:55 às 16:35, Lab. 1 (Prof. Bruno)
+    - Subturma 4B: Sexta, 16:50 às 18:30, Lab. 1  (Prof. Bruno)
+    - Subturma 4C: Sábado, 10:50 às 12:30, Lab. 3  (Prof. Igor)
+    - Subturma 4D: Sábado, 13:00 às 14:40, Lab. 1  (Prof. Thales)
 ---
 
 ### Avaliações
 - Avaliação semanal:
-    - Práticas de laboratório envolvendo o conteúdo
-      dado na semana anterior (30%)
+    - Práticas de laboratório (30%)
     - Prova prática em cada unidade (70%)
 - Assiduidade
     - Presenças serão registradas por chamada oral
@@ -134,8 +133,7 @@ Regimento Interno/UFRN, Seção III:
 ### Perguntas Frequentes
 
 - _Posso assistir aula em uma subturma de laboratório que não seja a minha?_
-Entre em contato com o professor responsável pela sua subturma
-para se informar sobre esta questão.
+Neste semestre infelizmente não será possível.
 
 - _Esta semana tem aula de laboratório?_
 Na disciplina de LiP, os laboratórios são semanais.

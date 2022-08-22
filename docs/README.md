@@ -2,17 +2,19 @@
 
 ## Bruno Silva <bruno.silva@ect.ufrn.br>
 
-Este diretório contém os slides das aulas do semestre 2022.1
+Este diretório contém os slides das aulas do semestre 2022.2
 
-## [30/03 - Apresentação](./01-intro)
+## [23/08 - Apresentação](./01-intro)
  - Objetivos
  - Metodologia
  - Bibliografia
 
-## [01/04 - Introdução ao C++](./02-cpp)
+## [25/08 - Introdução ao C++](./02-cpp)
  - Variáveis e tipos
  - Operadores e expressões
  - Entrada e saída
+
+<!--
 
 ## [06/04 - Operadores e Expressões](./03-operadores_e_expressoes/)
  - Operadores em C++
@@ -126,3 +128,5 @@ Este diretório contém os slides das aulas do semestre 2022.1
 ## [08/07 - Tipos Estruturados - Exercícios](./20a-tipos_estruturados_exercicios)
 
 ## [13/07 - Aplicações com Matrizes de Relações](./21-aplicacoes)
+
+-->
