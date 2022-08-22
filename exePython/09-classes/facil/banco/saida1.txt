@@ -1,0 +1,6 @@
+Saldo inicial 100
++ 50
+- 30
++ 70
++ 10
+Saldo final 200
