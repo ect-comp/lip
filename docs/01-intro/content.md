@@ -1,6 +1,6 @@
 ### Linguagem de Programação
 #### Introdução
---- 
+---
 
 ### Linguagem de Programação
 
@@ -16,7 +16,7 @@ Perguntas pertinentes sobre Linguagem de Programação (LiP) na ECT:
 
 - Para responder esta pergunta, é interessante enumerar as competências
   e habilidades previstas para os bachareis em CeT
-- Mais informações [Projeto Pedagógico do Curso](https://sigaa.ufrn.br/sigaa/public/curso/ppp.jsf?lc=pt_BR&id=10320810)
+- Fonte: [Projeto Pedagógico do Curso](https://sigaa.ufrn.br/sigaa/public/curso/ppp.jsf?lc=pt_BR&id=10320810)
 ---
 
 ### Linguagem de Programação
