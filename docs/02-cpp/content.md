@@ -198,7 +198,7 @@ int main(){
     - `char sexo = 'M';` declara e inicializa a `sexo` com `M`
 ---
 
-## C++: Tipo `char`
+### C++: Tipo `char`
 - Valores devem ser atribuídos com aspas simples: `'`
 - Variáveis `char` armazenam **um único** caractere
     - Letra: `'a'`, `'e'`, `'Z'`, etc.
