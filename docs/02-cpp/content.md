@@ -1,6 +1,6 @@
 ### Linguagem de Programação
 #### Introdução à linguagem C++
---- 
+---
 
 ### Objetivos da Disciplina
 - Desenvolver a capacidade de implementar algoritmos em uma linguagem de programação estruturada e conceitos relacionados
