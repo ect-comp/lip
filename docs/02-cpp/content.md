@@ -166,6 +166,14 @@ Em um editor de texto, declare variável:
 ```
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3pIH7Ut" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3pIH7Ut"><p style="text-align:center;">https://bit.ly/3pIH7Ut</p></a>
+
+---
+
 ### C++: Valor Inicial de Variáveis
 O que é impresso no seguinte programa?
 
