@@ -125,10 +125,13 @@ else{
 ---
 
 ### Comando `if-else`
-#### Exemplo
-Programa que lê um número digitado pelo usuário
+Exemplo: programa que lê um número digitado pelo usuário
 e imprime a frase `"Numero invalido"` caso o usuário digite zero
 ou a frase `"Numero valido"` caso contrário
+
+---
+
+### Comando `if-else`
 
 ```C++
 int main(){
@@ -168,6 +171,14 @@ int main(){
     return 0;
 }
 ```
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3RjHUHq" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3RjHUHq"><p style="text-align:center;">https://bit.ly/3RjHUHq</p></a>
+
 ---
 
 ### Encadeamento de `if-else`

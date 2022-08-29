@@ -253,6 +253,14 @@ Exemplos (para `x = 1, y = 2, z = 3`):
 4. `x != 1 || x != 2`
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3TrbLPM" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3TrbLPM"><p style="text-align:center;">https://bit.ly/3TrbLPM</p></a>
+
+---
+
 ### Expressões Lógicas
 #### Exemplo de Expressão Mal Construída
 A expressão abaixo é sintaticamente correta

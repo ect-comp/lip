@@ -14,9 +14,7 @@ Este diretório contém os slides das aulas do semestre 2022.2
  - Operadores e expressões
  - Entrada e saída
 
-<!--
-
-## [06/04 - Operadores e Expressões](./03-operadores_e_expressoes/)
+## [30/08 - Operadores e Expressões](./03-operadores_e_expressoes/)
  - Operadores em C++
    - Atribuição
    - Operadores aritméticos
@@ -27,10 +25,12 @@ Este diretório contém os slides das aulas do semestre 2022.2
    - Expressões lógicas
 - Conversão entre tipos
 
-## [08/04 - Comandos de Seleção](./04-comandos_selecao/)
+## [01/09 - Comandos de Seleção](./04-comandos_selecao/)
 - Comando `if` e `if-else`
 - Comando `switch`
 - Operador ternário
+
+<!--
 
 ## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
 - Exercícios com comandos `if-else`, `switch` e operador `? :`
