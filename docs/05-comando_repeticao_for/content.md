@@ -49,7 +49,7 @@ for(inicializacao; condicao; incremento){
 ---
 
 ### Comando `for`
-Dividido em três expressões
+Dividido em três expressões opcionais:
 - Inicialização: executada somente na primeira vez
   em que o `for` é executado
 - Condição: avaliada no início de cada iteração
@@ -98,7 +98,7 @@ int main(){
 
 ### Programação e Automatização de Tarefas
 
-<img src="quadrinho_nerd.jpg" width=600/>
+<img src="quadrinho_for.jpg" width=600/>
 
 Aprender programação é aprender a automatizar tarefas
 ---
@@ -174,9 +174,9 @@ for(i = n; i > 0; i++){
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3jNRvav" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3KNaleR" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3jNRvav"><p style="text-align:center;">https://bit.ly/3jNRvav</p></a>
+<a href="https://bit.ly/3KNaleR"><p style="text-align:center;">https://bit.ly/3KNaleR</p></a>
 
 ---
 

@@ -99,7 +99,6 @@ int main(){
 - O comando `while` é apropriado para repetição condicional
     - É possível utilizá-lo para repetição contada, embora
       isto seja mais propenso a erros
-    - Diversas expressões lógicas podem ser usadas para o mesmo efeito
 - O comando `for` é apropriado para repetição contada
     - É possível utilizá-lo para repetição condicional, embora
       o código resultante fique menos intuitivo
@@ -141,6 +140,12 @@ int main(){
 ```
 ---
 
+### Comandos de Repetição
+
+<img src="meme_while.png" width=600/>
+
+---
+
 ### Comando `do-while`
 - A linguagem C++ oferece também o comando
   `do-while` (faça-enquanto)
@@ -171,9 +176,9 @@ do{
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3JNbrFe" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3KPOV0w" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3JNbrFe"><p style="text-align:center;">https://bit.ly/3JNbrFe</p></a>
+<a href="https://bit.ly/3KPOV0w"><p style="text-align:center;">https://bit.ly/3KPOV0w</p></a>
 
 ---
 
@@ -211,7 +216,7 @@ int main(){
 ---
 
 ### Comando `break`
-#### Menu com `break` (I)
+#### Menu com `break`
 O comando `break` pode ser usado
 em menus:
 
