@@ -104,6 +104,12 @@ int main(){
       o código resultante fique menos intuitivo
 ---
 
+### Comandos de Repetição
+
+<img src="meme_while.png" width=300/>
+
+---
+
 ### Comando `while`
 - Exercício 1: faça um programa que lê **vários** números e
 informa se cada um deles é par ou ímpar. O programa deve se encerrar
@@ -138,12 +144,6 @@ int main(){
     return 0;
 }
 ```
----
-
-### Comandos de Repetição
-
-<img src="meme_while.png" width=600/>
-
 ---
 
 ### Comando `do-while`
