@@ -69,7 +69,7 @@ int main(){
 
 ### Programas que Chamam Funções
 A chamada de uma função funciona exatamente como uma variável:
-- Contém um valor que pode ser usado em expressões
+- Resulta em um valor que pode ser usado em expressões
 ---
 
 ### Programas que Chamam Funções
@@ -105,7 +105,7 @@ Sintaxe:
 tipo_da_funcao nome_da_funcao(lista de parametros);
 ```
 - Também chamadas de cabeçalhos ou protótipos da função
-- Devem estar antes da função `main`
+- Devem estar fora e antes do bloco `main`
 ---
 
 ### Assinaturas de Funções
@@ -168,15 +168,19 @@ suas entradas e sua saída
 ### Assinaturas de Funções
 Observe que:
 - Algumas funções não têm entrada
-- Algumas funções não retornam nada (próxima aula)
-- Algumas funções possuem mais de uma saída (próximas aulas)
+- Algumas funções não retornam nada
+- Algumas funções possuem mais de uma saída
+
+Os dois últimos pontos acima serão vistos nas próximas
+aulas
+
 ---
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3jRQleq" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3L6mCLi" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3jRQleq"><p style="text-align:center;">https://bit.ly/3jRQleq</p></a>
+<a href="https://bit.ly/3L6mCLi"><p style="text-align:center;">https://bit.ly/3L6mCLi</p></a>
 
 ---
 
@@ -188,7 +192,7 @@ tipo_da_funcao nome_da_funcao(lista de parametros){
 }
 ```
 - Uma função é definida quando programamos o seu comportamento com instruções válidas
-- A definição de uma função deve vir após a função `main`
+- A definição de uma função deve vir após o bloco `main`
 ---
 
 ### Definição de Funções
@@ -251,9 +255,9 @@ Comando `return`:
 ### Definição de Funções
 Variáveis locais de uma função:
 - Variáveis que podem ser declaradas dentro da função
-- Não existem fora da função
-- Variável local com mesmo nome de outra variável:
-  não são as mesmas!
+- Não são visíveis fora da função
+- Variável local com mesmo nome de variável em outra
+  função: não são as mesmas!
 - Cada parâmetro da função também é uma variável local
 ---
 
@@ -270,13 +274,14 @@ float converte_temp(float c){
 
 ### Função `main`
 Motivo pelo qual todo programa deve conter
-ter `int main()` e `return 0`:
+`int main()` e `return 0`:
 
 > Todo programa em C++ deve obrigatoriamente
 > conter uma função chamada `main` que retorna
 > um número inteiro.
 > Assim, o sistema operacional (Windows, Linux, etc.)
-> sabe a função a ser chamada para ele executar o programa.
+> sabe a função a ser chamada quando ele deseja executar
+> um programa.
 ---
 
 ### Programa com Função
@@ -347,8 +352,4 @@ Na aula de hoje:
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
-Elementos importantes: 
-- Tipo de retorno
-- Lista de parâmetros
-- Comando `return`
 ---

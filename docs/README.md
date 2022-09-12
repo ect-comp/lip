@@ -45,12 +45,15 @@ Este diretório contém os slides das aulas do semestre 2022.2
 - Comandos `break` e `continue`
 - Exercícios
 
-<!--
-
-## [29/04 - Funções I](./07-funcoes1/)
+## [13/09 - Funções I](./07-funcoes1/)
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
+
+## [15/09 - Funções: Exercícios](./exercicios_funcoes/)
+- Exercícios com funções que retornam um valor
+
+<!--
 
 ## [04/05 - Funções II](./08-funcoes2/)
 - Função sem retorno (funções tipo `void`)
