@@ -1,7 +1,7 @@
 Alunos da Turma
 
 Escreva um programa que lê do usuário um número **N**, informando a quantidade
-de alunos da turma em uma turma de LiP e em seguida lê os nomes dos **N** alunos
+de alunos em uma turma de LiP e em seguida lê os nomes dos **N** alunos
 e os coloca em uma lista **alunos_todos**. Na lista **alunos_todos**, podem
 ocorrer valores repetidos, caso dois ou mais alunos tenham o mesmo nome.
 
