@@ -118,14 +118,14 @@ seguinte exemplo hipotético:
 - A função no computador `B` é executada
     - O resultado não é retornado: ele é exibido na tela
     - Entretanto, o resultado será exibido na tela do computador `B`
-    - O programa no computador `A` não tem acesso ao resultado
-      calculado pela fução
+- O programa no computador `A` não tem acesso ao resultado
+  calculado pela função
 
 ---
 
 ### Funções sem Retorno
 
-<img src="funcao_sem_retorno.png" width=400/>
+<img src="funcao_sem_retorno.png" width=600/>
 
 ---
 
