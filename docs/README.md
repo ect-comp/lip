@@ -53,16 +53,16 @@ Este diretório contém os slides das aulas do semestre 2022.2
 ## [15/09 - Funções: Exercícios](./exercicios_funcoes/)
 - Exercícios com funções que retornam um valor
 
-<!--
-
-## [04/05 - Funções II](./08-funcoes2/)
+## [20/09 - Funções II](./08-funcoes2/)
 - Função sem retorno (funções tipo `void`)
 - Passagem de parâmetro por valor por referência
 
-## [06/05 - Funções III](./09-funcoes3/)
+## [22/09 - Funções III](./09-funcoes3/)
 - Parâmetros de entrada
 - Parâmetros de saída
 - Parâmetros de entrada e saída
+
+<!--
 
 ## [11/05 - Funções Recursivas](./10-funcoes_rec/)
 - Estruturas recursivas

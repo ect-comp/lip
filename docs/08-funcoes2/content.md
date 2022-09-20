@@ -43,15 +43,15 @@ Funções sem retorno:
 - Também conhecidas como *procedimentos*
 - Útil para funções que devem escrever na tela
 - _Escrever na tela com comando `cout` não é retorno_
-- Tipo da função deve ser `void`
+- Tipo da função deve ser _`void`_
 ---
 
 ### Funções sem Retorno
 Funções sem retorno:
 - Útil também para funções que devem modificar os seus parâmetros
 - Comando `return` não é obrigatório
-    - Pode ser utilizado com a forma `return;` (sem nenhuma expressão)
-      para encerrar a função
+    - Pode ser opcionalmente utilizado com a forma `return;`
+      (sem nenhuma expressão) para encerrar a função
 ---
 
 ### Funções sem Retorno
@@ -108,11 +108,32 @@ void imprime_caractere(int cod);
 ```
 ---
 
+### Funções sem Retorno
+
+Para entender esta diferença, imagine o
+seguinte exemplo hipotético:
+
+- Um programa no computador `A` faz uma chamada a uma função
+  a ser executada no computador `B`
+- A função no computador `B` é executada
+    - O resultado não é retornado: ele é exibido na tela
+    - Entretanto, o resultado será exibido na tela do computador `B`
+    - O programa no computador `A` não tem acesso ao resultado
+      calculado pela fução
+
+---
+
+### Funções sem Retorno
+
+<img src="funcao_sem_retorno.png" width=400/>
+
+---
+
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3KUdVmF" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3xDZH4v" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3KUdVmF"><p style="text-align:center;">https://bit.ly/3KUdVmF</p></a>
+<a href="https://bit.ly/3xDZH4v"><p style="text-align:center;">https://bit.ly/3xDZH4v</p></a>
 
 ---
 
