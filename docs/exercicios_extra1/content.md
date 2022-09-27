@@ -5,9 +5,11 @@
 ### Unidade I - Exercícios
 #### Exercício 1
 
-Implemente uma função que receba como parâmetro de entrada um número inteiro $x$.
-A função a ser implementada deve armazenar em um parâmetro de saída o total
-de dígitos de $x$ e em um segundo, o total de dígitos primos de $x$.
+Implemente uma função:
+
+- Parâmetro de entrada é um número inteiro $x$
+- Parâmetro de saída: total de dígitos de $x$
+- Parâmetro de saída: total de dígitos primos de $x$
 
 A função main do seu programa deve ler um número inteiro positivo do usuário e
 chamar a função implementada, exibindo uma mensagem com o resultado.
@@ -56,14 +58,14 @@ são constantes.
 ### Unidade I - Exercícios
 #### Exercício 2
 
-Implemente uma função que receba como parâmetro de entrada dois números inteiros $p$ e $q$, denotando o primeiro e segundo termos da sequência, além de um número inteiro $n$, denotando a quantidade de termos da sequência ($n$ será sempre maior que 2).
-A função a ser implementada deve armazenar em dois parâmetros de saída
-o menor e o maior números entre todos os n termos da sequência.
+Implemente uma função:
 
-A função main deve ler do usuário os dois primeiros termos e a
-quantidade de termos da sequência, imprimindo na tela em seguida
-o menor e o maior termos da sequência, de acordo com o resultado
-computado pela função.
+- Parâmetros de entrada: dois números inteiros $p$ e $q$
+- Parâmetro de entrada: quantidade de termos da sequência $n$
+- Parâmetro de saída: menor valor da sequência
+- Parâmetro de saída: maior valor da sequência
+
+Implemente a função main.
 
 ---
 
@@ -89,12 +91,26 @@ sen(x) = \frac{x^1}{1!}-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}...
 \]
 `
 
-Implemente uma função que receba como parâmetro de entrada o ângulo x. Esta função deve armazenar em um primeiro parâmetro de saída o seno do ângulo x . Em um segundo parâmetro, a função deve armazenar a quantidade de termos que foi utilizada na aproximação, sabendo que a sua função deve somar todos os termos até que o valor absoluto de um termo seja menor do que 0.00001.
+---
+
+### Unidade I - Exercícios
+#### Exercício 3
+
+Implemente uma função:
+
+- Parâmetro de entrada: ângulo x
+- Parâmetro de saída: o seno de x
+- Parâmetro de saída: quantidade de termos que foi utilizada na aproximação 
+
+A função deve somar todos os termos até que o valor absoluto de um termo seja menor do que 0.00001.
+
+Implemente a função main.
 
 ---
 
 ### Unidade I - Exercícios
 #### Exercício 3
+<!-- .slide: class="small_table" -->
 
 Por exemplo, para $x = 3.14$, os termos que compõem o somatório na função
 são:
@@ -111,9 +127,11 @@ são:
 | 15 | -2.17493e-05 |
 | 17 | 7.8838e-07   |
 
----
+Último termo: 0.000000078838, é menor do que 0.00001,
+a função para de calcular o somatório no 9o. termo,
+totalizando 0.00159257 como seno de 3.14.
 
-Como o último termo (0.000000078838) é menor do que 0.00001, a função para de calcular o somatório no 9o. termo e calcula 0.00159257 como seno de 3.14.
+---
 
 ### Unidade I - Exercícios
 #### Exercício 3
