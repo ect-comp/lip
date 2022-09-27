@@ -99,12 +99,10 @@ sen(x) = \frac{x^1}{1!}-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}...
 Implemente uma função:
 
 - Parâmetro de entrada: ângulo x
-- Parâmetro de saída: o seno de x
+- Parâmetro de saída: seno de x
 - Parâmetro de saída: quantidade de termos que foi utilizada na aproximação 
 
 A função deve somar todos os termos até que o valor absoluto de um termo seja menor do que 0.00001.
-
-Implemente a função main.
 
 ---
 
@@ -122,6 +120,11 @@ são:
 | 5      | 2.54371    | 15     | -2.17493e-05 |
 | 7      | -0.597141  | 17     | 7.8838e-07   |
 | 9      | 0.0817719  |        |              |
+
+---
+
+### Unidade I - Exercícios
+#### Exercício 3
 
 Último termo: 0.000000078838, é menor do que 0.00001,
 resultando em 0.00159257 como seno de 3.14 com 9 termos.
