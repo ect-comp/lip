@@ -115,21 +115,16 @@ Implemente a função main.
 Por exemplo, para $x = 3.14$, os termos que compõem o somatório na função
 são:
 
-| i: | Termo:       |
-|----|--------------|
-| 1  | 3.14         |
-| 3  | -5.15986     |
-| 5  | 2.54371      |
-| 7  | -0.597141    |
-| 9  | 0.0817719    |
-| 11 | -0.00732944  |
-| 13 | 0.000463239  |
-| 15 | -2.17493e-05 |
-| 17 | 7.8838e-07   |
+| **i:** | **Termo:** | **i:** | **Termo:**   |
+|--------|------------|--------|--------------|
+| 1      | 3.14       | 11     | -0.00732944  |
+| 3      | -5.15986   | 13     | 0.000463239  |
+| 5      | 2.54371    | 15     | -2.17493e-05 |
+| 7      | -0.597141  | 17     | 7.8838e-07   |
+| 9      | 0.0817719  |        |              |
 
 Último termo: 0.000000078838, é menor do que 0.00001,
-a função para de calcular o somatório no 9o. termo,
-totalizando 0.00159257 como seno de 3.14.
+resultando em 0.00159257 como seno de 3.14 com 9 termos.
 
 ---
 
