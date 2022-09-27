@@ -62,6 +62,10 @@ Este diretório contém os slides das aulas do semestre 2022.2
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
+## [27/09 - Exercícios Extra 1](./exercicios_extra1/)
+
+## [29/09 - Revisão - Unidade 1](./revisao_unidade1/)
+
 <!--
 
 ## [11/05 - Funções Recursivas](./10-funcoes_rec/)
