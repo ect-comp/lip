@@ -66,13 +66,13 @@ Este diretório contém os slides das aulas do semestre 2022.2
 
 ## [29/09 - Revisão - Unidade 1](./revisao_unidade1/)
 
-<!--
-
-## [11/05 - Funções Recursivas](./10-funcoes_rec/)
+## [04/10 - Funções Recursivas](./10-funcoes_rec/)
 - Estruturas recursivas
 - Passo base e passo recursivo
 
-## [13/05 - Funções Recursivas - Exercícios](./10a-funcoes_rec_exercicios)
+## [06/10 - Funções Recursivas - Exercícios](./exercicios_funcoes_rec)
+
+<!--
 
 ## [18/05 - Vetores](./11-vetores/)
 - Sintaxe de declaração

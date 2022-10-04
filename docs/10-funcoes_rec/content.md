@@ -4,7 +4,7 @@
 
 ### Funções
 #### Funções e Abstração
-<img src="img/atribuicao.jpg" width=550/>
+<img src="img/atribuicao.jpg" width=600/>
 
 ---
 
@@ -15,7 +15,7 @@ Nas aulas anteriores (funções em C++):
 - Passagem de parâmetro por valor e por referência
 - Parâmetros de entrada, saída e entrada/saída
 
----    
+---
 
 ### Objetivo da Aula
 
@@ -23,19 +23,16 @@ Introduzir o conceito e uso de funções recursivas
 
 ---
 
-### Funções Recursivas
+### Recursividade
+
 Estrutura Recursiva:
 > Qualquer coisa que, de forma abstrata, é formada
 > por partes menores dela mesma
 
-Recursividade em Programação:
-> Com o uso de recursividade (ou recursão), a solução de um
-> problema depende das soluções de partes menores do mesmo
-> problema.
-
 ---
 
-### Funções Recursivas
+### Recursividade
+
 Exemplos de estruturas recursivas:
 
 <table>
@@ -44,6 +41,15 @@ Exemplos de estruturas recursivas:
 <td><img src="img/rec_triangle.png" width=400/><td>
 </tr>
 </table>
+
+---
+
+### Recursividade
+
+Recursividade em Programação:
+> Com o uso de recursividade (ou recursão), a solução de um
+> problema depende das soluções de partes menores do mesmo
+> problema.
 
 ---
 
@@ -296,9 +302,9 @@ Como este mecanismo funciona?
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F39S1gTy" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3EfZetl" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/39S1gTy"><p style="text-align:center;">https://bit.ly/39S1gTy</p></a>
+<a href="https://bit.ly/3EfZetl"><p style="text-align:center;">https://bit.ly/3EfZetl</p></a>
 
 ---
 
