@@ -166,7 +166,7 @@ Escrever declaração de vetor:
 Opção 1:
 
 ```C++
-const int MAXV = 100; //antes da função main
+const int MAXV = 100; //antes das funções do programa
 ...
 int v[MAXV]; //na declaração do vetor
 ```
@@ -241,9 +241,9 @@ qual o valor de cada expressão a seguir, sendo `x = 2`?
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3wlhT2D" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3elkdkb" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3wlhT2D"><p style="text-align:center;">https://bit.ly/3wlhT2D</p></a>
+<a href="https://bit.ly/3elkdkb"><p style="text-align:center;">https://bit.ly/3elkdkb</p></a>
 
 ---
 

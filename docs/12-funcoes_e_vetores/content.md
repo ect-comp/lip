@@ -86,9 +86,9 @@ Escrever assinatura da função:
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3MlNKWw" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3COKwII" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3MlNKWw"><p style="text-align:center;">https://bit.ly/3MlNKWw</p></a>
+<a href="https://bit.ly/3COKwII"><p style="text-align:center;">https://bit.ly/3COKwII</p></a>
 
 ---
 
