@@ -41,9 +41,9 @@ e exibir na tela uma mensagem informando o produto interno entre os dois vetores
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3wIXrYG" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3DblH8S" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3wIXrYG"><p style="text-align:center;">https://bit.ly/3wIXrYG</p></a>
+<a href="https://bit.ly/3DblH8S"><p style="text-align:center;">https://bit.ly/3DblH8S</p></a>
 
 ---
 

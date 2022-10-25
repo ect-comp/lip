@@ -83,16 +83,16 @@ Este diretório contém os slides das aulas do semestre 2022.2
 - Funções recursivas com vetores
 - Exercícios
 
-<!--
-
-## [25/05 - Funções e Vetores - Exercícios](./12a-funcoes_e_vetores_exercicios)
-
-## [27/05 - Geração de Números Aleatórios](./13-numeros_aleatorios/)
-- Geração de números aleatórios em C++
-- Geração de números aleatórios inteiros em intervalos de interesse
-- Geração de números aleatórios reais
-- Geração de caracteres aleatórios
+## [25/10 - Geração de Números Aleatórios](./13-numeros_aleatorios/)
+- Geração de números aleatórios em C++:
+  - Geração de números aleatórios inteiros em intervalos de interesse
+  - Geração de números aleatórios reais
+  - Geração de caracteres aleatórios
 - Exercícios
+
+## [27/10 - Funções e Vetores - Exercícios](./exercicios_funcoes_e_vetores)
+
+<!--
 
 ## [01/06 - Matrizes](./14-matrizes/)
 - Sintaxe de declaração

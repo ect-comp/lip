@@ -148,9 +148,9 @@ int gera_valor_inteiro(int p, int q){
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3PAFdRJ" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3zfvycx" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3PAFdRJ"><p style="text-align:center;">https://bit.ly/3PAFdRJ</p></a>
+<a href="https://bit.ly/3zfvycx"><p style="text-align:center;">https://bit.ly/3zfvycx</p></a>
 
 ---
 
