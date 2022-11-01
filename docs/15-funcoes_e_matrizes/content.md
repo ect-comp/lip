@@ -116,6 +116,7 @@ int computa_maior(int mat1[][MAX], int mat2[][MAX],
 ```
 ---
 
+<!--
 ### Lista de Presença
 
 <img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3GEUj4E" alt="QR Code" border="0" />
@@ -123,6 +124,7 @@ int computa_maior(int mat1[][MAX], int mat2[][MAX],
 <a href="https://bit.ly/3GEUj4E"><p style="text-align:center;">https://bit.ly/3GEUj4E</p></a>
 
 ---
+-->
 
 ### Funções com Matrizes
 #### Chamada de Funções

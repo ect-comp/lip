@@ -164,6 +164,7 @@ int main(){
 ```
 ---
 
+<!--
 ### Lista de Presença
 
 <img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3z6K7A1" alt="QR Code" border="0" />
@@ -171,6 +172,7 @@ int main(){
 <a href="https://bit.ly/3z6K7A1"><p style="text-align:center;">https://bit.ly/3z6K7A1</p></a>
 
 ---
+-->
 
 ### Posições de uma Matriz
 #### Exercício: Impressão de Dados

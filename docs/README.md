@@ -92,17 +92,17 @@ Este diretório contém os slides das aulas do semestre 2022.2
 
 ## [27/10 - Funções e Vetores - Exercícios](./exercicios_funcoes_e_vetores)
 
-<!--
-
-## [01/06 - Matrizes](./14-matrizes/)
+## [01/11 - Matrizes](./14-matrizes/)
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
 - Exercícios
 
-## [03/06 - Funções e Matrizes](./15-funcoes_e_matrizes/)
+## [03/11 - Funções e Matrizes](./15-funcoes_e_matrizes/)
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
+
+<!--
 
 ## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
 
