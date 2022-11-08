@@ -102,6 +102,10 @@ Este diretório contém os slides das aulas do semestre 2022.2
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
 
+## [08/11 - Exercícios Extra 2](./multiplicacao_matricial/)
+
+## [10/11 - Revisão - Unidade 2](./revisao_unidade2/)
+
 <!--
 
 ## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
