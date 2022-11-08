@@ -227,23 +227,7 @@ e exibir na tela a matriz computada pela função.
 ---
 
 ### Multiplicação de Matrizes
-#### Exercício 2. Programa para Cálculo de Expressão
-
-Utilizando a função implementada no exercício anterior,
-implemente um programa que leia duas matrizes de números
-inteiros de tamanhos quaisquer e exiba a matriz resultante
-da expressão
-
-`
-\begin{equation*}
-    R = (A.B)^t
-\end{equation*}
-`
-
----
-
-### Multiplicação de Matrizes
-#### Exercício 3. Modificação na Função
+#### Exercício 2. Modificação na Função
 
 Ao invés de assumir sempre que a multiplicação
 matricial será possível (ou seja, que o nr. de colunas
@@ -251,5 +235,18 @@ de `$A$` será igual ao nr. de linhas de `$B$`), modifique
 a função, de modo que ela cheque esta condição e retorne
 verdadeiro caso a multiplicação possa ser realizada ou
 falso caso contrário.
+
+---
+
+### Multiplicação de Matrizes
+#### Exercício 3. Informar se Matriz é Ortogonal
+
+Diz-se que uma matriz quadrada `$A$` é ortogonal
+se a condição `$A^t.A = I$`, com `$I$` sendo a matriz
+identidade, for satisfeita.
+
+Utilizando a função implementada no exercício anterior,
+implemente um programa que leia uma matriz quadrada de números
+inteiros e informe se tal matriz é ou não ortogonal.
 
 ---
