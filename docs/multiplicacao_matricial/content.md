@@ -39,7 +39,7 @@ Além disso:
 Em outras palavras:
 
 - Sendo `$A$` uma matriz `$M \times N$`
-- Sendo `$A$` uma matriz `$N \times O$`
+- Sendo `$B$` uma matriz `$N \times O$`
 
 A matriz resultante `$R$` terá tamanho `$M \times O$`
 
@@ -115,8 +115,16 @@ pode ser calculado pelo seguinte somatório:
     R_{i,j} = \sum_{k=0}^{n-1}A_{i,k}B_{k,j},
 \end{equation*}
 `
-onde `$n$` é o número de colunas de $`A`$ (e de linhas
-de $`B`$)
+onde `$n$` é o número de colunas de `$A$` (e de linhas
+de `$B$`)
+
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3UddhoR" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3UddhoR"><p style="text-align:center;">https://bit.ly/3UddhoR</p></a>
 
 ---
 
@@ -128,14 +136,6 @@ Alternativamente, observe que cada valor `$R_{i,j}$`
 
 - O vetor linha `$i$` da matriz `$A$`
 - O vetor coluna `$j$` da matriz `$B$`
-
----
-
-### Lista de Presença
-
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3UddhoR" alt="QR Code" border="0" />
-
-<a href="https://bit.ly/3UddhoR"><p style="text-align:center;">https://bit.ly/3UddhoR</p></a>
 
 ---
 
@@ -158,16 +158,6 @@ Então, você pode escolher entre duas estratégias:
 1. Computar cada valor `$R_{i,j}$` individualmente, utilizando o somatório
 2. Para cada valor `$R_{i,j}$`, calcular o produto interno
    entre o vetor linha `$i$` de `$A$` e o vetor coluna `$j$` de `$B$`
-
----
-
-### Multiplicação de Matrizes
-#### Implementação de Função
-
-- As duas formas requerem que você utilize dois laços, para percorrer todas
-  as posições `$R_{i,j}$` da matriz resultante
-- Entretanto, para cada `$R_{i,j}$` sendo calculado, você precisa de outro
-  laço, seja ele para calcular o somatório ou o produto interno
 
 ---
 
@@ -215,6 +205,11 @@ int produto_interno(int v1[], int v2[], int n);
 > para passar os vetores coluna da segunda
 > matriz, você pode passar os vetores linha da matriz
 > transposta
+
+Então:
+1. Calcule a transposta da matriz `$B$`
+2. Para cada `$R_{i,j}$`, chame a função `produto_interno`
+   passando a linha `$i$` de `$A$` e a linha `j$` de `$B^t$`
 
 ---
 
