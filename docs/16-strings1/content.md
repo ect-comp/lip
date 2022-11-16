@@ -2,6 +2,13 @@
 #### Strings I
 ---
 
+### Novo Cronograma
+#### Unidade 3 - Jogos do Brasil
+
+<img src="unidade3.png" width=800/>
+
+---
+
 ### Nas Aulas Anteriores
 
 - Funções
@@ -106,15 +113,15 @@ char s[] = {'e','c','t'};
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3QnNYig" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3tAWpww" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3QnNYig"><p style="text-align:center;">https://bit.ly/3QnNYig</p></a>
+<a href="https://bit.ly/3tAWpww"><p style="text-align:center;">https://bit.ly/3tAWpww</p></a>
 
 ---
 
 ### Strings
 #### Comando de Saída
-Para imprimir uma string `s`, pode-se usar o comando `cout`, diretamente na variável do tipo string:
+Para imprimir uma string, pode-se usar o comando `cout`, diretamente na variável do tipo string:
 
 ```C++
 int main(){
@@ -134,7 +141,7 @@ int main(){
 
 ### Strings
 #### Comando de Entrada
-- Para ler uma string `s` do usuário, pode-se usar o comando `cin`, diretamente na variável do tipo string:
+- Para ler uma string do usuário, pode-se usar o comando `cin`, diretamente na variável do tipo string:
 
 ```C++
 int main(){
