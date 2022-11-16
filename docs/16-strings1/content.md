@@ -5,7 +5,7 @@
 ### Novo Cronograma
 #### Unidade 3 - Jogos do Brasil
 
-<img src="unidade3.png" width=800/>
+<img src="img/unidade3.png" width=800/>
 
 ---
 
