@@ -37,14 +37,6 @@ r: 2
 
 ---
 
-### Lista de Presença
-
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3NnOMky" alt="QR Code" border="0" />
-
-<a href="https://bit.ly/3NnOMky"><p style="text-align:center;">https://bit.ly/3NnOMky</p></a>
-
----
-
 ### Exercício 2
 #### Informar se é substring
 

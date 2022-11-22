@@ -106,21 +106,21 @@ Este diretório contém os slides das aulas do semestre 2022.2
 
 ## [10/11 - Revisão - Unidade 2](./revisao_unidade2/)
 
-<!--
-
-## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
-
-## [15/06 - Strings I](./16-strings1/)
+## [17/11 - Strings I](./16-strings1/)
 - Caractere delimitador `\0`
 - Inicialização
 - Entrada/saída
 - Funções de manipulação de strings
 
-## [22/06 - Strings II](./17-strings2/)
+## [22/11 - Strings II](./17-strings2/)
 - Leitura de strings com espaços em branco
 - Exercícios
 
-## [24/06 - Strings - Exercícios](./17a-strings_exercicios)
+## [24/11 - Strings - Exercícios](./exercicios_strings)
+
+<!--
+
+## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
 
 ## [29/06 - Tipos Estruturados I](./18-tipos_estruturados1/)
 - Definição de tipos estruturados
