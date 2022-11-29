@@ -118,19 +118,19 @@ Este diretório contém os slides das aulas do semestre 2022.2
 
 ## [24/11 - Strings - Exercícios](./exercicios_strings)
 
-<!--
-
-## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
-
-## [29/06 - Tipos Estruturados I](./18-tipos_estruturados1/)
+## [29/11 - Tipos Estruturados I](./18-tipos_estruturados1/)
 - Definição de tipos estruturados
 - Operações com variáveis de tipos estruturados
 - Vetores de variáveis de tipos estruturados
 - Exercícios
 
-## [01/07 - Tipos Estruturados II](./19-tipos_estruturados2/)
+## [01/12 - Tipos Estruturados II](./19-tipos_estruturados2/)
 - Uso de tipos estruturados em funções
 - Exercícios
+
+<!--
+
+## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
 
 ## [06/07 - Ordenação](./20-ordenacao/)
 - Ordenação

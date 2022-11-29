@@ -240,9 +240,9 @@ struct Aluno{
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3OrFftZ" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3VjwLZr" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3OrFftZ"><p style="text-align:center;">https://bit.ly/3OrFftZ</p></a>
+<a href="https://bit.ly/3VjwLZr"><p style="text-align:center;">https://bit.ly/3VjwLZr</p></a>
 
 ---
 

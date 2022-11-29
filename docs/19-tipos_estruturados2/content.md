@@ -117,9 +117,9 @@ calcula_menor_maior_nota(alunos, n, a_menor, a_maior);
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3OjdOCJ" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3VjwLZr" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3OjdOCJ"><p style="text-align:center;">https://bit.ly/3OjdOCJ</p></a>
+<a href="https://bit.ly/3Vp0wZ6"><p style="text-align:center;">https://bit.ly/3Vp0wZ6</p></a>
 
 ---
 
