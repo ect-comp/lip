@@ -128,17 +128,17 @@ Este diretório contém os slides das aulas do semestre 2022.2
 - Uso de tipos estruturados em funções
 - Exercícios
 
-<!--
-
-## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
-
-## [06/07 - Ordenação](./20-ordenacao/)
+## [06/12 - Ordenação](./20-ordenacao/)
 - Ordenação
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
 
-## [08/07 - Tipos Estruturados - Exercícios](./20a-tipos_estruturados_exercicios)
+## [08/12 - Tipos Estruturados - Exercícios](./exercicios_tipos_estruturados)
+
+<!--
+
+## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
 
 ## [13/07 - Aplicações com Matrizes de Relações](./21-aplicacoes)
 

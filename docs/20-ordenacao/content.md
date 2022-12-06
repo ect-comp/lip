@@ -178,6 +178,13 @@
 
 ### Ordenação
 #### Generalizando o Raciocínio
+- Observe que:
+  - Na solução apresentada, o vetor é um parâmetro de entrada
+    e saída
+---
+
+### Ordenação
+#### Generalizando o Raciocínio
 - O elemento __chave__ é `v[i]`
 - O elemento **comparado** é `v[j]`
 - Observe que:
@@ -211,7 +218,6 @@
 #### Código da Função - Ordem Crescente
 
 ```C++
-//vetor v é parâmetro de entrada e saída
 void ordena_crescente(int v[], int n){
     int i, j, aux;
     for(i = 0; i < n-1; i++){
@@ -252,9 +258,9 @@ int main(){
 
 ### Lista de Presença
 
-<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3NKsoBW" alt="QR Code" border="0" />
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3uracGj" alt="QR Code" border="0" />
 
-<a href="https://bit.ly/3NKsoBW"><p style="text-align:center;">https://bit.ly/3NKsoBW</p></a>
+<a href="https://bit.ly/3uracGj"><p style="text-align:center;">https://bit.ly/3uracGj</p></a>
 
 ---
 

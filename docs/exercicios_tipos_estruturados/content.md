@@ -22,7 +22,7 @@ Considere um treino de corrida. Ele contém:
 - Uma data
 - Uma duração (horas, minutos e segundos)
 - Uma distância dada em quilômetros
-- Uma *pace* (ritmo), dado em minutos e segundos
+- Um *pace* (ritmo por quilômetro), dado em minutos e segundos
 
 Tendo em mente que você vai precisar ordenar por
 data, duração e pace...
@@ -51,6 +51,14 @@ Como você pode implementar esta função?
 
 **Observe que é para ordenar um vetor de `Data` e não
 de `Corrida`**
+
+---
+
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3VCvEUR" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3VCvEUR"><p style="text-align:center;">https://bit.ly/3VCvEUR</p></a>
 
 ---
 
@@ -90,7 +98,7 @@ lidos em um formato adequado.
 
 Ex:
 Se uma pessoa corre 10Km em 1h 03 min e 35 seg,
-o seu pace foi de 6'25"/Km.
+o seu pace foi de 6:25/Km.
 
 ---
 
@@ -111,7 +119,7 @@ O pace é calculado por:
 
 ### Exercício Completo
 
-Implemente as funções de:
+**Pontuação extra:** funções para
 - Ordenar um vetor de `Corrida` por duração
 - Ordenar um vetor de `Corrida` por pace
 
