@@ -98,7 +98,7 @@ lidos em um formato adequado.
 
 Ex:
 Se uma pessoa corre 10Km em 1h 03 min e 35 seg,
-o seu pace foi de 6:25/Km.
+o pace desta pessoa foi de 6:22/Km (arredondando para cima).
 
 ---
 
