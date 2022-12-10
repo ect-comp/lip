@@ -58,7 +58,7 @@ Para a relação na linha `i` e coluna `j`:
 - Origem é a cidade no vetor na posição `i`
 - Destino é a cidade no vetor na posição `j`
 - Ex.: na posição `[0][2]`: voos que saem de
-  Natal para o Rio de Janeiro
+  Natal para o São Paulo
 
 ---
 
@@ -146,8 +146,8 @@ Programa:
 #### Solução: Voos entre Cidades
 
 ```C++
-#include <iostream>
-#include <cstring>
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
 
 using namespace std;
 
