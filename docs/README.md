@@ -138,6 +138,8 @@ Este diretório contém os slides das aulas do semestre 2022.2
 
 ## [13/12 - Aplicações com Matrizes de Relações](./21-aplicacoes)
 
+## [15/12 - Revisão - Unidade 3](./revisao_unidade3/)
+
 <!--
 
 ## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)

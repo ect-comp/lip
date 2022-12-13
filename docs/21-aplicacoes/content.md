@@ -117,6 +117,14 @@ ser lidos:
 ```
 ---
 
+### Lista de Presença
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3WcuteP" alt="QR Code" border="0" />
+
+<a href="https://bit.ly/3WcuteP"><p style="text-align:center;">https://bit.ly/3WcuteP</p></a>
+
+---
+
 ### Aplicações Matriz de Relações
 #### Exemplo: Voos entre Cidades
 
