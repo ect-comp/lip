@@ -1,14 +1,11 @@
-# Linguagem de Programação (ECT/UFRN)
+# Slides das Aulas
 
-## Bruno Silva <bruno.silva@ect.ufrn.br>
-
-Este diretório contém os slides das aulas do semestre 2022.2
-
-## [23/08 - Apresentação](./01-intro)
+## [07/03 - Apresentação](./slides/01-intro/01-intro.html)
  - Objetivos
  - Metodologia
  - Bibliografia
 
+<!--
 ## [25/08 - Introdução ao C++](./02-cpp)
  - Variáveis e tipos
  - Operadores e expressões
@@ -30,10 +27,8 @@ Este diretório contém os slides das aulas do semestre 2022.2
 - Comando `switch`
 - Operador ternário
 
-<!--
 ## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
 - Exercícios com comandos `if-else`, `switch` e operador `? :`
--->
 
 ## [06/09 - Comandos de Repetição I](./05-comando_repeticao_for/)
 - Comando de repetição `for`
@@ -139,8 +134,6 @@ Este diretório contém os slides das aulas do semestre 2022.2
 ## [13/12 - Aplicações com Matrizes de Relações](./21-aplicacoes)
 
 ## [15/12 - Revisão - Unidade 3](./revisao_unidade3/)
-
-<!--
 
 ## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
 
