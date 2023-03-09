@@ -166,5 +166,222 @@
     "title": "Introdução",
     "section": "Observação Importante",
     "text": "Observação Importante\nRegimento Interno/UFRN, Seção III:\n\nPrevê punições para casos de:\n\nFraudes (colas)\nPerturbação ao andamento normal das atividades\nOfensas a servidores da universidade"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#objetivos-da-disciplina",
+    "href": "slides/02-cpp/02-cpp.html#objetivos-da-disciplina",
+    "title": "Introdução à Linguagem C++",
+    "section": "Objetivos da Disciplina",
+    "text": "Objetivos da Disciplina\n\nDesenvolver a capacidade de implementar algoritmos em uma linguagem de programação estruturada e conceitos relacionados\nDesenvolver programas com funções e tipos estruturados\n\nPara isto, utilizaremos a linguagem:\n\nC++"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#programação",
+    "href": "slides/02-cpp/02-cpp.html#programação",
+    "title": "Introdução à Linguagem C++",
+    "section": "Programação",
+    "text": "Programação\nA capacidade de programar computadores será aplicada na resolução de problemas como:\n\nResolução de funções matemáticas, possivelmente com vetores e matrizes\nSimulação de sistemas\nProcessamento de grandes volumes de dados\netc."
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#programação-1",
+    "href": "slides/02-cpp/02-cpp.html#programação-1",
+    "title": "Introdução à Linguagem C++",
+    "section": "Programação",
+    "text": "Programação\nProgramação envolve:\n\nCompreender o problema a ser resolvido\nElaborar uma sequência de comandos/instruções conhecidos\nEscrever um programa na linguagem escolhida em um arquivo chamado código fonte (possui terminação .cpp)"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#programação-processo-de-compilação",
+    "href": "slides/02-cpp/02-cpp.html#programação-processo-de-compilação",
+    "title": "Introdução à Linguagem C++",
+    "section": "Programação: Processo de Compilação",
+    "text": "Programação: Processo de Compilação\n\n\nCompilação: transformação de código fonte em um programa\nCódigo fonte: formato legível por humanos, formado por comandos/instruções\nPrograma: formato legível por máquinas (arquivo binário)"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#programação-representação-de-um-raciocínio",
+    "href": "slides/02-cpp/02-cpp.html#programação-representação-de-um-raciocínio",
+    "title": "Introdução à Linguagem C++",
+    "section": "Programação: Representação de um Raciocínio",
+    "text": "Programação: Representação de um Raciocínio\n\nLinguagem escolhida tem um formato próprio, denominado sintaxe\nPortanto, aprender programação se resume a:\n\nDominar a sintaxe da linguagem de programação utilizada\nDominar raciocínio lógico e a sua transcrição em um programa"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#programação-2",
+    "href": "slides/02-cpp/02-cpp.html#programação-2",
+    "title": "Introdução à Linguagem C++",
+    "section": "Programação",
+    "text": "Programação\nProgramando na linguagem C++"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-primeiro-programa",
+    "href": "slides/02-cpp/02-cpp.html#c-primeiro-programa",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Primeiro Programa",
+    "text": "C++: Primeiro Programa\nint main(){\n    return 0;\n}\n\nEntretanto, o programa mostrado não faz nada."
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-primeiro-programa-útil",
+    "href": "slides/02-cpp/02-cpp.html#c-primeiro-programa-útil",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Primeiro Programa Útil",
+    "text": "C++: Primeiro Programa Útil\n#include <iostream>\n\nusing namespace std;\n\nint main(){\n    cout << \"LiP: programando em C++\\n\";\n    return 0;\n}\n\nUm programa é dito “útil” quando tem algum tipo de saída."
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-comando-de-saída",
+    "href": "slides/02-cpp/02-cpp.html#c-comando-de-saída",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Comando de Saída",
+    "text": "C++: Comando de Saída\n\nComando de saída cout: imprime na tela o que vem após cada <<\nIsto requer a inclusão da biblioteca iostream (com a diretiva #include)"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-espaços-em-branco",
+    "href": "slides/02-cpp/02-cpp.html#c-espaços-em-branco",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Espaços em Branco",
+    "text": "C++: Espaços em Branco\nEspaços em branco não alteram o programa:\n#include <iostream>\n\nusing namespace std;\n\nint main(){\ncout << \"LiP: programando em C++\\n\";\nreturn 0;\n}\nEntretanto, mantenha sempre o seu código indentado (facilita a leitura)"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-comentários-de-código",
+    "href": "slides/02-cpp/02-cpp.html#c-comentários-de-código",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Comentários de Código",
+    "text": "C++: Comentários de Código\n#include <iostream>\n\nusing namespace std;\n\nint main(){\n    //A proxima linha imprime uma frase\n    cout << \"LiP: primeiro programa\" << endl;\n\n    /* O proximo comando nao e processado pelo\n       compilador, pois e um comentario\n       de linha */\n    //cout << \"ECT/UFRN\" << endl;\n\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-variáveis",
+    "href": "slides/02-cpp/02-cpp.html#c-variáveis",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Variáveis",
+    "text": "C++: Variáveis\n\nNomes dados a endereços de memória do computador\nUtilizadas para armazenar valores de diferentes tipos\nVariáveis precisam ser declaradas antes de serem utilizadas"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-sintaxe-de-declaração-de-variáveis",
+    "href": "slides/02-cpp/02-cpp.html#c-sintaxe-de-declaração-de-variáveis",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Sintaxe de Declaração de Variáveis",
+    "text": "C++: Sintaxe de Declaração de Variáveis\nEm qualquer local dentro do bloco main:\ntipo_da_variavel nome_da_variavel;\n\ntipo_da_variavel pode ser:\n\nbool: declara um booleano (verdadeiro ou falso)\nint: declara um número inteiro\nfloat: declara um número real\nchar: declara um único caractere"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-sintaxe-de-declaração-de-variáveis-1",
+    "href": "slides/02-cpp/02-cpp.html#c-sintaxe-de-declaração-de-variáveis-1",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Sintaxe de Declaração de Variáveis",
+    "text": "C++: Sintaxe de Declaração de Variáveis\n\nnome_da_variavel deve obedecer às regras:\n\ndeve começar com uma letra ou _\ndeve ser composto por letras, dígitos ou _\nnão pode ser uma palavra reservada (p. ex. if)"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-declaração-de-variáveis",
+    "href": "slides/02-cpp/02-cpp.html#c-declaração-de-variáveis",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Declaração de Variáveis",
+    "text": "C++: Declaração de Variáveis\nExercício\nUtilizando o seu caderno, declare variáveis:\n\nChamada de x para armazenar um inteiro\nChamada de temp para armazenar uma temperatura\nPara armazenar o resultado de uma média aritmética\nPara armazenar o sexo de uma pessoa\nPara armazenar se um motor está ligado ou desligado"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-declaração-de-variáveis-1",
+    "href": "slides/02-cpp/02-cpp.html#c-declaração-de-variáveis-1",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Declaração de Variáveis",
+    "text": "C++: Declaração de Variáveis\nSolução\n1. int x;\n2. float temp;\n3. float media;\n4. char sexo;\n5. bool ligado;"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#lista-de-presença",
+    "href": "slides/02-cpp/02-cpp.html#lista-de-presença",
+    "title": "Introdução à Linguagem C++",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/3QV1pX1"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-valor-inicial-de-variáveis",
+    "href": "slides/02-cpp/02-cpp.html#c-valor-inicial-de-variáveis",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Valor Inicial de Variáveis",
+    "text": "C++: Valor Inicial de Variáveis\nO que é impresso pelo seguinte programa?\n#include <iostream>\n\nusing namespace std;\n\nint main(){\n    int x;\n    cout << \"o valor de x e: \" << x << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-inicialização-de-variáveis",
+    "href": "slides/02-cpp/02-cpp.html#c-inicialização-de-variáveis",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Inicialização de Variáveis",
+    "text": "C++: Inicialização de Variáveis\n\nAo serem declaradas em C++, as variáveis são inicializadas com valores aleatórios (lixo em memória)\nC++ oferece o recurso de inicializar uma variável ao mesmo tempo em que ela é declarada\nPor exemplo:\n\nfloat media = 0; \\(\\rightarrow\\) declara e inicializa a media com 0\nchar sexo = 'M'; \\(\\rightarrow\\) declara e inicializa a sexo com M"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-tipo-char",
+    "href": "slides/02-cpp/02-cpp.html#c-tipo-char",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Tipo char",
+    "text": "C++: Tipo char\n\nValores devem ser atribuídos com aspas simples: '\nVariáveis char armazenam um único caractere\n\nLetra: 'a', 'e', 'Z', etc.\nDígito: '5', '2', etc.\nSímbolo: ']', '/', ';', etc."
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-tipo-char-1",
+    "href": "slides/02-cpp/02-cpp.html#c-tipo-char-1",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Tipo char",
+    "text": "C++: Tipo char\n\nCaracteres especiais:\n\n'\\n': quebra de linha\n'\\t': tabulação horizontal\n'\\0': delimitador de final de cadeia de caracteres"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-tipo-char-2",
+    "href": "slides/02-cpp/02-cpp.html#c-tipo-char-2",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Tipo char",
+    "text": "C++: Tipo char\n\nTodo caractere está presente na tabela ASCII (lê-se “ásqui”):\n\nAssocia um número inteiro diferente para cada caractere\nImagem com a tabela"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-entrada-de-dados",
+    "href": "slides/02-cpp/02-cpp.html#c-entrada-de-dados",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Entrada de Dados",
+    "text": "C++: Entrada de Dados\nComando de entrada cin: atribui valor lido do teclado às variáveis após o >>:\n#include <iostream>\nusing namespace std;\nint main(){\n    int x = 0;\n    cout << \"digite um valor: \";\n    cin >> x;\n    cout << \"o valor digitado foi \" << x << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#exercício-1",
+    "href": "slides/02-cpp/02-cpp.html#exercício-1",
+    "title": "Introdução à Linguagem C++",
+    "section": "Exercício",
+    "text": "Exercício\nImplemente um programa que lê um número inteiro e um caractere e imprime o texto \"O inteiro eh X e o caractere eh Y\" seguido por uma quebra de linha, sendo X e Y o inteiro e o caractere respectivamente."
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#exercício-solução",
+    "href": "slides/02-cpp/02-cpp.html#exercício-solução",
+    "title": "Introdução à Linguagem C++",
+    "section": "Exercício: Solução",
+    "text": "Exercício: Solução\n#include <iostream>\nusing namespace std;\nint main(){\n    int num;\n    char carac;\n    cout << \"insira um num. inteiro:\\n\";\n    cin >> num;\n    cout << \"insira um caractere:\\n\";\n    cin >> carac;\n    cout << \"O inteiro eh \" << num\n         << \" e o caractere eh \"\n         << carac << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-operadores",
+    "href": "slides/02-cpp/02-cpp.html#c-operadores",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Operadores",
+    "text": "C++: Operadores\n\nOperador de atribuição: =\nOperadores aritméticos: +, -, *, /\nOperadores relacionais: >, >=, <, <=, ==, !=\nOperadores lógicos: ! (negação), || (ou), && (e)\n\nVocê verá mais sobre operadores na aula que vem"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#exercício-2",
+    "href": "slides/02-cpp/02-cpp.html#exercício-2",
+    "title": "Introdução à Linguagem C++",
+    "section": "Exercício",
+    "text": "Exercício\nImplemente um programa que lê dois números inteiros. O programa deve armazenar em uma variável booleana o resultado da comparação X == Y, sendo X e Y os dois inteiros lidos. Em seguida, o programa deve imprimir a variável booleana."
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#exercício-solução-1",
+    "href": "slides/02-cpp/02-cpp.html#exercício-solução-1",
+    "title": "Introdução à Linguagem C++",
+    "section": "Exercício: Solução",
+    "text": "Exercício: Solução\n#include <iostream>\nusing namespace std;\nint main(){\n    int x, y;\n    bool iguais;\n    cout << \"insira dois num. inteiros:\\n\";\n    cin >> x >> y;\n    iguais = x == y;\n    cout << \"Iguais: \" << iguais << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#sumário",
+    "href": "slides/02-cpp/02-cpp.html#sumário",
+    "title": "Introdução à Linguagem C++",
+    "section": "Sumário",
+    "text": "Sumário\n\nNa aula de hoje, você viu:\n\nEstrutura de um programa em C++\nDeclaração e inicialização de variáveis\nTipos básicos\nComandos de entrada e saída\nOperadores"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#programação-representação-de-um-raciocínio-1",
+    "href": "slides/02-cpp/02-cpp.html#programação-representação-de-um-raciocínio-1",
+    "title": "Introdução à Linguagem C++",
+    "section": "Programação: Representação de um Raciocínio",
+    "text": "Programação: Representação de um Raciocínio\n\nCaso esteja sintaticamente correto, o código fonte é compilado em um programa"
+  },
+  {
+    "objectID": "slides/02-cpp/02-cpp.html#c-tipo-char-3",
+    "href": "slides/02-cpp/02-cpp.html#c-tipo-char-3",
+    "title": "Introdução à Linguagem C++",
+    "section": "C++: Tipo char",
+    "text": "C++: Tipo char\n\nNão se decora a tabela ASCII, mas é importante saber que:\n\nO alfabeto maiúsculo está em sequência na tabela: se 'A' é igual a um inteiro x, o correspondente a 'B' é igual a x+1, 'C' é x+2, etc.\nO mesmo para o alfabeto minúsculo: 'a' é y, 'b' é y+1…\nO mesmo para os números: '1' é z, '2' é z+1…\nO intervalo [A,Z] tem valores menores que [a,z]"
   }
 ]

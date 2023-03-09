@@ -5,11 +5,12 @@
  - Metodologia
  - Bibliografia
 
-<!--
-## [25/08 - Introdução ao C++](./02-cpp)
+## [09/03 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
  - Variáveis e tipos
  - Operadores e expressões
  - Entrada e saída
+
+<!--
 
 ## [30/08 - Operadores e Expressões](./03-operadores_e_expressoes/)
  - Operadores em C++
