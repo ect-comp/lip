@@ -383,5 +383,502 @@
     "title": "Introdução à Linguagem C++",
     "section": "C++: Tipo char",
     "text": "C++: Tipo char\n\nNão se decora a tabela ASCII, mas é importante saber que:\n\nO alfabeto maiúsculo está em sequência na tabela: se 'A' é igual a um inteiro x, o correspondente a 'B' é igual a x+1, 'C' é x+2, etc.\nO mesmo para o alfabeto minúsculo: 'a' é y, 'b' é y+1…\nO mesmo para os números: '1' é z, '2' é z+1…\nO intervalo [A,Z] tem valores menores que [a,z]"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#linguagem-de-programação",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#linguagem-de-programação",
+    "title": "Operadores e Expressões",
+    "section": "Linguagem de Programação",
+    "text": "Linguagem de Programação\n\nAula anterior: variáveis e tipos básicos\nAula de hoje: operadores e expressões"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-e-operandos",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores-e-operandos",
+    "title": "Operadores e Expressões",
+    "section": "Operadores e Operandos",
+    "text": "Operadores e Operandos\n\nCompõem uma expressão\nExemplo:\n\nx + y\n\nOperador: +\nOperandos: x e y"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores",
+    "title": "Operadores e Expressões",
+    "section": "Operadores",
+    "text": "Operadores\nOs operadores possuem uma precedência (quem será computado primeiro) e estão divididos em grupos:\n\nOperador de atribuição\nOperadores aritméticos\nOperadores relacionais\nOperadores lógicos"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões",
+    "title": "Operadores e Expressões",
+    "section": "Expressões",
+    "text": "Expressões\n\nSequências de operandos e operadores que especificam algo a ser calculado\nEm C++:\n\nExpressões aritméticas\nExpressões lógicas"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-atribuição",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-atribuição",
+    "title": "Operadores e Expressões",
+    "section": "Operador de Atribuição",
+    "text": "Operador de Atribuição\nOperador = (“recebe”):\n\nAtribui um determinado valor a uma variável\nx = 0; \\(\\rightarrow\\) lê-se “x recebe zero”\nSempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos",
+    "title": "Operadores e Expressões",
+    "section": "Operadores Aritméticos",
+    "text": "Operadores Aritméticos\n\nFormam expressões aritméticas: valor resultante é um número\nOperadores de mesma precedência são avaliados da esquerda para a direita\n\n\n\n\n\nOperador\nFuncionalidade\nPrecedência no Grupo\n\n\n\n\n()\nAssociar operandos\nPrimeiro\n\n\n+\nAdição\nÚltimo\n\n\n-\nSubtração\nÚltimo\n\n\n*\nMultiplicação\nSegundo\n\n\n/\nDivisão\nSegundo\n\n\n%\nResto\nSegundo"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões-aritméticas",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-aritméticas",
+    "title": "Operadores e Expressões",
+    "section": "Expressões Aritméticas",
+    "text": "Expressões Aritméticas\nExemplos:\n\n1+2*3\n1*2+3\n(1+2)*3\n1*2%3\n((1*2)+3)*2"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#programa-com-expressões",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#programa-com-expressões",
+    "title": "Operadores e Expressões",
+    "section": "Programa com expressões",
+    "text": "Programa com expressões\nint main(){\n    int x = 0;\n    x + 45;\n    x = x + 100;\n    cout << x << endl;\n    return 0;\n}\nO programa está sintaticamente correto? Qual o valor impresso?"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos-de-atribuição",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos-de-atribuição",
+    "title": "Operadores e Expressões",
+    "section": "Operadores Aritméticos de Atribuição",
+    "text": "Operadores Aritméticos de Atribuição\nComputam a expressão, aplicam o operador aritmético e atribuem o seu valor à variável à esquerda do op. de atribuição\n\n\n\nOperador\nExpressão\nExpressão Equivalente\n\n\n\n\n+=\nx += y\nx = x + y\n\n\n-=\nx -= y\nx = x - y\n\n\n*=\nx *= y\nx = x * y\n\n\n/=\nx /= y\nx = x/y\n\n\n%=\nx %= y\nx = x%y"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos-de-atribuição-1",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos-de-atribuição-1",
+    "title": "Operadores e Expressões",
+    "section": "Operadores Aritméticos de Atribuição",
+    "text": "Operadores Aritméticos de Atribuição\nQual o valor final das variáveis a seguir, para x = 1, y = 2, z = 3?\n\nx += 2*2;\nx += y -= z;\nz %= y %= x;"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operações-de-potência-e-raíz-quadrada",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operações-de-potência-e-raíz-quadrada",
+    "title": "Operadores e Expressões",
+    "section": "Operações de Potência e Raíz Quadrada",
+    "text": "Operações de Potência e Raíz Quadrada\n\nEm C++, não existem operadores para potência e raíz quadrada\nEstas operações são realizadas por chamadas a funções\n\npow(b,e) para potência (b elevado a e)\nsqrt(x) para raíz quadrada de x\n\nAmbas as funções estão na biblioteca cmath\n\n#include <cmath>"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-incrementodecremento",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-incrementodecremento",
+    "title": "Operadores e Expressões",
+    "section": "Operador de Incremento/Decremento",
+    "text": "Operador de Incremento/Decremento\nOperadores unários (só precisam de um operando)\n\n\n\n\nExpressao\nExpressao Equivalente\n\n\n\n\nx++\nx = x + 1\n\n\nx–\nx = x - 1\n\n\n\n\n\nPrecedência: mais alta do que a multiplicação/divisão/resto\nPor exemplo, para x = 1, y = 2, z = 3:\n\nx++; //x será igual a 2"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-incrementodecremento-1",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-incrementodecremento-1",
+    "title": "Operadores e Expressões",
+    "section": "Operador de Incremento/Decremento",
+    "text": "Operador de Incremento/Decremento\n\nPrecedência: mais alta do que a multiplicação/divisão/resto\nPor exemplo, para x = 1, y = 2, z = 3:\n\nx++; //x será igual a 2"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas",
+    "title": "Operadores e Expressões",
+    "section": "Expressões Lógicas",
+    "text": "Expressões Lógicas\n\nExpressões que possuem como resultado os valores 0 (falso) ou 1 (verdadeiro)\nEm C++, valores numéricos são interpretados como falso ou verdadeiro\n\nO único valor a ser interpretado como falso é o 0\nQualquer outro é interpretado como 1 (ex. 1.000001, -10000, etc.)\n\nEstas expressões são muitas vezes a parte mais importante dos programas"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-1",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-1",
+    "title": "Operadores e Expressões",
+    "section": "Expressões Lógicas",
+    "text": "Expressões Lógicas\n\nExpressões lógicas são formadas por dois tipos de operadores:\n\nOperadores relacionais\nOperadores lógicos"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-relacionais",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores-relacionais",
+    "title": "Operadores e Expressões",
+    "section": "Operadores Relacionais",
+    "text": "Operadores Relacionais\nPossuem precedência mais alta do que o operador de atribuição e mais baixa do que os operadores aritméticos\n\n\n\nOperador\nFuncionalidade\nPrecedência no grupo\n\n\n\n\n==\nIgual\nÚltimo\n\n\n!=\nDiferente\nÚltimo\n\n\n<\nMenor\nPrimeiro\n\n\n<=\nMenor ou igual\nPrimeiro\n\n\n>\nMaior\nPrimeiro\n\n\n>=\nMaior ou igual\nPrimeiro"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-2",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-2",
+    "title": "Operadores e Expressões",
+    "section": "Expressões Lógicas",
+    "text": "Expressões Lógicas\nCom Operadores Relacionais\nExemplos:\n\n1 > 2\n'a' < 'b'\nx == x\nx = 5*2 > 4 == 2+3 > 1"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-lógicos",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores-lógicos",
+    "title": "Operadores e Expressões",
+    "section": "Operadores Lógicos",
+    "text": "Operadores Lógicos\nPossuem precedência mais baixa do que os operadores relacionais (exceto a negação, que tem precedência igual ao op. de incremento)\n\n\n\nOperador\nFuncionalidade\nPrecedencia no grupo\n\n\n\n\n!\nNegacao (nao logico)\nPrimeiro\n\n\n||\nDisjuncao (ou logico)\nUltimo\n\n\n&&\nConjuncao (e logico)\nSegundo"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operador-lógico-de-negação-não-lógico",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-lógico-de-negação-não-lógico",
+    "title": "Operadores e Expressões",
+    "section": "Operador Lógico de Negação (Não Lógico)",
+    "text": "Operador Lógico de Negação (Não Lógico)\nTabela Verdade\nNegação: inverte o valor lógico do operando (op. unário)\n\n\n\nx\n!x\n\n\n\n\n0\n1\n\n\n1\n0"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operador-lógico-de-disjunção-ou-lógico",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-lógico-de-disjunção-ou-lógico",
+    "title": "Operadores e Expressões",
+    "section": "Operador Lógico de Disjunção (OU Lógico)",
+    "text": "Operador Lógico de Disjunção (OU Lógico)\nTabela Verdade\nDisjunção: falso quando os dois operandos são falsos\n\n\n\nx\ny\nx || y\n\n\n\n\n0\n0\n0\n\n\n0\n1\n1\n\n\n1\n0\n1\n\n\n1\n1\n1"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operador-lógico-de-conjunção-e-lógico",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-lógico-de-conjunção-e-lógico",
+    "title": "Operadores e Expressões",
+    "section": "Operador Lógico de Conjunção (E Lógico)",
+    "text": "Operador Lógico de Conjunção (E Lógico)\nTabela Verdade\nConjunção: verdadeiro quando os dois operandos são verdadeiros\n\n\n\nx\ny\nx && y\n\n\n\n\n0\n0\n0\n\n\n0\n1\n0\n\n\n1\n0\n0\n\n\n1\n1\n1"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-3",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-3",
+    "title": "Operadores e Expressões",
+    "section": "Expressões Lógicas",
+    "text": "Expressões Lógicas\nCom Todos os Operadores\nExemplos (para x = 1, y = 2, z = 3):\n\ny-x == false\nx > 0 && x < z+10\nz >= y || true\nx != 1 || x != 2"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#lista-de-presença",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#lista-de-presença",
+    "title": "Operadores e Expressões",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/3l7ktq8"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-4",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-4",
+    "title": "Operadores e Expressões",
+    "section": "Expressões Lógicas",
+    "text": "Expressões Lógicas\nExemplo de Expressão Mal Construída\nA expressão abaixo é sintaticamente correta mas é logicamente incorreta. O que há de errado com ela? Como consertar?\nint i = 3, j = 2, k = 1;\nbool expr;\n\nexpr = (i > j > k);"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-5",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-5",
+    "title": "Operadores e Expressões",
+    "section": "Expressões Lógicas",
+    "text": "Expressões Lógicas\nExemplo de Expressão Mal Construída\nForma correta da expressão anterior:\nint i = 3, j = 2, k = 1;\nbool expr;\n\nexpr = (i > j  && j > k);"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#precedência",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#precedência",
+    "title": "Operadores e Expressões",
+    "section": "Precedência",
+    "text": "Precedência\nOrdem geral\n\nParênteses\nOperador de incremento/não lógico\nOperadores aritméticos\nOperadores relacionais\nOperadores lógicos\nAtribuição"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#verificando-o-valor-de-expressões-lógicas",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#verificando-o-valor-de-expressões-lógicas",
+    "title": "Operadores e Expressões",
+    "section": "Verificando o Valor de Expressões Lógicas",
+    "text": "Verificando o Valor de Expressões Lógicas\nUtilize o cout com a expressão lógica inteira entre parênteses para verificar o seu valor em programas:\nint main(){\n    int i = 1, j = 2, k = 3;\n\n    cout << (i + j < k || 5 >= k) << endl;\n\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#verificando-o-valor-de-expressões-lógicas-1",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#verificando-o-valor-de-expressões-lógicas-1",
+    "title": "Operadores e Expressões",
+    "section": "Verificando o Valor de Expressões Lógicas",
+    "text": "Verificando o Valor de Expressões Lógicas\nOu, atribua o resultado da expressão a uma variável booleana e imprima esta variável:\nint main(){\n    int i = 1, j = 2, k = 3;\n    bool expr;\n\n    expr = i + j < k || 5 >= k;\n\n    cout << expr << endl;\n\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-i",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-i",
+    "title": "Operadores e Expressões",
+    "section": "Conversão de Tipos I",
+    "text": "Conversão de Tipos I\nEm C++, o tipo do resultado de uma expressão aritmética é sempre convertido no tipo do operando com maior precisão (com maior capacidade de armazenamento)"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-i-1",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-i-1",
+    "title": "Operadores e Expressões",
+    "section": "Conversão de Tipos I",
+    "text": "Conversão de Tipos I\nExemplo:\nchar ch;\nint i;\nfloat f;\n\nresult = (ch/i) + (f*i); \n\nch/i é uma expressão com tipo int\nf*i é uma expressão com tipo float\n(ch/i) + (f*i) é uma expressão com tipo float\nresult tem portanto tipo float"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-ii",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-ii",
+    "title": "Operadores e Expressões",
+    "section": "Conversão de Tipos II",
+    "text": "Conversão de Tipos II\nEm C++, o tipo da expressão do lado direito de uma atribuição é convertido no tipo do lado esquerdo apenas quando este último representa um conjunto menor de valores"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-ii-1",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-ii-1",
+    "title": "Operadores e Expressões",
+    "section": "Conversão de Tipos II",
+    "text": "Conversão de Tipos II\nExemplos:\nfloat g = 9.8;\n//valor de g e convertido para int\nint x = g;\nint x = 3, y = 3, z = 4;\n//valor da expressao NAO e convertido para float\nfloat media = (x + y + z)/3;"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-iii",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-iii",
+    "title": "Operadores e Expressões",
+    "section": "Conversão de Tipos III",
+    "text": "Conversão de Tipos III\nEm C++, é possível forçar uma expressão a ser interpretada como um tipo informado"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-iii-1",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-iii-1",
+    "title": "Operadores e Expressões",
+    "section": "Conversão de Tipos III",
+    "text": "Conversão de Tipos III\nSintaxe do typecast:\nnovo_tipo(expressao);\nou\n(novo_tipo) expressao;\nExemplos:\nint x = 3, y = 3, z = 4;\nfloat media = float(x + y + z)/3;"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#exercício",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#exercício",
+    "title": "Operadores e Expressões",
+    "section": "Exercício",
+    "text": "Exercício\nImplemente um programa que leia do usuário um caractere. O programa deve imprimir na tela o número inteiro da tabela ASCII correspondente ao caractere informado. Dica: utilize o operador de conversão."
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#exercício-solução",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#exercício-solução",
+    "title": "Operadores e Expressões",
+    "section": "Exercício: Solução",
+    "text": "Exercício: Solução\n#include <iostream>\nusing namespace std;\nint main(){\n    char car;\n    cout << \"insira um caractere:\\n\";\n    cin >> car;\n    cout << \"Num. ASCII: \" << int(car) << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#exercício-1",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#exercício-1",
+    "title": "Operadores e Expressões",
+    "section": "Exercício",
+    "text": "Exercício\nForneça valores para as variáveis e calcule os resultados das expressões a seguir. Implemente um programa para verificar as suas respostas:\nint x, y, z;\nchar car;\n\n1. car && (x || y)\n2. (x > y && y > z) || (x == z)\n3. expressao verdadeira quando x nao eh 0 e nem 1\n   e y nao eh 0 e nem -1"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#desafio",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#desafio",
+    "title": "Operadores e Expressões",
+    "section": "Desafio",
+    "text": "Desafio\nUtilizando apenas o que foi visto até o momento na disciplina, implemente um programa que leia do usuário um número inteiro. O seu programa deve imprimir na tela o antecessor do número, exceto se ele for o número 17. Neste caso, o próprio número deve ser impresso."
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#sumário",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#sumário",
+    "title": "Operadores e Expressões",
+    "section": "Sumário",
+    "text": "Sumário\nChecklist da aula:\n\nOperador de atribuição\nOperadores aritméticos\nOperadores lógicos\nOperadores relacionais\nOperador de typecast\nExpressões aritméticas e lógicas\nOrdem de precedência e avaliação de expressões"
+  },
+  {
+    "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos-small_table",
+    "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos-small_table",
+    "title": "Operadores e Expressões",
+    "section": "Operadores Aritméticos {small_table}",
+    "text": "Operadores Aritméticos {small_table}\n\nFormam expressões aritméticas: valor resultante é um número\nOperadores de mesma precedência são avaliados da esquerda para a direita\n\n\n\n\nOperador\nFuncionalidade\nPrecedência no Grupo\n\n\n\n\n()\nAssociar operandos\nPrimeiro\n\n\n+\nAdição\nÚltimo\n\n\n-\nSubtração\nÚltimo\n\n\n*\nMultiplicação\nSegundo\n\n\n/\nDivisão\nSegundo\n\n\n%\nResto\nSegundo"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#linguagem-de-programação",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#linguagem-de-programação",
+    "title": "Comandos de Seleção",
+    "section": "Linguagem de Programação",
+    "text": "Linguagem de Programação\n\nAulas anteriores:\n\nVariáveis e tipos básicos\nComo modificar variáveis: operadores e expressões\nTipos diferentes em uma mesma expressão\n\nAula de hoje: comandos de seleção\n\nComando if-else\nComando switch-case\nOperador ternário ? :"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comandos-de-seleção",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comandos-de-seleção",
+    "title": "Comandos de Seleção",
+    "section": "Comandos de Seleção",
+    "text": "Comandos de Seleção\n\nDesviam o fluxo de execução de um programa\nPermitem a execução de uma ou mais instruções (bloco de código) quando uma determinada expressão for verdadeira"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if",
+    "title": "Comandos de Seleção",
+    "section": "Comando if",
+    "text": "Comando if\nSintaxe:\nif(condicao){\n    comando1;\n    ...\n    comandoN;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-1",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-1",
+    "title": "Comandos de Seleção",
+    "section": "Comando if",
+    "text": "Comando if\n\nComando de seleção simples: depende apenas de uma condição\nA condição é qualquer expressão (inclusive expressões aritméticas ou constantes)\nA condição é sempre avaliada como expressão lógica\n\nVerdadeiro: qualquer valor diferente de zero\nFalso: zero"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-2",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-2",
+    "title": "Comandos de Seleção",
+    "section": "Comando if",
+    "text": "Comando if\nExemplo\nPrograma que lê um número digitado pelo usuário e imprime a frase \"Numero invalido\" caso o usuário digite zero:\nint main(){\n    int x;\n    cin >> x;\n    if(x == 0){\n        cout << \"Numero invalido\" << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-3",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-3",
+    "title": "Comandos de Seleção",
+    "section": "Comando if",
+    "text": "Comando if\nExemplos Atípicos\n\nComando if que sempre executa:\n\nif(1){\n    cout << \"Sempre imprime\" << endl;\n}\n\nUso incorreto de operadores:\n\nif(x = 0){ //ha um problema aqui\n    cout << \"Numero invalido\" << endl;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-4",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-4",
+    "title": "Comandos de Seleção",
+    "section": "Comando if",
+    "text": "Comando if\nExercício: faça um programa que lê uma letra digitada pelo usuário e imprime a frase \"Vogal minuscula digitada\" caso o usuário digite uma vogal minúscula"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-5",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-5",
+    "title": "Comandos de Seleção",
+    "section": "Comando if",
+    "text": "Comando if\nExercício: Solução\nint main(){\n    char cr;\n    cin >> cr;\n    if(cr == 'a' || cr == 'e' || cr == 'i' ||\n       cr == 'o' || cr == 'u'){\n        cout << \"Vogal minuscula digitada\" << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else",
+    "title": "Comandos de Seleção",
+    "section": "Comando if-else",
+    "text": "Comando if-else\nSintaxe:\nif(condicao){\n    comandoI.1;\n    ...\n    comandoI.N;\n}\nelse{\n    comandoE.1;\n    ...\n    comandoE.N;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-1",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-1",
+    "title": "Comandos de Seleção",
+    "section": "Comando if-else",
+    "text": "Comando if-else\n\nComando de seleção composto: dois blocos dependem de uma mesma condição\nQuando a condição é verdadeira: bloco correspondente ao if é executado\nQuando a condição é falsa: bloco correspondente ao else é executado"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-2",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-2",
+    "title": "Comandos de Seleção",
+    "section": "Comando if-else",
+    "text": "Comando if-else\nExemplo: programa que lê um número digitado pelo usuário e imprime a frase \"Numero invalido\" caso o usuário digite zero ou a frase \"Numero valido\" caso contrário"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-3",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-3",
+    "title": "Comandos de Seleção",
+    "section": "Comando if-else",
+    "text": "Comando if-else\nint main(){\n    int x;\n    cin >> x;\n    if(x == 0){\n        cout << \"Numero invalido\" << endl;\n    }\n    else{\n        cout << \"Numero valido\" << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-4",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-4",
+    "title": "Comandos de Seleção",
+    "section": "Comando if-else",
+    "text": "Comando if-else\nExercício: faça um programa que lê uma letra digitada pelo usuário e imprime a frase \"Vogal minuscula digitada\" caso o usuário digite uma vogal minúscula ou a frase \"Consoante minuscula digitada\" caso o usuário digite uma consoante minúscula"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-5",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-if-else-5",
+    "title": "Comandos de Seleção",
+    "section": "Comando if-else",
+    "text": "Comando if-else\nExercício: Solução\nint main(){\n    char cr;\n    cin >> cr;\n    if(cr == 'a' || cr == 'e' || cr == 'i' ||\n       cr == 'o' || cr == 'u'){\n        cout << \"Vogal minuscula digitada\" << endl;\n    }\n    else{\n        cout << \"Consoante minuscula digitada\" << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#lista-de-presença",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#lista-de-presença",
+    "title": "Comandos de Seleção",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/3ZCom5r"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#encadeamento-de-if-else",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#encadeamento-de-if-else",
+    "title": "Comandos de Seleção",
+    "section": "Encadeamento de if-else",
+    "text": "Encadeamento de if-else\nSintaxe:\nif(condicao1){\n    comando1.1;\n    ...\n    comando1.N;\n}\nelse if(condicao2){\n    comando2.1;\n    ...\n    comando2.N;\n}\nelse{\n    comando3.1;\n    ...\n    comando3.N;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#encadeamento-de-if-else-1",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#encadeamento-de-if-else-1",
+    "title": "Comandos de Seleção",
+    "section": "Encadeamento de if-else",
+    "text": "Encadeamento de if-else\n\nComando de seleção aninhado: associação de vários if-else\nCada else só é executado se o if anterior for falso\nSomente então a condição do próximo if é testada\nAssim, os blocos de comandos são mutuamente exclusivos (apenas um deles pode ser verdadeiro por execução)"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#encadeamento-de-if-else-2",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#encadeamento-de-if-else-2",
+    "title": "Comandos de Seleção",
+    "section": "Encadeamento de if-else",
+    "text": "Encadeamento de if-else\nExercício: faça um programa que lê a nota de um aluno e imprime:\n\n\"Aprovado\", caso a nota seja maior ou igual a 5.0\n\"Em recuperacao\", caso a nota seja maior ou igual a 3.0 e menor do que 5.0\n\"Reprovado\", caso a nota seja menor do que 3.0"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#encadeamento-de-if-else-3",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#encadeamento-de-if-else-3",
+    "title": "Comandos de Seleção",
+    "section": "Encadeamento de if-else",
+    "text": "Encadeamento de if-else\nExercício: Solução\nint main(){\n    float nota;\n    cin >> nota;\n    if(nota >= 5.0){\n        cout << \"Aprovado\" << endl;\n    }\n    else if(nota >= 3.0){\n        cout << \"Em recuperacao\" << endl;\n    }\n    else{\n        cout << \"Reprovado\" << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case",
+    "title": "Comandos de Seleção",
+    "section": "Comando switch-case",
+    "text": "Comando switch-case\nSintaxe:\nswitch(expressao){\n    case constante1:\n        comando 1.1;\n        ...\n        comando 1.N;\n        break;\n    ...\n    case constanteN:\n        comando N.1;\n        ...\n        comando N.N;\n        break;\n    default:\n        comando d.1;\n        ...\n        comando d.N;    \n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-1",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-1",
+    "title": "Comandos de Seleção",
+    "section": "Comando switch-case",
+    "text": "Comando switch-case\n\nComando de seleção de múltipla escolha: alternativa ao uso de vários if-else\nPossui sintaxe específica que compara o valor de uma variável ao de várias constantes\nFuncionamento:\n\nO bloco case que possuir valor igual ao da constante será executado\nTodos os blocos case abaixo do executado são também executados…"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-2",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-2",
+    "title": "Comandos de Seleção",
+    "section": "Comando switch-case",
+    "text": "Comando switch-case\n\n… exceto no caso em que cada case termina com um break\ndefault (opcional): executado quando a expressão não é igual a nenhuma das constantes"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-3",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-3",
+    "title": "Comandos de Seleção",
+    "section": "Comando switch-case",
+    "text": "Comando switch-case\nExemplo: programa que escreve por extenso na tela o nome de cada dígito (de 0 a 2; complete o código para nrs. até 9):\nint main(){\n    int d;\n    cin >> d;\n    switch(d){\n        case 0:\n            cout << \"zero\" << endl;\n            break;\n        case 1:\n            cout << \"um\" << endl;\n            break;\n        case 2:\n            cout << \"dois\" << endl;\n            break;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-4",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-4",
+    "title": "Comandos de Seleção",
+    "section": "Comando switch-case",
+    "text": "Comando switch-case\nExercício: utilizando o switch-case, faça um programa que lê uma letra digitada pelo usuário e imprime a frase \"Vogal digitada\" caso o usuário digite uma vogal ou a \"Consoante digitada\" caso o usuário digite uma consoante"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-5",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comando-switch-case-5",
+    "title": "Comandos de Seleção",
+    "section": "Comando switch-case",
+    "text": "Comando switch-case\nExercício: Solução\nint main(){\n    char c;\n    cin >> c;\n    switch(c){\n        case 'a':\n        case 'e':\n        case 'i':\n        case 'o':\n        case u':\n            cout << \"Vogal digitada\" << endl;\n            break;\n        default:\n            cout << \"Consoante digitada\" << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário",
+    "title": "Comandos de Seleção",
+    "section": "Operador Ternário ? :",
+    "text": "Operador Ternário ? :\nSintaxe:\nexpr1 ? expr2 : expr3;  \n\nComo o nome sugere, necessita de três operandos expr1, expr2 e expr3\n\nexpr1 é avaliada\nse expr1 for verdadeira, expr2 é calculada\nse expr1 for falsa, expr3 é calculada\n\nO resultado calculado é o resultado do operador ternário"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário-1",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário-1",
+    "title": "Comandos de Seleção",
+    "section": "Operador Ternário ? :",
+    "text": "Operador Ternário ? :\nExemplo: programa que atribui à y: - O valor 1 se x for maior ou igual a zero - O valor -1 se x for menor que zero\nint main(){\n    int x, y;\n    cin >> x;\n    y = x >= 0 ? 1 : -1;\n    cout << \"y: \" << y << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário-2",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário-2",
+    "title": "Comandos de Seleção",
+    "section": "Operador Ternário ? :",
+    "text": "Operador Ternário ? :\nExercício: utilizando o ? :, faça um programa que lê dois números e imprime qual é o maior dos dois"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário-3",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário-3",
+    "title": "Comandos de Seleção",
+    "section": "Operador Ternário: ? :",
+    "text": "Operador Ternário: ? :\nExercício: Solução\nint main(){\n    int x, y, maior;\n    cin >> x >> y;\n    x > y ? maior = x : maior = y;\n    cout << maior << \" e o maior\" << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comandos-de-seleção-1",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#comandos-de-seleção-1",
+    "title": "Comandos de Seleção",
+    "section": "Comandos de Seleção",
+    "text": "Comandos de Seleção\nDicas Gerais\n\nTodo switch-case pode ser feito com if-else, mas não o contrário\nOperador ternário: utilizado em casos simples de if-else\nNo final das contas: if-else é mais genérico e portanto, mais indicado para uso"
+  },
+  {
+    "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#sumário",
+    "href": "slides/04-comandos_selecao/04-comandos_selecao.html#sumário",
+    "title": "Comandos de Seleção",
+    "section": "Sumário",
+    "text": "Sumário\nChecklist da aula de hoje:\n\nSeleção simples if\nSeleção composta if-else\nSeleção aninhada (encadeamento de if-else)\nComando switch\nOperador ternário ? :"
   }
 ]

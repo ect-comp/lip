@@ -10,9 +10,7 @@
  - Operadores e expressões
  - Entrada e saída
 
-<!--
-
-## [30/08 - Operadores e Expressões](./03-operadores_e_expressoes/)
+## [14/03 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
  - Operadores em C++
    - Atribuição
    - Operadores aritméticos
@@ -23,10 +21,12 @@
    - Expressões lógicas
 - Conversão entre tipos
 
-## [01/09 - Comandos de Seleção](./04-comandos_selecao/)
+## [16/03 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
 - Comando `if` e `if-else`
 - Comando `switch`
 - Operador ternário
+
+<!--
 
 ## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
 - Exercícios com comandos `if-else`, `switch` e operador `? :`
