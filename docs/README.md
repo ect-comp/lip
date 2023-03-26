@@ -21,19 +21,19 @@
    - Expressões lógicas
 - Conversão entre tipos
 
-## [16/03 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
+## [28/03 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
 - Comando `if` e `if-else`
 - Comando `switch`
 - Operador ternário
+
+## [30/03 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
+- Comando de repetição `for`
+- Exercícios
 
 <!--
 
 ## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
 - Exercícios com comandos `if-else`, `switch` e operador `? :`
-
-## [06/09 - Comandos de Repetição I](./05-comando_repeticao_for/)
-- Comando de repetição `for`
-- Exercícios
 
 ## [08/09 - Comandos de Repetição II](./06-comando_repeticao_while/)
 - Comando de repetição `while`
