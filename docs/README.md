@@ -30,16 +30,16 @@
 - Comando de repetição `for`
 - Exercícios
 
-<!--
-
-## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
-- Exercícios com comandos `if-else`, `switch` e operador `? :`
-
-## [08/09 - Comandos de Repetição II](./06-comando_repeticao_while/)
+## [04/04 - Comandos de Repetição II](./slides/06-comando_repeticao_while/06-comando_repeticao_while.html)
 - Comando de repetição `while`
 - Comando de repetição `do.. while`
 - Comandos `break` e `continue`
 - Exercícios
+
+<!--
+
+## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
+- Exercícios com comandos `if-else`, `switch` e operador `? :`
 
 ## [13/09 - Funções I](./07-funcoes1/)
 - Chamada de funções
