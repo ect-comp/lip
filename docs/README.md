@@ -36,22 +36,16 @@
 - Comandos `break` e `continue`
 - Exercícios
 
-<!--
-
-## [13/04 - Comandos de Seleção: Exercícios](./exercicios_selecao/)
-- Exercícios com comandos `if-else`, `switch` e operador `? :`
-
-## [13/09 - Funções I](./07-funcoes1/)
+## [11/04 - Funções I](./slides/07-funcoes1/07-funcoes1.html)
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
 
-## [15/09 - Funções: Exercícios](./exercicios_funcoes/)
-- Exercícios com funções que retornam um valor
-
-## [20/09 - Funções II](./08-funcoes2/)
+## [13/04 - Funções II](./slides/08-funcoes2/08-funcoes2.html)
 - Função sem retorno (funções tipo `void`)
 - Passagem de parâmetro por valor por referência
+
+<!--
 
 ## [22/09 - Funções III](./09-funcoes3/)
 - Parâmetros de entrada
