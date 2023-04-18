@@ -1754,7 +1754,7 @@
     "href": "slides/09-funcoes3/09-funcoes3.html#exercício-1",
     "title": "Funções III",
     "section": "Exercício 1",
-    "text": "Exercício 1\nA sequência de Collatz, é gerada pelas seguintes regras: - O termo inicial é um número dado - Se o termo atual for par, o próximo termo é igual ao atual dividido por dois - Se o termo atual for ímpar, o próximo termo é igual a três vezes o atual mais um - A sequência é encerrada quando o termo atual é igual a 1\nPor exemplo, para um termo inicial igual a 10, a sequência gerada é 10, 5, 16, 8, 4, 2, 1."
+    "text": "Exercício 1\nA sequência de Collatz, é gerada pelas seguintes regras:\n\nO termo inicial é um número dado\nSe o termo atual for par, o próximo termo é igual ao atual dividido por dois\nSe o termo atual for ímpar, o próximo termo é igual a três vezes o atual mais um\nA sequência é encerrada quando o termo atual é igual a 1\n\nPor exemplo, para um termo inicial igual a 10, a sequência gerada é 10, 5, 16, 8, 4, 2, 1."
   },
   {
     "objectID": "slides/09-funcoes3/09-funcoes3.html#exercício-1-1",

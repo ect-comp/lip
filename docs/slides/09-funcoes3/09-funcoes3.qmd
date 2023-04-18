@@ -115,6 +115,7 @@ int main(){
 
 ## Exercício 1
 A sequência de Collatz, é gerada pelas seguintes regras:
+
 - O termo inicial é um número dado
 - Se o termo atual for par, o próximo termo é igual ao atual dividido por dois
 - Se o termo atual for ímpar, o próximo termo é igual a três
