@@ -1,0 +1,178 @@
+---
+title: "Funções - Exercícios"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Funções I - Exercícios
+#### Exercício 1: Número Perfeito
+
+Chama-se **número perfeito** um número que é igual à soma
+dos seus divisores próprios (todos os divisores exceto ele mesmo).
+
+Por exemplo, $6$ é um número perfeito, já que $6 = 1 + 2 + 3$.
+
+---
+
+## Funções I - Exercícios
+#### Exercício 1: Número Perfeito
+
+Implemente uma função que receba como parâmetro um número inteiro
+e retorne verdadeiro se o número for perfeito ou falso caso contrário.
+
+Implemente também a função `main`, que deve ler do usuário um número inteiro
+e exibir uma mensagem de acordo com o resultado de uma chamada à função solicitada.
+
+Exemplo:
+```cpp
+Entrada: 6
+Saída: 6 e um numero perfeito
+```
+
+---
+
+## Funções I - Exercícios
+#### Exercício 1 - Solução
+
+```C++
+bool eh_perfeito(int x);
+int main(){
+
+    int num;
+
+    cout << "Insira um numero inteiro:\n";
+    cin >> num;
+
+    if(eh_perfeito(num) == true){
+        cout << num << " e um numero perfeito\n";
+    }
+    else{
+        cout << num << " nao e um numero perfeito\n";
+    }
+
+    return 0;
+}
+
+bool eh_perfeito(int x){
+    int i, soma = 0;
+
+    for(i = 1; i < x; i++){
+        if(x % i == 0){
+            soma += i;
+        }
+    }
+
+    if(soma == x){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+```
+---
+
+## Lista de Presença
+
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=http%3A%2F%2Fbit.ly%2Flip_20230418){fig-align="center"}
+
+<a href="https://bit.ly/lip_20230418"><p style="text-align:center;">https://bit.ly/lip_20230418</p></a>
+
+---
+
+## Funções I - Exercícios
+#### Exercício 2: Triângulo de Pascal
+
+O Triângulo de Pascal é uma estrutura matemática como mostrada a seguir:
+```
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+1 5 10 10 5 1
+1 6 15 20 15 6 1
+```
+
+Nesta estrutura, o termo na linha $i$ e coluna $j$ é calculado como
+$$
+t(i,j) = \frac{i!}{j!(i-j)!}
+$$
+
+---
+
+## Funções I - Exercícios
+#### Exercício 2: Triângulo de Pascal
+
+Implemente uma função para imprimir na tela o triângulo de Pascal para um dado número
+$n$ de linhas. Observe que a quantidade de colunas do triângulo varia conforme a linha,
+ou seja, a linha 0 tem 1 coluna, a linha 1 tem 2 colunas, a linha 2 tem 3 colunas
+e assim sucessivamente.
+
+Implemente também a função `main`, que deve ler do usuário a quantidade de linhas
+e exibir o Triângulo de Pascal correspondente.
+
+---
+
+## Funções I - Exercícios
+#### Exercício 2: Triângulo de Pascal
+
+Como sugestão de roteiro, pense na divisão do problema em funções:
+
+a. Função para calcular o fatorial de um número
+b. Função para calcular cada termo $t(i,j)$
+c. Função solicitada
+
+---
+
+## Funções I - Exercícios
+#### Exercício 2 - Solução
+
+```C++
+#include <iostream>
+
+using namespace std;
+
+int fat(int x); //a.
+int termo(int i, int j); //b.
+void imprime_triangulo(int n); //c.
+
+int main(){
+
+    int n_linhas;
+
+    cout << "Insira o nr. de linhas do triangulo:\n";
+    cin >> n_linhas;
+
+    imprime_triangulo(n_linhas);
+
+    return 0;
+}
+
+int fat(int x){
+    int i, r = 1;
+
+    for(i = 2; i <= x; i++){
+        r = r*i;
+    }
+
+    return r;
+}
+
+int termo(int i, int j){
+    return fat(i)/(fat(j)*fat(i-j));
+}
+
+void imprime_triangulo(int n){
+    int i, j;
+
+    for(i = 0; i < n; i++){
+        for(j = 0; j < i+1; j++){
+            cout << termo(i, j) << " ";
+        }
+        cout << endl;
+    }    
+}
+```

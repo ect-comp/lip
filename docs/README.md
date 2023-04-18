@@ -45,12 +45,14 @@
 - Função sem retorno (funções tipo `void`)
 - Passagem de parâmetro por valor por referência
 
-<!--
+## [18/04 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
 
-## [22/09 - Funções III](./09-funcoes3/)
+## [20/04 - Funções III](./slides/09-funcoes3/09-funcoes3.html)
 - Parâmetros de entrada
 - Parâmetros de saída
 - Parâmetros de entrada e saída
+
+<!--
 
 ## [27/09 - Exercícios Extra 1](./exercicios_extra1/)
 
