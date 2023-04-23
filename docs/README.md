@@ -52,6 +52,10 @@
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
+## [25/04 - Funções - Exercícios II](./slides/exercicios_funcoes2/exercicios_funcoes2.html)
+
+## [27/04 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
+
 <!--
 
 ## [27/09 - Exercícios Extra 1](./exercicios_extra1/)

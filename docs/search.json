@@ -1874,5 +1874,68 @@
     "title": "Funções - Exercícios",
     "section": "Funções I - Exercícios",
     "text": "Funções I - Exercícios\nExercício 3 - Solução\nint soma_digitos(int x);\nint main(){\n    int num, r;\n    cout << \"Insira um numero inteiro:\\n\";\n    cin >> num;\n\n    r = soma_digitos(x);\n    cout << num << \" tem soma igual a \" << r << endl;\n\n    return 0;\n}\nint soma_digitos(int x){\n    int d, soma = 0;\n\n    while(x > 0){\n        d = x % 10;\n        soma += d;\n        x = x/10;\n    }\n\n    return soma;\n}"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii",
+    "href": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii",
+    "title": "Funções - Exercícios II",
+    "section": "Funções - Exercícios II",
+    "text": "Funções - Exercícios II\nExercício 1: Primos e não-primos em intervalo\nImplemente uma função que armazene em 2 parâmetros de saída a quantidade de nrs. primos e não-primos presentes em um intervalo fechado dado por dois parâmetros de entrada \\(a\\) e \\(b\\).\nImplemente também a função main, que deve ler do usuário dois números inteiros correspondentes a um intervalo \\([a,b]\\) e exibir o resultado de uma chamada à função solicitada.\nExemplo:\nEntrada: 10 20\nSaída: 4 nrs primos e 7 nao-primos"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-1",
+    "href": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-1",
+    "title": "Funções - Exercícios II",
+    "section": "Funções - Exercícios II",
+    "text": "Funções - Exercícios II\nExercício 1 - Solução\n\nbool eh_primo(int x);\nvoid conta_no_intervalo(int a, int b, int &p, int &np);\n\nint main(){\n\n    int n1, n2, primos, n_primos;\n\n    cout << \"Insira o intervalo:\\n\";\n    cin >> n1 >> n2;\n\n    conta_no_intervalo(n1, n2, primos, n_primos);\n\n    cout << primos << \" nrs primos e \" << n_primos << \" nao-primos\\n\";\n\n    return 0;\n}\n\nbool eh_primo(int x){\n    int i;\n\n    for(i = 2; i <= x/2; i++){\n        if(x % i == 0){\n            return false;\n        }\n    }\n\n    return x != 1;\n}\nvoid conta_no_intervalo(int a, int b, int &p, int &np){\n    int n;\n\n    p = 0;\n    np = 0;\n\n    for(n = a; n <= b; n++){\n        if(eh_primo(n) == true){\n            p++;\n            cout << n << endl;\n        }\n        else{\n            np++;\n        }\n    }\n}"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes2/exercicios_funcoes2.html#lista-de-presença",
+    "href": "slides/exercicios_funcoes2/exercicios_funcoes2.html#lista-de-presença",
+    "title": "Funções - Exercícios II",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230425"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-2",
+    "href": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-2",
+    "title": "Funções - Exercícios II",
+    "section": "Funções - Exercícios II",
+    "text": "Funções - Exercícios II\nExercício 2: Decomposição em fatores primos\nA decomposição em fatores primos do número 120 é dada por\n120 | 2\n 60 | 2\n 30 | 2\n 15 | 3\n  5 | 5\n  1"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-3",
+    "href": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-3",
+    "title": "Funções - Exercícios II",
+    "section": "Funções - Exercícios II",
+    "text": "Funções - Exercícios II\nExercício 2: Decomposição em fatores primos\nImplemente uma função para imprimir na tela a decomposição em fatores primos de um parâmetro de entrada.\nImplemente também a função main, que deve ler do usuário um número inteiro e exibir a decomposição em fatores primos deste número."
+  },
+  {
+    "objectID": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-4",
+    "href": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-4",
+    "title": "Funções - Exercícios II",
+    "section": "Funções - Exercícios II",
+    "text": "Funções - Exercícios II\nExercício 2 - Solução\nvoid imprime_fatores_primos(int x);\n\nint main(){\n\n    int num;\n\n    cout << \"Insira um numero inteiro:\\n\";\n    cin >> num;\n\n    cout << \"Fatores primos de \" << num << \":\\n\";\n    imprime_fatores_primos(num);\n\n    return 0;\n}\n\nvoid imprime_fatores_primos(int x){\n    int i = 2;\n\n    while(x > 1){\n        if(x % i == 0){\n            cout << i << endl;\n            x = x/i;\n        }\n        else{\n            i++;\n        }\n    }\n}"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-5",
+    "href": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-5",
+    "title": "Funções - Exercícios II",
+    "section": "Funções - Exercícios II",
+    "text": "Funções - Exercícios II\nExercício 3: Dígitos pares e ímpares de um número\nImplemente uma função que armazene em 2 parâmetros de saída a quantidade de dígitos pares e ímpares de um número dado por um parâmetro de entrada.\nImplemente também a função main, que deve ler do usuário um número inteiro e exibir uma mensagem de acordo com o resultado de uma chamada à função solicitada.\nExemplo:\nEntrada: 10734\nSaída: 2 digitos pares e 3 digitos impares"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-6",
+    "href": "slides/exercicios_funcoes2/exercicios_funcoes2.html#funções---exercícios-ii-6",
+    "title": "Funções - Exercícios II",
+    "section": "Funções - Exercícios II",
+    "text": "Funções - Exercícios II\nExercício 3 - Solução\nvoid conta_digitos(int x, int &pares, int &impares);\n\nint main(){\n\n    int num, pares, impares;\n\n    cout << \"Insira o numero:\\n\";\n    cin >> num;\n\n    conta_digitos(num, pares, impares);\n\n    cout << pares << \" digitos pares e \" << impares << \" digitos impares\\n\";\n\n    return 0;\n}\n\nvoid conta_digitos(int x, int &pares, int &impares){\n    int d;\n\n    pares = 0;\n    impares = 0;\n\n    while(x > 0){\n        d = x % 10;\n\n        if(d % 2 == 0){\n            pares++;\n        }\n        else{\n            impares++;\n        }\n\n        x = x/10;\n    }\n}\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/revisao_unidade1/revisao_unidade1.html#revisão---unidade-i",
+    "href": "slides/revisao_unidade1/revisao_unidade1.html#revisão---unidade-i",
+    "title": "Revisão - Unidade I",
+    "section": "Revisão - Unidade I",
+    "text": "Revisão - Unidade I\nLista de Presença\n\n\n\n\n\n\n\nhttps://bit.ly/lip_20230427\n\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]

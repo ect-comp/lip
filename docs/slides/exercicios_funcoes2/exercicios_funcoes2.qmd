@@ -1,0 +1,205 @@
+---
+title: "Funções - Exercícios II"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Funções - Exercícios II
+#### Exercício 1: Primos e não-primos em intervalo
+
+Implemente uma função que armazene em **2 parâmetros de saída**
+a quantidade de nrs. primos e não-primos presentes em um intervalo
+fechado dado por **dois parâmetros de entrada** $a$ e $b$.
+
+Implemente também a função `main`, que deve ler do usuário dois números inteiros
+correspondentes a um intervalo $[a,b]$ e exibir o resultado de uma chamada
+à função solicitada.
+
+Exemplo:
+```cpp
+Entrada: 10 20
+Saída: 4 nrs primos e 7 nao-primos
+```
+
+---
+
+## Funções - Exercícios II
+#### Exercício 1 - Solução
+
+```C++
+
+bool eh_primo(int x);
+void conta_no_intervalo(int a, int b, int &p, int &np);
+
+int main(){
+
+    int n1, n2, primos, n_primos;
+
+    cout << "Insira o intervalo:\n";
+    cin >> n1 >> n2;
+
+    conta_no_intervalo(n1, n2, primos, n_primos);
+
+    cout << primos << " nrs primos e " << n_primos << " nao-primos\n";
+
+    return 0;
+}
+
+bool eh_primo(int x){
+    int i;
+
+    for(i = 2; i <= x/2; i++){
+        if(x % i == 0){
+            return false;
+        }
+    }
+
+    return x != 1;
+}
+void conta_no_intervalo(int a, int b, int &p, int &np){
+    int n;
+
+    p = 0;
+    np = 0;
+
+    for(n = a; n <= b; n++){
+        if(eh_primo(n) == true){
+            p++;
+            cout << n << endl;
+        }
+        else{
+            np++;
+        }
+    }
+}
+```
+---
+
+## Lista de Presença
+
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230425){fig-align="center"}
+
+<a href="https://bit.ly/lip_20230425"><p style="text-align:center;">https://bit.ly/lip_20230425</p></a>
+
+---
+
+## Funções - Exercícios II
+#### Exercício 2: Decomposição em fatores primos
+
+A decomposição em fatores primos do número 120 é dada por
+```
+120 | 2
+ 60 | 2
+ 30 | 2
+ 15 | 3
+  5 | 5
+  1
+```
+
+---
+
+## Funções - Exercícios II
+#### Exercício 2: Decomposição em fatores primos
+
+Implemente uma função para imprimir na tela a decomposição em fatores
+primos de um parâmetro de entrada.
+
+Implemente também a função `main`, que deve ler do usuário um número inteiro
+e exibir a decomposição em fatores primos deste número.
+
+---
+
+## Funções - Exercícios II
+#### Exercício 2 - Solução
+
+```C++
+void imprime_fatores_primos(int x);
+
+int main(){
+
+    int num;
+
+    cout << "Insira um numero inteiro:\n";
+    cin >> num;
+
+    cout << "Fatores primos de " << num << ":\n";
+    imprime_fatores_primos(num);
+
+    return 0;
+}
+
+void imprime_fatores_primos(int x){
+    int i = 2;
+
+    while(x > 1){
+        if(x % i == 0){
+            cout << i << endl;
+            x = x/i;
+        }
+        else{
+            i++;
+        }
+    }
+}
+```
+
+## Funções - Exercícios II
+#### Exercício 3: Dígitos pares e ímpares de um número
+
+Implemente uma função que armazene em 2 parâmetros de saída
+a quantidade de dígitos pares e ímpares de um número dado
+por um parâmetro de entrada.
+
+Implemente também a função `main`, que deve ler do usuário um número inteiro
+e exibir uma mensagem de acordo com o resultado de uma chamada à função solicitada.
+
+Exemplo:
+```cpp
+Entrada: 10734
+Saída: 2 digitos pares e 3 digitos impares
+```
+
+---
+
+## Funções - Exercícios II
+#### Exercício 3 - Solução
+
+```C++
+void conta_digitos(int x, int &pares, int &impares);
+
+int main(){
+
+    int num, pares, impares;
+
+    cout << "Insira o numero:\n";
+    cin >> num;
+
+    conta_digitos(num, pares, impares);
+
+    cout << pares << " digitos pares e " << impares << " digitos impares\n";
+
+    return 0;
+}
+
+void conta_digitos(int x, int &pares, int &impares){
+    int d;
+
+    pares = 0;
+    impares = 0;
+
+    while(x > 0){
+        d = x % 10;
+
+        if(d % 2 == 0){
+            pares++;
+        }
+        else{
+            impares++;
+        }
+
+        x = x/10;
+    }
+}
+```
