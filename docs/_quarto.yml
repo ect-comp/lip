@@ -13,4 +13,5 @@ format:
     css: assets/css/logo.css
     footer: "ECT2303 - Linguagem de Programação"
     slide-level: 2
+    html-math-method: katex
 

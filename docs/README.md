@@ -56,17 +56,13 @@
 
 ## [27/04 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
-<!--
-
-## [27/09 - Exercícios Extra 1](./exercicios_extra1/)
-
-## [29/09 - Revisão - Unidade 1](./revisao_unidade1/)
-
-## [04/10 - Funções Recursivas](./10-funcoes_rec/)
+## [02/05 - Funções Recursivas](./slides/10-funcoes_rec/10-funcoes_rec.html)
 - Estruturas recursivas
 - Passo base e passo recursivo
 
-## [06/10 - Funções Recursivas - Exercícios](./exercicios_funcoes_rec)
+## [04/05 - Funções Recursivas - Exercícios](./slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html)
+
+<!--
 
 ## [11/10 - Vetores](./11-vetores/)
 - Sintaxe de declaração

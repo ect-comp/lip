@@ -1,0 +1,660 @@
+---
+title: "Funções Recursivas"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Funções {.nostretch}
+#### Funções e Abstração
+
+![](img/atribuicao.jpg){width=70% fig-align="center"}
+
+---
+
+## Linguagem de Programação
+
+Nas aulas anteriores (funções em C++):
+
+- Chamada, assinatura e definição
+- Passagem de parâmetro por valor e por referência
+- Parâmetros de entrada, saída e entrada/saída
+
+---
+
+## Objetivo da Aula
+
+Introduzir o conceito e uso de funções recursivas
+
+---
+
+## Recursividade
+
+::: {.callout-note appearance="simple"}
+
+## Estrutura Recursiva:
+
+Qualquer coisa que, de forma abstrata, é formada
+por partes menores dela mesma
+
+:::
+
+---
+
+## Recursividade 
+
+Exemplos de estruturas recursivas:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](img/matrioska.jpg){width=100%}
+
+:::
+
+::: {.column width="50%"}
+
+![](img/rec_triangle.png){width=80%}
+
+:::
+
+::::
+
+---
+
+## Recursividade
+
+::: {.callout-note appearance="simple"}
+
+## Recursividade em Programação:
+
+Com o uso de recursividade (ou recursão), a solução de um
+problema depende das soluções de partes menores do mesmo
+problema.
+
+:::
+
+---
+
+## Funções Recursivas
+
+Conceito:
+
+- Função que se refere a ela mesma
+- Lógica da função possui chamadas diretas ou indiretas à própria função
+
+Exemplo:
+```C++
+int funcao(int x){
+    if(x == 0){
+        return 1;
+    }
+    else{
+        cout << x << endl;
+        return funcao(x-1);
+    }
+}
+```
+---
+
+## Funções Recursivas
+
+::: {.callout-note appearance="simple"}
+
+## Ideia de uma função recursiva:
+
+Para implementar uma função recursiva,
+você deve programá-la para que ela realize
+chamadas a ela mesma até que uma condição
+seja alcançada
+
+:::
+
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+- Fatorial: exemplo de função recursiva
+- O fatorial de um número pode ser calculado a partir do
+  fatorial do número anterior
+- Este processo é repetido até que o fatorial do primeiro
+  número para o qual o fatorial está definido seja calculado
+    - Lembre-se que $f(0) = f(1) = 1$
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+::: {style="font-size: 0.8em"}
+$$
+  f(n) = \prod_{i=1}^{n} i = 1 \times 2 \times 3 \times ... \times (n-2) \times (n-1) \times n
+$$
+:::
+
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+::: {style="font-size: 0.8em"}
+$$
+  f(n) = \prod_{i=1}^{n} i = \underbrace{1
+                                         \times 2
+                                         \times 3
+                                         \times ... \times (n-2)
+                                         \times (n-1)}_\text{f(n-1)}
+                                         \times n
+$$
+:::
+
+- O fatorial de $n$, dado por $f(n)$, pode ser obtido
+  a partir do fatorial de $n-1$, que é $f(n-1)$
+- Em outras palavras, $f(n-1)$ "está dentro" de $f(n)$
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+::: {style="font-size: 0.8em"}
+$$
+  f(n) = \prod_{i=1}^{n} i = \underbrace{
+                             \underbrace{1
+                                         \times 2
+                                         \times 3
+                                         \times ... \times (n-2)}_\text{f(n-2)}
+                                         \times (n-1)}_\text{f(n-1)}
+                                         \times n
+$$
+:::
+
+- $f(n-2)$ "está dentro" de $f(n-1)$
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+::: {style="font-size: 0.8em"}
+$$
+  f(n) = \prod_{i=1}^{n} i = \underbrace{
+                             \underbrace{
+                             \underbrace{1
+                                           \times 2
+                                           \times 3}_\text{f(3)}
+                                           \times ... \times (n-2)}_\text{f(n-2)}
+                                           \times (n-1)}_\text{f(n-1)}
+                                           \times n
+$$
+:::
+
+- $f(2)$ "está dentro" de $f(3)$
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+::: {style="font-size: 0.8em"}
+$$
+  f(n) = \prod_{i=1}^{n} i = \underbrace{
+                             \underbrace{
+                             \underbrace{
+                             \underbrace{1
+                                           \times 2}_\text{f(2)}
+                                           \times 3}_\text{f(3)}
+                                           \times ... \times (n-2)}_\text{f(n-2)}
+                                           \times (n-1)}_\text{f(n-1)}
+                                           \times n
+$$
+:::
+
+- $f(1)$ "está dentro" de $f(2)$
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+::: {style="font-size: 0.8em"}
+$$
+  f(n) = \prod_{i=1}^{n} i = \underbrace{
+                             \underbrace{
+                             \underbrace{
+                             \underbrace{
+                             \underbrace{1         }_\text{f(1) = 1}
+                                           \times 2}_\text{f(2)}
+                                           \times 3}_\text{f(3)}
+                                           \times ... \times (n-2)}_\text{f(n-2)}
+                                           \times (n-1)}_\text{f(n-1)}
+                                           \times n
+$$
+:::
+
+- Finalmente, $f(1)$ é um valor conhecido: $f(1) = 1$
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+Isto torna possível calcular $f(2)$ (que depende de $f(1)$),
+$f(3)$ (que depende de $f(2)$) e assim sucessivamente até
+$f(n)$, que depende de $f(n-1)$
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+Definição matemática:
+
+$$
+f(n)=\begin{cases}
+    1, & \text{se } n = 0 \text{, ou } n = 1\\
+    n*f(n-1), & \text{se } n > 0\\
+\end{cases}
+$$
+
+---
+
+## Funções Recursivas
+#### Exemplo: Fatorial
+
+Função em C++:
+
+```C++
+int fat(int n){
+    if(n == 0 || n == 1){
+        return 1;
+    }
+    else{
+        return n*fat(n-1);
+    }
+}
+```
+---
+
+## Funções Recursivas
+#### Passo Base e Passo Recursivo
+
+Toda função recursiva possui:
+
+- Um (ou mais) **passo base**
+    - Resultado é conhecido sem chamadas à própria função
+    - Por exemplo: `fat(0)` e `fat(1)`, que são iguais a 1
+---
+
+## Funções Recursivas
+#### Passo Base e Passo Recursivo
+
+Toda função recursiva possui:
+
+- Um (ou mais) **passo recursivo**
+    - Envolve chamadas à própria função variando-se os parâmetros
+    - Passo em que se tenta resolver um sub-problema do problema inicial
+    - Por exemplo: `fat(n)`, que é igual a `n*fat(n-1)`
+---
+
+## Funções Recursivas
+#### Passo Base e Passo Recursivo
+
+- Definir funções de forma recursiva se resume a encontrar os dois passos
+- Tradução para linguagem de programação pode ser obtida facilmente
+  da notação matemática
+
+---
+
+## Funções Recursivas 
+#### Fatorial - Execução do Programa
+
+Chamada à função para calcular o fatorial de 6:
+
+1a. chamada: `fat(6)`
+
+2a. chamada: 6 $*$ `fat(5)`
+
+3a. chamada: 6 $*$ 5 $*$ `fat(4)`
+
+4a. chamada: 6 $*$ 5 $*$ 4 $*$ `fat(3)`
+
+5a. chamada: 6 $*$ 5 $*$ 4 $*$ 3 $*$ `fat(2)`
+
+6a. chamada: 6 $*$ 5 $*$ 4 $*$ 3 $*$ 2 $*$ `fat(1)`
+
+---
+
+## Funções Recursivas 
+#### Fatorial - Execução do Programa
+
+1o. retorno: 6 $*$ 5 $*$ 4 $*$ 3 $*$ 2 $*$ 1, `fat(1)` se tornou 1
+
+2o. retorno: 6 $*$ 5 $*$ 4 $*$ 3 $*$ 2, `fat(2)` se tornou 2 $*$ 1
+
+3o. retorno: 6 $*$ 5 $*$ 4 $*$ 6, `fat(3)` se tornou 3 $*$ 2
+
+4o. retorno: 6 $*$ 5 $*$ 24, `fat(4)` se tornou 4 $*$ 6
+
+5o. retorno: 6 $*$ 120, `fat(5)` se tornou 5 $*$ 24
+
+6o. retorno: 720, `fat(6)` se tornou 6 $*$ 120
+---
+
+## Funções Recursivas
+#### Fatorial - Execução do Programa
+
+Como este mecanismo funciona?
+
+- Internamente, o computador gerencia uma estrutura em forma de pilha,
+  com todas as chamadas a funções de um programa
+    - "Pilha": região na memória que funciona de forma similar a uma pilha
+      de papeis sobre uma mesa (um papel é colocado sobre o outro)
+- Ao ser chamada, diz-se que uma função foi empilhada
+---
+
+## Funções Recursivas
+#### Fatorial - Execução do Programa
+
+- Em funções recursivas, ocorre o empilhamento de várias chamadas a uma mesma função
+- Tão logo um passo base é alcançado, a chamada atualmente no topo da pilha
+  é desempilhada
+- Isto provoca o desempilhamento das chamadas anteriores, até que a chamada
+  original também seja desempilhada
+---
+
+## Lista de Presença
+
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230502){fig-align="center"}
+
+<a href="https://bit.ly/lip_20230502"><p style="text-align:center;">https://bit.ly/lip_20230502</p></a>
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func1.png){width=120 fig-align="center"}
+
+Empilhamento da chamada `fat(6)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func2.png){width=120 fig-align="center"}
+
+Empilhamento da chamada `fat(5)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func3.png){width=120 fig-align="center"}
+
+Empilhamento da chamada `fat(4)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func4.png){width=120 fig-align="center"}
+
+Empilhamento da chamada `fat(3)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func5.png){width=120 fig-align="center"}
+
+Empilhamento da chamada `fat(2)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func6.png){width=120 fig-align="center"}
+
+Empilhamento da chamada `fat(1)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func7.png){width=120 fig-align="center"}
+
+Desempilhamento de `fat(1)`: passo base
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func8.png){width=120 fig-align="center"}
+
+Desempilhamento de `fat(2)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func9.png){width=120 fig-align="center"}
+
+Desempilhamento de `fat(3)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func10.png){width=120 fig-align="center"}
+
+Desempilhamento de `fat(4)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func11.png){width=120 fig-align="center"}
+
+Desempilhamento de `fat(5)`
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Pilha de Chamadas a Funções
+
+![](img/rec_func12.png){width=120 fig-align="center"}
+
+Desempilhamento de `fat(6)`
+
+---
+
+## Funções Recursivas
+#### Exemplo: Soma dos n Primeiros Números Inteiros
+
+Soma de 1 até $n$, onde $n$ é um número inteiro
+maior que 0:
+
+- Qual a definição matemática?
+- Qual o código correspondente à função?
+---
+
+## Funções Recursivas
+#### Exemplo: Soma dos n Primeiros Números Inteiros
+
+Definição matemática:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {style="font-size: 0.7em"}
+$$
+s(n)=\begin{cases}
+    1, & \text{se } n = 1\\
+    n+s(n-1), & \text{se } n > 1\\
+\end{cases}
+$$
+:::
+
+:::
+
+::: {.column width="50%"}
+
+Função:
+
+```C++
+int soma_n(int n){
+    if(n == 1){
+        return 1;
+    }
+    else{
+        return n+soma_n(n-1);
+    }
+}
+```
+
+:::
+
+::::
+
+---
+
+## Funções Recursivas
+#### Exemplo: Fórmula Matemática
+
+$$
+  f(n) = \sum_{i=1}^{n} 3i^{2} = 3 + 12 + 27 + 48 + ... + 3(n-1)^{2} + 3n^{2}
+$$
+
+É possível obter facilmente o código em C++ para computar fórmulas matemáticas
+baseadas em somatório/produtório:
+
+- A primeira etapa envolve identificar o passo base
+- A segunda etapa envolve identificar o passo recursivo
+---
+
+## Funções Recursivas
+#### Exemplo: Fórmula Matemática
+- Passo base:
+    - Para $n=1$, o somatório $f(n)$ tem apenas um termo, igual a
+      $3\times(1)^{2}=3$
+- Passo recursivo: 
+    - Para um $n$ qualquer, $f(n) = f(n-1) + 3 n^{2}$
+      (verifique expandindo o somatório)
+---
+
+## Funções Recursivas
+#### Exemplo: Fórmula Matemática
+Daí, é possível deduzir a seguinte definição matemática:
+
+$$
+f(n)=\begin{cases}
+    3, & \text{se } n = 1\\
+    3n^2 + f(n-1), & \text{se } n > 1\\
+\end{cases}
+$$
+---
+
+## Funções Recursivas
+#### Exemplo: Fórmula Matemática
+
+A partir da def. matemática, é possível definir a seguinte função em C++:
+
+```C++
+int formula(int n){
+    if(n == 1){
+        return 3;
+    }
+    else{
+        return 3*n*n + formula(n-1);
+    }
+}
+```
+---
+
+## Sequências Definidas Recursivamente
+
+Funções recursivas podem ser úteis para definir sequências numéricas:
+
+- Cada termo é gerado em função de termos anteriores
+- Exemplo: sequência de Fibonacci
+    - Os dois primeiros termos são iguais a 1
+    - Cada termo é a soma dos dois termos anteriores
+    - Sequência resultante: 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+---
+
+## Sequências Definidas Recursivamente
+- Qual a definição matemática?
+    - O enésimo termo é dado por $f(n)$
+    - O primeiro termo é o termo com $n=0$
+- Qual o código correspondente à função?
+---
+
+## Exemplo de Sequência Recursiva
+#### Sequência de Fibonacci
+
+Definição matemática:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {style="font-size: 0.6em"}
+$$
+f(n)=\begin{cases}
+    1, & \text{se } n = 0\\
+    1, & \text{se } n = 1\\
+    f(n-1)+f(n-2), & \text{se } n > 1\\
+\end{cases}
+$$
+:::
+
+:::
+
+::: {.column width="50%"}
+
+Função:
+
+```C++
+int fib(int n){
+    if(n <= 1){
+        return 1;
+    }
+    else{
+        return fib(n-1)+fib(n-2);
+    }
+}
+```
+
+:::
+
+::::
+
+---
+
+## Funções Recursivas
+#### Vantagens e Desvantagens
+
+- Vantagem: facilidade de implementação
+- Desvantagem: execução mais lenta em relação à versão iterativa
+---
+
+## Recursividade {.nostretch}
+#### Funções e Abstração
+
+![](img/recursividade.png){width=50% fig-align="center"}
+
+---
+
+## Sumário
+
+Na aula de hoje:
+
+- Funções recursivas
+- Passo base e passo recursivo
