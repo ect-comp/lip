@@ -62,18 +62,18 @@
 
 ## [04/05 - Funções Recursivas - Exercícios](./slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html)
 
-<!--
-
-## [11/10 - Vetores](./11-vetores/)
+## [09/05 - Vetores](./slides/11-vetores/11-vetores.html)
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
 - Exercícios
 
-## [13/10 - Funções e Vetores](./12-funcoes_e_vetores/)
+## [11/05 - Funções e Vetores](./slides/12-funcoes_e_vetores/12-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
 - Exercícios
+
+<!--
 
 ## [25/10 - Geração de Números Aleatórios](./13-numeros_aleatorios/)
 - Geração de números aleatórios em C++:
