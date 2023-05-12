@@ -73,14 +73,14 @@
 - Funções recursivas com vetores
 - Exercícios
 
-<!--
-
-## [25/10 - Geração de Números Aleatórios](./13-numeros_aleatorios/)
+## [16/05 - Geração de Números Aleatórios](./slides/13-numeros_aleatorios/13-numeros_aleatorios.html)
 - Geração de números aleatórios em C++:
   - Geração de números aleatórios inteiros em intervalos de interesse
   - Geração de números aleatórios reais
   - Geração de caracteres aleatórios
 - Exercícios
+
+<!--
 
 ## [27/10 - Funções e Vetores - Exercícios](./exercicios_funcoes_e_vetores)
 

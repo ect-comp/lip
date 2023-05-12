@@ -2770,5 +2770,250 @@
     "title": "Funções e Vetores",
     "section": "Funções Recursivas",
     "text": "Funções Recursivas\nSoma dos Valores em um Vetor\nFunção resultante:\nint soma(int v[], int n){\n    if(n == 1){\n        return v[0];\n    }\n    else{\n        return soma(v, n-1) + v[n-1];\n    }\n}"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#nas-aulas-anteriores",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#nas-aulas-anteriores",
+    "title": "Geração de Números Aleatórios",
+    "section": "Nas Aulas Anteriores",
+    "text": "Nas Aulas Anteriores\nVetores em C++\n\nDeclaração\nAcesso aos elementos\nInicialização\nUso de funções"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#objetivo-da-aula",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#objetivo-da-aula",
+    "title": "Geração de Números Aleatórios",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\n\nApresentar os mecanismos oferecidos pela linguagem C++ para geração de números aleatórios\nUtilizar funções que geram números aleatórios com vetores"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#motivação",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#motivação",
+    "title": "Geração de Números Aleatórios",
+    "section": "Motivação",
+    "text": "Motivação\nEm diversas aplicações, é desejável que o computador gere um número aleatório. Exemplos:\n\nPreencher um vetor/matriz com números aleatórios\nSortear um elemento de um vetor/matriz aleatoriamente"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nBibliotecas Necessárias\n\nA linguagem C++ oferece funções para geração de números aleatórios disponíveis na biblioteca cstdlib\nComo a geração de números aleatórios depende de um número inicial (semente), a biblioteca ctime também deve ser utilizada"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-1",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-1",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nFunções\nPara se trabalhar com números aleatórios, são necessárias chamadas a duas funções:\n1. void srand(int semente); //biblioteca cstdlib\n2. int rand(); //biblioteca cstdlib"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-2",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-2",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nFunções\nA função srand inicializa o gerador de números aleatórios com uma semente:\n\nEx.: srand(5);\nBasta ser chamada uma única vez no programa"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-3",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-3",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nFunções\nA segunda função gera efetivamente um número aleatório:\n\nEx.: int n = rand();\nDeve ser chamada para cada número a ser gerado aleatoriamente"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-4",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-4",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nSemente do Gerador de Números Aleatórios\nObserve que, em relação à semente do gerador de números aleatórios:\n\nA chamada à função srand não é obrigatória para o programa funcionar\nEntretanto, com ela, é possível impedir que o programa gere os mesmos números em diferentes execuções do programa"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-5",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-5",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nSemente do Gerador de Números Aleatórios\nPara isto, basta utilizar a hora atual do sistema como semente:\n\nObter hora do sistema: utilizar função time da biblioteca ctime\nInicializar semente como a hora atual: srand(time(0));"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-6",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-6",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nExemplo\nPrograma gera n números inteiros aleatórios e os exibe na tela\n#include <iostream>\n#include <cstdlib>\n#include <ctime>\n\nint main(){\n    srand(time(0)); //inicializa semente\n    int i, n;\n    cin >> n;\n    for(i = 0; i < n; i++){\n        cout << rand() << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-7",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-7",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nFunção rand\nProblemas:\n\nGera sempre um número inteiro\nNrs. gerados estão em intervalo [0, \\text{RAND\\_MAX}]\nComo fazer para:\n\nGerar números dentro de um intervalo específico?\nGerar números reais?\nGerar caracteres?"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-8",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-8",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Aleatórios dentro de um Intervalo Específico\nPara gerar números aleatórios em um intervalo de interesse:\n\nUtilizar a função rand\nUsar o operador % para limitar a quantidade de valores gerados\nSomar o resultado com um valor constante para “deslocar” o intervalo de valores gerados"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-9",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-9",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Aleatórios dentro de um Intervalo Específico\nExemplos de uso:\n\nGera números inteiros aleatórios no intervalo [0,\\text{RAND\\_MAX}]:\nint x = rand();"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-10",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-10",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Aleatórios dentro de um Intervalo Específico\nExemplos de uso:\n\nGera números inteiros aleatórios no intervalo [0,q-1]:\nint x = rand() % q;"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-11",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-11",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Aleatórios dentro de um Intervalo Específico\nExemplos de uso:\n\nGera números inteiros aleatórios no intervalo [p,q]:\nint x = (rand() % (q-p+1)) + p;"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nImplemente uma função que gere números inteiros aleatórios em um intervalo qualquer delimitado por [p,q]"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-1",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-1",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nSolução\nint gera_valor_inteiro(int p, int q){\n    return (rand() % (q-p+1)) + p;\n}"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#lista-de-presença",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#lista-de-presença",
+    "title": "Geração de Números Aleatórios",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230516"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-12",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-12",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Reais Aleatórios\nE números reais? Como podemos gerá-los?\n\nA função rand é a única disponível e retorna um inteiro"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-13",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-13",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Reais Aleatórios\nPara gerar números reais aleatórios:\n\nUtilizar a função rand dividida pelo valor RAND_MAX\nMultiplicar o resultado por um fator de escala\nSomar o resultado com um valor constante para “deslocar” o intervalo de valores gerados"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-14",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-14",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Reais Aleatórios\nExemplos de uso:\n\nGera números reais aleatórios no intervalo [0.0,1.0]:\nfloat x = rand()/float(RAND_MAX);"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-15",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-15",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Reais Aleatórios\nExemplos de uso:\n\nGera números reais aleatórios no intervalo [0.0,q]:\nfloat x = q*(rand()/float(RAND_MAX));"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-16",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-16",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Números Reais Aleatórios\nExemplos de uso:\n\nGera números reais aleatórios no intervalo [p,q]:\nfloat x = (q-p)*(rand()/float(RAND_MAX)) + p;"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-2",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-2",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nImplemente uma função que gere números reais aleatórios em um intervalo qualquer delimitado por [p,q]"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-3",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-3",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nSolução\nfloat gera_valor_real(float p, float q){\n    return (q-p)*(rand()/float(RAND_MAX)) + p;\n}"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-17",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-17",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Caracteres Aleatórios\nE caracteres? Como podemos gerá-los?\n\nLembre-se que um caractere possui um número inteiro associado, de acordo com a tabela ASCII"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-18",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-18",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Caracteres Aleatórios\nEntão, basta gerar um número no intervalo [0,255] e convertê-lo para char"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-19",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-19",
+    "title": "Geração de Números Aleatórios",
+    "section": "Números Aleatórios",
+    "text": "Números Aleatórios\nGeração de Caracteres Aleatórios\n\nVários destes caracteres não são visíveis\n\n\\0, que tem código igual a 0\n\\t, que tem código igual a 9\n\\n, que tem código igual a 10\n\nCarateres visíveis: estão no intervalo [33,126]"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercícios",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercícios",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercícios",
+    "text": "Exercícios\nUso em Vetores\nUtilizando as funções anteriores:\nImplemente uma função que preencha um vetor de tamanho n com números inteiros aleatórios no intervalo [-5,5]"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-4",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-4",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nSolução\nvoid insere_aleatorios_vetor(int v[], int n){\n    int i;\n    for(i = 0; i < n; i++){\n        v[i] = gera_valor_inteiro(-5,5);\n    }\n}"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-5",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-5",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nUso em Vetores\nUtilizando as funções anteriores:\nImplemente uma função que preencha um vetor de tamanho n com números reais aleatórios no intervalo [1.0,10.0]"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-6",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-6",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nSolução\nvoid insere_aleatorios_vetor(float v[], int n){\n    int i;\n    for(i = 0; i < n; i++){\n        v[i] = gera_valor_real(1,10);\n    }\n}"
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-7",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-7",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nUso em Vetores\nImplemente uma função que receba como parâmetro de entrada um número n e como parâmetro de saída dois vetores de números inteiros com tamanhos que devem ser calculados pela função.\nInicialmente, a sua função deve zerar os vetores e após isto, gerar n números inteiros aleatórios no intervalo [1,50].\nA função deve inserir os números gerados que forem primos no primeiro vetor e os números não primos no segundo."
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-8",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#exercício-8",
+    "title": "Geração de Números Aleatórios",
+    "section": "Exercício",
+    "text": "Exercício\nUso em Vetores\nA função main do seu programa deve ler do usuário o valor de n e exibir na tela os dois vetores computados pela função solicitada."
+  },
+  {
+    "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#sumário",
+    "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#sumário",
+    "title": "Geração de Números Aleatórios",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nMecanismos oferecidos pela linguagem C++ para geração de números aleatórios\nDefinição de funções para números aleatórios em intervalos de interesse\nUso em vetores\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
