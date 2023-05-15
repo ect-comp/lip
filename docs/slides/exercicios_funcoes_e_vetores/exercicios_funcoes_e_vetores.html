@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.2.335">
 
   <meta name="author" content="Prof.&nbsp;Bruno Silva">
-  <title>Linguagem de Programação - ECT/UFRN - Geração de Números Aleatórios</title>
+  <title>Linguagem de Programação - ECT/UFRN - Funções e vetores: exercícios</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,70 +28,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="../../assets/css/logo.css">
@@ -405,7 +341,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../../assets/img/brasao_ufrn_positivo.png" data-background-opacity="0.05" data-background-size="50%, auto, contain" class="quarto-title-block center">
-  <h1 class="title">Geração de Números Aleatórios</h1>
+  <h1 class="title">Funções e vetores: exercícios</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -419,306 +355,54 @@ Prof.&nbsp;Bruno Silva
 </div>
 
 </section>
-<section id="nas-aulas-anteriores" class="slide level2">
-<h2>Nas Aulas Anteriores</h2>
-<p>Vetores em C++</p>
-<ul>
-<li>Declaração</li>
-<li>Acesso aos elementos</li>
-<li>Inicialização</li>
-<li>Uso de funções</li>
-</ul>
-</section>
-<section id="objetivo-da-aula" class="slide level2">
-<h2>Objetivo da Aula</h2>
-<ul>
-<li>Apresentar os mecanismos oferecidos pela linguagem C++ para geração de números aleatórios</li>
-<li>Utilizar funções que geram números aleatórios com vetores</li>
-</ul>
-</section>
-<section id="motivação" class="slide level2">
-<h2>Motivação</h2>
-<p>Em diversas aplicações, é desejável que o computador gere um número aleatório. Exemplos:</p>
-<ul>
-<li>Preencher um vetor/matriz com números aleatórios</li>
-<li>Sortear um elemento de um vetor/matriz aleatoriamente</li>
-</ul>
-</section>
-<section id="números-aleatórios" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="bibliotecas-necessárias">Bibliotecas Necessárias</h4>
-<ul>
-<li>A linguagem C++ oferece funções para geração de números aleatórios disponíveis na biblioteca <code>cstdlib</code></li>
-<li>Como a geração de números aleatórios depende de um número inicial (<strong>semente</strong>), a biblioteca <code>ctime</code> também deve ser utilizada</li>
-</ul>
-</section>
-<section id="números-aleatórios-1" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="funções">Funções</h4>
-<p>Para se trabalhar com números aleatórios, são necessárias chamadas a duas funções:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a><span class="fl">1.</span> <span class="dt">void</span> srand<span class="op">(</span><span class="dt">int</span> semente<span class="op">);</span> <span class="co">//biblioteca cstdlib</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fl">2.</span> <span class="dt">int</span> rand<span class="op">();</span> <span class="co">//biblioteca cstdlib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="números-aleatórios-2" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="funções-1">Funções</h4>
-<p>A função <code>srand</code> inicializa o gerador de números aleatórios com uma semente:</p>
-<ul>
-<li>Ex.: <code>srand(5);</code></li>
-<li>Basta ser chamada uma única vez no programa</li>
-</ul>
-</section>
-<section id="números-aleatórios-3" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="funções-2">Funções</h4>
-<p>A segunda função gera efetivamente um número aleatório:</p>
-<ul>
-<li>Ex.: <code>int n = rand();</code></li>
-<li>Deve ser chamada para cada número a ser gerado aleatoriamente</li>
-</ul>
-</section>
-<section id="números-aleatórios-4" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="semente-do-gerador-de-números-aleatórios">Semente do Gerador de Números Aleatórios</h4>
-<p>Observe que, em relação à semente do gerador de números aleatórios:</p>
-<ol type="1">
-<li>A chamada à função <code>srand</code> não é obrigatória para o programa funcionar</li>
-<li>Entretanto, com ela, é possível impedir que o programa gere os mesmos números em diferentes execuções do programa</li>
-</ol>
-</section>
-<section id="números-aleatórios-5" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="semente-do-gerador-de-números-aleatórios-1">Semente do Gerador de Números Aleatórios</h4>
-<p>Para isto, basta utilizar a hora atual do sistema como semente:</p>
-<ul>
-<li>Obter hora do sistema: utilizar função <code>time</code> da biblioteca <code>ctime</code></li>
-<li>Inicializar semente como a hora atual: <code>srand(time(0));</code></li>
-</ul>
-</section>
-<section id="números-aleatórios-6" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="exemplo">Exemplo</h4>
-<p>Programa gera <code>n</code> números inteiros aleatórios e os exibe na tela</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="pp">#include </span><span class="im">&lt;cstdlib&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="pp">#include </span><span class="im">&lt;ctime&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a>    srand<span class="op">(</span>time<span class="op">(</span><span class="dv">0</span><span class="op">));</span> <span class="co">//inicializa semente</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a>    <span class="dt">int</span> i<span class="op">,</span> n<span class="op">;</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a>    cin <span class="op">&gt;&gt;</span> n<span class="op">;</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a>        cout <span class="op">&lt;&lt;</span> rand<span class="op">()</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a>    <span class="op">}</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="números-aleatórios-7" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="função-rand">Função <code>rand</code></h4>
-<p>Problemas:</p>
-<ul>
-<li>Gera sempre um número inteiro</li>
-<li>Nrs. gerados estão em intervalo <span class="math inline">[0, \text{RAND\_MAX}]</span></li>
-<li>Como fazer para:
-<ol type="1">
-<li>Gerar números dentro de um intervalo específico?</li>
-<li>Gerar números reais?</li>
-<li>Gerar caracteres?</li>
-</ol></li>
-</ul>
-</section>
-<section id="números-aleatórios-8" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-aleatórios-dentro-de-um-intervalo-específico">Geração de Números Aleatórios dentro de um Intervalo Específico</h4>
-<p>Para gerar números aleatórios em um intervalo de interesse:</p>
-<ol type="1">
-<li>Utilizar a função <code>rand</code></li>
-<li>Usar o operador <code>%</code> para limitar a quantidade de valores gerados</li>
-<li>Somar o resultado com um valor constante para “deslocar” o intervalo de valores gerados</li>
-</ol>
-</section>
-<section id="números-aleatórios-9" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-aleatórios-dentro-de-um-intervalo-específico-1">Geração de Números Aleatórios dentro de um Intervalo Específico</h4>
-<p>Exemplos de uso:</p>
-<ol type="1">
-<li>Gera números inteiros aleatórios no intervalo <span class="math inline">[0,\text{RAND\_MAX}]</span>:<br>
-<code>int x = rand();</code></li>
-</ol>
-</section>
-<section id="números-aleatórios-10" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-aleatórios-dentro-de-um-intervalo-específico-2">Geração de Números Aleatórios dentro de um Intervalo Específico</h4>
-<p>Exemplos de uso:</p>
-<ol start="2" type="1">
-<li>Gera números inteiros aleatórios no intervalo <span class="math inline">[0,q-1]</span>:<br>
-<code>int x = rand() % q;</code></li>
-</ol>
-</section>
-<section id="números-aleatórios-11" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-aleatórios-dentro-de-um-intervalo-específico-3">Geração de Números Aleatórios dentro de um Intervalo Específico</h4>
-<p>Exemplos de uso:</p>
-<ol start="3" type="1">
-<li>Gera números inteiros aleatórios no intervalo <span class="math inline">[p,q]</span>:<br>
-<code>int x = (rand() % (q-p+1)) + p;</code></li>
-</ol>
-</section>
-<section id="exercício" class="slide level2">
-<h2>Exercício</h2>
-<p>Implemente uma função que gere números inteiros aleatórios em um intervalo qualquer delimitado por <span class="math inline">[p,q]</span></p>
-</section>
 <section id="exercício-1" class="slide level2">
-<h2>Exercício</h2>
-<h4 id="solução">Solução</h4>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1"></a><span class="dt">int</span> gera_valor_inteiro<span class="op">(</span><span class="dt">int</span> p<span class="op">,</span> <span class="dt">int</span> q<span class="op">){</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>    <span class="cf">return</span> <span class="op">(</span>rand<span class="op">()</span> <span class="op">%</span> <span class="op">(</span>q<span class="op">-</span>p<span class="op">+</span><span class="dv">1</span><span class="op">))</span> <span class="op">+</span> p<span class="op">;</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h2>Exercício 1</h2>
+<h4 id="produto-interno">Produto Interno</h4>
+<p>O produto interno entre dois vetores <span class="math inline">\mathbf{u}</span> e <span class="math inline">\mathbf{v}</span> é dado por:</p>
+<p><span class="math display">
+\mathbf{u}.\mathbf{v} = \sum_{i=0}^{n-1} u_i.v_i = u_0.v_0 + u_1.v_1 + ... + u_{n-1}.v_{n-1},
+</span> com</p>
+<p><span class="math inline">\mathbf{u} = [u_0, u_1, ... , u_{n-1}]^t\quad</span> e</p>
+<p><span class="math inline">\mathbf{v} = [v_0, v_1, ... , v_{n-1}]^t.</span></p>
+</section>
+<section id="exercício-1-1" class="slide level2">
+<h2>Exercício 1</h2>
+<h4 id="função-produto-interno">Função Produto Interno</h4>
+<p>Implemente uma função que receba como parâmetros de entrada dois vetores de números reais. A função a ser implementada deve retornar o produto interno entre os dois vetores.</p>
+<p>A função main deve ler o tamanho dos vetores, cada um dos seus elementos e exibir na tela uma mensagem informando o produto interno entre os dois vetores.</p>
 </section>
 <section id="lista-de-presença" class="slide level2">
 <h2>Lista de Presença</h2>
 
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=bit.ly%2Flip_20230518" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230518">
+<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=bit.ly%2Flip_20230516" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230516">
 <p style="text-align:center;">
-https://bit.ly/lip_20230518
+https://bit.ly/lip_20230516
 </p>
-</a><p><a href="https://bit.ly/lip_20230518"></a></p>
-</section>
-<section id="números-aleatórios-12" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-reais-aleatórios">Geração de Números Reais Aleatórios</h4>
-<p>E números reais? Como podemos gerá-los?</p>
-<ul>
-<li>A função <code>rand</code> é a única disponível e retorna um inteiro</li>
-</ul>
-</section>
-<section id="números-aleatórios-13" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-reais-aleatórios-1">Geração de Números Reais Aleatórios</h4>
-<p>Para gerar números reais aleatórios:</p>
-<ol type="1">
-<li>Utilizar a função <code>rand</code> dividida pelo valor <code>RAND_MAX</code></li>
-<li>Multiplicar o resultado por um fator de escala</li>
-<li>Somar o resultado com um valor constante para “deslocar” o intervalo de valores gerados</li>
-</ol>
-</section>
-<section id="números-aleatórios-14" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-reais-aleatórios-2">Geração de Números Reais Aleatórios</h4>
-<p>Exemplos de uso:</p>
-<ol type="1">
-<li>Gera números reais aleatórios no intervalo <span class="math inline">[0.0,1.0]</span>:<br>
-<code>float x = rand()/float(RAND_MAX);</code></li>
-</ol>
-</section>
-<section id="números-aleatórios-15" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-reais-aleatórios-3">Geração de Números Reais Aleatórios</h4>
-<p>Exemplos de uso:</p>
-<ol start="2" type="1">
-<li>Gera números reais aleatórios no intervalo <span class="math inline">[0.0,q]</span>:<br>
-<code>float x = q*(rand()/float(RAND_MAX));</code></li>
-</ol>
-</section>
-<section id="números-aleatórios-16" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-números-reais-aleatórios-4">Geração de Números Reais Aleatórios</h4>
-<p>Exemplos de uso:</p>
-<ol start="3" type="1">
-<li>Gera números reais aleatórios no intervalo <span class="math inline">[p,q]</span>:<br>
-<code>float x = (q-p)*(rand()/float(RAND_MAX)) + p;</code></li>
-</ol>
+</a><p><a href="https://bit.ly/lip_20230516"></a></p>
 </section>
 <section id="exercício-2" class="slide level2">
-<h2>Exercício</h2>
-<p>Implemente uma função que gere números reais aleatórios em um intervalo qualquer delimitado por <span class="math inline">[p,q]</span></p>
+<h2>Exercício 2</h2>
+<h4 id="função-pertence">Função Pertence</h4>
+<p>Implemente a função <code>pertence</code>:</p>
+<ul>
+<li>Retorna verdadeiro se um valor <code>K</code> está dentro de um vetor <code>v</code> ou falso caso contrário</li>
+<li>O vetor <code>v</code>, o seu tamanho <code>n</code> e o valor <code>K</code> são parâmetros de entrada</li>
+</ul>
+<p>Implemente também a função <code>main</code> para testar o seu programa.</p>
 </section>
 <section id="exercício-3" class="slide level2">
-<h2>Exercício</h2>
-<h4 id="solução-1">Solução</h4>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="dt">float</span> gera_valor_real<span class="op">(</span><span class="dt">float</span> p<span class="op">,</span> <span class="dt">float</span> q<span class="op">){</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>    <span class="cf">return</span> <span class="op">(</span>q<span class="op">-</span>p<span class="op">)*(</span>rand<span class="op">()/</span><span class="dt">float</span><span class="op">(</span>RAND_MAX<span class="op">))</span> <span class="op">+</span> p<span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="números-aleatórios-17" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-caracteres-aleatórios">Geração de Caracteres Aleatórios</h4>
-<p>E caracteres? Como podemos gerá-los?</p>
-<ul>
-<li>Lembre-se que um caractere possui um número inteiro associado, de acordo com a tabela ASCII</li>
-</ul>
-</section>
-<section id="números-aleatórios-18" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-caracteres-aleatórios-1">Geração de Caracteres Aleatórios</h4>
-<p>Então, basta gerar um número no intervalo <span class="math inline">[0,255]</span> e convertê-lo para <code>char</code></p>
-</section>
-<section id="números-aleatórios-19" class="slide level2">
-<h2>Números Aleatórios</h2>
-<h4 id="geração-de-caracteres-aleatórios-2">Geração de Caracteres Aleatórios</h4>
-<ul>
-<li>Vários destes caracteres não são visíveis
-<ul>
-<li><code>\0</code>, que tem código igual a 0</li>
-<li><code>\t</code>, que tem código igual a 9</li>
-<li><code>\n</code>, que tem código igual a 10</li>
-</ul></li>
-<li>Carateres visíveis: estão no intervalo <span class="math inline">[33,126]</span></li>
-</ul>
-</section>
-<section id="exercícios" class="slide level2">
-<h2>Exercícios</h2>
-<h4 id="uso-em-vetores">Uso em Vetores</h4>
-<p>Utilizando as funções anteriores:</p>
-<p>Implemente uma função que preencha um vetor de tamanho <code>n</code> com números inteiros aleatórios no intervalo <span class="math inline">[-5,5]</span></p>
+<h2>Exercício 3</h2>
+<h4 id="função-para-separar-vetor-em-um-vetor-de-pares-e-outro-de-ímpares">Função para Separar Vetor em um Vetor de Pares e outro de Ímpares</h4>
+<p>Implemente uma função que receba como parâmetro de entrada um vetor de números inteiros.</p>
+<p>A função deve armazenar em um primeiro vetor de saída todos os números pares e em um segundo, todos os números ímpares.</p>
+<p>Implemente também a função <code>main</code>.</p>
 </section>
 <section id="exercício-4" class="slide level2">
-<h2>Exercício</h2>
-<h4 id="solução-2">Solução</h4>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1"></a><span class="dt">void</span> insere_aleatorios_vetor<span class="op">(</span><span class="dt">int</span> v<span class="op">[],</span> <span class="dt">int</span> n<span class="op">){</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>    <span class="dt">int</span> i<span class="op">;</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a>        v<span class="op">[</span>i<span class="op">]</span> <span class="op">=</span> gera_valor_inteiro<span class="op">(-</span><span class="dv">5</span><span class="op">,</span><span class="dv">5</span><span class="op">);</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a>    <span class="op">}</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="exercício-5" class="slide level2">
-<h2>Exercício</h2>
-<h4 id="uso-em-vetores-1">Uso em Vetores</h4>
-<p>Utilizando as funções anteriores:</p>
-<p>Implemente uma função que preencha um vetor de tamanho <code>n</code> com números reais aleatórios no intervalo <span class="math inline">[1.0,10.0]</span></p>
-</section>
-<section id="exercício-6" class="slide level2">
-<h2>Exercício</h2>
-<h4 id="solução-3">Solução</h4>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1"></a><span class="dt">void</span> insere_aleatorios_vetor<span class="op">(</span><span class="dt">float</span> v<span class="op">[],</span> <span class="dt">int</span> n<span class="op">){</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>    <span class="dt">int</span> i<span class="op">;</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a>        v<span class="op">[</span>i<span class="op">]</span> <span class="op">=</span> gera_valor_real<span class="op">(</span><span class="dv">1</span><span class="op">,</span><span class="dv">10</span><span class="op">);</span></span>
-<span id="cb6-5"><a href="#cb6-5"></a>    <span class="op">}</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="exercício-7" class="slide level2">
-<h2>Exercício</h2>
-<h4 id="uso-em-vetores-2">Uso em Vetores</h4>
-<p>Implemente uma função que receba como parâmetro de entrada um número <code>n</code> e como parâmetro de saída dois vetores de números inteiros com tamanhos que devem ser calculados pela função.</p>
-<p>Inicialmente, a sua função deve zerar os vetores e após isto, gerar <code>n</code> números inteiros aleatórios no intervalo <span class="math inline">[1,50]</span>.</p>
-<p>A função deve inserir os números gerados que forem primos no primeiro vetor e os números não primos no segundo.</p>
-</section>
-<section id="exercício-8" class="slide level2">
-<h2>Exercício</h2>
-<h4 id="uso-em-vetores-3">Uso em Vetores</h4>
-<p>A função <code>main</code> do seu programa deve ler do usuário o valor de <code>n</code> e exibir na tela os dois vetores computados pela função solicitada.</p>
-</section>
-<section id="sumário" class="slide level2">
-<h2>Sumário</h2>
-<p>Na aula de hoje:</p>
-<ul>
-<li>Mecanismos oferecidos pela linguagem C++ para geração de números aleatórios</li>
-<li>Definição de funções para números aleatórios em intervalos de interesse</li>
-<li>Uso em vetores</li>
-</ul>
+<h2>Exercício 4</h2>
+<h4 id="função-para-informar-se-vetor-é-conjunto">Função para Informar se Vetor é Conjunto</h4>
+<p>Um vetor é considerado um conjunto se nenhum dos valores do vetor se repetem.</p>
+<p>Implemente uma função que receba como parâmetro um vetor e retorne verdadeiro caso ele seja um conjunto ou falso caso contrário.</p>
+<p>Implemente também a função <code>main</code>.</p>
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">

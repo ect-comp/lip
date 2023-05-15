@@ -2895,7 +2895,7 @@
     "href": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#lista-de-presença",
     "title": "Geração de Números Aleatórios",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230516"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230518"
   },
   {
     "objectID": "slides/13-numeros_aleatorios/13-numeros_aleatorios.html#números-aleatórios-12",
@@ -3015,5 +3015,47 @@
     "title": "Geração de Números Aleatórios",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje:\n\nMecanismos oferecidos pela linguagem C++ para geração de números aleatórios\nDefinição de funções para números aleatórios em intervalos de interesse\nUso em vetores\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-1",
+    "href": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-1",
+    "title": "Funções e vetores: exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nProduto Interno\nO produto interno entre dois vetores \\mathbf{u} e \\mathbf{v} é dado por:\n\n\\mathbf{u}.\\mathbf{v} = \\sum_{i=0}^{n-1} u_i.v_i = u_0.v_0 + u_1.v_1 + ... + u_{n-1}.v_{n-1},\n com\n\\mathbf{u} = [u_0, u_1, ... , u_{n-1}]^t\\quad e\n\\mathbf{v} = [v_0, v_1, ... , v_{n-1}]^t."
+  },
+  {
+    "objectID": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-1-1",
+    "href": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-1-1",
+    "title": "Funções e vetores: exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nFunção Produto Interno\nImplemente uma função que receba como parâmetros de entrada dois vetores de números reais. A função a ser implementada deve retornar o produto interno entre os dois vetores.\nA função main deve ler o tamanho dos vetores, cada um dos seus elementos e exibir na tela uma mensagem informando o produto interno entre os dois vetores."
+  },
+  {
+    "objectID": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#lista-de-presença",
+    "href": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#lista-de-presença",
+    "title": "Funções e vetores: exercícios",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230516"
+  },
+  {
+    "objectID": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-2",
+    "href": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-2",
+    "title": "Funções e vetores: exercícios",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nFunção Pertence\nImplemente a função pertence:\n\nRetorna verdadeiro se um valor K está dentro de um vetor v ou falso caso contrário\nO vetor v, o seu tamanho n e o valor K são parâmetros de entrada\n\nImplemente também a função main para testar o seu programa."
+  },
+  {
+    "objectID": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-3",
+    "href": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-3",
+    "title": "Funções e vetores: exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nFunção para Separar Vetor em um Vetor de Pares e outro de Ímpares\nImplemente uma função que receba como parâmetro de entrada um vetor de números inteiros.\nA função deve armazenar em um primeiro vetor de saída todos os números pares e em um segundo, todos os números ímpares.\nImplemente também a função main."
+  },
+  {
+    "objectID": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-4",
+    "href": "slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html#exercício-4",
+    "title": "Funções e vetores: exercícios",
+    "section": "Exercício 4",
+    "text": "Exercício 4\nFunção para Informar se Vetor é Conjunto\nUm vetor é considerado um conjunto se nenhum dos valores do vetor se repetem.\nImplemente uma função que receba como parâmetro um vetor e retorne verdadeiro caso ele seja um conjunto ou falso caso contrário.\nImplemente também a função main.\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
