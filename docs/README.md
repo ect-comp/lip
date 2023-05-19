@@ -82,17 +82,17 @@
   - Geração de caracteres aleatórios
 - Exercícios
 
-<!--
-
-## [01/11 - Matrizes](./14-matrizes/)
+## [23/05 - Matrizes](./slides/14-matrizes/14-matrizes.html)
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
 - Exercícios
 
-## [03/11 - Funções e Matrizes](./15-funcoes_e_matrizes/)
+## [25/05 - Funções e Matrizes](./slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html)
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
+
+<!--
 
 ## [08/11 - Exercícios Extra 2](./multiplicacao_matricial/)
 

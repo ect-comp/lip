@@ -3057,5 +3057,306 @@
     "title": "Funções e vetores: exercícios",
     "section": "Exercício 4",
     "text": "Exercício 4\nFunção para Informar se Vetor é Conjunto\nUm vetor é considerado um conjunto se nenhum dos valores do vetor se repetem.\nImplemente uma função que receba como parâmetro um vetor e retorne verdadeiro caso ele seja um conjunto ou falso caso contrário.\nImplemente também a função main.\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#nas-aulas-anteriores",
+    "href": "slides/14-matrizes/14-matrizes.html#nas-aulas-anteriores",
+    "title": "Matrizes",
+    "section": "Nas Aulas Anteriores",
+    "text": "Nas Aulas Anteriores\n\nVetores\nFunções com vetores"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#objetivo-da-aula",
+    "href": "slides/14-matrizes/14-matrizes.html#objetivo-da-aula",
+    "title": "Matrizes",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nIntroduzir o uso de matrizes:\n\nRepresentação em memória\nDeclaração de matrizes\nInicialização de matrizes\nExercícios"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#motivação",
+    "href": "slides/14-matrizes/14-matrizes.html#motivação",
+    "title": "Matrizes",
+    "section": "Motivação",
+    "text": "Motivação\nExercício\nImplemente um programa que leia dois números inteiros M e N e em seguida, leia as N notas de M turmas. O programa deve apresentar todas as turmas onde encontra-se a maior nota.\nTemos o que é necessário para implementar uma solução para este problema?"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#matriz",
+    "href": "slides/14-matrizes/14-matrizes.html#matriz",
+    "title": "Matrizes",
+    "section": "Matriz",
+    "text": "Matriz\n\nArmazena dados em formato de tabela\nEstrutura bidimensional:\n\nnl linhas\nnc colunas\nnl x nc elementos (de um mesmo tipo)"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#matriz-1",
+    "href": "slides/14-matrizes/14-matrizes.html#matriz-1",
+    "title": "Matrizes",
+    "section": "Matriz",
+    "text": "Matriz\nAlém das matrizes conhecidas da matemática, matrizes em C++ podem armazenar outros tipos de dados:\n\nNotas de alunos por sala\nDistâncias entre cidades\nRelações entre pessoas\nEtc."
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#declarando-uma-matriz",
+    "href": "slides/14-matrizes/14-matrizes.html#declarando-uma-matriz",
+    "title": "Matrizes",
+    "section": "Declarando uma Matriz",
+    "text": "Declarando uma Matriz\nSintaxe\ntipo_da_matriz nome_da_matriz[n_linhas][n_colunas];\n\ntipo_da_matriz são os tipos de variáveis conhecidos: int, char, float, bool.\nnome_da_matriz segue as mesmas regras que usamos para variáveis\nn_linhas é uma expressão para o número de linhas da matriz cujo tipo deve ser int\nn_colunas é uma expressão para o número de colunas da matriz cujo tipo deve ser int"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#declarando-uma-matriz-1",
+    "href": "slides/14-matrizes/14-matrizes.html#declarando-uma-matriz-1",
+    "title": "Matrizes",
+    "section": "Declarando uma Matriz",
+    "text": "Declarando uma Matriz\nExercício\nEscrever declaração de matriz:\n\nDo tipo real e tamanho 2 x 2, chamada A\nDo tipo caractere e tamanho 10 x 10, chamada img\nDo tipo inteiro e tamanho nl x nc, chamada mat"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#declarando-uma-matriz-2",
+    "href": "slides/14-matrizes/14-matrizes.html#declarando-uma-matriz-2",
+    "title": "Matrizes",
+    "section": "Declarando uma Matriz",
+    "text": "Declarando uma Matriz\nExercício: Solução\n1. float A[2][2];\n2. char img[10][10];\n3. int mat[nl][nc];"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#matriz-2",
+    "href": "slides/14-matrizes/14-matrizes.html#matriz-2",
+    "title": "Matrizes",
+    "section": "Matriz",
+    "text": "Matriz\nRepresentação em Memória"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz",
+    "href": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz",
+    "title": "Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nAcesso a Elementos de Matrizes\n\nUma matriz com nl linhas e nc colunas:\n\nTem índices de linhas válidos que vão de 0 até nl-1\nTem índices de colunas válidos que vão de 0 até nc-1\n\nUma matriz m não pode ser usada diretamente em expressões\nCada elemento m[0][0],m[0][1], …, m[nl-1][nc-1] é que deve ser usado"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-1",
+    "href": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-1",
+    "title": "Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nAcesso a Elementos de Matrizes\nPara acessar cada elemento da matriz m:\n\nO primeiro índice acessa a linha da matriz\nO segundo índice acessa a coluna da matriz\nExemplo: m[2][0] acessa a terceira linha e primeira coluna"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-2",
+    "href": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-2",
+    "title": "Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nExercício\n\n\n\n\n\n\n\n\n\nQual o valor de cada expressão a seguir, sendo x = 1?\n\nm[0][0] + m[0][1]\nm[0][3*x-1]\nm[m[2][1]][x+1]\nm[0][-1]\nm[3][3]\nm[3][1000]"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-3",
+    "href": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-3",
+    "title": "Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nPercorrendo uma Matriz\nPara acessar cada elemento de uma matriz de forma automática, é necessário iterar todas as colunas de todas as linhas da matriz. Ou seja:\n\nUm for para variar o índice da linha\nUm for para variar o índice da coluna\nOs laços devem estar aninhados\nA ordem dos laços pode ou não influenciar no resultado, dependendo do uso final do laço no algoritmo"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-4",
+    "href": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-4",
+    "title": "Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nExercício: Leitura de Dados\nImplemente um programa que leia do usuário as dimensões de uma matriz de inteiros e que leia também cada um de seus elementos.\nImprima a matriz no formato adequado na tela."
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-5",
+    "href": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-5",
+    "title": "Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nExercício: Solução\nint main(){\n    int nl, nc;\n    cin >> nl >> nc;\n    int m[nl][nc], i, j;\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cin >> m[i][j];\n        }\n    }\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cout << m[i][j] << \" \";\n        }\n        cout << endl;\n    }\n}"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#lista-de-presença",
+    "href": "slides/14-matrizes/14-matrizes.html#lista-de-presença",
+    "title": "Matrizes",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230523"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-6",
+    "href": "slides/14-matrizes/14-matrizes.html#posições-de-uma-matriz-6",
+    "title": "Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nExercício: Impressão de Dados\nO que faz o seguinte programa?\nint main(){\n    int m[3][4], i, j;\n    for(i = 0; i < 3; i++){\n        for(j = 0; j < 4; j++){\n            m[i][j] = 4*i+j+1;\n        }\n    }\n    for(i = 0; i < 3; i++){\n        for(j = 0; j < 4; j++){\n            cout << m[i][j] << \" \";\n        }\n        cout << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#inicialização-de-matrizes",
+    "href": "slides/14-matrizes/14-matrizes.html#inicialização-de-matrizes",
+    "title": "Matrizes",
+    "section": "Inicialização de Matrizes",
+    "text": "Inicialização de Matrizes\nForma 1:\nint m[3][4] = {{1,2,3,4},\n               {5,6,7,8},\n               {9,10,11,12}};\nForma 2:\nint m[][4] = {{1,2,3,4},\n              {5,6,7,8},\n              {9,10,11,12}};"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#inicialização-de-matrizes-1",
+    "href": "slides/14-matrizes/14-matrizes.html#inicialização-de-matrizes-1",
+    "title": "Matrizes",
+    "section": "Inicialização de Matrizes",
+    "text": "Inicialização de Matrizes\nForma 3:\nint m[3][4] = {1,2,3,4,\n               5,6,7,8,\n               9,10,11,12};\nForma 4:\nint m[][4] = {1,2,3,4,\n              5,6,7,8,\n              9,10,11,12};"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#motivação-1",
+    "href": "slides/14-matrizes/14-matrizes.html#motivação-1",
+    "title": "Matrizes",
+    "section": "Motivação",
+    "text": "Motivação\nVoltando ao exercício inicial:\nImplemente um programa que leia dois números inteiros M e N e em seguida, leia as N notas de M turmas. O programa deve apresentar todas as turmas onde encontra-se a maior nota.\nComo implementá-lo?"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#exercício-inicial",
+    "href": "slides/14-matrizes/14-matrizes.html#exercício-inicial",
+    "title": "Matrizes",
+    "section": "Exercício Inicial",
+    "text": "Exercício Inicial\nSolução\nint main(){\n    int M, N, i, j, lm, cm;\n    cout << \"Informe a quantidade de turmas:\\n\";\n    cin >> M;\n    cout << \"Informe a quantidade de alunos:\\n\";\n    cin >> N;\n    float notas[M][N], maior;\n    cout << \"Informe as notas:\\n\";\n    for(i = 0; i < M; i++){\n        for(j = 0; j < N; j++){\n            cin >> notas[i][j];\n        }\n    }\n    maior = notas[0][0];\n    lm = 0;\n    cm = 0;\n    for(i = 0; i < M; i++){\n        for(j = 0; j < N; j++){\n            if(notas[i][j] > maior){\n                maior = notas[i][j];\n                lm = i;\n                cm = j;\n            }\n        }\n    }\n    for(i = 0; i < M; i++){\n        for(j = 0; j < N; j++){\n            if(notas[i][j] == maior){\n                cout << \"Turma \" << i\n                     << \" tem a maior nota\\n\";\n            }\n        }\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#matrizes-com-mais-de-2-dimensões",
+    "href": "slides/14-matrizes/14-matrizes.html#matrizes-com-mais-de-2-dimensões",
+    "title": "Matrizes",
+    "section": "Matrizes com mais de 2 Dimensões",
+    "text": "Matrizes com mais de 2 Dimensões\n\nC++ permite o uso de matrizes com mais do que 2 dimensões\nPor exemplo:\n\nint mat[3][3][3];\n\nNúmero máximo de dimensões depende do compilador"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#exercícios",
+    "href": "slides/14-matrizes/14-matrizes.html#exercícios",
+    "title": "Matrizes",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nArmazenar em uma matriz 3 x 3 os 9 primeiros números pares e em seguida, exibir a matriz.\nLer do usuário um número n e em seguida, armazenar em uma matriz de números inteiros a matriz identidade de tamanho n x n. Exiba também a matriz na tela."
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#exercícios-1",
+    "href": "slides/14-matrizes/14-matrizes.html#exercícios-1",
+    "title": "Matrizes",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nLer do usuário os elementos de uma matriz de números inteiros com tamanho 3 x 3 e em seguida, exibir na tela a soma dos elementos da diagonal principal\nLer do usuário um número n e em seguida, armazenar os elementos de uma matriz de números inteiros de tamanho n x n. Em seguida, exibir na tela a soma dos elementos da diagonal secundária"
+  },
+  {
+    "objectID": "slides/14-matrizes/14-matrizes.html#sumário",
+    "href": "slides/14-matrizes/14-matrizes.html#sumário",
+    "title": "Matrizes",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje: matrizes\n\nSintaxe de declaração\nAcesso às posições\nInicialização\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#na-aula-anterior",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#na-aula-anterior",
+    "title": "Funções e Matrizes",
+    "section": "Na Aula Anterior",
+    "text": "Na Aula Anterior\nMatrizes em C++:\n\nDeclaração\nAcesso aos elementos\nInicialização\nExercícios"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#objetivo-da-aula",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#objetivo-da-aula",
+    "title": "Funções e Matrizes",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nIntroduzir o uso de funções que operam sobre matrizes:\n\nSintaxe\nExercícios"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#funções-e-matrizes",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#funções-e-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Funções e Matrizes",
+    "text": "Funções e Matrizes\n\nÉ possível passar matrizes como parâmetro de funções\nÉ necessário passar também outros dois parâmetros, relativos ao número de linhas e colunas da matriz"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#função-com-matrizes",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#função-com-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Função com Matrizes",
+    "text": "Função com Matrizes\nMatrizes para Uso em Funções\nPara passar matrizes como parâmetros de funções em C++, é preciso:\n\nA declaração de uma constante global com o número máximo de linhas/colunas de uma matriz (constante MAX, inicializada com um número grande)\nQue todas as matrizes do programa sejam declaradas com esta constante no número de linhas e colunas\nInformar na assinatura da função que cada matriz passada como parâmetro tem MAX colunas"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#função-com-matrizes-1",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#função-com-matrizes-1",
+    "title": "Funções e Matrizes",
+    "section": "Função com Matrizes",
+    "text": "Função com Matrizes\nMatrizes para Uso em Funções\n\nIsto acontece por causa de uma limitação da linguagem C++, que exige que o número de colunas de uma matriz passada como parâmetro seja constante\nOs programas implementados podem não usar todas as MAX linhas e MAX colunas das matrizes"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#função-com-matrizes-2",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#função-com-matrizes-2",
+    "title": "Funções e Matrizes",
+    "section": "Função com Matrizes",
+    "text": "Função com Matrizes\nMatrizes para Uso em Funções - Função main\nO programa declara matriz com tamanho máximo 100 x 100, mas usa nl x nc elementos\nconst int MAX = 100;\nint main(){\n    int mat[MAX][MAX], nl, nc, i, j;\n    cin >> nl >> nc;\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cin >> mat[i][j];\n        }\n    }\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cout << mat[i][j] << \" \";\n        }\n        cout << endl;\n    }\n\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#função-com-matrizes-3",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#função-com-matrizes-3",
+    "title": "Funções e Matrizes",
+    "section": "Função com Matrizes",
+    "text": "Função com Matrizes\nA linha\nconst int MAX = 100;\né equivalente a\n#define MAX 100"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-função-com-matrizes",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-função-com-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Função com Matrizes",
+    "text": "Declaração de Função com Matrizes\nSintaxe\nExemplo com uma matriz como parâmetro:\ntipo_func nome_func(tipo_matriz nome_matriz[][MAX],\n                    int n_linhas, int n_cols){\n    corpo da funcao\n}"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-1",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-1",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Função com Matrizes",
+    "text": "Declaração de Função com Matrizes\nSintaxe\n\ntipo_matriz é o tipo da matriz passada como parâmetro: int, char, float, bool.\nnome_matriz é o nome da matriz passada como parâmetro. Observe que o primeiro [] é em branco e o segundo [] deve ter obrigatoriamente o nr. máximo de colunas (no caso, MAX)\nn_linhas é número de linhas da matriz\nn_cols é número de colunas da matriz"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-2",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-2",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Função com Matrizes",
+    "text": "Declaração de Função com Matrizes\nCaso haja mais de uma matriz, é necessário utilizar parâmetros que indiquem o número de linhas e colunas de cada uma delas"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-3",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-3",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Função com Matrizes",
+    "text": "Declaração de Função com Matrizes\nExercícios\nEscrever assinatura da função:\n\nQue imprime uma matriz de inteiros na tela\nQue recebe uma matriz de caracteres e retorna quantos dos elementos na matriz são iguais a um caractere passado como parâmetro\nQue recebe duas matrizes de inteiros de mesmo tamanho e retorna o maior valor dentre todos, seja ele da primeira ou da segunda matriz"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-funções-com-matrizes",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#declaração-de-funções-com-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Funções com Matrizes",
+    "text": "Declaração de Funções com Matrizes\nExercícios: Solução\nvoid imprime_matriz(int mat[][MAX], int nl, int nc);\nint conta_ocorrencias(char mat[][MAX], int nl, int nc,\n                      char c);\nint computa_maior(int mat1[][MAX], int mat2[][MAX],\n                  int nl, int nc);"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#lista-de-presença",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#lista-de-presença",
+    "title": "Funções e Matrizes",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230525"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#funções-com-matrizes",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#funções-com-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Funções com Matrizes",
+    "text": "Funções com Matrizes\nChamada de Funções\nNas chamadas às funções, matrizes são passadas como parâmetros utilizando apenas o seu nome (sem colchetes).\nExemplo:\nconst int MAX = 100;\nvoid imprime_mat(int mat[][MAX], int nl, int nc);\nint main(){\n    int m[MAX][MAX], i, j, nl = 2, nc = 4;\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n        m[i][j] = nc*i+j+1;\n        }\n    }\n    imprime_mat(m, nl, nc);\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#funções-com-matrizes-1",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#funções-com-matrizes-1",
+    "title": "Funções e Matrizes",
+    "section": "Funções com Matrizes",
+    "text": "Funções com Matrizes\nPassagem de Parâmetros\n\nToda matriz passada para funções como parâmetro é passada por referência\nIsto significa que as alterações realizadas nas matrizes se tornam visíveis fora do corpo da função"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#funções-com-matrizes-2",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#funções-com-matrizes-2",
+    "title": "Funções e Matrizes",
+    "section": "Funções com Matrizes",
+    "text": "Funções com Matrizes\nLinhas de uma Matriz como Vetores\nFunções que aceitam um vetor como parâmetro aceitam que uma linha da matriz seja passada na sua chamada. Exemplo:\nvoid imprime_vet(int v[], int n);\n...\nvoid imprime_mat(int mat[][MAX], int nl, int nc){\n    int i = 0;\n    for(i = 0; i < nl; i++){\n        imprime_vet(mat[i], nc);\n    }\n}"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#exercícios-1",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#exercícios-1",
+    "title": "Funções e Matrizes",
+    "section": "Exercícios",
+    "text": "Exercícios\nImplemente as definições das funções:\n\nQue imprime uma matriz de inteiros na tela\nQue recebe uma matriz de caracteres e retorna quantos dos elementos na matriz são iguais a um caractere passado como parâmetro\nQue recebe duas matrizes de inteiros de mesmo tamanho e retorna o maior valor dentre todos, seja ele da primeira ou da segunda matriz"
+  },
+  {
+    "objectID": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#sumário",
+    "href": "slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html#sumário",
+    "title": "Funções e Matrizes",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nSintaxe de implementação de funções com matrizes\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
