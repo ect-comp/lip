@@ -3182,7 +3182,7 @@
     "href": "slides/14-matrizes/14-matrizes.html#inicialização-de-matrizes",
     "title": "Matrizes",
     "section": "Inicialização de Matrizes",
-    "text": "Inicialização de Matrizes\nForma 1:\n{% raw %}\nint m[3][4] = {{1,2,3,4},\n               {5,6,7,8},\n               {9,10,11,12}};\n{% endraw %}\nForma 2:\n{% raw %}\nint m[][4] = {{1,2,3,4},\n              {5,6,7,8},\n              {9,10,11,12}};\n{% endraw %}"
+    "text": "Inicialização de Matrizes\nForma 1:\nint m[3][4] = { {1,2,3,4},\n                {5,6,7,8},\n                {9,10,11,12} };\nForma 2:\nint m[][4] = { {1,2,3,4},\n               {5,6,7,8},\n               {9,10,11,12} };"
   },
   {
     "objectID": "slides/14-matrizes/14-matrizes.html#inicialização-de-matrizes-1",
