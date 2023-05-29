@@ -1,0 +1,73 @@
+---
+title: "Funções e matrizes: exercícios"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Exercício 1
+#### Soma de duas matrizes
+
+Sabendo-se que a soma de duas matrizes de mesmo tamanho
+é calculada elemento a elemento, implemente uma função
+que receba como parâmetros de entrada duas matrizes
+e armazene em um parâmetro de saída a matriz soma.
+
+A função `main` deve ler as dimensões das matrizes,
+os elementos das duas matrizes e exibir o resultado
+de uma chamada à função solicitada.
+
+---
+
+## Exercício 2
+#### Matriz transposta
+
+A transposta de uma matriz é obtida transformando-se
+cada linha da matriz original em uma coluna na nova matriz.
+
+Implemente uma função que receba como parâmetro de entrada
+uma matriz e armazene em um parâmetro de saída a sua transposta.
+
+A função `main` deve ler as dimensões de uma matriz,
+cada um dos seus elementos e exibir o resultado
+de uma chamada à função solicitada.
+
+---
+
+## Lista de Presença
+
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230530){fig-align="center"}
+
+<a href="https://bit.ly/lip_20230530"><p style="text-align:center;">https://bit.ly/lip_20230530</p></a>
+
+---
+
+## Exercício 3
+#### Construir matriz identidade
+
+Implemente uma função que receba como parâmetro
+de entrada um número `n` e armazene em um parâmetro
+de saída a matriz identidade de ordem `n`.
+
+A função `main` deve ler do usuário a ordem da matriz
+identidade desejada e exibir o resultado de uma chamada
+à função solicitada.
+
+---
+
+## Exercício 4
+#### Função para informar se matriz é de permutação
+
+Uma matriz é uma matriz de permutação se atende aos
+seguintes requisitos:
+
+- É formada apenas por 0s e 1s
+- Possui apenas um 1 por coluna
+- Possui apenas um 1 por linha
+
+Implemente uma função que retorne verdadeiro
+caso uma matriz seja de permutação ou falso caso
+contrário.
+
+Implemente também a função `main`.
