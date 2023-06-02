@@ -96,9 +96,9 @@
 
 ## [01/06 - Exercícios Extra 2](./slides/multiplicacao_matricial/multiplicacao_matricial.html)
 
-<!--
+## [06/06 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
-## [10/11 - Revisão - Unidade 2](./revisao_unidade2/)
+<!--
 
 ## [17/11 - Strings I](./16-strings1/)
 - Caractere delimitador `\0`

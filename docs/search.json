@@ -3526,5 +3526,12 @@
     "title": "Multiplicação de Matrizes",
     "section": "Multiplicação de Matrizes",
     "text": "Multiplicação de Matrizes\nExercício 3. Informar se Matriz é Ortogonal\nDiz-se que uma matriz quadrada A é ortogonal se a condição A^t.A = I, com I sendo a matriz identidade, for satisfeita.\nUtilizando a função implementada no exercício anterior, implemente um programa que leia uma matriz quadrada de números inteiros e informe se tal matriz é ou não ortogonal.\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/revisao_unidade2/revisao_unidade2.html#revisão---unidade-ii",
+    "href": "slides/revisao_unidade2/revisao_unidade2.html#revisão---unidade-ii",
+    "title": "Revisão - Unidade II",
+    "section": "Revisão - Unidade II",
+    "text": "Revisão - Unidade II\nLista de Presença\n\n\n\n\n\n\n\nhttps://bit.ly/lip_20230606\n\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]

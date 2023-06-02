@@ -1,0 +1,14 @@
+---
+title: "Revisão - Unidade II"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Revisão - Unidade II {.nostretch}
+#### Lista de Presença
+
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230606){fig-align="center"}
+
+<a href="https://bit.ly/lip_20230606"><p style="text-align:center;">https://bit.ly/lip_20230606</p></a>
