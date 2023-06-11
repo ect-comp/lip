@@ -98,17 +98,17 @@
 
 ## [06/06 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
-<!--
-
-## [17/11 - Strings I](./16-strings1/)
+## [13/06 - Strings I](./slides/16-strings1/16-strings1.html)
 - Caractere delimitador `\0`
 - Inicialização
 - Entrada/saída
 - Funções de manipulação de strings
 
-## [22/11 - Strings II](./17-strings2/)
+## [15/06 - Strings II](./slides/17-strings2/17-strings2.html)
 - Leitura de strings com espaços em branco
 - Exercícios
+
+<!--
 
 ## [24/11 - Strings - Exercícios](./exercicios_strings)
 
