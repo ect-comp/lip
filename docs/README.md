@@ -108,19 +108,19 @@
 - Leitura de strings com espaços em branco
 - Exercícios
 
-<!--
-
-## [24/11 - Strings - Exercícios](./exercicios_strings)
-
-## [29/11 - Tipos Estruturados I](./18-tipos_estruturados1/)
+## [20/06 - Tipos Estruturados I](./slides/18-tipos_estruturados1/18-tipos_estruturados1.html)
 - Definição de tipos estruturados
 - Operações com variáveis de tipos estruturados
 - Vetores de variáveis de tipos estruturados
 - Exercícios
 
-## [01/12 - Tipos Estruturados II](./19-tipos_estruturados2/)
+## [22/06 - Tipos Estruturados II](./19-tipos_estruturados2/19-tipos_estruturados2.html)
 - Uso de tipos estruturados em funções
 - Exercícios
+
+<!--
+
+## [24/11 - Strings - Exercícios](./exercicios_strings)
 
 ## [06/12 - Ordenação](./20-ordenacao/)
 - Ordenação

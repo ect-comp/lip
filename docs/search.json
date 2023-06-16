@@ -3841,5 +3841,390 @@
     "title": "Strings II",
     "section": "Exercícios",
     "text": "Exercícios\nImplemente uma função que receba como parâmetro uma string e retorne verdadeiro caso ela seja um palíndromo ou falso caso contrário."
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#nas-aulas-anteriores",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#nas-aulas-anteriores",
+    "title": "Tipos Estruturados I",
+    "section": "Nas Aulas Anteriores",
+    "text": "Nas Aulas Anteriores\n\nStrings"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#objetivo-da-aula",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#objetivo-da-aula",
+    "title": "Tipos Estruturados I",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nIntroduzir o uso de tipos estruturados:\n\nConceito\nSintaxe de definição e uso em programas"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#motivação",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#motivação",
+    "title": "Tipos Estruturados I",
+    "section": "Motivação",
+    "text": "Motivação\nExercício\nConsidere o seguinte problema:\n\nLer do usuário o nome e a nota de 5 alunos\nImprimir o nome dos alunos com nota inferior à média de todas as notas"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#motivação-1",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#motivação-1",
+    "title": "Tipos Estruturados I",
+    "section": "Motivação",
+    "text": "Motivação\nExercício - Solução I\nconst int STRMAX = 21;\n\nint main(){\n  int n = 5, i;\n  char nomes[n][STRMAX]; //vetor de vetores\n  float notas[n], media = 0.0;\n  for(i = 0; i < n; i++){\n    cout << \"Insira o nome do aluno: \";\n    cin.getline(nomes[i], STRMAX);\n    cout << \"Insira a nota do aluno: \";\n    cin >> notas[i];\n    cin.ignore();\n    media += notas[i];\n  }\n  media /= n;\n  for(i = 0; i < n; i++){\n    if(notas[i] < media){\n      cout << nomes[i]\n           << \" esta abaixo da media\\n\";\n    }\n  }\n  return 0;\n}"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#motivação-2",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#motivação-2",
+    "title": "Tipos Estruturados I",
+    "section": "Motivação",
+    "text": "Motivação\nRepresentação em Memória - Solução com Par de Vetores\n\n\n\n\n\n\n\n\n\nNa solução utilizada:\n\nDois vetores, um para os nomes e outro para as notas\nNome/nota de um aluno em uma mesma posição\nProgramas sujeitos a falhas"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#motivação-3",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#motivação-3",
+    "title": "Tipos Estruturados I",
+    "section": "Motivação",
+    "text": "Motivação\nE se fossem solicitados dados adicionais para um aluno?\n\nNome\nNota\nMatrícula\nCPF\n\nExiste alguma alternativa a utilizar vários vetores, sendo um para cada dado?"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#tipos-estruturados",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#tipos-estruturados",
+    "title": "Tipos Estruturados I",
+    "section": "Tipos Estruturados",
+    "text": "Tipos Estruturados\n\nMecanismo disponibilizado pela linguagem C++\n\nTambém conhecido como registros ou estruturas\n\nPermite ao programador definir um novo tipo de variável\nAgrupa dados de diferentes tipos\nDados possuem campos, também chamados de membros, atributos ou propriedades"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado",
+    "title": "Tipos Estruturados I",
+    "section": "Definindo um Tipo Estruturado",
+    "text": "Definindo um Tipo Estruturado\n\nTipos estruturados são usados para permitir que um programa possua variáveis que representam “coisas” do mundo real"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-1",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-1",
+    "title": "Tipos Estruturados I",
+    "section": "Definindo um Tipo Estruturado",
+    "text": "Definindo um Tipo Estruturado\nEntão, pense no que você quer representar e que características dela devem estar no programa:\n\nAluno, com nome e nota\nConta bancária, com número, saldo e nome do titular\nCidade, com nome e população\netc."
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-2",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-2",
+    "title": "Tipos Estruturados I",
+    "section": "Definindo um Tipo Estruturado",
+    "text": "Definindo um Tipo Estruturado\nSintaxe\nA definição de tipos estruturados deve vir antes das funções e possui a seguinte sintaxe:\nstruct nome_tipo{\n  tipo_campo_1 nome_campo_1;\n  ...\n  tipo_campo_N nome_campo_N;  \n};\nNote o ; (ponto e vírgula) após a última chave"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-3",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-3",
+    "title": "Tipos Estruturados I",
+    "section": "Definindo um Tipo Estruturado",
+    "text": "Definindo um Tipo Estruturado\nSintaxe\nstruct nome_tipo{\n  tipo_campo_1 nome_campo_1;\n  ...\n  tipo_campo_N nome_campo_N;  \n};\n\nnome_tipo é o nome do tipo estruturado. É uma boa prática definir um tipo com a primeira letra maiúscula"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-4",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-4",
+    "title": "Tipos Estruturados I",
+    "section": "Definindo um Tipo Estruturado",
+    "text": "Definindo um Tipo Estruturado\nSintaxe\nstruct nome_tipo{\n  tipo_campo_1 nome_campo_1;\n  ...\n  tipo_campo_N nome_campo_N;  \n};\n\ntipo_campo é o tipo (char, int, float…) do campo do tipo estruturado"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-5",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-5",
+    "title": "Tipos Estruturados I",
+    "section": "Definindo um Tipo Estruturado",
+    "text": "Definindo um Tipo Estruturado\nSintaxe\nstruct nome_tipo{\n  tipo_campo_1 nome_campo_1;\n  ...\n  tipo_campo_N nome_campo_N;  \n};\n\nnome_campo é o nome do campo do tipo estruturado e obedece às mesmas regras de nomear variáveis"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercícios",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercícios",
+    "title": "Tipos Estruturados I",
+    "section": "Exercícios",
+    "text": "Exercícios\nDefinir cada um dos tipos estruturados a seguir:\n\nTipo estruturado para um ponto no plano 2D\nTipo estruturado para conta bancária, com número da agência, número da conta e nome do titular\nTipo estruturado para data, com dia, mês e ano\nTipo estruturado para funcionário, com nome, matrícula, salário, data de nascimento e data de admissão"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução",
+    "title": "Tipos Estruturados I",
+    "section": "Solução",
+    "text": "Solução\n1 - Ponto no Plano 2D\nstruct Ponto2D{\n  float x;\n  float y;\n};"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-1",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-1",
+    "title": "Tipos Estruturados I",
+    "section": "Solução",
+    "text": "Solução\n2 - Conta Bancária\nstruct Conta{\n  int agencia;\n  int numero;\n  char titular[STRMAX];\n};"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-2",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-2",
+    "title": "Tipos Estruturados I",
+    "section": "Solução",
+    "text": "Solução\n3 - Data\nstruct Data{\n  int dia;\n  int mes;\n  int ano;\n};"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-3",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-3",
+    "title": "Tipos Estruturados I",
+    "section": "Solução",
+    "text": "Solução\n4 - Funcionário\nAssumindo que o tipo Data também tenha sido definido:\nstruct Funcionario{\n  char nome[STRMAX];\n  int matricula;\n  float salario;\n  Data data_nascimento;\n  Data data_admissao;\n};\nOu seja, é possível utilizar tipos estruturados como campos de outro tipo estruturado"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-6",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#definindo-um-tipo-estruturado-6",
+    "title": "Tipos Estruturados I",
+    "section": "Definindo um Tipo Estruturado",
+    "text": "Definindo um Tipo Estruturado\nExemplo - Aluno\nPara o exemplo que motivou a aula, um tipo estruturado chamado Aluno deve ser definido, contendo os campos nome e nota:\nstruct Aluno{\n  char nome[STRMAX];\n  float nota;\n};"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#lista-de-presença",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#lista-de-presença",
+    "title": "Tipos Estruturados I",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230620"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nAtenção: um tipo estruturado não é uma função"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-1",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-1",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nDeclaração de Variáveis\nApós um tipo estruturado ter sido definido, é possível declarar variáveis do tipo estruturado:\nAluno a1, a2; //declara duas variáveis do tipo Aluno\nToda variável do tipo Aluno possui campos nome e nota que devem ser acessados nos programas"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-2",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-2",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nAcesso aos Campos de Variáveis\nApós serem declaradas, variáveis de um tipo estruturado podem ter seus campos acessados por meio do operador . (ponto):\nAluno a;\n...\n\ncin.getline(a.nome, SMAX); //acessa o nome\ncin >> a.nota; //acessa a nota"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-3",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-3",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nDeclaração de Variáveis\nOs campos do tipo Aluno funcionam como variáveis do tipo declarado no campo:\n\nnome funciona como string\nnota funciona como float"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-4",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-4",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nAcesso aos Campos de Variáveis\nNo exemplo abaixo, os campos são acessados para serem impressos na tela:\nAluno a;\n...\n\ncout << \"Nome: \" << a.nome << endl; //imprime nome de um aluno\ncout << \"Nota: \" << a.nota << endl; //imprime nota de um aluno"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-5",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-5",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nDeclaração de Variáveis\nAs variáveis do tipo estruturado possuem seus campos inicializados com lixo. Para evitar isto:\nAluno a; //declara variável do tipo Aluno\nstrcpy(a.nome, \"\"); //atribui string vazia ao nome\na.nota = 0.0; //atribui zero à nota"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-6",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-6",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nAtribuição de Variáveis do Tipo Estruturado\nÉ possível fazer uma variável de um tipo estruturado receber uma outra do mesmo tipo:\nAluno a1, a2;\na1 = a2; //atribuição funciona como esperado (atribui o valor de cada campo)\n\n//Equivalente a :\na1.nota = a2.nota;\nstrcpy(a1.nome, a2.nome);\nObserve como seria trabalhoso copiar uma variável para outra desta última forma se ela contivesse muitos campos"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-7",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-7",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nVetores de Tipo Estruturado\nTambém é possível declarar vetores do tipo estruturado definido:\nAluno vet_alunos[10]; //vetor com capacidade\n                      //para armazenar 10 variáveis do tipo Aluno"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-8",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-8",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nMatrizes de Tipo Estruturado\nAssim como também é possível declarar matrizes do tipo estruturado definido:\nAluno mat_alunos[10][10]; //matriz com capacidade\n                          //para armazenar 10x10 variáveis do tipo Aluno"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-9",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#utilizando-variáveis-do-tipo-estruturado-9",
+    "title": "Tipos Estruturados I",
+    "section": "Utilizando Variáveis do Tipo Estruturado",
+    "text": "Utilizando Variáveis do Tipo Estruturado\nAcesso aos Campos de Vetores de Tipo Estruturado\n\nPara acessar um campo de uma variável presente em um vetor de um tipo estruturado:\n\nUtilize um número inteiro para acessar uma posição do vetor\nUtilize o operador . para acessar o campo da variável que está nesta posição\n\n\nAluno vet_alunos[10];\n...\ncout << \"Nome: \" <<  vet_alunos[i].nome << endl; //imprime nome do Aluno na posição i\ncout << \"Nota: \" <<  vet_alunos[i].nota << endl; //imprime nota do Aluno na posição i"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-1",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-1",
+    "title": "Tipos Estruturados I",
+    "section": "Exercício",
+    "text": "Exercício\nConsiderando o problema apresentado no início da aula:\n\nLer do usuário o nome e a nota de 5 alunos\nImprimir o nome dos alunos com nota inferior à média de todas as notas\n\nComo ficaria o mesmo com o uso de tipos estruturados?"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-4",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-4",
+    "title": "Tipos Estruturados I",
+    "section": "Solução",
+    "text": "Solução\nUso de Tipos Estruturados\nconst int STRMAX = 21;\n\nstruct Aluno{\n  char nome[STRMAX];\n  float nota;\n};\n\nint main(){\n  int n = 5, i;\n  Aluno alunos[n];\n  float media = 0.0;\n\n  for(i = 0; i < n; i++){\n    cout << \"Insira o nome do aluno: \";\n    cin.getline(alunos[i].nome, STRMAX);\n    cout << \"Insira a nota do aluno: \";\n    cin >> alunos[i].nota;\n    cin.ignore();\n    media += alunos[i].nota;\n  }\n  media /= n;\n\n  for(i = 0; i < n; i++){\n    if(alunos[i].nota < media){\n      cout << alunos[i].nome\n           << \" esta abaixo da media\\n\";\n    }\n  }\n  return 0;\n}"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-5",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#solução-5",
+    "title": "Tipos Estruturados I",
+    "section": "Solução",
+    "text": "Solução\nRepresentação em Memória - Solução com Uso de Tipos Estruturados\n\n\n\n\n\n\n\n\n\nCom tipos estruturados:\n\nÚnico índice utilizado para todos os dados de um aluno\nTodos os campos de um aluno em uma mesma variável\nProgramas menos sujeitos a falhas"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-1-1",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-1-1",
+    "title": "Tipos Estruturados I",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nDefina um tipo estruturado Data, com os campos dia, mes e ano. Em seguida, implemente um programa que leia do usuário o dia, mês e ano de duas datas e armazene estes valores em variáveis do tipo Data.\nO programa deve imprimir qual das duas datas é cronologicamente maior. Por exemplo 12/12/2007 é maior do que 09/03/2000."
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-1-2",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-1-2",
+    "title": "Tipos Estruturados I",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nSolução\nstruct Data{\n  int dia;\n  int mes;\n  int ano;\n};\n\nint main(){\n  Data d1, d2, maior;\n\n  cout << \"Insira a 1a. data:\\n\";\n  cin >> d1.dia >> d1.mes >> d1.ano;\n  cout << \"Insira a 2a. data:\\n\";\n  cin >> d2.dia >> d2.mes >> d2.ano;\n\n  if(d1.ano > d2.ano){\n    maior = d1;\n  }\n  else if(d2.ano > d1.ano){\n    maior = d2;\n  }\n  else{\n    if(d1.mes > d2.mes){\n      maior = d1;\n    }\n    else if(d2.mes > d1.mes){\n      maior = d2;\n    }\n    else{\n      if(d1.dia > d2.dia){\n        maior = d1;\n      }\n      else{\n        maior = d2;\n      }\n    }\n  }\n  cout << \"Maior data: \" << maior.dia << \"/\"\n                         << maior.mes << \"/\"\n                         << maior.ano << endl;\n\n  return 0;\n}"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-2",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-2",
+    "title": "Tipos Estruturados I",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nDefina um tipo estruturado para representar um Ponto2D, isto é, um ponto com coordenadas x e y. Em seguida, implemente um programa que leia do usuário uma quantidade n e as coordenadas (x,y) de n Pontos2D.\nO programa deve imprimir o Ponto2D mais próximo da origem, sabendo-se que a distância de um ponto para a origem é calculada por d(p) = \\sqrt{p.x^2 + p.y^2}."
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-2-1",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#exercício-2-1",
+    "title": "Tipos Estruturados I",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nSolução\n#include <cmath> //para sqrt e pow\n\nusing namespace std;\n\nstruct Ponto2D{\n  float x;\n  float y;\n};\n\nint main(){\n  int n, i;\n  float dist, menor_dist;\n\n  cout << \"Insira a quantidade de pontos:\\n\";\n  cin >> n;\n  Ponto2D pts[n], mais_prox;\n\n  cout << \"Insira as coordenadas dos pontos:\\n\";\n  for(i = 0; i < n; i++){\n    cin >> pts[i].x >> pts[i].y;\n  }\n\n  mais_prox = pts[0];\n  float dist;\n  float menor_dist = sqrt(pow(pts[0].x,2) +\n                          pow(pts[0].y,2));\n  for(i = 1; i < n; i++){\n    dist = sqrt(pow(pts[i].x,2) + pow(pts[i].y,2));\n    if(dist < menor_dist){\n      dist = menor_dist;\n      mais_prox = pts[i];\n    }\n  }\n  \n  cout << \"Ponto mais proximo: \"\n       << mais_prox.x << \", \"\n       << mais_prox.y << endl;\n\n  return 0;\n}"
+  },
+  {
+    "objectID": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#sumário",
+    "href": "slides/18-tipos_estruturados1/18-tipos_estruturados1.html#sumário",
+    "title": "Tipos Estruturados I",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nDefinição de tipos estruturados\nOperações com variáveis de tipos estruturados\nVetores de variáveis de tipos estruturados\nExercícios"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#na-aula-anterior",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#na-aula-anterior",
+    "title": "Tipos Estruturados II",
+    "section": "Na Aula Anterior",
+    "text": "Na Aula Anterior\n\nTipos Estruturados"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#objetivo-da-aula",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#objetivo-da-aula",
+    "title": "Tipos Estruturados II",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nMais usos de tipos estruturados, principalmente uso em funções"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício",
+    "title": "Tipos Estruturados II",
+    "section": "Exercício",
+    "text": "Exercício\nRelembrando o problema apresentado na aula anterior:\n\nLer do usuário o nome e a nota de 5 alunos\nImprimir o nome dos alunos com nota inferior à média de todas as notas\n\nComo ficaria o mesmo com o uso de tipos estruturados?"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#solução",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#solução",
+    "title": "Tipos Estruturados II",
+    "section": "Solução",
+    "text": "Solução\nUso de Tipos Estruturados\nconst int STRMAX = 21;\n\nstruct Aluno{\n  char nome[STRMAX];\n  float nota;\n};\n\nint main(){\n  int n = 5, i;\n  Aluno alunos[n];\n  float media = 0.0;\n\n  for(i = 0; i < n; i++){\n    cout << \"Insira o nome do aluno: \";\n    cin.getline(alunos[i].nome, STRMAX);\n    cout << \"Insira a nota do aluno: \";\n    cin >> alunos[i].nota;\n    cin.ignore();\n    media += alunos[i].nota;\n  }\n  media /= n;\n\n  for(i = 0; i < n; i++){\n    if(alunos[i].nota < media){\n      cout << alunos[i].nome\n           << \" esta abaixo da media\\n\";\n    }\n  }\n  return 0;\n}"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#motivação",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#motivação",
+    "title": "Tipos Estruturados II",
+    "section": "Motivação",
+    "text": "Motivação\nE se desejássemos implementar o mesmo programa com uma função, como poderíamos proceder?\n\nFunção imprime_alunos_abaixo_da_media: imprime todos os alunos que estão abaixo da média"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipos-estruturados-e-funções",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipos-estruturados-e-funções",
+    "title": "Tipos Estruturados II",
+    "section": "Tipos Estruturados e Funções",
+    "text": "Tipos Estruturados e Funções\nAssinatura de Funções\nTipos estruturados em funções - mesmas regras de uma variável qualquer:\n\nFunção que retorna o aluno com maior nota em um vetor de alunos:\n\nAluno calcula_maior_nota(Aluno v[], int n);"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipos-estruturados-e-funções-1",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipos-estruturados-e-funções-1",
+    "title": "Tipos Estruturados II",
+    "section": "Tipos Estruturados e Funções",
+    "text": "Tipos Estruturados e Funções\nAssinatura de Funções\nTipos estruturados em funções - mesmas regras de uma variável qualquer:\n\nFunção que armazena o aluno com a menor nota e o aluno com a maior nota em parâmetros de saída:\n\nvoid calcula_menor_maior_nota(Aluno v[], int n, \n                              Aluno& menor,\n                              Aluno& maior);"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipos-estruturados-e-funções-2",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipos-estruturados-e-funções-2",
+    "title": "Tipos Estruturados II",
+    "section": "Tipos Estruturados e Funções",
+    "text": "Tipos Estruturados e Funções\nChamadas de Funções\nAssumindo variáveis declaradas como\nAluno a_menor, a_maior, alunos[MAX];\nPassagem de parâmetros nas chamadas de funções também não se alteram:\n//var. recebe o retorno\na_maior = calcula_maior_nota(alunos, n);\n\n//chamada armazena o resultado em parametros de saida\ncalcula_menor_maior_nota(alunos, n, a_menor, a_maior);"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#lista-de-presença",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#lista-de-presença",
+    "title": "Tipos Estruturados II",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230622"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-1",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-1",
+    "title": "Tipos Estruturados II",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nReimplemente o exercício do início desta aula com uma função que imprime todos os alunos abaixo da média. Ou seja, a função deve receber como parâmetro de entrada um vetor do tipo Aluno (além do seu tamanho)."
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-1-1",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-1-1",
+    "title": "Tipos Estruturados II",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nSolução\nconst int STRMAX = 21;\n\nstruct Aluno{\n  char nome[STRMAX];\n  float nota;\n};\n\nvoid imprime_alunos_abaixo_media(Aluno v[], int n){\n  int i;\n  float media = 0.0;\n\n  //Calcula a média dos alunos\n  for(i = 0; i < n; i++){\n    media += v[i].nota;\n  }\n  media /= n;\n\n  //Imprime os alunos abaixo da média\n  for(i = 0; i < n; i++){\n    if(v[i].nota < media){\n      cout << v[i].nome\n           << \" esta abaixo da media\\n\";\n    }\n  }\n}\n\nint main(){\n  int n = 5, i;\n  Aluno alunos[n];\n\n  //Lê do usuário os dados dos alunos\n  for(i = 0; i < n; i++){\n    cout << \"Insira o nome do aluno: \";\n    cin.getline(alunos[i].nome, STRMAX);\n    cout << \"Insira a nota do aluno: \";\n    cin >> alunos[i].nota;\n    cin.ignore();\n  }\n\n  imprime_alunos_abaixo_media(alunos, n);\n\n  return 0;\n}"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipo-estruturado-para-uma-matriz",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipo-estruturado-para-uma-matriz",
+    "title": "Tipos Estruturados II",
+    "section": "Tipo Estruturado para uma Matriz",
+    "text": "Tipo Estruturado para uma Matriz\n\nGrande vantagem de tipos estruturados: tipo estruturado Matriz reduz a quantidade de parâmetros das funções\nPara isto, o tipo Matriz deve ter como campos:\n\nO número de linhas da matriz\nO número de colunas da matriz\nUma matriz de números inteiros, caracteres ou números reais, conforme pede o problema, alocada com espaço suficiente"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipo-estruturado-para-uma-matriz-1",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#tipo-estruturado-para-uma-matriz-1",
+    "title": "Tipos Estruturados II",
+    "section": "Tipo Estruturado para uma Matriz",
+    "text": "Tipo Estruturado para uma Matriz\nAssim, uma função que lê uma matriz de números inteiros, que tem como assinatura:\nvoid le_mat(int mat[][MAX], int nl, int nc);\nPassa a ter uma assinatura mais compacta dada por:\nvoid le_mat(Matriz& mat);\n(Note o parâmetro passado por referência)."
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-2",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-2",
+    "title": "Tipos Estruturados II",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nDefina um tipo estruturado Matriz, que deve armazenar uma matriz de números inteiros, o seu número de linhas e o seu número de colunas.\nEm seguida, implemente uma função que receba como parâmetro duas matrizes e retorne a soma matricial.\nImplemente também a função main, de modo que o usuário possa inserir os dados das matrizes e testar o programa."
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-2-1",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-2-1",
+    "title": "Tipos Estruturados II",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nSolução\nconst int MAX = 21;\n\nstruct Matriz{\n  int nl;\n  int nc;\n  int numeros[MAX][MAX];\n};\n\nvoid le_mat(Matriz& m){\n  int i, j;\n\n  cin >> m.nl;\n  cin >> m.nc;\n  for(i = 0; i < m.nl; i++){\n    for(j = 0; j < m.nc; j++){\n      cin >> m.numeros[i][j];\n    }\n  }\n}\n\nvoid imprime_mat(Matriz m){\n  int i, j;\n\n  for(i = 0; i < m.nl; i++){\n    for(j = 0; j < m.nc; j++){\n      cout << m.numeros[i][j] << \" \";\n    }\n    cout << endl;\n  }\n}\n\nMatriz soma_matrizes(Matriz m1, Matriz m2){\n  int i, j;\n  Matriz r;\n\n  r.nl = m1.nl;\n  r.nc = m1.nc;\n  for(i = 0; i < m1.nl; i++){\n    for(j = 0; j < m1.nc; j++){\n      r.numeros[i][j] = m1.numeros[i][j] + m2.numeros[i][j];\n    }\n  }\n\n  return r;\n}\n\nint main(){\n  Matriz mat1, mat2, mat_soma;\n\n  cout << \"Insira a matriz 1:\\n\";\n  le_mat(mat1);\n  cout << \"Insira a matriz 2:\\n\";\n  le_mat(mat2);\n\n  mat_soma = soma_matrizes(mat1, mat2);\n\n  imprime_mat(mat_soma);\n\n  return 0;\n}"
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-3",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#exercício-3",
+    "title": "Tipos Estruturados II",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nImplemente uma função que calcula o produto matricial. A função deve ter dois parâmetros de entrada do tipo Matriz e retornar uma Matriz como resultado."
+  },
+  {
+    "objectID": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#sumário",
+    "href": "slides/19-tipos_estruturados2/19-tipos_estruturados2.html#sumário",
+    "title": "Tipos Estruturados II",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nUso de tipos estruturados em funções\nExercícios"
   }
 ]
