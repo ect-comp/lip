@@ -114,7 +114,7 @@
 - Vetores de variáveis de tipos estruturados
 - Exercícios
 
-## [22/06 - Tipos Estruturados II](./19-tipos_estruturados2/19-tipos_estruturados2.html)
+## [22/06 - Tipos Estruturados II](./slides/19-tipos_estruturados2/19-tipos_estruturados2.html)
 - Uso de tipos estruturados em funções
 - Exercícios
 
