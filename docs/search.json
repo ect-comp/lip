@@ -4226,5 +4226,257 @@
     "title": "Tipos Estruturados II",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje:\n\nUso de tipos estruturados em funções\nExercícios"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#nas-aulas-anteriores",
+    "href": "slides/20-ordenacao/20-ordenacao.html#nas-aulas-anteriores",
+    "title": "Ordenação",
+    "section": "Nas Aulas Anteriores",
+    "text": "Nas Aulas Anteriores\n\nTipos estruturados"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#objetivo-da-aula",
+    "href": "slides/20-ordenacao/20-ordenacao.html#objetivo-da-aula",
+    "title": "Ordenação",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\n\nApresentar uma solução para ordenação de vetores"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\n\nO problema de ordenação possui diversas soluções\nOrdenação pode fazer parte de soluções de programas maiores"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-1",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-1",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nIdeia do Algoritmo\nOrdenar vetor de números inteiros acima em ordem crescente:\n\n\n\n\n\n\nPercorra cada elemento do vetor"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-2",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-2",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nIdeia do Algoritmo\nOrdenar vetor de números inteiros acima em ordem crescente:\n\n\n\n\n\n\nChame o elemento na posição atual de chave, e compare-o com todos"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-3",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-3",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nIdeia do Algoritmo\nOrdenar vetor de números inteiros acima em ordem crescente:\n\n\n\n\n\n\nRealize uma troca entre o elemento comparado e o elemento chave caso este último seja maior"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-4",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-4",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 1/11\n\n\n\n\n\n\nElemento chave: v[0] = 5\nElemento comparado: v[1] = 3\nv[0] > v[1] \\rightarrow verdadeiro, trocar v[0] com v[1]\nIr para o próximo elemento a ser comparado"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-5",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-5",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 2/11\n\n\n\n\n\n\nElemento chave: v[0] = 3\nElemento comparado: v[2] = -1\nv[0] > v[2] \\rightarrow verdadeiro, trocar v[0] com v[2]\nIr para o próximo elemento a ser comparado"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-6",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-6",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 3/11\n\n\n\n\n\n\nElemento chave: v[0] = -1\nElemento comparado: v[3] = 8\nv[0] > v[3] \\rightarrow falso,\nIr para o próximo elemento a ser comparado"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-7",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-7",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 4/11\n\n\n\n\n\n\nElemento chave: v[0] = -1\nElemento comparado: v[4] = 4\nv[0] > v[4] \\rightarrow falso,\nFim das comparações com o elemento chave atual: ir para o próximo elemento chave e recomeçar comparações com todos depois dele"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-8",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-8",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 5/11\n\n\n\n\n\n\nElemento chave: v[1] = 5\nElemento comparado: v[2] = 3\nv[1] > v[2] \\rightarrow verdadeiro, trocar v[1] com v[2]\nIr para o próximo elemento a ser comparado"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-9",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-9",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 6/11\n\n\n\n\n\n\nElemento chave: v[1] = 3\nElemento comparado: v[3] = 8\nv[1] > v[3] \\rightarrow falso,\nIr para o próximo elemento a ser comparado"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-10",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-10",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 7/11\n\n\n\n\n\n\nElemento chave: v[1] = 3\nElemento comparado: v[4] = 4\nv[1] > v[4] \\rightarrow falso,\nFim das comparações com o elemento chave atual: ir para o próximo elemento chave e recomeçar comparações com todos depois dele"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-11",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-11",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 8/11\n\n\n\n\n\n\nElemento chave: v[2] = 5\nElemento comparado: v[3] = 8\nv[2] > v[3] \\rightarrow falso,\nIr para o próximo elemento a ser comparado"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-12",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-12",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 9/11\n\n\n\n\n\n\nElemento chave: v[2] = 5\nElemento comparado: v[4] = 4\nv[2] > v[4] \\rightarrow verdadeiro, trocar v[2] com v[4]\nFim das comparações com o elemento chave atual: ir para o próximo elemento chave e recomeçar comparações com todos depois dele"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-13",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-13",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 10/11\n\n\n\n\n\n\nElemento chave: v[3] = 8\nElemento comparado: v[4] = 5\nv[3] > v[4] \\rightarrow verdadeiro, trocar v[3] com v[4]\nFim das comparações com o elemento chave atual. O último elemento chave não possui nenhum elemento após ele."
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-14",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-14",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nExemplo - Vetor de Inteiros 11/11\n\n\n\n\n\n\nTodas as comparações realizadas\nO vetor está ordenado"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-15",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-15",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nNa solução apresentada, o vetor é um parâmetro de entrada e saída"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-16",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-16",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nO elemento chave é v[i]\nO elemento comparado é v[j]\nÉ necessário um laço que percorra os índices 0,1,...,n-2, para cada elemento atual: for(i = 0; i < n-1; i++)"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-17",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-17",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nÉ necessário um laço que passe por cada elemento a ser comparado que está depois do elemento atual: for(j = i+1; j < n; j++)"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-18",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-18",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nElementos na parte ordenada do vetor não devem ser comparados: isto deixará o algoritmo incorreto"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-19",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-19",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nFora isso, basta incluir as operações de comparação e troca entre elementos"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#lista-de-presença",
+    "href": "slides/20-ordenacao/20-ordenacao.html#lista-de-presença",
+    "title": "Ordenação",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230509"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#exercício",
+    "href": "slides/20-ordenacao/20-ordenacao.html#exercício",
+    "title": "Ordenação",
+    "section": "Exercício",
+    "text": "Exercício\nUtilizando um tipo estruturado Aluno, que deve possuir nome, matrícula e nota, implemente uma função que ordene um vetor com n alunos por ordem crescente de nota.\nImplemente também a função main, de modo que o usuário possa inserir a quantidade de alunos n, o nome, matrícula e a nota para cada um dos n alunos e então visualizar na tela os dados de todos os alunos ordenados por nota."
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-20",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-20",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nCódigo da Função - Ordem Crescente\nvoid ordena_crescente(int v[], int n){\n    int i, j, aux;\n    for(i = 0; i < n-1; i++){\n        for(j = i+1; j < n; j++){\n            if(v[i] > v[j]){\n                aux = v[i];\n                v[i] = v[j];\n                v[j] = aux;\n            }\n        }\n    }\n}"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-21",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-21",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nFunção main\nint main(){\n    int n, i;\n    cin >> n;\n    int v[n];\n    for(i = 0; i < n; i++){\n        cin >> v[i];\n    }\n    ordena_crescente(v, n);\n    for(i = 0; i < n; i++){\n        cout << v[i] << \" \";\n    }\n    cout << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#outros-exercícios",
+    "href": "slides/20-ordenacao/20-ordenacao.html#outros-exercícios",
+    "title": "Ordenação",
+    "section": "Outros Exercícios",
+    "text": "Outros Exercícios\n\nE quanto à ordenação por matrícula?\nE quanto à ordenação por ordem decrescente?\nE quanto à ordenação por ordem alfabética?"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-22",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-22",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nSolução - Ordem Crescente de Notas\nvoid ordena_crescente(Aluno v[], int n){\n    int i, j;\n    Aluno aux;\n    for(i = 0; i < n-1; i++){\n        for(j = i+1; j < n; j++){\n            if(v[i].nota > v[j].nota){\n                aux = v[i];\n                v[i] = v[j];\n                v[j] = aux;\n            }\n        }\n    }\n}"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-23",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-23",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nSolução - Função main\nint main(){\n    int n, i;\n    cin >> n;\n    Aluno alunos[n];\n    for(i = 0; i < n; i++){\n        cin.ignore();\n        cin.getline(alunos[i].nome, MAXNOME);\n        cin >> alunos[i].matricula;\n        cin >> alunos[i].nota;\n    }\n    ordena_crescente(alunos, n);\n    for(i = 0; i < n; i++){\n        cout << alunos[i].nome << \" \"\n             << alunos[i].matricula << \" \"\n             << alunos[i].nota << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#sumário",
+    "href": "slides/20-ordenacao/20-ordenacao.html#sumário",
+    "title": "Ordenação",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nOrdenação\nOrdenação com tipos estruturados\n\nOrdem crescente/decrescente de campos numéricos\nOrdem alfabética de campos string"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch",
+    "title": "Ordenação",
+    "section": "Ordenação {.nostretch}",
+    "text": "Ordenação {.nostretch}\nIdeia do Algoritmo\n\n\nOrdenar vetor de números inteiros acima em ordem crescente:\n\nChame o elemento na posição atual de chave, e compare-o com todos"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch-1",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch-1",
+    "title": "Ordenação",
+    "section": "Ordenação {.nostretch}",
+    "text": "Ordenação {.nostretch}\nIdeia do Algoritmo\n\n\nOrdenar vetor de números inteiros acima em ordem crescente:\n\nRealize uma troca entre o elemento comparado e o elemento chave caso este último seja maior"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch-2",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch-2",
+    "title": "Ordenação",
+    "section": "Ordenação {.nostretch}",
+    "text": "Ordenação {.nostretch}\nIdeia do Algoritmo\n\n\nOrdenar vetor de números inteiros acima em ordem crescente:\n\nRealize uma troca entre o elemento comparado e o elemento chave caso este último seja maior"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch-auto-animatetrue",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch-auto-animatetrue",
+    "title": "Ordenação",
+    "section": "Ordenação {.nostretch, auto-animate=true}",
+    "text": "Ordenação {.nostretch, auto-animate=true}\nIdeia do Algoritmo\n\n\nOrdenar vetor de números inteiros acima em ordem crescente:\n\nPercorra cada elemento do vetor"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-24",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-24",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nOrdem Alfabética\nFunção strcmp - duas strings como parâmetros: - Retorna um número negativo se a string do primeiro parâmetros for “menor” - Retorna um número positivo se a string do primeiro parâmetros for “maior” - Retorna 0 se as strings são iguais"
+  },
+  {
+    "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-25",
+    "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-25",
+    "title": "Ordenação",
+    "section": "Ordenação",
+    "text": "Ordenação\nOrdem Alfabética\nEntão, para ordenar alfabeticamente:\n\nstrcmp(alunos[i].nome, alunos[j].nome) retorna um número positivo se o nome do aluno i for alfabeticamente maior do que o nome do aluno j"
   }
 ]

@@ -118,15 +118,15 @@
 - Uso de tipos estruturados em funções
 - Exercícios
 
-<!--
-
-## [24/11 - Strings - Exercícios](./exercicios_strings)
-
-## [06/12 - Ordenação](./20-ordenacao/)
+## [27/06 - Ordenação](./slides/20-ordenacao/20-ordenacao.html)
 - Ordenação
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
+
+<!--
+
+## [24/11 - Strings - Exercícios](./exercicios_strings)
 
 ## [08/12 - Tipos Estruturados - Exercícios](./exercicios_tipos_estruturados)
 
