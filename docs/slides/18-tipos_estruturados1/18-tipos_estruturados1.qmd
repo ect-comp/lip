@@ -470,7 +470,7 @@ int main(){
 
 ::: {.column width="60%"}
 
-![](img/struct_array_pair.png){width=100% fig-align="center"}
+![](img/struct_example.png){width=100% fig-align="center"}
 
 :::
 
