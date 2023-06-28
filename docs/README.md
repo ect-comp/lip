@@ -124,11 +124,11 @@
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
 
+## [29/06 - Tipos Estruturados - Exercícios](./slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html)
+
 <!--
 
 ## [24/11 - Strings - Exercícios](./exercicios_strings)
-
-## [08/12 - Tipos Estruturados - Exercícios](./exercicios_tipos_estruturados)
 
 ## [13/12 - Aplicações com Matrizes de Relações](./21-aplicacoes)
 

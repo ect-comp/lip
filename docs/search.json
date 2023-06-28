@@ -4478,5 +4478,82 @@
     "title": "Ordenação",
     "section": "Ordenação",
     "text": "Ordenação\nOrdem Alfabética\nEntão, para ordenar alfabeticamente:\n\nstrcmp(alunos[i].nome, alunos[j].nome) retorna um número positivo se o nome do aluno i for alfabeticamente maior do que o nome do aluno j"
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#contexto-treinos-de-corrida",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#contexto-treinos-de-corrida",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Contexto: Treinos de Corrida",
+    "text": "Contexto: Treinos de Corrida\nImagine um aplicativo que registra treinos de corrida, ou seja, o dia, distância, tempo e ritmo que uma pessoa correu."
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#contexto-treinos-de-corrida-1",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#contexto-treinos-de-corrida-1",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Contexto: Treinos de Corrida",
+    "text": "Contexto: Treinos de Corrida"
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-1",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-1",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nTreinos de Corrida\nConsidere um treino de corrida. Ele contém:\n\nUma data\nUma duração (horas, minutos e segundos)\nUma distância dada em quilômetros\nUm pace (ritmo por quilômetro), dado em minutos e segundos\n\nTendo em mente que você vai precisar ordenar por data, duração e pace…"
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-1-1",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-1-1",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nTreinos de Corrida\nImplemente os tipos estruturados:\n\nData, com os campos dia, mes e ano\nDuracao, com os campos hor, min e seg\nPace, com os campos min e seg\nCorrida, com os campos data, duracao, pace e distancia"
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-2",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-2",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nOrdenando Datas\nAgora, divida o seu programa, se concentrando em implementar uma função para ordenar um vetor de Data, da mais antiga para a mais recente.\nComo você pode implementar esta função?\nObserve que é para ordenar um vetor de Data e não de Corrida"
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#lista-de-presença",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#lista-de-presença",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230629"
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-3",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-3",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nOrdenando Datas - Função Main\nImplemente a função main para testar a função do exercício anterior:\n\nDeve ler uma quantidade n de datas\nDeve ler o dia, mês e ano de n datas\nChamar a função de ordenar por datas\nExibir o resultado na tela"
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-4",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-4",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Exercício 4",
+    "text": "Exercício 4\nLendo Dados de Corrida\nImplemente um função que receba uma Corrida como parâmetro de entrada e saída.\nA função deve ler, na ordem:\n\nA data da corrida (dia, mês e ano)\nA duração da corrida (hora, min. e seg.)\nA distância da corrida (em Km)\n\nFaça a função main exibir os dados lidos em um formato adequado."
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-5",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-5",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Exercício 5",
+    "text": "Exercício 5\nCalculando o Pace\n\nO pace é dado na quantidade de minutos e segundos que uma pessoa leva para percorrer 1 Km\n\nEx: se uma pessoa corre 10Km em 1h 03 min e 35 seg, o pace desta pessoa foi de 6:22/Km (arredondando para cima)."
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-5-1",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-5-1",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Exercício 5",
+    "text": "Exercício 5\nCalculando o Pace\nImplemente um programa que calcule o pace dada uma duração.\nO pace é calculado por:\n\nTransformando a duração em segundos/Km\nO quociente da divisão da transformação por 60 é a quantidade de minutos do pace\nO resto da divisão da transformação por 60 é a quantidade de segundos do pace"
+  },
+  {
+    "objectID": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-completo",
+    "href": "slides_antigos/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-completo",
+    "title": "Tipos Estruturados e Ordenação - Exercícios",
+    "section": "Exercício Completo",
+    "text": "Exercício Completo\nImplemente funções para:\n\nOrdenar um vetor de Corrida por duração\nOrdenar um vetor de Corrida por pace\n\nNa função main, implemente um menu, a partir do qual o usuário pode escolher como quer visualizar suas corridas (opção 0 ordena por data, 1 por duração e 2 por pace).\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
