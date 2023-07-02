@@ -4555,5 +4555,110 @@
     "title": "Tipos Estruturados e Ordenação - Exercícios",
     "section": "Exercício Completo",
     "text": "Exercício Completo\nImplemente funções para:\n\nOrdenar um vetor de Corrida por duração\nOrdenar um vetor de Corrida por pace\n\nNa função main, implemente um menu, a partir do qual o usuário pode escolher como quer visualizar suas corridas (opção 0 ordena por data, 1 por duração e 2 por pace).\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#nas-aulas-anteriores",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#nas-aulas-anteriores",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Nas Aulas Anteriores",
+    "text": "Nas Aulas Anteriores\nTudo :)\n\nFunções\nVetores e matrizes\nStrings\nTipos estruturados"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#objetivo-da-aula",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#objetivo-da-aula",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\n\nMostrar aplicações do conteúdo da disciplina em problemas contendo matrizes de relações"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#matriz-de-relações",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#matriz-de-relações",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Matriz de Relações",
+    "text": "Matriz de Relações\nMatriz que armazena as relações entre coisas do mundo real:\n\nAmizades entre pessoas (redes sociais)\nDistâncias entre cidades\nPartidas entre times de futebol\netc."
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#matriz-de-relações-1",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#matriz-de-relações-1",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Matriz de Relações",
+    "text": "Matriz de Relações\nExemplo: Voos entre Cidades"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#matriz-de-relações-2",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#matriz-de-relações-2",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Matriz de Relações",
+    "text": "Matriz de Relações\nExemplo: Voos entre Cidades\nA matriz armazena quantos voos diários diretos saem de uma cidade para outra:"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#matriz-de-relações-3",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#matriz-de-relações-3",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Matriz de Relações",
+    "text": "Matriz de Relações\nExemplo: Voos entre Cidades\nPara a relação na linha i e coluna j:\n\nOrigem é a cidade no vetor na posição i\nDestino é a cidade no vetor na posição j\nEx.: na posição [0][2]: voos que saem de Natal para o São Paulo"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Aplicações Matriz de Relações",
+    "text": "Aplicações Matriz de Relações\nExemplo: Voos entre Cidades\nPossíveis perguntas:\n\nExiste voo entre cidade_a e cidade_b?\nDe qual cidade saem mais voos?\nQual cidade recebe mais voos?\nExiste voo entre cidade_a e cidade_b, com apenas uma conexão?\nÉ possível partir da cidade_a e chegar na cidade_b, independentemente do número de voos?"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-1",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-1",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Aplicações Matriz de Relações",
+    "text": "Aplicações Matriz de Relações\nExemplo: Voos entre Cidades\nPara começar a responder a estas perguntas, o programa deve ler os dados das cidades no seguinte formato:\n6\nNatal\n90000\nCampo Grande\n916000\nSao Paulo\n12400000\nRio de Janeiro\n6750000\nPorto Alegre\n1500000\nManaus\n2000000"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-2",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-2",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Aplicações Matriz de Relações",
+    "text": "Aplicações Matriz de Relações\nExemplo: Voos entre Cidades\nApós ler os dados das cidades, os dados da matriz de relações devem ser lidos:\n-1  0  2  2  1  1\n 0 -1  3  2  1  0\n 3  2 -1  5  4  4\n 2  1  3 -1  3  2\n 1  0  3  3 -1  0\n 1  0  2  2  0 -1"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#lista-de-presença",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#lista-de-presença",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230706"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-3",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-3",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Aplicações Matriz de Relações",
+    "text": "Aplicações Matriz de Relações\nExemplo: Voos entre Cidades\n\nExiste voo entre cidade_a e cidade_b?\n\nPrograma:\n\nLer os nomes das duas cidades\nObter a posição no vetor i da cidade_a e j da cidade_b\nObter valor na matriz na posição [i][j]: existe voo se este valor for > 0"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-4",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-4",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Aplicações Matriz de Relações",
+    "text": "Aplicações Matriz de Relações\nExemplo: Voos entre Cidades\n\n\n\n\n\n\nNeste ponto do curso, você deve ser capaz de pensar por conta própria em:\n\nQue tipos estruturados o seu programa deve ter\nQue funções o seu programa deve ter"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-5",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-5",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Aplicações Matriz de Relações",
+    "text": "Aplicações Matriz de Relações\nSolução: Voos entre Cidades\n#include <iostream>\n#include <cstring>\n\nusing namespace std;\n\nconst int MAX = 100;\nconst int SMAX = 31;\n\nstruct Cidade{\n    char nome[SMAX];\n    int populacao;\n};\n\nstruct Matriz{\n    int nl;\n    int nc;\n    int dados[MAX][MAX];\n};\n\nvoid le_cidades(Cidade v[], int &n, Matriz &m){\n    int i, j;\n\n    cin >> n;\n\n    for(i = 0; i < n; i++){\n        cin.ignore();\n        cin.getline(v[i].nome, SMAX);\n        cin >> v[i].populacao;\n    }\n\n    m.nl = n;\n    m.nc = n;\n    for(i = 0; i < m.nl; i++){\n        for(j = 0; j < m.nc; j++){\n            cin >> m.dados[i][j];\n        }\n    }\n}\n\nvoid imprime_cidades(Cidade v[], int n){\n    int i;\n\n    for(i = 0; i < n; i++){\n        cout << v[i].nome << endl;\n        cout << v[i].populacao << endl;\n    }\n}\n\nvoid imprime_relacoes(Matriz m){\n    int i, j;\n\n    for(i = 0; i < m.nl; i++){\n        for(j = 0; j < m.nc; j++){\n            cout << m.dados[i][j] << \" \";\n        }\n        cout << endl;\n    }\n}\n\nint acha_indice(Cidade v[], int n, char nome[]){\n    int i;\n\n    for(i = 0; i < n; i++){\n        if(strcmp(v[i].nome, nome) == 0){\n            return i;\n        }\n    }\n    return -1;\n}\n\nint voos_diretos(Cidade v[], int n, Matriz relacoes,\n                 Cidade orig, Cidade dest){\n    int i, j;\n\n    i = acha_indice(v, n, orig.nome);\n    j = acha_indice(v, n, dest.nome);\n\n    return relacoes.dados[i][j];\n}\n\nint main(){\n\n    Cidade v[MAX], p, q;\n    Matriz cidades;\n    int i, n;\n\n    le_cidades(v, n, cidades);\n\n    imprime_cidades(v, n);\n    imprime_relacoes(cidades);\n\n    cin.ignore(); //cin foi usado em le_cidades\n    cout << \"Insira a cidade de origem:\\n\";\n    cin.getline(p.nome, SMAX);\n    cout << \"Insira a cidade de destino:\\n\";\n    cin.getline(q.nome, SMAX);\n\n    cout << \"Voos diretos entre \" << p.nome\n         << \" e \" << q.nome << \": \"\n         << voos_diretos(v, n, cidades, p, q)\n         << endl; \n\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-6",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#aplicações-matriz-de-relações-6",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Aplicações Matriz de Relações",
+    "text": "Aplicações Matriz de Relações\nExercícios\nImplementar programas para responder:\n\nDe qual cidade saem mais voos?\nQual cidade recebe mais voos?\nExiste voo entre cidade_a e cidade_b, com apenas uma conexão?\nÉ possível partir da cidade_a e chegar na cidade_b, independentemente do número de voos? \\rightarrow problema estudado em Estrutura de Dados :)"
+  },
+  {
+    "objectID": "slides/21-aplicacoes/21-aplicacoes.html#sumário",
+    "href": "slides/21-aplicacoes/21-aplicacoes.html#sumário",
+    "title": "Aplicações com Matriz de Relações",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nAplicações com matrizes de relações\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]

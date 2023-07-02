@@ -126,11 +126,11 @@
 
 ## [29/06 - Tipos Estruturados - Exercícios](./slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html)
 
+## [07/06 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
+
 <!--
 
 ## [24/11 - Strings - Exercícios](./exercicios_strings)
-
-## [13/12 - Aplicações com Matrizes de Relações](./21-aplicacoes)
 
 ## [15/12 - Revisão - Unidade 3](./revisao_unidade3/)
 
