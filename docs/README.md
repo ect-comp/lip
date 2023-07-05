@@ -126,7 +126,7 @@
 
 ## [29/06 - Tipos Estruturados - Exercícios](./slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html)
 
-## [07/06 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
+## [06/07 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
 
 <!--
 
