@@ -1,0 +1,123 @@
+---
+title: "Aplicações - Exercícios"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Contexto: Rede Social
+
+Em uma **rede social**, cada `Pessoa` possui:
+
+- Nome
+- Cidade
+- Idade
+
+---
+
+## Exercício 1
+
+Ler e imprimir todos os dados de `n` pessoas:
+
+```
+6
+maria helena
+rio de janeiro
+20
+cecilia ramos
+natal
+25
+ricardo maia
+sao paulo
+20
+jose marins
+sao paulo
+20
+marta peres
+natal
+40
+joaquim silva
+rio de janeiro
+33
+```
+
+---
+
+## Matriz de Relações {.nostretch}
+
+A relação entre as pessoas da rede social é dada
+pela matriz abaixo:
+
+![](img/pessoas.png){width=30% fig-align="center"}
+
+- Na posição `i,j` da matriz, encontra-se a quantidade
+  de likes que a pessoa `i` do vetor deu em postagens
+  da pessoa `j`.
+- Se a posição `i,j` é igual a -1, as duas pessoas
+  não são amigas
+
+---
+
+## Exercício 2
+
+Ler e imprimir a matriz de relações:
+
+```
+ 2  0  1  5  -1  8
+ 5  4  3 -1   0  9
+ 0 10  0  4  -1  7
+ 8 -1  8  9   9 10
+-1  2 -1 10   0 -1
+ 7  8  3  4  -1  1
+```
+
+---
+
+## Exercício 3
+
+Exibir o nome de todas as pessoas que curtem muito
+as próprias postagens. Uma pessoa curte muito
+suas próprias postagens quando o número de *likes*
+nela mesma é maior ou igual a 7.
+
+---
+
+## Exercício 4
+
+Ler o nome de uma pessoa e exibir o total de curtidas
+que esta pessoa deu em amigos de mesma idade.
+
+---
+
+## Exemplo de Execução do Programa
+
+```
+Pessoa 0
+  Nome: maria helena
+  Cidade: rio de janeiro
+  Idade: 20
+Pessoa 1
+  Nome: cecilia ramos
+  Cidade: natal
+  Idade: 25
+Pessoa 2
+  Nome: ricardo maia
+  Cidade: sao paulo
+  Idade: 20
+Pessoa 3
+  Nome: jose marins
+  Cidade: sao paulo
+  Idade: 20
+Pessoa 4
+  Nome: marta peres
+  Cidade: natal
+  Idade: 40
+Pessoa 5
+  Nome: joaquim silva
+  Cidade: rio de janeiro
+  Idade: 33
+Insira o nome da primeira pessoa: maria helena
+jose marins curte muito os proprios posts
+maria helena deu 6 curtidas em amigos da mesma idade
+```

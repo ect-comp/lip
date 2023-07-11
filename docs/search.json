@@ -4660,5 +4660,54 @@
     "title": "Aplicações com Matriz de Relações",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje:\n\nAplicações com matrizes de relações\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/exercicios_relacoes/exercicios_relacoes.html#contexto-rede-social",
+    "href": "slides/exercicios_relacoes/exercicios_relacoes.html#contexto-rede-social",
+    "title": "Aplicações - Exercícios",
+    "section": "Contexto: Rede Social",
+    "text": "Contexto: Rede Social\nEm uma rede social, cada Pessoa possui:\n\nNome\nCidade\nIdade"
+  },
+  {
+    "objectID": "slides/exercicios_relacoes/exercicios_relacoes.html#exercício-1",
+    "href": "slides/exercicios_relacoes/exercicios_relacoes.html#exercício-1",
+    "title": "Aplicações - Exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nLer e imprimir todos os dados de n pessoas:\n6\nmaria helena\nrio de janeiro\n20\ncecilia ramos\nnatal\n25\nricardo maia\nsao paulo\n20\njose marins\nsao paulo\n20\nmarta peres\nnatal\n40\njoaquim silva\nrio de janeiro\n33"
+  },
+  {
+    "objectID": "slides/exercicios_relacoes/exercicios_relacoes.html#matriz-de-relações",
+    "href": "slides/exercicios_relacoes/exercicios_relacoes.html#matriz-de-relações",
+    "title": "Aplicações - Exercícios",
+    "section": "Matriz de Relações",
+    "text": "Matriz de Relações\nA relação entre as pessoas da rede social é dada pela matriz abaixo:\n\n\n\n\n\n\nNa posição i,j da matriz, encontra-se a quantidade de likes que a pessoa i do vetor deu em postagens da pessoa j.\nSe a posição i,j é igual a -1, as duas pessoas não são amigas"
+  },
+  {
+    "objectID": "slides/exercicios_relacoes/exercicios_relacoes.html#exercício-2",
+    "href": "slides/exercicios_relacoes/exercicios_relacoes.html#exercício-2",
+    "title": "Aplicações - Exercícios",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nLer e imprimir a matriz de relações:\n 2  0  1  5  -1  8\n 5  4  3 -1   0  9\n 0 10  0  4  -1  7\n 8 -1  8  9   9 10\n-1  2 -1 10   0 -1\n 7  8  3  4  -1  1"
+  },
+  {
+    "objectID": "slides/exercicios_relacoes/exercicios_relacoes.html#exercício-3",
+    "href": "slides/exercicios_relacoes/exercicios_relacoes.html#exercício-3",
+    "title": "Aplicações - Exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nExibir o nome de todas as pessoas que curtem muito as próprias postagens. Uma pessoa curte muito suas próprias postagens quando o número de likes nela mesma é maior ou igual a 7."
+  },
+  {
+    "objectID": "slides/exercicios_relacoes/exercicios_relacoes.html#exercício-4",
+    "href": "slides/exercicios_relacoes/exercicios_relacoes.html#exercício-4",
+    "title": "Aplicações - Exercícios",
+    "section": "Exercício 4",
+    "text": "Exercício 4\nLer o nome de uma pessoa e exibir o total de curtidas que esta pessoa deu em amigos de mesma idade."
+  },
+  {
+    "objectID": "slides/exercicios_relacoes/exercicios_relacoes.html#exemplo-de-execução-do-programa",
+    "href": "slides/exercicios_relacoes/exercicios_relacoes.html#exemplo-de-execução-do-programa",
+    "title": "Aplicações - Exercícios",
+    "section": "Exemplo de Execução do Programa",
+    "text": "Exemplo de Execução do Programa\nPessoa 0\n  Nome: maria helena\n  Cidade: rio de janeiro\n  Idade: 20\nPessoa 1\n  Nome: cecilia ramos\n  Cidade: natal\n  Idade: 25\nPessoa 2\n  Nome: ricardo maia\n  Cidade: sao paulo\n  Idade: 20\nPessoa 3\n  Nome: jose marins\n  Cidade: sao paulo\n  Idade: 20\nPessoa 4\n  Nome: marta peres\n  Cidade: natal\n  Idade: 40\nPessoa 5\n  Nome: joaquim silva\n  Cidade: rio de janeiro\n  Idade: 33\nInsira o nome da primeira pessoa: maria helena\njose marins curte muito os proprios posts\nmaria helena deu 6 curtidas em amigos da mesma idade\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]

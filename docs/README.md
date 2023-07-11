@@ -128,12 +128,4 @@
 
 ## [06/07 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
 
-<!--
-
-## [24/11 - Strings - Exercícios](./exercicios_strings)
-
-## [15/12 - Revisão - Unidade 3](./revisao_unidade3/)
-
-## [08/06 - Funções e Matrizes - Exercícios](./15a-funcoes_e_matrizes_exercicios)
-
--->
+## [11/07 - Matrizes de Relações - Exercícios](./slides/exercicios_relacoes/exercicios_relacoes.html)
