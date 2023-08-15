@@ -1,14 +1,15 @@
 # Slides das Aulas
 
-## [07/03 - Apresentação](./slides/01-intro/01-intro.html)
+## [15/08 - Apresentação](./slides/01-intro/01-intro.html)
  - Objetivos
  - Metodologia
  - Bibliografia
 
-## [09/03 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
+## [17/08 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
  - Variáveis e tipos
- - Operadores e expressões
  - Entrada e saída
+
+<!--
 
 ## [14/03 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
  - Operadores em C++
@@ -129,3 +130,5 @@
 ## [06/07 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
 
 ## [11/07 - Matrizes de Relações - Exercícios](./slides/exercicios_relacoes/exercicios_relacoes.html)
+
+-->

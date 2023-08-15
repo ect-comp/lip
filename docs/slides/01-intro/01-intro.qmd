@@ -12,7 +12,8 @@ Perguntas pertinentes sobre Linguagem de Programação (LiP) na ECT:
 
 - Por que é tão importante?
 - Por que 90h?
-- Qual a relação com o curso de Bacharelado em Ciências e Tecnologia?
+- Qual a relação com o curso de Bacharelado em Ciências e Tecnologia
+  e com as engenharias?
 ---
 
 ## Linguagem de Programação
@@ -46,19 +47,20 @@ competências e habilidades você acha que estão relacionadas com o curso de Li
 ---
 
 ## Apresentação
+
 - Prof. Bruno Silva
 - Atendimento:
     - Via email: bruno.silva@ect.ufrn.br
-    - Via [Discord](https://discord.gg/JtSUgFdmxd)
-    - Horário para a turma: terças e quintas, das 9:30 às 10:30
+    - Via [Discord](https://discord.gg/hZ3VwKwV)
 - Áreas de interesse:
     - Processamento de imagens e visão computacional
     - Inteligência artificial e robótica
 ---
 
 ## Sobre a Disciplina
-- Aulas teóricas: terças e quintas, de 10:50 às 12:30,
-  Auditório F da ECT
+
+- Aulas teóricas: terças e quintas, de 20:35 às 22:00,
+  Auditório E da ECT
 - Carga horária: 90 horas (30h de laboratório)
 - Metodologia:
     - Aulas expositivas com slides digitais
@@ -67,15 +69,17 @@ competências e habilidades você acha que estão relacionadas com o curso de Li
 ---
 
 ## Horários dos Laboratórios
-- Subturma 1A: Terça, 16:50 às 18:30, Lab. 3 (Prof. Bruno)
-- Subturma 1B: Quarta, 14:55 às 16:35, Lab. 3 (Prof. Vidal)
-- Subturma 1C: Quarta, 16:50 às 18:30, Lab. 3 (Prof. Vidal)
+
+- Subturma 4A: Quarta, 13:00 às 14:40, Lab. 1 (Prof. Sérgio)
+- Subturma 4B: Quarta, 14:55 às 16:35, Lab. 1 (Prof. Sérgio)
+- Subturma 4C: Sábado, 16:50 às 18:30, Lab. 3 (Prof. Allan)
 
 As atividades práticas serão realizadas no
 [Multiprova](https://multiprova.ufrn.br)
 ---
 
 ## Avaliações
+
 - Práticas semanais no laboratório (30%)
 - Prova prática em cada unidade (70%)
 - Presenças serão registradas por chamada
@@ -83,6 +87,7 @@ As atividades práticas serão realizadas no
 ---
 
 ## Observação Importante
+
 Regimento Interno/UFRN, Seção III:
 
 - Prevê punições para casos de:
@@ -91,28 +96,28 @@ Regimento Interno/UFRN, Seção III:
     - Ofensas a servidores da universidade
 ---
 
-## Cronograma
+## Cronograma {.nostretch}
 #### Unidade 1
 
-![](unidade1.png){width=800}
+![](unidade1.png){width=95% fig-align="center"}
 
 ---
 
-## Cronograma
+## Cronograma {.nostretch}
 #### Unidade 2
 
-![](unidade2.png){width=800}
+![](unidade2.png){width=95% fig-align="center"}
 
 ---
 
-## Cronograma
+## Cronograma {.nostretch}
 #### Unidade 3
 
-![](unidade3.png){width=800}
+![](unidade3.png){width=95% fig-align="center"}
 
 ---
 
-## Livros Utilizados
+## Livros Utilizados {.nostretch}
 
 ::: {layout-ncol=3}
 ![](livro_lip_ect.png){width=250}
@@ -127,8 +132,8 @@ Regimento Interno/UFRN, Seção III:
 ## Perguntas Frequentes
 
 - _Posso assistir aula em uma subturma de laboratório que não seja a minha?_
-Neste semestre estamos oferecendo esta flexibilidade. Fale com o professor
-responsável pelo seu laboratório.
+Não. Caso não seja possível que você compareça às aulas de laboratório,
+é aconselhável que você se matricule em outra turma.
 
 - _Esta semana tem aula de laboratório?_
 Na disciplina de LiP, os laboratórios são semanais.
@@ -166,7 +171,6 @@ algumas fontes de problema na disciplina:
 - Aluno que não **ouve** o professor
     - Paradoxo: se o aluno não ouve o professor, ele também não irá
       ouvir esta afirmação e portanto, o problema não tem solução
-    - Por exemplo: quantos daqui ouviram os argumentos da importância de LiP?
 - Aluno que não estudou o suficiente para uma atividade
 ---
 
