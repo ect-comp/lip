@@ -63,7 +63,11 @@ comandos/instruções
 
 ## Programação: Representação de um Raciocínio
 
-> Caso esteja sintaticamente correto, o código fonte é compilado em um programa
+::: {.callout-note appearance="simple"}
+
+Caso esteja sintaticamente correto, o código fonte é compilado em um programa
+
+:::
 
 ---
 
@@ -346,10 +350,10 @@ int main(){
 ---
 
 ## Sumário
-- Na aula de hoje, você viu:
-    - Estrutura de um programa em C++
-    - Declaração e inicialização de variáveis
-    - Tipos básicos
-    - Comandos de entrada e saída
-    - Operadores
----
+Na aula de hoje, você viu:
+
+- Estrutura de um programa em C++
+- Declaração e inicialização de variáveis
+- Tipos básicos
+- Comandos de entrada e saída
+- Operadores
