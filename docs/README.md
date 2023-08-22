@@ -9,15 +9,17 @@
  - Variáveis e tipos
  - Entrada e saída
 
-## [14/03 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
+## [22/08 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
  - Operadores em C++
  - Expressões
  - Conversão entre tipos
 
-## [28/03 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
+## [24/08 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
 - Comando `if` e `if-else`
 - Comando `switch`
 - Operador ternário
+
+<!--
 
 ## [30/03 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
 - Comando de repetição `for`
