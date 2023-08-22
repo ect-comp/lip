@@ -9,18 +9,10 @@
  - Variáveis e tipos
  - Entrada e saída
 
-<!--
-
 ## [14/03 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
  - Operadores em C++
-   - Atribuição
-   - Operadores aritméticos
-   - Operadores relacionais
-   - Operadores lógicos
-- Expressões
-   - Expressões aritméticas
-   - Expressões lógicas
-- Conversão entre tipos
+ - Expressões
+ - Conversão entre tipos
 
 ## [28/03 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
 - Comando `if` e `if-else`

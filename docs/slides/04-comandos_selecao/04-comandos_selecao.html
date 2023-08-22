@@ -554,15 +554,6 @@ Prof.&nbsp;Bruno Silva
 <span id="cb8-11"><a href="#cb8-11"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb8-12"><a href="#cb8-12"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="lista-de-presença" class="slide level2">
-<h2>Lista de Presença</h2>
-
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=https%3A%2F%2Fbit.ly%2F40e5ASi" class="r-stretch quarto-figure-center"><a href="https://bit.ly/40e5ASi">
-<p style="text-align:center;">
-https://bit.ly/40e5ASi
-</p>
-</a><p><a href="https://bit.ly/40e5ASi"></a></p>
-</section>
 <section id="encadeamento-de-if-else" class="slide level2">
 <h2>Encadeamento de <code>if-else</code></h2>
 <p>Sintaxe:</p>
@@ -732,7 +723,7 @@ https://bit.ly/40e5ASi
 <p>Exercício: utilizando o <code>? :</code>, faça um programa que lê dois números e imprime qual é o maior dos dois</p>
 </section>
 <section id="operador-ternário-3" class="slide level2">
-<h2>Operador Ternário: <code>? :</code></h2>
+<h2>Operador Ternário <code>? :</code></h2>
 <h4 id="exercício-solução-4">Exercício: Solução</h4>
 <div class="sourceCode" id="cb16"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb16-1"><a href="#cb16-1"></a><span class="dt">int</span> main<span class="op">(){</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>    <span class="dt">int</span> x<span class="op">,</span> y<span class="op">,</span> maior<span class="op">;</span></span>
@@ -761,9 +752,6 @@ https://bit.ly/40e5ASi
 <li>Comando <code>switch</code></li>
 <li>Operador ternário <code>? :</code></li>
 </ul>
-</section>
-<section class="slide level2">
-
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -786,7 +774,6 @@ https://bit.ly/40e5ASi
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -954,27 +941,9 @@ https://bit.ly/40e5ASi
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

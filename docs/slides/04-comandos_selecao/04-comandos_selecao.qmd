@@ -177,14 +177,6 @@ int main(){
 ```
 ---
 
-## Lista de Presença
-
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F40e5ASi){fig-align="center"}
-
-<a href="https://bit.ly/40e5ASi"><p style="text-align:center;">https://bit.ly/40e5ASi</p></a>
-
----
-
 ## Encadeamento de `if-else`
 Sintaxe:
 
@@ -370,7 +362,7 @@ Exercício: utilizando o `? :`, faça um programa que lê dois números
 e imprime qual é o maior dos dois
 ---
 
-## Operador Ternário: `? :`
+## Operador Ternário `? :`
 #### Exercício: Solução
 ```C++
 int main(){
@@ -399,4 +391,3 @@ Checklist da aula de hoje:
 - Seleção aninhada (encadeamento de `if-else`)
 - Comando `switch`
 - Operador ternário `? :`
----

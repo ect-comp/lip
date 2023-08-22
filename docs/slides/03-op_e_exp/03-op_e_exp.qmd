@@ -135,7 +135,7 @@ Operadores unários (só precisam de um operando)
 | Expressao | Expressao Equivalente |
 |-----------|-----------------------|
 | x++       | x = x + 1             |
-| x--       | x = x - 1             |
+| x\-\-       | x = x - 1             |
 
 :::
 
@@ -243,14 +243,6 @@ Exemplos (para `x = 1, y = 2, z = 3`):
 2. `x > 0 && x < z+10`
 3. `z >= y || true`
 4. `x != 1 || x != 2`
----
-
-## Lista de Presença
-
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C0&chl=https%3A%2F%2Fbit.ly%2F3l7ktq8){fig-align="center"}
-
-<a href="https://bit.ly/3l7ktq8"><p style="text-align:center;">https://bit.ly/3l7ktq8</p></a>
-
 ---
 
 ## Expressões Lógicas
@@ -443,4 +435,3 @@ Checklist da aula:
 - Operador de *typecast*
 - Expressões aritméticas e lógicas
 - Ordem de precedência e avaliação de expressões
----

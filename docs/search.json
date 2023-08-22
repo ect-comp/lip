@@ -417,7 +417,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-atribuição",
     "title": "Operadores e Expressões",
     "section": "Operador de Atribuição",
-    "text": "Operador de Atribuição\nOperador = (“recebe”):\n\nAtribui um determinado valor a uma variável\nx = 0; \\(\\rightarrow\\) lê-se “x recebe zero”\nSempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita"
+    "text": "Operador de Atribuição\nOperador = (“recebe”):\n\nAtribui um determinado valor a uma variável\nx = 0; \\rightarrow lê-se “x recebe zero”\nSempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos",
@@ -466,7 +466,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-incrementodecremento",
     "title": "Operadores e Expressões",
     "section": "Operador de Incremento/Decremento",
-    "text": "Operador de Incremento/Decremento\nOperadores unários (só precisam de um operando)\n\n\n\n\nExpressao\nExpressao Equivalente\n\n\n\n\nx++\nx = x + 1\n\n\nx–\nx = x - 1\n\n\n\n\n\nPrecedência: mais alta do que a multiplicação/divisão/resto\nPor exemplo, para x = 1, y = 2, z = 3:\n\nx++; //x será igual a 2"
+    "text": "Operador de Incremento/Decremento\nOperadores unários (só precisam de um operando)\n\n\n\n\nExpressao\nExpressao Equivalente\n\n\n\n\nx++\nx = x + 1\n\n\nx--\nx = x - 1\n\n\n\n\n\nPrecedência: mais alta do que a multiplicação/divisão/resto\nPor exemplo, para x = 1, y = 2, z = 3:\n\nx++; //x será igual a 2"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-incrementodecremento-1",
@@ -655,7 +655,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#sumário",
     "title": "Operadores e Expressões",
     "section": "Sumário",
-    "text": "Sumário\nChecklist da aula:\n\nOperador de atribuição\nOperadores aritméticos\nOperadores lógicos\nOperadores relacionais\nOperador de typecast\nExpressões aritméticas e lógicas\nOrdem de precedência e avaliação de expressões"
+    "text": "Sumário\nChecklist da aula:\n\nOperador de atribuição\nOperadores aritméticos\nOperadores lógicos\nOperadores relacionais\nOperador de typecast\nExpressões aritméticas e lógicas\nOrdem de precedência e avaliação de expressões\n\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos-small_table",
@@ -864,8 +864,8 @@
     "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário-3",
     "href": "slides/04-comandos_selecao/04-comandos_selecao.html#operador-ternário-3",
     "title": "Comandos de Seleção",
-    "section": "Operador Ternário: ? :",
-    "text": "Operador Ternário: ? :\nExercício: Solução\nint main(){\n    int x, y, maior;\n    cin >> x >> y;\n    x > y ? maior = x : maior = y;\n    cout << maior << \" e o maior\" << endl;\n    return 0;\n}"
+    "section": "Operador Ternário ? :",
+    "text": "Operador Ternário ? :\nExercício: Solução\nint main(){\n    int x, y, maior;\n    cin >> x >> y;\n    x > y ? maior = x : maior = y;\n    cout << maior << \" e o maior\" << endl;\n    return 0;\n}"
   },
   {
     "objectID": "slides/04-comandos_selecao/04-comandos_selecao.html#comandos-de-seleção-1",
@@ -879,7 +879,7 @@
     "href": "slides/04-comandos_selecao/04-comandos_selecao.html#sumário",
     "title": "Comandos de Seleção",
     "section": "Sumário",
-    "text": "Sumário\nChecklist da aula de hoje:\n\nSeleção simples if\nSeleção composta if-else\nSeleção aninhada (encadeamento de if-else)\nComando switch\nOperador ternário ? :"
+    "text": "Sumário\nChecklist da aula de hoje:\n\nSeleção simples if\nSeleção composta if-else\nSeleção aninhada (encadeamento de if-else)\nComando switch\nOperador ternário ? :\n\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#linguagem-de-programação",

@@ -95,6 +95,22 @@
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="../../assets/css/logo.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -448,7 +464,7 @@ Prof.&nbsp;Bruno Silva
 <p>Operador <code>=</code> (“recebe”):</p>
 <ul>
 <li>Atribui um determinado valor a uma variável</li>
-<li><code>x = 0;</code> <span class="math inline">\(\rightarrow\)</span> lê-se “x recebe zero”</li>
+<li><code>x = 0;</code> <span class="math inline">\rightarrow</span> lê-se “x recebe zero”</li>
 <li>Sempre: variável à esquerda da atribuição e qualquer outra expressão à sua direita</li>
 </ul>
 </section>
@@ -603,7 +619,7 @@ Prof.&nbsp;Bruno Silva
 <td>x = x + 1</td>
 </tr>
 <tr class="even">
-<td>x–</td>
+<td>x--</td>
 <td>x = x - 1</td>
 </tr>
 </tbody>
@@ -829,15 +845,6 @@ Prof.&nbsp;Bruno Silva
 <li><code>x != 1 || x != 2</code></li>
 </ol>
 </section>
-<section id="lista-de-presença" class="slide level2">
-<h2>Lista de Presença</h2>
-
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C0&amp;chl=https%3A%2F%2Fbit.ly%2F3l7ktq8" class="r-stretch quarto-figure-center"><a href="https://bit.ly/3l7ktq8">
-<p style="text-align:center;">
-https://bit.ly/3l7ktq8
-</p>
-</a><p><a href="https://bit.ly/3l7ktq8"></a></p>
-</section>
 <section id="expressões-lógicas-4" class="slide level2">
 <h2>Expressões Lógicas</h2>
 <h4 id="exemplo-de-expressão-mal-construída">Exemplo de Expressão Mal Construída</h4>
@@ -983,9 +990,6 @@ https://bit.ly/3l7ktq8
 <li>Expressões aritméticas e lógicas</li>
 <li>Ordem de precedência e avaliação de expressões</li>
 </ul>
-</section>
-<section class="slide level2">
-
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -1008,7 +1012,6 @@ https://bit.ly/3l7ktq8
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1176,27 +1179,9 @@ https://bit.ly/3l7ktq8
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
