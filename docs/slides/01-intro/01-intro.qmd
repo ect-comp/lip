@@ -60,7 +60,7 @@ competências e habilidades você acha que estão relacionadas com o curso de Li
 ## Sobre a Disciplina
 
 - Aulas teóricas: terças e quintas, de 20:35 às 22:00,
-  Auditório E da ECT
+  ~~Auditório E~~ **Sala 4** da ECT
 - Carga horária: 90 horas (30h de laboratório)
 - Metodologia:
     - Aulas expositivas com slides digitais
