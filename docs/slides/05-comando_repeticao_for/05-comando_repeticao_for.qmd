@@ -103,10 +103,10 @@ int main(){
 ```
 ---
 
-## Programação e Automatização de Tarefas
+## Programação e Automatização de Tarefas {.nostretch}
 
 
-![](quadrinho_for.jpg){width=600}
+![](quadrinho_for.jpg){width=95% fig-align="center"}
 
 Aprender programação é aprender a automatizar tarefas
 ---
@@ -137,10 +137,12 @@ assuma uma sequência de valores específicos
 ---
 
 ## Comando `for`
-- Exercício 1: faça um programa que lê um número `n` e em seguida,
+#### Exercício 1
+Faça um programa que lê um número `n` e em seguida,
 lê as notas de  `n` alunos. O programa deve exibir a média das notas
 na tela.
-- Antes de programar: o que deve ser repetido?
+
+Antes de programar: o que deve ser repetido?
 ---
 
 ## Comando `for`
@@ -183,14 +185,15 @@ for(i = n; i > 0; i++){
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2F3K9Ve08){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230829){fig-align="center"}
 
-<a href="https://bit.ly/3K9Ve08"><p style="text-align:center;">https://bit.ly/3K9Ve08</p></a>
+<a href="https://bit.ly/lip_20230829"><p style="text-align:center;">https://bit.ly/lip_20230829</p></a>
 
 ---
 
 ## Comando `for`
-- Exercício 2: implemente um programa que lê um número `n` e em seguida,
+#### Exercício 2
+Implemente um programa que lê um número `n` e em seguida,
 imprime os `n` primeiros números pares na tela. Considere o número 0 como
 o primeiro par.
 ---
@@ -212,11 +215,13 @@ Obviamente, há outras formas de se implementar este programa
 ---
 
 ## Comando `for`
-- Exercício 3: implemente um programa que imprime na tela em forma de tabela
-as seguintes contagens
-    - De 1 a 100
-    - De 10 a 1000 (incrementando o contador de 10 em 10)
-    - De 100 a 1 (em ordem decrescente)
+#### Exercício 3
+Implemente um programa que imprime na tela em forma de tabela
+as seguintes contagens:
+
+- De 1 a 100
+- De 10 a 1000 (incrementando o contador de 10 em 10)
+- De 100 a 1 (em ordem decrescente)
 ---
 
 ## Comando `for`
@@ -249,7 +254,8 @@ variáveis adicionais
 ---
 
 ## Comando `for`
-- Exercício 4: implemente um programa que lê um número `n` e em seguida,
+#### Exercício 4
+Implemente um programa que lê um número `n` e em seguida,
 lê `n` caracteres.
 O programa deve exibir a quantidade de caracteres digitados
 que são letras minúsculas.
@@ -277,7 +283,8 @@ int main(){
 ---
 
 ## Comando `for`
-- Exercício 5: faça um programa que lê um número `n` e um número `m`.
+#### Exercício 5
+Faça um programa que lê um número `n` e um número `m`.
 Em seguida, o seu programa deve exibir na tela as `m` primeiras potências
 positivas dos `n` primeiros números positivos. As potências devem estar separadas por linha.
 ---
@@ -323,4 +330,3 @@ Na aula de hoje:
 
 - Comando de repetição `for`
 - Exercícios
----

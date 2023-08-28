@@ -110,14 +110,15 @@ int main(){
       o código resultante fique menos intuitivo
 ---
 
-## Comandos de Repetição
+## Comandos de Repetição {.nostretch}
 
-![](meme_while.png){width=300}
+![](meme_while.png){width=40% fig-align="center"}
 
 ---
 
 ## Comando `while`
-- Exercício 1: faça um programa que lê **vários** números e
+#### Exercício 1
+Faça um programa que lê **vários** números e
 informa se cada um deles é par ou ímpar. O programa deve se encerrar
 quando for digitado um número negativo.
 ---
@@ -183,14 +184,15 @@ do{
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230404){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230831){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230404"><p style="text-align:center;">https://bit.ly/lip_20230404</p></a>
+<a href="https://bit.ly/lip_20230831"><p style="text-align:center;">https://bit.ly/lip_20230831</p></a>
 
 ---
 
 ## Comandos `while` e `do-while`
-- Exercício 2: implemente um programa que lê um número inteiro positivo `n` e em seguida, imprime o quociente e o resto da divisão de `n` por 10. O seu programa deve checar se
+#### Exercício 2
+Implemente um programa que lê um número inteiro positivo `n` e em seguida, imprime o quociente e o resto da divisão de `n` por 10. O seu programa deve checar se
 o usuário digitou um número inteiro positivo, solicitando ao mesmo para redigitá-lo se não
 for o caso.
 ---
@@ -327,7 +329,8 @@ int main(){
 ---
 
 ## Comando `while` e `do-while`
-- Exercício 3: implemente um programa que lê a população no ano corrente
+#### Exercício 3
+Implemente um programa que lê a população no ano corrente
 de dois países, A e B. O país A tem taxa de crescimento de 2% ao ano, enquanto
 o país B cresce 4% ao ano. Supondo que a população do país A é maior do que a do
 país B, o seu programa deve informar em quantos anos a população do país B ultrapassará a população do país A.
@@ -364,4 +367,3 @@ Na aula de hoje:
 - Comando de repetição `do-while`
 - Comandos `break` e `continue`
 - Exercícios
----

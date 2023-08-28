@@ -956,7 +956,7 @@
     "href": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#programação-e-automatização-de-tarefas",
     "title": "Comando de Repetição for",
     "section": "Programação e Automatização de Tarefas",
-    "text": "Programação e Automatização de Tarefas\n\nAprender programação é aprender a automatizar tarefas"
+    "text": "Programação e Automatização de Tarefas\n\n\n\n\n\nAprender programação é aprender a automatizar tarefas"
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-5",
@@ -984,7 +984,7 @@
     "href": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-8",
     "title": "Comando de Repetição for",
     "section": "Comando for",
-    "text": "Comando for\n\nExercício 1: faça um programa que lê um número n e em seguida, lê as notas de n alunos. O programa deve exibir a média das notas na tela.\nAntes de programar: o que deve ser repetido?"
+    "text": "Comando for\nExercício 1\nFaça um programa que lê um número n e em seguida, lê as notas de n alunos. O programa deve exibir a média das notas na tela.\nAntes de programar: o que deve ser repetido?"
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-9",
@@ -1005,14 +1005,14 @@
     "href": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#lista-de-presença",
     "title": "Comando de Repetição for",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/3K9Ve08"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230829"
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-11",
     "href": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-11",
     "title": "Comando de Repetição for",
     "section": "Comando for",
-    "text": "Comando for\n\nExercício 2: implemente um programa que lê um número n e em seguida, imprime os n primeiros números pares na tela. Considere o número 0 como o primeiro par."
+    "text": "Comando for\nExercício 2\nImplemente um programa que lê um número n e em seguida, imprime os n primeiros números pares na tela. Considere o número 0 como o primeiro par."
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-12",
@@ -1026,7 +1026,7 @@
     "href": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-13",
     "title": "Comando de Repetição for",
     "section": "Comando for",
-    "text": "Comando for\n\nExercício 3: implemente um programa que imprime na tela em forma de tabela as seguintes contagens\n\nDe 1 a 100\nDe 10 a 1000 (incrementando o contador de 10 em 10)\nDe 100 a 1 (em ordem decrescente)"
+    "text": "Comando for\nExercício 3\nImplemente um programa que imprime na tela em forma de tabela as seguintes contagens:\n\nDe 1 a 100\nDe 10 a 1000 (incrementando o contador de 10 em 10)\nDe 100 a 1 (em ordem decrescente)"
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-14",
@@ -1047,7 +1047,7 @@
     "href": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-16",
     "title": "Comando de Repetição for",
     "section": "Comando for",
-    "text": "Comando for\n\nExercício 4: implemente um programa que lê um número n e em seguida, lê n caracteres. O programa deve exibir a quantidade de caracteres digitados que são letras minúsculas."
+    "text": "Comando for\nExercício 4\nImplemente um programa que lê um número n e em seguida, lê n caracteres. O programa deve exibir a quantidade de caracteres digitados que são letras minúsculas."
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-17",
@@ -1061,7 +1061,7 @@
     "href": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-18",
     "title": "Comando de Repetição for",
     "section": "Comando for",
-    "text": "Comando for\n\nExercício 5: faça um programa que lê um número n e um número m. Em seguida, o seu programa deve exibir na tela as m primeiras potências positivas dos n primeiros números positivos. As potências devem estar separadas por linha."
+    "text": "Comando for\nExercício 5\nFaça um programa que lê um número n e um número m. Em seguida, o seu programa deve exibir na tela as m primeiras potências positivas dos n primeiros números positivos. As potências devem estar separadas por linha."
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-19",
@@ -1075,7 +1075,7 @@
     "href": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#sumário",
     "title": "Comando de Repetição for",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nComando de repetição for\nExercícios"
+    "text": "Sumário\nNa aula de hoje:\n\nComando de repetição for\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/05-comando_repeticao_for/05-comando_repeticao_for.html#comando-for-20",
@@ -1173,7 +1173,7 @@
     "href": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#comando-while-4",
     "title": "Comando de Repetição while",
     "section": "Comando while",
-    "text": "Comando while\n\nExercício 1: faça um programa que lê vários números e informa se cada um deles é par ou ímpar. O programa deve se encerrar quando for digitado um número negativo."
+    "text": "Comando while\nExercício 1\nFaça um programa que lê vários números e informa se cada um deles é par ou ímpar. O programa deve se encerrar quando for digitado um número negativo."
   },
   {
     "objectID": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#comando-while-5",
@@ -1215,14 +1215,14 @@
     "href": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#lista-de-presença",
     "title": "Comando de Repetição while",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230404"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230831"
   },
   {
     "objectID": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#comandos-while-e-do-while",
     "href": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#comandos-while-e-do-while",
     "title": "Comando de Repetição while",
     "section": "Comandos while e do-while",
-    "text": "Comandos while e do-while\n\nExercício 2: implemente um programa que lê um número inteiro positivo n e em seguida, imprime o quociente e o resto da divisão de n por 10. O seu programa deve checar se o usuário digitou um número inteiro positivo, solicitando ao mesmo para redigitá-lo se não for o caso."
+    "text": "Comandos while e do-while\nExercício 2\nImplemente um programa que lê um número inteiro positivo n e em seguida, imprime o quociente e o resto da divisão de n por 10. O seu programa deve checar se o usuário digitou um número inteiro positivo, solicitando ao mesmo para redigitá-lo se não for o caso."
   },
   {
     "objectID": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#comandos-while-e-do-while-1",
@@ -1271,7 +1271,7 @@
     "href": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#comando-while-e-do-while-1",
     "title": "Comando de Repetição while",
     "section": "Comando while e do-while",
-    "text": "Comando while e do-while\n\nExercício 3: implemente um programa que lê a população no ano corrente de dois países, A e B. O país A tem taxa de crescimento de 2% ao ano, enquanto o país B cresce 4% ao ano. Supondo que a população do país A é maior do que a do país B, o seu programa deve informar em quantos anos a população do país B ultrapassará a população do país A."
+    "text": "Comando while e do-while\nExercício 3\nImplemente um programa que lê a população no ano corrente de dois países, A e B. O país A tem taxa de crescimento de 2% ao ano, enquanto o país B cresce 4% ao ano. Supondo que a população do país A é maior do que a do país B, o seu programa deve informar em quantos anos a população do país B ultrapassará a população do país A."
   },
   {
     "objectID": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#comando-while-e-do-while-2",
@@ -1285,7 +1285,7 @@
     "href": "slides/06-comando_repeticao_while/06-comando_repeticao_while.html#sumário",
     "title": "Comando de Repetição while",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nComando de repetição while\nComando de repetição do-while\nComandos break e continue\nExercícios"
+    "text": "Sumário\nNa aula de hoje:\n\nComando de repetição while\nComando de repetição do-while\nComandos break e continue\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/07-funcoes1/07-funcoes1.html#objetivo-da-aula",
