@@ -1348,7 +1348,7 @@
     "href": "slides/07-funcoes1/07-funcoes1.html#programas-que-chamam-funções-2",
     "title": "Funções I",
     "section": "Programas que Chamam Funções",
-    "text": "Programas que Chamam Funções\n\nPrincipal vantagem de chamar funções: não é necessário saber como uma função está implementada para utilizá-la\nExemplo: função cos(x) computa o cosseno de x com o polinômio de MacLaurin:\n\n\\[\ncos(x) = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}}{(2n)!}x^{2n}\n\\]"
+    "text": "Programas que Chamam Funções\n\nPrincipal vantagem de chamar funções: não é necessário saber como uma função está implementada para utilizá-la\nExemplo: função cos(x) computa o cosseno de x com o polinômio de MacLaurin:\n\n\ncos(x) = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}}{(2n)!}x^{2n}"
   },
   {
     "objectID": "slides/07-funcoes1/07-funcoes1.html#implementação-de-funções",
@@ -1362,7 +1362,7 @@
     "href": "slides/07-funcoes1/07-funcoes1.html#implementação-de-funções-1",
     "title": "Funções I",
     "section": "Implementação de Funções",
-    "text": "Implementação de Funções\n\nA implementação de uma função é dividida entre a sua assinatura e as instruções que compõem a sua definição"
+    "text": "Implementação de Funções\n\n\n\n\n\n\nA implementação de uma função é dividida entre a sua assinatura e as instruções que compõem a sua definição"
   },
   {
     "objectID": "slides/07-funcoes1/07-funcoes1.html#assinaturas-de-funções",
@@ -1425,7 +1425,7 @@
     "href": "slides/07-funcoes1/07-funcoes1.html#lista-de-presença",
     "title": "Funções I",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230411"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230905"
   },
   {
     "objectID": "slides/07-funcoes1/07-funcoes1.html#definição-de-funções",
@@ -1439,7 +1439,7 @@
     "href": "slides/07-funcoes1/07-funcoes1.html#definição-de-funções-1",
     "title": "Funções I",
     "section": "Definição de Funções",
-    "text": "Definição de Funções\nExemplo: programa que converte temperatura em graus Celsius para Fahrenheit, sabendo-se que\n\\[\nf(c) = 1,8c + 32\n\\]\n\nSem usar função\nUtilizando função"
+    "text": "Definição de Funções\nExemplo: programa que converte temperatura em graus Celsius para Fahrenheit, sabendo-se que\n\nf(c) = 1,8c + 32\n\n\nSem usar função\nUtilizando função"
   },
   {
     "objectID": "slides/07-funcoes1/07-funcoes1.html#definição-de-funções-2",
@@ -1488,14 +1488,14 @@
     "href": "slides/07-funcoes1/07-funcoes1.html#função-main",
     "title": "Funções I",
     "section": "Função main",
-    "text": "Função main\nMotivo pelo qual todo programa deve conter int main() e return 0:\n\nTodo programa em C++ deve obrigatoriamente conter uma função chamada main que retorna um número inteiro. Assim, o sistema operacional (Windows, Linux, etc.) sabe a função a ser chamada quando ele deseja executar um programa."
+    "text": "Função main\nMotivo pelo qual todo programa deve conter int main() e return 0:\n\n\n\n\n\n\nTodo programa em C++ deve obrigatoriamente conter uma função chamada main que retorna um número inteiro. Assim, o sistema operacional (Windows, Linux, etc.) sabe a função a ser chamada quando ele deseja executar um programa."
   },
   {
     "objectID": "slides/07-funcoes1/07-funcoes1.html#programa-com-função",
     "href": "slides/07-funcoes1/07-funcoes1.html#programa-com-função",
     "title": "Funções I",
     "section": "Programa com Função",
-    "text": "Programa com Função\nExercício\n\nImplemente uma função chamada eh_primo, que receba como parâmetro um número inteiro. A função deve retornar verdadeiro caso o número seja primo ou falso caso contrário.\n\n\nA função main é dada e contém o código do programa usuário da função que você deve implementar (slide a seguir)."
+    "text": "Programa com Função\nExercício\nImplemente uma função chamada eh_primo, que receba como parâmetro um número inteiro. A função deve retornar verdadeiro caso o número seja primo ou falso caso contrário.\nA função main é dada e contém o código do programa usuário da função que você deve implementar (slide a seguir)."
   },
   {
     "objectID": "slides/07-funcoes1/07-funcoes1.html#programa-com-função-1",
@@ -1516,7 +1516,7 @@
     "href": "slides/07-funcoes1/07-funcoes1.html#sumário",
     "title": "Funções I",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nChamada de funções\nAssinatura de funções\nDefinição de funções"
+    "text": "Sumário\nNa aula de hoje:\n\nChamada de funções\nAssinatura de funções\nDefinição de funções\n\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/08-funcoes2/08-funcoes2.html#aula-anterior",

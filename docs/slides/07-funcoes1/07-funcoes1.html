@@ -95,6 +95,22 @@
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="../../assets/css/logo.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -487,9 +503,9 @@ Prof.&nbsp;Bruno Silva
 <li>Principal vantagem de chamar funções: <strong>não é necessário saber como uma função está implementada para utilizá-la</strong></li>
 <li>Exemplo: função <code>cos(x)</code> computa o cosseno de <code>x</code> com o polinômio de MacLaurin:</li>
 </ul>
-<p><span class="math display">\[
+<p><span class="math display">
 cos(x) = \sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n)!}x^{2n}
-\]</span></p>
+</span></p>
 </section>
 <section id="implementação-de-funções" class="slide level2">
 <h2>Implementação de Funções</h2>
@@ -503,9 +519,16 @@ cos(x) = \sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n)!}x^{2n}
 </section>
 <section id="implementação-de-funções-1" class="slide level2">
 <h2>Implementação de Funções</h2>
-<blockquote>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
 <p>A implementação de uma função é dividida entre a sua <em>assinatura</em> e as instruções que compõem a sua <em>definição</em></p>
-</blockquote>
+</div>
+</div>
+</div>
 </section>
 <section id="assinaturas-de-funções" class="slide level2">
 <h2>Assinaturas de Funções</h2>
@@ -583,11 +606,11 @@ cos(x) = \sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n)!}x^{2n}
 <section id="lista-de-presença" class="slide level2">
 <h2>Lista de Presença</h2>
 
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=https%3A%2F%2Fbit.ly%2Flip_20230411" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230411">
+<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=bit.ly%2Flip_20230905" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230905">
 <p style="text-align:center;">
-https://bit.ly/lip_20230411
+https://bit.ly/lip_20230905
 </p>
-</a><p><a href="https://bit.ly/lip_20230411"></a></p>
+</a><p><a href="https://bit.ly/lip_20230905"></a></p>
 </section>
 <section id="definição-de-funções" class="slide level2">
 <h2>Definição de Funções</h2>
@@ -603,9 +626,9 @@ https://bit.ly/lip_20230411
 <section id="definição-de-funções-1" class="slide level2">
 <h2>Definição de Funções</h2>
 <p>Exemplo: programa que converte temperatura em graus Celsius para Fahrenheit, sabendo-se que</p>
-<p><span class="math display">\[
+<p><span class="math display">
 f(c) = 1,8c + 32
-\]</span></p>
+</span></p>
 <ol type="1">
 <li>Sem usar função</li>
 <li>Utilizando função</li>
@@ -672,19 +695,22 @@ f(c) = 1,8c + 32
 <section id="função-main" class="slide level2">
 <h2>Função <code>main</code></h2>
 <p>Motivo pelo qual todo programa deve conter <code>int main()</code> e <code>return 0</code>:</p>
-<blockquote>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
 <p>Todo programa em C++ deve obrigatoriamente conter uma função chamada <code>main</code> que retorna um número inteiro. Assim, o sistema operacional (Windows, Linux, etc.) sabe a função a ser chamada quando ele deseja executar um programa.</p>
-</blockquote>
+</div>
+</div>
+</div>
 </section>
 <section id="programa-com-função" class="slide level2">
 <h2>Programa com Função</h2>
 <h4 id="exercício-1">Exercício</h4>
-<blockquote>
 <p>Implemente uma função chamada <code>eh_primo</code>, que receba como parâmetro um número inteiro. A função deve retornar verdadeiro caso o número seja primo ou falso caso contrário.</p>
-</blockquote>
-<blockquote>
 <p>A função <code>main</code> é dada e contém o código do <em>programa usuário</em> da função que você deve implementar (slide a seguir).</p>
-</blockquote>
 </section>
 <section id="programa-com-função-1" class="slide level2">
 <h2>Programa com Função</h2>
@@ -739,9 +765,6 @@ f(c) = 1,8c + 32
 <li>Assinatura de funções</li>
 <li>Definição de funções</li>
 </ul>
-</section>
-<section class="slide level2">
-
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -764,7 +787,6 @@ f(c) = 1,8c + 32
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -932,27 +954,9 @@ f(c) = 1,8c + 32
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

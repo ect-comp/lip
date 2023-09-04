@@ -103,8 +103,14 @@ Além da sintaxe, é preciso saber:
 ---
 
 ## Implementação de Funções
-> A implementação de uma função é dividida entre a sua _assinatura_
-> e as instruções que compõem a sua _definição_
+
+::: {.callout-note appearance="simple"}
+
+A implementação de uma função é dividida entre a sua _assinatura_
+e as instruções que compõem a sua _definição_
+
+:::
+
 ---
 
 ## Assinaturas de Funções
@@ -197,9 +203,9 @@ aulas
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230411){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230905){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230411"><p style="text-align:center;">https://bit.ly/lip_20230411</p></a>
+<a href="https://bit.ly/lip_20230905"><p style="text-align:center;">https://bit.ly/lip_20230905</p></a>
 
 ---
 
@@ -296,23 +302,28 @@ float converte_temp(float c){
 Motivo pelo qual todo programa deve conter
 `int main()` e `return 0`:
 
-> Todo programa em C++ deve obrigatoriamente
-> conter uma função chamada `main` que retorna
-> um número inteiro.
-> Assim, o sistema operacional (Windows, Linux, etc.)
-> sabe a função a ser chamada quando ele deseja executar
-> um programa.
+::: {.callout-note appearance="simple"}
+
+Todo programa em C++ deve obrigatoriamente
+conter uma função chamada `main` que retorna
+um número inteiro.
+Assim, o sistema operacional (Windows, Linux, etc.)
+sabe a função a ser chamada quando ele deseja executar
+um programa.
+
+:::
+
 ---
 
 ## Programa com Função
 #### Exercício
 
-> Implemente uma função chamada `eh_primo`, que receba como parâmetro um número inteiro.
-> A função deve retornar verdadeiro caso o número seja primo ou falso
-> caso contrário.
+Implemente uma função chamada `eh_primo`, que receba como parâmetro um número inteiro.
+A função deve retornar verdadeiro caso o número seja primo ou falso
+caso contrário.
 
-> A função `main` é dada e contém o código do _programa usuário_ da função
-> que você deve implementar (slide a seguir).
+A função `main` é dada e contém o código do _programa usuário_ da função
+que você deve implementar (slide a seguir).
 ---
 
 ## Programa com Função
@@ -373,4 +384,3 @@ Na aula de hoje:
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
----
