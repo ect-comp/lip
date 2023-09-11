@@ -34,13 +34,13 @@
 - Assinatura de funções
 - Definição de funções
 
-<!--
+## [12/09 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
 
-## [13/04 - Funções II](./slides/08-funcoes2/08-funcoes2.html)
+## [14/09 - Funções II](./slides/08-funcoes2/08-funcoes2.html)
 - Função sem retorno (funções tipo `void`)
 - Passagem de parâmetro por valor por referência
 
-## [18/04 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
+<!--
 
 ## [20/04 - Funções III](./slides/09-funcoes3/09-funcoes3.html)
 - Parâmetros de entrada

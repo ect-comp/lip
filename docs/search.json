@@ -1530,7 +1530,7 @@
     "href": "slides/08-funcoes2/08-funcoes2.html#funções",
     "title": "Funções II",
     "section": "Funções",
-    "text": "Funções\nRevisando a ideia de funções:\n\nParâmetros são a porta de entrada de funções\nO tipo de retorno é a sua saída > Este mecanismo estabelece uma forma de uma função “conversar” com uma outra > Por exemplo: função main que faz uma chamada à função sqrt"
+    "text": "Funções\nRevisando a ideia de funções:\n\nParâmetros são a porta de entrada de funções\nO tipo de retorno é a sua saída\n\n\nEste mecanismo estabelece uma forma de uma função “conversar” com uma outra Por exemplo: função main que faz uma chamada à função sqrt"
   },
   {
     "objectID": "slides/08-funcoes2/08-funcoes2.html#funções-1",
@@ -1614,7 +1614,7 @@
     "href": "slides/08-funcoes2/08-funcoes2.html#lista-de-presença",
     "title": "Funções II",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230413"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230914"
   },
   {
     "objectID": "slides/08-funcoes2/08-funcoes2.html#passagem-de-parâmetros",
@@ -1663,7 +1663,7 @@
     "href": "slides/08-funcoes2/08-funcoes2.html#sumário",
     "title": "Funções II",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nFunções sem retorno\nPassagem de parâmetro por valor e por referência"
+    "text": "Sumário\nNa aula de hoje:\n\nFunções sem retorno\nPassagem de parâmetro por valor e por referência\n\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/09-funcoes3/09-funcoes3.html#linguagem-de-programação",
@@ -1796,49 +1796,49 @@
     "href": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios",
     "title": "Funções - Exercícios",
     "section": "Funções I - Exercícios",
-    "text": "Funções I - Exercícios\nExercício 1: Número Perfeito\nChama-se número perfeito um número que é igual à soma dos seus divisores próprios (todos os divisores exceto ele mesmo).\nPor exemplo, \\(6\\) é um número perfeito, já que \\(6 = 1 + 2 + 3\\)."
+    "text": "Funções I - Exercícios\nExercício 1: Função pow\nImplemente uma função que opere de forma idêntica à função pow: receba como parâmetros a base (nr. real) e expoente (nr. inteiro) e retorne a potência resultante.\nImplemente também a função main, que deve ler do usuário a base e expoente exibir o resultado de uma chamada à função solicitada."
   },
   {
     "objectID": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-1",
     "href": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-1",
     "title": "Funções - Exercícios",
     "section": "Funções I - Exercícios",
-    "text": "Funções I - Exercícios\nExercício 1: Número Perfeito\nImplemente uma função que receba como parâmetro um número inteiro e retorne verdadeiro se o número for perfeito ou falso caso contrário.\nImplemente também a função main, que deve ler do usuário um número inteiro e exibir uma mensagem de acordo com o resultado de uma chamada à função solicitada.\nExemplo:\nEntrada: 6\nSaída: 6 e um numero perfeito"
+    "text": "Funções I - Exercícios\nExercício 1 - Solução\n#include <iostream>\n\nusing namespace std;\n\nint abs(int e);\nfloat pow(float b, int e);\n\nint main(){\n\n    float x;\n    int y;\n\n    cout << \"Insira a base e expoente: \";\n    cin >> x >> y;\n\n    cout << \"Resultado: \" << pow(x, y) << endl;\n\n    return 0;\n}\n\nint abs(int e){\n    if(e < 0){\n        return -e;\n    }\n    else{\n        return e;\n    }\n}\n\nfloat pow(float b, int e){\n    float r = 1;\n    int i;\n\n    for(i = 0; i < abs(e); i++){\n        r = r*b;\n    }\n\n    if(e < 0){\n        return 1/r;\n    }\n    else{\n        return r;\n    }\n}"
   },
   {
     "objectID": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-2",
     "href": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-2",
     "title": "Funções - Exercícios",
     "section": "Funções I - Exercícios",
-    "text": "Funções I - Exercícios\nExercício 1 - Solução\nbool eh_perfeito(int x);\nint main(){\n\n    int num;\n\n    cout << \"Insira um numero inteiro:\\n\";\n    cin >> num;\n\n    if(eh_perfeito(num) == true){\n        cout << num << \" e um numero perfeito\\n\";\n    }\n    else{\n        cout << num << \" nao e um numero perfeito\\n\";\n    }\n\n    return 0;\n}\n\nbool eh_perfeito(int x){\n    int i, soma = 0;\n\n    for(i = 1; i < x; i++){\n        if(x % i == 0){\n            soma += i;\n        }\n    }\n\n    if(soma == x){\n        return true;\n    }\n    else{\n        return false;\n    }\n}"
+    "text": "Funções I - Exercícios\nExercício 2: Número Perfeito\nChama-se número perfeito um número que é igual à soma dos seus divisores próprios (todos os divisores exceto ele mesmo).\nPor exemplo, 6 é um número perfeito, já que 6 = 1 + 2 + 3."
   },
   {
     "objectID": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-3",
     "href": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-3",
     "title": "Funções - Exercícios",
     "section": "Funções I - Exercícios",
-    "text": "Funções I - Exercícios\nExercício 2: Triângulo de Pascal\nO Triângulo de Pascal é uma estrutura matemática como mostrada a seguir:\n1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1\n1 5 10 10 5 1\n1 6 15 20 15 6 1\nNesta estrutura, o termo na linha \\(i\\) e coluna \\(j\\) é calculado como \\[\nt(i,j) = \\frac{i!}{j!(i-j)!}\n\\]"
+    "text": "Funções I - Exercícios\nExercício 2: Número Perfeito\nImplemente uma função que receba como parâmetro um número inteiro e retorne verdadeiro se o número for perfeito ou falso caso contrário.\nImplemente também a função main, que deve ler do usuário um número inteiro e exibir uma mensagem de acordo com o resultado de uma chamada à função solicitada.\nExemplo:\nEntrada: 6\nSaída: 6 e um numero perfeito"
   },
   {
     "objectID": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-4",
     "href": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-4",
     "title": "Funções - Exercícios",
     "section": "Funções I - Exercícios",
-    "text": "Funções I - Exercícios\nExercício 2: Triângulo de Pascal\nImplemente uma função para imprimir na tela o triângulo de Pascal para um dado número \\(n\\) de linhas. Observe que a quantidade de colunas do triângulo varia conforme a linha, ou seja, a linha 0 tem 1 coluna, a linha 1 tem 2 colunas, a linha 2 tem 3 colunas e assim sucessivamente.\nImplemente também a função main, que deve ler do usuário a quantidade de linhas e exibir o Triângulo de Pascal correspondente."
+    "text": "Funções I - Exercícios\nExercício 2 - Solução\nbool eh_perfeito(int x);\nint main(){\n\n    int num;\n\n    cout << \"Insira um numero inteiro:\\n\";\n    cin >> num;\n\n    if(eh_perfeito(num) == true){\n        cout << num << \" e um numero perfeito\\n\";\n    }\n    else{\n        cout << num << \" nao e um numero perfeito\\n\";\n    }\n\n    return 0;\n}\n\nbool eh_perfeito(int x){\n    int i, soma = 0;\n\n    for(i = 1; i < x; i++){\n        if(x % i == 0){\n            soma += i;\n        }\n    }\n\n    if(soma == x){\n        return true;\n    }\n    else{\n        return false;\n    }\n}"
   },
   {
     "objectID": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-5",
     "href": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-5",
     "title": "Funções - Exercícios",
     "section": "Funções I - Exercícios",
-    "text": "Funções I - Exercícios\nExercício 2: Triângulo de Pascal\nComo sugestão de roteiro, pense na divisão do problema em funções:\n\nFunção para calcular o fatorial de um número\nFunção para calcular cada termo \\(t(i,j)\\)\nFunção solicitada"
+    "text": "Funções I - Exercícios\nExercício 3: Sequência de Fibonacci\nImplemente uma função que receba como parâmetro um número n e retorne o n-ésimo termo da sequência de Fibonacci. A sequência de Fibonacci tem o termo 0 e 1 iguais a a 0 e 1 respectivamente, e todos os demais calculados como a soma dos dois anteriores.\nA função main deve ler do usuário um nr. inteiro n e imprimir do termo 0 ao termo n da sequência de acordo com chamadas à função solicitada."
   },
   {
     "objectID": "slides/exercicios_funcoes/exercicios_funcoes.html#lista-de-presença",
     "href": "slides/exercicios_funcoes/exercicios_funcoes.html#lista-de-presença",
     "title": "Funções - Exercícios",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230418"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230912"
   },
   {
     "objectID": "slides/exercicios_funcoes/exercicios_funcoes.html#linguagem-de-programação",
@@ -1852,7 +1852,7 @@
     "href": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-6",
     "title": "Funções - Exercícios",
     "section": "Funções I - Exercícios",
-    "text": "Funções I - Exercícios\nExercício 2 - Solução\n#include <iostream>\n\nusing namespace std;\n\nint fat(int x); //a.\nint termo(int i, int j); //b.\nvoid imprime_triangulo(int n); //c.\n\nint main(){\n\n    int n_linhas;\n\n    cout << \"Insira o nr. de linhas do triangulo:\\n\";\n    cin >> n_linhas;\n\n    imprime_triangulo(n_linhas);\n\n    return 0;\n}\n\nint fat(int x){\n    int i, r = 1;\n\n    for(i = 2; i <= x; i++){\n        r = r*i;\n    }\n\n    return r;\n}\n\nint termo(int i, int j){\n    return fat(i)/(fat(j)*fat(i-j));\n}\n\nvoid imprime_triangulo(int n){\n    int i, j;\n\n    for(i = 0; i < n; i++){\n        for(j = 0; j < i+1; j++){\n            cout << termo(i, j) << \" \";\n        }\n        cout << endl;\n    }    \n}\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Funções I - Exercícios\nExercício 3 - Solução\n\n#include <iostream>\n\nusing namespace std;\n\nint fib(int n);\n\nint main(){\n\n    int i, x;\n\n    cout << \"Insira o ultimo indice dos termos: \";\n    cin >> x;\n\n    for(i = 0; i <= x; i++){\n        cout << fib(i) << endl;\n    }\n\n    return 0;\n}\nint fib(int n){\n    int i, an, an_1 = 1, an_2 = 0;\n\n    if(n == 0){\n        return 0;\n    }\n    if(n == 1){\n        return 1;\n    }\n    for(i = 2; i <= n; i++){\n        an = an_1 + an_2;\n        an_2 = an_1;\n        an_1 = an;\n    }\n\n    return an;\n}\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/exercicios_funcoes/exercicios_funcoes.html#funções-i---exercícios-7",

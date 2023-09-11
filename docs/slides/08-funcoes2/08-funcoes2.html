@@ -417,8 +417,11 @@ Prof.&nbsp;Bruno Silva
 <p>Revisando a ideia de funções:</p>
 <ul>
 <li>Parâmetros são a porta de entrada de funções</li>
-<li>O tipo de retorno é a sua saída &gt; Este mecanismo estabelece uma forma de uma função “conversar” com uma outra &gt; Por exemplo: função <code>main</code> que faz uma chamada à função <code>sqrt</code></li>
+<li>O tipo de retorno é a sua saída</li>
 </ul>
+<blockquote>
+<p>Este mecanismo estabelece uma forma de uma função “conversar” com uma outra Por exemplo: função <code>main</code> que faz uma chamada à função <code>sqrt</code></p>
+</blockquote>
 </section>
 <section id="funções-1" class="slide level2">
 <h2>Funções</h2>
@@ -449,7 +452,7 @@ Prof.&nbsp;Bruno Silva
 <ul>
 <li>Também conhecidas como <em>procedimentos</em></li>
 <li>Útil para funções que devem escrever na tela</li>
-<li><em>Escrever na tela com comando <code>cout</code> não é retorno</em></li>
+<li><strong>Escrever na tela com comando <code>cout</code> não é retorno</strong></li>
 <li>Tipo da função deve ser <em><code>void</code></em></li>
 </ul>
 </section>
@@ -530,11 +533,11 @@ Prof.&nbsp;Bruno Silva
 <section id="lista-de-presença" class="slide level2">
 <h2>Lista de Presença</h2>
 
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=https%3A%2F%2Fbit.ly%2Flip_20230413" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230413">
+<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=bit.ly%2Flip_20230914" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230914">
 <p style="text-align:center;">
-https://bit.ly/lip_20230413
+https://bit.ly/lip_20230914
 </p>
-</a><p><a href="https://bit.ly/lip_20230413"></a></p>
+</a><p><a href="https://bit.ly/lip_20230914"></a></p>
 </section>
 <section id="passagem-de-parâmetros" class="slide level2">
 <h2>Passagem de Parâmetros</h2>
@@ -654,9 +657,6 @@ https://bit.ly/lip_20230413
 <li>Funções sem retorno</li>
 <li>Passagem de parâmetro por valor e por referência</li>
 </ul>
-</section>
-<section class="slide level2">
-
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -679,7 +679,6 @@ https://bit.ly/lip_20230413
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -847,27 +846,9 @@ https://bit.ly/lip_20230413
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

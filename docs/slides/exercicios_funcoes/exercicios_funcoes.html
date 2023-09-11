@@ -95,6 +95,22 @@
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="../../assets/css/logo.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -405,144 +421,166 @@ Prof.&nbsp;Bruno Silva
 </section>
 <section id="funções-i---exercícios" class="slide level2">
 <h2>Funções I - Exercícios</h2>
-<h4 id="exercício-1-número-perfeito">Exercício 1: Número Perfeito</h4>
-<p>Chama-se <strong>número perfeito</strong> um número que é igual à soma dos seus divisores próprios (todos os divisores exceto ele mesmo).</p>
-<p>Por exemplo, <span class="math inline">\(6\)</span> é um número perfeito, já que <span class="math inline">\(6 = 1 + 2 + 3\)</span>.</p>
+<h4 id="exercício-1-função-pow">Exercício 1: Função <code>pow</code></h4>
+<p>Implemente uma função que opere de forma idêntica à função <code>pow</code>: receba como parâmetros a base (nr. real) e expoente (nr. inteiro) e retorne a potência resultante.</p>
+<p>Implemente também a função <code>main</code>, que deve ler do usuário a base e expoente exibir o resultado de uma chamada à função solicitada.</p>
 </section>
 <section id="funções-i---exercícios-1" class="slide level2">
 <h2>Funções I - Exercícios</h2>
-<h4 id="exercício-1-número-perfeito-1">Exercício 1: Número Perfeito</h4>
-<p>Implemente uma função que receba como parâmetro um número inteiro e retorne verdadeiro se o número for perfeito ou falso caso contrário.</p>
-<p>Implemente também a função <code>main</code>, que deve ler do usuário um número inteiro e exibir uma mensagem de acordo com o resultado de uma chamada à função solicitada.</p>
-<p>Exemplo:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource cpp number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a>Entrada<span class="op">:</span> <span class="dv">6</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>Saída<span class="op">:</span> <span class="dv">6</span> e um numero perfeito</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h4 id="exercício-1---solução">Exercício 1 - Solução</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">using</span> <span class="kw">namespace</span> std<span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="dt">int</span> abs<span class="op">(</span><span class="dt">int</span> e<span class="op">);</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="dt">float</span> pow<span class="op">(</span><span class="dt">float</span> b<span class="op">,</span> <span class="dt">int</span> e<span class="op">);</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a>    <span class="dt">float</span> x<span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="dt">int</span> y<span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira a base e expoente: "</span><span class="op">;</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>    cin <span class="op">&gt;&gt;</span> x <span class="op">&gt;&gt;</span> y<span class="op">;</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Resultado: "</span> <span class="op">&lt;&lt;</span> pow<span class="op">(</span>x<span class="op">,</span> y<span class="op">)</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="op">}</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="dt">int</span> abs<span class="op">(</span><span class="dt">int</span> e<span class="op">){</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a>    <span class="cf">if</span><span class="op">(</span>e <span class="op">&lt;</span> <span class="dv">0</span><span class="op">){</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a>        <span class="cf">return</span> <span class="op">-</span>e<span class="op">;</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a>    <span class="op">}</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a>    <span class="cf">else</span><span class="op">{</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a>        <span class="cf">return</span> e<span class="op">;</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a>    <span class="op">}</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="op">}</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a></span>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="dt">float</span> pow<span class="op">(</span><span class="dt">float</span> b<span class="op">,</span> <span class="dt">int</span> e<span class="op">){</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a>    <span class="dt">float</span> r <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a>    <span class="dt">int</span> i<span class="op">;</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> abs<span class="op">(</span>e<span class="op">);</span> i<span class="op">++){</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a>        r <span class="op">=</span> r<span class="op">*</span>b<span class="op">;</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a>    <span class="op">}</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-38"><a href="#cb1-38"></a>    <span class="cf">if</span><span class="op">(</span>e <span class="op">&lt;</span> <span class="dv">0</span><span class="op">){</span></span>
+<span id="cb1-39"><a href="#cb1-39"></a>        <span class="cf">return</span> <span class="dv">1</span><span class="op">/</span>r<span class="op">;</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a>    <span class="op">}</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a>    <span class="cf">else</span><span class="op">{</span></span>
+<span id="cb1-42"><a href="#cb1-42"></a>        <span class="cf">return</span> r<span class="op">;</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a>    <span class="op">}</span></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="funções-i---exercícios-2" class="slide level2">
 <h2>Funções I - Exercícios</h2>
-<h4 id="exercício-1---solução">Exercício 1 - Solução</h4>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1"></a><span class="dt">bool</span> eh_perfeito<span class="op">(</span><span class="dt">int</span> x<span class="op">);</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a></span>
-<span id="cb2-4"><a href="#cb2-4"></a>    <span class="dt">int</span> num<span class="op">;</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a></span>
-<span id="cb2-6"><a href="#cb2-6"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira um numero inteiro:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a>    cin <span class="op">&gt;&gt;</span> num<span class="op">;</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a></span>
-<span id="cb2-9"><a href="#cb2-9"></a>    <span class="cf">if</span><span class="op">(</span>eh_perfeito<span class="op">(</span>num<span class="op">)</span> <span class="op">==</span> <span class="kw">true</span><span class="op">){</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a>        cout <span class="op">&lt;&lt;</span> num <span class="op">&lt;&lt;</span> <span class="st">" e um numero perfeito</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a>    <span class="op">}</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a>    <span class="cf">else</span><span class="op">{</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a>        cout <span class="op">&lt;&lt;</span> num <span class="op">&lt;&lt;</span> <span class="st">" nao e um numero perfeito</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a>    <span class="op">}</span></span>
-<span id="cb2-15"><a href="#cb2-15"></a></span>
-<span id="cb2-16"><a href="#cb2-16"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="op">}</span></span>
-<span id="cb2-18"><a href="#cb2-18"></a></span>
-<span id="cb2-19"><a href="#cb2-19"></a><span class="dt">bool</span> eh_perfeito<span class="op">(</span><span class="dt">int</span> x<span class="op">){</span></span>
-<span id="cb2-20"><a href="#cb2-20"></a>    <span class="dt">int</span> i<span class="op">,</span> soma <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb2-21"><a href="#cb2-21"></a></span>
-<span id="cb2-22"><a href="#cb2-22"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb2-23"><a href="#cb2-23"></a>        <span class="cf">if</span><span class="op">(</span>x <span class="op">%</span> i <span class="op">==</span> <span class="dv">0</span><span class="op">){</span></span>
-<span id="cb2-24"><a href="#cb2-24"></a>            soma <span class="op">+=</span> i<span class="op">;</span></span>
-<span id="cb2-25"><a href="#cb2-25"></a>        <span class="op">}</span></span>
-<span id="cb2-26"><a href="#cb2-26"></a>    <span class="op">}</span></span>
-<span id="cb2-27"><a href="#cb2-27"></a></span>
-<span id="cb2-28"><a href="#cb2-28"></a>    <span class="cf">if</span><span class="op">(</span>soma <span class="op">==</span> x<span class="op">){</span></span>
-<span id="cb2-29"><a href="#cb2-29"></a>        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
-<span id="cb2-30"><a href="#cb2-30"></a>    <span class="op">}</span></span>
-<span id="cb2-31"><a href="#cb2-31"></a>    <span class="cf">else</span><span class="op">{</span></span>
-<span id="cb2-32"><a href="#cb2-32"></a>        <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
-<span id="cb2-33"><a href="#cb2-33"></a>    <span class="op">}</span></span>
-<span id="cb2-34"><a href="#cb2-34"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h4 id="exercício-2-número-perfeito">Exercício 2: Número Perfeito</h4>
+<p>Chama-se <strong>número perfeito</strong> um número que é igual à soma dos seus divisores próprios (todos os divisores exceto ele mesmo).</p>
+<p>Por exemplo, <span class="math inline">6</span> é um número perfeito, já que <span class="math inline">6 = 1 + 2 + 3</span>.</p>
+</section>
+<section id="funções-i---exercícios-3" class="slide level2">
+<h2>Funções I - Exercícios</h2>
+<h4 id="exercício-2-número-perfeito-1">Exercício 2: Número Perfeito</h4>
+<p>Implemente uma função que receba como parâmetro um número inteiro e retorne verdadeiro se o número for perfeito ou falso caso contrário.</p>
+<p>Implemente também a função <code>main</code>, que deve ler do usuário um número inteiro e exibir uma mensagem de acordo com o resultado de uma chamada à função solicitada.</p>
+<p>Exemplo:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource cpp number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1"></a>Entrada<span class="op">:</span> <span class="dv">6</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>Saída<span class="op">:</span> <span class="dv">6</span> e um numero perfeito</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="funções-i---exercícios-4" class="slide level2">
+<h2>Funções I - Exercícios</h2>
+<h4 id="exercício-2---solução">Exercício 2 - Solução</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1"></a><span class="dt">bool</span> eh_perfeito<span class="op">(</span><span class="dt">int</span> x<span class="op">);</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>    <span class="dt">int</span> num<span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira um numero inteiro:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>    cin <span class="op">&gt;&gt;</span> num<span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a></span>
+<span id="cb3-9"><a href="#cb3-9"></a>    <span class="cf">if</span><span class="op">(</span>eh_perfeito<span class="op">(</span>num<span class="op">)</span> <span class="op">==</span> <span class="kw">true</span><span class="op">){</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>        cout <span class="op">&lt;&lt;</span> num <span class="op">&lt;&lt;</span> <span class="st">" e um numero perfeito</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>    <span class="op">}</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>    <span class="cf">else</span><span class="op">{</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>        cout <span class="op">&lt;&lt;</span> num <span class="op">&lt;&lt;</span> <span class="st">" nao e um numero perfeito</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>    <span class="op">}</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a></span>
+<span id="cb3-16"><a href="#cb3-16"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a><span class="op">}</span></span>
+<span id="cb3-18"><a href="#cb3-18"></a></span>
+<span id="cb3-19"><a href="#cb3-19"></a><span class="dt">bool</span> eh_perfeito<span class="op">(</span><span class="dt">int</span> x<span class="op">){</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>    <span class="dt">int</span> i<span class="op">,</span> soma <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a></span>
+<span id="cb3-22"><a href="#cb3-22"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a>        <span class="cf">if</span><span class="op">(</span>x <span class="op">%</span> i <span class="op">==</span> <span class="dv">0</span><span class="op">){</span></span>
+<span id="cb3-24"><a href="#cb3-24"></a>            soma <span class="op">+=</span> i<span class="op">;</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>        <span class="op">}</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a>    <span class="op">}</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a></span>
+<span id="cb3-28"><a href="#cb3-28"></a>    <span class="cf">if</span><span class="op">(</span>soma <span class="op">==</span> x<span class="op">){</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a>    <span class="op">}</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a>    <span class="cf">else</span><span class="op">{</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>        <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a>    <span class="op">}</span></span>
+<span id="cb3-34"><a href="#cb3-34"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="lista-de-presença" class="slide level2">
 <h2>Lista de Presença</h2>
 
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=http%3A%2F%2Fbit.ly%2Flip_20230418" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230418">
+<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=bit.ly%2Flip_20230912" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230912">
 <p style="text-align:center;">
-https://bit.ly/lip_20230418
+https://bit.ly/lip_20230912
 </p>
-</a><p><a href="https://bit.ly/lip_20230418"></a></p>
-</section>
-<section id="funções-i---exercícios-3" class="slide level2">
-<h2>Funções I - Exercícios</h2>
-<h4 id="exercício-2-triângulo-de-pascal">Exercício 2: Triângulo de Pascal</h4>
-<p>O Triângulo de Pascal é uma estrutura matemática como mostrada a seguir:</p>
-<pre><code>1
-1 1
-1 2 1
-1 3 3 1
-1 4 6 4 1
-1 5 10 10 5 1
-1 6 15 20 15 6 1</code></pre>
-<p>Nesta estrutura, o termo na linha <span class="math inline">\(i\)</span> e coluna <span class="math inline">\(j\)</span> é calculado como <span class="math display">\[
-t(i,j) = \frac{i!}{j!(i-j)!}
-\]</span></p>
-</section>
-<section id="funções-i---exercícios-4" class="slide level2">
-<h2>Funções I - Exercícios</h2>
-<h4 id="exercício-2-triângulo-de-pascal-1">Exercício 2: Triângulo de Pascal</h4>
-<p>Implemente uma função para imprimir na tela o triângulo de Pascal para um dado número <span class="math inline">\(n\)</span> de linhas. Observe que a quantidade de colunas do triângulo varia conforme a linha, ou seja, a linha 0 tem 1 coluna, a linha 1 tem 2 colunas, a linha 2 tem 3 colunas e assim sucessivamente.</p>
-<p>Implemente também a função <code>main</code>, que deve ler do usuário a quantidade de linhas e exibir o Triângulo de Pascal correspondente.</p>
+</a><p><a href="https://bit.ly/lip_20230912"></a></p>
 </section>
 <section id="funções-i---exercícios-5" class="slide level2">
 <h2>Funções I - Exercícios</h2>
-<h4 id="exercício-2-triângulo-de-pascal-2">Exercício 2: Triângulo de Pascal</h4>
-<p>Como sugestão de roteiro, pense na divisão do problema em funções:</p>
-<ol type="a">
-<li>Função para calcular o fatorial de um número</li>
-<li>Função para calcular cada termo <span class="math inline">\(t(i,j)\)</span></li>
-<li>Função solicitada</li>
-</ol>
+<h4 id="exercício-3-sequência-de-fibonacci">Exercício 3: Sequência de Fibonacci</h4>
+<p>Implemente uma função que receba como parâmetro um número <span class="math inline">n</span> e retorne o n-ésimo termo da sequência de Fibonacci. A sequência de Fibonacci tem o termo 0 e 1 iguais a a 0 e 1 respectivamente, e todos os demais calculados como a soma dos dois anteriores.</p>
+<p>A função <code>main</code> deve ler do usuário um nr. inteiro <code>n</code> e imprimir do termo 0 ao termo <code>n</code> da sequência de acordo com chamadas à função solicitada.</p>
 </section>
 <section id="funções-i---exercícios-6" class="slide level2">
 <h2>Funções I - Exercícios</h2>
-<h4 id="exercício-2---solução">Exercício 2 - Solução</h4>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="kw">using</span> <span class="kw">namespace</span> std<span class="op">;</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="dt">int</span> fat<span class="op">(</span><span class="dt">int</span> x<span class="op">);</span> <span class="co">//a.</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="dt">int</span> termo<span class="op">(</span><span class="dt">int</span> i<span class="op">,</span> <span class="dt">int</span> j<span class="op">);</span> <span class="co">//b.</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="dt">void</span> imprime_triangulo<span class="op">(</span><span class="dt">int</span> n<span class="op">);</span> <span class="co">//c.</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a></span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a></span>
-<span id="cb4-11"><a href="#cb4-11"></a>    <span class="dt">int</span> n_linhas<span class="op">;</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a></span>
-<span id="cb4-13"><a href="#cb4-13"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira o nr. de linhas do triangulo:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a>    cin <span class="op">&gt;&gt;</span> n_linhas<span class="op">;</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a></span>
-<span id="cb4-16"><a href="#cb4-16"></a>    imprime_triangulo<span class="op">(</span>n_linhas<span class="op">);</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a></span>
-<span id="cb4-18"><a href="#cb4-18"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb4-19"><a href="#cb4-19"></a><span class="op">}</span></span>
-<span id="cb4-20"><a href="#cb4-20"></a></span>
-<span id="cb4-21"><a href="#cb4-21"></a><span class="dt">int</span> fat<span class="op">(</span><span class="dt">int</span> x<span class="op">){</span></span>
-<span id="cb4-22"><a href="#cb4-22"></a>    <span class="dt">int</span> i<span class="op">,</span> r <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<h4 id="exercício-3---solução">Exercício 3 - Solução</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="kw">using</span> <span class="kw">namespace</span> std<span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="dt">int</span> fib<span class="op">(</span><span class="dt">int</span> n<span class="op">);</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a></span>
+<span id="cb4-10"><a href="#cb4-10"></a>    <span class="dt">int</span> i<span class="op">,</span> x<span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a></span>
+<span id="cb4-12"><a href="#cb4-12"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira o ultimo indice dos termos: "</span><span class="op">;</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a>    cin <span class="op">&gt;&gt;</span> x<span class="op">;</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a></span>
+<span id="cb4-15"><a href="#cb4-15"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;=</span> x<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a>        cout <span class="op">&lt;&lt;</span> fib<span class="op">(</span>i<span class="op">)</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a>    <span class="op">}</span></span>
+<span id="cb4-18"><a href="#cb4-18"></a></span>
+<span id="cb4-19"><a href="#cb4-19"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a><span class="op">}</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a><span class="dt">int</span> fib<span class="op">(</span><span class="dt">int</span> n<span class="op">){</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a>    <span class="dt">int</span> i<span class="op">,</span> an<span class="op">,</span> an_1 <span class="op">=</span> <span class="dv">1</span><span class="op">,</span> an_2 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb4-23"><a href="#cb4-23"></a></span>
-<span id="cb4-24"><a href="#cb4-24"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">2</span><span class="op">;</span> i <span class="op">&lt;=</span> x<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb4-25"><a href="#cb4-25"></a>        r <span class="op">=</span> r<span class="op">*</span>i<span class="op">;</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a>    <span class="cf">if</span><span class="op">(</span>n <span class="op">==</span> <span class="dv">0</span><span class="op">){</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a>        <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb4-26"><a href="#cb4-26"></a>    <span class="op">}</span></span>
-<span id="cb4-27"><a href="#cb4-27"></a></span>
-<span id="cb4-28"><a href="#cb4-28"></a>    <span class="cf">return</span> r<span class="op">;</span></span>
-<span id="cb4-29"><a href="#cb4-29"></a><span class="op">}</span></span>
-<span id="cb4-30"><a href="#cb4-30"></a></span>
-<span id="cb4-31"><a href="#cb4-31"></a><span class="dt">int</span> termo<span class="op">(</span><span class="dt">int</span> i<span class="op">,</span> <span class="dt">int</span> j<span class="op">){</span></span>
-<span id="cb4-32"><a href="#cb4-32"></a>    <span class="cf">return</span> fat<span class="op">(</span>i<span class="op">)/(</span>fat<span class="op">(</span>j<span class="op">)*</span>fat<span class="op">(</span>i<span class="op">-</span>j<span class="op">));</span></span>
-<span id="cb4-33"><a href="#cb4-33"></a><span class="op">}</span></span>
-<span id="cb4-34"><a href="#cb4-34"></a></span>
-<span id="cb4-35"><a href="#cb4-35"></a><span class="dt">void</span> imprime_triangulo<span class="op">(</span><span class="dt">int</span> n<span class="op">){</span></span>
-<span id="cb4-36"><a href="#cb4-36"></a>    <span class="dt">int</span> i<span class="op">,</span> j<span class="op">;</span></span>
-<span id="cb4-37"><a href="#cb4-37"></a></span>
-<span id="cb4-38"><a href="#cb4-38"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb4-39"><a href="#cb4-39"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> i<span class="op">+</span><span class="dv">1</span><span class="op">;</span> j<span class="op">++){</span></span>
-<span id="cb4-40"><a href="#cb4-40"></a>            cout <span class="op">&lt;&lt;</span> termo<span class="op">(</span>i<span class="op">,</span> j<span class="op">)</span> <span class="op">&lt;&lt;</span> <span class="st">" "</span><span class="op">;</span></span>
-<span id="cb4-41"><a href="#cb4-41"></a>        <span class="op">}</span></span>
-<span id="cb4-42"><a href="#cb4-42"></a>        cout <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb4-43"><a href="#cb4-43"></a>    <span class="op">}</span>    </span>
-<span id="cb4-44"><a href="#cb4-44"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-27"><a href="#cb4-27"></a>    <span class="cf">if</span><span class="op">(</span>n <span class="op">==</span> <span class="dv">1</span><span class="op">){</span></span>
+<span id="cb4-28"><a href="#cb4-28"></a>        <span class="cf">return</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb4-29"><a href="#cb4-29"></a>    <span class="op">}</span></span>
+<span id="cb4-30"><a href="#cb4-30"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">2</span><span class="op">;</span> i <span class="op">&lt;=</span> n<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb4-31"><a href="#cb4-31"></a>        an <span class="op">=</span> an_1 <span class="op">+</span> an_2<span class="op">;</span></span>
+<span id="cb4-32"><a href="#cb4-32"></a>        an_2 <span class="op">=</span> an_1<span class="op">;</span></span>
+<span id="cb4-33"><a href="#cb4-33"></a>        an_1 <span class="op">=</span> an<span class="op">;</span></span>
+<span id="cb4-34"><a href="#cb4-34"></a>    <span class="op">}</span></span>
+<span id="cb4-35"><a href="#cb4-35"></a></span>
+<span id="cb4-36"><a href="#cb4-36"></a>    <span class="cf">return</span> an<span class="op">;</span></span>
+<span id="cb4-37"><a href="#cb4-37"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -565,7 +603,6 @@ t(i,j) = \frac{i!}{j!(i-j)!}
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -733,27 +770,9 @@ t(i,j) = \frac{i!}{j!(i-j)!}
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

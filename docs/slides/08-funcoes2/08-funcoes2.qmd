@@ -19,6 +19,7 @@ Revisando a ideia de funções:
 
 - Parâmetros são a porta de entrada de funções
 - O tipo de retorno é a sua saída
+
 > Este mecanismo estabelece uma forma de uma função "conversar" com uma outra
 > Por exemplo: função `main` que faz uma chamada à função `sqrt`
 ---
@@ -50,7 +51,7 @@ Funções sem retorno:
 
 - Também conhecidas como *procedimentos*
 - Útil para funções que devem escrever na tela
-- _Escrever na tela com comando `cout` não é retorno_
+- **Escrever na tela com comando `cout` não é retorno**
 - Tipo da função deve ser _`void`_
 ---
 
@@ -142,9 +143,9 @@ seguinte exemplo hipotético:
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230413){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230914){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230413"><p style="text-align:center;">https://bit.ly/lip_20230413</p></a>
+<a href="https://bit.ly/lip_20230914"><p style="text-align:center;">https://bit.ly/lip_20230914</p></a>
 
 ---
 
@@ -269,4 +270,3 @@ Na aula de hoje:
 
 - Funções sem retorno
 - Passagem de parâmetro por valor e por referência
----
