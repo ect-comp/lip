@@ -95,6 +95,22 @@
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="../../assets/css/logo.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -480,12 +496,12 @@ Prof.&nbsp;Bruno Silva
 <ol type="1">
 <li>Função que gera um número aleatório:
 <ul>
-<li><code>int rand();</code> <span class="math inline">\(\rightarrow\)</span> nenhum parâmetro</li>
+<li><code>int rand();</code> <span class="math inline">\rightarrow</span> nenhum parâmetro</li>
 </ul></li>
 <li>Função que computa o produto entre dois números inteiros:
 <ul>
-<li><code>int produto(int x, int y);</code> <span class="math inline">\(\rightarrow\)</span> 2 parâmetros de entrada</li>
-<li><code>void produto(int x, int y, int&amp; r);</code> <span class="math inline">\(\rightarrow\)</span> 2 parâmetros de entrada e 1 de saída</li>
+<li><code>int produto(int x, int y);</code> <span class="math inline">\rightarrow</span> 2 parâmetros de entrada</li>
+<li><code>void produto(int x, int y, int&amp; r);</code> <span class="math inline">\rightarrow</span> 2 parâmetros de entrada e 1 de saída</li>
 </ul></li>
 </ol>
 </section>
@@ -510,23 +526,23 @@ Prof.&nbsp;Bruno Silva
 <ol start="3" type="1">
 <li>Função que troca o valor de dois números inteiros:
 <ul>
-<li><code>void troca(int&amp; x, int&amp; y);</code> <span class="math inline">\(\rightarrow\)</span> 2 parâmetros de entrada e saída, ao mesmo tempo</li>
+<li><code>void troca(int&amp; x, int&amp; y);</code> <span class="math inline">\rightarrow</span> 2 parâmetros de entrada e saída, ao mesmo tempo</li>
 </ul></li>
 <li>Função que calcula o quociente e resto entre dois números inteiros:
 <ul>
-<li><code>void quoc_resto(int&amp; x, int&amp; y);</code> <span class="math inline">\(\rightarrow\)</span> 2 parâmetros de entrada e saída, ao mesmo tempo</li>
-<li><code>void quoc_resto(int x, int y, int&amp; q, int&amp; r);}</code> <span class="math inline">\(\rightarrow\)</span> 2 entradas, 2 saídas</li>
+<li><code>void quoc_resto(int&amp; x, int&amp; y);</code> <span class="math inline">\rightarrow</span> 2 parâmetros de entrada e saída, ao mesmo tempo</li>
+<li><code>void quoc_resto(int x, int y, int&amp; q, int&amp; r);}</code> <span class="math inline">\rightarrow</span> 2 entradas, 2 saídas</li>
 </ul></li>
 </ol>
 </section>
 <section id="lista-de-presença" class="slide level2">
 <h2>Lista de Presença</h2>
 
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=http%3A%2F%2Fbit.ly%2Flip_20230420" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230420">
+<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=bit.ly%2Flip_20230919" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230919">
 <p style="text-align:center;">
-https://bit.ly/lip_20230420
+https://bit.ly/lip_20230919
 </p>
-</a><p><a href="https://bit.ly/lip_20230420"></a></p>
+</a><p><a href="https://bit.ly/lip_20230919"></a></p>
 </section>
 <section id="funções-com-múltiplas-saídas" class="slide level2">
 <h2>Funções com Múltiplas Saídas</h2>
@@ -542,6 +558,48 @@ https://bit.ly/lip_20230420
 </section>
 <section id="exercício-1" class="slide level2">
 <h2>Exercício 1</h2>
+<p>Implemente uma função que receba como parâmetros de entrada dois números inteiros <span class="math inline">x</span> e <span class="math inline">y</span>. A sua função deve armazenar em um primeiro parâmetro de saída o fatorial de <span class="math inline">x</span>, o fatorial de <span class="math inline">y</span> em um segundo parâmetro e <span class="math inline">x^y</span> em um terceiro.</p>
+<p>A função <code>main</code> deve ler dois números inteiros entre 0 e 10 do usuário, passá-los como parâmetro para a função implementada e exibir as três saídas da função.</p>
+<p>Não utilize a função <code>pow</code>.</p>
+</section>
+<section id="exercício-1-solução" class="slide level2">
+<h2>Exercício 1: Solução</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1"></a><span class="dt">int</span> fatorial<span class="op">(</span><span class="dt">int</span> n<span class="op">);</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="dt">int</span> potencia<span class="op">(</span><span class="dt">int</span> b<span class="op">,</span> <span class="dt">int</span> e<span class="op">);</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="dt">void</span> fat_pot<span class="op">(</span><span class="dt">int</span> x<span class="op">,</span> <span class="dt">int</span> y<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> f1<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> f2<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> p<span class="op">);</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="dt">int</span> n1<span class="op">,</span> n2<span class="op">,</span> r1<span class="op">,</span> r2<span class="op">,</span> r3<span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira dois numeros:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>    cin <span class="op">&gt;&gt;</span> n1 <span class="op">&gt;&gt;</span> n2<span class="op">;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>    fat_pot<span class="op">(</span>n1<span class="op">,</span> n2<span class="op">,</span> r1<span class="op">,</span> r2<span class="op">,</span> r3<span class="op">);</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Fatorial1: "</span> <span class="op">&lt;&lt;</span> r1 <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Fatorial2: "</span> <span class="op">&lt;&lt;</span> r2 <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Potencia: "</span> <span class="op">&lt;&lt;</span> r3 <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="op">}</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="dt">int</span> fatorial<span class="op">(</span><span class="dt">int</span> n<span class="op">){</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>    <span class="dt">int</span> i<span class="op">,</span> r <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;=</span> n<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb3-18"><a href="#cb3-18"></a>        r <span class="op">*=</span> i<span class="op">;</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a>    <span class="op">}</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>    <span class="cf">return</span> r<span class="op">;</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a><span class="op">}</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a><span class="dt">int</span> potencia<span class="op">(</span><span class="dt">int</span> b<span class="op">,</span> <span class="dt">int</span> e<span class="op">){</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a>    <span class="dt">int</span> i<span class="op">,</span> r <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb3-24"><a href="#cb3-24"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;=</span> e<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>        r <span class="op">*=</span> b<span class="op">;</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a>    <span class="op">}</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a>    <span class="cf">return</span> r<span class="op">;</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a><span class="op">}</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a><span class="dt">void</span> fat_pot<span class="op">(</span><span class="dt">int</span> x<span class="op">,</span> <span class="dt">int</span> y<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> f1<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> f2<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> p<span class="op">){</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a>    f1 <span class="op">=</span> fatorial<span class="op">(</span>x<span class="op">);</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a>    f2 <span class="op">=</span> fatorial<span class="op">(</span>y<span class="op">);</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>    p <span class="op">=</span> potencia<span class="op">(</span>x<span class="op">,</span> y<span class="op">);</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercício-2" class="slide level2">
+<h2>Exercício 2</h2>
 <p>A sequência de Collatz, é gerada pelas seguintes regras:</p>
 <ul>
 <li>O termo inicial é um número dado</li>
@@ -551,84 +609,42 @@ https://bit.ly/lip_20230420
 </ul>
 <p>Por exemplo, para um termo inicial igual a 10, a sequência gerada é <code>10, 5, 16, 8, 4, 2, 1</code>.</p>
 </section>
-<section id="exercício-1-1" class="slide level2">
-<h2>Exercício 1</h2>
+<section id="exercício-2-1" class="slide level2">
+<h2>Exercício 2</h2>
 <p>Implemente uma função que receba como parâmetro de entrada um número inteiro positivo denotando o primeiro termo da sequência. A função a ser implementada deve armazenar em parâmetros de saída o maior número que faz parte da sequência e também o total de termos <code>n</code> que compõe a sequência.</p>
 <p>Implemente a função <code>main</code> para testar o seu programa.</p>
 </section>
-<section id="exercício-1-solução" class="slide level2">
-<h2>Exercício 1: Solução</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1"></a><span class="dt">void</span> maior_total_collatz<span class="op">(</span><span class="dt">int</span> t_ini<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> maior<span class="op">,</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>                         <span class="dt">int</span><span class="op">&amp;</span> total<span class="op">);</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a>    <span class="dt">int</span> val_ini<span class="op">,</span> val_maior<span class="op">,</span> quant<span class="op">;</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira o valor inicial da sequencia:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a>    cin <span class="op">&gt;&gt;</span> val_ini<span class="op">;</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a>    maior_total_collatz<span class="op">(</span>val_ini<span class="op">,</span> val_maior<span class="op">,</span> quant<span class="op">);</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Maior valor: "</span> <span class="op">&lt;&lt;</span> val_maior <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Total de termos: "</span> <span class="op">&lt;&lt;</span> quant <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="op">}</span></span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="dt">void</span> maior_total_collatz<span class="op">(</span><span class="dt">int</span> t_ini<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> maior<span class="op">,</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a>                         <span class="dt">int</span><span class="op">&amp;</span> total<span class="op">){</span></span>
-<span id="cb3-15"><a href="#cb3-15"></a>    <span class="dt">int</span> termo <span class="op">=</span> maior <span class="op">=</span> t_ini<span class="op">;</span></span>
-<span id="cb3-16"><a href="#cb3-16"></a>    total <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb3-17"><a href="#cb3-17"></a>    <span class="cf">while</span><span class="op">(</span>termo <span class="op">!=</span> <span class="dv">1</span><span class="op">){</span></span>
-<span id="cb3-18"><a href="#cb3-18"></a>        <span class="cf">if</span><span class="op">(</span>termo <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span><span class="op">){</span></span>
-<span id="cb3-19"><a href="#cb3-19"></a>            termo <span class="op">=</span> termo<span class="op">/</span><span class="dv">2</span><span class="op">;</span></span>
-<span id="cb3-20"><a href="#cb3-20"></a>        <span class="op">}</span></span>
-<span id="cb3-21"><a href="#cb3-21"></a>        <span class="cf">else</span><span class="op">{</span></span>
-<span id="cb3-22"><a href="#cb3-22"></a>            termo <span class="op">=</span> <span class="dv">3</span><span class="op">*</span>termo <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb3-23"><a href="#cb3-23"></a>        <span class="op">}</span></span>
-<span id="cb3-24"><a href="#cb3-24"></a>        <span class="cf">if</span><span class="op">(</span>termo <span class="op">&gt;</span> maior<span class="op">){</span></span>
-<span id="cb3-25"><a href="#cb3-25"></a>            maior <span class="op">=</span> termo<span class="op">;</span></span>
-<span id="cb3-26"><a href="#cb3-26"></a>        <span class="op">}</span></span>
-<span id="cb3-27"><a href="#cb3-27"></a>        total<span class="op">++;</span></span>
-<span id="cb3-28"><a href="#cb3-28"></a>    <span class="op">}</span></span>
-<span id="cb3-29"><a href="#cb3-29"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="exercício-2" class="slide level2">
-<h2>Exercício 2</h2>
-<p>Implemente uma função que receba como parâmetros de entrada dois números inteiros <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>. A sua função deve armazenar em um primeiro parâmetro de saída o fatorial de <span class="math inline">\(x\)</span>, o fatorial de <span class="math inline">\(y\)</span> em um segundo parâmetro e <span class="math inline">\(x^y\)</span> em um terceiro.</p>
-<p>A função <code>main</code> deve ler dois números inteiros entre 0 e 10 do usuário, passá-los como parâmetro para a função implementada e exibir as três saídas da função.</p>
-<p>Não utilize a função <code>pow</code>.</p>
-</section>
 <section id="exercício-2-solução" class="slide level2">
 <h2>Exercício 2: Solução</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="dt">int</span> fatorial<span class="op">(</span><span class="dt">int</span> n<span class="op">);</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="dt">int</span> potencia<span class="op">(</span><span class="dt">int</span> b<span class="op">,</span> <span class="dt">int</span> e<span class="op">);</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="dt">void</span> fat_pot<span class="op">(</span><span class="dt">int</span> x<span class="op">,</span> <span class="dt">int</span> y<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> f1<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> f2<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> p<span class="op">);</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>    <span class="dt">int</span> n1<span class="op">,</span> n2<span class="op">,</span> r1<span class="op">,</span> r2<span class="op">,</span> r3<span class="op">;</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira dois numeros:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a>    cin <span class="op">&gt;&gt;</span> n1 <span class="op">&gt;&gt;</span> n2<span class="op">;</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a>    fat_pot<span class="op">(</span>n1<span class="op">,</span> n2<span class="op">,</span> r1<span class="op">,</span> r2<span class="op">,</span> r3<span class="op">);</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Fatorial1: "</span> <span class="op">&lt;&lt;</span> r1 <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Fatorial2: "</span> <span class="op">&lt;&lt;</span> r2 <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Potencia: "</span> <span class="op">&lt;&lt;</span> r3 <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="op">}</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="dt">int</span> fatorial<span class="op">(</span><span class="dt">int</span> n<span class="op">){</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a>    <span class="dt">int</span> i<span class="op">,</span> r <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;=</span> n<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb4-18"><a href="#cb4-18"></a>        r <span class="op">*=</span> i<span class="op">;</span></span>
-<span id="cb4-19"><a href="#cb4-19"></a>    <span class="op">}</span></span>
-<span id="cb4-20"><a href="#cb4-20"></a>    <span class="cf">return</span> r<span class="op">;</span></span>
-<span id="cb4-21"><a href="#cb4-21"></a><span class="op">}</span></span>
-<span id="cb4-22"><a href="#cb4-22"></a><span class="dt">int</span> potencia<span class="op">(</span><span class="dt">int</span> b<span class="op">,</span> <span class="dt">int</span> e<span class="op">){</span></span>
-<span id="cb4-23"><a href="#cb4-23"></a>    <span class="dt">int</span> i<span class="op">,</span> r <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb4-24"><a href="#cb4-24"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;=</span> e<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb4-25"><a href="#cb4-25"></a>        r <span class="op">*=</span> b<span class="op">;</span></span>
-<span id="cb4-26"><a href="#cb4-26"></a>    <span class="op">}</span></span>
-<span id="cb4-27"><a href="#cb4-27"></a>    <span class="cf">return</span> r<span class="op">;</span></span>
-<span id="cb4-28"><a href="#cb4-28"></a><span class="op">}</span></span>
-<span id="cb4-29"><a href="#cb4-29"></a><span class="dt">void</span> fat_pot<span class="op">(</span><span class="dt">int</span> x<span class="op">,</span> <span class="dt">int</span> y<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> f1<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> f2<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> p<span class="op">){</span></span>
-<span id="cb4-30"><a href="#cb4-30"></a>    f1 <span class="op">=</span> fatorial<span class="op">(</span>x<span class="op">);</span></span>
-<span id="cb4-31"><a href="#cb4-31"></a>    f2 <span class="op">=</span> fatorial<span class="op">(</span>y<span class="op">);</span></span>
-<span id="cb4-32"><a href="#cb4-32"></a>    p <span class="op">=</span> potencia<span class="op">(</span>x<span class="op">,</span> y<span class="op">);</span></span>
-<span id="cb4-33"><a href="#cb4-33"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="dt">void</span> maior_total_collatz<span class="op">(</span><span class="dt">int</span> t_ini<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> maior<span class="op">,</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>                         <span class="dt">int</span><span class="op">&amp;</span> total<span class="op">);</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="dt">int</span> val_ini<span class="op">,</span> val_maior<span class="op">,</span> quant<span class="op">;</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira o valor inicial da sequencia:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>    cin <span class="op">&gt;&gt;</span> val_ini<span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>    maior_total_collatz<span class="op">(</span>val_ini<span class="op">,</span> val_maior<span class="op">,</span> quant<span class="op">);</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Maior valor: "</span> <span class="op">&lt;&lt;</span> val_maior <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Total de termos: "</span> <span class="op">&lt;&lt;</span> quant <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="op">}</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="dt">void</span> maior_total_collatz<span class="op">(</span><span class="dt">int</span> t_ini<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> maior<span class="op">,</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a>                         <span class="dt">int</span><span class="op">&amp;</span> total<span class="op">){</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a>    <span class="dt">int</span> termo <span class="op">=</span> maior <span class="op">=</span> t_ini<span class="op">;</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a>    total <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a>    <span class="cf">while</span><span class="op">(</span>termo <span class="op">!=</span> <span class="dv">1</span><span class="op">){</span></span>
+<span id="cb4-18"><a href="#cb4-18"></a>        <span class="cf">if</span><span class="op">(</span>termo <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span><span class="op">){</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a>            termo <span class="op">=</span> termo<span class="op">/</span><span class="dv">2</span><span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a>        <span class="op">}</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a>        <span class="cf">else</span><span class="op">{</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a>            termo <span class="op">=</span> <span class="dv">3</span><span class="op">*</span>termo <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a>        <span class="op">}</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a>        <span class="cf">if</span><span class="op">(</span>termo <span class="op">&gt;</span> maior<span class="op">){</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a>            maior <span class="op">=</span> termo<span class="op">;</span></span>
+<span id="cb4-26"><a href="#cb4-26"></a>        <span class="op">}</span></span>
+<span id="cb4-27"><a href="#cb4-27"></a>        total<span class="op">++;</span></span>
+<span id="cb4-28"><a href="#cb4-28"></a>    <span class="op">}</span></span>
+<span id="cb4-29"><a href="#cb4-29"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="sumário" class="slide level2">
 <h2>Sumário</h2>
@@ -637,9 +653,6 @@ https://bit.ly/lip_20230420
 <li>Parâmetros de entrada, saída e de entrada e saída</li>
 <li>Funções que chamam outras funções para simplificar a lógica de programas</li>
 </ul>
-</section>
-<section class="slide level2">
-
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -662,7 +675,6 @@ https://bit.ly/lip_20230420
   <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -830,27 +842,9 @@ https://bit.ly/lip_20230420
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
