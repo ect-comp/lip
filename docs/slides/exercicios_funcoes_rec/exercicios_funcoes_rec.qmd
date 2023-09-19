@@ -31,14 +31,6 @@ na tela.
 
 ---
 
-## Lista de Presença
-
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230504){fig-align="center"}
-
-<a href="https://bit.ly/lip_20230504"><p style="text-align:center;">https://bit.ly/lip_20230504</p></a>
-
----
-
 ## Exercício 2
 #### Função Recursiva: Quantidade de Dígitos de um Número
 
@@ -57,6 +49,14 @@ número inteiro e retorne a quantidade de dígitos deste número.
 Implemente a função `main` para testar o seu programa,
 lendo um número inteiro do usuário e mostrando o resultado
 na tela.
+
+---
+
+## Lista de Presença
+
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230928){fig-align="center"}
+
+<a href="https://bit.ly/lip_20230928"><p style="text-align:center;">https://bit.ly/lip_20230928</p></a>
 
 ---
 
@@ -123,4 +123,3 @@ int conta_divisores(int x){
     return conta_div(x, 1);
 }
 ```
----

@@ -486,11 +486,16 @@ Prof.&nbsp;Bruno Silva
 </section>
 <section id="funções-recursivas" class="slide level2">
 <h2>Funções Recursivas</h2>
-<p>Conceito:</p>
-<ul>
-<li>Função que se refere a ela mesma</li>
-<li>Lógica da função possui chamadas diretas ou indiretas à própria função</li>
-</ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Função que possui chamadas diretas ou indiretas à ela mesma.</p>
+</div>
+</div>
+</div>
 <p>Exemplo:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a><span class="dt">int</span> funcao<span class="op">(</span><span class="dt">int</span> x<span class="op">){</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a>    <span class="cf">if</span><span class="op">(</span>x <span class="op">==</span> <span class="dv">0</span><span class="op">){</span></span>
@@ -513,7 +518,7 @@ Prof.&nbsp;Bruno Silva
 <p><strong>Ideia de uma função recursiva:</strong></p>
 </div>
 <div class="callout-content">
-<p>Para implementar uma função recursiva, você deve programá-la para que ela realize chamadas a ela mesma até que uma condição seja alcançada</p>
+<p>Para implementar uma função recursiva, você deve programá-la para que ela realize chamadas a ela mesma até que uma condição seja alcançada, evitando assim <strong>recursividade infinita</strong>.</p>
 </div>
 </div>
 </div>
@@ -742,11 +747,11 @@ f(n)=\begin{cases}
 <section id="lista-de-presença" class="slide level2">
 <h2>Lista de Presença</h2>
 
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=https%3A%2F%2Fbit.ly%2Flip_20230502" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230502">
+<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=bit.ly%2Flip_20230921" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20230921">
 <p style="text-align:center;">
-https://bit.ly/lip_20230502
+https://bit.ly/lip_20230921
 </p>
-</a><p><a href="https://bit.ly/lip_20230502"></a></p>
+</a><p><a href="https://bit.ly/lip_20230921"></a></p>
 </section>
 <section id="funções-recursivas-19" class="slide level2 nostretch">
 <h2>Funções Recursivas</h2>
@@ -981,9 +986,9 @@ f(n)=\begin{cases}
 <section id="exemplo-de-sequência-recursiva" class="slide level2">
 <h2>Exemplo de Sequência Recursiva</h2>
 <h4 id="sequência-de-fibonacci">Sequência de Fibonacci</h4>
-<p>Definição matemática:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
+<p>Definição matemática:</p>
 <div style="font-size: 0.6em">
 <p><span class="math display">
 f(n)=\begin{cases}

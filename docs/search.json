@@ -1936,7 +1936,7 @@
     "href": "slides/revisao_unidade1/revisao_unidade1.html#revisão---unidade-i",
     "title": "Revisão - Unidade I",
     "section": "Revisão - Unidade I",
-    "text": "Revisão - Unidade I\nLista de Presença\n\n\n\n\n\n\n\nhttps://bit.ly/lip_20230921\n\n\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Revisão - Unidade I\nLista de Presença\n\n\n\n\n\n\n\nhttps://bit.ly/lip_20230926\n\n\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/10-funcoes_rec/10-funcoes_rec.html#funções",
@@ -1985,14 +1985,14 @@
     "href": "slides/10-funcoes_rec/10-funcoes_rec.html#funções-recursivas",
     "title": "Funções Recursivas",
     "section": "Funções Recursivas",
-    "text": "Funções Recursivas\nConceito:\n\nFunção que se refere a ela mesma\nLógica da função possui chamadas diretas ou indiretas à própria função\n\nExemplo:\nint funcao(int x){\n    if(x == 0){\n        return 1;\n    }\n    else{\n        cout << x << endl;\n        return funcao(x-1);\n    }\n}"
+    "text": "Funções Recursivas\n\n\n\n\n\n\nFunção que possui chamadas diretas ou indiretas à ela mesma.\n\n\n\nExemplo:\nint funcao(int x){\n    if(x == 0){\n        return 1;\n    }\n    else{\n        cout << x << endl;\n        return funcao(x-1);\n    }\n}"
   },
   {
     "objectID": "slides/10-funcoes_rec/10-funcoes_rec.html#funções-recursivas-1",
     "href": "slides/10-funcoes_rec/10-funcoes_rec.html#funções-recursivas-1",
     "title": "Funções Recursivas",
     "section": "Funções Recursivas",
-    "text": "Funções Recursivas\n\n\n\n\n\n\nIdeia de uma função recursiva:\n\n\nPara implementar uma função recursiva, você deve programá-la para que ela realize chamadas a ela mesma até que uma condição seja alcançada"
+    "text": "Funções Recursivas\n\n\n\n\n\n\nIdeia de uma função recursiva:\n\n\nPara implementar uma função recursiva, você deve programá-la para que ela realize chamadas a ela mesma até que uma condição seja alcançada, evitando assim recursividade infinita."
   },
   {
     "objectID": "slides/10-funcoes_rec/10-funcoes_rec.html#funções-recursivas-2",
@@ -2111,7 +2111,7 @@
     "href": "slides/10-funcoes_rec/10-funcoes_rec.html#lista-de-presença",
     "title": "Funções Recursivas",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230502"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230921"
   },
   {
     "objectID": "slides/10-funcoes_rec/10-funcoes_rec.html#funções-recursivas-18",
@@ -2258,7 +2258,7 @@
     "href": "slides/10-funcoes_rec/10-funcoes_rec.html#exemplo-de-sequência-recursiva",
     "title": "Funções Recursivas",
     "section": "Exemplo de Sequência Recursiva",
-    "text": "Exemplo de Sequência Recursiva\nSequência de Fibonacci\nDefinição matemática:\n\n\n\n\nf(n)=\\begin{cases}\n    1, & \\text{se } n = 0\\\\\n    1, & \\text{se } n = 1\\\\\n    f(n-1)+f(n-2), & \\text{se } n > 1\\\\\n\\end{cases}\n\n\n\nFunção:\nint fib(int n){\n    if(n <= 1){\n        return 1;\n    }\n    else{\n        return fib(n-1)+fib(n-2);\n    }\n}"
+    "text": "Exemplo de Sequência Recursiva\nSequência de Fibonacci\n\n\nDefinição matemática:\n\n\nf(n)=\\begin{cases}\n    1, & \\text{se } n = 0\\\\\n    1, & \\text{se } n = 1\\\\\n    f(n-1)+f(n-2), & \\text{se } n > 1\\\\\n\\end{cases}\n\n\n\nFunção:\nint fib(int n){\n    if(n <= 1){\n        return 1;\n    }\n    else{\n        return fib(n-1)+fib(n-2);\n    }\n}"
   },
   {
     "objectID": "slides/10-funcoes_rec/10-funcoes_rec.html#funções-recursivas-36",
@@ -2307,7 +2307,7 @@
     "href": "slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html#lista-de-presença",
     "title": "Funções Recursivas - Exercícios",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230504"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230928"
   },
   {
     "objectID": "slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html#exercício-2",
@@ -2349,7 +2349,7 @@
     "href": "slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html#exercício-4-1",
     "title": "Funções Recursivas - Exercícios",
     "section": "Exercício 4",
-    "text": "Exercício 4\nFunção Recursiva: Divisores de um Número\nPara que esta função contenha apenas um parâmetro de entrada, utilize uma função auxiliar com dois parâmetros, que realiza de fato o cálculo da quantidade de divisores:\n//Função auxiliar: \n//calcula a quantidade de divisores.\n//Esta função é realmente recursiva\nint conta_div(int n, int i){\n    //Deixado como exercício :)\n}\n\n//Função com apenas um parâmetro:\n//serve de fachada para a função\n//auxiliar, que é realmente recursiva\nint conta_divisores(int x){\n    return conta_div(x, 1);\n}"
+    "text": "Exercício 4\nFunção Recursiva: Divisores de um Número\nPara que esta função contenha apenas um parâmetro de entrada, utilize uma função auxiliar com dois parâmetros, que realiza de fato o cálculo da quantidade de divisores:\n//Função auxiliar: \n//calcula a quantidade de divisores.\n//Esta função é realmente recursiva\nint conta_div(int n, int i){\n    //Deixado como exercício :)\n}\n\n//Função com apenas um parâmetro:\n//serve de fachada para a função\n//auxiliar, que é realmente recursiva\nint conta_divisores(int x){\n    return conta_div(x, 1);\n}\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/11-vetores/11-vetores.html#nas-aulas-anteriores",

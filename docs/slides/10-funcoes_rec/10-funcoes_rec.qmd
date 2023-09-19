@@ -80,10 +80,11 @@ problema.
 
 ## Funções Recursivas
 
-Conceito:
+::: {.callout-note appearance="simple"}
 
-- Função que se refere a ela mesma
-- Lógica da função possui chamadas diretas ou indiretas à própria função
+Função que possui chamadas diretas ou indiretas à ela mesma.
+
+:::
 
 Exemplo:
 ```C++
@@ -108,7 +109,8 @@ int funcao(int x){
 Para implementar uma função recursiva,
 você deve programá-la para que ela realize
 chamadas a ela mesma até que uma condição
-seja alcançada
+seja alcançada, evitando assim
+**recursividade infinita**.
 
 :::
 
@@ -360,9 +362,9 @@ Como este mecanismo funciona?
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230502){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230921){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230502"><p style="text-align:center;">https://bit.ly/lip_20230502</p></a>
+<a href="https://bit.ly/lip_20230921"><p style="text-align:center;">https://bit.ly/lip_20230921</p></a>
 
 ---
 
@@ -599,11 +601,11 @@ Funções recursivas podem ser úteis para definir sequências numéricas:
 ## Exemplo de Sequência Recursiva
 #### Sequência de Fibonacci
 
-Definição matemática:
-
 :::: {.columns}
 
 ::: {.column width="50%"}
+
+Definição matemática:
 
 ::: {style="font-size: 0.6em"}
 $$

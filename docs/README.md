@@ -45,15 +45,15 @@
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
-## [21/09 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
-
-<!--
-
-## [02/05 - Funções Recursivas](./slides/10-funcoes_rec/10-funcoes_rec.html)
+## [21/09 - Funções Recursivas](./slides/10-funcoes_rec/10-funcoes_rec.html)
 - Estruturas recursivas
 - Passo base e passo recursivo
 
-## [04/05 - Funções Recursivas - Exercícios](./slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html)
+## [26/09 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
+
+## [28/09 - Funções Recursivas - Exercícios](./slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html)
+
+<!--
 
 ## [09/05 - Vetores](./slides/11-vetores/11-vetores.html)
 - Sintaxe de declaração
