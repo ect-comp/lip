@@ -53,13 +53,13 @@
 
 ## [28/09 - Funções Recursivas - Exercícios](./slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html)
 
-<!--
-
-## [09/05 - Vetores](./slides/11-vetores/11-vetores.html)
+## [05/10 - Vetores](./slides/11-vetores/11-vetores.html)
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
 - Exercícios
+
+<!--
 
 ## [11/05 - Funções e Vetores](./slides/12-funcoes_e_vetores/12-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores
