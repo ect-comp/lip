@@ -59,12 +59,12 @@
 - Inicialização
 - Exercícios
 
-<!--
-
-## [11/05 - Funções e Vetores](./slides/12-funcoes_e_vetores/12-funcoes_e_vetores.html)
+## [10/10 - Funções e Vetores](./slides/12-funcoes_e_vetores/12-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
 - Exercícios
+
+<!--
 
 ## [16/05 - Funções e Vetores - Exercícios](./slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html)
 
