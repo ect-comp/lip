@@ -103,9 +103,9 @@ Escrever assinatura da função:
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230511){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231010){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230511"><p style="text-align:center;">https://bit.ly/lip_2023051</p></a>
+<a href="https://bit.ly/lip_20231010"><p style="text-align:center;">https://bit.ly/lip_20231010</p></a>
 
 ---
 
