@@ -64,6 +64,16 @@
 - Funções recursivas com vetores
 - Exercícios
 
+## [17/10 - Matrizes](./slides/14-matrizes/14-matrizes.html)
+- Sintaxe de declaração
+- Acesso às posições
+- Inicialização
+- Exercícios
+
+## [19/10 - Funções e Matrizes](./slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html)
+- Sintaxe de implementação de funções com matrizes
+- Exercícios
+
 <!--
 
 ## [16/05 - Funções e Vetores - Exercícios](./slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html)
@@ -73,16 +83,6 @@
   - Geração de números aleatórios inteiros em intervalos de interesse
   - Geração de números aleatórios reais
   - Geração de caracteres aleatórios
-- Exercícios
-
-## [23/05 - Matrizes](./slides/14-matrizes/14-matrizes.html)
-- Sintaxe de declaração
-- Acesso às posições
-- Inicialização
-- Exercícios
-
-## [25/05 - Funções e Matrizes](./slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html)
-- Sintaxe de implementação de funções com matrizes
 - Exercícios
 
 ## [30/05 - Funções e Matrizes - Exercícios](./slides/exercicios_funcoes_e_matrizes/exercicios_funcoes_e_matrizes.html)

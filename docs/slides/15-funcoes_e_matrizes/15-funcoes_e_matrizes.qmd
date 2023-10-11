@@ -143,9 +143,9 @@ int computa_maior(int mat1[][MAX], int mat2[][MAX],
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230525){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231019){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230525"><p style="text-align:center;">https://bit.ly/lip_20230525</p></a>
+<a href="https://bit.ly/lip_20231019"><p style="text-align:center;">https://bit.ly/lip_20231019</p></a>
 
 ---
 
