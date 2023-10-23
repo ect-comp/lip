@@ -74,7 +74,7 @@
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
 
-## [24/10 - Unidade 2 - Simulado](./slides/exercicios_unidade2/exercicios_unidade2_.html)
+## [24/10 - Unidade 2 - Simulado](./slides/exercicios_unidade2/exercicios_unidade2.html)
 
 ## [26/10 - Multiplicação de Matrizes](./slides/multiplicacao_matricial/multiplicacao_matricial.html)
 
