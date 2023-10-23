@@ -3448,7 +3448,7 @@
     "href": "slides/multiplicacao_matricial/multiplicacao_matricial.html#lista-de-presença",
     "title": "Multiplicação de Matrizes",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230601"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20231026"
   },
   {
     "objectID": "slides/multiplicacao_matricial/multiplicacao_matricial.html#multiplicação-de-matrizes-7",
@@ -4716,5 +4716,33 @@
     "title": "Funções III",
     "section": "Exercício 2",
     "text": "Exercício 2\nImplemente uma função que receba como parâmetro de entrada um número inteiro positivo denotando o primeiro termo da sequência. A função a ser implementada deve armazenar em parâmetros de saída o maior número que faz parte da sequência e também o total de termos n que compõe a sequência.\nImplemente a função main para testar o seu programa."
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#unidade-ii---simulado",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#unidade-ii---simulado",
+    "title": "Unidade 2 - Simulado",
+    "section": "Unidade II - Simulado",
+    "text": "Unidade II - Simulado\nExercício 1\nImplemente uma função recursiva que receba como parâmetro de entrada um vetor de números inteiros e o seu tamanho. A função deve retornar verdadeiro caso o vetor esteja em ordem crescente ou falso caso contrário.\nA função main deve ler o tamanho do vetor, cada um dos seus elementos e chamar a função solicitada."
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#unidade-ii---simulado-1",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#unidade-ii---simulado-1",
+    "title": "Unidade 2 - Simulado",
+    "section": "Unidade II - Simulado",
+    "text": "Unidade II - Simulado\nExercício 2\nImplemente uma função que recebe um vetor de inteiros como parâmetro de entrada e armazena em um segundo vetor todos os valores do primeiro, na mesma ordem, sem repetições.\nA função main do seu programa deve ler do usuário o tamanho e elementos de um vetor de entrada e exibir o resultado calculado pela função solicitada."
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#lista-de-presença",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#lista-de-presença",
+    "title": "Unidade 2 - Simulado",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20231024"
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#unidade-ii---simulado-2",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#unidade-ii---simulado-2",
+    "title": "Unidade 2 - Simulado",
+    "section": "Unidade II - Simulado",
+    "text": "Unidade II - Simulado\nExercício 3\nImplemente uma função que receba como parâmetro de entrada uma matriz quadrada de números inteiros de ordem N. A função deve retornar verdadeiro caso a matriz seja simétrica ou falso caso contrário. Uma matriz é simétrica se ela for igual a sua transposta.\nA função main deve ler a ordem N de uma matriz quadrada de números inteiros, cada um dos seus elementos e imprimir uma mensagem informando se a matriz é simétrica ou não, de acordo com o resultado da função solicitada.\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]

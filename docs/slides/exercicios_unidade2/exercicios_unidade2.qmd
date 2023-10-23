@@ -1,0 +1,56 @@
+---
+title: "Unidade 2 - Simulado"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Unidade II - Simulado
+#### Exercício 1
+
+Implemente uma função recursiva que receba como parâmetro de
+entrada um vetor de números inteiros e o seu tamanho.
+A função deve retornar verdadeiro caso o vetor esteja em
+ordem crescente ou falso caso contrário.
+
+A função main deve ler o tamanho do vetor, cada um dos seus
+elementos e chamar a função solicitada.
+
+---
+
+## Unidade II - Simulado
+#### Exercício 2
+
+Implemente uma função que recebe um vetor de inteiros como parâmetro de
+entrada e armazena em um segundo vetor todos os valores do primeiro,
+na mesma ordem, sem repetições.
+
+A função main do seu programa deve ler do usuário o tamanho e elementos
+de um vetor de entrada e exibir o resultado calculado
+pela função solicitada.
+
+---
+
+## Lista de Presença
+
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231024){fig-align="center"}
+
+<a href="https://bit.ly/lip_20231024"><p style="text-align:center;">https://bit.ly/lip_20231024</p></a>
+
+---
+
+## Unidade II - Simulado
+#### Exercício 3
+
+Implemente uma função que receba como parâmetro de entrada
+uma matriz quadrada de números inteiros de ordem N.
+A função deve retornar verdadeiro caso a matriz seja simétrica ou
+falso caso contrário. Uma matriz é simétrica se ela for
+igual a sua transposta.
+
+A função main deve ler a ordem N de uma matriz quadrada
+de números inteiros, cada um dos seus elementos e
+imprimir uma mensagem informando se a matriz
+é simétrica ou não, de acordo com o resultado da função
+solicitada.
