@@ -78,6 +78,14 @@
 
 ## [26/10 - Multiplicação de Matrizes](./slides/multiplicacao_matricial/multiplicacao_matricial.html)
 
+## [07/11 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
+
+## [09/11 - Strings I](./slides/16-strings1/16-strings1.html)
+- Caractere delimitador `\0`
+- Inicialização
+- Entrada/saída
+- Funções de manipulação de strings
+
 <!--
 
 ## [26/10 - Funções e Vetores - Exercícios](./slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html)
@@ -92,14 +100,6 @@
 - Exercícios
 
 ## [30/05 - Funções e Matrizes - Exercícios](./slides/exercicios_funcoes_e_matrizes/exercicios_funcoes_e_matrizes.html)
-
-## [06/06 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
-
-## [13/06 - Strings I](./slides/16-strings1/16-strings1.html)
-- Caractere delimitador `\0`
-- Inicialização
-- Entrada/saída
-- Funções de manipulação de strings
 
 ## [15/06 - Strings II](./slides/17-strings2/17-strings2.html)
 - Leitura de strings com espaços em branco

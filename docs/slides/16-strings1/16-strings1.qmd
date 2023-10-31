@@ -138,9 +138,9 @@ char s[] = {'e','c','t'};
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230613){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231109){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230613"><p style="text-align:center;">https://bit.ly/lip_20230613</p></a>
+<a href="https://bit.ly/lip_20231109"><p style="text-align:center;">https://bit.ly/lip_20231109</p></a>
 
 ---
 
@@ -299,4 +299,3 @@ Na aula de hoje:
     - Inicialização
     - Entrada/saída
 - Funções de manipulação de strings
----
