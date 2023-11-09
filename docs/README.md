@@ -86,6 +86,16 @@
 - Entrada/saída
 - Funções de manipulação de strings
 
+## [14/11 - Strings II](./slides/17-strings2/17-strings2.html)
+- Leitura de strings com espaços em branco
+- Exercícios
+
+## [16/11 - Tipos Estruturados I](./slides/18-tipos_estruturados1/18-tipos_estruturados1.html)
+- Definição de tipos estruturados
+- Operações com variáveis de tipos estruturados
+- Vetores de variáveis de tipos estruturados
+- Exercícios
+
 <!--
 
 ## [26/10 - Funções e Vetores - Exercícios](./slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html)
@@ -100,16 +110,6 @@
 - Exercícios
 
 ## [30/05 - Funções e Matrizes - Exercícios](./slides/exercicios_funcoes_e_matrizes/exercicios_funcoes_e_matrizes.html)
-
-## [15/06 - Strings II](./slides/17-strings2/17-strings2.html)
-- Leitura de strings com espaços em branco
-- Exercícios
-
-## [20/06 - Tipos Estruturados I](./slides/18-tipos_estruturados1/18-tipos_estruturados1.html)
-- Definição de tipos estruturados
-- Operações com variáveis de tipos estruturados
-- Vetores de variáveis de tipos estruturados
-- Exercícios
 
 ## [22/06 - Tipos Estruturados II](./slides/19-tipos_estruturados2/19-tipos_estruturados2.html)
 - Uso de tipos estruturados em funções

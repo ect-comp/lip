@@ -91,9 +91,9 @@ int main(){
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230615){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.lt%2Flip_20231114){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230615"><p style="text-align:center;">https://bit.ly/lip_20230615</p></a>
+<a href="https://bit.ly/lip_20231114"><p style="text-align:center;">https://bit.ly/lip_20231114</p></a>
 
 ---
 
@@ -227,4 +227,3 @@ Na aula de hoje:
 
 - Strings: leitura de strings com espaços
 - Exercícios
----
