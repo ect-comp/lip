@@ -126,9 +126,9 @@ calcula_menor_maior_nota(alunos, n, a_menor, a_maior);
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230622){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231123){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230622"><p style="text-align:center;">https://bit.ly/lip_20230622</p></a>
+<a href="https://bit.ly/lip_20231123"><p style="text-align:center;">https://bit.ly/lip_20231123</p></a>
 
 ---
 
@@ -324,4 +324,3 @@ Na aula de hoje:
 
 - Uso de tipos estruturados em funções
 - Exercícios
----
