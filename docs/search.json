@@ -4744,5 +4744,47 @@
     "title": "Unidade 2 - Simulado",
     "section": "Unidade II - Simulado",
     "text": "Unidade II - Simulado\nExercício 3\nImplemente uma função que receba como parâmetro de entrada uma matriz quadrada de números inteiros de ordem N. A função deve retornar verdadeiro caso a matriz seja simétrica ou falso caso contrário. Uma matriz é simétrica se ela for igual a sua transposta.\nA função main deve ler a ordem N de uma matriz quadrada de números inteiros, cada um dos seus elementos e imprimir uma mensagem informando se a matriz é simétrica ou não, de acordo com o resultado da função solicitada.\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-1",
+    "href": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-1",
+    "title": "Tipos Estruturados - Exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nFuncionários\nConsidere um Funcionario, que deve conter:\n\nNome completo\nNome do cargo\nSalário"
+  },
+  {
+    "objectID": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-1-1",
+    "href": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-1-1",
+    "title": "Tipos Estruturados - Exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nFuncionários\nImplemente uma função que receba como parâmetro um vetor de funcionários. A função deve retornar o funcionário com o menor salário.\nA função main deve ler do usuário a quantidade de funcionários, todos os seus dados e exibir o resultado de uma chamada à função solicitada."
+  },
+  {
+    "objectID": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-2",
+    "href": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-2",
+    "title": "Tipos Estruturados - Exercícios",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nFuncionários\nImplemente uma função que receba como parâmetro de entrada um vetor de funcionários e o nome de um cargo.\nA função deve armazenar em um vetor de saída todos os funcionários que possuem o cargo informado.\nImplemente também a função main."
+  },
+  {
+    "objectID": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#lista-de-presença",
+    "href": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#lista-de-presença",
+    "title": "Tipos Estruturados - Exercícios",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20231128"
+  },
+  {
+    "objectID": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-3",
+    "href": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-3",
+    "title": "Tipos Estruturados - Exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nPontos 2D\nConsidere um Ponto2D, que deve conter:\n\nCoordenadas x e y (nrs. reais)\nCor (string)\n\nImplemente uma função que receba como parâmetro de entrada um vetor de Ponto2D e um número real \\tau. A função deve atribuir a cor \"verde\" para todos os pontos que têm distância para a origem menor do que \\tau ou a cor \"vermelho\" caso contrário."
+  },
+  {
+    "objectID": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-3-1",
+    "href": "slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html#exercício-3-1",
+    "title": "Tipos Estruturados - Exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nPontos 2D\nA distância de um ponto p para a origem é dada por \nd(p) = \\sqrt{p.x^2 + p.y^2}\n\nImplemente a função main, que deve realizar a leitura das coordenadas dos pontos e do valor para \\tau, chamar a função e imprimir as coordenadas e cores dos pontos,\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]

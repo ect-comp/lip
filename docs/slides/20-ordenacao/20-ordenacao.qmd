@@ -286,9 +286,9 @@ int main(){
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20230509){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231130){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230509"><p style="text-align:center;">https://bit.ly/lip_20230509</p></a>
+<a href="https://bit.ly/lip_20231130"><p style="text-align:center;">https://bit.ly/lip_20231130</p></a>
 
 ---
 
@@ -389,5 +389,3 @@ Na aula de hoje:
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
-
----

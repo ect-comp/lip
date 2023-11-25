@@ -100,6 +100,14 @@
 - Uso de tipos estruturados em funções
 - Exercícios
 
+## [28/11 - Tipos Estruturados - Exercícios](./slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html)
+
+## [30/11 - Ordenação](./slides/20-ordenacao/20-ordenacao.html)
+- Ordenação
+- Ordenação com tipos estruturados
+  - Ordem crescente/decrescente de campos numéricos
+  - Ordem alfabética de campos string
+
 <!--
 
 ## [26/10 - Funções e Vetores - Exercícios](./slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html)
@@ -114,14 +122,6 @@
 - Exercícios
 
 ## [30/05 - Funções e Matrizes - Exercícios](./slides/exercicios_funcoes_e_matrizes/exercicios_funcoes_e_matrizes.html)
-
-## [27/06 - Ordenação](./slides/20-ordenacao/20-ordenacao.html)
-- Ordenação
-- Ordenação com tipos estruturados
-  - Ordem crescente/decrescente de campos numéricos
-  - Ordem alfabética de campos string
-
-## [29/06 - Tipos Estruturados - Exercícios](./slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html)
 
 ## [06/07 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
 
