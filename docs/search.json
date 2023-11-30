@@ -4358,14 +4358,14 @@
     "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-16",
     "title": "Ordenação",
     "section": "Ordenação",
-    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nO elemento chave é v[i]\nO elemento comparado é v[j]\nÉ necessário um laço que percorra os índices 0,1,...,n-2, para cada elemento atual: for(i = 0; i < n-1; i++)"
+    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nO elemento chave é v[i]\nO elemento comparado é v[j]\nÉ necessário um laço que percorra os índices 0,1,...,n-2, para cada chave: for(i = 0; i < n-1; i++)"
   },
   {
     "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-17",
     "href": "slides/20-ordenacao/20-ordenacao.html#ordenação-17",
     "title": "Ordenação",
     "section": "Ordenação",
-    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nÉ necessário um laço que passe por cada elemento a ser comparado que está depois do elemento atual: for(j = i+1; j < n; j++)"
+    "text": "Ordenação\nGeneralizando o Raciocínio\n\nObserve que:\n\nÉ necessário um laço que passe por cada elemento a ser comparado que está depois da chave atual: for(j = i+1; j < n; j++)"
   },
   {
     "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-18",
@@ -4386,7 +4386,7 @@
     "href": "slides/20-ordenacao/20-ordenacao.html#lista-de-presença",
     "title": "Ordenação",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230509"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20231130"
   },
   {
     "objectID": "slides/20-ordenacao/20-ordenacao.html#exercício",
@@ -4435,7 +4435,7 @@
     "href": "slides/20-ordenacao/20-ordenacao.html#sumário",
     "title": "Ordenação",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nOrdenação\nOrdenação com tipos estruturados\n\nOrdem crescente/decrescente de campos numéricos\nOrdem alfabética de campos string"
+    "text": "Sumário\nNa aula de hoje:\n\nOrdenação\nOrdenação com tipos estruturados\n\nOrdem crescente/decrescente de campos numéricos\nOrdem alfabética de campos string\n\n\n\n\n\nECT2303 - Linguagem de Programação"
   },
   {
     "objectID": "slides/20-ordenacao/20-ordenacao.html#ordenação-.nostretch",
