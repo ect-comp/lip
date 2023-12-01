@@ -108,6 +108,10 @@
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
 
+## [05/12 - Ordenação - Exercícios](./slides/exercicios_ordenacao/exercicios_ordenacao.html)
+
+## [07/12 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
+
 <!--
 
 ## [26/10 - Funções e Vetores - Exercícios](./slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html)
@@ -122,8 +126,6 @@
 - Exercícios
 
 ## [30/05 - Funções e Matrizes - Exercícios](./slides/exercicios_funcoes_e_matrizes/exercicios_funcoes_e_matrizes.html)
-
-## [06/07 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
 
 ## [11/07 - Matrizes de Relações - Exercícios](./slides/exercicios_relacoes/exercicios_relacoes.html)
 
