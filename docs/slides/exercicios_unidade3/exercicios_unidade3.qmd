@@ -68,9 +68,9 @@ Implemente também a função `main` para testar o programa.
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231024){fig-align="center"}
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231212){fig-align="center"}
 
-<a href="https://bit.ly/lip_20231024"><p style="text-align:center;">https://bit.ly/lip_20231024</p></a>
+<a href="https://bit.ly/lip_20231212"><p style="text-align:center;">https://bit.ly/lip_20231212</p></a>
 
 ---
 
