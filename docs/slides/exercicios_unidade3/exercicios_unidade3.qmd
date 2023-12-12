@@ -1,0 +1,90 @@
+---
+title: "Unidade 3 - Simulado"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Unidade III - Simulado
+#### Exercício 1
+
+Tipo estruturado `Cor` - campos:
+
+- R (vermelho), G (verde) e B (azul)
+
+**Função**: ordenar um vetor de cores, na ordem crescente de R, G e B
+
+Implemente também a função `main` para testar o programa.
+
+---
+
+## Unidade III - Simulado
+#### Exercício 1 - Exemplo
+
+```{=html}
+<table>
+  <thead>
+    <tr>
+      <th>Entrada:</th>
+      <th>Saída:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+      5<br>
+      127 0 0<br>
+      255 0 127<br>
+      127 127 0<br>
+      255 255 255<br>
+      0 0 127
+      </td>
+      <td>
+      Cores ordenadas por RGB:<br>
+      (0, 0, 127)<br>
+      (127, 0, 0)<br>
+      (127, 127, 0)<br>
+      (255, 0, 127)<br>
+      (255, 255, 255)
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
+
+---
+
+## Unidade II - Simulado
+#### Exercício 2
+
+Tipo estruturado `Matriz`
+
+**Função**: multiplicar duas matrizes de tamanhos quaisquer.
+
+Implemente também a função `main` para testar o programa.
+
+---
+
+## Lista de Presença
+
+![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231024){fig-align="center"}
+
+<a href="https://bit.ly/lip_20231024"><p style="text-align:center;">https://bit.ly/lip_20231024</p></a>
+
+---
+
+## Unidade II - Simulado
+#### Exercício 3
+
+Tipo estruturado `Musica` - campos:
+
+- `artista`: string
+- `titulo`: string
+- `genero`: string
+
+**Função**: recebe vetor de músicas e o seu tamanho.
+Deve imprimir na tela o gênero musical com a maior
+quantidade de músicas.
+
+Implemente também a função `main` para testar o programa.

@@ -112,6 +112,10 @@
 
 ## [07/12 - Aplicações com Matrizes de Relações](./slides/21-aplicacoes/21-aplicacoes.html)
 
+## [12/12 - Unidade 3 - Simulado](./slides/exercicios_unidade3/exercicios_unidade3.html)
+
+## [14/12 - Revisão - Unidade 3](./slides/revisao_unidade3/revisao_unidade3.html)
+
 <!--
 
 ## [26/10 - Funções e Vetores - Exercícios](./slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html)

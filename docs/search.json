@@ -4863,5 +4863,47 @@
     "title": "Ordenação - Exercícios",
     "section": "Exercício Completo",
     "text": "Exercício Completo\nImplemente funções para:\n\nOrdenar um vetor de Corrida por duração\nOrdenar um vetor de Corrida por pace\n\nNa função main, implemente um menu, a partir do qual o usuário pode escolher como quer visualizar suas corridas (opção 0 ordena por data, 1 por duração e 2 por pace).\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/exercicios_unidade3/exercicios_unidade3.html#unidade-iii---simulado",
+    "href": "slides/exercicios_unidade3/exercicios_unidade3.html#unidade-iii---simulado",
+    "title": "Unidade 3 - Simulado",
+    "section": "Unidade III - Simulado",
+    "text": "Unidade III - Simulado\nExercício 1\nTipo estruturado Cor - campos:\n\nR (vermelho), G (verde) e B (azul)\n\nFunção: ordenar um vetor de cores, na ordem crescente de R, G e B\nImplemente também a função main para testar o programa."
+  },
+  {
+    "objectID": "slides/exercicios_unidade3/exercicios_unidade3.html#unidade-ii---simulado",
+    "href": "slides/exercicios_unidade3/exercicios_unidade3.html#unidade-ii---simulado",
+    "title": "Unidade 3 - Simulado",
+    "section": "Unidade II - Simulado",
+    "text": "Unidade II - Simulado\nExercício 2\nTipo estruturado Matriz\nFunção: multiplicar duas matrizes de tamanhos quaisquer.\nImplemente também a função main para testar o programa."
+  },
+  {
+    "objectID": "slides/exercicios_unidade3/exercicios_unidade3.html#lista-de-presença",
+    "href": "slides/exercicios_unidade3/exercicios_unidade3.html#lista-de-presença",
+    "title": "Unidade 3 - Simulado",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20231024"
+  },
+  {
+    "objectID": "slides/exercicios_unidade3/exercicios_unidade3.html#unidade-ii---simulado-1",
+    "href": "slides/exercicios_unidade3/exercicios_unidade3.html#unidade-ii---simulado-1",
+    "title": "Unidade 3 - Simulado",
+    "section": "Unidade II - Simulado",
+    "text": "Unidade II - Simulado\nExercício 3\nTipo estruturado Musica - campos:\n\nartista: string\ntitulo: string\ngenero: string\n\nFunção: recebe vetor de músicas e o seu tamanho. Deve imprimir na tela o gênero musical com a maior quantidade de músicas.\nImplemente também a função main para testar o programa.\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/exercicios_unidade3/exercicios_unidade3.html#unidade-iii---simulado-1",
+    "href": "slides/exercicios_unidade3/exercicios_unidade3.html#unidade-iii---simulado-1",
+    "title": "Unidade 3 - Simulado",
+    "section": "Unidade III - Simulado",
+    "text": "Unidade III - Simulado\nExercício 1 - Exemplo\n\n\n  \n    \n      Entrada:\n      Saída:\n    \n  \n  \n    \n      \n      5\n      127 0 0\n      255 0 127\n      127 127 0\n      255 255 255\n      0 0 127\n      \n      \n      Cores ordenadas por RGB:\n      (0, 0, 127)\n      (127, 0, 0)\n      (127, 127, 0)\n      (255, 0, 127)\n      (255, 255, 255)"
+  },
+  {
+    "objectID": "slides/revisao_unidade3/revisao_unidade3.html#revisão---unidade-iii",
+    "href": "slides/revisao_unidade3/revisao_unidade3.html#revisão---unidade-iii",
+    "title": "Revisão - Unidade III",
+    "section": "Revisão - Unidade III",
+    "text": "Revisão - Unidade III\nLista de Presença\n\n\n\n\n\n\n\nhttps://bit.ly/lip_20231214\n\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
