@@ -198,7 +198,7 @@ Utilizando o seu caderno, declare variáveis:
 1. Chamada de `x` para armazenar um inteiro
 2. Chamada de `temp` para armazenar uma temperatura
 3. Para armazenar o resultado de uma média aritmética
-4. Para armazenar o sexo de uma pessoa
+4. Para armazenar o sexo de nascença de uma pessoa
 5. Para armazenar se um motor está ligado ou desligado
 
 ---
@@ -213,6 +213,20 @@ Utilizando o seu caderno, declare variáveis:
 4. char sexo;
 5. bool ligado;
 ```
+---
+
+## C++: Sintaxe de Declaração de Variáveis
+
+Um programa C++ aceita variáveis declaradas
+fora do bloco `main` $\rightarrow$ variáveis globais.
+**Entretanto**:
+
+::: {.callout-important appearance="simple"}
+
+Variáveis globais não são aceitas no curso de LiP.
+
+:::
+
 ---
 
 ## C++: Valor Inicial de Variáveis

@@ -1,13 +1,15 @@
 # Slides das Aulas
 
-## [15/08 - Apresentação](./slides/01-intro/01-intro.html)
+## [27/02 - Apresentação](./slides/01-intro/01-intro.html)
  - Objetivos
  - Metodologia
  - Bibliografia
 
-## [17/08 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
+## [27/02 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
  - Variáveis e tipos
  - Entrada e saída
+
+<!--
 
 ## [22/08 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
  - Operadores em C++
@@ -115,8 +117,6 @@
 ## [12/12 - Unidade 3 - Simulado](./slides/exercicios_unidade3/exercicios_unidade3.html)
 
 ## [14/12 - Revisão - Unidade 3](./slides/revisao_unidade3/revisao_unidade3.html)
-
-<!--
 
 ## [26/10 - Funções e Vetores - Exercícios](./slides/exercicios_funcoes_e_vetores/exercicios_funcoes_e_vetores.html)
 
