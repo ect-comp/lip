@@ -6,44 +6,6 @@ title-slide-attributes:
   data-background-opacity: "0.05"
 ---
 
-## Linguagem de Programação
-
-Perguntas pertinentes sobre Linguagem de Programação (LiP) na ECT:
-
-- Por que é tão importante?
-- Qual a relação com o curso de Bacharelado em Ciências e Tecnologia
-  e com as engenharias?
----
-
-## Linguagem de Programação
-
-O curso de Linguagem de Programação está relacionado
-com várias **competências** e **habilidades** desejáveis
-em **profissionais da engenharia**. Por exemplo:
-
----
-
-## Linguagem de Programação
-#### Competências e Habilidades
-
-- Capacidade de identificar, avaliar e resolver problemas, enfrentar desafios e responder a novas demandas da sociedade contemporânea
-- Capacidade de comunicação e argumentação em suas múltiplas formas
-- Capacidade de atuar em áreas de fronteira e interfaces de diferentes disciplinas e campos de saber
----
-
-## Linguagem de Programação
-#### Competências e Habilidades
-
-- Atitude investigativa, de prospecção, de permanente busca e produção do conhecimento
-- Atitude ética nas esferas profissional, acadêmica e das relações interpessoais
----
-
-## Linguagem de Programação
-#### Competências e Habilidades
-
-Fonte: [Curso de Ciências e Tecnologia](https://sigaa.ufrn.br/sigaa/public/curso/curriculo.jsf?lc=pt_BR&id=10320810)
----
-
 ## Apresentação
 
 - Prof. Bruno Silva
@@ -57,7 +19,7 @@ Fonte: [Curso de Ciências e Tecnologia](https://sigaa.ufrn.br/sigaa/public/curs
 
 ## Sobre a Disciplina
 
-- Aulas teóricas: terças e quintas, de 18:40 às 20:20,
+- Aulas teóricas: quintas, de 14:50 às 16:30,
   Auditório B da ECT
 - Carga horária: 60 horas (30h de laboratório)
 - Metodologia:
@@ -160,28 +122,6 @@ do esperado.
 
 - _Posso utilizar o recurso XYZ (p. ex. vetores) em uma atividade, mesmo que ele ainda não tenha sido apresentado em sala de aula? E quanto a recursos não passados pelo professor?_
 Não. Todas as atividades avaliativas são elaboradas de forma que o aluno seja avaliado considerando o conteúdo que a ele foi passado até o momento da atividade.
----
-
-## Experiências Passadas em LiP
-
-A partir de experiências em turmas passadas,
-algumas fontes de problema na disciplina:
-
-- Aluno que não **ouve** o professor
-    - Paradoxo: se o aluno não ouve o professor, ele também não irá
-      ouvir esta afirmação e portanto, o problema não tem solução
-- Aluno que não estudou o suficiente para uma atividade
----
-
-## Experiências Passadas em LiP
-
-A partir de experiências em turmas passadas,
-algumas fontes de problema na disciplina:
-
-- Aluno que acha que está aprendendo, mas não está
-    - Por exemplo, aluno que costuma fazer trabalhos em grupo ou acha
-      que programação se aprende vendo alguém praticar
-- Aluno que quer burlar o sistema de avaliação
 ---
 
 ## Demais Perguntas
