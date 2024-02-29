@@ -582,11 +582,10 @@ Prof.&nbsp;Bruno Silva
 </section>
 <section id="operadores-aritméticos-de-atribuição-1" class="slide level2">
 <h2>Operadores Aritméticos de Atribuição</h2>
-<p>Qual o valor final das variáveis a seguir, para <code>x = 1, y = 2, z = 3</code>?</p>
+<p>Qual o valor final das variáveis a seguir, para <code>x = 1, y = 2</code>?</p>
 <ol type="1">
 <li><code>x += 2*2;</code></li>
-<li><code>x += y -= z;</code></li>
-<li><code>z %= y %= x;</code></li>
+<li><code>x -= y;</code></li>
 </ol>
 </section>
 <section id="operações-de-potência-e-raíz-quadrada" class="slide level2">
@@ -627,7 +626,7 @@ Prof.&nbsp;Bruno Silva
 </div>
 <ul>
 <li>Precedência: mais alta do que a multiplicação/divisão/resto</li>
-<li>Por exemplo, para <code>x = 1, y = 2, z = 3</code>:</li>
+<li>Por exemplo, para <code>x = 1</code>:</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a>x<span class="op">++;</span> <span class="co">//x será igual a 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
@@ -703,10 +702,10 @@ Prof.&nbsp;Bruno Silva
 <h4 id="com-operadores-relacionais">Com Operadores Relacionais</h4>
 <p>Exemplos:</p>
 <ol type="1">
-<li><code>1 &gt; 2</code></li>
-<li><code>'a' &lt; 'b'</code></li>
-<li><code>x == x</code></li>
-<li><code>x = 5*2 &gt; 4 == 2+3 &gt; 1</code></li>
+<li><code>1 &gt; 2;</code></li>
+<li><code>'a' &lt; 'b';</code></li>
+<li><code>x == x;</code></li>
+<li><code>x = 5*2 &gt; 4;</code></li>
 </ol>
 </section>
 <section id="operadores-lógicos" class="slide level2">
@@ -841,7 +840,6 @@ Prof.&nbsp;Bruno Silva
 <ol type="1">
 <li><code>y-x == false</code></li>
 <li><code>x &gt; 0 &amp;&amp; x &lt; z+10</code></li>
-<li><code>z &gt;= y || true</code></li>
 <li><code>x != 1 || x != 2</code></li>
 </ol>
 </section>
@@ -921,7 +919,7 @@ Prof.&nbsp;Bruno Silva
 </section>
 <section id="conversão-de-tipos-ii" class="slide level2">
 <h2>Conversão de Tipos II</h2>
-<p>Em C++, o tipo da expressão do lado direito de uma atribuição é convertido no tipo do lado esquerdo apenas quando este último representa um conjunto menor de valores</p>
+<p>Em C++, o tipo da expressão do lado direito de uma atribuição é convertido no tipo do lado esquerdo apenas quando o lado esquerdo representa um conjunto menor de valores</p>
 </section>
 <section id="conversão-de-tipos-ii-1" class="slide level2">
 <h2>Conversão de Tipos II</h2>
@@ -939,7 +937,8 @@ Prof.&nbsp;Bruno Silva
 </section>
 <section id="conversão-de-tipos-iii-1" class="slide level2">
 <h2>Conversão de Tipos III</h2>
-<p>Sintaxe do <em>typecast</em>:</p>
+<h4 id="typecast">Typecast</h4>
+<p>Sintaxe:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1"></a>novo_tipo<span class="op">(</span>expressao<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>ou</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb13-1"><a href="#cb13-1"></a><span class="op">(</span>novo_tipo<span class="op">)</span> expressao<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

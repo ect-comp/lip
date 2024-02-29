@@ -452,7 +452,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#operadores-aritméticos-de-atribuição-1",
     "title": "Operadores e Expressões",
     "section": "Operadores Aritméticos de Atribuição",
-    "text": "Operadores Aritméticos de Atribuição\nQual o valor final das variáveis a seguir, para x = 1, y = 2, z = 3?\n\nx += 2*2;\nx += y -= z;\nz %= y %= x;"
+    "text": "Operadores Aritméticos de Atribuição\nQual o valor final das variáveis a seguir, para x = 1, y = 2?\n\nx += 2*2;\nx -= y;"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operações-de-potência-e-raíz-quadrada",
@@ -466,7 +466,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-incrementodecremento",
     "title": "Operadores e Expressões",
     "section": "Operador de Incremento/Decremento",
-    "text": "Operador de Incremento/Decremento\nOperadores unários (só precisam de um operando)\n\n\n\n\nExpressao\nExpressao Equivalente\n\n\n\n\nx++\nx = x + 1\n\n\nx--\nx = x - 1\n\n\n\n\n\nPrecedência: mais alta do que a multiplicação/divisão/resto\nPor exemplo, para x = 1, y = 2, z = 3:\n\nx++; //x será igual a 2"
+    "text": "Operador de Incremento/Decremento\nOperadores unários (só precisam de um operando)\n\n\n\n\nExpressao\nExpressao Equivalente\n\n\n\n\nx++\nx = x + 1\n\n\nx--\nx = x - 1\n\n\n\n\n\nPrecedência: mais alta do que a multiplicação/divisão/resto\nPor exemplo, para x = 1:\n\nx++; //x será igual a 2"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operador-de-incrementodecremento-1",
@@ -501,7 +501,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-2",
     "title": "Operadores e Expressões",
     "section": "Expressões Lógicas",
-    "text": "Expressões Lógicas\nCom Operadores Relacionais\nExemplos:\n\n1 > 2\n'a' < 'b'\nx == x\nx = 5*2 > 4 == 2+3 > 1"
+    "text": "Expressões Lógicas\nCom Operadores Relacionais\nExemplos:\n\n1 > 2;\n'a' < 'b';\nx == x;\nx = 5*2 > 4;"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-lógicos",
@@ -536,7 +536,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-3",
     "title": "Operadores e Expressões",
     "section": "Expressões Lógicas",
-    "text": "Expressões Lógicas\nCom Todos os Operadores\nExemplos (para x = 1, y = 2, z = 3):\n\ny-x == false\nx > 0 && x < z+10\nz >= y || true\nx != 1 || x != 2"
+    "text": "Expressões Lógicas\nCom Todos os Operadores\nExemplos (para x = 1, y = 2, z = 3):\n\ny-x == false\nx > 0 && x < z+10\nx != 1 || x != 2"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#lista-de-presença",
@@ -599,7 +599,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-ii",
     "title": "Operadores e Expressões",
     "section": "Conversão de Tipos II",
-    "text": "Conversão de Tipos II\nEm C++, o tipo da expressão do lado direito de uma atribuição é convertido no tipo do lado esquerdo apenas quando este último representa um conjunto menor de valores"
+    "text": "Conversão de Tipos II\nEm C++, o tipo da expressão do lado direito de uma atribuição é convertido no tipo do lado esquerdo apenas quando o lado esquerdo representa um conjunto menor de valores"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-ii-1",
@@ -620,7 +620,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#conversão-de-tipos-iii-1",
     "title": "Operadores e Expressões",
     "section": "Conversão de Tipos III",
-    "text": "Conversão de Tipos III\nSintaxe do typecast:\nnovo_tipo(expressao);\nou\n(novo_tipo) expressao;\nExemplos:\nint x = 3, y = 3, z = 4;\nfloat media = float(x + y + z)/3;"
+    "text": "Conversão de Tipos III\nTypecast\nSintaxe:\nnovo_tipo(expressao);\nou\n(novo_tipo) expressao;\nExemplos:\nint x = 3, y = 3, z = 4;\nfloat media = float(x + y + z)/3;"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#exercício",

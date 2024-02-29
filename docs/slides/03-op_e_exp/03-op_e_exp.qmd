@@ -108,11 +108,10 @@ Computam a expressão, aplicam o operador aritmético e atribuem o seu valor à 
 ---
 
 ## Operadores Aritméticos de Atribuição
-Qual o valor final das variáveis a seguir, para `x = 1, y = 2, z = 3`?
+Qual o valor final das variáveis a seguir, para `x = 1, y = 2`?
 
 1. `x += 2*2;`
-2. `x += y -= z;`
-3. `z %= y %= x;`
+2. `x -= y;`
 ---
 
 ## Operações de Potência e Raíz Quadrada
@@ -140,7 +139,7 @@ Operadores unários (só precisam de um operando)
 :::
 
 - Precedência: mais alta do que a multiplicação/divisão/resto
-- Por exemplo, para `x = 1, y = 2, z = 3`:
+- Por exemplo, para `x = 1`:
 
 ```C++
 x++; //x será igual a 2
@@ -181,10 +180,10 @@ Possuem precedência mais alta do que o operador de atribuição e mais baixa do
 #### Com Operadores Relacionais
 Exemplos:
 
-1. `1 > 2` 
-2. `'a' < 'b'`
-3. `x == x`
-4. `x = 5*2 > 4 == 2+3 > 1`
+1. `1 > 2;` 
+2. `'a' < 'b';`
+3. `x == x;`
+4. `x = 5*2 > 4;`
 ---
 
 ## Operadores Lógicos
@@ -241,8 +240,7 @@ Exemplos (para `x = 1, y = 2, z = 3`):
 
 1. `y-x == false`
 2. `x > 0 && x < z+10`
-3. `z >= y || true`
-4. `x != 1 || x != 2`
+3. `x != 1 || x != 2`
 ---
 
 ## Expressões Lógicas
@@ -339,7 +337,7 @@ result = (ch/i) + (f*i);
 ---
 
 ## Conversão de Tipos II
-Em C++, o tipo da expressão do lado direito de uma atribuição é convertido no tipo do lado esquerdo apenas quando este último representa um conjunto menor de valores
+Em C++, o tipo da expressão do lado direito de uma atribuição é convertido no tipo do lado esquerdo apenas quando o lado esquerdo representa um conjunto menor de valores
 ---
 
 ## Conversão de Tipos II
@@ -361,7 +359,8 @@ Em C++, é possível forçar uma expressão a ser interpretada como um tipo info
 ---
 
 ## Conversão de Tipos III
-Sintaxe do *typecast*: 
+#### Typecast
+Sintaxe: 
 ```C++
 novo_tipo(expressao);
 ```
