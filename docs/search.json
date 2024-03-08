@@ -4912,5 +4912,327 @@
     "title": "Introdução à Linguagem C++",
     "section": "C++: Sintaxe de Declaração de Variáveis",
     "text": "C++: Sintaxe de Declaração de Variáveis\nUm programa C++ aceita variáveis declaradas fora do bloco main \\rightarrow variáveis globais. Entretanto:\n\n\n\n\n\n\nVariáveis globais não são aceitas no curso de LiP."
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#linguagem-de-programação",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#linguagem-de-programação",
+    "title": "Comandos de Repetição",
+    "section": "Linguagem de Programação",
+    "text": "Linguagem de Programação\n\nAula anterior:\n\nComandos de seleção\n\nAula de hoje:\n\nComandos de repetição:\n\nfor\nwhile"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-de-repetição",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-de-repetição",
+    "title": "Comandos de Repetição",
+    "section": "Comandos de Repetição",
+    "text": "Comandos de Repetição\n\nEssenciais para a automatização de tarefas repetitivas\nRepetem todos os comandos que estejam no seu corpo\nTambém chamados de laços ou loops"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-de-repetição-1",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-de-repetição-1",
+    "title": "Comandos de Repetição",
+    "section": "Comandos de Repetição",
+    "text": "Comandos de Repetição\nDois tipos:\n\nComando de repetição contado for: repete instruções por um determinado número de vezes\nComando de repetição condicional while: repete instruções enquanto uma condição é verdadeira"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nSintaxe:\nfor(inicializacao; condicao; incremento){\n    comando1;\n    ...\n    comandoN;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-1",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-1",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\n\nItera sobre uma variável, chamada de contador, variável de iteração ou variável de controle\nEsta variável tem o seu valor alterado conforme o programador deseja\nIsto faz o laço executar várias iterações"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-2",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-2",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nDividido em três expressões opcionais:\n\nInicialização: executada somente na primeira vez em que o for é executado\nCondição: avaliada no início de cada iteração\nIncremento: executado no final de cada iteração"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-3",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-3",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nOrdem de execução:\n\nA expressão de inicialização é executada\nA expressão de condição é avaliada:\n\nCaso seja verdadeira: o bloco de comandos é executado\nCaso seja falsa: o laço é encerrado\n\nA expressão de incremento é executada e volta para o passo 2"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-4",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-4",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExemplo\nint main(){\n    int i, n;\n    cin >> n;\n    for(i = 0; i < n; i++){\n        cout << \"i: \" << i << endl;\n    }\n    return 0;\n}\nO que imprime este programa?"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-5",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-5",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nUsos Equivalentes do for\n\nDiferentes for podem ser usados se estivermos preocupados com a quantidade de execuções de um bloco de comandos\nO que não é o caso se desejarmos que a variável de iteração assuma uma sequência de valores específicos"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-6",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-6",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 1\nImplemente um programa que lê um número n e em seguida, lê as notas de n alunos. O programa deve exibir a média das notas na tela.\nAntes de programar: o que deve ser repetido?"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-7",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-7",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 1: Solução\nint main(){\n    int i, n;\n    float nota, media = 0;\n    cout << \"Insira a quantidade de notas\\n\";\n    cin >> n;\n    for(i = 0; i < n; i++){\n        cout << \"Insira a nota do \"\n             << i+1 << \"o. aluno\" << endl;\n        cin >> nota;\n        media += nota;\n    }\n    media /= n;\n    cout << \"media dos alunos: \" << media << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-8",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-8",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExemplos Atípicos\n\nQuantas vezes é executado o laço a seguir? n vezes?\n\nfor(i = 0; i <= n; i++){\n    ...\n}\n\nQuantas vezes é executado o laço a seguir?\n\nfor(i = n; i > 0; i++){\n    ...\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-9",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-9",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 2\nImplemente um programa que lê um número n e em seguida, imprime os n primeiros números pares na tela. Considere o número 0 como o primeiro par."
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#lista-de-presença",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#lista-de-presença",
+    "title": "Comandos de Repetição",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230829"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-10",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-10",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 2: Solução\nint main(){\n    int i, n;\n    cout << \"Digite n\\n\";\n    cin >> n;\n    for(i = 0; i < 2*n; i += 2){\n        cout << i << endl;\n    }\n    return 0;\n}\nObviamente, há outras formas de se implementar este programa"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-11",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-11",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 3\nImplemente um programa que imprime na tela em forma de tabela as seguintes contagens:\n\nDe 1 a 100\nDe 10 a 1000 (incrementando o contador de 10 em 10)\nDe 100 a 1 (em ordem decrescente)"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-12",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-12",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nSaída esperada para o exercício 3:\n\n\n\n1\n10\n100\n\n\n\n\n2\n20\n99\n\n\n3\n30\n98\n\n\n…\n…\n…\n\n\n100\n1000\n1"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-13",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-13",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 3: Solução\nint main(){\n    int i;\n    for(i = 1; i <= 100; i++){\n        cout << i << \" \"\n             << 10*i << \" \"\n             << 101-i << endl;\n    }\n    return 0;\n}\nÉ possível implementar o programa com o uso de variáveis adicionais"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-14",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-14",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 4\nImplemente um programa que lê um número n e em seguida, lê n caracteres. O programa deve exibir a quantidade de caracteres digitados que são letras minúsculas."
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-15",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-15",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 4: Solução\nint main(){\n    char car;\n    int n, cont = 0;\n    cout << \"Informe a quantidade de caracteres:\\n\";\n    cin >> n;\n    for(int i = 0; i < n; i++){\n        cout << \"Informe um caractere\\n\";\n        cin >> car;\n        if(car >= 'a' && car <= 'z'){\n            cont++;\n        }\n    }\n    cout << cont << \" letras minusculas digitadas\\n\";\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-16",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-16",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 5\nFaça um programa que lê um número n e um número m. Em seguida, o seu programa deve exibir na tela as m primeiras potências positivas dos n primeiros números positivos. As potências devem estar separadas por linha."
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-17",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-17",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExemplo de execução:\nInforme a quantidade de numeros\n5\nInforme a quantidade de potencias\n4\nPotencias:\n1 1 1 1 \n2 4 8 16 \n3 9 27 81 \n4 16 64 256 \n5 25 125 625"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-18",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-18",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 5: Solução\nint main(){\n    int i, j, n, m;\n    cout << \"Informe a quantidade de numeros\\n\";\n    cin >> n;\n    cout << \"Informe a quantidade de potencias\\n\";\n    cin >> m;\n    for(i = 1; i <= n; i++){\n        for(j = 1; j <= m; j++){\n            cout << pow(i,j) << \" \"; \n        }\n        cout << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-19",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-19",
+    "title": "Comandos de Repetição",
+    "section": "Comando for",
+    "text": "Comando for\nExercício 5: Solução\nint main(){\n    int i, j, n, m;\n    cout << \"Informe a quantidade de numeros\\n\";\n    cin >> n;\n    cout << \"Informe a quantidade de potencias\\n\";\n    cin >> m;\n    for(i = 1; i <= n; i++){\n        for(j = 1; j <= m; j++){\n            cout << pow(i,j) << \" \"; \n        }\n        cout << endl;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while",
+    "title": "Comandos de Repetição",
+    "section": "Comando while",
+    "text": "Comando while\nSintaxe:\nwhile(condicao){\n    comando1;\n    ...\n    comandoN;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-1",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-1",
+    "title": "Comandos de Repetição",
+    "section": "Comando while",
+    "text": "Comando while\n\nExecuta enquanto a condição é verdadeira\nCondição é qualquer expressão e é obrigatória (é convertida implicitamente em expressão lógica)\nA condição é testada antes de cada iteração"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-2",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-2",
+    "title": "Comandos de Repetição",
+    "section": "Comando while",
+    "text": "Comando while\nDevemos nos certificar de dois itens para garantir o seu funcionamento de forma correta:\n\nQue a condição tem a possibilidade de ser verdadeira ao ser testada pela primeira vez\nQue a condição vai se tornar falsa, em algum momento"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-3",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-3",
+    "title": "Comandos de Repetição",
+    "section": "Comando while",
+    "text": "Comando while\nExemplo\nint main(){\n    int i = 0, n;\n    cin >> n;\n    while(i < n){\n        cout << \"i: \" << i << endl;\n        i++;\n    }\n    return 0;\n}\n\nQual a saída deste programa?\nComo foram garantidos os dois itens necessários?"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-de-repetição-2",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-de-repetição-2",
+    "title": "Comandos de Repetição",
+    "section": "Comandos de Repetição",
+    "text": "Comandos de Repetição\nDiferenças entre while e for\n\nO comando while é apropriado para repetição condicional\n\nÉ possível utilizá-lo para repetição contada, embora isto seja mais propenso a erros\n\nO comando for é apropriado para repetição contada\n\nÉ possível utilizá-lo para repetição condicional, embora o código resultante fique menos intuitivo"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-de-repetição-3",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-de-repetição-3",
+    "title": "Comandos de Repetição",
+    "section": "Comandos de Repetição",
+    "text": "Comandos de Repetição"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-4",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-4",
+    "title": "Comandos de Repetição",
+    "section": "Comando while",
+    "text": "Comando while\nExercício 6\nFaça um programa que lê vários números e informa se cada um deles é par ou ímpar. O programa deve se encerrar quando for digitado um número negativo."
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-5",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-5",
+    "title": "Comandos de Repetição",
+    "section": "Comando while",
+    "text": "Comando while\nAntes de programar, precisamos identificar:\n\nVariáveis do programa\nEntrada e saída do programa\nO que deve ser repetido\nExpressão lógica para repetição"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-6",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-6",
+    "title": "Comandos de Repetição",
+    "section": "Comando while",
+    "text": "Comando while\nExercício 6: Solução\nint main(){\n    int x;\n    cout << \"Informe um numero\\n\";\n    cin >> x;\n    while(x >= 0){\n        if(x % 2 == 0){\n            cout << x << \" e um numero par\\n\";\n        }\n        else{\n            cout << x << \" e um numero impar\\n\";\n        }\n        cout << \"Informe um numero\\n\";\n        cin >> x;\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-do-while",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-do-while",
+    "title": "Comandos de Repetição",
+    "section": "Comando do-while",
+    "text": "Comando do-while\n\nA linguagem C++ oferece também o comando do-while (faça-enquanto)\nSintaxe:\n\ndo{\n    comando1;\n    ...\n    comandoN;\n} while(condicao);"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-do-while-1",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-do-while-1",
+    "title": "Comandos de Repetição",
+    "section": "Comando do-while",
+    "text": "Comando do-while\nDiferença para o while: a condição é testada após a execução do corpo\n\nNo comando while, o corpo pode não ser executado nenhuma vez\nNo comando do-while, o corpo é executado pelo menos uma vez"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-e-do-while",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-e-do-while",
+    "title": "Comandos de Repetição",
+    "section": "Comando while e do-while",
+    "text": "Comando while e do-while\nErros Comuns\n\nNão garantir que a condição pode ser verdadeira ao ser testada pela primeira vez (while)\nNão garantir que a condição vai se tornar falsa na lógica do algoritmo\nInverter condição: a expressão lógica deve ter valor verdadeiro para que o laço execute"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-while-e-do-while",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-while-e-do-while",
+    "title": "Comandos de Repetição",
+    "section": "Comandos while e do-while",
+    "text": "Comandos while e do-while\nExercício 7\nImplemente um programa com um menu de escolha, que deve ler do usuário uma entrada denotando uma opção. O programa deve imprimir: - “opcao1 escolhida” quando o usuário inserir 1 - “opcao2 escolhida” quando o usuário inserir 2 - “opcao3 escolhida” quando o usuário inserir 3\nPara cada escolha acima, o programa deve voltar ao menu inicial. Caso o usuário insira s, o programa deve se encerrar."
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-while-e-do-while-1",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-while-e-do-while-1",
+    "title": "Comandos de Repetição",
+    "section": "Comandos while e do-while",
+    "text": "Comandos while e do-while\nExercício 7: Solução\nint main(){\n    char o;\n    do{\n        cout << \"Insira uma opcao:\\n\";\n        cout << \"\\t (1) opcao1\\n\";\n        cout << \"\\t (2) opcao2\\n\";\n        cout << \"\\t (3) opcao3\\n\";\n        cout << \"\\t (s) air\\n\";\n        cin >> o;\n        if(o == '1'){\n            cout << \"opcao1 escolhida\\n\";\n        }\n        else if(o == '2'){\n            cout << \"opcao2 escolhida\\n\";\n        }\n        else if(o == '3'){\n            cout << \"opcao3 escolhida\\n\";\n        }\n        else if(o == 's'){\n            cout << \"Vc escolheu sair\\n\";\n        }\n    }while(o != 's');\n    return 0;"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-break-e-continue",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-break-e-continue",
+    "title": "Comandos de Repetição",
+    "section": "Comandos break e continue",
+    "text": "Comandos break e continue\n\nComandos que podem ser utilizados dentro de for, while e do-while:\n\nComando break: utilizado para encerrar o laço em que o comando break se encontra\nComando continue: utilizado para ignorar a iteração atual do laço e forçar a próxima iteração\n\nNo geral, há alternativas que tornam ambos os comandos opcionais"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-break",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-break",
+    "title": "Comandos de Repetição",
+    "section": "Comando break",
+    "text": "Comando break\nMenu com break\nO comando break pode ser usado em menus:\nint main(){\n    char c1;\n    do{\n        cout << \"Insira uma opcao:\\n\";\n        cout << \"\\t (1) opcao1\\n\";\n        cout << \"\\t (2) opcao2\\n\";\n        cout << \"\\t (3) opcao3\\n\";\n        cout << \"\\t (s) air\\n\";\n        cin >> c1;\n        if(c1 == '1'){\n            cout << \"opcao1 escolhida\\n\";\n        }\n        else if(c1 == '2'){\n            cout << \"opcao2 escolhida\\n\";\n        }\n        else if(c1 == '3'){\n            cout << \"opcao3 escolhida\\n\";\n        }\n        else if(c1 == 's'){\n            cout << \"Vc escolheu sair\\n\";\n            break;\n        }\n    }while(true);\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-break-1",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-break-1",
+    "title": "Comandos de Repetição",
+    "section": "Comando break",
+    "text": "Comando break\nMenu sem break\nO mesmo menu pode ser implementado sem break:\nint main(){\n    char o;\n    do{\n        cout << \"Insira uma opcao:\\n\";\n        cout << \"\\t (1) opcao1\\n\";\n        cout << \"\\t (2) opcao2\\n\";\n        cout << \"\\t (3) opcao3\\n\";\n        cout << \"\\t (s) air\\n\";\n        cin >> o;\n        if(o == '1'){\n            cout << \"opcao1 escolhida\\n\";\n        }\n        else if(o == '2'){\n            cout << \"opcao2 escolhida\\n\";\n        }\n        else if(o == '3'){\n            cout << \"opcao3 escolhida\\n\";\n        }\n        else if(o == 's'){\n            cout << \"Vc escolheu sair\\n\";\n        }\n    }while(o != 's');\n    return 0;"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-continue",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-continue",
+    "title": "Comandos de Repetição",
+    "section": "Comando continue",
+    "text": "Comando continue\nExemplo de Uso\nint main(){\n    int n, i, s = 0;\n    cout << \"Informe um numero\\n\";\n    cin >> n;\n    for(i = 0; i < n; i++){\n        if(i % 2 == 0){\n            continue;\n        }\n        s += i;\n    }\n    cout << s << endl;\n    return 0;\n}\nO que faz este programa?"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-continue-1",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-continue-1",
+    "title": "Comandos de Repetição",
+    "section": "Comando continue",
+    "text": "Comando continue\nPrograma equivalente sem continue\nO mesmo programa pode ser implementado sem continue:\nint main(){\n    int n, i, s = 0;\n    cout << \"Informe um numero\\n\";\n    cin >> n;\n    for(i = 0; i < n; i++){\n        if(i % 2 != 0){\n            s += i;\n        }\n    }\n    cout << s << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-e-do-while-1",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-e-do-while-1",
+    "title": "Comandos de Repetição",
+    "section": "Comando while e do-while",
+    "text": "Comando while e do-while\nExercício 8\nImplemente um programa que lê a população no ano corrente de dois países, A e B. O país A tem taxa de crescimento de 2% ao ano, enquanto o país B cresce 4% ao ano. Supondo que a população do país A é maior do que a do país B, o seu programa deve informar em quantos anos a população do país B ultrapassará a população do país A."
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-e-do-while-2",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-while-e-do-while-2",
+    "title": "Comandos de Repetição",
+    "section": "Comando while e do-while",
+    "text": "Comando while e do-while\nExercício 8: Solução\nint main(){\n    int anos = 0;\n    int pop_a, pop_b;\n\n    cout << \"Insira as populacoes iniciais:\\n\";\n    cin >> pop_a >> pop_b;\n\n    while(pop_b <= pop_a){\n        pop_a *= 1.02;\n        pop_b *= 1.04;\n        anos++;\n    }\n    cout << \"A populacao do pais B ultrapassa\n             a do pais A em \"\n         << anos << \" anos.\\n\";\n    \n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#sumário",
+    "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#sumário",
+    "title": "Comandos de Repetição",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nComando de repetição for\nComando de repetição while\nComandos break e continue\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
