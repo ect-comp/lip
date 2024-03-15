@@ -25,7 +25,7 @@
 - Comandos `break` e `continue`
 - Exercícios
 
-## [21/03 - Funções I](./slides/07-funcoes1/07-funcoes1.html)
+## [21/03 - Funções I](./slides/06-funcoes1/06-funcoes1.html)
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
