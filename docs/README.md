@@ -25,6 +25,11 @@
 - Comandos `break` e `continue`
 - Exercícios
 
+## [21/03 - Funções I](./slides/07-funcoes1/07-funcoes1.html)
+- Chamada de funções
+- Assinatura de funções
+- Definição de funções
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -36,11 +41,6 @@
 - Comando de repetição `do.. while`
 - Comandos `break` e `continue`
 - Exercícios
-
-## [05/09 - Funções I](./slides/07-funcoes1/07-funcoes1.html)
-- Chamada de funções
-- Assinatura de funções
-- Definição de funções
 
 ## [12/09 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
 

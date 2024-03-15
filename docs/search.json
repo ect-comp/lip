@@ -5234,5 +5234,236 @@
     "title": "Comandos de Repetição",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje:\n\nComando de repetição for\nComando de repetição while\nComandos break e continue\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#objetivo-da-aula",
+    "href": "slides/06-funcoes1/06-funcoes1.html#objetivo-da-aula",
+    "title": "Funções I",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\n\nMotivar o uso de funções\nApresentar as construções oferecidas em C++ para a implementação de programas com funções"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#função",
+    "href": "slides/06-funcoes1/06-funcoes1.html#função",
+    "title": "Funções I",
+    "section": "Função",
+    "text": "Função\n\nVariáveis guardam valores de diferentes tipos\n\nchar, int, float, bool\n\nE se pudéssemos atribuir não um valor, mas sim, um trecho de código a um nome, similar a uma variável?\nIsto é exatamente o que acontece com funções em linguagens de programação"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#função-1",
+    "href": "slides/06-funcoes1/06-funcoes1.html#função-1",
+    "title": "Funções I",
+    "section": "Função",
+    "text": "Função\n\nFunção: conjunto de comandos (trecho de código) que realizam uma tarefa em particular\nTambém chamada de subprograma\nCada função recebe um nome e através deste, pode ser executada\nUso de funções organiza, simplifica e reduz programas"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#função-2",
+    "href": "slides/06-funcoes1/06-funcoes1.html#função-2",
+    "title": "Funções I",
+    "section": "Função",
+    "text": "Função\nExemplos de funções conhecidas:\n\nsqrt\npow\nsin\ncos\ntan\nrand"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#chamadas-de-funções---exemplo-1",
+    "href": "slides/06-funcoes1/06-funcoes1.html#chamadas-de-funções---exemplo-1",
+    "title": "Funções I",
+    "section": "Chamadas de Funções - Exemplo 1",
+    "text": "Chamadas de Funções - Exemplo 1\nO que faz o seguinte programa?\nint main(){\n    int x, r;\n    cin >> x;\n    r = sqrt(x);\n    cout << x << \", \" << r << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#chamadas-de-funções---exemplo-2",
+    "href": "slides/06-funcoes1/06-funcoes1.html#chamadas-de-funções---exemplo-2",
+    "title": "Funções I",
+    "section": "Chamadas de Funções - Exemplo 2",
+    "text": "Chamadas de Funções - Exemplo 2\nO que faz o seguinte programa?\nint main(){\n    float x, y;\n    cin >> x >> y;\n    cout << sin(x)/cos(y) << endl; \n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#programas-que-chamam-funções",
+    "href": "slides/06-funcoes1/06-funcoes1.html#programas-que-chamam-funções",
+    "title": "Funções I",
+    "section": "Programas que Chamam Funções",
+    "text": "Programas que Chamam Funções\n\nVocês já utilizaram funções em vários programas:\n\nVocê como programador foi usuário de funções\nO seu programa (programa usuário) continha chamadas de funções\nAs funções que você usou foram implementadas por outro programador"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#programas-que-chamam-funções-1",
+    "href": "slides/06-funcoes1/06-funcoes1.html#programas-que-chamam-funções-1",
+    "title": "Funções I",
+    "section": "Programas que Chamam Funções",
+    "text": "Programas que Chamam Funções\nA chamada de uma função funciona exatamente como uma variável:\n\nResulta em um valor que pode ser usado em expressões"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#programas-que-chamam-funções-2",
+    "href": "slides/06-funcoes1/06-funcoes1.html#programas-que-chamam-funções-2",
+    "title": "Funções I",
+    "section": "Programas que Chamam Funções",
+    "text": "Programas que Chamam Funções\n\nPrincipal vantagem de chamar funções: não é necessário saber como uma função está implementada para utilizá-la\nExemplo: função cos(x) computa o cosseno de x com o polinômio de MacLaurin:\n\n\ncos(x) = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}}{(2n)!}x^{2n}"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#implementação-de-funções",
+    "href": "slides/06-funcoes1/06-funcoes1.html#implementação-de-funções",
+    "title": "Funções I",
+    "section": "Implementação de Funções",
+    "text": "Implementação de Funções\nLinguagens de programação estruturadas oferecem uma sintaxe para implementação de funções\nAlém da sintaxe, é preciso saber:\n\nAs entradas do subprograma (parâmetros da função)\nComo o subprograma deve operar (código da função)\nO que o subprograma deve computar (saída da função)"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#implementação-de-funções-1",
+    "href": "slides/06-funcoes1/06-funcoes1.html#implementação-de-funções-1",
+    "title": "Funções I",
+    "section": "Implementação de Funções",
+    "text": "Implementação de Funções\n\n\n\n\n\n\nA implementação de uma função é dividida entre a sua assinatura e as instruções que compõem a sua definição"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções",
+    "href": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções",
+    "title": "Funções I",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nSintaxe:\ntipo_da_funcao nome_da_funcao(lista de parametros);\n\nTambém chamadas de cabeçalhos ou protótipos da função\nDevem estar fora e antes do bloco main"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-1",
+    "href": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-1",
+    "title": "Funções I",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nSintaxe:\ntipo_da_funcao nome_da_funcao(lista de parametros);\n\ntipo_da_funcao é o tipo do valor computado pela função: int, char, float, bool ou o novo tipo void"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-2",
+    "href": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-2",
+    "title": "Funções I",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nSintaxe:\ntipo_da_funcao nome_da_funcao(lista de parametros);\n\nnome_da_funcao segue as mesmas regras que usamos para nomear variáveis"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-3",
+    "href": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-3",
+    "title": "Funções I",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nSintaxe:\ntipo_da_funcao nome_da_funcao(lista de parametros);\n\nParâmetros (ou argumentos) são variáveis das quais a função depende para computar o seu retorno\nA lista de parametros contém pares tipo/nome para cada parâmetro, sendo cada par separado por vírgula"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-4",
+    "href": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-4",
+    "title": "Funções I",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nExercício\nEscrever assinaturas para as funções abaixo:\n\nsqrt: raíz quadrada de um número real\npow: eleva uma base a uma potência\nrand: gera um número aleatório\nFunção que converte um número ASCII num caractere\nFunção que retorna verdadeiro caso o número seja primo e falso caso contrário"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-5",
+    "href": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-5",
+    "title": "Funções I",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nExercício: solução\n1. float sqrt(float x);\n2. float pow(float b, float e);\n3. int rand();\n4. char converte_caractere(int cod);\n5. bool eh_primo(int num);"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-6",
+    "href": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-6",
+    "title": "Funções I",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nA assinatura de uma função define uma relação entre suas entradas e sua saída\n\nNos parâmetros da função estão as suas entradas\nNo tipo de retorno da função está a sua saída"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-7",
+    "href": "slides/06-funcoes1/06-funcoes1.html#assinaturas-de-funções-7",
+    "title": "Funções I",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nObserve que:\n\nAlgumas funções não têm entrada\nAlgumas funções não retornam nada\nAlgumas funções possuem mais de uma saída\n\nOs dois últimos pontos acima serão vistos nas próximas aulas"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#lista-de-presença",
+    "href": "slides/06-funcoes1/06-funcoes1.html#lista-de-presença",
+    "title": "Funções I",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230905"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções",
+    "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções",
+    "title": "Funções I",
+    "section": "Definição de Funções",
+    "text": "Definição de Funções\nSintaxe:\ntipo_da_funcao nome_da_funcao(lista de parametros){\n    corpo da funcao\n}\n\nUma função é definida quando programamos o seu comportamento com instruções válidas\nA definição de uma função deve vir após o bloco main"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-1",
+    "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-1",
+    "title": "Funções I",
+    "section": "Definição de Funções",
+    "text": "Definição de Funções\nExemplo: programa que converte temperatura em graus Celsius para Fahrenheit, sabendo-se que\n\nf(c) = 1,8c + 32\n\n\nSem usar função\nUtilizando função"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-2",
+    "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-2",
+    "title": "Funções I",
+    "section": "Definição de Funções",
+    "text": "Definição de Funções\nExemplo: função que converte temperatura em Celsius para Fahrenheit\nfloat converte_temp(float c){\n    return 1.8*c + 32;\n}"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-3",
+    "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-3",
+    "title": "Funções I",
+    "section": "Definição de Funções",
+    "text": "Definição de Funções\nExemplo: programa completo com função que converte temperatura em Celsius para Fahrenheit\nfloat converte_temp(float c);\nint main(){\n    float tc;\n\n    cout << \"Insira a temperatura em Celsius:\\n\";\n    cin >> tc;\n    cout << \"Temperatura em Fahrenheit: \" << converte_temp(tc) << endl;\n    return 0;\n}\nfloat converte_temp(float c){\n    return 1.8*c + 32;\n}"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-4",
+    "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-4",
+    "title": "Funções I",
+    "section": "Definição de Funções",
+    "text": "Definição de Funções\n\nA lista de parâmetros define variáveis locais (existentes somente dentro da função)\nQualquer instrução é permitida no corpo da função, inclusive chamadas a outras funções (ou a ela mesma)"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-5",
+    "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-5",
+    "title": "Funções I",
+    "section": "Definição de Funções",
+    "text": "Definição de Funções\nComando return:\n\nUsado junto com qualquer expressão válida em C++\nConverte a expressão no tipo de retorno da função\nEncerra a função e retorna a execução do programa para a instrução seguinte à chamada a ela realizada"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-6",
+    "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-6",
+    "title": "Funções I",
+    "section": "Definição de Funções",
+    "text": "Definição de Funções\nVariáveis locais de uma função:\n\nVariáveis que podem ser declaradas dentro da função\nNão são visíveis fora da função\nVariável local com mesmo nome de variável em outra função: não são as mesmas!\nCada parâmetro da função também é uma variável local"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-7",
+    "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-7",
+    "title": "Funções I",
+    "section": "Definição de Funções",
+    "text": "Definição de Funções\nExemplo anterior com variável local:\nfloat converte_temp(float c){\n    float f;\n    f = 1.8*c + 32;\n    return f;\n}"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#função-main",
+    "href": "slides/06-funcoes1/06-funcoes1.html#função-main",
+    "title": "Funções I",
+    "section": "Função main",
+    "text": "Função main\nMotivo pelo qual todo programa deve conter int main() e return 0:\n\n\n\n\n\n\nTodo programa em C++ deve obrigatoriamente conter uma função chamada main que retorna um número inteiro. Assim, o sistema operacional (Windows, Linux, etc.) sabe a função a ser chamada quando ele deseja executar um programa."
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#programa-com-função",
+    "href": "slides/06-funcoes1/06-funcoes1.html#programa-com-função",
+    "title": "Funções I",
+    "section": "Programa com Função",
+    "text": "Programa com Função\nExercício\nImplemente uma função chamada eh_primo, que receba como parâmetro um número inteiro. A função deve retornar verdadeiro caso o número seja primo ou falso caso contrário.\nA função main é dada e contém o código do programa usuário da função que você deve implementar (slide a seguir)."
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#programa-com-função-1",
+    "href": "slides/06-funcoes1/06-funcoes1.html#programa-com-função-1",
+    "title": "Funções I",
+    "section": "Programa com Função",
+    "text": "Programa com Função\nExercício: programa usuário da Função\nint main(){\n    int num;\n    cout << \"Insira um numero inteiro:\\n\";\n    cin >> num;\n\n    if(eh_primo(num) == true){\n        cout << num << \" eh primo\\n\";\n    }\n    else{\n        cout << num << \" nao eh primo\\n\";\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#programa-com-função-2",
+    "href": "slides/06-funcoes1/06-funcoes1.html#programa-com-função-2",
+    "title": "Funções I",
+    "section": "Programa com Função",
+    "text": "Programa com Função\nExercício: Solução\nbool eh_primo(int x);\nint main(){\n    int num;\n    cout << \"Insira um numero inteiro:\\n\";\n    cin >> num;\n\n    if(eh_primo(num) == true){\n        cout << num << \" eh primo\\n\";\n    }\n    else{\n        cout << num << \" nao eh primo\\n\";\n    }\n    return 0;\n}\nbool eh_primo(int x){\n    int i, cont = 0;\n\n    for(i = 1; i <= x; i++){\n        if(x % i == 0){\n            cont++;\n        }\n    }\n    return (cont == 2);\n}"
+  },
+  {
+    "objectID": "slides/06-funcoes1/06-funcoes1.html#sumário",
+    "href": "slides/06-funcoes1/06-funcoes1.html#sumário",
+    "title": "Funções I",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nChamada de funções\nAssinatura de funções\nDefinição de funções\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
