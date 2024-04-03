@@ -30,6 +30,10 @@
 - Assinatura de funções
 - Definição de funções
 
+## [04/04 - Funções II](./slides/07-funcoes2/07-funcoes2.html)
+- Função sem retorno (funções tipo `void`)
+- Passagem de parâmetro por valor e por referência
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -43,10 +47,6 @@
 - Exercícios
 
 ## [12/09 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
-
-## [14/09 - Funções II](./slides/08-funcoes2/08-funcoes2.html)
-- Função sem retorno (funções tipo `void`)
-- Passagem de parâmetro por valor por referência
 
 ## [19/09 - Funções III](./slides/09-funcoes3/09-funcoes3.html)
 - Parâmetros de entrada
