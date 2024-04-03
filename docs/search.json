@@ -5465,5 +5465,152 @@
     "title": "Funções I",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje:\n\nChamada de funções\nAssinatura de funções\nDefinição de funções\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#aula-anterior",
+    "href": "slides/07-funcoes2/07-funcoes2.html#aula-anterior",
+    "title": "Funções II",
+    "section": "Aula Anterior",
+    "text": "Aula Anterior\nAula anterior: uso de funções em C++\n\nChamada a funções\nAssinatura de funções\nDefinição de funções"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções",
+    "title": "Funções II",
+    "section": "Funções",
+    "text": "Funções\nRevisando a ideia de funções:\n\nParâmetros são a porta de entrada de funções\nO tipo de retorno é a sua saída\n\n\nEste mecanismo estabelece uma forma de uma função “conversar” com uma outra Por exemplo: função main que faz uma chamada à função sqrt"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-1",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções-1",
+    "title": "Funções II",
+    "section": "Funções",
+    "text": "Funções\nDevemos ter em mente que:\n\nNem sempre uma função deve retornar um resultado\nÉ possível que uma função modifique o valor dos parâmetros, de forma que esta modificação seja válida fora da função"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#objetivos-da-aula",
+    "href": "slides/07-funcoes2/07-funcoes2.html#objetivos-da-aula",
+    "title": "Funções II",
+    "section": "Objetivos da Aula",
+    "text": "Objetivos da Aula\n\nIntroduzir o conceito de função sem retorno\nIntroduzir o conceito de passagem de parâmetro por valor e passagem de parâmetro por referência"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#assinaturas-de-funções",
+    "href": "slides/07-funcoes2/07-funcoes2.html#assinaturas-de-funções",
+    "title": "Funções II",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nSintaxe:\ntipo_da_funcao nome_da_funcao(lista de parametros);\n\ntipo_da_funcao é o tipo do valor computado pela função: int, char, float, bool ou o novo tipo void"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno",
+    "title": "Funções II",
+    "section": "Funções sem Retorno",
+    "text": "Funções sem Retorno\nFunções sem retorno:\n\nTambém conhecidas como procedimentos\nÚtil para funções que devem escrever na tela\nEscrever na tela com comando cout não é retorno\nTipo da função deve ser void"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-1",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-1",
+    "title": "Funções II",
+    "section": "Funções sem Retorno",
+    "text": "Funções sem Retorno\nFunções sem retorno:\n\nÚtil também para funções que devem modificar os seus parâmetros\nComando return não é obrigatório\n\nPode ser opcionalmente utilizado com a forma return; (sem nenhuma expressão) para encerrar a função"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-2",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-2",
+    "title": "Funções II",
+    "section": "Funções sem Retorno",
+    "text": "Funções sem Retorno\nExercício\nEscrever assinaturas para as funções abaixo:\n\nFunção que imprime na tela o caractere correspondente a um número ASCII\nFunção que imprime na tela o menor dentre três números reais\nFunção que imprime na tela uma mensagem informando se o número é primo ou não"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#assinaturas-de-funções-1",
+    "href": "slides/07-funcoes2/07-funcoes2.html#assinaturas-de-funções-1",
+    "title": "Funções II",
+    "section": "Assinaturas de Funções",
+    "text": "Assinaturas de Funções\nExercício: Solução\n1. void imprime_caractere(int cod);\n2. void imprime_menor(float x, float y, float z);\n3. void informa_primo(int x);"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-3",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-3",
+    "title": "Funções II",
+    "section": "Funções sem Retorno",
+    "text": "Funções sem Retorno\nFunção que imprime na tela o caractere correspondente a um número:\nvoid imprime_caractere(int n);\n\nint main(){\n    int x;\n    cout << \"Insira um num. inteiro entre 0 e 255:\\n\";\n    cin >> x;\n    imprime_caractere(x); //observe a chamada à função\n    return 0;\n}\n\nvoid imprime_caractere(int n){\n    cout << \"Caractere: \" << char(n) << endl;\n}"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-4",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-4",
+    "title": "Funções II",
+    "section": "Funções sem Retorno",
+    "text": "Funções sem Retorno\nÉ preciso estar claro a diferença entre:\n\nUma função que retorna um valor, ex:\n\nchar converte_numero(int cod);\n\nUma outra função que imprime o mesmo valor, ex:\n\nvoid imprime_caractere(int cod);"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-5",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-5",
+    "title": "Funções II",
+    "section": "Funções sem Retorno",
+    "text": "Funções sem Retorno\nPara entender esta diferença, imagine o seguinte exemplo hipotético:\n\nUm programa no computador A faz uma chamada a uma função a ser executada no computador B\nA função no computador B é executada\n\nO resultado não é retornado: ele é exibido na tela\nEntretanto, o resultado será exibido na tela do computador B\n\nO programa no computador A não tem acesso ao resultado calculado pela função"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-6",
+    "href": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-6",
+    "title": "Funções II",
+    "section": "Funções sem Retorno",
+    "text": "Funções sem Retorno"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#lista-de-presença",
+    "href": "slides/07-funcoes2/07-funcoes2.html#lista-de-presença",
+    "title": "Funções II",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240404"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros",
+    "href": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros",
+    "title": "Funções II",
+    "section": "Passagem de Parâmetros",
+    "text": "Passagem de Parâmetros\nDentro do corpo de funções, os parâmetros são variáveis locais. Observe então se o código a seguir está correto:\nvoid troca(int a, int b);\n\nint main(){\n    int n1, n2;\n    cout << \"Insira dois numeros inteiros:\\n\";\n    cin >> n1 >> n2;\n    troca(n1, n2);\n    cout << \"n1: \" << n1 << \" n2: \" << n2 << endl;\n    return 0;\n}\n\nvoid troca(int a, int b){\n    int aux = a;\n    a = b;\n    b = aux;\n}"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros-1",
+    "href": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros-1",
+    "title": "Funções II",
+    "section": "Passagem de Parâmetros",
+    "text": "Passagem de Parâmetros\n\nAté agora, utilizamos passagem de parâmetro por valor\n\nO valor da variável utilizada na chamada é copiado para o parâmetro da função\n\nAlternativa: passagem de parâmetro por referência\n\nA variável em si é passada como parâmetro\n\nMesma posição (referência) na memória\n\nUso do operador de referência: &\n\nDeve ser usado em cada parâmetro que deve ser modificado"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros-2",
+    "href": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros-2",
+    "title": "Funções II",
+    "section": "Passagem de Parâmetros",
+    "text": "Passagem de Parâmetros\nSolução correta (com passagem de parâmetro por referência):\nvoid troca(int& a, int& b);\n\nint main(){\n    int n1, n2;\n    cout << \"Insira dois numeros inteiros:\\n\";\n    cin >> n1 >> n2;\n    troca(n1, n2);\n    cout << \"n1: \" << n1 << \" n2: \" << n2 << endl;\n    return 0;\n}\n\nvoid troca(int& a, int& b){\n    int aux = a;\n    a = b;\n    b = aux;\n}"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#exercício-1",
+    "href": "slides/07-funcoes2/07-funcoes2.html#exercício-1",
+    "title": "Funções II",
+    "section": "Exercício",
+    "text": "Exercício\nImplemente uma função que receba como parâmetro três números inteiros e que armazene no primeiro parâmetro o menor dos números, no segundo o segundo menor e no terceiro o maior.\nEscreva a função main, para ler os três números do usuário, chamar a função e exibir na tela os números em ordem crescente e a média entre o menor e o maior.\nUtilize a função troca na sua implementação."
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#exercício-solução-1",
+    "href": "slides/07-funcoes2/07-funcoes2.html#exercício-solução-1",
+    "title": "Funções II",
+    "section": "Exercício: Solução",
+    "text": "Exercício: Solução\nvoid troca(int& x, int& y);\nvoid ordena_crescente(int& a, int& b, int& c);\n\nint main(){\n    int x, y, z;\n    cout << \"Insira tres nrs.\\n\";\n    cin >> x >> y >> z;\n\n    ordena_crescente(x,y,z);\n    cout << \"Menor: \" << x << endl;\n    cout << \"Meio: \" << y << endl;\n    cout << \"Maior: \" << z << endl;\n    cout << \"Media: \" << float(x + z)/2 << endl;\n    return 0;\n}\n\nvoid troca(int& x, int& y){\n    int aux = x;\n    x = y;\n    y = aux;\n}\n\nvoid ordena_crescente(int& a, int& b, int& c){\n    if(a > c){\n        troca(a, c);\n    }\n    if(a > b){\n        troca(a, b);\n    }\n    if(b > c){\n        troca(b, c);\n    }\n}"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#exercício-solução-2",
+    "href": "slides/07-funcoes2/07-funcoes2.html#exercício-solução-2",
+    "title": "Funções II",
+    "section": "Exercício: Solução",
+    "text": "Exercício: Solução\nObserve que:\n\nA função ordena_crescente chama a função troca na sua solução\n\nIsto não é o mesmo que chamar troca na função main\n\nA ordem das trocas é importante (a 1a. comparação precisa ser entre o 1o. e 3o. parâmetros)"
+  },
+  {
+    "objectID": "slides/07-funcoes2/07-funcoes2.html#sumário",
+    "href": "slides/07-funcoes2/07-funcoes2.html#sumário",
+    "title": "Funções II",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nFunções sem retorno\nPassagem de parâmetro por valor e por referência\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
