@@ -143,7 +143,7 @@ seguinte exemplo hipotético:
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=http%3A%2F%2Fbit.ly%2Flip_20240404){fig-align="center"}
+![](https://qr-api.quel.jp/v1/?size=9&data=https%3A%2F%2Fbit.ly%2Flip_20240404){fig-align="center"}
 
 <a href="https://bit.ly/lip_20240404"><p style="text-align:center;">https://bit.ly/lip_20240404</p></a>
 
