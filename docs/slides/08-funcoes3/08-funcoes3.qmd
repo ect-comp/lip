@@ -99,9 +99,9 @@ int main(){
 
 ## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230919){fig-align="center"}
+![](https://qr-api.quel.jp/v1/?size=9&data=https%3A%2F%2Fbit.ly%2Flip_20240411){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230919"><p style="text-align:center;">https://bit.ly/lip_20230919</p></a>
+<a href="https://bit.ly/lip_20240411"><p style="text-align:center;">https://bit.ly/lip_20240411</p></a>
 
 ---
 

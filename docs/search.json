@@ -5612,5 +5612,131 @@
     "title": "Funções II",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje:\n\nFunções sem retorno\nPassagem de parâmetro por valor e por referência\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#linguagem-de-programação",
+    "href": "slides/08-funcoes3/08-funcoes3.html#linguagem-de-programação",
+    "title": "Funções III",
+    "section": "Linguagem de Programação",
+    "text": "Linguagem de Programação\nAulas anteriores:\n\nSintaxe em C++ para construção de funções (chamada, assinatura e definição)\nFunção com tipo void\nPassagem de parâmetro por valor e por referência"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#objetivo-da-aula",
+    "href": "slides/08-funcoes3/08-funcoes3.html#objetivo-da-aula",
+    "title": "Funções III",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nExplorar o conceito de entrada/saída nos parâmetros de funções"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência",
+    "href": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência",
+    "title": "Funções III",
+    "section": "Passagem de Parâmetros por Referência",
+    "text": "Passagem de Parâmetros por Referência\n\nUso de operador &\nÚtil quando:\n\nUma função deve modificar os seus parâmetros\nUma função deve retornar mais de um valor"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência-1",
+    "href": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência-1",
+    "title": "Funções III",
+    "section": "Passagem de Parâmetros por Referência",
+    "text": "Passagem de Parâmetros por Referência\nPermite trabalhar com parâmetros:\n\nDe entrada: parâmetros necessários para computar a função\nDe entrada e saída: parâmetros necessários para computar a função e usados para armazenar os resultados da função\nDe saída: parâmetros usados apenas para armazenar os resultados da função"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência-2",
+    "href": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência-2",
+    "title": "Funções III",
+    "section": "Passagem de Parâmetros por Referência",
+    "text": "Passagem de Parâmetros por Referência\nExemplo com Parâmetro de Saída\n\nParâmetro(s) pode(m) ser usado(s) para armazenar resultado(s) de uma função\nExemplo: função que converte temperatura em graus Celsius para Fahrenheit, armazenando o resultado em um parâmetro de saída\n\nvoid converte_temp(float c, float& f){\n    f = 1.8*c + 32;\n}"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência-3",
+    "href": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência-3",
+    "title": "Funções III",
+    "section": "Passagem de Parâmetros por Referência",
+    "text": "Passagem de Parâmetros por Referência\nExemplo com Parâmetro de Saída\nChamada à função:\nint main(){\n    float ce, fa;\n    cin >> ce;\n    converte_temp(ce, fa);\n    cout << \"Temp. em Fahrenheit: \" << fa << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções",
+    "href": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções",
+    "title": "Funções III",
+    "section": "Parâmetros de Funções",
+    "text": "Parâmetros de Funções\nExemplos\n\nFunção que gera um número aleatório:\n\nint rand();\n\nFunção que computa o produto entre dois números inteiros:\n\nint produto(int x, int y);\nvoid produto(int x, int y, int& r);"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-1",
+    "href": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-1",
+    "title": "Funções III",
+    "section": "Parâmetros de Funções",
+    "text": "Parâmetros de Funções\nExemplos\n\nFunção que gera um número aleatório:\n\nint rand(); \\rightarrow nenhum parâmetro\n\nFunção que computa o produto entre dois números inteiros:\n\nint produto(int x, int y); \\rightarrow 2 parâmetros de entrada\nvoid produto(int x, int y, int& r); \\rightarrow 2 parâmetros de entrada e 1 de saída"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-2",
+    "href": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-2",
+    "title": "Funções III",
+    "section": "Parâmetros de Funções",
+    "text": "Parâmetros de Funções\nExemplos\n\nFunção que troca o valor de dois números inteiros:\n\nvoid troca(int& x, int& y);\n\nFunção que calcula o quociente e resto entre dois números inteiros:\n\nvoid quoc_resto(int& x, int& y);\nvoid quoc_resto(int x, int y, int& q, int& r);}"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-3",
+    "href": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-3",
+    "title": "Funções III",
+    "section": "Parâmetros de Funções",
+    "text": "Parâmetros de Funções\nExemplos\n\nFunção que troca o valor de dois números inteiros:\n\nvoid troca(int& x, int& y); \\rightarrow 2 parâmetros de entrada e saída, ao mesmo tempo\n\nFunção que calcula o quociente e resto entre dois números inteiros:\n\nvoid quoc_resto(int& x, int& y); \\rightarrow 2 parâmetros de entrada e saída, ao mesmo tempo\nvoid quoc_resto(int x, int y, int& q, int& r);} \\rightarrow 2 entradas, 2 saídas"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#lista-de-presença",
+    "href": "slides/08-funcoes3/08-funcoes3.html#lista-de-presença",
+    "title": "Funções III",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240411"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#funções-com-múltiplas-saídas",
+    "href": "slides/08-funcoes3/08-funcoes3.html#funções-com-múltiplas-saídas",
+    "title": "Funções III",
+    "section": "Funções com Múltiplas Saídas",
+    "text": "Funções com Múltiplas Saídas\n\nFunções com múltiplas saídas são em geral mais complexas\nDica: dividir o problema\n\nIdentifique cada saída a ser computada pelo algoritmo\nVerifique se é melhor implementar uma função auxiliar para calcular cada saída\nChame as funções auxiliares dentro da função solicitada"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#exercício-1",
+    "href": "slides/08-funcoes3/08-funcoes3.html#exercício-1",
+    "title": "Funções III",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nImplemente uma função que receba como parâmetros de entrada dois números inteiros x e y. A sua função deve armazenar em um primeiro parâmetro de saída o fatorial de x, o fatorial de y em um segundo parâmetro e x^y em um terceiro.\nA função main deve ler dois números inteiros entre 0 e 10 do usuário, passá-los como parâmetro para a função implementada e exibir as três saídas da função.\nNão utilize a função pow."
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#exercício-1-solução",
+    "href": "slides/08-funcoes3/08-funcoes3.html#exercício-1-solução",
+    "title": "Funções III",
+    "section": "Exercício 1: Solução",
+    "text": "Exercício 1: Solução\nint fatorial(int n);\nint potencia(int b, int e);\nvoid fat_pot(int x, int y, int& f1, int& f2, int& p);\n\nint main(){\n    int n1, n2, r1, r2, r3;\n    cout << \"Insira dois numeros:\\n\";\n    cin >> n1 >> n2;\n    fat_pot(n1, n2, r1, r2, r3);\n    cout << \"Fatorial1: \" << r1 << endl;\n    cout << \"Fatorial2: \" << r2 << endl;\n    cout << \"Potencia: \" << r3 << endl;\n    return 0;\n}\nint fatorial(int n){\n    int i, r = 1;\n    for(i = 1; i <= n; i++){\n        r *= i;\n    }\n    return r;\n}\nint potencia(int b, int e){\n    int i, r = 1;\n    for(i = 1; i <= e; i++){\n        r *= b;\n    }\n    return r;\n}\nvoid fat_pot(int x, int y, int& f1, int& f2, int& p){\n    f1 = fatorial(x);\n    f2 = fatorial(y);\n    p = potencia(x, y);\n}"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#exercício-2",
+    "href": "slides/08-funcoes3/08-funcoes3.html#exercício-2",
+    "title": "Funções III",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nA sequência de Collatz, é gerada pelas seguintes regras:\n\nO termo inicial é um número dado\nSe o termo atual for par, o próximo termo é igual ao atual dividido por dois\nSe o termo atual for ímpar, o próximo termo é igual a três vezes o atual mais um\nA sequência é encerrada quando o termo atual é igual a 1\n\nPor exemplo, para um termo inicial igual a 10, a sequência gerada é 10, 5, 16, 8, 4, 2, 1."
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#exercício-2-1",
+    "href": "slides/08-funcoes3/08-funcoes3.html#exercício-2-1",
+    "title": "Funções III",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nImplemente uma função que receba como parâmetro de entrada um número inteiro positivo denotando o primeiro termo da sequência. A função a ser implementada deve armazenar em parâmetros de saída o maior número que faz parte da sequência e também o total de termos n que compõe a sequência.\nImplemente a função main para testar o seu programa."
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#exercício-2-solução",
+    "href": "slides/08-funcoes3/08-funcoes3.html#exercício-2-solução",
+    "title": "Funções III",
+    "section": "Exercício 2: Solução",
+    "text": "Exercício 2: Solução\nvoid maior_total_collatz(int t_ini, int& maior,\n                         int& total);\n\nint main(){\n    int val_ini, val_maior, quant;\n    cout << \"Insira o valor inicial da sequencia:\\n\";\n    cin >> val_ini;\n    maior_total_collatz(val_ini, val_maior, quant);\n    cout << \"Maior valor: \" << val_maior << endl;\n    cout << \"Total de termos: \" << quant << endl;\n    return 0;\n}\nvoid maior_total_collatz(int t_ini, int& maior,\n                         int& total){\n    int termo = maior = t_ini;\n    total = 1;\n    while(termo != 1){\n        if(termo % 2 == 0){\n            termo = termo/2;\n        }\n        else{\n            termo = 3*termo + 1;\n        }\n        if(termo > maior){\n            maior = termo;\n        }\n        total++;\n    }\n}"
+  },
+  {
+    "objectID": "slides/08-funcoes3/08-funcoes3.html#sumário",
+    "href": "slides/08-funcoes3/08-funcoes3.html#sumário",
+    "title": "Funções III",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nParâmetros de entrada, saída e de entrada e saída\nFunções que chamam outras funções para simplificar a lógica de programas\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]
