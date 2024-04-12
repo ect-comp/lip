@@ -39,6 +39,10 @@
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
+## [18/04 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
+- Estruturas recursivas
+- Passo base e passo recursivo
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -52,10 +56,6 @@
 - Exercícios
 
 ## [12/09 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
-
-## [21/09 - Funções Recursivas](./slides/10-funcoes_rec/10-funcoes_rec.html)
-- Estruturas recursivas
-- Passo base e passo recursivo
 
 ## [26/09 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
