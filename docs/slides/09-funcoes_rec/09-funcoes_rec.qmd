@@ -362,9 +362,9 @@ Como este mecanismo funciona?
 
 ## Lista de Presença
 
-![](https://qr-api.quel.jp/v1/?size=9&data=https%3A%2F%2Fbit.ly%2Flip_20240418){fig-align="center"}
+![](bit.ly_lip_20240627.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20240418"><p style="text-align:center;">https://bit.ly/lip_20240418</p></a>
+<a href="https://bit.ly/lip_20240627"><p style="text-align:center;">https://bit.ly/lip_20240627</p></a>
 
 ---
 

@@ -39,7 +39,9 @@
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
-## [18/04 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
+<code style="color : red">18/04 - 20/06: Greve</code>
+
+## [27/06 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
 - Estruturas recursivas
 - Passo base e passo recursivo
 
