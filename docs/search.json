@@ -6088,5 +6088,208 @@
     "title": "Funções Recursivas",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje:\n\nFunções recursivas\nPasso base e passo recursivo\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#nas-aulas-anteriores",
+    "href": "slides/10-vetores/10-vetores.html#nas-aulas-anteriores",
+    "title": "Vetores",
+    "section": "Nas Aulas Anteriores",
+    "text": "Nas Aulas Anteriores\n\nConstruções de funções em C++\nFunções recursivas em C++"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#objetivo-da-aula",
+    "href": "slides/10-vetores/10-vetores.html#objetivo-da-aula",
+    "title": "Vetores",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nIntroduzir o uso de vetores:\n\nRepresentação em memória\nDeclaração de vetores\nInicialização de vetores\nExercícios"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#motivação",
+    "href": "slides/10-vetores/10-vetores.html#motivação",
+    "title": "Vetores",
+    "section": "Motivação",
+    "text": "Motivação\nExercício\nImplemente um programa que leia as notas de 3 alunos e mostre quantas notas são maiores do que a média entre elas."
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#motivação-1",
+    "href": "slides/10-vetores/10-vetores.html#motivação-1",
+    "title": "Vetores",
+    "section": "Motivação",
+    "text": "Motivação\nint main(){\n    float n1, n2, n3, media = 0.0;\n    int cont = 0;\n\n    cin >> n1 >> n2 >> n3;\n    media = (n1 + n2 + n3)/3;\n    \n    if(n1 > media){\n        cont++;\n    }\n    if(n2 > media){\n        cont++;\n    }\n    if(n3 > media){\n        cont++;\n    }\n\n    cout << \"acima da media: \" << cont << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#motivação-2",
+    "href": "slides/10-vetores/10-vetores.html#motivação-2",
+    "title": "Vetores",
+    "section": "Motivação",
+    "text": "Motivação\nE se desejarmos mudar para 6 notas?\nint main(){\n    float n1, n2, n3, n4, n5, n6, media = 0.0;\n    int cont = 0;\n\n    cin >> n1 >> n2 >> n3 >> n4 >> n5 >> n6;\n    media = (n1 + n2 + n3 + n4 + n5 + n6)/6;\n    \n    if(n1 > media){\n        cont++;\n    }\n    if(n2 > media){\n        cont++;\n    }\n    if(n3 > media){\n        cont++;\n    }\n    if(n4 > media){\n        cont++;\n    }\n    if(n5 > media){\n        cont++;\n    }\n    if(n6 > media){\n        cont++;\n    }\n\n    cout << \"acima da media: \" << cont << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#motivação-3",
+    "href": "slides/10-vetores/10-vetores.html#motivação-3",
+    "title": "Vetores",
+    "section": "Motivação",
+    "text": "Motivação\nE se desejarmos mudar para 100 notas?\n\nUso de vetores\nTambém funciona para um tamanho n qualquer"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#vetor",
+    "href": "slides/10-vetores/10-vetores.html#vetor",
+    "title": "Vetores",
+    "section": "Vetor",
+    "text": "Vetor\n\nMecanismo disponibilizado por linguagens de programação\nArmazena dados de um mesmo tipo em memória\nTorna possível o uso de novos tipos de variáveis:\n\nVetor de char\nVetor de int\nVetor de float\nVetor de bool"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#vetor-1",
+    "href": "slides/10-vetores/10-vetores.html#vetor-1",
+    "title": "Vetores",
+    "section": "Vetor",
+    "text": "Vetor\nRepresentação em Memória\n\n\n\n\n\n\n\n\n\nVariável: uma posição na memória para guardar um valor\nVetor: várias posições na memória para guardar vários valores"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#declarando-um-vetor",
+    "href": "slides/10-vetores/10-vetores.html#declarando-um-vetor",
+    "title": "Vetores",
+    "section": "Declarando um Vetor",
+    "text": "Declarando um Vetor\nSintaxe\ntipo_do_vetor nome_do_vetor[tamanho_do_vetor];\n\ntipo_do_vetor são os tipos de variáveis conhecidos: int, char, float, bool\nnome_do_vetor segue as mesmas regras que usamos para variáveis\nO tamanho_do_vetor é uma expressão cujo tipo deve ser int"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#declarando-um-vetor-1",
+    "href": "slides/10-vetores/10-vetores.html#declarando-um-vetor-1",
+    "title": "Vetores",
+    "section": "Declarando um Vetor",
+    "text": "Declarando um Vetor\nExercício\nEscrever declaração de vetor:\n\nDo tipo inteiro, com 30 posições, chamado idades\nDo tipo caractere, com 5 posições, chamado vogais\nPara armazenar n valores do tipo float"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#declarando-um-vetor-2",
+    "href": "slides/10-vetores/10-vetores.html#declarando-um-vetor-2",
+    "title": "Vetores",
+    "section": "Declarando um Vetor",
+    "text": "Declarando um Vetor\nExercício: Solução\n1. int idades[30];\n2. char vogais[5];\n3. float v[n];"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#declarando-um-vetor-3",
+    "href": "slides/10-vetores/10-vetores.html#declarando-um-vetor-3",
+    "title": "Vetores",
+    "section": "Declarando um Vetor",
+    "text": "Declarando um Vetor\nTamanho de um Vetor em C++\n\nEm C++, o tamanho do vetor é o seu tamanho máximo\nOu seja, a declaração int v[50]; diz que:\n\nO vetor v pode conter no máximo 50 valores"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#declarando-um-vetor-4",
+    "href": "slides/10-vetores/10-vetores.html#declarando-um-vetor-4",
+    "title": "Vetores",
+    "section": "Declarando um Vetor",
+    "text": "Declarando um Vetor\nExpressão Utilizada como Tamanho do Vetor\nPor causa de uma extensão da linguagem, é possível utilizar int v[n], com n sendo uma variável ou até expressões como int v[n1+n2], desde que a expressão resulte em um inteiro"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#posições-de-um-vetor",
+    "href": "slides/10-vetores/10-vetores.html#posições-de-um-vetor",
+    "title": "Vetores",
+    "section": "Posições de um Vetor",
+    "text": "Posições de um Vetor\n\n\n\n\n\n\n\n\n\nUm vetor com n posições tem posições válidas que vão de 0 até n-1\nUm vetor v não pode ser usado diretamente em expressões\nCada elemento v[0], …, v[n-1] é que deve ser usado"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#posições-de-um-vetor-1",
+    "href": "slides/10-vetores/10-vetores.html#posições-de-um-vetor-1",
+    "title": "Vetores",
+    "section": "Posições de um Vetor",
+    "text": "Posições de um Vetor\n\n\n\n\n\n\n\n\n\nPara o vetor mostrado, qual o valor de cada expressão a seguir, sendo x = 2?\n\nv[6]\nv[0] + v[7]\nv[x]\nv[2*x + 3]\nv[v[x]]\nv[10 - v[-v[4]]]\nv[-1]\nv[8]\nv[1000]"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#lista-de-presença",
+    "href": "slides/10-vetores/10-vetores.html#lista-de-presença",
+    "title": "Vetores",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240704"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#inicialização-de-vetores",
+    "href": "slides/10-vetores/10-vetores.html#inicialização-de-vetores",
+    "title": "Vetores",
+    "section": "Inicialização de Vetores",
+    "text": "Inicialização de Vetores\nSintaxe\n\nint v[5]; \\rightarrow inicializa cada valor com lixo\nint v[5] = {10, 20, 30, 40, 50}; \\rightarrow inicializa com valores indicados\nint v[] = {10, 20, 30, 40, 50}; \\rightarrow inicializa com valores indicados (tamanho do vetor é deduzido a partir dos valores)"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#inicialização-de-vetores-1",
+    "href": "slides/10-vetores/10-vetores.html#inicialização-de-vetores-1",
+    "title": "Vetores",
+    "section": "Inicialização de Vetores",
+    "text": "Inicialização de Vetores\nSintaxe\n\nint v[5] = {}; \\rightarrow inicializa todos os valores com 0\nint v[5] = {5, 10}; \\rightarrow inicializa posições 0 e 1 com os valores indicados, todos os outros com 0"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#motivação-4",
+    "href": "slides/10-vetores/10-vetores.html#motivação-4",
+    "title": "Vetores",
+    "section": "Motivação",
+    "text": "Motivação\nVoltando ao exercício inicial: e se desejarmos mudar para 100 notas?\n\nUso de vetores"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-inicial",
+    "href": "slides/10-vetores/10-vetores.html#exercício-inicial",
+    "title": "Vetores",
+    "section": "Exercício Inicial",
+    "text": "Exercício Inicial\nExercício: Solução\nint main(){\n    float notas[100], media = 0.0;\n    int i, cont = 0;\n    for(i = 0; i < 100; i++){\n        cin >> notas[i];\n        media += notas[i];\n    }\n    media /= 100;\n\n    for(i = 0; i < 100; i++){\n        if(notas[i] > media) cont++;\n    }\n    \n    cout << \"acima da media: \" << cont << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-inicial-1",
+    "href": "slides/10-vetores/10-vetores.html#exercício-inicial-1",
+    "title": "Vetores",
+    "section": "Exercício Inicial",
+    "text": "Exercício Inicial\nE se fosse pedido um número n (informado pelo usuário) de notas?"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-inicial-2",
+    "href": "slides/10-vetores/10-vetores.html#exercício-inicial-2",
+    "title": "Vetores",
+    "section": "Exercício Inicial",
+    "text": "Exercício Inicial\nExercício: Solução\nint main(){\n    int n, i, cont = 0;\n    cout << \"Insira a quantidade de notas:\\n\";\n    cin >> n;\n    float notas[n], media = 0;\n    for(i = 0; i < n; i++){\n        cin >> notas[i];\n        media += notas[i];\n    }\n    media /= n;\n\n    for(i = 0; i < n; i++){\n        if(notas[i] > media) cont++;\n    }\n\n    cout << \"acima da media: \" << cont << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-1-1",
+    "href": "slides/10-vetores/10-vetores.html#exercício-1-1",
+    "title": "Vetores",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nLer um número n do usuário e em seguida, armazenar n notas em um vetor. O seu programa deve imprimir a maior das notas armazenadas."
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-1-solução",
+    "href": "slides/10-vetores/10-vetores.html#exercício-1-solução",
+    "title": "Vetores",
+    "section": "Exercício 1: Solução",
+    "text": "Exercício 1: Solução\nint main(){\n    int n, i;\n    cout << \"Insira a quantidade de notas:\\n\";\n    cin >> n;\n    float notas[n], maior;\n\n    //Leitura das notas\n    for(i = 0; i < n; i++){\n        cin >> notas[i];\n    }\n\n    //Processamento da maior nota\n    for(i = 0; i < n; i++){\n        if(i == 0){\n            maior = notas[i];\n        }\n        else{\n            if(notas[i] > maior){\n                maior = notas[i];\n            }\n        }\n    }\n    cout << \"Maior nota: \" << maior << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-2",
+    "href": "slides/10-vetores/10-vetores.html#exercício-2",
+    "title": "Vetores",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nLer um número n do usuário e em seguida, armazenar n notas em um vetor. O seu programa deve imprimir a posição da maior nota armazenada."
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-2-solução",
+    "href": "slides/10-vetores/10-vetores.html#exercício-2-solução",
+    "title": "Vetores",
+    "section": "Exercício 2: Solução",
+    "text": "Exercício 2: Solução\nint main(){\n    int n, i, maiorpos;\n    cout << \"Insira a quantidade de notas:\\n\";\n    cin >> n;\n    float notas[n];\n\n    //Leitura das notas\n    for(i = 0; i < n; i++){\n        cin >> notas[i];\n    }\n    \n    //Processamento da posição da maior nota\n    for(i = 0; i < n; i++){\n        if(i == 0){\n            maiorpos = i;\n        }\n        else{\n            if(notas[i] > notas[maiorpos]){\n                maiorpos = i;\n            }\n        }\n    }\n    cout << \"Pos. da maior nota: \" << maiorpos << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-3",
+    "href": "slides/10-vetores/10-vetores.html#exercício-3",
+    "title": "Vetores",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nLer um número n do usuário e em seguida, ler os elementos de dois vetores de números reais de tamanho n. O seu programa deve calcular e exibir na tela o vetor correspondente à soma vetorial dos dois vetores.\n\nVetor u = u[0],...,u[n-1]\nVetor v = v[0],...,v[n-1]\nVetor soma: u[0]+v[0],u[1]+v[1],...,u[n-1]+v[n-1]"
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#exercício-4",
+    "href": "slides/10-vetores/10-vetores.html#exercício-4",
+    "title": "Vetores",
+    "section": "Exercício 4",
+    "text": "Exercício 4\nLer um número inteiro n do usuário. O seu programa deve armazenar em um vetor os dígitos que compõem o número n na ordem inversa. Por exemplo, para n = 2134, o vetor resultante v deve ser igual a [4,3,1,2]."
+  },
+  {
+    "objectID": "slides/10-vetores/10-vetores.html#sumário",
+    "href": "slides/10-vetores/10-vetores.html#sumário",
+    "title": "Vetores",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje: vetores\n\nSintaxe de declaração\nAcesso às posições\nInicialização\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]

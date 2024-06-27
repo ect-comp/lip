@@ -45,6 +45,12 @@
 - Estruturas recursivas
 - Passo base e passo recursivo
 
+## [04/07 - Vetores](./slides/10-vetores/10-vetores.html)
+- Sintaxe de declaração
+- Acesso às posições
+- Inicialização
+- Exercícios
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -62,12 +68,6 @@
 ## [26/09 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
 ## [28/09 - Funções Recursivas - Exercícios](./slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html)
-
-## [05/10 - Vetores](./slides/11-vetores/11-vetores.html)
-- Sintaxe de declaração
-- Acesso às posições
-- Inicialização
-- Exercícios
 
 ## [10/10 - Funções e Vetores](./slides/12-funcoes_e_vetores/12-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores
