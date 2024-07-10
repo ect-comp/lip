@@ -51,6 +51,11 @@
 - Inicialização
 - Exercícios
 
+## [11/07 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
+- Sintaxe de implementação de funções com vetores
+- Funções recursivas com vetores
+- Exercícios
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -68,11 +73,6 @@
 ## [26/09 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
 ## [28/09 - Funções Recursivas - Exercícios](./slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html)
-
-## [10/10 - Funções e Vetores](./slides/12-funcoes_e_vetores/12-funcoes_e_vetores.html)
-- Sintaxe de implementação de funções com vetores
-- Funções recursivas com vetores
-- Exercícios
 
 ## [17/10 - Matrizes](./slides/14-matrizes/14-matrizes.html)
 - Sintaxe de declaração
