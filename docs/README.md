@@ -56,6 +56,10 @@
 - Funções recursivas com vetores
 - Exercícios
 
+## [18/07 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
+- Sintaxe de implementação de funções com matrizes
+- Exercícios
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -78,10 +82,6 @@
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
-- Exercícios
-
-## [19/10 - Funções e Matrizes](./slides/15-funcoes_e_matrizes/15-funcoes_e_matrizes.html)
-- Sintaxe de implementação de funções com matrizes
 - Exercícios
 
 ## [24/10 - Unidade 2 - Simulado](./slides/exercicios_unidade2/exercicios_unidade2.html)

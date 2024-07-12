@@ -6291,5 +6291,390 @@
     "title": "Vetores",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje: vetores\n\nSintaxe de declaração\nAcesso às posições\nInicialização\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#na-aula-anterior",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#na-aula-anterior",
+    "title": "Funções e Vetores",
+    "section": "Na Aula Anterior",
+    "text": "Na Aula Anterior\nVetores em C++:\n\nDeclaração\nAcesso aos elementos\nInicialização\nExercícios"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#objetivo-da-aula",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#objetivo-da-aula",
+    "title": "Funções e Vetores",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nIntroduzir o uso de funções que operam sobre vetores:\n\nSintaxe\nExercícios"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-e-vetores",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-e-vetores",
+    "title": "Funções e Vetores",
+    "section": "Funções e Vetores",
+    "text": "Funções e Vetores\n\nÉ possível passar vetores como parâmetro de funções\nAlém do vetor a ser passado como parâmetro, é necessário um parâmetro adicional \\rightarrow o tamanho do vetor"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores",
+    "title": "Funções e Vetores",
+    "section": "Declaração de Função com Vetores",
+    "text": "Declaração de Função com Vetores\nSintaxe\nExemplo com um vetor como parâmetro:\ntipo_func nome_func(tipo_vetor nome_vetor[], int tam_vetor){\n    corpo da funcao\n}"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores-1",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores-1",
+    "title": "Funções e Vetores",
+    "section": "Declaração de Função com Vetores",
+    "text": "Declaração de Função com Vetores\nSintaxe\n\ntipo_vetor é o tipo do vetor passado como parâmetro: int, char, float, bool\nnome_vetor é o nome do vetor passado como parâmetro. Observe que o [] é vazio\ntam_vetor é o tamanho do vetor passado como parâmetro"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores-2",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores-2",
+    "title": "Funções e Vetores",
+    "section": "Declaração de Função com Vetores",
+    "text": "Declaração de Função com Vetores\nSintaxe\nCaso haja mais de um vetor:\n\nSe tiverem tamanhos diferentes, é necessário incluir um parâmetro para o tamanho de cada um\nSe tiverem um mesmo tamanho, basta utilizar um único parâmetro para o tamanho"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores-3",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores-3",
+    "title": "Funções e Vetores",
+    "section": "Declaração de Função com Vetores",
+    "text": "Declaração de Função com Vetores\nSintaxe\nExemplo com dois vetores como parâmetros:\ntipo_func nome_func(tipo_vetor nome_vetor1[], int tam_vetor1,\n                    tipo_vetor nome_vetor2[], int tam_vetor2){\n    corpo da funcao\n}"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores-4",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-função-com-vetores-4",
+    "title": "Funções e Vetores",
+    "section": "Declaração de Função com Vetores",
+    "text": "Declaração de Função com Vetores\nExercícios\nEscrever assinatura da função:\n\nQue imprime um vetor de inteiros na tela\nQue recebe um vetor de caracteres e retorna quantos dos elementos no vetor são iguais a um caractere passado como parâmetro\nQue recebe dois vetores de inteiros e retorna o maior valor dentre todos, seja ele do primeiro ou do segundo vetor"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-funções-com-vetores",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#declaração-de-funções-com-vetores",
+    "title": "Funções e Vetores",
+    "section": "Declaração de Funções com Vetores",
+    "text": "Declaração de Funções com Vetores\nExercícios: Solução\n1. void imprime_vetor(int v[], int tam);\n2. int conta_ocorrencias(char v[], int tam, char c);\n3. int computa_maior(int v1[], int tam1,\n                     int v2[], int tam2);"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#lista-de-presença",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#lista-de-presença",
+    "title": "Funções e Vetores",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240711"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores",
+    "title": "Funções e Vetores",
+    "section": "Funções com Vetores",
+    "text": "Funções com Vetores\nChamada de Funções\n\nNas chamadas às funções, variáveis do tipo vetor são passadas como parâmetros utilizando apenas o seu nome\nExemplo:\n\nvoid imprime_vet(int vet[], int n);\nint main(){\n        int n;\n        cin >> n;\n        int v[n], i;\n        for(i = 0; i < n; i++){\n            v[i] = 2*n+i;\n        }\n        imprime_vet(v, n); //chama função\n        return 0;\n}"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-1",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-1",
+    "title": "Funções e Vetores",
+    "section": "Funções com Vetores",
+    "text": "Funções com Vetores\nPassagem de Parâmetros\nO que faz o código a seguir?\nvoid func(int vet[], int n){\n    int i;\n    for(i = 0; i < n; i++){\n        vet[i] = 1;\n    }\n}\nint main(){\n        int n;\n        cin >> n;\n        int v[n], i;\n        func(v, n);\n        for(i = 0; i < n; i++){\n            cout << v[i] << \" \";\n        }\n        cout << endl;\n        return 0;\n}"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-2",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-2",
+    "title": "Funções e Vetores",
+    "section": "Funções com Vetores",
+    "text": "Funções com Vetores\nPassagem de Parâmetros\n\nTodo vetor passado para funções como parâmetro é passado por referência\nIsto significa dizer que as alterações realizadas nos vetores dentro da função permanecem após a função ser finalizada"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-3",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-3",
+    "title": "Funções e Vetores",
+    "section": "Funções com Vetores",
+    "text": "Funções com Vetores\nFunção com Vetores como Resultados\n\nEm C++, não é possível retornar um vetor com o comando return\nEm outras palavras, a assinatura seguinte não é permitida:\n\nint[] soma_vetores(int v1[], int v2[], int n);\n\nCaso a função calcule um ou mais vetores, ela deve armazenar o resultado nos parâmetros da função"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#exercícios-1",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#exercícios-1",
+    "title": "Funções e Vetores",
+    "section": "Exercícios:",
+    "text": "Exercícios:\n\nImplemente uma função chamada le_vet, para ler os elementos de um vetor de números inteiros de tamanho n\nImplemente uma função que recebe como parâmetros de entrada um vetor de caracteres e um caractere. A função deve retornar quantos dos caracteres no vetor são iguais ao caractere passado como parâmetro"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-4",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-4",
+    "title": "Funções e Vetores",
+    "section": "Funções com Vetores",
+    "text": "Funções com Vetores\nFunções Recursivas\nFunções recursivas também podem ser utilizadas com vetores"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-5",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-5",
+    "title": "Funções e Vetores",
+    "section": "Funções com Vetores",
+    "text": "Funções com Vetores\nFunções Recursivas\n\nA recursividade é alcançada pela divisão do vetor em partes menores:\n\nPrimeira chamada considera todos as n posições de um vetor\nSegunda chamada considera as n-1 primeiras posições\nTerceira chamada considera as n-2 primeiras posições\nPasso base: alcançado quando não é possível dividir o vetor, ou seja, o seu tamanho é igual a 1"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-2",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-2",
+    "title": "Funções e Vetores",
+    "section": "Funções Recursivas",
+    "text": "Funções Recursivas\nSoma dos Valores em um Vetor\nFunção recursiva para a soma de todos os valores de um vetor:"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-3",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-3",
+    "title": "Funções e Vetores",
+    "section": "Funções Recursivas",
+    "text": "Funções Recursivas\nSoma dos Valores em um Vetor\nA primeira chamada à função soma divide o vetor em duas partes: um nr. inteiro igual ao último valor e um vetor contendo os demais valores. A função deve ser chamada novamente para o novo vetor"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-4",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-4",
+    "title": "Funções e Vetores",
+    "section": "Funções Recursivas",
+    "text": "Funções Recursivas\nSoma dos Valores em um Vetor\nO mesmo acontece para todas as demais chamadas:"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-5",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-5",
+    "title": "Funções e Vetores",
+    "section": "Funções Recursivas",
+    "text": "Funções Recursivas\nSoma dos Valores em um Vetor"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-6",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-6",
+    "title": "Funções e Vetores",
+    "section": "Funções Recursivas",
+    "text": "Funções Recursivas\nSoma dos Valores em um Vetor"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-7",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-7",
+    "title": "Funções e Vetores",
+    "section": "Funções Recursivas",
+    "text": "Funções Recursivas\nSoma dos Valores em um Vetor\nQuando o vetor possui apenas um valor, o passo base é alcançado"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-8",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-8",
+    "title": "Funções e Vetores",
+    "section": "Funções Recursivas",
+    "text": "Funções Recursivas\nSoma dos Valores em um Vetor\nApós isto, as chamadas que estão empilhadas utilizam os resultados calculados para serem desempilhadas e calcular a soma de todos os valores do vetor:\n\ns([2,3]) = 5\ns([2,3,6]) = 11\ns([2,3,6,8]) = 19\ns([2,3,6,8,4]) = 23"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-9",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-recursivas-9",
+    "title": "Funções e Vetores",
+    "section": "Funções Recursivas",
+    "text": "Funções Recursivas\nSoma dos Valores em um Vetor\nFunção resultante:\nint soma(int v[], int n){\n    if(n == 1){\n        return v[0];\n    }\n    else{\n        return soma(v, n-1) + v[n-1];\n    }\n}"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#exercícios-2",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#exercícios-2",
+    "title": "Funções e Vetores",
+    "section": "Exercícios:",
+    "text": "Exercícios:\n\nImplemente uma função recursiva chamada imprime_vet, para imprimir os elementos de um vetor de números inteiros de tamanho n na tela\n\nCaso os valores tenham sido impressos na ordem inversa dos valores digitados, modifique a função para imprimir os valores na mesma ordem\n\nImplemente a questão 2 anterior (contar quantos caracteres de um vetor são iguais a um caractere passado como parâmetro) de forma recursiva"
+  },
+  {
+    "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#sumário",
+    "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#sumário",
+    "title": "Funções e Vetores",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nSintaxe de implementação de funções com vetores\nFunções recursivas com vetores\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#nas-aulas-anteriores",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#nas-aulas-anteriores",
+    "title": "Funções e Matrizes",
+    "section": "Nas Aulas Anteriores",
+    "text": "Nas Aulas Anteriores\n\nVetores\nFunções com vetores"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#objetivo-da-aula",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#objetivo-da-aula",
+    "title": "Funções e Matrizes",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nIntroduzir o uso de matrizes:\n\nDeclaração de matrizes\nInicialização de matrizes\nFunções e matrizes\nExercícios"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declarando-uma-matriz",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declarando-uma-matriz",
+    "title": "Funções e Matrizes",
+    "section": "Declarando uma Matriz",
+    "text": "Declarando uma Matriz\nSintaxe\ntipo_da_matriz nome_da_matriz[n_linhas][n_colunas];\n\ntipo_da_matriz são os tipos de variáveis conhecidos: int, char, float, bool.\nnome_da_matriz segue as mesmas regras que usamos para variáveis\nn_linhas é uma expressão para o número de linhas da matriz cujo tipo deve ser int\nn_colunas é uma expressão para o número de colunas da matriz cujo tipo deve ser int"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declarando-uma-matriz-1",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declarando-uma-matriz-1",
+    "title": "Funções e Matrizes",
+    "section": "Declarando uma Matriz",
+    "text": "Declarando uma Matriz\nExercício\nEscrever declaração de matriz:\n\nDo tipo real e tamanho 2 x 2, chamada A\nDo tipo caractere e tamanho 10 x 10, chamada img\nDo tipo inteiro e tamanho nl x nc, chamada mat"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declarando-uma-matriz-2",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declarando-uma-matriz-2",
+    "title": "Funções e Matrizes",
+    "section": "Declarando uma Matriz",
+    "text": "Declarando uma Matriz\nExercício: Solução\n1. float A[2][2];\n2. char img[10][10];\n3. int mat[nl][nc];"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz",
+    "title": "Funções e Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nAcesso a Elementos de Matrizes\n\nUma matriz com nl linhas e nc colunas:\n\nTem índices de linhas válidos que vão de 0 até nl-1\nTem índices de colunas válidos que vão de 0 até nc-1\n\nUma matriz m não pode ser usada diretamente em expressões\n\nCada elemento m[0][0],m[0][1], …, m[nl-1][nc-1] é que deve ser usado"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-1",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-1",
+    "title": "Funções e Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nAcesso a Elementos de Matrizes\nPara acessar cada elemento da matriz m:\n\nO primeiro índice acessa a linha da matriz\nO segundo índice acessa a coluna da matriz\nExemplo: m[2][0] acessa a terceira linha e primeira coluna"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-2",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-2",
+    "title": "Funções e Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nPercorrendo uma Matriz\nPara acessar cada elemento de uma matriz de forma automática, é necessário iterar todas as colunas de todas as linhas da matriz. Ou seja:\n\nUm for para variar o índice da linha\nUm for para variar o índice da coluna\nOs laços devem estar aninhados\nA ordem dos laços pode ou não influenciar no resultado, dependendo do uso final do laço no algoritmo"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-3",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-3",
+    "title": "Funções e Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nExercício: Leitura de Dados\nImplemente um programa que leia do usuário as dimensões de uma matriz de inteiros e que leia também cada um de seus elementos.\nImprima a matriz no formato adequado na tela."
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-4",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-4",
+    "title": "Funções e Matrizes",
+    "section": "Posições de uma Matriz",
+    "text": "Posições de uma Matriz\nExercício: Solução\nint main(){\n    int nl, nc;\n    cin >> nl >> nc;\n    int m[nl][nc], i, j;\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cin >> m[i][j];\n        }\n    }\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cout << m[i][j] << \" \";\n        }\n        cout << endl;\n    }\n}"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#inicialização-de-matrizes",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#inicialização-de-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Inicialização de Matrizes",
+    "text": "Inicialização de Matrizes\nForma 1:\nint m[3][4] = { {1,2,3,4},\n                {5,6,7,8},\n                {9,10,11,12} };\nForma 2:\nint m[][4] = { {1,2,3,4},\n               {5,6,7,8},\n               {9,10,11,12} };"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#inicialização-de-matrizes-1",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#inicialização-de-matrizes-1",
+    "title": "Funções e Matrizes",
+    "section": "Inicialização de Matrizes",
+    "text": "Inicialização de Matrizes\nForma 3:\nint m[3][4] = {1,2,3,4,\n               5,6,7,8,\n               9,10,11,12};\nForma 4:\nint m[][4] = {1,2,3,4,\n              5,6,7,8,\n              9,10,11,12};"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#lista-de-presença",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#lista-de-presença",
+    "title": "Funções e Matrizes",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240718"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-e-matrizes",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-e-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Funções e Matrizes",
+    "text": "Funções e Matrizes\n\nÉ possível passar matrizes como parâmetro de funções\nÉ necessário passar também outros dois parâmetros, relativos ao número de linhas e colunas da matriz"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Função com Matrizes",
+    "text": "Função com Matrizes\nMatrizes para Uso em Funções\nEm C++, para trabalhar com matrizes como parâmetros de funções, também é preciso:\n\nA declaração de uma constante global com o número máximo de linhas/colunas de uma matriz (constante MAX, inicializada com um número grande)\nQue todas as matrizes do programa sejam declaradas com esta constante no número de linhas e colunas\nInformar na assinatura da função que cada matriz passada como parâmetro tem MAX colunas"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes-1",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes-1",
+    "title": "Funções e Matrizes",
+    "section": "Função com Matrizes",
+    "text": "Função com Matrizes\nMatrizes para Uso em Funções\n\nIsto acontece por causa de uma limitação da linguagem C++, que exige que o número de colunas de uma matriz passada como parâmetro seja constante\nOs programas implementados podem não usar todas as MAX linhas e MAX colunas das matrizes"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes-2",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes-2",
+    "title": "Funções e Matrizes",
+    "section": "Função com Matrizes",
+    "text": "Função com Matrizes\nMatrizes para Uso em Funções - Função main\nO programa declara matriz com tamanho máximo 100 x 100, mas usa nl x nc elementos\nconst int MAX = 100;\nint main(){\n    int mat[MAX][MAX], nl, nc, i, j;\n    cin >> nl >> nc;\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cin >> mat[i][j];\n        }\n    }\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cout << mat[i][j] << \" \";\n        }\n        cout << endl;\n    }\n\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes-3",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes-3",
+    "title": "Funções e Matrizes",
+    "section": "Função com Matrizes",
+    "text": "Função com Matrizes\nA linha\nconst int MAX = 100;\né equivalente a\n#define MAX 100"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-função-com-matrizes",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-função-com-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Função com Matrizes",
+    "text": "Declaração de Função com Matrizes\nSintaxe\nExemplo com uma matriz como parâmetro:\ntipo_func nome_func(tipo_matriz nome_matriz[][MAX],\n                    int n_linhas, int n_cols){\n    corpo da funcao\n}"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-1",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-1",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Função com Matrizes",
+    "text": "Declaração de Função com Matrizes\nSintaxe\n\ntipo_matriz é o tipo da matriz passada como parâmetro: int, char, float, bool.\nnome_matriz é o nome da matriz passada como parâmetro. Observe que o primeiro [] é em branco e o segundo [] deve ter obrigatoriamente o nr. máximo de colunas (no caso, MAX)\nn_linhas é número de linhas da matriz\nn_cols é número de colunas da matriz"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-2",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-2",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Função com Matrizes",
+    "text": "Declaração de Função com Matrizes\nCaso haja mais de uma matriz, é necessário utilizar parâmetros que indiquem o número de linhas e colunas de cada uma delas"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-3",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-função-com-matrizes-3",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Função com Matrizes",
+    "text": "Declaração de Função com Matrizes\nExercícios\nEscrever assinatura da função:\n\nQue imprime uma matriz de inteiros na tela\nQue recebe uma matriz de caracteres e retorna quantos dos elementos na matriz são iguais a um caractere passado como parâmetro\nQue recebe duas matrizes de inteiros de mesmo tamanho e retorna o maior valor dentre todos, seja ele da primeira ou da segunda matriz"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-funções-com-matrizes",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#declaração-de-funções-com-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Declaração de Funções com Matrizes",
+    "text": "Declaração de Funções com Matrizes\nExercícios: Solução\nvoid imprime_matriz(int mat[][MAX], int nl, int nc);\nint conta_ocorrencias(char mat[][MAX], int nl, int nc,\n                      char c);\nint computa_maior(int mat1[][MAX], int mat2[][MAX],\n                  int nl, int nc);"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes",
+    "title": "Funções e Matrizes",
+    "section": "Funções com Matrizes",
+    "text": "Funções com Matrizes\nChamada de Funções\nNas chamadas às funções, matrizes são passadas como parâmetros utilizando apenas o seu nome (sem colchetes).\nExemplo:\nconst int MAX = 100;\nvoid imprime_mat(int mat[][MAX], int nl, int nc);\nint main(){\n    int m[MAX][MAX], i, j, nl = 2, nc = 4;\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n        m[i][j] = nc*i+j+1;\n        }\n    }\n    imprime_mat(m, nl, nc);\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes-1",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes-1",
+    "title": "Funções e Matrizes",
+    "section": "Funções com Matrizes",
+    "text": "Funções com Matrizes\nPassagem de Parâmetros\n\nToda matriz passada para funções como parâmetro é passada por referência\nIsto significa que as alterações realizadas nas matrizes se tornam visíveis fora do corpo da função"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes-2",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes-2",
+    "title": "Funções e Matrizes",
+    "section": "Funções com Matrizes",
+    "text": "Funções com Matrizes\nLinhas de uma Matriz como Vetores\nFunções que aceitam um vetor como parâmetro aceitam que uma linha da matriz seja passada na sua chamada. Exemplo:\nvoid imprime_vet(int v[], int n);\n...\nvoid imprime_mat(int mat[][MAX], int nl, int nc){\n    int i = 0;\n    for(i = 0; i < nl; i++){\n        imprime_vet(mat[i], nc);\n    }\n}"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#exercícios-1",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#exercícios-1",
+    "title": "Funções e Matrizes",
+    "section": "Exercícios",
+    "text": "Exercícios\nImplemente as definições das funções:\n\nQue imprime uma matriz de inteiros na tela\nQue recebe uma matriz de caracteres e retorna quantos dos elementos na matriz são iguais a um caractere passado como parâmetro\nQue recebe duas matrizes de inteiros de mesmo tamanho e retorna o maior valor dentre todos, seja ele da primeira ou da segunda matriz"
+  },
+  {
+    "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#sumário",
+    "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#sumário",
+    "title": "Funções e Matrizes",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nSintaxe de implementação de funções com matrizes\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
   }
 ]

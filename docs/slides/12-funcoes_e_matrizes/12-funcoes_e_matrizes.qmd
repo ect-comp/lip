@@ -6,22 +6,170 @@ title-slide-attributes:
   data-background-opacity: "0.05"
 ---
 
-## Na Aula Anterior
+## Nas Aulas Anteriores
 
-Matrizes em C++:
-
-- Declaração
-- Acesso aos elementos
-- Inicialização
-- Exercícios
+- Vetores
+- Funções com vetores
 ---
 
 ## Objetivo da Aula
 
-Introduzir o uso de funções que operam sobre matrizes:
+Introduzir o uso de matrizes:
 
-- Sintaxe
+- Declaração de matrizes
+- Inicialização de matrizes
+- Funções e matrizes
 - Exercícios
+---
+
+## Declarando uma Matriz
+#### Sintaxe
+
+```C++
+tipo_da_matriz nome_da_matriz[n_linhas][n_colunas];
+```
+
+- `tipo_da_matriz` são os tipos de variáveis conhecidos:
+  `int, char, float, bool`.
+- `nome_da_matriz` segue as mesmas regras que usamos para variáveis
+- `n_linhas` é uma expressão para o número de linhas da matriz
+  cujo tipo deve ser `int`
+- `n_colunas` é uma expressão para o número de colunas da matriz
+  cujo tipo deve ser `int`
+---
+
+## Declarando uma Matriz
+#### Exercício
+
+Escrever declaração de matriz:
+
+1. Do tipo real e tamanho `2` x `2`, chamada `A`
+2. Do tipo caractere e tamanho `10` x `10`, chamada `img`
+3. Do tipo inteiro e tamanho `nl` x `nc`, chamada `mat`
+---
+
+## Declarando uma Matriz
+#### Exercício: Solução
+
+```C++
+1. float A[2][2];
+2. char img[10][10];
+3. int mat[nl][nc];
+```
+---
+
+## Posições de uma Matriz
+#### Acesso a Elementos de Matrizes
+
+- Uma matriz com `nl` linhas e `nc` colunas:
+    - Tem índices de linhas válidos que vão de `0` até `nl-1`
+    - Tem índices de colunas válidos que vão de `0` até `nc-1`
+- Uma matriz `m` não pode ser usada diretamente em expressões
+    - Cada elemento `m[0][0],m[0][1]`, ..., `m[nl-1][nc-1]` é que deve ser usado
+---
+
+## Posições de uma Matriz
+#### Acesso a Elementos de Matrizes
+
+Para acessar cada elemento da matriz `m`:
+
+- O primeiro índice acessa a linha da matriz
+- O segundo índice acessa a coluna da matriz
+- Exemplo: `m[2][0]` acessa a terceira linha e primeira coluna
+---
+
+## Posições de uma Matriz
+#### Percorrendo uma Matriz
+
+Para acessar cada elemento de uma matriz de forma automática, é necessário
+iterar todas as colunas de todas as linhas da matriz. Ou seja:
+
+- Um `for` para variar o índice da linha
+- Um `for` para variar o índice da coluna
+- Os laços devem estar aninhados
+- A ordem dos laços pode ou não influenciar no resultado, dependendo do
+  uso final do laço no algoritmo
+---
+
+## Posições de uma Matriz
+#### Exercício: Leitura de Dados
+
+Implemente um programa que leia do usuário as dimensões de uma matriz
+de inteiros e que leia também cada um de seus elementos.
+
+Imprima a matriz no formato adequado na tela.
+---
+
+## Posições de uma Matriz
+#### Exercício: Solução
+
+```C++
+int main(){
+    int nl, nc;
+    cin >> nl >> nc;
+    int m[nl][nc], i, j;
+    for(i = 0; i < nl; i++){
+        for(j = 0; j < nc; j++){
+            cin >> m[i][j];
+        }
+    }
+
+    for(i = 0; i < nl; i++){
+        for(j = 0; j < nc; j++){
+            cout << m[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+```
+---
+
+## Inicialização de Matrizes
+
+Forma 1:
+
+```C++
+int m[3][4] = { {1,2,3,4},
+                {5,6,7,8},
+                {9,10,11,12} };
+```
+
+Forma 2:
+
+```C++
+int m[][4] = { {1,2,3,4},
+               {5,6,7,8},
+               {9,10,11,12} };
+```
+
+---
+
+## Inicialização de Matrizes
+
+Forma 3:
+
+```C++
+int m[3][4] = {1,2,3,4,
+               5,6,7,8,
+               9,10,11,12};
+```
+
+Forma 4:
+
+```C++
+int m[][4] = {1,2,3,4,
+              5,6,7,8,
+              9,10,11,12};
+```
+
+---
+
+## Lista de Presença
+
+![](bit.ly_lip_20240718.png){fig-align="center"}
+
+<a href="https://bit.ly/lip_20240718"><p style="text-align:center;">https://bit.ly/lip_20240718</p></a>
+
 ---
 
 ## Funções e Matrizes
@@ -33,7 +181,7 @@ Introduzir o uso de funções que operam sobre matrizes:
 ## Função com Matrizes
 #### Matrizes para Uso em Funções
 
-Para passar matrizes como parâmetros de funções em C++, é preciso:
+Em C++, para trabalhar com matrizes como parâmetros de funções, também é preciso:
 
 1. A declaração de uma constante global com o número máximo de linhas/colunas de uma matriz (constante `MAX`, inicializada com um número grande)
 2. Que todas as matrizes do programa sejam declaradas com esta constante no número de linhas e colunas
@@ -139,14 +287,6 @@ int conta_ocorrencias(char mat[][MAX], int nl, int nc,
 int computa_maior(int mat1[][MAX], int mat2[][MAX],
                   int nl, int nc);
 ```
----
-
-## Lista de Presença
-
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=https%3A%2F%2Fbit.ly%2Flip_20231019){fig-align="center"}
-
-<a href="https://bit.ly/lip_20231019"><p style="text-align:center;">https://bit.ly/lip_20231019</p></a>
-
 ---
 
 ## Funções com Matrizes

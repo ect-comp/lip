@@ -403,23 +403,144 @@ Prof.&nbsp;Bruno Silva
 </div>
 
 </section>
-<section id="na-aula-anterior" class="slide level2">
-<h2>Na Aula Anterior</h2>
-<p>Matrizes em C++:</p>
+<section id="nas-aulas-anteriores" class="slide level2">
+<h2>Nas Aulas Anteriores</h2>
 <ul>
-<li>Declaração</li>
-<li>Acesso aos elementos</li>
-<li>Inicialização</li>
-<li>Exercícios</li>
+<li>Vetores</li>
+<li>Funções com vetores</li>
 </ul>
 </section>
 <section id="objetivo-da-aula" class="slide level2">
 <h2>Objetivo da Aula</h2>
-<p>Introduzir o uso de funções que operam sobre matrizes:</p>
+<p>Introduzir o uso de matrizes:</p>
 <ul>
-<li>Sintaxe</li>
+<li>Declaração de matrizes</li>
+<li>Inicialização de matrizes</li>
+<li>Funções e matrizes</li>
 <li>Exercícios</li>
 </ul>
+</section>
+<section id="declarando-uma-matriz" class="slide level2">
+<h2>Declarando uma Matriz</h2>
+<h4 id="sintaxe">Sintaxe</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a>tipo_da_matriz nome_da_matriz<span class="op">[</span>n_linhas<span class="op">][</span>n_colunas<span class="op">];</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>tipo_da_matriz</code> são os tipos de variáveis conhecidos: <code>int, char, float, bool</code>.</li>
+<li><code>nome_da_matriz</code> segue as mesmas regras que usamos para variáveis</li>
+<li><code>n_linhas</code> é uma expressão para o número de linhas da matriz cujo tipo deve ser <code>int</code></li>
+<li><code>n_colunas</code> é uma expressão para o número de colunas da matriz cujo tipo deve ser <code>int</code></li>
+</ul>
+</section>
+<section id="declarando-uma-matriz-1" class="slide level2">
+<h2>Declarando uma Matriz</h2>
+<h4 id="exercício">Exercício</h4>
+<p>Escrever declaração de matriz:</p>
+<ol type="1">
+<li>Do tipo real e tamanho <code>2</code> x <code>2</code>, chamada <code>A</code></li>
+<li>Do tipo caractere e tamanho <code>10</code> x <code>10</code>, chamada <code>img</code></li>
+<li>Do tipo inteiro e tamanho <code>nl</code> x <code>nc</code>, chamada <code>mat</code></li>
+</ol>
+</section>
+<section id="declarando-uma-matriz-2" class="slide level2">
+<h2>Declarando uma Matriz</h2>
+<h4 id="exercício-solução">Exercício: Solução</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1"></a><span class="fl">1.</span> <span class="dt">float</span> A<span class="op">[</span><span class="dv">2</span><span class="op">][</span><span class="dv">2</span><span class="op">];</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fl">2.</span> <span class="dt">char</span> img<span class="op">[</span><span class="dv">10</span><span class="op">][</span><span class="dv">10</span><span class="op">];</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fl">3.</span> <span class="dt">int</span> mat<span class="op">[</span>nl<span class="op">][</span>nc<span class="op">];</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="posições-de-uma-matriz" class="slide level2">
+<h2>Posições de uma Matriz</h2>
+<h4 id="acesso-a-elementos-de-matrizes">Acesso a Elementos de Matrizes</h4>
+<ul>
+<li>Uma matriz com <code>nl</code> linhas e <code>nc</code> colunas:
+<ul>
+<li>Tem índices de linhas válidos que vão de <code>0</code> até <code>nl-1</code></li>
+<li>Tem índices de colunas válidos que vão de <code>0</code> até <code>nc-1</code></li>
+</ul></li>
+<li>Uma matriz <code>m</code> não pode ser usada diretamente em expressões
+<ul>
+<li>Cada elemento <code>m[0][0],m[0][1]</code>, …, <code>m[nl-1][nc-1]</code> é que deve ser usado</li>
+</ul></li>
+</ul>
+</section>
+<section id="posições-de-uma-matriz-1" class="slide level2">
+<h2>Posições de uma Matriz</h2>
+<h4 id="acesso-a-elementos-de-matrizes-1">Acesso a Elementos de Matrizes</h4>
+<p>Para acessar cada elemento da matriz <code>m</code>:</p>
+<ul>
+<li>O primeiro índice acessa a linha da matriz</li>
+<li>O segundo índice acessa a coluna da matriz</li>
+<li>Exemplo: <code>m[2][0]</code> acessa a terceira linha e primeira coluna</li>
+</ul>
+</section>
+<section id="posições-de-uma-matriz-2" class="slide level2">
+<h2>Posições de uma Matriz</h2>
+<h4 id="percorrendo-uma-matriz">Percorrendo uma Matriz</h4>
+<p>Para acessar cada elemento de uma matriz de forma automática, é necessário iterar todas as colunas de todas as linhas da matriz. Ou seja:</p>
+<ul>
+<li>Um <code>for</code> para variar o índice da linha</li>
+<li>Um <code>for</code> para variar o índice da coluna</li>
+<li>Os laços devem estar aninhados</li>
+<li>A ordem dos laços pode ou não influenciar no resultado, dependendo do uso final do laço no algoritmo</li>
+</ul>
+</section>
+<section id="posições-de-uma-matriz-3" class="slide level2">
+<h2>Posições de uma Matriz</h2>
+<h4 id="exercício-leitura-de-dados">Exercício: Leitura de Dados</h4>
+<p>Implemente um programa que leia do usuário as dimensões de uma matriz de inteiros e que leia também cada um de seus elementos.</p>
+<p>Imprima a matriz no formato adequado na tela.</p>
+</section>
+<section id="posições-de-uma-matriz-4" class="slide level2">
+<h2>Posições de uma Matriz</h2>
+<h4 id="exercício-solução-1">Exercício: Solução</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="dt">int</span> nl<span class="op">,</span> nc<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>    cin <span class="op">&gt;&gt;</span> nl <span class="op">&gt;&gt;</span> nc<span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>    <span class="dt">int</span> m<span class="op">[</span>nl<span class="op">][</span>nc<span class="op">],</span> i<span class="op">,</span> j<span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> nc<span class="op">;</span> j<span class="op">++){</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>            cin <span class="op">&gt;&gt;</span> m<span class="op">[</span>i<span class="op">][</span>j<span class="op">];</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>        <span class="op">}</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>    <span class="op">}</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> nc<span class="op">;</span> j<span class="op">++){</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>            cout <span class="op">&lt;&lt;</span> m<span class="op">[</span>i<span class="op">][</span>j<span class="op">]</span> <span class="op">&lt;&lt;</span> <span class="st">" "</span><span class="op">;</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>        <span class="op">}</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>        cout <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>    <span class="op">}</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="inicialização-de-matrizes" class="slide level2">
+<h2>Inicialização de Matrizes</h2>
+<p>Forma 1:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="dt">int</span> m<span class="op">[</span><span class="dv">3</span><span class="op">][</span><span class="dv">4</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">4</span><span class="op">},</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>                <span class="op">{</span><span class="dv">5</span><span class="op">,</span><span class="dv">6</span><span class="op">,</span><span class="dv">7</span><span class="op">,</span><span class="dv">8</span><span class="op">},</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>                <span class="op">{</span><span class="dv">9</span><span class="op">,</span><span class="dv">10</span><span class="op">,</span><span class="dv">11</span><span class="op">,</span><span class="dv">12</span><span class="op">}</span> <span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Forma 2:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1"></a><span class="dt">int</span> m<span class="op">[][</span><span class="dv">4</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">4</span><span class="op">},</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>               <span class="op">{</span><span class="dv">5</span><span class="op">,</span><span class="dv">6</span><span class="op">,</span><span class="dv">7</span><span class="op">,</span><span class="dv">8</span><span class="op">},</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>               <span class="op">{</span><span class="dv">9</span><span class="op">,</span><span class="dv">10</span><span class="op">,</span><span class="dv">11</span><span class="op">,</span><span class="dv">12</span><span class="op">}</span> <span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="inicialização-de-matrizes-1" class="slide level2">
+<h2>Inicialização de Matrizes</h2>
+<p>Forma 3:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1"></a><span class="dt">int</span> m<span class="op">[</span><span class="dv">3</span><span class="op">][</span><span class="dv">4</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>               <span class="dv">5</span><span class="op">,</span><span class="dv">6</span><span class="op">,</span><span class="dv">7</span><span class="op">,</span><span class="dv">8</span><span class="op">,</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>               <span class="dv">9</span><span class="op">,</span><span class="dv">10</span><span class="op">,</span><span class="dv">11</span><span class="op">,</span><span class="dv">12</span><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Forma 4:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1"></a><span class="dt">int</span> m<span class="op">[][</span><span class="dv">4</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>              <span class="dv">5</span><span class="op">,</span><span class="dv">6</span><span class="op">,</span><span class="dv">7</span><span class="op">,</span><span class="dv">8</span><span class="op">,</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>              <span class="dv">9</span><span class="op">,</span><span class="dv">10</span><span class="op">,</span><span class="dv">11</span><span class="op">,</span><span class="dv">12</span><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="lista-de-presença" class="slide level2">
+<h2>Lista de Presença</h2>
+
+<img data-src="bit.ly_lip_20240718.png" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20240718">
+<p style="text-align:center;">
+https://bit.ly/lip_20240718
+</p>
+</a><p><a href="https://bit.ly/lip_20240718"></a></p>
 </section>
 <section id="funções-e-matrizes" class="slide level2">
 <h2>Funções e Matrizes</h2>
@@ -431,7 +552,7 @@ Prof.&nbsp;Bruno Silva
 <section id="função-com-matrizes" class="slide level2">
 <h2>Função com Matrizes</h2>
 <h4 id="matrizes-para-uso-em-funções">Matrizes para Uso em Funções</h4>
-<p>Para passar matrizes como parâmetros de funções em C++, é preciso:</p>
+<p>Em C++, para trabalhar com matrizes como parâmetros de funções, também é preciso:</p>
 <ol type="1">
 <li>A declaração de uma constante global com o número máximo de linhas/colunas de uma matriz (constante <code>MAX</code>, inicializada com um número grande)</li>
 <li>Que todas as matrizes do programa sejam declaradas com esta constante no número de linhas e colunas</li>
@@ -450,26 +571,26 @@ Prof.&nbsp;Bruno Silva
 <h2>Função com Matrizes</h2>
 <h4 id="matrizes-para-uso-em-funções---função-main">Matrizes para Uso em Funções - Função <code>main</code></h4>
 <p>O programa declara matriz com tamanho máximo 100 x 100, mas usa <code>nl</code> x <code>nc</code> elementos</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a><span class="at">const</span> <span class="dt">int</span> MAX <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>    <span class="dt">int</span> mat<span class="op">[</span>MAX<span class="op">][</span>MAX<span class="op">],</span> nl<span class="op">,</span> nc<span class="op">,</span> i<span class="op">,</span> j<span class="op">;</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>    cin <span class="op">&gt;&gt;</span> nl <span class="op">&gt;&gt;</span> nc<span class="op">;</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> nc<span class="op">;</span> j<span class="op">++){</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>            cin <span class="op">&gt;&gt;</span> mat<span class="op">[</span>i<span class="op">][</span>j<span class="op">];</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>        <span class="op">}</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a>    <span class="op">}</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> nc<span class="op">;</span> j<span class="op">++){</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a>            cout <span class="op">&lt;&lt;</span> mat<span class="op">[</span>i<span class="op">][</span>j<span class="op">]</span> <span class="op">&lt;&lt;</span> <span class="st">" "</span><span class="op">;</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a>        <span class="op">}</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>        cout <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>    <span class="op">}</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a></span>
-<span id="cb1-19"><a href="#cb1-19"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb1-20"><a href="#cb1-20"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1"></a><span class="at">const</span> <span class="dt">int</span> MAX <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>    <span class="dt">int</span> mat<span class="op">[</span>MAX<span class="op">][</span>MAX<span class="op">],</span> nl<span class="op">,</span> nc<span class="op">,</span> i<span class="op">,</span> j<span class="op">;</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>    cin <span class="op">&gt;&gt;</span> nl <span class="op">&gt;&gt;</span> nc<span class="op">;</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a></span>
+<span id="cb8-6"><a href="#cb8-6"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> nc<span class="op">;</span> j<span class="op">++){</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a>            cin <span class="op">&gt;&gt;</span> mat<span class="op">[</span>i<span class="op">][</span>j<span class="op">];</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a>        <span class="op">}</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a>    <span class="op">}</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a></span>
+<span id="cb8-12"><a href="#cb8-12"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb8-13"><a href="#cb8-13"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> nc<span class="op">;</span> j<span class="op">++){</span></span>
+<span id="cb8-14"><a href="#cb8-14"></a>            cout <span class="op">&lt;&lt;</span> mat<span class="op">[</span>i<span class="op">][</span>j<span class="op">]</span> <span class="op">&lt;&lt;</span> <span class="st">" "</span><span class="op">;</span></span>
+<span id="cb8-15"><a href="#cb8-15"></a>        <span class="op">}</span></span>
+<span id="cb8-16"><a href="#cb8-16"></a>        cout <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb8-17"><a href="#cb8-17"></a>    <span class="op">}</span></span>
+<span id="cb8-18"><a href="#cb8-18"></a></span>
+<span id="cb8-19"><a href="#cb8-19"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb8-20"><a href="#cb8-20"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="função-com-matrizes-3" class="slide level2">
 <h2>Função com Matrizes</h2>
@@ -480,16 +601,16 @@ Prof.&nbsp;Bruno Silva
 </section>
 <section id="declaração-de-função-com-matrizes" class="slide level2">
 <h2>Declaração de Função com Matrizes</h2>
-<h4 id="sintaxe">Sintaxe</h4>
+<h4 id="sintaxe-1">Sintaxe</h4>
 <p>Exemplo com uma matriz como parâmetro:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1"></a>tipo_func nome_func<span class="op">(</span>tipo_matriz nome_matriz<span class="op">[][</span>MAX<span class="op">],</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>                    <span class="dt">int</span> n_linhas<span class="op">,</span> <span class="dt">int</span> n_cols<span class="op">){</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>    corpo da funcao</span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb9-1"><a href="#cb9-1"></a>tipo_func nome_func<span class="op">(</span>tipo_matriz nome_matriz<span class="op">[][</span>MAX<span class="op">],</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>                    <span class="dt">int</span> n_linhas<span class="op">,</span> <span class="dt">int</span> n_cols<span class="op">){</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>    corpo da funcao</span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="declaração-de-função-com-matrizes-1" class="slide level2">
 <h2>Declaração de Função com Matrizes</h2>
-<h4 id="sintaxe-1">Sintaxe</h4>
+<h4 id="sintaxe-2">Sintaxe</h4>
 <ul>
 <li><code>tipo_matriz</code> é o tipo da matriz passada como parâmetro:<br> <code>int, char, float, bool</code>.</li>
 <li><code>nome_matriz</code> é o nome da matriz passada como parâmetro. Observe que o primeiro <code>[]</code> é em branco e o segundo <code>[]</code> deve ter obrigatoriamente o nr. máximo de colunas (no caso, <code>MAX</code>)</li>
@@ -514,38 +635,29 @@ Prof.&nbsp;Bruno Silva
 <section id="declaração-de-funções-com-matrizes" class="slide level2">
 <h2>Declaração de Funções com Matrizes</h2>
 <h4 id="exercícios-solução">Exercícios: Solução</h4>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1"></a><span class="dt">void</span> imprime_matriz<span class="op">(</span><span class="dt">int</span> mat<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">);</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="dt">int</span> conta_ocorrencias<span class="op">(</span><span class="dt">char</span> mat<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">,</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a>                      <span class="dt">char</span> c<span class="op">);</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="dt">int</span> computa_maior<span class="op">(</span><span class="dt">int</span> mat1<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> mat2<span class="op">[][</span>MAX<span class="op">],</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a>                  <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="lista-de-presença" class="slide level2">
-<h2>Lista de Presença</h2>
-
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=https%3A%2F%2Fbit.ly%2Flip_20231019" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20231019">
-<p style="text-align:center;">
-https://bit.ly/lip_20231019
-</p>
-</a><p><a href="https://bit.ly/lip_20231019"></a></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb10-1"><a href="#cb10-1"></a><span class="dt">void</span> imprime_matriz<span class="op">(</span><span class="dt">int</span> mat<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">);</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="dt">int</span> conta_ocorrencias<span class="op">(</span><span class="dt">char</span> mat<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">,</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a>                      <span class="dt">char</span> c<span class="op">);</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="dt">int</span> computa_maior<span class="op">(</span><span class="dt">int</span> mat1<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> mat2<span class="op">[][</span>MAX<span class="op">],</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a>                  <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="funções-com-matrizes" class="slide level2">
 <h2>Funções com Matrizes</h2>
 <h4 id="chamada-de-funções">Chamada de Funções</h4>
 <p>Nas chamadas às funções, matrizes são passadas como parâmetros utilizando apenas o seu nome (sem colchetes).</p>
 <p>Exemplo:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="at">const</span> <span class="dt">int</span> MAX <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="dt">void</span> imprime_mat<span class="op">(</span><span class="dt">int</span> mat<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">);</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a>    <span class="dt">int</span> m<span class="op">[</span>MAX<span class="op">][</span>MAX<span class="op">],</span> i<span class="op">,</span> j<span class="op">,</span> nl <span class="op">=</span> <span class="dv">2</span><span class="op">,</span> nc <span class="op">=</span> <span class="dv">4</span><span class="op">;</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> nc<span class="op">;</span> j<span class="op">++){</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a>        m<span class="op">[</span>i<span class="op">][</span>j<span class="op">]</span> <span class="op">=</span> nc<span class="op">*</span>i<span class="op">+</span>j<span class="op">+</span><span class="dv">1</span><span class="op">;</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a>        <span class="op">}</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a>    <span class="op">}</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a>    imprime_mat<span class="op">(</span>m<span class="op">,</span> nl<span class="op">,</span> nc<span class="op">);</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb11-1"><a href="#cb11-1"></a><span class="at">const</span> <span class="dt">int</span> MAX <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="dt">void</span> imprime_mat<span class="op">(</span><span class="dt">int</span> mat<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">);</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a>    <span class="dt">int</span> m<span class="op">[</span>MAX<span class="op">][</span>MAX<span class="op">],</span> i<span class="op">,</span> j<span class="op">,</span> nl <span class="op">=</span> <span class="dv">2</span><span class="op">,</span> nc <span class="op">=</span> <span class="dv">4</span><span class="op">;</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a>        <span class="cf">for</span><span class="op">(</span>j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> nc<span class="op">;</span> j<span class="op">++){</span></span>
+<span id="cb11-7"><a href="#cb11-7"></a>        m<span class="op">[</span>i<span class="op">][</span>j<span class="op">]</span> <span class="op">=</span> nc<span class="op">*</span>i<span class="op">+</span>j<span class="op">+</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="cb11-8"><a href="#cb11-8"></a>        <span class="op">}</span></span>
+<span id="cb11-9"><a href="#cb11-9"></a>    <span class="op">}</span></span>
+<span id="cb11-10"><a href="#cb11-10"></a>    imprime_mat<span class="op">(</span>m<span class="op">,</span> nl<span class="op">,</span> nc<span class="op">);</span></span>
+<span id="cb11-11"><a href="#cb11-11"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb11-12"><a href="#cb11-12"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="funções-com-matrizes-1" class="slide level2">
 <h2>Funções com Matrizes</h2>
@@ -559,14 +671,14 @@ https://bit.ly/lip_20231019
 <h2>Funções com Matrizes</h2>
 <h4 id="linhas-de-uma-matriz-como-vetores">Linhas de uma Matriz como Vetores</h4>
 <p>Funções que aceitam um vetor como parâmetro aceitam que uma linha da matriz seja passada na sua chamada. Exemplo:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1"></a><span class="dt">void</span> imprime_vet<span class="op">(</span><span class="dt">int</span> v<span class="op">[],</span> <span class="dt">int</span> n<span class="op">);</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="op">...</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="dt">void</span> imprime_mat<span class="op">(</span><span class="dt">int</span> mat<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">){</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a>    <span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a>        imprime_vet<span class="op">(</span>mat<span class="op">[</span>i<span class="op">],</span> nc<span class="op">);</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a>    <span class="op">}</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1"></a><span class="dt">void</span> imprime_vet<span class="op">(</span><span class="dt">int</span> v<span class="op">[],</span> <span class="dt">int</span> n<span class="op">);</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="op">...</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="dt">void</span> imprime_mat<span class="op">(</span><span class="dt">int</span> mat<span class="op">[][</span>MAX<span class="op">],</span> <span class="dt">int</span> nl<span class="op">,</span> <span class="dt">int</span> nc<span class="op">){</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>    <span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a>    <span class="cf">for</span><span class="op">(</span>i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nl<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a>        imprime_vet<span class="op">(</span>mat<span class="op">[</span>i<span class="op">],</span> nc<span class="op">);</span></span>
+<span id="cb12-7"><a href="#cb12-7"></a>    <span class="op">}</span></span>
+<span id="cb12-8"><a href="#cb12-8"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="exercícios-1" class="slide level2">
 <h2>Exercícios</h2>
