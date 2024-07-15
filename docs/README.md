@@ -60,6 +60,8 @@
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
 
+## [25/07 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -87,8 +89,6 @@
 ## [24/10 - Unidade 2 - Simulado](./slides/exercicios_unidade2/exercicios_unidade2.html)
 
 ## [26/10 - Multiplicação de Matrizes](./slides/multiplicacao_matricial/multiplicacao_matricial.html)
-
-## [07/11 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
 ## [09/11 - Strings I](./slides/16-strings1/16-strings1.html)
 - Caractere delimitador `\0`
