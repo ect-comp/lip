@@ -6690,5 +6690,243 @@
     "title": "Revisão - Unidade II",
     "section": "Revisão - Lista de Presença",
     "text": "Revisão - Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240725"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#nas-aulas-anteriores",
+    "href": "slides/13-strings/13-strings.html#nas-aulas-anteriores",
+    "title": "Strings",
+    "section": "Nas Aulas Anteriores",
+    "text": "Nas Aulas Anteriores\n\nFunções\nVetores e matrizes\nFunções com vetores e matrizes"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#objetivo-da-aula",
+    "href": "slides/13-strings/13-strings.html#objetivo-da-aula",
+    "title": "Strings",
+    "section": "Objetivo da Aula",
+    "text": "Objetivo da Aula\nIntroduzir o uso de strings:\n\nConceito\nEntrada e saída\nFunções de manipulação de strings"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings",
+    "href": "slides/13-strings/13-strings.html#strings",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\n\n\n\n\n\n\nString:\n\n\nCadeia de caracteres envolvida por aspas duplas \\rightarrow \"\n\n\n\nExemplos:\n\n\"ect\"\n\"linguagem de programacao\""
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-1",
+    "href": "slides/13-strings/13-strings.html#strings-1",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nAo longo do curso, já utilizamos:\n\nVariáveis para armazenar um único caractere:\nchar carac;\nStrings constantes:\ncout << \"Informe o nr. de linhas\";\n\nE quanto a variáveis para armazenar strings?"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-2",
+    "href": "slides/13-strings/13-strings.html#strings-2",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nEm C++, strings são vetores de char com um último caractere especial\n\nNão iremos utilizar o tipo string, disponível em C++\nToda string em C++ termina com o caractere \\0:\n\nCaractere especial delimitador de final de string\nUsado pelos algoritmos/funções que processam strings\nNão é visível e tem código ASCII igual a 0"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-3",
+    "href": "slides/13-strings/13-strings.html#strings-3",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nDeclaração de uma string em C++:\nchar s[50]; \nOu seja, idêntica a de um vetor de caracteres."
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-4",
+    "href": "slides/13-strings/13-strings.html#strings-4",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nRepresentação em Memória\n\n\n\n\n\nDada a string acima:\n\nQual o caractere na terceira posição?\nQual o caractere s[5]?"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-5",
+    "href": "slides/13-strings/13-strings.html#strings-5",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nRepresentação em Memória\n\n\n\n\n\nDada a string acima:\n\nComo poderíamos mudar a string para \"ola mundo\"?\nQual o tamanho da string?"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-6",
+    "href": "slides/13-strings/13-strings.html#strings-6",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nInicialização\n\nForma 1:\n\nchar s[4] = {'e','c','t','\\0'};\n\nForma 2:\n\nchar s[] = {'e','c','t','\\0'};\n\nForma 3 ('\\0' é inserido automaticamente):\n\nchar s[] = \"ect\";"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-7",
+    "href": "slides/13-strings/13-strings.html#strings-7",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nStrings vs. Vetor de Caracteres\nUma string é um vetor de caracteres, mas não o contrário\n\nString:\n\nchar s[] = {'e','c','t', '\\0'};\n\nVetor de caracteres (não delimitado com \\0):\n\nchar s[] = {'e','c','t'};\n\nAs regras que valem para vetores valem para strings\nEntretanto, strings oferecem algumas vantagens, como mostradas a seguir"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#lista-de-presença",
+    "href": "slides/13-strings/13-strings.html#lista-de-presença",
+    "title": "Strings",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240801"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-8",
+    "href": "slides/13-strings/13-strings.html#strings-8",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nComando de Saída\nPara imprimir uma string, pode-se usar o comando cout, diretamente na variável do tipo string:\nint main(){\n    char str[4] = {'e','c','t','\\0'};\n    cout << str << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-9",
+    "href": "slides/13-strings/13-strings.html#strings-9",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nComando de Saída\n\nOu seja, não é necessário utilizar um laço como no caso de vetores\nIsto só funciona para strings bem formadas (terminadas com \\0)\n\nCaso contrário, serão impressos vários caracteres a mais (lixo de memória)"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-10",
+    "href": "slides/13-strings/13-strings.html#strings-10",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nComando de Entrada\n\nPara ler uma string do usuário, pode-se usar o comando cin, diretamente na variável do tipo string:\n\nint main(){\n    char str[10];\n    cin >> str;\n    cout << str << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-11",
+    "href": "slides/13-strings/13-strings.html#strings-11",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nComando de Entrada\n\nOu seja, também não é necessário um laço\nCom cin, o caractere especial \\0 é inserido automaticamente\nCaso a string possua espaços em branco (' '), ela deve ser lida com um outro comando (próxima aula)"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-12",
+    "href": "slides/13-strings/13-strings.html#strings-12",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nTamanho Máximo da Variável String\nSobre o tamanho da variável string na declaração:\n\nNo exemplo anterior, a variável str tem tamanho máximo 10\n\nLembre-se que nem todos os espaços reservados para a string serão necessariamente usados\n\nPortanto, o tamanho máximo do texto que cabe na string é 9\n\nIsto por causa do espaço destinado ao caractere especial \\0"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-13",
+    "href": "slides/13-strings/13-strings.html#strings-13",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nFunções da Biblioteca cstring\n\nBiblioteca cstring \\rightarrow possui algumas funções úteis:\n\nstrlen: computa o tamanho da string\nstrcpy: computa uma cópia da string\nstrcat: concatena duas strings\nstrcmp: compara duas strings\n\nEstas funções podem ser usadas na resolução de exercícios"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-14",
+    "href": "slides/13-strings/13-strings.html#strings-14",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nFunções da Biblioteca cstring\n\nint strlen(char s[]): retorna o tamanho da string s\nvoid strcpy(char dest[], char orig[]): copia o conteúdo de orig para dest"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-15",
+    "href": "slides/13-strings/13-strings.html#strings-15",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nFunções da Biblioteca cstring\n\nvoid strcat(char s1[], char s2[]): concatena o conteúdo de s2 na string s1"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-16",
+    "href": "slides/13-strings/13-strings.html#strings-16",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nFunções da Biblioteca cstring\n\nint strcmp(char s1[], char s2[]): compara a string s1 com s2 \n\nRetorna 0 se elas forem iguais\nRetorna um número negativo se s1 for “menor” do que s2\nRetorna um número positivo se s1 for “maior” do que s2"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-17",
+    "href": "slides/13-strings/13-strings.html#strings-17",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nFunções da Biblioteca cstring\nNa função strcmp, “menor”/“maior” não depende dos tamanhos das strings:\n\nA string \"bala\" é “menor” do que \"bola\"\nIsto porque 'a' tem valor ASCII menor do que 'o' (primeiro caractere que difere entre as strings)"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#exercícios",
+    "href": "slides/13-strings/13-strings.html#exercícios",
+    "title": "Strings",
+    "section": "Exercícios",
+    "text": "Exercícios\nImplementar cada uma das funções da biblioteca cstring:\n\nint strlen(char s[])\nvoid strcpy(char dest[], char orig[])\nvoid strcat(char s1[], char s2[])\nint strcmp(char s1[], char s2[])"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#exercício",
+    "href": "slides/13-strings/13-strings.html#exercício",
+    "title": "Strings",
+    "section": "Exercício",
+    "text": "Exercício\nImplementar programa utilizando funções da biblioteca cstring para:\n\nLer uma string do usuário\nCopiar a string lida para uma segunda string\nChecar se a cópia da string é igual à palavra \"ect\", imprimindo uma mensagem conforme o caso"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#exercício-1",
+    "href": "slides/13-strings/13-strings.html#exercício-1",
+    "title": "Strings",
+    "section": "Exercício",
+    "text": "Exercício\nSolução\n#include <cstring>\n\nint main(){\n    char str[10], copia[10], palavra[10] = \"ect\";\n    cin >> str;\n    strcpy(copia, str);\n    if(strcmp(copia, palavra) == 0){\n        cout << \"Iguais\\n\";\n    }\n    else{\n        cout << \"Diferentes\\n\";\n    }\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#sumário",
+    "href": "slides/13-strings/13-strings.html#sumário",
+    "title": "Strings",
+    "section": "Sumário",
+    "text": "Sumário\nNa aula de hoje:\n\nStrings\n\nCaractere delimitador \\0\nInicialização\nEntrada/saída\n\nFunções de manipulação de strings\n\n\n\n\nECT2303 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-18",
+    "href": "slides/13-strings/13-strings.html#strings-18",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nO comando cin não é capaz de ler strings com espaços:\n\nNa entrada, espaços em branco ou quebras de linha (tecla enter) informam o final da string digitada pelo usuário\nÉ necessário algum comando que permita a leitura de strings com espaços em branco"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-19",
+    "href": "slides/13-strings/13-strings.html#strings-19",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nLeitura de Strings com Espaços em Branco\n\nPara ler strings com espaços em branco, a função cin.getline deve ser utilizada\nA entrada do teclado é lida até que uma quebra de linha (tecla enter) seja digitada"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-20",
+    "href": "slides/13-strings/13-strings.html#strings-20",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nLeitura de Strings com Espaços em Branco\ncin.getline - recebe dois parâmetros:\n\nvariável do tipo string onde o texto deve ser armazenado\nnúmero máximo de caracteres a serem lidos contando com o \\0"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#strings-21",
+    "href": "slides/13-strings/13-strings.html#strings-21",
+    "title": "Strings",
+    "section": "Strings",
+    "text": "Strings\nLeitura de Strings com Espaços em Branco\nExemplo:\nint main(){\n    char s[51];\n    cin.getline(s, 51); //le 50 caracteres\n    cout << s << endl;\n    return 0;\n}"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#exercícios-1",
+    "href": "slides/13-strings/13-strings.html#exercícios-1",
+    "title": "Strings",
+    "section": "Exercícios",
+    "text": "Exercícios\nImplemente uma função que remova os espaços em branco de uma string:\n\nEntrada:\nEstudos␣de␣LIP\nSaída:\nEstudosdeLIP\n\nArmazene o resultado em um parâmetro de saída.\nImplemente também a função main para testar a função solicitada."
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#exercícios-2",
+    "href": "slides/13-strings/13-strings.html#exercícios-2",
+    "title": "Strings",
+    "section": "Exercícios",
+    "text": "Exercícios\nUm palíndromo é uma palavra/frase que pode ser lida tanto da esquerda para a direita quanto da direita para a esquerda.\nExemplos:\n\nosso\nradar\name o poema\nsubi no onibus"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#exercícios-3",
+    "href": "slides/13-strings/13-strings.html#exercícios-3",
+    "title": "Strings",
+    "section": "Exercícios",
+    "text": "Exercícios\nExistem duas versões para o problema:\n\nConsiderando espaços em branco como parte da string:\n\n\nosso é palíndromo\no␣s␣s␣o é palíndromo\nsubi␣no␣onibus não é palíndromo"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#exercícios-4",
+    "href": "slides/13-strings/13-strings.html#exercícios-4",
+    "title": "Strings",
+    "section": "Exercícios",
+    "text": "Exercícios\nExistem duas versões para o problema:\n\nDesconsiderando espaços em branco como parte da string:\n\n\nsubi␣no␣onibus é palíndromo\nsubi␣␣␣␣␣no␣␣onibus é palíndromo"
+  },
+  {
+    "objectID": "slides/13-strings/13-strings.html#exercícios-5",
+    "href": "slides/13-strings/13-strings.html#exercícios-5",
+    "title": "Strings",
+    "section": "Exercícios",
+    "text": "Exercícios\nImplemente uma função que receba como parâmetro uma string e retorne verdadeiro caso ela seja um palíndromo ou falso caso contrário."
   }
 ]

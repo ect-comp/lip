@@ -62,6 +62,12 @@
 
 ## [25/07 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
+## [01/08 - Strings](./slides/13-strings/13-strings.html)
+- Caractere delimitador `\0`
+- Entrada/saída
+- Funções de manipulação de strings
+- Exercícios
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
