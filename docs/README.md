@@ -68,6 +68,12 @@
 - Funções de manipulação de strings
 - Exercícios
 
+## [08/08 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
+- Definição de tipos estruturados
+- Operações com variáveis de tipos estruturados
+- Funções e tipos estruturados
+- Exercícios
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -104,12 +110,6 @@
 
 ## [14/11 - Strings II](./slides/17-strings2/17-strings2.html)
 - Leitura de strings com espaços em branco
-- Exercícios
-
-## [16/11 - Tipos Estruturados I](./slides/18-tipos_estruturados1/18-tipos_estruturados1.html)
-- Definição de tipos estruturados
-- Operações com variáveis de tipos estruturados
-- Vetores de variáveis de tipos estruturados
 - Exercícios
 
 ## [23/11 - Tipos Estruturados II](./slides/19-tipos_estruturados2/19-tipos_estruturados2.html)
