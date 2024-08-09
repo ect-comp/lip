@@ -74,6 +74,12 @@
 - Funções e tipos estruturados
 - Exercícios
 
+## [15/08 - Ordenação](./slides/15-ordenacao/15-ordenacao.html)
+- Ordenação
+- Ordenação com tipos estruturados
+  - Ordem crescente/decrescente de campos numéricos
+  - Ordem alfabética de campos string
+
 <!--
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
@@ -117,12 +123,6 @@
 - Exercícios
 
 ## [28/11 - Tipos Estruturados - Exercícios](./slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html)
-
-## [30/11 - Ordenação](./slides/20-ordenacao/20-ordenacao.html)
-- Ordenação
-- Ordenação com tipos estruturados
-  - Ordem crescente/decrescente de campos numéricos
-  - Ordem alfabética de campos string
 
 ## [05/12 - Ordenação - Exercícios](./slides/exercicios_ordenacao/exercicios_ordenacao.html)
 
