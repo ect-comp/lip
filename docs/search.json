@@ -480,14 +480,14 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas",
     "title": "Operadores e Expressões",
     "section": "Expressões Lógicas",
-    "text": "Expressões Lógicas\n\nExpressões que possuem como resultado os valores 0 (falso) ou 1 (verdadeiro)\nEm C++, valores numéricos são interpretados como falso ou verdadeiro\n\nO único valor a ser interpretado como falso é o 0\nQualquer outro é interpretado como 1 (ex. 1.000001, -10000, etc.)\n\nEstas expressões são muitas vezes a parte mais importante dos programas"
+    "text": "Expressões Lógicas\n\nExpressões que possuem como resultado os valores 0 (falso) ou 1 (verdadeiro)\nFormadas por dois tipos de operadores:\n\nOperadores relacionais\nOperadores lógicos"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-1",
     "href": "slides/03-op_e_exp/03-op_e_exp.html#expressões-lógicas-1",
     "title": "Operadores e Expressões",
     "section": "Expressões Lógicas",
-    "text": "Expressões Lógicas\n\nExpressões lógicas são formadas por dois tipos de operadores:\n\nOperadores relacionais\nOperadores lógicos"
+    "text": "Expressões Lógicas\nEm C++, valores numéricos são interpretados como falso ou verdadeiro:\n\nO único valor a ser interpretado como falso é o 0\nQualquer outro é interpretado como 1 (ex. 1.000001, -10000, etc.)"
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#operadores-relacionais",
@@ -648,7 +648,7 @@
     "href": "slides/03-op_e_exp/03-op_e_exp.html#desafio",
     "title": "Operadores e Expressões",
     "section": "Desafio",
-    "text": "Desafio\nUtilizando apenas o que foi visto até o momento na disciplina, implemente um programa que leia do usuário um número inteiro. O seu programa deve imprimir na tela o antecessor do número, exceto se ele for o número 17. Neste caso, o próprio número deve ser impresso."
+    "text": "Desafio\nUtilizando apenas o que foi visto até o momento na disciplina, implemente um programa que leia do usuário um número inteiro. O seu programa deve imprimir na tela o antecessor do número, exceto se ele for o número 13. Neste caso, o próprio número deve ser impresso."
   },
   {
     "objectID": "slides/03-op_e_exp/03-op_e_exp.html#sumário",
