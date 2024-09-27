@@ -14,12 +14,12 @@
  - Expressões
  - Conversão entre tipos
 
-<!--
-
-## [07/03 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
+## [01/10 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
 - Comando `if` e `if-else`
 - Comando `switch`
 - Operador ternário
+
+<!--
 
 ## [14/03 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
