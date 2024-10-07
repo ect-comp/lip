@@ -19,13 +19,13 @@
 - Comando `switch`
 - Operador ternário
 
-<!--
-
-## [14/03 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
+## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
 - Exercícios
+
+<!--
 
 ## [21/03 - Funções I](./slides/06-funcoes1/06-funcoes1.html)
 - Chamada de funções

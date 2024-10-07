@@ -409,6 +409,7 @@ do{
 Implemente um programa com um menu de escolha, que deve
 ler do usuário uma entrada denotando uma opção.
 O programa deve imprimir:
+
 -  "opcao1 escolhida" quando o usuário inserir `1`
 -  "opcao2 escolhida" quando o usuário inserir `2`
 -  "opcao3 escolhida" quando o usuário inserir `3`
