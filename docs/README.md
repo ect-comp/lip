@@ -25,12 +25,12 @@
 - Comandos `break` e `continue`
 - Exercícios
 
-<!--
-
-## [21/03 - Funções I](./slides/06-funcoes1/06-funcoes1.html)
+## [15/10 - Funções I](./slides/06-funcoes1/06-funcoes1.html)
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
+
+<!--
 
 ## [04/04 - Funções II](./slides/07-funcoes2/07-funcoes2.html)
 - Função sem retorno (funções tipo `void`)

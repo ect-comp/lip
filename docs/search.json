@@ -5009,7 +5009,7 @@
     "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#lista-de-presença",
     "title": "Comandos de Repetição",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20230829"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20241008"
   },
   {
     "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comando-for-10",
@@ -5170,7 +5170,7 @@
     "href": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-while-e-do-while",
     "title": "Comandos de Repetição",
     "section": "Comandos while e do-while",
-    "text": "Comandos while e do-while\nExercício 7\nImplemente um programa com um menu de escolha, que deve ler do usuário uma entrada denotando uma opção. O programa deve imprimir: - “opcao1 escolhida” quando o usuário inserir 1 - “opcao2 escolhida” quando o usuário inserir 2 - “opcao3 escolhida” quando o usuário inserir 3\nPara cada escolha acima, o programa deve voltar ao menu inicial. Caso o usuário insira s, o programa deve se encerrar."
+    "text": "Comandos while e do-while\nExercício 7\nImplemente um programa com um menu de escolha, que deve ler do usuário uma entrada denotando uma opção. O programa deve imprimir:\n\n“opcao1 escolhida” quando o usuário inserir 1\n“opcao2 escolhida” quando o usuário inserir 2\n“opcao3 escolhida” quando o usuário inserir 3\n\nPara cada escolha acima, o programa deve voltar ao menu inicial. Caso o usuário insira s, o programa deve se encerrar."
   },
   {
     "objectID": "slides/05-comandos_repeticao/05-comandos_repeticao.html#comandos-while-e-do-while-1",
@@ -5373,7 +5373,7 @@
     "href": "slides/06-funcoes1/06-funcoes1.html#lista-de-presença",
     "title": "Funções I",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240321"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20241015"
   },
   {
     "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções",
@@ -5464,7 +5464,7 @@
     "href": "slides/06-funcoes1/06-funcoes1.html#sumário",
     "title": "Funções I",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nChamada de funções\nAssinatura de funções\nDefinição de funções\n\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nChamada de funções\nAssinatura de funções\nDefinição de funções\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/07-funcoes2/07-funcoes2.html#aula-anterior",

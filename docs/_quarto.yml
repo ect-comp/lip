@@ -11,7 +11,7 @@ format:
     theme: default
     logo: assets/img/logo_ect.png
     css: assets/css/logo.css
-    footer: "ECT2303 - Linguagem de Programação"
+    footer: "ECT3201 - Linguagem de Programação"
     slide-level: 2
     html-math-method: katex
 
