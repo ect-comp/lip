@@ -217,51 +217,12 @@ Utilize a função `troca` na sua implementação.
 ---
 
 ## Exercício: Solução
-```C++
-void troca(int& x, int& y);
-void ordena_crescente(int& a, int& b, int& c);
-
-int main(){
-    int x, y, z;
-    cout << "Insira tres nrs.\n";
-    cin >> x >> y >> z;
-
-    ordena_crescente(x,y,z);
-    cout << "Menor: " << x << endl;
-    cout << "Meio: " << y << endl;
-    cout << "Maior: " << z << endl;
-    cout << "Media: " << float(x + z)/2 << endl;
-    return 0;
-}
-
-void troca(int& x, int& y){
-    int aux = x;
-    x = y;
-    y = aux;
-}
-
-void ordena_crescente(int& a, int& b, int& c){
-    if(a > c){
-        troca(a, c);
-    }
-    if(a > b){
-        troca(a, b);
-    }
-    if(b > c){
-        troca(b, c);
-    }
-}
-```
----
-
-## Exercício: Solução
 
 Observe que:
 
-- A função `ordena_crescente` chama a função `troca` na sua solução
+- A função `ordena_crescente` deve chamar a função `troca` na sua solução
     - Isto **não é o mesmo** que chamar `troca` na função `main`
-- A ordem das trocas é importante (a 1a. comparação precisa ser
-  entre o 1o. e 3o. parâmetros)
+- A ordem das trocas é importante 
 
 ---
 

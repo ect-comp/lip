@@ -607,49 +607,13 @@ https://bit.ly/lip_20241022
 </section>
 <section id="exercício-solução-1" class="slide level2">
 <h2>Exercício: Solução</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1"></a><span class="dt">void</span> troca<span class="op">(</span><span class="dt">int</span><span class="op">&amp;</span> x<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> y<span class="op">);</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="dt">void</span> ordena_crescente<span class="op">(</span><span class="dt">int</span><span class="op">&amp;</span> a<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> b<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> c<span class="op">);</span></span>
-<span id="cb8-3"><a href="#cb8-3"></a></span>
-<span id="cb8-4"><a href="#cb8-4"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb8-5"><a href="#cb8-5"></a>    <span class="dt">int</span> x<span class="op">,</span> y<span class="op">,</span> z<span class="op">;</span></span>
-<span id="cb8-6"><a href="#cb8-6"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira tres nrs.</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb8-7"><a href="#cb8-7"></a>    cin <span class="op">&gt;&gt;</span> x <span class="op">&gt;&gt;</span> y <span class="op">&gt;&gt;</span> z<span class="op">;</span></span>
-<span id="cb8-8"><a href="#cb8-8"></a></span>
-<span id="cb8-9"><a href="#cb8-9"></a>    ordena_crescente<span class="op">(</span>x<span class="op">,</span>y<span class="op">,</span>z<span class="op">);</span></span>
-<span id="cb8-10"><a href="#cb8-10"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Menor: "</span> <span class="op">&lt;&lt;</span> x <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb8-11"><a href="#cb8-11"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Meio: "</span> <span class="op">&lt;&lt;</span> y <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb8-12"><a href="#cb8-12"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Maior: "</span> <span class="op">&lt;&lt;</span> z <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb8-13"><a href="#cb8-13"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Media: "</span> <span class="op">&lt;&lt;</span> <span class="dt">float</span><span class="op">(</span>x <span class="op">+</span> z<span class="op">)/</span><span class="dv">2</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb8-14"><a href="#cb8-14"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb8-15"><a href="#cb8-15"></a><span class="op">}</span></span>
-<span id="cb8-16"><a href="#cb8-16"></a></span>
-<span id="cb8-17"><a href="#cb8-17"></a><span class="dt">void</span> troca<span class="op">(</span><span class="dt">int</span><span class="op">&amp;</span> x<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> y<span class="op">){</span></span>
-<span id="cb8-18"><a href="#cb8-18"></a>    <span class="dt">int</span> aux <span class="op">=</span> x<span class="op">;</span></span>
-<span id="cb8-19"><a href="#cb8-19"></a>    x <span class="op">=</span> y<span class="op">;</span></span>
-<span id="cb8-20"><a href="#cb8-20"></a>    y <span class="op">=</span> aux<span class="op">;</span></span>
-<span id="cb8-21"><a href="#cb8-21"></a><span class="op">}</span></span>
-<span id="cb8-22"><a href="#cb8-22"></a></span>
-<span id="cb8-23"><a href="#cb8-23"></a><span class="dt">void</span> ordena_crescente<span class="op">(</span><span class="dt">int</span><span class="op">&amp;</span> a<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> b<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> c<span class="op">){</span></span>
-<span id="cb8-24"><a href="#cb8-24"></a>    <span class="cf">if</span><span class="op">(</span>a <span class="op">&gt;</span> c<span class="op">){</span></span>
-<span id="cb8-25"><a href="#cb8-25"></a>        troca<span class="op">(</span>a<span class="op">,</span> c<span class="op">);</span></span>
-<span id="cb8-26"><a href="#cb8-26"></a>    <span class="op">}</span></span>
-<span id="cb8-27"><a href="#cb8-27"></a>    <span class="cf">if</span><span class="op">(</span>a <span class="op">&gt;</span> b<span class="op">){</span></span>
-<span id="cb8-28"><a href="#cb8-28"></a>        troca<span class="op">(</span>a<span class="op">,</span> b<span class="op">);</span></span>
-<span id="cb8-29"><a href="#cb8-29"></a>    <span class="op">}</span></span>
-<span id="cb8-30"><a href="#cb8-30"></a>    <span class="cf">if</span><span class="op">(</span>b <span class="op">&gt;</span> c<span class="op">){</span></span>
-<span id="cb8-31"><a href="#cb8-31"></a>        troca<span class="op">(</span>b<span class="op">,</span> c<span class="op">);</span></span>
-<span id="cb8-32"><a href="#cb8-32"></a>    <span class="op">}</span></span>
-<span id="cb8-33"><a href="#cb8-33"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="exercício-solução-2" class="slide level2">
-<h2>Exercício: Solução</h2>
 <p>Observe que:</p>
 <ul>
-<li>A função <code>ordena_crescente</code> chama a função <code>troca</code> na sua solução
+<li>A função <code>ordena_crescente</code> deve chamar a função <code>troca</code> na sua solução
 <ul>
 <li>Isto <strong>não é o mesmo</strong> que chamar <code>troca</code> na função <code>main</code></li>
 </ul></li>
-<li>A ordem das trocas é importante (a 1a. comparação precisa ser entre o 1o. e 3o. parâmetros)</li>
+<li>A ordem das trocas é importante</li>
 </ul>
 </section>
 <section id="sumário" class="slide level2">
