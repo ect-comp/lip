@@ -63,6 +63,9 @@ int main(){
 
 ## Parâmetros de Funções
 #### Exemplos
+
+Quantos parâmetros de entrada, saída e entrada/saída?
+
 1. Função que gera um número aleatório:
     - `int rand();`
 2. Função que computa o produto entre dois números inteiros:
@@ -72,6 +75,7 @@ int main(){
 
 ## Parâmetros de Funções
 #### Exemplos
+
 1. Função que gera um número aleatório:
     - `int rand();` $\rightarrow$ nenhum parâmetro
 2. Função que computa o produto entre dois números inteiros:
@@ -81,6 +85,9 @@ int main(){
 
 ## Parâmetros de Funções
 #### Exemplos
+
+Quantos parâmetros de entrada, saída e entrada/saída?
+
 3. Função que troca o valor de dois números inteiros:
     - `void troca(int& x, int& y);` 
 4. Função que calcula o quociente e resto entre dois números inteiros:
@@ -90,6 +97,7 @@ int main(){
 
 ## Parâmetros de Funções
 #### Exemplos
+
 3. Função que troca o valor de dois números inteiros:
     - `void troca(int& x, int& y);` $\rightarrow$ 2 parâmetros de entrada e saída, ao mesmo tempo
 4. Função que calcula o quociente e resto entre dois números inteiros:
@@ -99,9 +107,9 @@ int main(){
 
 ## Lista de Presença
 
-![](https://qr-api.quel.jp/v1/?size=9&data=https%3A%2F%2Fbit.ly%2Flip_20240411){fig-align="center"}
+![](bit.ly_lip_20241029.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20240411"><p style="text-align:center;">https://bit.ly/lip_20240411</p></a>
+<a href="https://bit.ly/lip_20241029"><p style="text-align:center;">https://bit.ly/lip_20241029</p></a>
 
 ---
 
@@ -165,58 +173,44 @@ void fat_pot(int x, int y, int& f1, int& f2, int& p){
 ---
 
 ## Exercício 2
-A sequência de Collatz, é gerada pelas seguintes regras:
-
-- O termo inicial é um número dado
-- Se o termo atual for par, o próximo termo é igual ao atual dividido por dois
-- Se o termo atual for ímpar, o próximo termo é igual a três
-  vezes o atual mais um
-- A sequência é encerrada quando o termo atual é igual a 1
-
-Por exemplo, para um termo inicial igual a 10, a sequência gerada é
-`10, 5, 16, 8, 4, 2, 1`.
----
-
-## Exercício 2
 
 Implemente uma função que receba como parâmetro de entrada um
-número inteiro positivo denotando o primeiro termo da sequência.
+número inteiro.
 A função a ser implementada deve armazenar em
-parâmetros de saída o maior número que faz parte da sequência e também o total
-de termos `n` que compõe a sequência.
+parâmetros de saída a quantidade de dígitos ímpares e a
+quantidade de dígitos pares do número.
 
 Implemente a função `main` para testar o seu programa.
 ---
 
 ## Exercício 2: Solução
 ```C++
-void maior_total_collatz(int t_ini, int& maior,
-                         int& total);
+void digitos_par_impar(int x, int &pares, int &impares);
 
 int main(){
-    int val_ini, val_maior, quant;
-    cout << "Insira o valor inicial da sequencia:\n";
-    cin >> val_ini;
-    maior_total_collatz(val_ini, val_maior, quant);
-    cout << "Maior valor: " << val_maior << endl;
-    cout << "Total de termos: " << quant << endl;
+    int num, np, ni;
+    cout << "Insira um nr. inteiro:\n";
+    cin >> num;
+    digitos_par_impar(num, np, ni);
+    cout << "Digitos pares: " << np << endl;
+    cout << "Digitos impares: " << ni << endl;
     return 0;
 }
-void maior_total_collatz(int t_ini, int& maior,
-                         int& total){
-    int termo = maior = t_ini;
-    total = 1;
-    while(termo != 1){
-        if(termo % 2 == 0){
-            termo = termo/2;
+void digitos_par_impar(int x, int &pares, int &impares){
+    int d;
+
+    pares = 0;
+    impares = 0;
+
+    while(x > 0){
+        d = x % 10;
+        if(d % 2 == 0){
+            pares++;
         }
         else{
-            termo = 3*termo + 1;
+            impares++;
         }
-        if(termo > maior){
-            maior = termo;
-        }
-        total++;
+        x = x/10;
     }
 }
 ```

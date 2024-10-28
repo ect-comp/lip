@@ -5562,7 +5562,7 @@
     "href": "slides/07-funcoes2/07-funcoes2.html#lista-de-presença",
     "title": "Funções II",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240404"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20241022"
   },
   {
     "objectID": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros",
@@ -5597,7 +5597,7 @@
     "href": "slides/07-funcoes2/07-funcoes2.html#exercício-solução-1",
     "title": "Funções II",
     "section": "Exercício: Solução",
-    "text": "Exercício: Solução\nvoid troca(int& x, int& y);\nvoid ordena_crescente(int& a, int& b, int& c);\n\nint main(){\n    int x, y, z;\n    cout << \"Insira tres nrs.\\n\";\n    cin >> x >> y >> z;\n\n    ordena_crescente(x,y,z);\n    cout << \"Menor: \" << x << endl;\n    cout << \"Meio: \" << y << endl;\n    cout << \"Maior: \" << z << endl;\n    cout << \"Media: \" << float(x + z)/2 << endl;\n    return 0;\n}\n\nvoid troca(int& x, int& y){\n    int aux = x;\n    x = y;\n    y = aux;\n}\n\nvoid ordena_crescente(int& a, int& b, int& c){\n    if(a > c){\n        troca(a, c);\n    }\n    if(a > b){\n        troca(a, b);\n    }\n    if(b > c){\n        troca(b, c);\n    }\n}"
+    "text": "Exercício: Solução\nObserve que:\n\nA função ordena_crescente deve chamar a função troca na sua solução\n\nIsto não é o mesmo que chamar troca na função main\n\nA ordem das trocas é importante"
   },
   {
     "objectID": "slides/07-funcoes2/07-funcoes2.html#exercício-solução-2",
@@ -5611,7 +5611,7 @@
     "href": "slides/07-funcoes2/07-funcoes2.html#sumário",
     "title": "Funções II",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nFunções sem retorno\nPassagem de parâmetro por valor e por referência\n\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nFunções sem retorno\nPassagem de parâmetro por valor e por referência\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#linguagem-de-programação",
@@ -5660,7 +5660,7 @@
     "href": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções",
     "title": "Funções III",
     "section": "Parâmetros de Funções",
-    "text": "Parâmetros de Funções\nExemplos\n\nFunção que gera um número aleatório:\n\nint rand();\n\nFunção que computa o produto entre dois números inteiros:\n\nint produto(int x, int y);\nvoid produto(int x, int y, int& r);"
+    "text": "Parâmetros de Funções\nExemplos\nQuantos parâmetros de entrada, saída e entrada/saída?\n\nFunção que gera um número aleatório:\n\nint rand();\n\nFunção que computa o produto entre dois números inteiros:\n\nint produto(int x, int y);\nvoid produto(int x, int y, int& r);"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-1",
@@ -5674,7 +5674,7 @@
     "href": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-2",
     "title": "Funções III",
     "section": "Parâmetros de Funções",
-    "text": "Parâmetros de Funções\nExemplos\n\nFunção que troca o valor de dois números inteiros:\n\nvoid troca(int& x, int& y);\n\nFunção que calcula o quociente e resto entre dois números inteiros:\n\nvoid quoc_resto(int& x, int& y);\nvoid quoc_resto(int x, int y, int& q, int& r);}"
+    "text": "Parâmetros de Funções\nExemplos\nQuantos parâmetros de entrada, saída e entrada/saída?\n\nFunção que troca o valor de dois números inteiros:\n\nvoid troca(int& x, int& y);\n\nFunção que calcula o quociente e resto entre dois números inteiros:\n\nvoid quoc_resto(int& x, int& y);\nvoid quoc_resto(int x, int y, int& q, int& r);}"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções-3",
@@ -5688,7 +5688,7 @@
     "href": "slides/08-funcoes3/08-funcoes3.html#lista-de-presença",
     "title": "Funções III",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240411"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20241029"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#funções-com-múltiplas-saídas",
@@ -5716,7 +5716,7 @@
     "href": "slides/08-funcoes3/08-funcoes3.html#exercício-2",
     "title": "Funções III",
     "section": "Exercício 2",
-    "text": "Exercício 2\nA sequência de Collatz, é gerada pelas seguintes regras:\n\nO termo inicial é um número dado\nSe o termo atual for par, o próximo termo é igual ao atual dividido por dois\nSe o termo atual for ímpar, o próximo termo é igual a três vezes o atual mais um\nA sequência é encerrada quando o termo atual é igual a 1\n\nPor exemplo, para um termo inicial igual a 10, a sequência gerada é 10, 5, 16, 8, 4, 2, 1."
+    "text": "Exercício 2\nImplemente uma função que receba como parâmetro de entrada um número inteiro. A função a ser implementada deve armazenar em parâmetros de saída a quantidade de dígitos ímpares e a quantidade de dígitos pares do número.\nImplemente a função main para testar o seu programa."
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#exercício-2-1",
@@ -5730,14 +5730,14 @@
     "href": "slides/08-funcoes3/08-funcoes3.html#exercício-2-solução",
     "title": "Funções III",
     "section": "Exercício 2: Solução",
-    "text": "Exercício 2: Solução\nvoid maior_total_collatz(int t_ini, int& maior,\n                         int& total);\n\nint main(){\n    int val_ini, val_maior, quant;\n    cout << \"Insira o valor inicial da sequencia:\\n\";\n    cin >> val_ini;\n    maior_total_collatz(val_ini, val_maior, quant);\n    cout << \"Maior valor: \" << val_maior << endl;\n    cout << \"Total de termos: \" << quant << endl;\n    return 0;\n}\nvoid maior_total_collatz(int t_ini, int& maior,\n                         int& total){\n    int termo = maior = t_ini;\n    total = 1;\n    while(termo != 1){\n        if(termo % 2 == 0){\n            termo = termo/2;\n        }\n        else{\n            termo = 3*termo + 1;\n        }\n        if(termo > maior){\n            maior = termo;\n        }\n        total++;\n    }\n}"
+    "text": "Exercício 2: Solução\nvoid digitos_par_impar(int x, int &pares, int &impares);\n\nint main(){\n    int num, np, ni;\n    cout << \"Insira um nr. inteiro:\\n\";\n    cin >> num;\n    digitos_par_impar(num, np, ni);\n    cout << \"Digitos pares: \" << np << endl;\n    cout << \"Digitos impares: \" << ni << endl;\n    return 0;\n}\nvoid digitos_par_impar(int x, int &pares, int &impares){\n    int d;\n\n    pares = 0;\n    impares = 0;\n\n    while(x > 0){\n        d = x % 10;\n        if(d % 2 == 0){\n            pares++;\n        }\n        else{\n            impares++;\n        }\n        x = x/10;\n    }\n}"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#sumário",
     "href": "slides/08-funcoes3/08-funcoes3.html#sumário",
     "title": "Funções III",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nParâmetros de entrada, saída e de entrada e saída\nFunções que chamam outras funções para simplificar a lógica de programas\n\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nParâmetros de entrada, saída e de entrada e saída\nFunções que chamam outras funções para simplificar a lógica de programas\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/09-funcoes_rec/09-funcoes_rec.html#funções",

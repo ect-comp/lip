@@ -478,6 +478,7 @@ Prof.&nbsp;Bruno Silva
 <section id="parâmetros-de-funções" class="slide level2">
 <h2>Parâmetros de Funções</h2>
 <h4 id="exemplos">Exemplos</h4>
+<p>Quantos parâmetros de entrada, saída e entrada/saída?</p>
 <ol type="1">
 <li>Função que gera um número aleatório:
 <ul>
@@ -508,6 +509,7 @@ Prof.&nbsp;Bruno Silva
 <section id="parâmetros-de-funções-2" class="slide level2">
 <h2>Parâmetros de Funções</h2>
 <h4 id="exemplos-2">Exemplos</h4>
+<p>Quantos parâmetros de entrada, saída e entrada/saída?</p>
 <ol start="3" type="1">
 <li>Função que troca o valor de dois números inteiros:
 <ul>
@@ -538,11 +540,11 @@ Prof.&nbsp;Bruno Silva
 <section id="lista-de-presença" class="slide level2">
 <h2>Lista de Presença</h2>
 
-<img data-src="https://qr-api.quel.jp/v1/?size=9&amp;data=https%3A%2F%2Fbit.ly%2Flip_20240411" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20240411">
+<img data-src="bit.ly_lip_20241029.png" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20241029">
 <p style="text-align:center;">
-https://bit.ly/lip_20240411
+https://bit.ly/lip_20241029
 </p>
-</a><p><a href="https://bit.ly/lip_20240411"></a></p>
+</a><p><a href="https://bit.ly/lip_20241029"></a></p>
 </section>
 <section id="funções-com-múltiplas-saídas" class="slide level2">
 <h2>Funções com Múltiplas Saídas</h2>
@@ -600,51 +602,39 @@ https://bit.ly/lip_20240411
 </section>
 <section id="exercício-2" class="slide level2">
 <h2>Exercício 2</h2>
-<p>A sequência de Collatz, é gerada pelas seguintes regras:</p>
-<ul>
-<li>O termo inicial é um número dado</li>
-<li>Se o termo atual for par, o próximo termo é igual ao atual dividido por dois</li>
-<li>Se o termo atual for ímpar, o próximo termo é igual a três vezes o atual mais um</li>
-<li>A sequência é encerrada quando o termo atual é igual a 1</li>
-</ul>
-<p>Por exemplo, para um termo inicial igual a 10, a sequência gerada é <code>10, 5, 16, 8, 4, 2, 1</code>.</p>
-</section>
-<section id="exercício-2-1" class="slide level2">
-<h2>Exercício 2</h2>
-<p>Implemente uma função que receba como parâmetro de entrada um número inteiro positivo denotando o primeiro termo da sequência. A função a ser implementada deve armazenar em parâmetros de saída o maior número que faz parte da sequência e também o total de termos <code>n</code> que compõe a sequência.</p>
+<p>Implemente uma função que receba como parâmetro de entrada um número inteiro. A função a ser implementada deve armazenar em parâmetros de saída a quantidade de dígitos ímpares e a quantidade de dígitos pares do número.</p>
 <p>Implemente a função <code>main</code> para testar o seu programa.</p>
 </section>
 <section id="exercício-2-solução" class="slide level2">
 <h2>Exercício 2: Solução</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="dt">void</span> maior_total_collatz<span class="op">(</span><span class="dt">int</span> t_ini<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> maior<span class="op">,</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>                         <span class="dt">int</span><span class="op">&amp;</span> total<span class="op">);</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="dt">int</span> main<span class="op">(){</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>    <span class="dt">int</span> val_ini<span class="op">,</span> val_maior<span class="op">,</span> quant<span class="op">;</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira o valor inicial da sequencia:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a>    cin <span class="op">&gt;&gt;</span> val_ini<span class="op">;</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a>    maior_total_collatz<span class="op">(</span>val_ini<span class="op">,</span> val_maior<span class="op">,</span> quant<span class="op">);</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Maior valor: "</span> <span class="op">&lt;&lt;</span> val_maior <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Total de termos: "</span> <span class="op">&lt;&lt;</span> quant <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="op">}</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a><span class="dt">void</span> maior_total_collatz<span class="op">(</span><span class="dt">int</span> t_ini<span class="op">,</span> <span class="dt">int</span><span class="op">&amp;</span> maior<span class="op">,</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a>                         <span class="dt">int</span><span class="op">&amp;</span> total<span class="op">){</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a>    <span class="dt">int</span> termo <span class="op">=</span> maior <span class="op">=</span> t_ini<span class="op">;</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a>    total <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a>    <span class="cf">while</span><span class="op">(</span>termo <span class="op">!=</span> <span class="dv">1</span><span class="op">){</span></span>
-<span id="cb4-18"><a href="#cb4-18"></a>        <span class="cf">if</span><span class="op">(</span>termo <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span><span class="op">){</span></span>
-<span id="cb4-19"><a href="#cb4-19"></a>            termo <span class="op">=</span> termo<span class="op">/</span><span class="dv">2</span><span class="op">;</span></span>
-<span id="cb4-20"><a href="#cb4-20"></a>        <span class="op">}</span></span>
-<span id="cb4-21"><a href="#cb4-21"></a>        <span class="cf">else</span><span class="op">{</span></span>
-<span id="cb4-22"><a href="#cb4-22"></a>            termo <span class="op">=</span> <span class="dv">3</span><span class="op">*</span>termo <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb4-23"><a href="#cb4-23"></a>        <span class="op">}</span></span>
-<span id="cb4-24"><a href="#cb4-24"></a>        <span class="cf">if</span><span class="op">(</span>termo <span class="op">&gt;</span> maior<span class="op">){</span></span>
-<span id="cb4-25"><a href="#cb4-25"></a>            maior <span class="op">=</span> termo<span class="op">;</span></span>
-<span id="cb4-26"><a href="#cb4-26"></a>        <span class="op">}</span></span>
-<span id="cb4-27"><a href="#cb4-27"></a>        total<span class="op">++;</span></span>
-<span id="cb4-28"><a href="#cb4-28"></a>    <span class="op">}</span></span>
-<span id="cb4-29"><a href="#cb4-29"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="dt">void</span> digitos_par_impar<span class="op">(</span><span class="dt">int</span> x<span class="op">,</span> <span class="dt">int</span> <span class="op">&amp;</span>pares<span class="op">,</span> <span class="dt">int</span> <span class="op">&amp;</span>impares<span class="op">);</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="dt">int</span> num<span class="op">,</span> np<span class="op">,</span> ni<span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Insira um nr. inteiro:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a>    cin <span class="op">&gt;&gt;</span> num<span class="op">;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>    digitos_par_impar<span class="op">(</span>num<span class="op">,</span> np<span class="op">,</span> ni<span class="op">);</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Digitos pares: "</span> <span class="op">&lt;&lt;</span> np <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Digitos impares: "</span> <span class="op">&lt;&lt;</span> ni <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="op">}</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="dt">void</span> digitos_par_impar<span class="op">(</span><span class="dt">int</span> x<span class="op">,</span> <span class="dt">int</span> <span class="op">&amp;</span>pares<span class="op">,</span> <span class="dt">int</span> <span class="op">&amp;</span>impares<span class="op">){</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a>    <span class="dt">int</span> d<span class="op">;</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a></span>
+<span id="cb4-15"><a href="#cb4-15"></a>    pares <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a>    impares <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a></span>
+<span id="cb4-18"><a href="#cb4-18"></a>    <span class="cf">while</span><span class="op">(</span>x <span class="op">&gt;</span> <span class="dv">0</span><span class="op">){</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a>        d <span class="op">=</span> x <span class="op">%</span> <span class="dv">10</span><span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a>        <span class="cf">if</span><span class="op">(</span>d <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span><span class="op">){</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a>            pares<span class="op">++;</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a>        <span class="op">}</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a>        <span class="cf">else</span><span class="op">{</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a>            impares<span class="op">++;</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a>        <span class="op">}</span></span>
+<span id="cb4-26"><a href="#cb4-26"></a>        x <span class="op">=</span> x<span class="op">/</span><span class="dv">10</span><span class="op">;</span></span>
+<span id="cb4-27"><a href="#cb4-27"></a>    <span class="op">}</span></span>
+<span id="cb4-28"><a href="#cb4-28"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="sumário" class="slide level2">
 <h2>Sumário</h2>
@@ -656,7 +646,7 @@ https://bit.ly/lip_20240411
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>ECT2303 - Linguagem de Programação</p>
+<p>ECT3201 - Linguagem de Programação</p>
 </div>
 </section>
     </div>
