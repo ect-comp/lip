@@ -6,9 +6,8 @@ title-slide-attributes:
   data-background-opacity: "0.05"
 ---
 
-## Revisão - Unidade I
-#### Lista de Presença
+## Lista de Presença
 
-![](https://chart.apis.google.com/chart?cht=qr&chs=300x300&chld=L%7C1&chl=bit.ly%2Flip_20230926){fig-align="center"}
+![](bit.ly_lip_20241105.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20230926"><p style="text-align:center;">https://bit.ly/lip_20230926</p></a>
+<a href="https://bit.ly/lip_20241105"><p style="text-align:center;">https://bit.ly/lip_20241105</p></a>

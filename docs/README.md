@@ -39,6 +39,8 @@
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
+## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
+
 <!--
 
 ## [27/06 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
@@ -92,7 +94,7 @@
 
 ## [12/09 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
 
-## [26/09 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
+
 
 ## [28/09 - Funções Recursivas - Exercícios](./slides/exercicios_funcoes_rec/exercicios_funcoes_rec.html)
 
