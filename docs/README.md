@@ -41,11 +41,12 @@
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
-<!--
-
-## [27/06 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
+## [12/11 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
 - Estruturas recursivas
 - Passo base e passo recursivo
+
+<!--
+
 
 ## [04/07 - Vetores](./slides/10-vetores/10-vetores.html)
 - Sintaxe de declaração
