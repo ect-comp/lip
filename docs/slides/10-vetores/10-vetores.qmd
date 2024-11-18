@@ -241,9 +241,9 @@ qual o valor de cada expressão a seguir, sendo `x = 2`?
 
 ## Lista de Presença
 
-![](bit.ly_lip_20240704.png){fig-align="center"}
+![](bit.ly_lip_20241119.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20240704"><p style="text-align:center;">https://bit.ly/lip_20240704</p></a>
+<a href="https://bit.ly/lip_20241119"><p style="text-align:center;">https://bit.ly/lip_20241119</p></a>
 
 ---
 

@@ -23,7 +23,6 @@
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
-- Exercícios
 
 ## [15/10 - Funções I](./slides/06-funcoes1/06-funcoes1.html)
 - Chamada de funções
@@ -45,14 +44,12 @@
 - Estruturas recursivas
 - Passo base e passo recursivo
 
-<!--
-
-
-## [04/07 - Vetores](./slides/10-vetores/10-vetores.html)
+## [19/11 - Vetores](./slides/10-vetores/10-vetores.html)
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
-- Exercícios
+
+<!--
 
 ## [11/07 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores
