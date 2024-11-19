@@ -49,12 +49,11 @@
 - Acesso às posições
 - Inicialização
 
-<!--
-
-## [11/07 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
+## [26/11 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
-- Exercícios
+
+<!--
 
 ## [18/07 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
 - Sintaxe de implementação de funções com matrizes
@@ -66,13 +65,11 @@
 - Caractere delimitador `\0`
 - Entrada/saída
 - Funções de manipulação de strings
-- Exercícios
 
 ## [08/08 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
 - Definição de tipos estruturados
 - Operações com variáveis de tipos estruturados
 - Funções e tipos estruturados
-- Exercícios
 
 ## [15/08 - Ordenação](./slides/15-ordenacao/15-ordenacao.html)
 - Ordenação
@@ -82,13 +79,11 @@
 
 ## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
 - Comando de repetição `for`
-- Exercícios
 
 ## [31/08 - Comandos de Repetição II](./slides/06-comando_repeticao_while/06-comando_repeticao_while.html)
 - Comando de repetição `while`
 - Comando de repetição `do.. while`
 - Comandos `break` e `continue`
-- Exercícios
 
 ## [12/09 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
 
@@ -114,11 +109,9 @@
 
 ## [14/11 - Strings II](./slides/17-strings2/17-strings2.html)
 - Leitura de strings com espaços em branco
-- Exercícios
 
 ## [23/11 - Tipos Estruturados II](./slides/19-tipos_estruturados2/19-tipos_estruturados2.html)
 - Uso de tipos estruturados em funções
-- Exercícios
 
 ## [28/11 - Tipos Estruturados - Exercícios](./slides/exercicios_tipos_estruturados/exercicios_tipos_estruturados.html)
 
@@ -139,7 +132,6 @@
   - Geração de números aleatórios inteiros em intervalos de interesse
   - Geração de números aleatórios reais
   - Geração de caracteres aleatórios
-- Exercícios
 
 ## [30/05 - Funções e Matrizes - Exercícios](./slides/exercicios_funcoes_e_matrizes/exercicios_funcoes_e_matrizes.html)
 
