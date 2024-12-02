@@ -53,11 +53,13 @@
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
 
-<!--
-
-## [18/07 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
+## [03/12 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
+
+<!--
+
+
 
 ## [25/07 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
