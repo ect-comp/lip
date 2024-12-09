@@ -57,11 +57,9 @@
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
 
+## [10/12 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
+
 <!--
-
-
-
-## [25/07 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
 ## [01/08 - Strings](./slides/13-strings/13-strings.html)
 - Caractere delimitador `\0`
