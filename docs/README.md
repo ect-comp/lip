@@ -59,12 +59,12 @@
 
 ## [10/12 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
-<!--
-
-## [01/08 - Strings](./slides/13-strings/13-strings.html)
+## [17/12 - Strings](./slides/13-strings/13-strings.html)
 - Caractere delimitador `\0`
 - Entrada/saída
 - Funções de manipulação de strings
+
+<!--
 
 ## [08/08 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
 - Definição de tipos estruturados
