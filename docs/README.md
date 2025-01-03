@@ -64,12 +64,12 @@
 - Entrada/saída
 - Funções de manipulação de strings
 
-<!--
-
-## [08/08 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
+## [07/01 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
 - Definição de tipos estruturados
 - Operações com variáveis de tipos estruturados
 - Funções e tipos estruturados
+
+<!--
 
 ## [15/08 - Ordenação](./slides/15-ordenacao/15-ordenacao.html)
 - Ordenação

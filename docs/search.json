@@ -6766,7 +6766,7 @@
     "href": "slides/13-strings/13-strings.html#lista-de-presença",
     "title": "Strings",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240801"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20241217"
   },
   {
     "objectID": "slides/13-strings/13-strings.html#strings-8",
@@ -6864,7 +6864,7 @@
     "href": "slides/13-strings/13-strings.html#sumário",
     "title": "Strings",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nStrings\n\nCaractere delimitador \\0\nInicialização\nEntrada/saída\n\nFunções de manipulação de strings\n\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nStrings\n\nCaractere delimitador \\0\nInicialização\nEntrada/saída\n\nFunções de manipulação de strings\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/13-strings/13-strings.html#strings-18",
@@ -6976,7 +6976,7 @@
     "href": "slides/14-tipos_estruturados/14-tipos_estruturados.html#tipos-estruturados",
     "title": "Tipos Estruturados",
     "section": "Tipos Estruturados",
-    "text": "Tipos Estruturados\n\nMecanismo disponibilizado pela linguagem C++\n\nTambém conhecido como registros ou estruturas\n\nPermite ao programador definir um novo tipo de variável\nAgrupa dados de diferentes tipos\nDados possuem campos, também chamados de membros, atributos ou propriedades"
+    "text": "Tipos Estruturados\n\nMecanismo disponibilizado pela linguagem C++\nTambém conhecido como registros ou estruturas\nPermite ao programador definir um novo tipo de variável"
   },
   {
     "objectID": "slides/14-tipos_estruturados/14-tipos_estruturados.html#definindo-um-tipo-estruturado",
@@ -7060,7 +7060,7 @@
     "href": "slides/14-tipos_estruturados/14-tipos_estruturados.html#lista-de-presença",
     "title": "Tipos Estruturados",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240808"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250107"
   },
   {
     "objectID": "slides/14-tipos_estruturados/14-tipos_estruturados.html#utilizando-variáveis-do-tipo-estruturado",
@@ -7228,14 +7228,14 @@
     "href": "slides/14-tipos_estruturados/14-tipos_estruturados.html#sumário",
     "title": "Tipos Estruturados",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nDefinição de tipos estruturados\nOperações com variáveis de tipos estruturados\nFunções e tipos estruturados\nExercícios\n\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nDefinição de tipos estruturados\nOperações com variáveis de tipos estruturados\nFunções e tipos estruturados\nExercícios\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/14-tipos_estruturados/14-tipos_estruturados.html#observação",
     "href": "slides/14-tipos_estruturados/14-tipos_estruturados.html#observação",
     "title": "Tipos Estruturados",
     "section": "Observação",
-    "text": "Observação\nComando cin.ignore()\nO comando cin.ignore() deve ser utilizado após o comando cin >> ... se uma string sem espaços precisar ser lida em seguida:\ncin >> ...\ncin.ignore(); // é necessário para leitura correta dos dados!\ncin.getline(...);"
+    "text": "Observação\nComando cin.ignore()\nO comando cin.ignore() deve ser utilizado após o comando cin >> ... se o cin.getline for usado em seguida:\ncin >> ...\ncin.ignore(); // é necessário para leitura correta dos dados!\ncin.getline(...);"
   },
   {
     "objectID": "slides/15-ordenacao/15-ordenacao.html#nas-aulas-anteriores",
@@ -7467,5 +7467,12 @@
     "title": "Revisão - Unidade I",
     "section": "Lista de Presença",
     "text": "Lista de Presença\n\n\n\n\n\n\n\nhttps://bit.ly/lip_20241105\n\n\n\n\n\nECT3201 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/14-tipos_estruturados/14-tipos_estruturados.html#tipos-estruturados-1",
+    "href": "slides/14-tipos_estruturados/14-tipos_estruturados.html#tipos-estruturados-1",
+    "title": "Tipos Estruturados",
+    "section": "Tipos Estruturados",
+    "text": "Tipos Estruturados\n\nAgrupa dados de diferentes tipos\nDados possuem campos, também chamados de membros, atributos ou propriedades"
   }
 ]

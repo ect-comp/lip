@@ -33,8 +33,12 @@ Seria possível utilizar uma variável para representar um `Aluno`?
 ## Tipos Estruturados
 
 - Mecanismo disponibilizado pela linguagem C++
-  - Também conhecido como registros ou estruturas
+- Também conhecido como registros ou estruturas
 - Permite ao programador definir um novo tipo de variável
+---
+
+## Tipos Estruturados
+
 - Agrupa dados de **diferentes tipos**
 - Dados possuem *campos*, também chamados de membros,
   atributos ou propriedades
@@ -182,9 +186,9 @@ struct Aluno{
 
 ## Lista de Presença
 
-![](bit.ly_lip_20240808.png){fig-align="center"}
+![](bit.ly_lip_20250107.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20240808"><p style="text-align:center;">https://bit.ly/lip_20240808</p></a>
+<a href="https://bit.ly/lip_20250107"><p style="text-align:center;">https://bit.ly/lip_20250107</p></a>
 
 ---
 
@@ -373,7 +377,7 @@ int main(){
 
 O comando `cin.ignore()`
 deve ser utilizado após o comando `cin >> ...`
-se uma string sem espaços precisar ser lida em seguida:
+se o `cin.getline` for usado em seguida:
 
 ```C++
 cin >> ...
