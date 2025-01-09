@@ -286,9 +286,9 @@ int main(){
 
 ## Lista de Presença
 
-![](bit.ly_lip_20240815.png){fig-align="center"}
+![](bit.ly_lip_20250114.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20240815"><p style="text-align:center;">https://bit.ly/lip_20240815</p></a>
+<a href="https://bit.ly/lip_20250114"><p style="text-align:center;">https://bit.ly/lip_20250114</p></a>
 
 ---
 
@@ -365,6 +365,7 @@ int main(){
 #### Ordem Alfabética
 
 Função `strcmp` - duas strings como parâmetros:
+
 - Retorna um número negativo se a string do primeiro parâmetros for "menor"
 - Retorna um número positivo se a string do primeiro parâmetros for "maior"
 - Retorna 0 se as strings são iguais

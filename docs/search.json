@@ -7410,7 +7410,7 @@
     "href": "slides/15-ordenacao/15-ordenacao.html#lista-de-presença",
     "title": "Ordenação",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20240815"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250114"
   },
   {
     "objectID": "slides/15-ordenacao/15-ordenacao.html#exercício",
@@ -7445,7 +7445,7 @@
     "href": "slides/15-ordenacao/15-ordenacao.html#ordenação-24",
     "title": "Ordenação",
     "section": "Ordenação",
-    "text": "Ordenação\nOrdem Alfabética\nFunção strcmp - duas strings como parâmetros: - Retorna um número negativo se a string do primeiro parâmetros for “menor” - Retorna um número positivo se a string do primeiro parâmetros for “maior” - Retorna 0 se as strings são iguais"
+    "text": "Ordenação\nOrdem Alfabética\nFunção strcmp - duas strings como parâmetros:\n\nRetorna um número negativo se a string do primeiro parâmetros for “menor”\nRetorna um número positivo se a string do primeiro parâmetros for “maior”\nRetorna 0 se as strings são iguais"
   },
   {
     "objectID": "slides/15-ordenacao/15-ordenacao.html#ordenação-25",
@@ -7459,7 +7459,7 @@
     "href": "slides/15-ordenacao/15-ordenacao.html#sumário",
     "title": "Ordenação",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nOrdenação\nOrdenação com tipos estruturados\n\nOrdem crescente/decrescente de campos numéricos\nOrdem alfabética de campos string\n\n\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nOrdenação\nOrdenação com tipos estruturados\n\nOrdem crescente/decrescente de campos numéricos\nOrdem alfabética de campos string\n\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/revisao_unidade1/revisao_unidade1.html#lista-de-presença",
