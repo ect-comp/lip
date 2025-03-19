@@ -656,10 +656,10 @@ Prof.&nbsp;Bruno Silva
 <section id="c-tipo-char-1" class="slide level2">
 <h2>C++: Tipo <code>char</code></h2>
 <ul>
-<li>Caracteres especiais:
+<li>Alguns caracteres especiais:
 <ul>
 <li><code>'\n'</code>: quebra de linha</li>
-<li><code>'\t'</code>: tabulação horizontal</li>
+<li><code>'\t'</code>: tabulação (espaço em branco maior)</li>
 <li><code>'\0'</code>: delimitador de final de cadeia de caracteres</li>
 </ul></li>
 </ul>
@@ -732,7 +732,14 @@ Prof.&nbsp;Bruno Silva
 </section>
 <section id="exercício-2" class="slide level2">
 <h2>Exercício</h2>
-<p>Implemente um programa que lê dois números inteiros. O programa deve armazenar em uma variável booleana o resultado da comparação <code>X == Y</code>, sendo <code>X</code> e <code>Y</code> os dois inteiros lidos. Em seguida, o programa deve imprimir a variável booleana.</p>
+<p>Implemente um programa que lê dois números inteiros. O programa deve imprimir:</p>
+<ul>
+<li>A soma dos números</li>
+<li>A diferença entre o primeiro e o segundo</li>
+<li>O produto entre os números</li>
+<li>O quociente da divisão do primeiro pelo segundo</li>
+<li>O resto da divisão do primeiro pelo segundo</li>
+</ul>
 </section>
 <section id="exercício-solução-1" class="slide level2">
 <h2>Exercício: Solução</h2>
@@ -740,13 +747,15 @@ Prof.&nbsp;Bruno Silva
 <span id="cb10-2"><a href="#cb10-2"></a><span class="kw">using</span> <span class="kw">namespace</span> std<span class="op">;</span></span>
 <span id="cb10-3"><a href="#cb10-3"></a><span class="dt">int</span> main<span class="op">(){</span></span>
 <span id="cb10-4"><a href="#cb10-4"></a>    <span class="dt">int</span> x<span class="op">,</span> y<span class="op">;</span></span>
-<span id="cb10-5"><a href="#cb10-5"></a>    <span class="dt">bool</span> iguais<span class="op">;</span></span>
-<span id="cb10-6"><a href="#cb10-6"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"insira dois num. inteiros:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
-<span id="cb10-7"><a href="#cb10-7"></a>    cin <span class="op">&gt;&gt;</span> x <span class="op">&gt;&gt;</span> y<span class="op">;</span></span>
-<span id="cb10-8"><a href="#cb10-8"></a>    iguais <span class="op">=</span> x <span class="op">==</span> y<span class="op">;</span></span>
-<span id="cb10-9"><a href="#cb10-9"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Iguais: "</span> <span class="op">&lt;&lt;</span> iguais <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
-<span id="cb10-10"><a href="#cb10-10"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb10-11"><a href="#cb10-11"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-5"><a href="#cb10-5"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"insira dois num. inteiros:</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
+<span id="cb10-6"><a href="#cb10-6"></a>    cin <span class="op">&gt;&gt;</span> x <span class="op">&gt;&gt;</span> y<span class="op">;</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Soma: "</span> <span class="op">&lt;&lt;</span> x <span class="op">+</span> y <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Diferenca: "</span> <span class="op">&lt;&lt;</span> x <span class="op">-</span> y <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Produto: "</span> <span class="op">&lt;&lt;</span> x <span class="op">*</span> y <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb10-10"><a href="#cb10-10"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Quociente: "</span> <span class="op">&lt;&lt;</span> x<span class="op">/</span>y <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Resto: "</span> <span class="op">&lt;&lt;</span> x <span class="op">%</span> y <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb10-12"><a href="#cb10-12"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb10-13"><a href="#cb10-13"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="sumário" class="slide level2">
 <h2>Sumário</h2>
@@ -761,7 +770,7 @@ Prof.&nbsp;Bruno Silva
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>ECT2303 - Linguagem de Programação</p>
+<p>ECT3201 - Linguagem de Programação</p>
 </div>
 </section>
     </div>

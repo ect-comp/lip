@@ -262,9 +262,9 @@ int main(){
 ---
 
 ## C++: Tipo `char`
-- Caracteres especiais:
+- Alguns caracteres especiais:
     - `'\n'`: quebra de linha
-    - `'\t'`: tabulação horizontal
+    - `'\t'`: tabulação (espaço em branco maior)
     - `'\0'`: delimitador de final de cadeia de caracteres
 ---
 
@@ -340,11 +340,13 @@ Você verá mais sobre operadores na aula que vem
 
 ## Exercício
 Implemente um programa que lê dois números inteiros.
-O programa deve armazenar em uma variável booleana
-o resultado da comparação `X == Y`,
-sendo `X` e `Y` os dois inteiros lidos.
-Em seguida, o programa deve imprimir a variável
-booleana.
+O programa deve imprimir:
+
+- A soma dos números
+- A diferença entre o primeiro e o segundo
+- O produto entre os números
+- O quociente da divisão do primeiro pelo segundo
+- O resto da divisão do primeiro pelo segundo
 ---
 
 ## Exercício: Solução
@@ -353,11 +355,13 @@ booleana.
 using namespace std;
 int main(){
     int x, y;
-    bool iguais;
     cout << "insira dois num. inteiros:\n";
     cin >> x >> y;
-    iguais = x == y;
-    cout << "Iguais: " << iguais << endl;
+    cout << "Soma: " << x + y << endl;
+    cout << "Diferenca: " << x - y << endl;
+    cout << "Produto: " << x * y << endl;
+    cout << "Quociente: " << x/y << endl;
+    cout << "Resto: " << x % y << endl;
     return 0;
 }
 ```

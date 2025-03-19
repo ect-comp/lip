@@ -312,7 +312,7 @@
     "href": "slides/02-cpp/02-cpp.html#c-tipo-char-1",
     "title": "Introdução à Linguagem C++",
     "section": "C++: Tipo char",
-    "text": "C++: Tipo char\n\nCaracteres especiais:\n\n'\\n': quebra de linha\n'\\t': tabulação horizontal\n'\\0': delimitador de final de cadeia de caracteres"
+    "text": "C++: Tipo char\n\nAlguns caracteres especiais:\n\n'\\n': quebra de linha\n'\\t': tabulação (espaço em branco maior)\n'\\0': delimitador de final de cadeia de caracteres"
   },
   {
     "objectID": "slides/02-cpp/02-cpp.html#c-tipo-char-2",
@@ -354,21 +354,21 @@
     "href": "slides/02-cpp/02-cpp.html#exercício-2",
     "title": "Introdução à Linguagem C++",
     "section": "Exercício",
-    "text": "Exercício\nImplemente um programa que lê dois números inteiros. O programa deve armazenar em uma variável booleana o resultado da comparação X == Y, sendo X e Y os dois inteiros lidos. Em seguida, o programa deve imprimir a variável booleana."
+    "text": "Exercício\nImplemente um programa que lê dois números inteiros. O programa deve imprimir:\n\nA soma dos números\nA diferença entre o primeiro e o segundo\nO produto entre os números\nO quociente da divisão do primeiro pelo segundo\nO resto da divisão do primeiro pelo segundo"
   },
   {
     "objectID": "slides/02-cpp/02-cpp.html#exercício-solução-1",
     "href": "slides/02-cpp/02-cpp.html#exercício-solução-1",
     "title": "Introdução à Linguagem C++",
     "section": "Exercício: Solução",
-    "text": "Exercício: Solução\n#include <iostream>\nusing namespace std;\nint main(){\n    int x, y;\n    bool iguais;\n    cout << \"insira dois num. inteiros:\\n\";\n    cin >> x >> y;\n    iguais = x == y;\n    cout << \"Iguais: \" << iguais << endl;\n    return 0;\n}"
+    "text": "Exercício: Solução\n#include <iostream>\nusing namespace std;\nint main(){\n    int x, y;\n    cout << \"insira dois num. inteiros:\\n\";\n    cin >> x >> y;\n    cout << \"Soma: \" << x + y << endl;\n    cout << \"Diferenca: \" << x - y << endl;\n    cout << \"Produto: \" << x * y << endl;\n    cout << \"Quociente: \" << x/y << endl;\n    cout << \"Resto: \" << x % y << endl;\n    return 0;\n}"
   },
   {
     "objectID": "slides/02-cpp/02-cpp.html#sumário",
     "href": "slides/02-cpp/02-cpp.html#sumário",
     "title": "Introdução à Linguagem C++",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje, você viu:\n\nEstrutura de um programa em C++\nDeclaração e inicialização de variáveis\nTipos básicos\nComandos de entrada e saída\nOperadores\n\n\n\n\nECT2303 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje, você viu:\n\nEstrutura de um programa em C++\nDeclaração e inicialização de variáveis\nTipos básicos\nComandos de entrada e saída\nOperadores\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/02-cpp/02-cpp.html#programação-representação-de-um-raciocínio-1",
