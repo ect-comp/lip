@@ -9,12 +9,12 @@
  - Variáveis e tipos
  - Entrada e saída
 
-<!--
-
-## [24/09 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
+## [26/03 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
  - Operadores em C++
  - Expressões
  - Conversão entre tipos
+
+<!--
 
 ## [01/10 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
 - Comando `if` e `if-else`
