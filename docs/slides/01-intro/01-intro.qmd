@@ -11,7 +11,7 @@ title-slide-attributes:
 - Prof. Bruno Silva
 - Atendimento:
     - Via email: bruno.silva@ufrn.br
-    - Via [Discord](https://discord.gg/XwwHaYEy)
+    - Via [Discord](https://discord.gg/ujbQVtrwEC)
 - Áreas de interesse:
     - Processamento de imagens e visão computacional
     - Inteligência artificial e robótica
