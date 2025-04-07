@@ -19,6 +19,9 @@
 - Comando `switch`
 - Operador ternário
 
+## [09/04 - Comandos de Repetição I](./slides/05a-comando_repeticao_for/05a-comando_repeticao_for.html)
+- Comando de repetição `for`
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
@@ -76,9 +79,6 @@
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
-
-## [29/08 - Comandos de Repetição I](./slides/05-comando_repeticao_for/05-comando_repeticao_for.html)
-- Comando de repetição `for`
 
 ## [31/08 - Comandos de Repetição II](./slides/06-comando_repeticao_while/06-comando_repeticao_while.html)
 - Comando de repetição `while`
