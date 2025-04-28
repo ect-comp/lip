@@ -26,18 +26,23 @@
 - Comando de repetição `while`
 - Comando de repetição `do.. while`
 - Comandos `break` e `continue`
+<!--
+## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
+- Comando de repetição `for`
+- Comando de repetição `while`
+- Comandos `break` e `continue`
+-->
 
 ## [23/04 - Funções I](./slides/06-funcoes1/06-funcoes1.html)
 - Chamada de funções
 - Assinatura de funções
 - Definição de funções
 
-<!--
+## [30/04 - Funções II](./slides/07-funcoes2/07-funcoes2.html)
+- Função sem retorno (funções tipo `void`)
+- Passagem de parâmetro por valor e por referência
 
-## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
-- Comando de repetição `for`
-- Comando de repetição `while`
-- Comandos `break` e `continue`
+<!--
 
 ## [22/10 - Funções II](./slides/07-funcoes2/07-funcoes2.html)
 - Função sem retorno (funções tipo `void`)

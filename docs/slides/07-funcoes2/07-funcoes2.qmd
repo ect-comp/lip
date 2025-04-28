@@ -143,9 +143,9 @@ seguinte exemplo hipotético:
 
 ## Lista de Presença
 
-![](bit.ly_lip_20241022.png){fig-align="center"}
+![](bit.ly_lip_20250430.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20241022"><p style="text-align:center;">https://bit.ly/lip_20241022</p></a>
+<a href="https://bit.ly/lip_20250430"><p style="text-align:center;">https://bit.ly/lip_20250430</p></a>
 
 ---
 
