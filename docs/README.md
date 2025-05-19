@@ -47,13 +47,13 @@
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
+## [21/05 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
+- Estruturas recursivas
+- Passo base e passo recursivo
+
 <!--
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
-
-## [12/11 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
-- Estruturas recursivas
-- Passo base e passo recursivo
 
 ## [19/11 - Vetores](./slides/10-vetores/10-vetores.html)
 - Sintaxe de declaração
