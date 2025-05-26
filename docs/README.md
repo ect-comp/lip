@@ -51,14 +51,14 @@
 - Estruturas recursivas
 - Passo base e passo recursivo
 
-<!--
-
-## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
-
-## [19/11 - Vetores](./slides/10-vetores/10-vetores.html)
+## [28/05 - Vetores](./slides/10-vetores/10-vetores.html)
 - Sintaxe de declaração
 - Acesso às posições
 - Inicialização
+
+<!--
+
+## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
 ## [26/11 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores
