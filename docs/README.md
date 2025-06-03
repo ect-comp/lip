@@ -56,13 +56,13 @@
 - Acesso às posições
 - Inicialização
 
+## [04/06 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
+- Sintaxe de implementação de funções com vetores
+- Funções recursivas com vetores
+
 <!--
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
-
-## [26/11 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
-- Sintaxe de implementação de funções com vetores
-- Funções recursivas com vetores
 
 ## [03/12 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
 - Sintaxe de implementação de funções com matrizes
