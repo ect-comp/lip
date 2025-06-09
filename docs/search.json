@@ -6549,7 +6549,7 @@
     "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#posições-de-uma-matriz-4",
     "title": "Funções e Matrizes",
     "section": "Posições de uma Matriz",
-    "text": "Posições de uma Matriz\nExercício: Solução\nint main(){\n    int nl, nc;\n    cin >> nl >> nc;\n    int m[nl][nc], i, j;\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cin >> m[i][j];\n        }\n    }\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cout << m[i][j] << \" \";\n        }\n        cout << endl;\n    }\n}"
+    "text": "Posições de uma Matriz\nExercício: Solução\nint main(){\n    int nl, nc;\n    cin &gt;&gt; nl &gt;&gt; nc;\n    int m[nl][nc], i, j;\n    for(i = 0; i &lt; nl; i++){\n        for(j = 0; j &lt; nc; j++){\n            cin &gt;&gt; m[i][j];\n        }\n    }\n\n    for(i = 0; i &lt; nl; i++){\n        for(j = 0; j &lt; nc; j++){\n            cout &lt;&lt; m[i][j] &lt;&lt; \" \";\n        }\n        cout &lt;&lt; endl;\n    }\n}"
   },
   {
     "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#inicialização-de-matrizes",
@@ -6570,7 +6570,7 @@
     "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#lista-de-presença",
     "title": "Funções e Matrizes",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20241203"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250611"
   },
   {
     "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-e-matrizes",
@@ -6598,7 +6598,7 @@
     "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes-2",
     "title": "Funções e Matrizes",
     "section": "Função com Matrizes",
-    "text": "Função com Matrizes\nMatrizes para Uso em Funções - Função main\nO programa declara matriz com tamanho máximo 100 x 100, mas usa nl x nc elementos\nconst int MAX = 100;\nint main(){\n    int mat[MAX][MAX], nl, nc, i, j;\n    cin >> nl >> nc;\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cin >> mat[i][j];\n        }\n    }\n\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n            cout << mat[i][j] << \" \";\n        }\n        cout << endl;\n    }\n\n    return 0;\n}"
+    "text": "Função com Matrizes\nMatrizes para Uso em Funções - Função main\nO programa declara matriz com tamanho máximo 100 x 100, mas usa nl x nc elementos\nconst int MAX = 100;\nint main(){\n    int mat[MAX][MAX], nl, nc, i, j;\n    cin &gt;&gt; nl &gt;&gt; nc;\n\n    for(i = 0; i &lt; nl; i++){\n        for(j = 0; j &lt; nc; j++){\n            cin &gt;&gt; mat[i][j];\n        }\n    }\n\n    for(i = 0; i &lt; nl; i++){\n        for(j = 0; j &lt; nc; j++){\n            cout &lt;&lt; mat[i][j] &lt;&lt; \" \";\n        }\n        cout &lt;&lt; endl;\n    }\n\n    return 0;\n}"
   },
   {
     "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#função-com-matrizes-3",
@@ -6647,7 +6647,7 @@
     "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes",
     "title": "Funções e Matrizes",
     "section": "Funções com Matrizes",
-    "text": "Funções com Matrizes\nChamada de Funções\nNas chamadas às funções, matrizes são passadas como parâmetros utilizando apenas o seu nome (sem colchetes).\nExemplo:\nconst int MAX = 100;\nvoid imprime_mat(int mat[][MAX], int nl, int nc);\nint main(){\n    int m[MAX][MAX], i, j, nl = 2, nc = 4;\n    for(i = 0; i < nl; i++){\n        for(j = 0; j < nc; j++){\n        m[i][j] = nc*i+j+1;\n        }\n    }\n    imprime_mat(m, nl, nc);\n    return 0;\n}"
+    "text": "Funções com Matrizes\nChamada de Funções\nNas chamadas às funções, matrizes são passadas como parâmetros utilizando apenas o seu nome (sem colchetes).\nExemplo:\nconst int MAX = 100;\nvoid imprime_mat(int mat[][MAX], int nl, int nc);\nint main(){\n    int m[MAX][MAX], i, j, nl = 2, nc = 4;\n    for(i = 0; i &lt; nl; i++){\n        for(j = 0; j &lt; nc; j++){\n        m[i][j] = nc*i+j+1;\n        }\n    }\n    imprime_mat(m, nl, nc);\n    return 0;\n}"
   },
   {
     "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes-1",
@@ -6661,7 +6661,7 @@
     "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#funções-com-matrizes-2",
     "title": "Funções e Matrizes",
     "section": "Funções com Matrizes",
-    "text": "Funções com Matrizes\nLinhas de uma Matriz como Vetores\nFunções que aceitam um vetor como parâmetro aceitam que uma linha da matriz seja passada na sua chamada. Exemplo:\nvoid imprime_vet(int v[], int n);\n...\nvoid imprime_mat(int mat[][MAX], int nl, int nc){\n    int i = 0;\n    for(i = 0; i < nl; i++){\n        imprime_vet(mat[i], nc);\n    }\n}"
+    "text": "Funções com Matrizes\nLinhas de uma Matriz como Vetores\nFunções que aceitam um vetor como parâmetro aceitam que uma linha da matriz seja passada na sua chamada. Exemplo:\nvoid imprime_vet(int v[], int n);\n...\nvoid imprime_mat(int mat[][MAX], int nl, int nc){\n    int i = 0;\n    for(i = 0; i &lt; nl; i++){\n        imprime_vet(mat[i], nc);\n    }\n}"
   },
   {
     "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#exercícios-1",
@@ -6675,7 +6675,7 @@
     "href": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#sumário",
     "title": "Funções e Matrizes",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nSintaxe de implementação de funções com matrizes\nExercícios\n\n\n\n\nECT3201 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nSintaxe de implementação de funções com matrizes\nExercícios\n\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/revisao_unidade2/revisao_unidade2.html#lista-de-presença",
