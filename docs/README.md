@@ -64,6 +64,8 @@
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
 
+## [18/06 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
+
 <!--
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
@@ -95,8 +97,6 @@
 - Acesso às posições
 - Inicialização
 - Exercícios
-
-## [24/10 - Unidade 2 - Simulado](./slides/exercicios_unidade2/exercicios_unidade2.html)
 
 ## [26/10 - Multiplicação de Matrizes](./slides/multiplicacao_matricial/multiplicacao_matricial.html)
 

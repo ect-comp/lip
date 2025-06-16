@@ -4734,9 +4734,9 @@
   {
     "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#lista-de-presença",
     "href": "slides/exercicios_unidade2/exercicios_unidade2.html#lista-de-presença",
-    "title": "Unidade 2 - Simulado",
+    "title": "Unidade 2: exercícios",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20231024"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250618"
   },
   {
     "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#unidade-ii---simulado-2",
@@ -8188,5 +8188,75 @@
     "title": "Comando de Repetição while",
     "section": "Sumário",
     "text": "Sumário\nNa aula de hoje:\n\nComando de repetição while\nComando de repetição do-while\nComandos break e continue\nExercícios\n\n\n\n\nECT3201 - Linguagem de Programação"
+  },
+  {
+    "objectID": "slides/exercicios_un2/exercicios_un2.html#exercício-1",
+    "href": "slides/exercicios_un2/exercicios_un2.html#exercício-1",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nFunção para Informar se Vetor é Conjunto\nUm vetor é considerado um conjunto quando nenhum dos seus valores se repetem.\nFunção: informar (verdadeiro ou falso) se vetor é conjunto. Parâmetro: vetor (e o seu tamanho)\nImplemente também a função main."
+  },
+  {
+    "objectID": "slides/exercicios_un2/exercicios_un2.html#exercício-2",
+    "href": "slides/exercicios_un2/exercicios_un2.html#exercício-2",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nFunção para calcular conjunto união\nFunção: calcular o conjunto união (parâmetro de saída) entre dois conjuntos (parâmetros de entrada)\nImplemente também a função main."
+  },
+  {
+    "objectID": "slides/exercicios_un2/exercicios_un2.html#lista-de-presença",
+    "href": "slides/exercicios_un2/exercicios_un2.html#lista-de-presença",
+    "title": "Unidade 2: exercícios",
+    "section": "Lista de Presença",
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250618"
+  },
+  {
+    "objectID": "slides/exercicios_un2/exercicios_un2.html#exercício-3",
+    "href": "slides/exercicios_un2/exercicios_un2.html#exercício-3",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nMultiplicação entre matriz e vetor\nO vetor \\mathbf{u} de R^n é calculado a partir do vetor \\mathbf{v} também de R^n por\n\n    \\mathbf{u} = A\\mathbf{v},\n\nou seja\n\n\\begin{align*}\nu_{0}   & = A_{0,0}.v_{0} + A_{0,1}.v_{1} + ... + A_{0,n-1}.v_{n-1}\\\\\nu_{1}   & = A_{1,0}.v_{0} + A_{1,1}.v_{1} + ... + A_{1,n-1}.v_{n-1}\\\\\n\\vdot\\\\\nu_{n-1} & = A_{n-1,0}.v_{0} + A_{n-1,1}.v_{1} + ... + A_{n-1,n-1}.v_{n-1}\\\\\n\\end{align*}"
+  },
+  {
+    "objectID": "slides/exercicios_un2/exercicios_un2.html#exercício-3-1",
+    "href": "slides/exercicios_un2/exercicios_un2.html#exercício-3-1",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nMultiplicação entre matriz e vetor\nFunção: calcular o vetor produto (parâmetro de saída) entre uma matriz (parâmetro de entrada) e um vetor (outro parâmetro de entrada). A matriz M \\times N terá sempre N colunas, que é o tamanho dos vetores.\nImplemente também a função main."
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-1",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-1",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 1",
+    "text": "Exercício 1\nFunção para Informar se Vetor é Conjunto\nUm vetor é considerado um conjunto quando nenhum dos seus valores se repetem.\nFunção: informar (verdadeiro ou falso) se vetor é conjunto. Parâmetro: vetor (e o seu tamanho)\nImplemente também a função main."
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-2",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-2",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 2",
+    "text": "Exercício 2\nFunção para calcular conjunto união\nFunção: calcular o conjunto união (parâmetro de saída) entre dois conjuntos (parâmetros de entrada)\nImplemente também a função main."
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-3",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-3",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nMultiplicação entre matriz e vetor\nO vetor \\mathbf{u} de R^N é calculado a partir do vetor \\mathbf{v} também de R^N por\n\n    \\mathbf{u} = A\\mathbf{v},\n\nou seja"
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-3-1",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-3-1",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nMultiplicação entre matriz e vetor\n\n\\begin{align*}\nu_{0}   & = A_{0,0}.v_{0} + A_{0,1}.v_{1} + ... + A_{0,n-1}.v_{n-1}\\\\\nu_{1}   & = A_{1,0}.v_{0} + A_{1,1}.v_{1} + ... + A_{1,n-1}.v_{n-1}\\\\\n\\vdots\\\\\nu_{n-1} & = A_{n-1,0}.v_{0} + A_{n-1,1}.v_{1} + ... + A_{n-1,n-1}.v_{n-1}\\\\\n\\end{align*}"
+  },
+  {
+    "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-3-2",
+    "href": "slides/exercicios_unidade2/exercicios_unidade2.html#exercício-3-2",
+    "title": "Unidade 2: exercícios",
+    "section": "Exercício 3",
+    "text": "Exercício 3\nMultiplicação entre matriz e vetor\nFunção: calcular o vetor produto (parâmetro de saída) entre uma matriz (parâmetro de entrada) e um vetor (outro parâmetro de entrada).\nA matriz M \\times N terá sempre N colunas, e os vetores tamanho N.\nImplemente também a função main.\n\n\n\nECT3201 - Linguagem de Programação"
   }
 ]

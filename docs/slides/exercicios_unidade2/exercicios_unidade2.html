@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.2.335">
 
   <meta name="author" content="Prof.&nbsp;Bruno Silva">
-  <title>Linguagem de Programação - ECT/UFRN - Unidade 2 - Simulado</title>
+  <title>Linguagem de Programação - ECT/UFRN - Unidade 2: exercícios</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -31,6 +31,22 @@
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="../../assets/css/logo.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -325,7 +341,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../../assets/img/brasao_ufrn_positivo.png" data-background-opacity="0.05" data-background-size="50%, auto, contain" class="quarto-title-block center">
-  <h1 class="title">Unidade 2 - Simulado</h1>
+  <h1 class="title">Unidade 2: exercícios</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -339,36 +355,59 @@ Prof.&nbsp;Bruno Silva
 </div>
 
 </section>
-<section id="unidade-ii---simulado" class="slide level2">
-<h2>Unidade II - Simulado</h2>
-<h4 id="exercício-1">Exercício 1</h4>
-<p>Implemente uma função recursiva que receba como parâmetro de entrada um vetor de números inteiros e o seu tamanho. A função deve retornar verdadeiro caso o vetor esteja em ordem crescente ou falso caso contrário.</p>
-<p>A função main deve ler o tamanho do vetor, cada um dos seus elementos e chamar a função solicitada.</p>
+<section id="exercício-1" class="slide level2">
+<h2>Exercício 1</h2>
+<h4 id="função-para-informar-se-vetor-é-conjunto">Função para Informar se Vetor é Conjunto</h4>
+<p>Um vetor é considerado um conjunto quando nenhum dos seus valores se repetem.</p>
+<p><strong>Função</strong>: informar (verdadeiro ou falso) se vetor é conjunto. Parâmetro: vetor (e o seu tamanho)</p>
+<p>Implemente também a função <code>main</code>.</p>
 </section>
-<section id="unidade-ii---simulado-1" class="slide level2">
-<h2>Unidade II - Simulado</h2>
-<h4 id="exercício-2">Exercício 2</h4>
-<p>Implemente uma função que recebe um vetor de inteiros como parâmetro de entrada e armazena em um segundo vetor todos os valores do primeiro, na mesma ordem, sem repetições.</p>
-<p>A função main do seu programa deve ler do usuário o tamanho e elementos de um vetor de entrada e exibir o resultado calculado pela função solicitada.</p>
+<section id="exercício-2" class="slide level2">
+<h2>Exercício 2</h2>
+<h4 id="função-para-calcular-conjunto-união">Função para calcular conjunto união</h4>
+<p><strong>Função</strong>: calcular o conjunto união (parâmetro de saída) entre dois conjuntos (parâmetros de entrada)</p>
+<p>Implemente também a função <code>main</code>.</p>
 </section>
 <section id="lista-de-presença" class="slide level2">
 <h2>Lista de Presença</h2>
 
-<img data-src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chld=L%7C1&amp;chl=https%3A%2F%2Fbit.ly%2Flip_20231024" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20231024">
+<img data-src="bit.ly_lip_20250618.png" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20250618">
 <p style="text-align:center;">
-https://bit.ly/lip_20231024
+https://bit.ly/lip_20250618
 </p>
-</a><p><a href="https://bit.ly/lip_20231024"></a></p>
+</a><p><a href="https://bit.ly/lip_20250618"></a></p>
 </section>
-<section id="unidade-ii---simulado-2" class="slide level2">
-<h2>Unidade II - Simulado</h2>
-<h4 id="exercício-3">Exercício 3</h4>
-<p>Implemente uma função que receba como parâmetro de entrada uma matriz quadrada de números inteiros de ordem N. A função deve retornar verdadeiro caso a matriz seja simétrica ou falso caso contrário. Uma matriz é simétrica se ela for igual a sua transposta.</p>
-<p>A função main deve ler a ordem N de uma matriz quadrada de números inteiros, cada um dos seus elementos e imprimir uma mensagem informando se a matriz é simétrica ou não, de acordo com o resultado da função solicitada.</p>
+<section id="exercício-3" class="slide level2">
+<h2>Exercício 3</h2>
+<h4 id="multiplicação-entre-matriz-e-vetor">Multiplicação entre matriz e vetor</h4>
+<p>O vetor <span class="math inline">\mathbf{u}</span> de <span class="math inline">R^N</span> é calculado a partir do vetor <span class="math inline">\mathbf{v}</span> também de <span class="math inline">R^N</span> por</p>
+<p><span class="math display">
+    \mathbf{u} = A\mathbf{v},
+</span></p>
+<p>ou seja</p>
+</section>
+<section id="exercício-3-1" class="slide level2">
+<h2>Exercício 3</h2>
+<h4 id="multiplicação-entre-matriz-e-vetor-1">Multiplicação entre matriz e vetor</h4>
+<p><span class="math display">
+\begin{align*}
+u_{0}   &amp; = A_{0,0}.v_{0} + A_{0,1}.v_{1} + ... + A_{0,n-1}.v_{n-1}\\
+u_{1}   &amp; = A_{1,0}.v_{0} + A_{1,1}.v_{1} + ... + A_{1,n-1}.v_{n-1}\\
+\vdots\\
+u_{n-1} &amp; = A_{n-1,0}.v_{0} + A_{n-1,1}.v_{1} + ... + A_{n-1,n-1}.v_{n-1}\\
+\end{align*}
+</span></p>
+</section>
+<section id="exercício-3-2" class="slide level2">
+<h2>Exercício 3</h2>
+<h4 id="multiplicação-entre-matriz-e-vetor-2">Multiplicação entre matriz e vetor</h4>
+<p><strong>Função</strong>: calcular o vetor produto (parâmetro de saída) entre uma matriz (parâmetro de entrada) e um vetor (outro parâmetro de entrada).</p>
+<p>A matriz <span class="math inline">M \times N</span> terá sempre <span class="math inline">N</span> colunas, e os vetores tamanho <span class="math inline">N</span>.</p>
+<p>Implemente também a função <code>main</code>.</p>
 
 
 <img src="../../assets/img/logo_ect.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>ECT2303 - Linguagem de Programação</p>
+<p>ECT3201 - Linguagem de Programação</p>
 </div>
 </section>
     </div>
