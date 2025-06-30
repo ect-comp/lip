@@ -66,16 +66,16 @@
 
 ## [18/06 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
 
+## [02/07 - Strings](./slides/13-strings/13-strings.html)
+- Caractere delimitador `\0`
+- Entrada/saída
+- Funções de manipulação de strings
+
 <!--
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
 ## [10/12 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
-
-## [17/12 - Strings](./slides/13-strings/13-strings.html)
-- Caractere delimitador `\0`
-- Entrada/saída
-- Funções de manipulação de strings
 
 ## [07/01 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
 - Definição de tipos estruturados
