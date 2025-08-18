@@ -11,7 +11,7 @@ title-slide-attributes:
 - Prof. Bruno Silva
 - Atendimento:
     - Via email: bruno.silva@ufrn.br
-    - Via [Discord](https://discord.gg/ujbQVtrwEC)
+    - Via [Discord](https://discord.gg/8ecZwEQ7yh)
 - Áreas de interesse:
     - Processamento de imagens e visão computacional
     - Inteligência artificial e robótica
@@ -19,8 +19,8 @@ title-slide-attributes:
 
 ## Sobre a Disciplina
 
-- Aulas teóricas: quartas, de 14:50 às 16:30,
-  Auditório B da ECT
+- Aulas teóricas: segundas, de 20:30 às 22:00,
+  Auditório E da ECT
 - Carga horária: 60 horas (30h de laboratório)
 - Metodologia:
     - Aulas expositivas com slides digitais
@@ -30,9 +30,9 @@ title-slide-attributes:
 
 ## Horários dos Laboratórios
 
-- Subturma 2A: sextas, 14:50 às 16:30, Lab. 1 (Prof. Bruno)
-- Subturma 2B: sextas, 8:50 às 10:30, Lab. 2 (Prof. Bruno)
-- Subturma 2C: sextas, 10:40 às 12:20, Lab. 2 (Prof. Bruno)
+- Subturma 4A: quartas, 20:30 às 22:00, Lab. 1 (Prof. Bruno)
+- Subturma 4B: segundas, 16:40 às 18:20, Lab. 1 (Prof. Bruno)
+- Subturma 4C: segundas, 13:00 às 14:40, Lab. 2 (Prof. Jesaías)
 
 As atividades práticas serão realizadas no
 [Multiprova](https://multiprova.ufrn.br)

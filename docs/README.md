@@ -1,18 +1,20 @@
 # Slides das Aulas
 
-## [19/03 - Apresentação](./slides/01-intro/01-intro.html)
+## [11/08 - Apresentação](./slides/01-intro/01-intro.html)
  - Objetivos
  - Metodologia
  - Bibliografia
 
-## [19/03 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
+## [11/08 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
  - Variáveis e tipos
  - Entrada e saída
 
-## [26/03 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
+## [18/08 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
  - Operadores em C++
  - Expressões
  - Conversão entre tipos
+
+<!--
 
 ## [02/04 - Comandos de Seleção](./slides/04-comandos_selecao/04-comandos_selecao.html)
 - Comando `if` e `if-else`
@@ -26,12 +28,11 @@
 - Comando de repetição `while`
 - Comando de repetição `do.. while`
 - Comandos `break` e `continue`
-<!--
+
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
--->
 
 ## [23/04 - Funções I](./slides/06-funcoes1/06-funcoes1.html)
 - Chamada de funções
@@ -81,8 +82,6 @@
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
-
-<!--
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
