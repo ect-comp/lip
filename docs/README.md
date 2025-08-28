@@ -19,10 +19,12 @@
 - Comando `switch`
 - Operador ternário
 
+## [01/09 - Comandos de Repetição I](./slides/05a-comando_repeticao_for/05a-comando_repeticao_for.html)
+- Comando de repetição `for`
+
 <!--
 
-## [09/04 - Comandos de Repetição I](./slides/05a-comando_repeticao_for/05a-comando_repeticao_for.html)
-- Comando de repetição `for`
+
 
 ## [16/04 - Comandos de Repetição II](./slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html)
 - Comando de repetição `while`
