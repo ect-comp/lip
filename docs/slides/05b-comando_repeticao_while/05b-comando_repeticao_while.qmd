@@ -182,14 +182,6 @@ do{
 - Inverter condição: a expressão lógica deve ter valor verdadeiro para que o laço execute
 ---
 
-## Lista de Presença
-
-![](bit.ly_lip_20250416.png){fig-align="center"}
-
-<a href="https://bit.ly/lip_20250416"><p style="text-align:center;">https://bit.ly/lip_20250416</p></a>
-
----
-
 ## Comandos `while` e `do-while`
 #### Exercício 2
 Implemente um programa que lê um número inteiro positivo `n` e em seguida, imprime o quociente e o resto da divisão de `n` por 10. O seu programa deve checar se
