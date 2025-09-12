@@ -5268,14 +5268,14 @@
     "href": "slides/06-funcoes1/06-funcoes1.html#chamadas-de-funções---exemplo-1",
     "title": "Funções I",
     "section": "Chamadas de Funções - Exemplo 1",
-    "text": "Chamadas de Funções - Exemplo 1\nO que faz o seguinte programa?\nint main(){\n    int x, r;\n    cin &gt;&gt; x;\n    r = sqrt(x);\n    cout &lt;&lt; x &lt;&lt; \", \" &lt;&lt; r &lt;&lt; endl;\n    return 0;\n}"
+    "text": "Chamadas de Funções - Exemplo 1\nO que faz o seguinte programa?\nint main(){\n    int x, r;\n    cin >> x;\n    r = sqrt(x);\n    cout << x << \", \" << r << endl;\n    return 0;\n}"
   },
   {
     "objectID": "slides/06-funcoes1/06-funcoes1.html#chamadas-de-funções---exemplo-2",
     "href": "slides/06-funcoes1/06-funcoes1.html#chamadas-de-funções---exemplo-2",
     "title": "Funções I",
     "section": "Chamadas de Funções - Exemplo 2",
-    "text": "Chamadas de Funções - Exemplo 2\nO que faz o seguinte programa?\nint main(){\n    float x, y;\n    cin &gt;&gt; x &gt;&gt; y;\n    cout &lt;&lt; sin(x)/cos(y) &lt;&lt; endl; \n    return 0;\n}"
+    "text": "Chamadas de Funções - Exemplo 2\nO que faz o seguinte programa?\nint main(){\n    float x, y;\n    cin >> x >> y;\n    cout << sin(x)/cos(y) << endl; \n    return 0;\n}"
   },
   {
     "objectID": "slides/06-funcoes1/06-funcoes1.html#programas-que-chamam-funções",
@@ -5373,7 +5373,7 @@
     "href": "slides/06-funcoes1/06-funcoes1.html#lista-de-presença",
     "title": "Funções I",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250423"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250915"
   },
   {
     "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções",
@@ -5401,7 +5401,7 @@
     "href": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-3",
     "title": "Funções I",
     "section": "Definição de Funções",
-    "text": "Definição de Funções\nExemplo: programa completo com função que converte temperatura em Celsius para Fahrenheit\nfloat converte_temp(float c);\nint main(){\n    float tc;\n\n    cout &lt;&lt; \"Insira a temperatura em Celsius:\\n\";\n    cin &gt;&gt; tc;\n    cout &lt;&lt; \"Temperatura em Fahrenheit: \" &lt;&lt; converte_temp(tc) &lt;&lt; endl;\n    return 0;\n}\nfloat converte_temp(float c){\n    return 1.8*c + 32;\n}"
+    "text": "Definição de Funções\nExemplo: programa completo com função que converte temperatura em Celsius para Fahrenheit\nfloat converte_temp(float c);\nint main(){\n    float tc;\n\n    cout << \"Insira a temperatura em Celsius:\\n\";\n    cin >> tc;\n    cout << \"Temperatura em Fahrenheit: \" << converte_temp(tc) << endl;\n    return 0;\n}\nfloat converte_temp(float c){\n    return 1.8*c + 32;\n}"
   },
   {
     "objectID": "slides/06-funcoes1/06-funcoes1.html#definição-de-funções-4",
@@ -5450,21 +5450,21 @@
     "href": "slides/06-funcoes1/06-funcoes1.html#programa-com-função-1",
     "title": "Funções I",
     "section": "Programa com Função",
-    "text": "Programa com Função\nExercício: programa usuário da Função\nint main(){\n    int num;\n    cout &lt;&lt; \"Insira um numero inteiro:\\n\";\n    cin &gt;&gt; num;\n\n    if(eh_primo(num) == true){\n        cout &lt;&lt; num &lt;&lt; \" eh primo\\n\";\n    }\n    else{\n        cout &lt;&lt; num &lt;&lt; \" nao eh primo\\n\";\n    }\n    return 0;\n}"
+    "text": "Programa com Função\nExercício: programa usuário da Função\nint main(){\n    int num;\n    cout << \"Insira um numero inteiro:\\n\";\n    cin >> num;\n\n    if(eh_primo(num) == true){\n        cout << num << \" eh primo\\n\";\n    }\n    else{\n        cout << num << \" nao eh primo\\n\";\n    }\n    return 0;\n}"
   },
   {
     "objectID": "slides/06-funcoes1/06-funcoes1.html#programa-com-função-2",
     "href": "slides/06-funcoes1/06-funcoes1.html#programa-com-função-2",
     "title": "Funções I",
     "section": "Programa com Função",
-    "text": "Programa com Função\nExercício: Solução\nbool eh_primo(int x);\nint main(){\n    int num;\n    cout &lt;&lt; \"Insira um numero inteiro:\\n\";\n    cin &gt;&gt; num;\n\n    if(eh_primo(num) == true){\n        cout &lt;&lt; num &lt;&lt; \" eh primo\\n\";\n    }\n    else{\n        cout &lt;&lt; num &lt;&lt; \" nao eh primo\\n\";\n    }\n    return 0;\n}\nbool eh_primo(int x){\n    int i, cont = 0;\n\n    for(i = 1; i &lt;= x; i++){\n        if(x % i == 0){\n            cont++;\n        }\n    }\n    return (cont == 2);\n}"
+    "text": "Programa com Função\nExercício: Solução\nbool eh_primo(int x);\nint main(){\n    int num;\n    cout << \"Insira um numero inteiro:\\n\";\n    cin >> num;\n\n    if(eh_primo(num) == true){\n        cout << num << \" eh primo\\n\";\n    }\n    else{\n        cout << num << \" nao eh primo\\n\";\n    }\n    return 0;\n}\nbool eh_primo(int x){\n    int i, cont = 0;\n\n    for(i = 1; i <= x; i++){\n        if(x % i == 0){\n            cont++;\n        }\n    }\n    return (cont == 2);\n}"
   },
   {
     "objectID": "slides/06-funcoes1/06-funcoes1.html#sumário",
     "href": "slides/06-funcoes1/06-funcoes1.html#sumário",
     "title": "Funções I",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nChamada de funções\nAssinatura de funções\nDefinição de funções\n\n\n\n\n\nECT3201 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nChamada de funções\nAssinatura de funções\nDefinição de funções\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/07-funcoes2/07-funcoes2.html#aula-anterior",
