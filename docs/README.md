@@ -32,16 +32,16 @@
 - Assinatura de funções
 - Definição de funções
 
+## [22/09 - Funções II](./slides/07-funcoes2/07-funcoes2.html)
+- Função sem retorno (funções tipo `void`)
+- Passagem de parâmetro por valor e por referência
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
-
-## [30/04 - Funções II](./slides/07-funcoes2/07-funcoes2.html)
-- Função sem retorno (funções tipo `void`)
-- Passagem de parâmetro por valor e por referência
 
 ## [07/05 - Funções III](./slides/08-funcoes3/08-funcoes3.html)
 - Parâmetros de entrada
