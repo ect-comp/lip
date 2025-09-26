@@ -36,17 +36,17 @@
 - Função sem retorno (funções tipo `void`)
 - Passagem de parâmetro por valor e por referência
 
+## [29/09 - Funções III](./slides/08-funcoes3/08-funcoes3.html)
+- Parâmetros de entrada
+- Parâmetros de saída
+- Parâmetros de entrada e saída
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
-
-## [07/05 - Funções III](./slides/08-funcoes3/08-funcoes3.html)
-- Parâmetros de entrada
-- Parâmetros de saída
-- Parâmetros de entrada e saída
 
 ## [21/05 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
 - Estruturas recursivas
