@@ -41,16 +41,16 @@
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
+## [06/10 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
+- Estruturas recursivas
+- Passo base e passo recursivo
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
-
-## [21/05 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
-- Estruturas recursivas
-- Passo base e passo recursivo
 
 ## [28/05 - Vetores](./slides/10-vetores/10-vetores.html)
 - Sintaxe de declaração
