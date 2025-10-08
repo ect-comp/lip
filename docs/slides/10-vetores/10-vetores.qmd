@@ -239,14 +239,6 @@ qual o valor de cada expressão a seguir, sendo `x = 2`?
 
 ---
 
-## Lista de Presença
-
-![](bit.ly_lip_20250528.png){fig-align="center"}
-
-<a href="https://bit.ly/lip_20250528"><p style="text-align:center;">https://bit.ly/lip_20250528</p></a>
-
----
-
 ## Inicialização de Vetores
 #### Sintaxe
 
@@ -321,6 +313,14 @@ int main(){
     return 0;
 }
 ```
+---
+
+## Lista de Presença
+
+![](bit.ly_lip_20251013.png){fig-align="center"}
+
+<a href="https://bit.ly/lip_20251013"><p style="text-align:center;">https://bit.ly/lip_20251013</p></a>
+
 ---
 
 ## Exercício 1

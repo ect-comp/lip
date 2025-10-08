@@ -101,12 +101,6 @@ Escrever assinatura da função:
 ```
 ---
 
-## Lista de Presença
-
-Sem lista de presença (greve no transporte público)
-
----
-
 ## Funções com Vetores
 #### Chamada de Funções
 

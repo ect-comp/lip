@@ -45,21 +45,21 @@
 - Estruturas recursivas
 - Passo base e passo recursivo
 
+## [13/10 - Vetores](./slides/10-vetores/10-vetores.html)
+- Sintaxe de declaração
+- Acesso às posições
+- Inicialização
+
+## [13/10 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
+- Sintaxe de implementação de funções com vetores
+- Funções recursivas com vetores
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
-
-## [28/05 - Vetores](./slides/10-vetores/10-vetores.html)
-- Sintaxe de declaração
-- Acesso às posições
-- Inicialização
-
-## [04/06 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
-- Sintaxe de implementação de funções com vetores
-- Funções recursivas com vetores
 
 ## [11/06 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
 - Sintaxe de implementação de funções com matrizes
