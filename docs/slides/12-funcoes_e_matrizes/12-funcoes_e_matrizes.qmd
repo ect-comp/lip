@@ -166,9 +166,9 @@ int m[][4] = {1,2,3,4,
 
 ## Lista de Presença
 
-![](bit.ly_lip_20250611.png){fig-align="center"}
+![](bit.ly_lip_20251020.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20250611"><p style="text-align:center;">https://bit.ly/lip_20250611</p></a>
+<a href="https://bit.ly/lip_20251020"><p style="text-align:center;">https://bit.ly/lip_20251020</p></a>
 
 ---
 
@@ -235,6 +235,8 @@ A linha
 é equivalente a
 
 `#define MAX 100`
+
+Você pode usar qualquer uma das duas formas.
 ---
 
 ## Declaração de Função com Matrizes

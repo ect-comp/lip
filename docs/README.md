@@ -54,16 +54,16 @@
 - Sintaxe de implementação de funções com vetores
 - Funções recursivas com vetores
 
+## [20/10 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
+- Sintaxe de implementação de funções com matrizes
+- Exercícios
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
-
-## [11/06 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
-- Sintaxe de implementação de funções com matrizes
-- Exercícios
 
 ## [18/06 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
 
