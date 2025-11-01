@@ -58,6 +58,8 @@
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
 
+## [03/11 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
@@ -84,8 +86,6 @@
   - Ordem alfabética de campos string
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
-
-## [10/12 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
 ## [12/09 - Funções - Exercícios](./slides/exercicios_funcoes/exercicios_funcoes.html)
 
