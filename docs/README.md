@@ -60,6 +60,11 @@
 
 ## [03/11 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
+## [10/11 - Strings](./slides/13-strings/13-strings.html)
+- Caractere delimitador `\0`
+- Entrada/saída
+- Funções de manipulação de strings
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
@@ -68,11 +73,6 @@
 - Comandos `break` e `continue`
 
 ## [18/06 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
-
-## [02/07 - Strings](./slides/13-strings/13-strings.html)
-- Caractere delimitador `\0`
-- Entrada/saída
-- Funções de manipulação de strings
 
 ## [09/07 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
 - Definição de tipos estruturados
