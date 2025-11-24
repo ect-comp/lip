@@ -65,6 +65,11 @@
 - Entrada/saída
 - Funções de manipulação de strings
 
+## [24/11 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
+- Definição de tipos estruturados
+- Operações com variáveis de tipos estruturados
+- Funções e tipos estruturados
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
@@ -73,11 +78,6 @@
 - Comandos `break` e `continue`
 
 ## [18/06 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
-
-## [09/07 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
-- Definição de tipos estruturados
-- Operações com variáveis de tipos estruturados
-- Funções e tipos estruturados
 
 ## [16/07 - Ordenação](./slides/15-ordenacao/15-ordenacao.html)
 - Ordenação
