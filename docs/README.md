@@ -70,6 +70,12 @@
 - Operações com variáveis de tipos estruturados
 - Funções e tipos estruturados
 
+## [01/12 - Ordenação](./slides/15-ordenacao/15-ordenacao.html)
+- Ordenação
+- Ordenação com tipos estruturados
+  - Ordem crescente/decrescente de campos numéricos
+  - Ordem alfabética de campos string
+
 <!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
@@ -78,12 +84,6 @@
 - Comandos `break` e `continue`
 
 ## [18/06 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
-
-## [16/07 - Ordenação](./slides/15-ordenacao/15-ordenacao.html)
-- Ordenação
-- Ordenação com tipos estruturados
-  - Ordem crescente/decrescente de campos numéricos
-  - Ordem alfabética de campos string
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
