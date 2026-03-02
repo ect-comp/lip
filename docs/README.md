@@ -1,13 +1,15 @@
 # Slides das Aulas
 
-## [11/08 - Apresentação](./slides/01-intro/01-intro.html)
+## [03/03 - Apresentação](./slides/01-intro/01-intro.html)
  - Objetivos
  - Metodologia
  - Bibliografia
 
-## [11/08 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
+## [03/03 - Introdução ao C++](./slides/02-cpp/02-cpp.html)
  - Variáveis e tipos
  - Entrada e saída
+
+<!--
 
 ## [18/08 - Operadores e Expressões](./slides/03-op_e_exp/03-op_e_exp.html)
  - Operadores em C++
@@ -75,8 +77,6 @@
 - Ordenação com tipos estruturados
   - Ordem crescente/decrescente de campos numéricos
   - Ordem alfabética de campos string
-
-<!--
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
