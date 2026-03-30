@@ -154,6 +154,14 @@ int main(){
 ```
 ---
 
+## Lista de Presença
+
+![](lip_20260331.png){fig-align="center"}
+
+<a href="https://bit.ly/lip_20260331"><p style="text-align:center;">https://bit.ly/lip_20260331</p></a>
+
+---
+
 ## Comando `do-while`
 - A linguagem C++ oferece também o comando
   `do-while` (faça-enquanto)

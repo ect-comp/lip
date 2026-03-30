@@ -8040,14 +8040,14 @@
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-while-3",
     "title": "Comando de Repetição while",
     "section": "Comando while",
-    "text": "Comando while\nExemplo\nint main(){\n    int i = 0, n;\n    cin >> n;\n    while(i < n){\n        cout << \"i: \" << i << endl;\n        i++;\n    }\n    return 0;\n}\n\nQual a saída deste programa?\nComo foram garantidos os dois itens necessários?"
+    "text": "Comando while\nExemplo\nint main(){\n    int i = 0, n;\n    cin &gt;&gt; n;\n    while(i &lt; n){\n        cout &lt;&lt; \"i: \" &lt;&lt; i &lt;&lt; endl;\n        i++;\n    }\n    return 0;\n}\n\nQual a saída deste programa?\nComo foram garantidos os dois itens necessários?"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comandos-de-repetição-3",
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comandos-de-repetição-3",
     "title": "Comando de Repetição while",
     "section": "Comandos de Repetição",
-    "text": "Comandos de Repetição\nExemplo de Motivação\nVoltando ao exemplo inicial: agora sim, vimos o que é necessário\nint main(){\n    int n;\n    cout << \"Digite um numero\\n\";\n    cin >> n;\n    while(n != 0){\n        cout << \"vou estudar lip\\n\";\n        cout << \"Digite um numero\\n\";\n        cin >> n;\n    }\n    return 0;\n}"
+    "text": "Comandos de Repetição\nExemplo de Motivação\nVoltando ao exemplo inicial: agora sim, vimos o que é necessário\nint main(){\n    int n;\n    cout &lt;&lt; \"Digite um numero\\n\";\n    cin &gt;&gt; n;\n    while(n != 0){\n        cout &lt;&lt; \"vou estudar lip\\n\";\n        cout &lt;&lt; \"Digite um numero\\n\";\n        cin &gt;&gt; n;\n    }\n    return 0;\n}"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comandos-de-repetição-4",
@@ -8082,7 +8082,7 @@
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-while-6",
     "title": "Comando de Repetição while",
     "section": "Comando while",
-    "text": "Comando while\nExercício 1: Solução\nint main(){\n    int x;\n    cout << \"Informe um numero\\n\";\n    cin >> x;\n    while(x >= 0){\n        if(x % 2 == 0){\n            cout << x << \" e um numero par\\n\";\n        }\n        else{\n            cout << x << \" e um numero impar\\n\";\n        }\n        cout << \"Informe um numero\\n\";\n        cin >> x;\n    }\n    return 0;\n}"
+    "text": "Comando while\nExercício 1: Solução\nint main(){\n    int x;\n    cout &lt;&lt; \"Informe um numero\\n\";\n    cin &gt;&gt; x;\n    while(x &gt;= 0){\n        if(x % 2 == 0){\n            cout &lt;&lt; x &lt;&lt; \" e um numero par\\n\";\n        }\n        else{\n            cout &lt;&lt; x &lt;&lt; \" e um numero impar\\n\";\n        }\n        cout &lt;&lt; \"Informe um numero\\n\";\n        cin &gt;&gt; x;\n    }\n    return 0;\n}"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-do-while",
@@ -8117,7 +8117,7 @@
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#lista-de-presença",
     "title": "Comando de Repetição while",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250416"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20260331"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comandos-while-e-do-while",
@@ -8131,7 +8131,7 @@
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comandos-while-e-do-while-1",
     "title": "Comando de Repetição while",
     "section": "Comandos while e do-while",
-    "text": "Comandos while e do-while\nExercício 2: Solução\nint main(){\n    int x;\n    do{\n        cout << \"Insira um numero inteiro\n                 e positivo\\n\";\n        cin >> x;\n    } while(x < 0);\n\n    cout << \"q: \" << x/10\n         << \", r:\" << x%10 << endl;\n\n    return 0;\n}"
+    "text": "Comandos while e do-while\nExercício 2: Solução\nint main(){\n    int x;\n    do{\n        cout &lt;&lt; \"Insira um numero inteiro\n                 e positivo\\n\";\n        cin &gt;&gt; x;\n    } while(x &lt; 0);\n\n    cout &lt;&lt; \"q: \" &lt;&lt; x/10\n         &lt;&lt; \", r:\" &lt;&lt; x%10 &lt;&lt; endl;\n\n    return 0;\n}"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comandos-break-e-continue",
@@ -8145,28 +8145,28 @@
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-break",
     "title": "Comando de Repetição while",
     "section": "Comando break",
-    "text": "Comando break\nMenu com break\nO comando break pode ser usado em menus:\nint main(){\n    char c1;\n    do{\n        cout << \"Insira uma opcao:\\n\";\n        cout << \"\\t (1) opcao1\\n\";\n        cout << \"\\t (2) opcao2\\n\";\n        cout << \"\\t (3) opcao3\\n\";\n        cout << \"\\t (s) air\\n\";\n        cin >> c1;\n        if(c1 == '1'){\n            cout << \"opcao1 escolhida\\n\";\n        }\n        else if(c1 == '2'){\n            cout << \"opcao2 escolhida\\n\";\n        }\n        else if(c1 == '3'){\n            cout << \"opcao3 escolhida\\n\";\n        }\n        else if(c1 == 's'){\n            cout << \"Vc escolheu sair\\n\";\n            break;\n        }\n    }while(true);\n    return 0;\n}"
+    "text": "Comando break\nMenu com break\nO comando break pode ser usado em menus:\nint main(){\n    char c1;\n    do{\n        cout &lt;&lt; \"Insira uma opcao:\\n\";\n        cout &lt;&lt; \"\\t (1) opcao1\\n\";\n        cout &lt;&lt; \"\\t (2) opcao2\\n\";\n        cout &lt;&lt; \"\\t (3) opcao3\\n\";\n        cout &lt;&lt; \"\\t (s) air\\n\";\n        cin &gt;&gt; c1;\n        if(c1 == '1'){\n            cout &lt;&lt; \"opcao1 escolhida\\n\";\n        }\n        else if(c1 == '2'){\n            cout &lt;&lt; \"opcao2 escolhida\\n\";\n        }\n        else if(c1 == '3'){\n            cout &lt;&lt; \"opcao3 escolhida\\n\";\n        }\n        else if(c1 == 's'){\n            cout &lt;&lt; \"Vc escolheu sair\\n\";\n            break;\n        }\n    }while(true);\n    return 0;\n}"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-break-1",
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-break-1",
     "title": "Comando de Repetição while",
     "section": "Comando break",
-    "text": "Comando break\nMenu sem break\nO mesmo menu pode ser implementado sem break:\nint main(){\n    char o;\n    do{\n        cout << \"Insira uma opcao:\\n\";\n        cout << \"\\t (1) opcao1\\n\";\n        cout << \"\\t (2) opcao2\\n\";\n        cout << \"\\t (3) opcao3\\n\";\n        cout << \"\\t (s) air\\n\";\n        cin >> o;\n        if(o == '1'){\n            cout << \"opcao1 escolhida\\n\";\n        }\n        else if(o == '2'){\n            cout << \"opcao2 escolhida\\n\";\n        }\n        else if(o == '3'){\n            cout << \"opcao3 escolhida\\n\";\n        }\n        else if(o == 's'){\n            cout << \"Vc escolheu sair\\n\";\n        }\n    }while(o != 's');\n    return 0;"
+    "text": "Comando break\nMenu sem break\nO mesmo menu pode ser implementado sem break:\nint main(){\n    char o;\n    do{\n        cout &lt;&lt; \"Insira uma opcao:\\n\";\n        cout &lt;&lt; \"\\t (1) opcao1\\n\";\n        cout &lt;&lt; \"\\t (2) opcao2\\n\";\n        cout &lt;&lt; \"\\t (3) opcao3\\n\";\n        cout &lt;&lt; \"\\t (s) air\\n\";\n        cin &gt;&gt; o;\n        if(o == '1'){\n            cout &lt;&lt; \"opcao1 escolhida\\n\";\n        }\n        else if(o == '2'){\n            cout &lt;&lt; \"opcao2 escolhida\\n\";\n        }\n        else if(o == '3'){\n            cout &lt;&lt; \"opcao3 escolhida\\n\";\n        }\n        else if(o == 's'){\n            cout &lt;&lt; \"Vc escolheu sair\\n\";\n        }\n    }while(o != 's');\n    return 0;"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-continue",
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-continue",
     "title": "Comando de Repetição while",
     "section": "Comando continue",
-    "text": "Comando continue\nExemplo de Uso\nint main(){\n    int n, i, s = 0;\n    cout << \"Informe um numero\\n\";\n    cin >> n;\n    for(i = 0; i < n; i++){\n        if(i % 2 == 0){\n            continue;\n        }\n        s += i;\n    }\n    cout << s << endl;\n    return 0;\n}\nO que faz este programa?"
+    "text": "Comando continue\nExemplo de Uso\nint main(){\n    int n, i, s = 0;\n    cout &lt;&lt; \"Informe um numero\\n\";\n    cin &gt;&gt; n;\n    for(i = 0; i &lt; n; i++){\n        if(i % 2 == 0){\n            continue;\n        }\n        s += i;\n    }\n    cout &lt;&lt; s &lt;&lt; endl;\n    return 0;\n}\nO que faz este programa?"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-continue-1",
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-continue-1",
     "title": "Comando de Repetição while",
     "section": "Comando continue",
-    "text": "Comando continue\nPrograma equivalente sem continue\nO mesmo programa pode ser implementado sem continue:\nint main(){\n    int n, i, s = 0;\n    cout << \"Informe um numero\\n\";\n    cin >> n;\n    for(i = 0; i < n; i++){\n        if(i % 2 != 0){\n            s += i;\n        }\n    }\n    cout << s << endl;\n    return 0;\n}"
+    "text": "Comando continue\nPrograma equivalente sem continue\nO mesmo programa pode ser implementado sem continue:\nint main(){\n    int n, i, s = 0;\n    cout &lt;&lt; \"Informe um numero\\n\";\n    cin &gt;&gt; n;\n    for(i = 0; i &lt; n; i++){\n        if(i % 2 != 0){\n            s += i;\n        }\n    }\n    cout &lt;&lt; s &lt;&lt; endl;\n    return 0;\n}"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-while-e-do-while-1",
@@ -8180,14 +8180,14 @@
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#comando-while-e-do-while-2",
     "title": "Comando de Repetição while",
     "section": "Comando while e do-while",
-    "text": "Comando while e do-while\nExercício 3: Solução\nint main(){\n    int anos = 0;\n    int pop_a, pop_b;\n\n    cout << \"Insira as populacoes iniciais:\\n\";\n    cin >> pop_a >> pop_b;\n\n    while(pop_b <= pop_a){\n        pop_a *= 1.02;\n        pop_b *= 1.04;\n        anos++;\n    }\n    cout << \"A populacao do pais B ultrapassa\n             a do pais A em \"\n         << anos << \" anos.\\n\";\n    \n    return 0;\n}"
+    "text": "Comando while e do-while\nExercício 3: Solução\nint main(){\n    int anos = 0;\n    int pop_a, pop_b;\n\n    cout &lt;&lt; \"Insira as populacoes iniciais:\\n\";\n    cin &gt;&gt; pop_a &gt;&gt; pop_b;\n\n    while(pop_b &lt;= pop_a){\n        pop_a *= 1.02;\n        pop_b *= 1.04;\n        anos++;\n    }\n    cout &lt;&lt; \"A populacao do pais B ultrapassa\n             a do pais A em \"\n         &lt;&lt; anos &lt;&lt; \" anos.\\n\";\n    \n    return 0;\n}"
   },
   {
     "objectID": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#sumário",
     "href": "slides/05b-comando_repeticao_while/05b-comando_repeticao_while.html#sumário",
     "title": "Comando de Repetição while",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nComando de repetição while\nComando de repetição do-while\nComandos break e continue\nExercícios\n\n\n\n\nECT3201 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nComando de repetição while\nComando de repetição do-while\nComandos break e continue\nExercícios\n\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/exercicios_un2/exercicios_un2.html#exercício-1",
