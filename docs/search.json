@@ -5534,7 +5534,7 @@
     "href": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-3",
     "title": "Funções II",
     "section": "Funções sem Retorno",
-    "text": "Funções sem Retorno\nFunção que imprime na tela o caractere correspondente a um número:\nvoid imprime_caractere(int n);\n\nint main(){\n    int x;\n    cout << \"Insira um num. inteiro entre 0 e 255:\\n\";\n    cin >> x;\n    imprime_caractere(x); //observe a chamada à função\n    return 0;\n}\n\nvoid imprime_caractere(int n){\n    cout << \"Caractere: \" << char(n) << endl;\n}"
+    "text": "Funções sem Retorno\nFunção que imprime na tela o caractere correspondente a um número:\nvoid imprime_caractere(int n);\n\nint main(){\n    int x;\n    cout &lt;&lt; \"Insira um num. inteiro entre 0 e 255:\\n\";\n    cin &gt;&gt; x;\n    imprime_caractere(x); //observe a chamada à função\n    return 0;\n}\n\nvoid imprime_caractere(int n){\n    cout &lt;&lt; \"Caractere: \" &lt;&lt; char(n) &lt;&lt; endl;\n}"
   },
   {
     "objectID": "slides/07-funcoes2/07-funcoes2.html#funções-sem-retorno-4",
@@ -5562,14 +5562,14 @@
     "href": "slides/07-funcoes2/07-funcoes2.html#lista-de-presença",
     "title": "Funções II",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250924"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20260414"
   },
   {
     "objectID": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros",
     "href": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros",
     "title": "Funções II",
     "section": "Passagem de Parâmetros",
-    "text": "Passagem de Parâmetros\nDentro do corpo de funções, os parâmetros são variáveis locais. Observe então se o código a seguir está correto:\nvoid troca(int a, int b);\n\nint main(){\n    int n1, n2;\n    cout << \"Insira dois numeros inteiros:\\n\";\n    cin >> n1 >> n2;\n    troca(n1, n2);\n    cout << \"n1: \" << n1 << \" n2: \" << n2 << endl;\n    return 0;\n}\n\nvoid troca(int a, int b){\n    int aux = a;\n    a = b;\n    b = aux;\n}"
+    "text": "Passagem de Parâmetros\nDentro do corpo de funções, os parâmetros são variáveis locais. Observe então se o código a seguir está correto:\nvoid troca(int a, int b);\n\nint main(){\n    int n1, n2;\n    cout &lt;&lt; \"Insira dois numeros inteiros:\\n\";\n    cin &gt;&gt; n1 &gt;&gt; n2;\n    troca(n1, n2);\n    cout &lt;&lt; \"n1: \" &lt;&lt; n1 &lt;&lt; \" n2: \" &lt;&lt; n2 &lt;&lt; endl;\n    return 0;\n}\n\nvoid troca(int a, int b){\n    int aux = a;\n    a = b;\n    b = aux;\n}"
   },
   {
     "objectID": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros-1",
@@ -5583,7 +5583,7 @@
     "href": "slides/07-funcoes2/07-funcoes2.html#passagem-de-parâmetros-2",
     "title": "Funções II",
     "section": "Passagem de Parâmetros",
-    "text": "Passagem de Parâmetros\nSolução correta (com passagem de parâmetro por referência):\nvoid troca(int& a, int& b);\n\nint main(){\n    int n1, n2;\n    cout << \"Insira dois numeros inteiros:\\n\";\n    cin >> n1 >> n2;\n    troca(n1, n2);\n    cout << \"n1: \" << n1 << \" n2: \" << n2 << endl;\n    return 0;\n}\n\nvoid troca(int& a, int& b){\n    int aux = a;\n    a = b;\n    b = aux;\n}"
+    "text": "Passagem de Parâmetros\nSolução correta (com passagem de parâmetro por referência):\nvoid troca(int& a, int& b);\n\nint main(){\n    int n1, n2;\n    cout &lt;&lt; \"Insira dois numeros inteiros:\\n\";\n    cin &gt;&gt; n1 &gt;&gt; n2;\n    troca(n1, n2);\n    cout &lt;&lt; \"n1: \" &lt;&lt; n1 &lt;&lt; \" n2: \" &lt;&lt; n2 &lt;&lt; endl;\n    return 0;\n}\n\nvoid troca(int& a, int& b){\n    int aux = a;\n    a = b;\n    b = aux;\n}"
   },
   {
     "objectID": "slides/07-funcoes2/07-funcoes2.html#exercício-1",
@@ -5611,7 +5611,7 @@
     "href": "slides/07-funcoes2/07-funcoes2.html#sumário",
     "title": "Funções II",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nFunções sem retorno\nPassagem de parâmetro por valor e por referência\n\n\n\n\nECT3201 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nFunções sem retorno\nPassagem de parâmetro por valor e por referência\n\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#linguagem-de-programação",
@@ -5653,7 +5653,7 @@
     "href": "slides/08-funcoes3/08-funcoes3.html#passagem-de-parâmetros-por-referência-3",
     "title": "Funções III",
     "section": "Passagem de Parâmetros por Referência",
-    "text": "Passagem de Parâmetros por Referência\nExemplo com Parâmetro de Saída\nChamada à função:\nint main(){\n    float ce, fa;\n    cin >> ce;\n    converte_temp(ce, fa);\n    cout << \"Temp. em Fahrenheit: \" << fa << endl;\n    return 0;\n}"
+    "text": "Passagem de Parâmetros por Referência\nExemplo com Parâmetro de Saída\nChamada à função:\nint main(){\n    float ce, fa;\n    cin &gt;&gt; ce;\n    converte_temp(ce, fa);\n    cout &lt;&lt; \"Temp. em Fahrenheit: \" &lt;&lt; fa &lt;&lt; endl;\n    return 0;\n}"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#parâmetros-de-funções",
@@ -5709,7 +5709,7 @@
     "href": "slides/08-funcoes3/08-funcoes3.html#exercício-1-solução",
     "title": "Funções III",
     "section": "Exercício 1: Solução",
-    "text": "Exercício 1: Solução\nint fatorial(int n);\nint potencia(int b, int e);\nvoid fat_pot(int x, int y, int& f1, int& f2, int& p);\n\nint main(){\n    int n1, n2, r1, r2, r3;\n    cout << \"Insira dois numeros:\\n\";\n    cin >> n1 >> n2;\n    fat_pot(n1, n2, r1, r2, r3);\n    cout << \"Fatorial1: \" << r1 << endl;\n    cout << \"Fatorial2: \" << r2 << endl;\n    cout << \"Potencia: \" << r3 << endl;\n    return 0;\n}\nint fatorial(int n){\n    int i, r = 1;\n    for(i = 1; i <= n; i++){\n        r *= i;\n    }\n    return r;\n}\nint potencia(int b, int e){\n    int i, r = 1;\n    for(i = 1; i <= e; i++){\n        r *= b;\n    }\n    return r;\n}\nvoid fat_pot(int x, int y, int& f1, int& f2, int& p){\n    f1 = fatorial(x);\n    f2 = fatorial(y);\n    p = potencia(x, y);\n}"
+    "text": "Exercício 1: Solução\nint fatorial(int n);\nint potencia(int b, int e);\nvoid fat_pot(int x, int y, int& f1, int& f2, int& p);\n\nint main(){\n    int n1, n2, r1, r2, r3;\n    cout &lt;&lt; \"Insira dois numeros:\\n\";\n    cin &gt;&gt; n1 &gt;&gt; n2;\n    fat_pot(n1, n2, r1, r2, r3);\n    cout &lt;&lt; \"Fatorial1: \" &lt;&lt; r1 &lt;&lt; endl;\n    cout &lt;&lt; \"Fatorial2: \" &lt;&lt; r2 &lt;&lt; endl;\n    cout &lt;&lt; \"Potencia: \" &lt;&lt; r3 &lt;&lt; endl;\n    return 0;\n}\nint fatorial(int n){\n    int i, r = 1;\n    for(i = 1; i &lt;= n; i++){\n        r *= i;\n    }\n    return r;\n}\nint potencia(int b, int e){\n    int i, r = 1;\n    for(i = 1; i &lt;= e; i++){\n        r *= b;\n    }\n    return r;\n}\nvoid fat_pot(int x, int y, int& f1, int& f2, int& p){\n    f1 = fatorial(x);\n    f2 = fatorial(y);\n    p = potencia(x, y);\n}"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#exercício-2",
@@ -5730,14 +5730,14 @@
     "href": "slides/08-funcoes3/08-funcoes3.html#exercício-2-solução",
     "title": "Funções III",
     "section": "Exercício 2: Solução",
-    "text": "Exercício 2: Solução\nvoid digitos_par_impar(int x, int &pares, int &impares);\n\nint main(){\n    int num, np, ni;\n    cout << \"Insira um nr. inteiro:\\n\";\n    cin >> num;\n    digitos_par_impar(num, np, ni);\n    cout << \"Digitos pares: \" << np << endl;\n    cout << \"Digitos impares: \" << ni << endl;\n    return 0;\n}\nvoid digitos_par_impar(int x, int &pares, int &impares){\n    int d;\n\n    pares = 0;\n    impares = 0;\n\n    while(x > 0){\n        d = x % 10;\n        if(d % 2 == 0){\n            pares++;\n        }\n        else{\n            impares++;\n        }\n        x = x/10;\n    }\n}"
+    "text": "Exercício 2: Solução\nvoid digitos_par_impar(int x, int &pares, int &impares);\n\nint main(){\n    int num, np, ni;\n    cout &lt;&lt; \"Insira um nr. inteiro:\\n\";\n    cin &gt;&gt; num;\n    digitos_par_impar(num, np, ni);\n    cout &lt;&lt; \"Digitos pares: \" &lt;&lt; np &lt;&lt; endl;\n    cout &lt;&lt; \"Digitos impares: \" &lt;&lt; ni &lt;&lt; endl;\n    return 0;\n}\nvoid digitos_par_impar(int x, int &pares, int &impares){\n    int d;\n\n    pares = 0;\n    impares = 0;\n\n    while(x &gt; 0){\n        d = x % 10;\n        if(d % 2 == 0){\n            pares++;\n        }\n        else{\n            impares++;\n        }\n        x = x/10;\n    }\n}"
   },
   {
     "objectID": "slides/08-funcoes3/08-funcoes3.html#sumário",
     "href": "slides/08-funcoes3/08-funcoes3.html#sumário",
     "title": "Funções III",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nParâmetros de entrada, saída e de entrada e saída\nFunções que chamam outras funções para simplificar a lógica de programas\n\n\n\n\nECT3201 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nParâmetros de entrada, saída e de entrada e saída\nFunções que chamam outras funções para simplificar a lógica de programas\n\n\n\n\n\nECT3201 - Linguagem de Programação"
   },
   {
     "objectID": "slides/09-funcoes_rec/09-funcoes_rec.html#funções",

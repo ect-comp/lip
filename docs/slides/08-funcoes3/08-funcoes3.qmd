@@ -105,14 +105,6 @@ Quantos parâmetros de entrada, saída e entrada/saída?
     - `void quoc_resto(int x, int y, int& q, int& r);}` $\rightarrow$ 2 entradas, 2 saídas
 ---
 
-## Lista de Presença
-
-![](bit.ly_lip_20250929.png){fig-align="center"}
-
-<a href="https://bit.ly/lip_20250929"><p style="text-align:center;">https://bit.ly/lip_20250929</p></a>
-
----
-
 ## Funções com Múltiplas Saídas
 - Funções com múltiplas saídas são em geral mais complexas
 - Dica: dividir o problema
