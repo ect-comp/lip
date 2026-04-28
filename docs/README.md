@@ -41,16 +41,16 @@
 - Parâmetros de saída
 - Parâmetros de entrada e saída
 
+## [28/04 - Vetores](./slides/10-vetores/10-vetores.html)
+- Sintaxe de declaração
+- Acesso às posições
+- Inicialização
+
 <!--
 
 ## [06/10 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
 - Estruturas recursivas
 - Passo base e passo recursivo
-
-## [13/10 - Vetores](./slides/10-vetores/10-vetores.html)
-- Sintaxe de declaração
-- Acesso às posições
-- Inicialização
 
 ## [13/10 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores

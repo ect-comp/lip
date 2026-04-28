@@ -9,7 +9,7 @@ title-slide-attributes:
 ## Nas Aulas Anteriores
 
 - Construções de funções em C++
-- Funções recursivas em C++
+<!-- - Funções recursivas em C++ -->
 ---
 
 ## Objetivo da Aula
@@ -317,9 +317,9 @@ int main(){
 
 ## Lista de Presença
 
-![](bit.ly_lip_20251013.png){fig-align="center"}
+![](lip_20260428.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20251013"><p style="text-align:center;">https://bit.ly/lip_20251013</p></a>
+<a href="https://bit.ly/lip_20260428"><p style="text-align:center;">https://bit.ly/lip_20260428</p></a>
 
 ---
 
