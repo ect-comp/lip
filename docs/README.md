@@ -46,15 +46,15 @@
 - Acesso às posições
 - Inicialização
 
+## [05/05 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
+- Sintaxe de implementação de funções com vetores
+- Funções recursivas com vetores
+
 <!--
 
 ## [06/10 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
 - Estruturas recursivas
 - Passo base e passo recursivo
-
-## [13/10 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
-- Sintaxe de implementação de funções com vetores
-- Funções recursivas com vetores
 
 ## [20/10 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
 - Sintaxe de implementação de funções com matrizes

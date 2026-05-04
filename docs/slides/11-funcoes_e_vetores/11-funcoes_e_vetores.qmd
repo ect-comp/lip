@@ -101,6 +101,14 @@ Escrever assinatura da função:
 ```
 ---
 
+## Lista de Presença
+
+![](lip_20260505.png){fig-align="center"}
+
+<a href="https://bit.ly/lip_20260505"><p style="text-align:center;">https://bit.ly/lip_20260505</p></a>
+
+---
+
 ## Funções com Vetores
 #### Chamada de Funções
 
@@ -181,6 +189,8 @@ int[] soma_vetores(int v1[], int v2[], int n);
    entrada um vetor de caracteres e um caractere.
    A função deve retornar quantos dos caracteres no vetor são iguais ao caractere passado como parâmetro
 ---
+
+<!--
 
 ## Funções com Vetores
 #### Funções Recursivas
@@ -292,9 +302,10 @@ int soma(int v[], int n){
    de um vetor são iguais a um caractere passado como parâmetro) de forma recursiva 
 ---
 
+-->
+
 ## Sumário
 Na aula de hoje:
 
 - Sintaxe de implementação de funções com vetores
-- Funções recursivas com vetores
 - Exercícios

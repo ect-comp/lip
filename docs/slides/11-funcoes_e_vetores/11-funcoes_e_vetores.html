@@ -497,6 +497,15 @@ Prof.&nbsp;Bruno Silva
 <span id="cb3-3"><a href="#cb3-3"></a><span class="fl">3.</span> <span class="dt">int</span> computa_maior<span class="op">(</span><span class="dt">int</span> v1<span class="op">[],</span> <span class="dt">int</span> tam1<span class="op">,</span></span>
 <span id="cb3-4"><a href="#cb3-4"></a>                     <span class="dt">int</span> v2<span class="op">[],</span> <span class="dt">int</span> tam2<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+<section id="lista-de-presença" class="slide level2">
+<h2>Lista de Presença</h2>
+
+<img data-src="lip_20260505.png" class="r-stretch quarto-figure-center"><a href="https://bit.ly/lip_20260505">
+<p style="text-align:center;">
+https://bit.ly/lip_20260505
+</p>
+</a><p><a href="https://bit.ly/lip_20260505"></a></p>
+</section>
 <section id="funções-com-vetores" class="slide level2">
 <h2>Funções com Vetores</h2>
 <h4 id="chamada-de-funções">Chamada de Funções</h4>
@@ -565,122 +574,133 @@ Prof.&nbsp;Bruno Silva
 <li>Implemente uma função que recebe como parâmetros de entrada um vetor de caracteres e um caractere. A função deve retornar quantos dos caracteres no vetor são iguais ao caractere passado como parâmetro</li>
 </ol>
 </section>
-<section id="funções-com-vetores-4" class="slide level2">
-<h2>Funções com Vetores</h2>
-<h4 id="funções-recursivas">Funções Recursivas</h4>
-<p>Funções recursivas também podem ser utilizadas com vetores</p>
-</section>
-<section id="funções-com-vetores-5" class="slide level2">
-<h2>Funções com Vetores</h2>
-<h4 id="funções-recursivas-1">Funções Recursivas</h4>
-<ul>
-<li>A recursividade é alcançada pela divisão do vetor em partes menores:
-<ul>
-<li>Primeira chamada considera todos as <code>n</code> posições de um vetor</li>
-<li>Segunda chamada considera as <code>n-1</code> primeiras posições</li>
-<li>Terceira chamada considera as <code>n-2</code> primeiras posições</li>
-<li>Passo base: alcançado quando não é possível dividir o vetor, ou seja, o seu tamanho é igual a 1</li>
-</ul></li>
-</ul>
-</section>
-<section id="funções-recursivas-2" class="slide level2 nostretch">
-<h2>Funções Recursivas</h2>
-<h4 id="soma-dos-valores-em-um-vetor">Soma dos Valores em um Vetor</h4>
-<p>Função recursiva para a soma de todos os valores de um vetor:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/array_rec1.png" width="500"></p>
-</figure>
-</div>
-</section>
-<section id="funções-recursivas-3" class="slide level2 nostretch">
-<h2>Funções Recursivas</h2>
-<h4 id="soma-dos-valores-em-um-vetor-1">Soma dos Valores em um Vetor</h4>
-<p>A primeira chamada à função <code>soma</code> divide o vetor em duas partes: um nr. inteiro igual ao último valor e um vetor contendo os demais valores. A função deve ser chamada novamente para o novo vetor</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/array_rec2.png" style="width:100.0%"></p>
-</figure>
-</div>
-</section>
-<section id="funções-recursivas-4" class="slide level2 nostretch">
-<h2>Funções Recursivas</h2>
-<h4 id="soma-dos-valores-em-um-vetor-2">Soma dos Valores em um Vetor</h4>
-<p>O mesmo acontece para todas as demais chamadas:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/array_rec3.png" style="width:80.0%"></p>
-</figure>
-</div>
-</section>
-<section id="funções-recursivas-5" class="slide level2 nostretch">
-<h2>Funções Recursivas</h2>
-<h4 id="soma-dos-valores-em-um-vetor-3">Soma dos Valores em um Vetor</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/array_rec4.png" style="width:70.0%"></p>
-</figure>
-</div>
-</section>
-<section id="funções-recursivas-6" class="slide level2 nostretch">
-<h2>Funções Recursivas</h2>
-<h4 id="soma-dos-valores-em-um-vetor-4">Soma dos Valores em um Vetor</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/array_rec5.png" style="width:60.0%"></p>
-</figure>
-</div>
-</section>
-<section id="funções-recursivas-7" class="slide level2 nostretch">
-<h2>Funções Recursivas</h2>
-<h4 id="soma-dos-valores-em-um-vetor-5">Soma dos Valores em um Vetor</h4>
-<p>Quando o vetor possui apenas um valor, o passo base é alcançado</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/array_rec6.png" style="width:30.0%"></p>
-</figure>
-</div>
-</section>
-<section id="funções-recursivas-8" class="slide level2">
-<h2>Funções Recursivas</h2>
-<h4 id="soma-dos-valores-em-um-vetor-6">Soma dos Valores em um Vetor</h4>
-<p>Após isto, as chamadas que estão empilhadas utilizam os resultados calculados para serem desempilhadas e calcular a soma de todos os valores do vetor:</p>
-<ul>
-<li><code>s([2,3]) = 5</code></li>
-<li><code>s([2,3,6]) = 11</code></li>
-<li><code>s([2,3,6,8]) = 19</code></li>
-<li><code>s([2,3,6,8,4]) = 23</code></li>
-</ul>
-</section>
-<section id="funções-recursivas-9" class="slide level2">
-<h2>Funções Recursivas</h2>
-<h4 id="soma-dos-valores-em-um-vetor-7">Soma dos Valores em um Vetor</h4>
-<p>Função resultante:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource c++ number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1"></a><span class="dt">int</span> soma<span class="op">(</span><span class="dt">int</span> v<span class="op">[],</span> <span class="dt">int</span> n<span class="op">){</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a>    <span class="cf">if</span><span class="op">(</span>n <span class="op">==</span> <span class="dv">1</span><span class="op">){</span></span>
-<span id="cb7-3"><a href="#cb7-3"></a>        <span class="cf">return</span> v<span class="op">[</span><span class="dv">0</span><span class="op">];</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a>    <span class="op">}</span></span>
-<span id="cb7-5"><a href="#cb7-5"></a>    <span class="cf">else</span><span class="op">{</span></span>
-<span id="cb7-6"><a href="#cb7-6"></a>        <span class="cf">return</span> soma<span class="op">(</span>v<span class="op">,</span> n<span class="op">-</span><span class="dv">1</span><span class="op">)</span> <span class="op">+</span> v<span class="op">[</span>n<span class="op">-</span><span class="dv">1</span><span class="op">];</span></span>
-<span id="cb7-7"><a href="#cb7-7"></a>    <span class="op">}</span></span>
-<span id="cb7-8"><a href="#cb7-8"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="exercícios-2" class="slide level2">
-<h2>Exercícios:</h2>
-<ol type="1">
-<li>Implemente uma função recursiva chamada <code>imprime_vet</code>, para imprimir os elementos de um vetor de números inteiros de tamanho <code>n</code> na tela
-<ul>
-<li>Caso os valores tenham sido impressos na ordem inversa dos valores digitados, modifique a função para imprimir os valores na mesma ordem</li>
-</ul></li>
-<li>Implemente a questão 2 anterior (contar quantos caracteres de um vetor são iguais a um caractere passado como parâmetro) de forma recursiva</li>
-</ol>
+<section class="slide level2">
+
+<!--
+
+## Funções com Vetores
+#### Funções Recursivas
+
+Funções recursivas também podem ser utilizadas com vetores
+
+---
+
+
+## Funções com Vetores
+#### Funções Recursivas
+
+- A recursividade é alcançada pela divisão do vetor em partes menores:
+    - Primeira chamada considera todos as `n` posições de um vetor
+    - Segunda chamada considera as `n-1` primeiras posições
+    - Terceira chamada considera as `n-2` primeiras posições
+    - Passo base: alcançado quando não é possível dividir o vetor,
+      ou seja, o seu tamanho é igual a 1
+
+---
+
+
+## Funções Recursivas {.nostretch}
+#### Soma dos Valores em um Vetor
+
+Função recursiva para a soma de todos os valores de um vetor:
+
+![](img/array_rec1.png){width=500 fig-align="center"}
+
+---
+
+
+## Funções Recursivas {.nostretch}
+#### Soma dos Valores em um Vetor
+
+A primeira chamada à função `soma` divide o vetor em duas partes:
+um nr. inteiro igual ao último valor e um vetor contendo os demais valores.
+A função deve ser chamada novamente para o novo vetor
+
+![](img/array_rec2.png){width=100% fig-align="center"}
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Soma dos Valores em um Vetor
+
+O mesmo acontece para todas as demais chamadas:
+
+![](img/array_rec3.png){width=80% fig-align="center"}
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Soma dos Valores em um Vetor
+
+![](img/array_rec4.png){width=70% fig-align="center"}
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Soma dos Valores em um Vetor
+
+![](img/array_rec5.png){width=60% fig-align="center"}
+
+---
+
+## Funções Recursivas {.nostretch}
+#### Soma dos Valores em um Vetor
+
+Quando o vetor possui apenas um valor, o passo base é alcançado
+
+![](img/array_rec6.png){width=30% fig-align="center"}
+
+---
+
+## Funções Recursivas
+#### Soma dos Valores em um Vetor
+
+Após isto, as chamadas que estão empilhadas utilizam os
+resultados calculados para serem desempilhadas e calcular
+a soma de todos os valores do vetor:
+
+- `s([2,3]) = 5`
+- `s([2,3,6]) = 11`
+- `s([2,3,6,8]) = 19`
+- `s([2,3,6,8,4]) = 23`
+
+---
+
+## Funções Recursivas
+#### Soma dos Valores em um Vetor
+
+Função resultante:
+
+```C++
+int soma(int v[], int n){
+    if(n == 1){
+        return v[0];
+    }
+    else{
+        return soma(v, n-1) + v[n-1];
+    }
+}
+```
+
+---
+
+## Exercícios:
+
+1. Implemente uma função recursiva chamada `imprime_vet`, para
+   imprimir os elementos de um vetor de números inteiros de tamanho `n` na tela
+    - Caso os valores tenham sido impressos na ordem inversa dos valores digitados, modifique a função para imprimir os valores na mesma ordem
+2. Implemente a questão 2 anterior (contar quantos caracteres
+   de um vetor são iguais a um caractere passado como parâmetro) de forma recursiva 
+
+---
+
+-->
 </section>
 <section id="sumário" class="slide level2">
 <h2>Sumário</h2>
 <p>Na aula de hoje:</p>
 <ul>
 <li>Sintaxe de implementação de funções com vetores</li>
-<li>Funções recursivas com vetores</li>
 <li>Exercícios</li>
 </ul>
 
