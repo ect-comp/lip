@@ -166,9 +166,9 @@ int m[][4] = {1,2,3,4,
 
 ## Lista de Presença
 
-![](bit.ly_lip_20251020.png){fig-align="center"}
+![](lip_20260512.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20251020"><p style="text-align:center;">https://bit.ly/lip_20251020</p></a>
+<a href="https://bit.ly/lip_20260512"><p style="text-align:center;">https://bit.ly/lip_20260512</p></a>
 
 ---
 
