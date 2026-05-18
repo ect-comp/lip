@@ -54,6 +54,8 @@
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
 
+## [19/05 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
+
 <!--
 
 ## [06/10 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
@@ -82,8 +84,6 @@
 - Comando de repetição `for`
 - Comando de repetição `while`
 - Comandos `break` e `continue`
-
-## [18/06 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
 
 ## [05/11 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 

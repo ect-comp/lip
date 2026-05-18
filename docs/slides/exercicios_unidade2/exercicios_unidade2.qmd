@@ -6,26 +6,178 @@ title-slide-attributes:
   data-background-opacity: "0.05"
 ---
 
-## Exercício 1
-#### Função para Informar se Vetor é Conjunto
+## Problema
 
-Um vetor é considerado um conjunto quando
-nenhum dos seus valores se repetem.
+Você se depara com a seguinte expressão para ser computada:
 
-**Função**: informar (verdadeiro ou falso) se vetor é conjunto.
-Parâmetro: vetor (e o seu tamanho)
+$$
+    C = (A.B)^t - B^t,
+$$
 
-Implemente também a função `main`.
+onde $A$, $B$ e $C$ são matrizes $n \times n$.
+
+Como proceder?
 
 ---
 
-## Exercício 2
-#### Função para calcular conjunto união
+## Solução
 
-**Função**: calcular o conjunto união (parâmetro de saída)
-entre dois conjuntos (parâmetros de entrada)
+Dividir o problema em funções auxilia a:
 
-Implemente também a função `main`.
+
+- Resolver o problema por partes
+- Diagnosticar mais facilmente erros de lógica
+- Disponibilizar as funções para serem reutilizadas em outras expressões
+
+---
+
+## Solução
+
+Com as funções implementadas, basta chamá-las na função `main`,
+realizando chamadas também para a leitura e impressão das matrizes.
+
+---
+
+## Solução
+#### Função main
+
+```C++
+int main(){
+    // declaração de variáveis
+    ...
+
+    // leitura da dimensão n e matrizes nxn
+    cin >> n;
+    le_mat(A, n);
+    le_mat(B, n);
+
+    // chamada de funções para cálculo da expressão
+    ...
+
+    // impressão da matriz resultante
+    imprime_mat(C, n);
+
+    return 0;
+}
+```
+---
+
+## Solução
+
+- Funções auxiliares:
+  - `le_mat`
+  - `imprime_mat`
+- Funções para o cálculo da expressão:
+  - `transpoe`: calcula a matriz transposta
+  - `subtrai`: realiza a subtração entre matrizes
+  - `multiplica`: realiza a multiplicação matricial
+
+Observe que estas últimas devem armazenar o resultado em parâmetros de saída.
+
+---
+
+## Multiplicação de Matrizes
+#### Dimensões das Matrizes
+
+Lembre-se que, para $R = A.B$ ser possível:
+
+- $A$ precisa ter $n$ colunas
+- $B$ precisa ter $n$ linhas
+
+---
+
+## Multiplicação de Matrizes
+#### Dimensões das Matrizes
+
+Além disso:
+
+- O número de linhas de $A$ será o número
+  de linhas da matriz resultante $R$
+- O número de colunas de $B$ será o número
+  de colunas da matriz resultante $R$
+
+---
+
+## Multiplicação de Matrizes
+#### Dimensões das Matrizes
+
+Em outras palavras:
+
+- Sendo $A$ uma matriz $m \times n$
+- Sendo $B$ uma matriz $n \times o$
+
+A matriz resultante $R$ terá tamanho $m \times o$
+
+---
+
+## Multiplicação de Matrizes
+#### Cálculo do Produto
+
+Podemos relembrar como se calcula $R = A.B$
+através do seguinte exemplo:
+
+$$
+    \begin{bmatrix}
+    0 & 1 & -1 & 0\\
+    2 & 3 &  1 & 1
+    \end{bmatrix}
+    \begin{bmatrix}
+    1 & 1 & 0\\
+    0 & 1 & 1\\
+    0 & 0 & 2\\
+    0 & 0 & 3
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    0 & 1 & -1\\
+    0 & 9 &  8
+    \end{bmatrix}
+$$
+
+---
+
+## Multiplicação de Matrizes
+#### Cálculo do Produto
+
+Especificamente, observe que a 1a. linha
+de $R$ é dada por: 
+
+$$
+\begin{align*}
+R_{0,0} & = A_{0,0}.B_{0,0} + A_{0,1}.B_{1,0} + A_{0,2}.B_{2,0} + A_{0,3}.B_{3,0}\\
+R_{0,1} & = A_{0,0}.B_{0,1} + A_{0,1}.B_{1,1} + A_{0,2}.B_{2,1} + A_{0,3}.B_{3,1}\\
+R_{0,2} & = A_{0,0}.B_{0,2} + A_{0,1}.B_{1,2} + A_{0,2}.B_{2,2} + A_{0,3}.B_{3,2}\\
+\end{align*}
+$$
+
+---
+
+## Multiplicação de Matrizes
+#### Cálculo do Produto
+
+E a 2a. linha de $R$ é dada por: 
+
+$$
+\begin{align*}
+R_{1,0} & = A_{1,0}.B_{0,0} + A_{1,1}.B_{1,0} + A_{1,2}.B_{2,0} + A_{1,3}.B_{3,0}\\
+R_{1,1} & = A_{1,0}.B_{0,1} + A_{1,1}.B_{1,1} + A_{1,2}.B_{2,1} + A_{1,3}.B_{3,1}\\
+R_{1,2} & = A_{1,0}.B_{0,2} + A_{1,1}.B_{1,2} + A_{1,2}.B_{2,2} + A_{1,3}.B_{3,2}\\
+\end{align*}
+$$
+
+---
+
+## Multiplicação de Matrizes
+#### Cálculo do Produto
+
+Ou seja, podemos dizer que um valor $R_{i,j}$
+pode ser calculado pelo seguinte somatório:
+
+$$
+    R_{i,j} = \sum_{k=0}^{n-1}A_{i,k}B_{k,j},
+$$
+onde $n$ é o número de colunas de $A$ (e de linhas
+de $B$)
 
 ---
 
@@ -37,40 +189,116 @@ Implemente também a função `main`.
 
 ---
 
-## Exercício 3
-#### Multiplicação entre matriz e vetor
+## Multiplicação de Matrizes
+#### Cálculo do Produto
 
-O vetor $\mathbf{u}$ de $R^N$ é calculado a partir do vetor $\mathbf{v}$
-também de $R^N$ por
+Alternativamente, observe que cada valor $R_{i,j}$
+é igual ao produto interno entre:
 
-$$
-    \mathbf{u} = A\mathbf{v},
-$$
-
-ou seja
+- O vetor linha $i$ da matriz $A$
+- O vetor coluna $j$ da matriz $B$
 
 ---
 
-## Exercício 3
-#### Multiplicação entre matriz e vetor
+## Multiplicação de Matrizes
+#### Implementação de Função
 
-$$
-\begin{align*}
-u_{0}   & = A_{0,0}.v_{0} + A_{0,1}.v_{1} + ... + A_{0,n-1}.v_{n-1}\\
-u_{1}   & = A_{1,0}.v_{0} + A_{1,1}.v_{1} + ... + A_{1,n-1}.v_{n-1}\\
-\vdots\\
-u_{n-1} & = A_{n-1,0}.v_{0} + A_{n-1,1}.v_{1} + ... + A_{n-1,n-1}.v_{n-1}\\
-\end{align*}
-$$
+A implementação da função para calcular o produto
+entre duas matrizes deve:
+
+- Conter duas matrizes como parâmetros de entrada (e as suas dimensões)
+- Conter uma matriz como parâmetro de saída (e as suas dimensões)
 
 ---
 
-## Exercício 3
-#### Multiplicação entre matriz e vetor
+## Multiplicação de Matrizes
+#### Implementação de Função
 
-**Função**: calcular o vetor produto (parâmetro de saída)
-entre uma matriz (parâmetro de entrada) e um vetor (outro parâmetro de entrada).
+Então, você pode escolher entre duas estratégias:
 
-A matriz $M \times N$ terá sempre $N$ colunas, e os vetores tamanho $N$.
+1. Computar cada valor $R_{i,j}$ individualmente, utilizando o somatório
+2. Para cada valor $R_{i,j}$, calcular o produto interno
+   entre o vetor linha $i$ de $A$ e o vetor coluna $j$ de $B$
 
-Implemente também a função `main`.
+---
+
+## Multiplicação de Matrizes
+#### Implementação de Função
+
+- As duas formas requerem dois laços para percorrer todas
+  as posições $R_{i,j}$ da matriz resultante
+- Para cada $R_{i,j}$ sendo calculado, você precisará:
+    - De outro laço para calcular o somatório (estratégia 1) **ou**
+    - De uma chamada a uma função que calcula o produto interno
+      entre dois vetores (estatégia 2)
+
+---
+
+## Multiplicação de Matrizes
+#### Acessando Vetores de uma Matriz
+
+Um truque pode ser usado para a estratégia 2, tornando
+a implementação bem mais fácil:
+
+> Em C++, dada uma matriz `M`, você pode
+> utilizar `M[i]` para passar a linha `i`
+> da matriz para funções que aceitam vetores
+> como parâmetro
+
+---
+
+## Multiplicação de Matrizes
+#### Acessando Vetores de uma Matriz
+
+Ou seja, cada linha de uma matriz pode
+ser passada para a função:
+
+```C++
+int produto_interno(int v1[], int v2[], int n);
+```
+
+---
+
+## Multiplicação de Matrizes
+#### Acessando Vetores de uma Matriz
+
+> Como somente é possível passar vetores linha,
+> para passar os vetores coluna da segunda
+> matriz, você pode passar os vetores linha da matriz
+> transposta
+
+Então:
+
+1. Calcule a transposta da matriz $B$
+2. Para cada $R_{i,j}$, chame a função `produto_interno`
+   passando a linha $i$ de $A$ e a linha $j$ de $B^t$
+
+---
+
+## Solução
+
+Programa final:
+
+```C++
+int main(){
+    // declaração de variáveis
+    int A[MAX][MAX], B[MAX][MAX], C[MAX][MAX], AB[MAX][MAX],
+        ABt[MAX][MAX], Bt[MAX][MAX];
+
+    // leitura da dimensão n e matrizes nxn
+    cin >> n;
+    le_mat(A, n);
+    le_mat(B, n);
+
+    // chamada de funções para cálculo da expressão
+    multiplica(A, B, AB, n); //AxB
+    transpoe(AB, ABt, n); //(AxB)^t
+    transpoe(B, Bt, n); //B^t
+    subtrai(ABt, Bt, C);
+
+    // impressão da matriz resultante
+    imprime_mat(C, n);
+
+    return 0;
+}
+```

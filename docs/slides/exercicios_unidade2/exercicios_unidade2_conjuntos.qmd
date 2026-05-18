@@ -1,0 +1,76 @@
+---
+title: "Unidade 2: exercícios"
+title-slide-attributes:
+  data-background-image: ../../assets/img/brasao_ufrn_positivo.png
+  data-background-size: "50%, auto, contain"
+  data-background-opacity: "0.05"
+---
+
+## Exercício 1
+#### Função para Informar se Vetor é Conjunto
+
+Um vetor é considerado um conjunto quando
+nenhum dos seus valores se repetem.
+
+**Função**: informar (verdadeiro ou falso) se vetor é conjunto.
+Parâmetro: vetor (e o seu tamanho)
+
+Implemente também a função `main`.
+
+---
+
+## Exercício 2
+#### Função para calcular conjunto união
+
+**Função**: calcular o conjunto união (parâmetro de saída)
+entre dois conjuntos (parâmetros de entrada)
+
+Implemente também a função `main`.
+
+---
+
+## Lista de Presença
+
+![](bit.ly_lip_20250618.png){fig-align="center"}
+
+<a href="https://bit.ly/lip_20250618"><p style="text-align:center;">https://bit.ly/lip_20250618</p></a>
+
+---
+
+## Exercício 3
+#### Multiplicação entre matriz e vetor
+
+O vetor $\mathbf{u}$ de $R^N$ é calculado a partir do vetor $\mathbf{v}$
+também de $R^N$ por
+
+$$
+    \mathbf{u} = A\mathbf{v},
+$$
+
+ou seja
+
+---
+
+## Exercício 3
+#### Multiplicação entre matriz e vetor
+
+$$
+\begin{align*}
+u_{0}   & = A_{0,0}.v_{0} + A_{0,1}.v_{1} + ... + A_{0,n-1}.v_{n-1}\\
+u_{1}   & = A_{1,0}.v_{0} + A_{1,1}.v_{1} + ... + A_{1,n-1}.v_{n-1}\\
+\vdots\\
+u_{n-1} & = A_{n-1,0}.v_{0} + A_{n-1,1}.v_{1} + ... + A_{n-1,n-1}.v_{n-1}\\
+\end{align*}
+$$
+
+---
+
+## Exercício 3
+#### Multiplicação entre matriz e vetor
+
+**Função**: calcular o vetor produto (parâmetro de saída)
+entre uma matriz (parâmetro de entrada) e um vetor (outro parâmetro de entrada).
+
+A matriz $M \times N$ terá sempre $N$ colunas, e os vetores tamanho $N$.
+
+Implemente também a função `main`.
