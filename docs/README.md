@@ -56,13 +56,13 @@
 
 ## [19/05 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
 
+## [26/05 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
+
 <!--
 
 ## [06/10 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
 - Estruturas recursivas
 - Passo base e passo recursivo
-
-## [03/11 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 
 ## [10/11 - Strings](./slides/13-strings/13-strings.html)
 - Caractere delimitador `\0`
