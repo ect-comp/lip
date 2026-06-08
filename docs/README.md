@@ -64,6 +64,9 @@
 - Entrada/saída
 - Funções de manipulação de strings
 
+## [09/06 - Strings II](./slides/14-strings2/14-strings2.html)
+- Leitura de strings com espaços em branco
+
 <!--
 
 ## [06/10 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
@@ -104,9 +107,6 @@
 - Exercícios
 
 ## [26/10 - Multiplicação de Matrizes](./slides/multiplicacao_matricial/multiplicacao_matricial.html)
-
-## [14/11 - Strings II](./slides/17-strings2/17-strings2.html)
-- Leitura de strings com espaços em branco
 
 ## [23/11 - Tipos Estruturados II](./slides/19-tipos_estruturados2/19-tipos_estruturados2.html)
 - Uso de tipos estruturados em funções
