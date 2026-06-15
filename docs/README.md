@@ -67,11 +67,11 @@
 ## [09/06 - Strings II](./slides/14-strings2/14-strings2.html)
 - Leitura de strings com espaços em branco
 
-<!--
-
-## [06/10 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec.html)
+## [16/06 - Funções Recursivas](./slides/09-funcoes_rec/09-funcoes_rec_alt.html)
 - Estruturas recursivas
 - Passo base e passo recursivo
+
+<!--
 
 ## [10/11 - Strings](./slides/13-strings/13-strings.html)
 - Caractere delimitador `\0`
