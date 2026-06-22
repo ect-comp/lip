@@ -71,17 +71,17 @@
 - Estruturas recursivas
 - Passo base e passo recursivo
 
+## [23/06 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
+- Definição de tipos estruturados
+- Operações com variáveis de tipos estruturados
+- Funções e tipos estruturados
+
 <!--
 
 ## [10/11 - Strings](./slides/13-strings/13-strings.html)
 - Caractere delimitador `\0`
 - Entrada/saída
 - Funções de manipulação de strings
-
-## [24/11 - Tipos Estruturados](./slides/14-tipos_estruturados/14-tipos_estruturados.html)
-- Definição de tipos estruturados
-- Operações com variáveis de tipos estruturados
-- Funções e tipos estruturados
 
 ## [01/12 - Ordenação](./slides/15-ordenacao/15-ordenacao.html)
 - Ordenação

@@ -7060,7 +7060,7 @@
     "href": "slides/14-tipos_estruturados/14-tipos_estruturados.html#lista-de-presença",
     "title": "Tipos Estruturados",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20251124"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20260623"
   },
   {
     "objectID": "slides/14-tipos_estruturados/14-tipos_estruturados.html#utilizando-variáveis-do-tipo-estruturado",
@@ -8747,7 +8747,7 @@
     "href": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas",
     "title": "Funções Recursivas",
     "section": "Funções Recursivas",
-    "text": "Funções Recursivas\n\n\n\n\n\n\nFunção que possui chamadas diretas ou indiretas à ela mesma.\n\n\n\nExemplo:\nint funcao(int x){\n    if(x == 0){\n        return 1;\n    }\n    else{\n        cout &lt;&lt; x &lt;&lt; endl;\n        return funcao(x-1);\n    }\n}"
+    "text": "Funções Recursivas\n\n\n\n\n\n\nFunção que possui chamadas diretas ou indiretas à ela mesma.\n\n\n\nExemplo:\nint funcao(int x){\n    if(x == 0){\n        return 1;\n    }\n    else{\n        cout << x << endl;\n        return funcao(x-1);\n    }\n}"
   },
   {
     "objectID": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-1",
@@ -8817,7 +8817,7 @@
     "href": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-10",
     "title": "Funções Recursivas",
     "section": "Funções Recursivas",
-    "text": "Funções Recursivas\nExemplo: Fatorial\nDefinição matemática:\n\nf(n)=\\begin{cases}\n    1, & \\text{se } n = 0 \\text{, ou } n = 1\\\\\n    n*f(n-1), & \\text{se } n &gt; 0\\\\\n\\end{cases}"
+    "text": "Funções Recursivas\nExemplo: Fatorial\nDefinição matemática:\n\nf(n)=\\begin{cases}\n    1, & \\text{se } n = 0 \\text{, ou } n = 1\\\\\n    n*f(n-1), & \\text{se } n > 0\\\\\n\\end{cases}"
   },
   {
     "objectID": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-11",
@@ -8880,7 +8880,7 @@
     "href": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#lista-de-presença",
     "title": "Funções Recursivas",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20251006"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20260616"
   },
   {
     "objectID": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-19",
@@ -8978,7 +8978,7 @@
     "href": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-32",
     "title": "Funções Recursivas",
     "section": "Funções Recursivas",
-    "text": "Funções Recursivas\nExemplo: Soma dos n Primeiros Números Inteiros\nDefinição matemática:\n\n\n\n\ns(n)=\\begin{cases}\n    1, & \\text{se } n = 1\\\\\n    n+s(n-1), & \\text{se } n &gt; 1\\\\\n\\end{cases}\n\n\n\nFunção:\nint soma_n(int n){\n    if(n == 1){\n        return 1;\n    }\n    else{\n        return n+soma_n(n-1);\n    }\n}"
+    "text": "Funções Recursivas\nExemplo: Soma dos n Primeiros Números Inteiros\nDefinição matemática:\n\n\n\n\ns(n)=\\begin{cases}\n    1, & \\text{se } n = 1\\\\\n    n+s(n-1), & \\text{se } n > 1\\\\\n\\end{cases}\n\n\n\nFunção:\nint soma_n(int n){\n    if(n == 1){\n        return 1;\n    }\n    else{\n        return n+soma_n(n-1);\n    }\n}"
   },
   {
     "objectID": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-33",
@@ -8999,7 +8999,7 @@
     "href": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-35",
     "title": "Funções Recursivas",
     "section": "Funções Recursivas",
-    "text": "Funções Recursivas\nExemplo: Fórmula Matemática\nDaí, é possível deduzir a seguinte definição matemática:\n\nf(n)=\\begin{cases}\n    3, & \\text{se } n = 1\\\\\n    3n^2 + f(n-1), & \\text{se } n &gt; 1\\\\\n\\end{cases}"
+    "text": "Funções Recursivas\nExemplo: Fórmula Matemática\nDaí, é possível deduzir a seguinte definição matemática:\n\nf(n)=\\begin{cases}\n    3, & \\text{se } n = 1\\\\\n    3n^2 + f(n-1), & \\text{se } n > 1\\\\\n\\end{cases}"
   },
   {
     "objectID": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-36",
@@ -9027,7 +9027,7 @@
     "href": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#exemplo-de-sequência-recursiva",
     "title": "Funções Recursivas",
     "section": "Exemplo de Sequência Recursiva",
-    "text": "Exemplo de Sequência Recursiva\nSequência de Fibonacci\n\n\nDefinição matemática:\n\n\nf(n)=\\begin{cases}\n    1, & \\text{se } n = 0\\\\\n    1, & \\text{se } n = 1\\\\\n    f(n-1)+f(n-2), & \\text{se } n &gt; 1\\\\\n\\end{cases}\n\n\n\nFunção:\nint fib(int n){\n    if(n &lt;= 1){\n        return 1;\n    }\n    else{\n        return fib(n-1)+fib(n-2);\n    }\n}"
+    "text": "Exemplo de Sequência Recursiva\nSequência de Fibonacci\n\n\nDefinição matemática:\n\n\nf(n)=\\begin{cases}\n    1, & \\text{se } n = 0\\\\\n    1, & \\text{se } n = 1\\\\\n    f(n-1)+f(n-2), & \\text{se } n > 1\\\\\n\\end{cases}\n\n\n\nFunção:\nint fib(int n){\n    if(n <= 1){\n        return 1;\n    }\n    else{\n        return fib(n-1)+fib(n-2);\n    }\n}"
   },
   {
     "objectID": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#funções-recursivas-com-vetores",
@@ -9118,6 +9118,6 @@
     "href": "slides/09-funcoes_rec/09-funcoes_rec_alt.html#sumário",
     "title": "Funções Recursivas",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nFunções recursivas\nExemplos\n\n\n\n\n\nECT3201 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nFunções recursivas\nExemplos\n\n\n\n\nECT3201 - Linguagem de Programação"
   }
 ]
