@@ -76,18 +76,18 @@
 - Operações com variáveis de tipos estruturados
 - Funções e tipos estruturados
 
+## [Ordenação](./slides/15-ordenacao/15-ordenacao.html)
+- Ordenação
+- Ordenação com tipos estruturados
+  - Ordem crescente/decrescente de campos numéricos
+  - Ordem alfabética de campos string
+
 <!--
 
 ## [10/11 - Strings](./slides/13-strings/13-strings.html)
 - Caractere delimitador `\0`
 - Entrada/saída
 - Funções de manipulação de strings
-
-## [01/12 - Ordenação](./slides/15-ordenacao/15-ordenacao.html)
-- Ordenação
-- Ordenação com tipos estruturados
-  - Ordem crescente/decrescente de campos numéricos
-  - Ordem alfabética de campos string
 
 ## [08/10 - Comandos de Repetição](./slides/05-comandos_repeticao/05-comandos_repeticao.html)
 - Comando de repetição `for`
