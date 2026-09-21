@@ -33,11 +33,11 @@
 - Assinatura de funções
 - Definição de funções
 
-<!--
-
-## [14/04 - Funções II](./slides/07-funcoes2/07-funcoes2.html)
+## [22/09 - Funções II](./slides/07-funcoes2/07-funcoes2.html)
 - Função sem retorno (funções tipo `void`)
 - Passagem de parâmetro por valor e por referência
+
+<!--
 
 ## [14/04 - Funções III](./slides/08-funcoes3/08-funcoes3.html)
 - Parâmetros de entrada
