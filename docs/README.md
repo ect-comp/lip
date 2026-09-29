@@ -37,6 +37,8 @@
 - Função sem retorno (funções tipo `void`)
 - Passagem de parâmetro por valor e por referência
 
+## [29/09 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
+
 <!--
 
 ## [14/04 - Funções III](./slides/08-funcoes3/08-funcoes3.html)
