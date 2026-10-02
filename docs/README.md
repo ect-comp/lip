@@ -39,17 +39,17 @@
 
 ## [29/09 - Revisão - Unidade 1](./slides/revisao_unidade1/revisao_unidade1.html)
 
+## [06/10 - Vetores](./slides/10-vetores/10-vetores.html)
+- Sintaxe de declaração
+- Acesso às posições
+- Inicialização
+
 <!--
 
 ## [14/04 - Funções III](./slides/08-funcoes3/08-funcoes3.html)
 - Parâmetros de entrada
 - Parâmetros de saída
 - Parâmetros de entrada e saída
-
-## [28/04 - Vetores](./slides/10-vetores/10-vetores.html)
-- Sintaxe de declaração
-- Acesso às posições
-- Inicialização
 
 ## [05/05 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
 - Sintaxe de implementação de funções com vetores

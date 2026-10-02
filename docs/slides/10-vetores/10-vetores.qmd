@@ -9,8 +9,6 @@ title-slide-attributes:
 ## Nas Aulas Anteriores
 
 - Construções de funções em C++
-<!-- - Funções recursivas em C++ -->
----
 
 ## Objetivo da Aula
 
@@ -21,15 +19,12 @@ Introduzir o uso de vetores:
 - Inicialização de vetores
 - Exercícios
 
----
-
 ## Motivação
 #### Exercício
 
 Implemente um programa que leia as notas
 de 3 alunos e mostre quantas notas são maiores do
 que a média entre elas.
----
 
 ## Motivação
 
@@ -55,7 +50,6 @@ int main(){
     return 0;
 }
 ```
----
 
 ## Motivação
 
@@ -92,7 +86,6 @@ int main(){
     return 0;
 }
 ```
----
 
 ## Motivação
 
@@ -100,7 +93,6 @@ E se desejarmos mudar para 100 notas?
 
 - Uso de vetores
 - Também funciona para um tamanho `n` qualquer
----
 
 ## Vetor
 
@@ -111,7 +103,6 @@ E se desejarmos mudar para 100 notas?
     - Vetor de `int`
     - Vetor de `float`
     - Vetor de `bool`
----
 
 ## Vetor
 #### Representação em Memória
@@ -133,8 +124,6 @@ E se desejarmos mudar para 100 notas?
 
 ::::
 
----
-
 ## Declarando um Vetor
 #### Sintaxe
 
@@ -146,7 +135,6 @@ tipo_do_vetor nome_do_vetor[tamanho_do_vetor];
   `int, char, float, bool`
 - `nome_do_vetor` segue as mesmas regras que usamos para variáveis
 - O `tamanho_do_vetor` é uma expressão cujo tipo deve ser `int`
----
 
 ## Declarando um Vetor
 #### Exercício
@@ -156,7 +144,6 @@ Escrever declaração de vetor:
 1. Do tipo inteiro, com 30 posições, chamado `idades`
 2. Do tipo caractere, com 5 posições, chamado `vogais`
 3. Para armazenar `n` valores do tipo `float`
----
 
 ## Declarando um Vetor
 #### Exercício: Solução
@@ -165,7 +152,6 @@ Escrever declaração de vetor:
 2. char vogais[5];
 3. float v[n];
 ```
----
 
 ## Declarando um Vetor
 #### Tamanho de um Vetor em C++
@@ -173,7 +159,6 @@ Escrever declaração de vetor:
 - Em C++, o tamanho do vetor é o seu tamanho máximo
 - Ou seja, a declaração `int v[50];` diz que:
     - O vetor `v` pode conter **no máximo** 50 valores
----
 
 ## Declarando um Vetor
 #### Expressão Utilizada como Tamanho do Vetor
@@ -181,7 +166,6 @@ Escrever declaração de vetor:
 Por causa de uma extensão da linguagem, é possível utilizar
 `int v[n]`, com `n` sendo uma variável ou até expressões como
 `int v[n1+n2]`, desde que a expressão resulte em um inteiro
----
 
 ## Posições de um Vetor
 
@@ -203,8 +187,6 @@ Por causa de uma extensão da linguagem, é possível utilizar
 :::
 
 ::::
-
----
 
 ## Posições de um Vetor
 
@@ -237,29 +219,24 @@ qual o valor de cada expressão a seguir, sendo `x = 2`?
 
 ::::
 
----
-
 ## Inicialização de Vetores
 #### Sintaxe
 
 - `int v[5];` $\rightarrow$ inicializa cada valor com lixo
 - `int v[5] = {10, 20, 30, 40, 50};` $\rightarrow$ inicializa com valores indicados
 - `int v[] = {10, 20, 30, 40, 50};` $\rightarrow$ inicializa com valores indicados (tamanho do vetor é deduzido a partir dos valores)
----
 
 ## Inicialização de Vetores
 #### Sintaxe
 
 - `int v[5] = {};` $\rightarrow$ inicializa todos os valores com 0
 - `int v[5] = {5, 10};` $\rightarrow$ inicializa posições 0 e 1 com os valores indicados, todos os outros com 0
----
 
 ## Motivação
 
 Voltando ao exercício inicial: e se desejarmos mudar para 100 notas?
 
 - Uso de vetores
----
 
 ## Exercício Inicial
 #### Exercício: Solução
@@ -282,14 +259,11 @@ int main(){
     return 0;
 }
 ```
----
 
 ## Exercício Inicial
 
 E se fosse pedido um número `n` (informado pelo usuário)
 de notas?
-
----
 
 ## Exercício Inicial
 #### Exercício: Solução
@@ -313,23 +287,18 @@ int main(){
     return 0;
 }
 ```
----
 
 ## Lista de Presença
 
-![](lip_20260428.png){fig-align="center"}
+![](lip_20261006.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20260428"><p style="text-align:center;">https://bit.ly/lip_20260428</p></a>
-
----
+<a href="https://bit.ly/lip_20261006"><p style="text-align:center;">https://bit.ly/lip_20261006</p></a>
 
 ## Exercício 1
 
 Ler um número `n` do usuário e em seguida, armazenar
 `n` notas em um vetor. O seu programa deve imprimir
 a maior das notas armazenadas.
-
----
 
 ## Exercício 1: Solução
 
@@ -360,15 +329,12 @@ int main(){
     return 0;
 }
 ```
----
 
 ## Exercício 2
 
 Ler um número `n` do usuário e em seguida, armazenar
 `n` notas em um vetor. O seu programa deve imprimir
 a posição da maior nota armazenada.
-
----
 
 ## Exercício 2: Solução
 
@@ -399,7 +365,6 @@ int main(){
     return 0;
 }
 ```
----
 
 ## Exercício 3
 
@@ -411,7 +376,6 @@ vetorial dos dois vetores.
 - Vetor `u` = `u[0],...,u[n-1]`
 - Vetor `v` = `v[0],...,v[n-1]`
 - Vetor soma: `u[0]+v[0],u[1]+v[1],...,u[n-1]+v[n-1]`
----
 
 ## Exercício 4
 
@@ -420,7 +384,6 @@ O seu programa deve armazenar em um vetor os dígitos que
 compõem o número `n` na ordem inversa.
 Por exemplo, para `n = 2134`, o
 vetor resultante `v` deve ser igual a `[4,3,1,2]`.
----
 
 ## Sumário
 
