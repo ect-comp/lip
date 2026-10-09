@@ -6360,21 +6360,21 @@
     "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#lista-de-presença",
     "title": "Funções e Vetores",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20260505"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20261013"
   },
   {
     "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores",
     "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores",
     "title": "Funções e Vetores",
     "section": "Funções com Vetores",
-    "text": "Funções com Vetores\nChamada de Funções\n\nNas chamadas às funções, variáveis do tipo vetor são passadas como parâmetros utilizando apenas o seu nome\nExemplo:\n\nvoid imprime_vet(int vet[], int n);\nint main(){\n        int n;\n        cin >> n;\n        int v[n], i;\n        for(i = 0; i < n; i++){\n            v[i] = 2*n+i;\n        }\n        imprime_vet(v, n); //chama função\n        return 0;\n}"
+    "text": "Funções com Vetores\nChamada de Funções\n\nNas chamadas às funções, variáveis do tipo vetor são passadas como parâmetros utilizando apenas o seu nome\nExemplo:\n\nvoid imprime_vet(int vet[], int n);\nint main(){\n        int n;\n        cin &gt;&gt; n;\n        int v[n], i;\n        for(i = 0; i &lt; n; i++){\n            v[i] = 2*n+i;\n        }\n        imprime_vet(v, n); //chama função\n        return 0;\n}"
   },
   {
     "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-1",
     "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-1",
     "title": "Funções e Vetores",
     "section": "Funções com Vetores",
-    "text": "Funções com Vetores\nPassagem de Parâmetros\nO que faz o código a seguir?\nvoid func(int vet[], int n){\n    int i;\n    for(i = 0; i < n; i++){\n        vet[i] = 1;\n    }\n}\nint main(){\n        int n;\n        cin >> n;\n        int v[n], i;\n        func(v, n);\n        for(i = 0; i < n; i++){\n            cout << v[i] << \" \";\n        }\n        cout << endl;\n        return 0;\n}"
+    "text": "Funções com Vetores\nPassagem de Parâmetros\nO que faz o código a seguir?\nvoid func(int vet[], int n){\n    int i;\n    for(i = 0; i &lt; n; i++){\n        vet[i] = 1;\n    }\n}\nint main(){\n        int n;\n        cin &gt;&gt; n;\n        int v[n], i;\n        func(v, n);\n        for(i = 0; i &lt; n; i++){\n            cout &lt;&lt; v[i] &lt;&lt; \" \";\n        }\n        cout &lt;&lt; endl;\n        return 0;\n}"
   },
   {
     "objectID": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#funções-com-vetores-2",
@@ -6479,7 +6479,7 @@
     "href": "slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html#sumário",
     "title": "Funções e Vetores",
     "section": "Sumário",
-    "text": "Sumário\nNa aula de hoje:\n\nSintaxe de implementação de funções com vetores\nExercícios\n\n\n\n\nECT3201 - Linguagem de Programação"
+    "text": "Sumário\nNa aula de hoje:\n\nSintaxe de implementação de funções com vetores\nExercícios"
   },
   {
     "objectID": "slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html#nas-aulas-anteriores",

@@ -14,7 +14,6 @@ Vetores em C++:
 - Acesso aos elementos
 - Inicialização
 - Exercícios
----
 
 ## Objetivo da Aula
 
@@ -22,15 +21,12 @@ Introduzir o uso de funções que operam sobre vetores:
 
 - Sintaxe
 - Exercícios
----
 
 ## Funções e Vetores
 
 - É possível passar vetores como parâmetro de funções
 - Além do vetor a ser passado como parâmetro, é necessário
   um parâmetro adicional $\rightarrow$ o tamanho do vetor
-
----
 
 ## Declaração de Função com Vetores
 #### Sintaxe
@@ -42,7 +38,6 @@ tipo_func nome_func(tipo_vetor nome_vetor[], int tam_vetor){
     corpo da funcao
 }
 ```
----
 
 ## Declaração de Função com Vetores
 #### Sintaxe
@@ -52,7 +47,6 @@ tipo_func nome_func(tipo_vetor nome_vetor[], int tam_vetor){
 - `nome_vetor` é o nome do vetor passado como parâmetro. Observe que o
   `[]` é vazio
 - `tam_vetor` é o tamanho do vetor passado como parâmetro
----
 
 ## Declaração de Função com Vetores
 #### Sintaxe
@@ -63,7 +57,6 @@ Caso haja mais de um vetor:
   incluir um parâmetro para o tamanho de cada um
 - Se tiverem um mesmo tamanho, basta utilizar
   um único parâmetro para o tamanho
----
 
 ## Declaração de Função com Vetores
 #### Sintaxe
@@ -76,7 +69,6 @@ tipo_func nome_func(tipo_vetor nome_vetor1[], int tam_vetor1,
     corpo da funcao
 }
 ```
----
 
 ## Declaração de Função com Vetores
 #### Exercícios
@@ -88,7 +80,6 @@ Escrever assinatura da função:
    no vetor são iguais a um caractere passado como parâmetro
 3. Que recebe dois vetores de inteiros e retorna o maior valor dentre todos,
    seja ele do primeiro ou do segundo vetor
----
 
 ## Declaração de Funções com Vetores
 #### Exercícios: Solução
@@ -99,15 +90,12 @@ Escrever assinatura da função:
 3. int computa_maior(int v1[], int tam1,
                      int v2[], int tam2);
 ```
----
 
 ## Lista de Presença
 
-![](lip_20260505.png){fig-align="center"}
+![](lip_20261013.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20260505"><p style="text-align:center;">https://bit.ly/lip_20260505</p></a>
-
----
+<a href="https://bit.ly/lip_20261013"><p style="text-align:center;">https://bit.ly/lip_20261013</p></a>
 
 ## Funções com Vetores
 #### Chamada de Funções
@@ -129,7 +117,6 @@ int main(){
         return 0;
 }
 ```
----
 
 ## Funções com Vetores
 #### Passagem de Parâmetros
@@ -155,7 +142,6 @@ int main(){
         return 0;
 }
 ```
----
 
 ## Funções com Vetores
 #### Passagem de Parâmetros
@@ -164,7 +150,6 @@ int main(){
   é passado por _referência_
 - Isto significa dizer que as alterações realizadas nos
   vetores dentro da função permanecem após a função ser finalizada
----
 
 ## Funções com Vetores
 #### Função com Vetores como Resultados
@@ -179,7 +164,6 @@ int[] soma_vetores(int v1[], int v2[], int n);
 
 - Caso a função calcule um ou mais vetores, ela deve armazenar o resultado
   nos parâmetros da função
----
 
 ## Exercícios:
 
@@ -188,7 +172,6 @@ int[] soma_vetores(int v1[], int v2[], int n);
 2. Implemente uma função que recebe como parâmetros de
    entrada um vetor de caracteres e um caractere.
    A função deve retornar quantos dos caracteres no vetor são iguais ao caractere passado como parâmetro
----
 
 <!--
 

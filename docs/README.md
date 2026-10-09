@@ -44,16 +44,16 @@
 - Acesso às posições
 - Inicialização
 
+## [13/10 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
+- Sintaxe de implementação de funções com vetores
+- Funções recursivas com vetores
+
 <!--
 
 ## [14/04 - Funções III](./slides/08-funcoes3/08-funcoes3.html)
 - Parâmetros de entrada
 - Parâmetros de saída
 - Parâmetros de entrada e saída
-
-## [05/05 - Funções e Vetores](./slides/11-funcoes_e_vetores/11-funcoes_e_vetores.html)
-- Sintaxe de implementação de funções com vetores
-- Funções recursivas com vetores
 
 ## [12/05 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
 - Sintaxe de implementação de funções com matrizes
