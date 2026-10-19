@@ -10,7 +10,6 @@ title-slide-attributes:
 
 - Vetores
 - Funções com vetores
----
 
 ## Objetivo da Aula
 
@@ -20,7 +19,6 @@ Introduzir o uso de matrizes:
 - Inicialização de matrizes
 - Funções e matrizes
 - Exercícios
----
 
 ## Declarando uma Matriz
 #### Sintaxe
@@ -36,7 +34,6 @@ tipo_da_matriz nome_da_matriz[n_linhas][n_colunas];
   cujo tipo deve ser `int`
 - `n_colunas` é uma expressão para o número de colunas da matriz
   cujo tipo deve ser `int`
----
 
 ## Declarando uma Matriz
 #### Exercício
@@ -46,7 +43,6 @@ Escrever declaração de matriz:
 1. Do tipo real e tamanho `2` x `2`, chamada `A`
 2. Do tipo caractere e tamanho `10` x `10`, chamada `img`
 3. Do tipo inteiro e tamanho `nl` x `nc`, chamada `mat`
----
 
 ## Declarando uma Matriz
 #### Exercício: Solução
@@ -56,7 +52,6 @@ Escrever declaração de matriz:
 2. char img[10][10];
 3. int mat[nl][nc];
 ```
----
 
 ## Posições de uma Matriz
 #### Acesso a Elementos de Matrizes
@@ -66,7 +61,6 @@ Escrever declaração de matriz:
     - Tem índices de colunas válidos que vão de `0` até `nc-1`
 - Uma matriz `m` não pode ser usada diretamente em expressões
     - Cada elemento `m[0][0],m[0][1]`, ..., `m[nl-1][nc-1]` é que deve ser usado
----
 
 ## Posições de uma Matriz
 #### Acesso a Elementos de Matrizes
@@ -76,7 +70,6 @@ Para acessar cada elemento da matriz `m`:
 - O primeiro índice acessa a linha da matriz
 - O segundo índice acessa a coluna da matriz
 - Exemplo: `m[2][0]` acessa a terceira linha e primeira coluna
----
 
 ## Posições de uma Matriz
 #### Percorrendo uma Matriz
@@ -89,7 +82,6 @@ iterar todas as colunas de todas as linhas da matriz. Ou seja:
 - Os laços devem estar aninhados
 - A ordem dos laços pode ou não influenciar no resultado, dependendo do
   uso final do laço no algoritmo
----
 
 ## Posições de uma Matriz
 #### Exercício: Leitura de Dados
@@ -98,7 +90,6 @@ Implemente um programa que leia do usuário as dimensões de uma matriz
 de inteiros e que leia também cada um de seus elementos.
 
 Imprima a matriz no formato adequado na tela.
----
 
 ## Posições de uma Matriz
 #### Exercício: Solução
@@ -122,7 +113,6 @@ int main(){
     }
 }
 ```
----
 
 ## Inicialização de Matrizes
 
@@ -142,8 +132,6 @@ int m[][4] = { {1,2,3,4},
                {9,10,11,12} };
 ```
 
----
-
 ## Inicialização de Matrizes
 
 Forma 3:
@@ -162,21 +150,16 @@ int m[][4] = {1,2,3,4,
               9,10,11,12};
 ```
 
----
-
 ## Lista de Presença
 
-![](lip_20260512.png){fig-align="center"}
+![](lip_20261020.png){fig-align="center"}
 
-<a href="https://bit.ly/lip_20260512"><p style="text-align:center;">https://bit.ly/lip_20260512</p></a>
-
----
+<a href="https://bit.ly/lip_20261020"><p style="text-align:center;">https://bit.ly/lip_20261020</p></a>
 
 ## Funções e Matrizes
 
 - É possível passar matrizes como parâmetro de funções
 - É necessário passar também outros dois parâmetros, relativos ao número de linhas e colunas da matriz
----
 
 ## Função com Matrizes
 #### Matrizes para Uso em Funções
@@ -187,14 +170,12 @@ Em C++, para trabalhar com matrizes como parâmetros de funções, também é pr
 2. Que todas as matrizes do programa sejam declaradas com esta constante no número de linhas e colunas
 3. Informar na assinatura da função que cada matriz passada como parâmetro tem
 `MAX` colunas
----
 
 ## Função com Matrizes
 #### Matrizes para Uso em Funções
 
 - Isto acontece por causa de uma limitação da linguagem C++, que exige que o número de colunas de uma matriz passada como parâmetro seja constante
 - Os programas implementados podem não usar todas as `MAX` linhas e `MAX` colunas das matrizes
----
 
 ## Função com Matrizes
 #### Matrizes para Uso em Funções - Função `main`
@@ -224,7 +205,6 @@ int main(){
     return 0;
 }
 ```
----
 
 ## Função com Matrizes
 
@@ -237,7 +217,6 @@ A linha
 `#define MAX 100`
 
 Você pode usar qualquer uma das duas formas.
----
 
 ## Declaração de Função com Matrizes
 #### Sintaxe
@@ -249,7 +228,6 @@ tipo_func nome_func(tipo_matriz nome_matriz[][MAX],
     corpo da funcao
 }
 ```
----
 
 ## Declaração de Função com Matrizes
 #### Sintaxe
@@ -261,13 +239,10 @@ tipo_func nome_func(tipo_matriz nome_matriz[][MAX],
   obrigatoriamente o nr. máximo de colunas (no caso, `MAX`)
 - `n_linhas` é número de linhas da matriz
 - `n_cols` é número de colunas da matriz
----
 
 ## Declaração de Função com Matrizes
 
 Caso haja mais de uma matriz, é necessário utilizar parâmetros que indiquem o número de linhas e colunas de cada uma delas
-
----
 
 ## Declaração de Função com Matrizes
 #### Exercícios
@@ -277,7 +252,6 @@ Escrever assinatura da função:
 1. Que imprime uma matriz de inteiros na tela
 2. Que recebe uma matriz de caracteres e retorna quantos dos elementos na matriz são iguais a um caractere passado como parâmetro
 3. Que recebe duas matrizes de inteiros de mesmo tamanho e retorna o maior valor dentre todos, seja ele da primeira ou da segunda matriz
----
 
 ## Declaração de Funções com Matrizes
 #### Exercícios: Solução
@@ -289,7 +263,6 @@ int conta_ocorrencias(char mat[][MAX], int nl, int nc,
 int computa_maior(int mat1[][MAX], int mat2[][MAX],
                   int nl, int nc);
 ```
----
 
 ## Funções com Matrizes
 #### Chamada de Funções
@@ -312,7 +285,6 @@ int main(){
     return 0;
 }
 ```
----
 
 ## Funções com Matrizes
 #### Passagem de Parâmetros
@@ -321,7 +293,6 @@ int main(){
   é passada por **referência**
 - Isto significa que as alterações realizadas nas
   matrizes se tornam visíveis fora do corpo da função
----
 
 ## Funções com Matrizes
 #### Linhas de uma Matriz como Vetores
@@ -340,7 +311,6 @@ void imprime_mat(int mat[][MAX], int nl, int nc){
     }
 }
 ```
----
 
 ## Exercícios
 
@@ -349,7 +319,6 @@ Implemente as definições das funções:
 1. Que imprime uma matriz de inteiros na tela
 2. Que recebe uma matriz de caracteres e retorna quantos dos elementos na matriz são iguais a um caractere passado como parâmetro
 3. Que recebe duas matrizes de inteiros de mesmo tamanho e retorna o maior valor dentre todos, seja ele da primeira ou da segunda matriz
----
 
 ## Sumário
 
