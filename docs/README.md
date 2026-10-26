@@ -52,6 +52,8 @@
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
 
+## [27/10 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
+
 <!--
 
 ## [14/04 - Funções III](./slides/08-funcoes3/08-funcoes3.html)
@@ -62,8 +64,6 @@
 ## [12/05 - Funções e Matrizes](./slides/12-funcoes_e_matrizes/12-funcoes_e_matrizes.html)
 - Sintaxe de implementação de funções com matrizes
 - Exercícios
-
-## [19/05 - Unidade 2 - Exercícios](./slides/exercicios_unidade2/exercicios_unidade2.html)
 
 ## [26/05 - Revisão - Unidade 2](./slides/revisao_unidade2/revisao_unidade2.html)
 

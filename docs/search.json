@@ -4736,7 +4736,7 @@
     "href": "slides/exercicios_unidade2/exercicios_unidade2.html#lista-de-presença",
     "title": "Unidade 2: exercícios",
     "section": "Lista de Presença",
-    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20250618"
+    "text": "Lista de Presença\n\n\n\nhttps://bit.ly/lip_20261027"
   },
   {
     "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#unidade-ii---simulado-2",
@@ -8285,7 +8285,7 @@
     "href": "slides/exercicios_unidade2/exercicios_unidade2.html#solução-2",
     "title": "Unidade 2: exercícios",
     "section": "Solução",
-    "text": "Solução\nFunção main\nint main(){\n    // declaração de variáveis\n    ...\n\n    // leitura da dimensão n e matrizes nxn\n    cin >> n;\n    le_mat(A, n);\n    le_mat(B, n);\n\n    // chamada de funções para cálculo da expressão\n    ...\n\n    // impressão da matriz resultante\n    imprime_mat(C, n);\n\n    return 0;\n}"
+    "text": "Solução\nFunção main\nint main(){\n    // declaração de variáveis\n    ...\n\n    // leitura da dimensão n e matrizes nxn\n    cin &gt;&gt; n;\n    le_mat(A, n);\n    le_mat(B, n);\n\n    // chamada de funções para cálculo da expressão\n    ...\n\n    // impressão da matriz resultante\n    imprime_mat(C, n);\n\n    return 0;\n}"
   },
   {
     "objectID": "slides/exercicios_unidade2/exercicios_unidade2.html#solução-3",
@@ -8397,7 +8397,7 @@
     "href": "slides/exercicios_unidade2/exercicios_unidade2.html#solução-4",
     "title": "Unidade 2: exercícios",
     "section": "Solução",
-    "text": "Solução\nPrograma final:\nint main(){\n    // declaração de variáveis\n    int A[MAX][MAX], B[MAX][MAX], C[MAX][MAX], AB[MAX][MAX],\n        ABt[MAX][MAX], Bt[MAX][MAX];\n\n    // leitura da dimensão n e matrizes nxn\n    cin >> n;\n    le_mat(A, n);\n    le_mat(B, n);\n\n    // chamada de funções para cálculo da expressão\n    multiplica(A, B, AB, n); //AxB\n    transpoe(AB, ABt, n); //(AxB)^t\n    transpoe(B, Bt, n); //B^t\n    subtrai(ABt, Bt, C);\n\n    // impressão da matriz resultante\n    imprime_mat(C, n);\n\n    return 0;\n}\n\n\n\nECT3201 - Linguagem de Programação"
+    "text": "Solução\nPrograma final:\nint main(){\n    // declaração de variáveis\n    int A[MAX][MAX], B[MAX][MAX], C[MAX][MAX], AB[MAX][MAX],\n        ABt[MAX][MAX], Bt[MAX][MAX];\n\n    // leitura da dimensão n e matrizes nxn\n    cin &gt;&gt; n;\n    le_mat(A, n);\n    le_mat(B, n);\n\n    // chamada de funções para cálculo da expressão\n    multiplica(A, B, AB, n); //AxB\n    transpoe(AB, ABt, n); //(AxB)^t\n    transpoe(B, Bt, n); //B^t\n    subtrai(ABt, Bt, C);\n\n    // impressão da matriz resultante\n    imprime_mat(C, n);\n\n    return 0;\n}"
   },
   {
     "objectID": "slides/13-strings1/13-strings1.html#nas-aulas-anteriores",
